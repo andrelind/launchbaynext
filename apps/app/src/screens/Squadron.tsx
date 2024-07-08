@@ -1,0 +1,461 @@
+import { Feather } from '@expo/vector-icons';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { FlashList } from '@shopify/flash-list';
+import { Image } from 'expo-image';
+import React, { FC, useLayoutEffect, useRef, useState } from 'react';
+import {
+  Alert,
+  Button,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import { SheetManager } from 'react-native-actions-sheet';
+import Dialog from 'react-native-dialog';
+import PagerView from 'react-native-pager-view';
+import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
+
+import { TShip, loadShip2 } from 'lbn-core/src/helpers/loading';
+import { PilotListItem } from '../components/PilotListItem';
+import { SwipeComponent } from '../components/SwipeComponent';
+import {
+  PilotActionSheetId
+} from '../components/sheets/pilotActions';
+import {
+  SelectFormatSheetId
+} from '../components/sheets/selectFormat';
+import { smooth } from '../helpers/animation';
+import Assets from '../helpers/assets';
+import { useAvailability } from '../helpers/collection';
+import { colorForFormat } from '../helpers/colors';
+import { useTailwind } from '../helpers/tailwind';
+import { xwsStore } from '../stores/xws';
+import { blue, darkgrey, red } from '../theme';
+import { ListStackParams } from '../types/navigation';
+
+type EShip = TShip & { key: string };
+
+type Props = NativeStackScreenProps<ListStackParams, 'Squadron'>;
+
+export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
+  const { uid } = route.params;
+
+  const { tw } = useTailwind();
+
+  const { xws, setFormat, setRuleset, setName, setWins, setTies, setLosses, setTags } =
+    xwsStore((s) => ({
+      xws: s.lists?.find((l) => l.vendor.lbn.uid === uid),
+      setFormat: s.setFormat,
+      setRuleset: s.setRuleset,
+      setName: s.setName,
+      setWins: s.setWins,
+      setTies: s.setTies,
+      setLosses: s.setLosses,
+      setTags: s.setTags,
+    }));
+
+  const pagerRef = useRef<PagerView>(null);
+  const [page, setPage] = useState(0);
+
+  const listRef = useRef<FlashList<EShip>>(null);
+  const [columns, setColumns] = useState(1);
+
+  const [showRename, setShowRename] = useState(false);
+  const [tempName, setTempName] = useState<string | undefined>(
+    xws?.name !== 'New Squadron' ? xws?.name : undefined
+  );
+
+  // @ts-ignore
+  const ships: EShip[] | undefined = xws?.pilots
+    .map((p) => {
+      try {
+        return { key: p.id, ...loadShip2(p, xws) };
+      } catch (error) {
+        console.log(error);
+      }
+    })
+    .filter((x) => x);
+
+  const available = useAvailability(xws);
+  const hasMissingItems =
+    available.ships?.filter((a) => a.count < 0)?.length > 0 ||
+    available.upgrades?.filter((a) => a.count < 0)?.length > 0;
+
+  // useLayoutEffect(() => {
+  //   const missingItems =
+  //     available.ships?.filter((a) => a.count < 0)?.length > 0 ||
+  //     available.upgrades?.filter((a) => a.count < 0)?.length > 0;
+
+  //   setHasMissingItems(missingItems);
+  // }, [available]);
+
+  console.log({ hasMissingItems });
+
+  if (!xws) {
+    return <View />;
+  }
+
+  // useNavigationButtonPress(e => {
+  //   switch (e.buttonId) {
+  //     case 'calc': {
+  //       return Navigation.showModal({
+  //         component: {
+  //           name: 'Calculator',
+  //           passProps: { uid },
+  //         },
+  //       });
+  //     }
+  //     case 'share': {
+  //       return Navigation.showModal({
+  //         component: {
+  //           name: 'Export',
+  //           passProps: { xws, onMessage: setMessage },
+  //         },
+  //       });
+  //     }
+  //     case 'rename': {
+  //       Platform.OS === 'ios'
+  //         ? Alert.prompt(
+  //             'Change name',
+  //             'Please type in the new name of the squadron',
+  //             text => setName(uid, text),
+  //             undefined,
+  //             xws?.name !== 'New Squadron' ? xws?.name : undefined,
+  //           )
+  //         : setShowRename(true);
+  //       return;
+  //     }
+  //   }
+  // }, componentId);
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerTitle: () => (
+        <View style={tw`items-center`}>
+          <Text style={tw`text-base font-bold text-white`}>{xws?.name}</Text>
+          <Text style={tw`text-sm text-gray-400 -mt-1`}>
+            {xws?.points} points
+          </Text>
+        </View>
+      ),
+      headerRight: () => (
+        <View style={tw`flex-row items-center justify-center`}>
+          <TouchableOpacity
+            style={tw`p-2`}
+            onPress={() => {
+              Platform.OS === 'ios'
+                ? Alert.prompt(
+                  'Change name',
+                  'Please type in the new name of this squadron',
+                  (text) => setName(uid, text),
+                  undefined,
+                  xws?.name !== 'New Squadron' ? xws?.name : undefined
+                )
+                : setShowRename(true);
+            }}
+          >
+            <Feather name="edit" style={tw`text-primary-500`} size={20} />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={tw`p-2`}
+            onPress={() => {
+              listRef?.current?.prepareForLayoutAnimationRender();
+              smooth();
+              setColumns(columns === 2 ? 1 : 2);
+            }}
+          >
+            <Feather
+              name={columns === 2 ? 'list' : 'grid'}
+              style={tw`text-primary-500`}
+              size={24}
+            />
+          </TouchableOpacity>
+        </View>
+      ),
+
+      title: xws?.name,
+    });
+  }, [xws?.name, xws?.points, columns]);
+
+  const renderHeader = () => (
+    <View>
+      {hasMissingItems && (
+        <Animated.View
+          entering={FadeIn}
+          layout={Layout.springify()}
+          exiting={FadeOut}
+        >
+          <TouchableOpacity
+            style={tw`flex-row items-center justify-center p-4 gap-x-2 rounded-lg`}
+            onPress={() => {
+              navigation.navigate('MissingItems', { uid });
+            }}
+          >
+            <Feather name="alert-triangle" size={24} color={red} />
+
+            <Text style={tw`text-white`}>
+              Not all items are available in the collection
+            </Text>
+          </TouchableOpacity>
+        </Animated.View>
+      )}
+    </View>
+  );
+
+  const renderFooter = () => (
+    <View style={tw`px-2 gap-y-6 py-3`}>
+      <View style={tw`flex-row justify-between items-center`}>
+        <Text style={tw`font-bold text-sm text-white`}>Ruleset</Text>
+        <Button
+          title={xws?.ruleset || 'xwa'}
+          color={blue}
+          onPress={() => {
+            xws?.ruleset === 'xwa' ? setRuleset(uid, 'legacy') : setRuleset(uid, 'xwa');
+          }}
+        />
+      </View>
+      <View style={tw`flex-row justify-between items-center`}>
+        <Text style={tw`font-bold text-sm text-white`}>Format</Text>
+        <Button
+          title={xws?.format || 'Extended'}
+          color={colorForFormat(xws?.format || 'Extended')}
+          onPress={() => {
+            SheetManager.show<'SelectFormatSheet'>(SelectFormatSheetId, { payload: { uid } });
+          }}
+        />
+      </View>
+      <View style={tw``}>
+        <View style={tw`flex-row justify-between items-center`}>
+          <Text style={tw`font-bold text-sm text-white`}>Obstacles</Text>
+          <Button
+            title="Select"
+            color={tw.color('primary-500')}
+            onPress={() => {
+              SheetManager.show('SelectObstaclesSheet', { payload: { uid } });
+            }}
+          />
+        </View>
+        <View style={tw`flex-row`}>
+          {xws?.obstacles?.map((o, i) => (
+            <Image
+              transition={300}
+              key={`${o}_${i}`}
+              style={tw`h-12 w-12 rounded-lg`}
+              source={Assets.obstacles[o]}
+            />
+          ))}
+        </View>
+      </View>
+      <View style={tw`flex-row justify-between items-center`}>
+        <Text style={tw`font-bold text-sm text-white`}>Tags</Text>
+        <Button
+          title="Select"
+          color={tw.color('primary-500')}
+          onPress={() => {
+            // Navigation.showModal({
+            //   component: {
+            //     name: 'SelectTags',
+            //     passProps: {
+            //       tags: xws?.vendor.lbn.tags || [],
+            //       onTags: (tt: string[]) => {
+            //         setTags(uid, tt);
+            //       },
+            //     },
+            //   },
+            // });
+          }}
+        />
+      </View>
+      <View >
+        <View >
+          {xws?.vendor.lbn.tags?.map((tag, i) => (
+            <Chip
+              key={tag}
+              label={tag}
+              margin-2
+              containerStyle={styles.chip}
+              labelStyle={styles.chipLabel}
+              size={20}
+              dismissColor={darkgrey}
+              dismissIconStyle={styles.dismiss}
+              onDismiss={() => {
+                const tt = [...(xws?.vendor.lbn.tags || [])];
+                tt.splice(i, 1);
+                setTags(uid, tt);
+              }}
+            />
+          ))}
+        </View>
+      </View>
+
+      <View style={tw`flex-row justify-around`}>
+        <View style={tw`items-center w-1/4`}>
+          <TouchableOpacity
+            style={tw`rounded-full border-gray-500 border-2 h-10 w-10 items-center justify-center`}
+            onPress={() => setWins(uid, (xws?.vendor.lbn.wins || 0) + 1)}
+          >
+            <Text style={tw`text-lg text-white`}>+</Text>
+          </TouchableOpacity>
+          <Text style={tw`text-white font-bold my-2`}>
+            Wins {xws?.vendor.lbn.wins || 0}
+          </Text>
+          <TouchableOpacity
+            style={tw`rounded-full border-gray-500 border-2 h-10 w-10 items-center justify-center`}
+            onPress={() => setWins(uid, (xws?.vendor.lbn.wins || 0) - 1)}
+          >
+            <Text style={tw`text-lg text-white`}>-</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={tw`items-center w-1/4`}>
+          <TouchableOpacity
+            style={tw`rounded-full border-gray-500 border-2 h-10 w-10 items-center justify-center`}
+            onPress={() => setTies(uid, (xws?.vendor.lbn.ties || 0) + 1)}
+          >
+            <Text style={tw`text-lg text-white`}>+</Text>
+          </TouchableOpacity>
+          <Text style={tw`text-white font-bold my-2`}>
+            Ties {xws?.vendor.lbn.ties || 0}
+          </Text>
+          <TouchableOpacity
+            style={tw`rounded-full border-gray-500 border-2 h-10 w-10 items-center justify-center`}
+            onPress={() => setTies(uid, (xws?.vendor.lbn.ties || 0) - 1)}
+          >
+            <Text style={tw`text-lg text-white`}>-</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={tw`items-center w-1/4`}>
+          <TouchableOpacity
+            style={tw`rounded-full border-gray-500 border-2 h-10 w-10 items-center justify-center`}
+            onPress={() => setLosses(uid, (xws?.vendor.lbn.losses || 0) + 1)}
+          >
+            <Text style={tw`text-lg text-white`}>+</Text>
+          </TouchableOpacity>
+          <Text style={tw`text-white font-bold my-2`}>
+            Losses {xws?.vendor.lbn.losses || 0}
+          </Text>
+          <TouchableOpacity
+            style={tw`rounded-full border-gray-500 border-2 h-10 w-10 items-center justify-center`}
+            onPress={() => setLosses(uid, (xws?.vendor.lbn.losses || 0) - 1)}
+          >
+            <Text style={tw`text-lg text-white`}>-</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </View>
+  );
+
+  if (!ships || !xws) {
+    return <View />;
+  }
+
+  return (
+    <View style={tw`flex flex-1`}>
+      {renderHeader()}
+
+
+
+      <PagerView
+        ref={pagerRef}
+        useNext={false}
+        style={tw`flex flex-1 p-2`}
+        initialPage={0}
+        onPageSelected={(p) => setPage(p.nativeEvent.position)}
+      >
+        <FlashList
+          ref={listRef}
+          numColumns={columns}
+          data={ships || []}
+          estimatedItemSize={138}
+          keyExtractor={(l: EShip) => l.key}
+          contentContainerStyle={tw`p-1`}
+          renderItem={({ item, index }) => (
+            <SwipeComponent
+              style={tw`flex-1 p-1`}
+              onPress={() => {
+                navigation.navigate('Pilot', {
+                  uid,
+                  pilotIndex: index || 0,
+                  factionKey: xws?.faction,
+                });
+              }}
+              onLongPress={async () => SheetManager.show<'PilotActionSheet'>(PilotActionSheetId, {
+                payload: { uid, pilotIndex: index },
+              })
+              }
+            >
+              <PilotListItem key={item.key} pilot={item?.pilot!} ship={item} ruleset={xws?.ruleset} slim />
+            </SwipeComponent>
+          )}
+          ItemSeparatorComponent={() => <View style={tw`h-2`} />}
+        />
+
+        <ScrollView key="2" style={tw`flex flex-1`}>
+          {renderFooter()}
+        </ScrollView>
+      </PagerView>
+
+      <View style={tw`items-center flex-row justify-center gap-x-2 mb-2`}>
+        <View
+          style={tw`${page === 0 || page > 1000 ? 'bg-gray-500' : 'border border-gray-500'
+            } rounded-full h-3 w-3`}
+        />
+        <View
+          style={tw`${page === 1 ? 'bg-gray-500' : 'border border-gray-500'
+            } rounded-full h-3 w-3`}
+        />
+      </View>
+
+      <TouchableOpacity
+        style={tw`bg-orange-500 h-14 w-14 rounded-full absolute bottom-4 right-2 items-center justify-center`}
+        onPress={async () => {
+          navigation.navigate('SelectModal', {
+            screen: 'SelectShip',
+            params: { uid },
+          });
+        }}
+      >
+        {/* <PlusIcon fill={'white'} /> */}
+        <Feather name="plus" size={44} color="white" />
+      </TouchableOpacity>
+
+      <Dialog.Container visible={showRename}>
+        <Dialog.Title>Change name</Dialog.Title>
+        <Dialog.Description>
+          Please type in the new name of the squadron
+        </Dialog.Description>
+        <Dialog.Input value={tempName} onChangeText={setTempName} />
+        <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
+        <Dialog.Button
+          label="OK"
+          onPress={() => {
+            // console.log(inputRef.current);
+            setName(uid, tempName || '');
+            setTempName(undefined);
+            setShowRename(false);
+          }}
+        />
+      </Dialog.Container>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  chip: { borderColor: darkgrey },
+  chipLabel: { color: darkgrey, paddingVertical: 5 },
+  wrap: { flexWrap: 'wrap', flex: 1, justifyContent: 'flex-end' },
+  dismiss: { width: 12 },
+  button: {
+    position: 'absolute',
+    right: 18,
+    bottom: 18,
+    borderRadius: 100,
+    padding: 8,
+  },
+});
+
+export default SquadronScreen;

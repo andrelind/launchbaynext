@@ -1,0 +1,19 @@
+{
+  "name": "lbn-platform",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev:web": "cd apps/web && bun run dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+}

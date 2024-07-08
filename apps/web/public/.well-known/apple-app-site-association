@@ -1,0 +1,19 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "Y7Z9KZ84C6.se.andrelind.launch-bay-2",
+                "paths": [
+                    "/*",
+                    "NOT /api/*"
+                ]
+            }
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "Y7Z9KZ84C6.se.andrelind.launch-bay-2"
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgba(14, 18, 24, 1);
+}
+
+@font-face {
+  font-family: 'x-wing-ships';
+  src: url('/static/fonts/xwing-miniatures-ships.ttf');
+  font-display: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'xwing-miniatures';
+  src: url('/static/fonts/xwing-miniatures.ttf');
+  font-display: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media print {
+  html,
+  body {
+    /* height: auto !important;  */
+    overflow: visible !important;
+    height: auto !important;
+    background-color: white !important;
+    -webkit-print-color-adjust: exact;
+  }
+}

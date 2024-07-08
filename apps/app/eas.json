@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">= 5.9.3"
+  },
+  "build": {
+    "development-simulator": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "channel": "development-simulator"
+    },
+    "development": {
+      "bun": "1.1.17",
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development"
+    },
+    "preview": {
+      "extends": "production",
+      "channel": "preview",
+      "distribution": "internal"
+    },
+    "production": {
+      "bun": "1.1.17",
+      "channel": "production",
+      "android": { "image": "latest" },
+      "ios": { "image": "latest" }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

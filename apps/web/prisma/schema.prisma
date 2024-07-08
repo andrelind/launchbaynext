@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL")
+}
+
+model Games {
+  Id                                         String        @id @db.Uuid
+  TournamentId                               String        @db.Uuid
+  GameType                                   String
+  Round                                      Int
+  Bye                                        Boolean
+  WinnerId                                   String?       @db.Uuid
+  Player1Id                                  String?       @db.Uuid
+  Player2Id                                  String?       @db.Uuid
+  Player1Score                               Int?
+  Player2Score                               Int?
+  Player1Signoff                             Boolean?
+  Player2Signoff                             Boolean?
+  Participants_Games_Player1IdToParticipants Participants? @relation("Games_Player1IdToParticipants", fields: [Player1Id], references: [Id], onDelete: NoAction, onUpdate: NoAction, map: "Games_Player1_fkey")
+  Participants_Games_Player2IdToParticipants Participants? @relation("Games_Player2IdToParticipants", fields: [Player2Id], references: [Id], onDelete: NoAction, onUpdate: NoAction, map: "Games_Player2_fkey")
+  Tournaments                                Tournaments   @relation(fields: [TournamentId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+  Participants_Games_WinnerIdToParticipants  Participants? @relation("Games_WinnerIdToParticipants", fields: [WinnerId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Lists {
+  Id         String    @id @db.Uuid
+  UserId     String    @db.Uuid
+  Xws        Json
+  CreatedUtc DateTime  @db.Timestamp(6)
+  UpdatedUtc DateTime  @db.Timestamp(6)
+  DeletedUtc DateTime? @db.Timestamp(6)
+  Users      Users     @relation(fields: [UserId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Participants {
+  Id                                  String      @id @db.Uuid
+  TournamentId                        String      @db.Uuid
+  Name                                String
+  Xws                                 Json?
+  UserId                              String?     @db.Uuid
+  Games_Games_Player1IdToParticipants Games[]     @relation("Games_Player1IdToParticipants")
+  Games_Games_Player2IdToParticipants Games[]     @relation("Games_Player2IdToParticipants")
+  Games_Games_WinnerIdToParticipants  Games[]     @relation("Games_WinnerIdToParticipants")
+  Tournaments                         Tournaments @relation(fields: [TournamentId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+  Users                               Users?      @relation(fields: [UserId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Tournaments {
+  Id           String         @id @db.Uuid
+  CreatedUtc   DateTime       @db.Timestamp(6)
+  UpdatedUtc   DateTime       @db.Timestamp(6)
+  DeletedUtc   DateTime?      @db.Timestamp(6)
+  CreatorId    String         @db.Uuid
+  Name         String
+  Format       String
+  Date         DateTime       @db.Timestamp(6)
+  Location     String?
+  Address      String?
+  Version      String?
+  Games        Games[]
+  Participants Participants[]
+  Users        Users          @relation(fields: [CreatorId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Users {
+  Id           String         @id @db.Uuid
+  Name         String
+  Email        String?
+  Provider     String?
+  ProviderId   String?
+  PasswordHash String?
+  Salt         String?
+  Username     String?
+  Collections  Collections[]
+  Lists        Lists[]
+  Participants Participants[]
+  Tournaments  Tournaments[]
+}
+
+model Collections {
+  Id         String   @id @db.Uuid
+  UserId     String   @db.Uuid
+  Expansions Json?
+  Ships      Json?
+  Pilots     Json?
+  Upgrades   Json?
+  UpdatedUtc DateTime @db.Timestamp(6)
+  Users      Users    @relation(fields: [UserId], references: [Id], onDelete: NoAction, onUpdate: NoAction)
+}
