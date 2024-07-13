@@ -57,6 +57,7 @@ export const SquadronComponent: FC<Props<XWS>> = ({
 
   return (
     <SwipeComponent
+      style={tw`mb-2`}
       onPress={onPress}
       onLongPress={drag}
       onLeftAction={() => {
@@ -81,7 +82,7 @@ export const SquadronComponent: FC<Props<XWS>> = ({
         );
       }}
     >
-      <View style={tw`p-2 flex-row items-center bg-white dark:bg-slate-900 rounded-lg gap-x-2`}>
+      <View style={tw`p-2 flex-row items-center bg-white dark:bg-zinc-800 rounded-lg gap-x-2`}>
         <View style={tw`items-center w-10`}>
           <XWingFont
             icons={[item.faction]}

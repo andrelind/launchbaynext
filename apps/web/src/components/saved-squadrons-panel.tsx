@@ -40,9 +40,8 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
 
   return (
     <div
-      className={`fixed inset-0 overflow-hidden z-10 ${
-        !show && 'pointer-events-none'
-      }`}
+      className={`fixed inset-0 overflow-hidden z-10 ${!show && 'pointer-events-none'
+        }`}
       onClick={(e) => {
         // @ts-ignore
         e.target.id === 'background' && onClose();

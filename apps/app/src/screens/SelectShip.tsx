@@ -66,9 +66,9 @@ export const SelectShipScreen: FC<Props> = ({ route, navigation }) => {
             style={tw`flex-1 flex-row items-center`}
           >
             <View style={tw`w-12 items-center`}>
-              <ShipFont icons={[item.xws]} size={12} />
+              <ShipFont icons={[item.xws]} size={12} style={tw`text-white`} />
             </View>
-            <Text style={tw`text-white font-bold ml-3 dark:text-white`}>{item.name}</Text>
+            <Text style={tw`text-white font-bold ml-3`}>{item.name}</Text>
           </TouchableOpacity>
         </Animated.View>
       )}

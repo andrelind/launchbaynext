@@ -78,7 +78,7 @@ export const upgradesForSlot2 = (
     .filter((u: Upgrade) => {
       switch (format) {
         case 'Extended':
-          return u.extended;
+          return true;
         case 'Standard':
           return u.standard;
         case 'Epic':

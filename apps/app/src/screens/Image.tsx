@@ -33,8 +33,8 @@ export const ImageScreen: FC<Props> = ({ route, navigation }) => {
       />
       {loading && (
         <>
-          <View style={tw`bg-gray-900 opacity-70 rounded-full w-16 h-16`} />
-          <ActivityIndicator size={'large'} color={tw.color('gray-300')} style={tw`absolute pt-1 pl-1`} />
+          <View style={tw`bg-zinc-900 opacity-70 rounded-full w-16 h-16`} />
+          <ActivityIndicator size={'large'} color={tw.color('zinc-300')} style={tw`absolute pt-1 pl-1`} />
 
         </>
       )}

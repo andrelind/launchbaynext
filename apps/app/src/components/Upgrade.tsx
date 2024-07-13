@@ -140,7 +140,7 @@ export const UpgradeComponent: FC<Props> = ({
   if (!upgrade && slot) {
     return (
       <TouchableOpacity
-        style={tw`p-2 flex-row items-center rounded-lg bg-white dark:bg-slate-900`}
+        style={tw`p-2 flex-row items-center rounded-lg bg-white dark:bg-zinc-800`}
         onPress={onPress}
       >
         <XWingFont icons={[slot]} size={6} />
@@ -167,15 +167,14 @@ export const UpgradeComponent: FC<Props> = ({
         >
           <ImageComponent
             transition={300}
-            style={tw`w-20 h-full justify-end rounded-l-lg bg-slate-800 flex-1`}
+            style={tw`w-20 h-full justify-end rounded-l-lg bg-zinc-700 flex-1`}
             uri={upgradeArtUri(upgradeSide)}
           />
         </TouchableOpacity>
       )}
       <View style={tw`flex-1`}>
         <View
-          // blurType="dark"
-          style={tw`flex flex-1 flex-row items-center justify-between px-2 py-0.5 bg-slate-900 dark:bg-slate-800 ${showImage ? 'rounded-tr-lg' : 'rounded-lg'
+          style={tw`flex flex-1 flex-row items-center justify-between px-2 py-0.5 bg-zinc-800 dark:bg-zinc-700 ${showImage ? 'rounded-tr-lg' : 'rounded-t-lg'
             }`}
         >
           <View style={tw`flex-1 flex-row items-center justify-between`}>
@@ -196,7 +195,7 @@ export const UpgradeComponent: FC<Props> = ({
               <View style={tw`flex-1 flex-row items-center gap-x-2`}>
                 <View style={tw`flex-1 flex-row items-center justify-center gap-x-1`}>
 
-                  <Text style={tw`font-bold text-white dark:text-white`}>
+                  <Text style={tw`font-bold text-white dark:text-white flex-1 text-center`}>
                     {upgrade.limited > 0 && `${'•'.repeat(upgrade.limited)} `}
                     {upgradeSide?.title}
                     {Boolean(count) && <Text style={tw``}>{` (${count})`}</Text>}
@@ -222,7 +221,7 @@ export const UpgradeComponent: FC<Props> = ({
 
         <View
           // activeOpacity={showImage ? 0.7 : 1}
-          style={tw`bg-white dark:bg-slate-900 ${showImage ? 'rounded-br-lg' : 'rounded-b-lg'
+          style={tw`bg-white dark:bg-zinc-800 ${showImage ? 'rounded-br-lg' : 'rounded-b-lg'
             }  pb-1`}
         // onPress={onPress}
         >

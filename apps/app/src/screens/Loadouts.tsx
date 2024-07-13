@@ -16,6 +16,10 @@ export const LoadoutsScreen: FC<Props> = ({ route, navigation }) => {
   const { tw } = useTailwind();
   const { uid, index, faction, pilotXws, shipXws } = route.params;
 
+  if (!pilotXws) {
+    return null;
+  }
+
   const data = loadoutStore((s) => s.loadouts)?.filter(
     (l) =>
       l.faction === faction && l.shipXws === shipXws && l.pilotXws === pilotXws
@@ -33,7 +37,7 @@ export const LoadoutsScreen: FC<Props> = ({ route, navigation }) => {
       keyExtractor={(i) => i.id}
       ListEmptyComponent={() => (
         <View style={tw`flex-1 items-center justify-center h-100`}>
-          <Text style={tw`text-slate-500`}>No saved loadouts found</Text>
+          <Text style={tw`text-zinc-500`}>No saved loadouts found</Text>
         </View>
       )}
       renderItem={({ item }) => {

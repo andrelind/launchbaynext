@@ -2,25 +2,22 @@ import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { FlashList } from '@shopify/flash-list';
 import { Image } from 'expo-image';
+import { TShip, loadShip2 } from 'lbn-core/src/helpers/loading';
 import React, { FC, useLayoutEffect, useRef, useState } from 'react';
 import {
   Alert,
   Button,
   Platform,
   ScrollView,
-  StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
 import Dialog from 'react-native-dialog';
 import PagerView from 'react-native-pager-view';
 import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
-
-import { TShip, loadShip2 } from 'lbn-core/src/helpers/loading';
 import { PilotListItem } from '../components/PilotListItem';
-import { SwipeComponent } from '../components/SwipeComponent';
 import {
   PilotActionSheetId
 } from '../components/sheets/pilotActions';
@@ -33,7 +30,7 @@ import { useAvailability } from '../helpers/collection';
 import { colorForFormat } from '../helpers/colors';
 import { useTailwind } from '../helpers/tailwind';
 import { xwsStore } from '../stores/xws';
-import { blue, darkgrey, red } from '../theme';
+import { blue, orange, red } from '../theme';
 import { ListStackParams } from '../types/navigation';
 
 type EShip = TShip & { key: string };
@@ -146,22 +143,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
           <TouchableOpacity
             style={tw`p-2`}
             onPress={() => {
-              Platform.OS === 'ios'
-                ? Alert.prompt(
-                  'Change name',
-                  'Please type in the new name of this squadron',
-                  (text) => setName(uid, text),
-                  undefined,
-                  xws?.name !== 'New Squadron' ? xws?.name : undefined
-                )
-                : setShowRename(true);
-            }}
-          >
-            <Feather name="edit" style={tw`text-primary-500`} size={20} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={tw`p-2`}
-            onPress={() => {
               listRef?.current?.prepareForLayoutAnimationRender();
               smooth();
               setColumns(columns === 2 ? 1 : 2);
@@ -208,6 +189,24 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   const renderFooter = () => (
     <View style={tw`px-2 gap-y-6 py-3`}>
       <View style={tw`flex-row justify-between items-center`}>
+        <Text style={tw`font-bold text-sm text-white`}>Name</Text>
+        <Button
+          title={xws?.name}
+          color={orange}
+          onPress={() => {
+            Platform.OS === 'ios'
+              ? Alert.prompt(
+                'Change name',
+                'Please type in the new name of this squadron',
+                (text) => setName(uid, text),
+                undefined,
+                xws?.name !== 'New Squadron' ? xws?.name : undefined
+              )
+              : setShowRename(true);
+          }}
+        />
+      </View>
+      <View style={tw`flex-row justify-between items-center`}>
         <Text style={tw`font-bold text-sm text-white`}>Ruleset</Text>
         <Button
           title={xws?.ruleset || 'xwa'}
@@ -231,7 +230,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
         <View style={tw`flex-row justify-between items-center`}>
           <Text style={tw`font-bold text-sm text-white`}>Obstacles</Text>
           <Button
-            title="Select"
+            title="Edit"
             color={tw.color('primary-500')}
             onPress={() => {
               SheetManager.show('SelectObstaclesSheet', { payload: { uid } });
@@ -252,7 +251,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
       <View style={tw`flex-row justify-between items-center`}>
         <Text style={tw`font-bold text-sm text-white`}>Tags</Text>
         <Button
-          title="Select"
+          title="Edit"
           color={tw.color('primary-500')}
           onPress={() => {
             // Navigation.showModal({
@@ -271,7 +270,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
       </View>
       <View >
         <View >
-          {xws?.vendor.lbn.tags?.map((tag, i) => (
+          {/* {xws?.vendor.lbn.tags?.map((tag, i) => (
             <Chip
               key={tag}
               label={tag}
@@ -287,7 +286,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
                 setTags(uid, tt);
               }}
             />
-          ))}
+          ))} */}
         </View>
       </View>
 
@@ -357,56 +356,49 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
     <View style={tw`flex flex-1`}>
       {renderHeader()}
 
+      <ScrollView style={tw`flex-1`} horizontal pagingEnabled showsHorizontalScrollIndicator={false}>
+        <View style={tw`w-screen`}>
+          <FlashList
+            ref={listRef}
+            numColumns={columns}
+            data={ships || []}
+            estimatedItemSize={138}
+            keyExtractor={(l: EShip) => l.key}
+            contentContainerStyle={tw`p-1`}
+            renderItem={({ item, index }) => (
+              <TouchableOpacity
+                activeOpacity={0.8}
+                style={tw`flex-1 p-1`}
+                onPress={() => {
+                  navigation.navigate('Pilot', {
+                    uid,
+                    pilotIndex: index || 0,
+                    factionKey: xws?.faction,
+                  });
+                }}
+                onLongPress={async () => SheetManager.show<'PilotActionSheet'>(PilotActionSheetId, {
+                  payload: { uid, pilotIndex: index },
+                })
+                }
+              >
+                <PilotListItem key={item.key} pilot={item?.pilot!} ship={item} ruleset={xws?.ruleset} slim />
+              </TouchableOpacity>
+            )}
+            ItemSeparatorComponent={() => <View style={tw`h-2`} />}
+          />
+        </View>
 
-
-      <PagerView
-        ref={pagerRef}
-        useNext={false}
-        style={tw`flex flex-1 p-2`}
-        initialPage={0}
-        onPageSelected={(p) => setPage(p.nativeEvent.position)}
-      >
-        <FlashList
-          ref={listRef}
-          numColumns={columns}
-          data={ships || []}
-          estimatedItemSize={138}
-          keyExtractor={(l: EShip) => l.key}
-          contentContainerStyle={tw`p-1`}
-          renderItem={({ item, index }) => (
-            <SwipeComponent
-              style={tw`flex-1 p-1`}
-              onPress={() => {
-                navigation.navigate('Pilot', {
-                  uid,
-                  pilotIndex: index || 0,
-                  factionKey: xws?.faction,
-                });
-              }}
-              onLongPress={async () => SheetManager.show<'PilotActionSheet'>(PilotActionSheetId, {
-                payload: { uid, pilotIndex: index },
-              })
-              }
-            >
-              <PilotListItem key={item.key} pilot={item?.pilot!} ship={item} ruleset={xws?.ruleset} slim />
-            </SwipeComponent>
-          )}
-          ItemSeparatorComponent={() => <View style={tw`h-2`} />}
-        />
-
-        <ScrollView key="2" style={tw`flex flex-1`}>
+        <ScrollView style={tw`flex flex-1 w-screen`}>
           {renderFooter()}
         </ScrollView>
-      </PagerView>
+      </ScrollView>
 
       <View style={tw`items-center flex-row justify-center gap-x-2 mb-2`}>
         <View
-          style={tw`${page === 0 || page > 1000 ? 'bg-gray-500' : 'border border-gray-500'
-            } rounded-full h-3 w-3`}
+          style={tw`${page === 0 || page > 1000 ? 'bg-zinc-500' : 'border border-zinc-500'} rounded-full h-3 w-3`}
         />
         <View
-          style={tw`${page === 1 ? 'bg-gray-500' : 'border border-gray-500'
-            } rounded-full h-3 w-3`}
+          style={tw`${page === 1 ? 'bg-zinc-500' : 'border border-zinc-500'} rounded-full h-3 w-3`}
         />
       </View>
 
@@ -419,7 +411,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
           });
         }}
       >
-        {/* <PlusIcon fill={'white'} /> */}
         <Feather name="plus" size={44} color="white" />
       </TouchableOpacity>
 
@@ -433,7 +424,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
         <Dialog.Button
           label="OK"
           onPress={() => {
-            // console.log(inputRef.current);
             setName(uid, tempName || '');
             setTempName(undefined);
             setShowRename(false);
@@ -444,18 +434,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   );
 };
 
-const styles = StyleSheet.create({
-  chip: { borderColor: darkgrey },
-  chipLabel: { color: darkgrey, paddingVertical: 5 },
-  wrap: { flexWrap: 'wrap', flex: 1, justifyContent: 'flex-end' },
-  dismiss: { width: 12 },
-  button: {
-    position: 'absolute',
-    right: 18,
-    bottom: 18,
-    borderRadius: 100,
-    padding: 8,
-  },
-});
+
 
 export default SquadronScreen;

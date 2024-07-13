@@ -1,9 +1,7 @@
-import { PrismaClient } from '@prisma/client';
 import { type FetchCreateContextFnOptions } from '@trpc/server/adapters/fetch';
 import jwt, { type JwtPayload } from 'jsonwebtoken';
 import { cookies } from 'next/headers';
-
-const prisma = new PrismaClient();
+import { db } from './db';
 
 interface CreateContextOptions {
   reqHeaders: Headers;
@@ -48,10 +46,9 @@ export const createContext = async (opts: FetchCreateContextFnOptions) => {
   }
 
   // Verify token and get user
-  const user = await prisma.users.findFirst({
-    where: { Id: decoded.sub },
+  const user = await db.query.Users.findFirst({
+    where: (u, { eq }) => eq(u.Id, decoded.sub || ''),
   });
-
   //   return createInnerTRPCContext({ user });
   return createInnerTRPCContext({
     user: user

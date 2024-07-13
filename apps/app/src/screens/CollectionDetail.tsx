@@ -221,7 +221,7 @@ export const CollectionDetailScreen: FC<Props> = ({ route, navigation }) => {
           </View>
 
           <View
-            style={tw`flex-row justify-center items-center bg-white dark:bg-slate-900 rounded-lg`}
+            style={tw`flex-row justify-center items-center bg-white dark:bg-zinc-800 rounded-lg`}
           >
             <TouchableOpacity
               style={tw`p-4`}

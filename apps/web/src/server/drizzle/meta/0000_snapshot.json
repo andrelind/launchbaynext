@@ -1,0 +1,503 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.Users": {
+      "name": "Users",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Email": {
+          "name": "Email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Provider": {
+          "name": "Provider",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ProviderId": {
+          "name": "ProviderId",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PasswordHash": {
+          "name": "PasswordHash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Salt": {
+          "name": "Salt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Username": {
+          "name": "Username",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.Collections": {
+      "name": "Collections",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Expansions": {
+          "name": "Expansions",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Ships": {
+          "name": "Ships",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Pilots": {
+          "name": "Pilots",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Upgrades": {
+          "name": "Upgrades",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UpdatedUtc": {
+          "name": "UpdatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Collections_UserId_fkey": {
+          "name": "Collections_UserId_fkey",
+          "tableFrom": "Collections",
+          "tableTo": "Users",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.Tournaments": {
+      "name": "Tournaments",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "CreatedUtc": {
+          "name": "CreatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UpdatedUtc": {
+          "name": "UpdatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "DeletedUtc": {
+          "name": "DeletedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CreatorId": {
+          "name": "CreatorId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Format": {
+          "name": "Format",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Date": {
+          "name": "Date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Location": {
+          "name": "Location",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Address": {
+          "name": "Address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Version": {
+          "name": "Version",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Tournaments_CreatorId_fkey": {
+          "name": "Tournaments_CreatorId_fkey",
+          "tableFrom": "Tournaments",
+          "tableTo": "Users",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "CreatorId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.Games": {
+      "name": "Games",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "TournamentId": {
+          "name": "TournamentId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "GameType": {
+          "name": "GameType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Round": {
+          "name": "Round",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bye": {
+          "name": "Bye",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "WinnerId": {
+          "name": "WinnerId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player1Id": {
+          "name": "Player1Id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player2Id": {
+          "name": "Player2Id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player1Score": {
+          "name": "Player1Score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player2Score": {
+          "name": "Player2Score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player1Signoff": {
+          "name": "Player1Signoff",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player2Signoff": {
+          "name": "Player2Signoff",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Games_TournamentId_fkey": {
+          "name": "Games_TournamentId_fkey",
+          "tableFrom": "Games",
+          "tableTo": "Tournaments",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "TournamentId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Games_WinnerId_fkey": {
+          "name": "Games_WinnerId_fkey",
+          "tableFrom": "Games",
+          "tableTo": "Participants",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "WinnerId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Games_Player1Id_fkey": {
+          "name": "Games_Player1Id_fkey",
+          "tableFrom": "Games",
+          "tableTo": "Participants",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "Player1Id"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Games_Player2Id_fkey": {
+          "name": "Games_Player2Id_fkey",
+          "tableFrom": "Games",
+          "tableTo": "Participants",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "Player2Id"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.Participants": {
+      "name": "Participants",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "TournamentId": {
+          "name": "TournamentId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Participants_UserId_fkey": {
+          "name": "Participants_UserId_fkey",
+          "tableFrom": "Participants",
+          "tableTo": "Users",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Participants_TournamentId_fkey": {
+          "name": "Participants_TournamentId_fkey",
+          "tableFrom": "Participants",
+          "tableTo": "Tournaments",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "TournamentId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.Lists": {
+      "name": "Lists",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "CreatedUtc": {
+          "name": "CreatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UpdatedUtc": {
+          "name": "UpdatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "DeletedUtc": {
+          "name": "DeletedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Lists_UserId_fkey": {
+          "name": "Lists_UserId_fkey",
+          "tableFrom": "Lists",
+          "tableTo": "Users",
+          "schemaTo": "public",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "tables": {}
+  }
+}

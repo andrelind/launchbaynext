@@ -1,21 +1,17 @@
-// import { PrismaClient } from '@prisma/client';
-import { Prisma, PrismaClient } from '@prisma/client';
+import { eq } from 'drizzle-orm';
 import { z } from 'zod';
+import { db } from '../db';
 
 import { v4 } from 'uuid';
+import { Collections } from '../drizzle/schema';
 import { protectedProcedure, router } from '../trpc';
-
-const prisma = new PrismaClient();
 
 const asResponse = (
   c?: {
-    Id: string;
-    UserId: string;
-    Expansions: Prisma.JsonValue;
-    Ships: Prisma.JsonValue;
-    Pilots: Prisma.JsonValue;
-    Upgrades: Prisma.JsonValue;
-    UpdatedUtc: Date;
+    Expansions: any;
+    Ships: any;
+    Pilots: any;
+    Upgrades: any;
   } | null
 ) => {
   if (!c)
@@ -36,10 +32,9 @@ const asResponse = (
 
 export const collectionRouter = router({
   get: protectedProcedure.query(async ({ input, ctx }) => {
-    const list = await prisma.collections.findFirst({
-      where: { UserId: ctx.user.id },
+    const list = await db.query.Collections.findFirst({
+      where: (l, { eq }) => eq(l.UserId, ctx.user.id),
     });
-
     return asResponse(list);
   }),
 
@@ -53,34 +48,35 @@ export const collectionRouter = router({
       })
     )
     .mutation(async ({ input, ctx }) => {
-      const c = await prisma.collections.findFirst({
-        where: { UserId: ctx.user.id },
+      const c = await db.query.Collections.findFirst({
+        where: (c, { eq }) => eq(c.UserId, ctx.user.id),
       });
       if (!c) {
-        const list = await prisma.collections.create({
-          data: {
+        const [list] = await db
+          .insert(Collections)
+          .values({
             Id: v4(),
             UserId: ctx.user.id,
             Expansions: input.expansions,
             Ships: input.ships,
             Pilots: input.pilots,
             Upgrades: input.upgrades,
-            UpdatedUtc: new Date(),
-          },
-        });
+            UpdatedUtc: new Date().toISOString(),
+          })
+          .returning();
         return asResponse(list);
       } else {
-        const list = await prisma.collections.update({
-          where: { Id: c?.Id },
-          data: {
+        const [list] = await db
+          .update(Collections)
+          .set({
             Expansions: input.expansions,
             Ships: input.ships,
             Pilots: input.pilots,
             Upgrades: input.upgrades,
-            UpdatedUtc: new Date(),
-          },
-        });
-
+            UpdatedUtc: new Date().toISOString(),
+          })
+          .where(eq(Collections.Id, c.Id))
+          .returning();
         return asResponse(list);
       }
     }),

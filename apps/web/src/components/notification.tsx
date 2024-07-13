@@ -1,5 +1,5 @@
 import { Transition } from '@headlessui/react';
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import { FC, useCallback, useEffect, useState } from 'react';
 
 type Props = {
   title?: string;

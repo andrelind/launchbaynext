@@ -2,6 +2,7 @@ import { DarkTheme, NavigationContainer } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
 import { Image } from 'expo-image';
+import * as Updates from 'expo-updates';
 import { cleanupUpgrades2, loadShip2 } from 'lbn-core/src/helpers/loading';
 import { useEffect } from 'react';
 import { AppState, StatusBar } from 'react-native';
@@ -19,7 +20,24 @@ import { xwsStore } from './stores/xws';
 import { green, orange, red, yellow } from './theme';
 
 const runUpdates = async () => {
-  // runCodePush();
+  try {
+    const update = await Updates.checkForUpdateAsync();
+    if (update.isAvailable) {
+      Toast.show({
+        type: 'info',
+        text1: 'Updating system...',
+        text2: 'This can take a few seconds, please wait',
+      });
+      await Updates.fetchUpdateAsync();
+      setTimeout(async () => {
+        await Updates.reloadAsync();
+      }, 300);
+    }
+  } catch (error) {
+    // You can also add an alert() to see the error message
+    // in case of an error when fetching updates.
+    // alert(`Error fetching latest Expo update: ${error}`);
+  }
 
   await syncWithServer(
     xwsStore.getState(),
@@ -127,6 +145,8 @@ export default () => {
             colors: {
               ...DarkTheme.colors,
               primary: orange,
+              background: tw.color('zinc-950')!,
+              card: tw.color('zinc-900')!,
             },
           }}
         >

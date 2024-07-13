@@ -11,6 +11,5 @@ export const useTailwind = () => {
     const tw = create(config);
     useDeviceContext(tw);
 
-
     return { tw };
 };

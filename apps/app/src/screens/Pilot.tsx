@@ -2,6 +2,7 @@ import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { BlurView } from 'expo-blur';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
+import { loadShip2, loadUpgrades2 } from 'lbn-core/src/helpers/loading';
 import { Slot } from 'lbn-core/src/types';
 import React, { FC, useLayoutEffect, useState } from 'react';
 import {
@@ -20,9 +21,6 @@ import Animated, {
   FadeOut,
   Layout,
 } from 'react-native-reanimated';
-
-// import { ArrowDownOnSquareStackIcon } from 'react-native-heroicons/outline';
-import { loadShip2, loadUpgrades2 } from 'lbn-core/src/helpers/loading';
 import { ActionsComponent } from '../components/Actions';
 import Dial from '../components/Dial';
 import FormattedText from '../components/FormattedText';
@@ -76,7 +74,7 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
           )}
 
           {xws?.ruleset === 'xwa' && !ship?.pilot?.standardLoadout && (
-            <Text style={tw`text-sm text-slate-300 -mt-1`}>
+            <Text style={tw`text-sm text-zinc-300 -mt-1`}>
               {`Loadout ${(ship?.pointsWithUpgrades || 0) - (ship?.pilot?.cost || 0)
                 }/${ship?.pilot?.loadout}`}
             </Text>
@@ -117,7 +115,7 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
       showsVerticalScrollIndicator={false}
     >
       <Animated.View entering={FadeInUp} style={tw`flex-1 mx-2`}>
-        <View style={tw`flex bg-white dark:bg-slate-900 rounded-lg pb-2 gap-y-2`}>
+        <View style={tw`flex bg-white dark:bg-zinc-800 rounded-lg pb-2 gap-y-2`}>
           <TouchableOpacity
             activeOpacity={0.7}
             onPress={() => {

@@ -1,17 +1,17 @@
-import { Entypo } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import { FlashList } from '@shopify/flash-list';
+import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
 import {
   Alert,
   Platform,
-  StyleSheet,
+  SafeAreaView,
+  Text,
   TextInput,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
-
-import { FlashList } from '@shopify/flash-list';
 import SquadronComponent from '../components/SquadronComponent';
 import { pilotName } from '../helpers/names';
 import { useTailwind } from '../helpers/tailwind';
@@ -49,6 +49,36 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
   // useNavigationSearchBarUpdate(e => {
   //   setNeedle(e.text?.toLowerCase());
   // }, componentId);
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerSearchBarOptions: {
+
+        placeholder: 'Search',
+        onChangeText: (t) => setNeedle(t?.nativeEvent.text.toLowerCase()),
+      },
+      headerLeft: () => (
+        <TouchableOpacity
+          onPress={() => {
+            // navigation.navigate('Filter');
+          }}
+          style={tw`mr-2`}
+        >
+          <Feather name="filter" size={20} color={tw.color('orange-500')} />
+        </TouchableOpacity>
+      ),
+      headerRight: () => (
+        <TouchableOpacity
+          onPress={() => {
+            // navigation.navigate('Filter');
+          }}
+          style={tw`mr-2`}
+        >
+          <Feather name='align-left' size={20} color={tw.color('orange-500')} />
+        </TouchableOpacity>
+      ),
+    });
+  }, [navigation]);
 
   useEffect(() => setStateLists(lists), [lists]);
 
@@ -110,11 +140,8 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
   //   [],
   // );
 
-  const renderSeparator = useCallback(() => <View style={tw`h-2`} />, []);
-  // const renderFooter = useCallback(() => <View height={60} />, []);
-
   return (
-    <>
+    <SafeAreaView style={tw`flex-1`}>
       {Platform.OS === 'android' && (
         <View paddingH-10>
           <TextInput
@@ -135,6 +162,11 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
         data={filtered || []}
         keyExtractor={(l: XWS) => l.vendor.lbn.uid}
         estimatedItemSize={87}
+        ListEmptyComponent={() => (
+          <View style={tw`items-center justify-center flex-1 h-screen`}>
+            <Text style={tw`text-zinc-500 text-lg`}>No squadrons found</Text>
+          </View>
+        )}
         renderItem={({ item }) => (
           <SquadronComponent
             key={item.vendor.lbn.uid}
@@ -144,13 +176,11 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
             }}
           />
         )}
-        ItemSeparatorComponent={renderSeparator}
       />
 
       <TouchableOpacity
         style={tw`bg-orange-500 h-12 w-12 rounded-full absolute bottom-4 right-2 items-center justify-center`}
         onPress={async () => {
-
           Alert.alert('Ruleset', 'Select the ruleset for the new squadron',
             [
               {
@@ -175,90 +205,10 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
           )
         }}
       >
-        <Entypo name="plus" color={'white'} size={36} />
+        <Feather name="plus" color={'white'} size={36} />
       </TouchableOpacity>
-      {/* // <Button
-      //   // style={styles.button}
-      //   // iconSource={() => <PlusIcon size={30} color={'white'} />}
-      //   onPress={() => {
-      //     // Navigation.showModal({
-      //     //   component: {
-      //     //     name: 'SelectFaction',
-      //     //     passProps: {
-      //     //       onClipboard: async () => {
-      //     //         const clipboard = await Clipboard.getString();
-      //     //         if (clipboard.length > 0) {
-      //     //           setToastMessage({ text: 'Importing', color: darkgrey });
-      //     //           if (await importFromClipboard(clipboard)) {
-      //     //             setToastMessage({
-      //     //               text: 'Squadron imported',
-      //     //               color: green,
-      //     //             });
-      //     //           } else {
-      //     //             setToastMessage({
-      //     //               text: 'Error importing from clipboard',
-      //     //               color: red,
-      //     //             });
-      //     //           }
-      //     //         }
-      //     //       },
-      //     //       onQRCode: () => {
-      //     //         Navigation.showModal({
-      //     //           component: {
-      //     //             name: 'QRCode',
-      //     //             passProps: {
-      //     //               onReadQRCode: async (text: string) => {
-      //     //                 setToastMessage({
-      //     //                   text: 'Importing',
-      //     //                   color: darkgrey,
-      //     //                 });
-      //     //                 smooth();
-      //     //                 if (await importFromClipboard(text)) {
-      //     //                   setToastMessage({
-      //     //                     text: 'Squadron imported',
-      //     //                     color: green,
-      //     //                   });
-      //     //                 } else {
-      //     //                   setToastMessage({
-      //     //                     text: 'Error importing from clipboard',
-      //     //                     color: red,
-      //     //                   });
-      //     //                 }
-      //     //               },
-      //     //             },
-      //     //           },
-      //     //         });
-      //     //       },
-      //     //       onFaction: (f: FactionKey) => {
-      //     //         const item = addSquadron(f, 'Standard');
-      //     //         const component = {
-      //     //           component: {
-      //     //             name: 'Squadron',
-      //     //             passProps: { uid: item.vendor.lbn.uid },
-      //     //             options: {
-      //     //               topBar: {
-      //     //                 title: { text: item.name },
-      //     //                 subtitle: { text: `${item.points || 0} ` },
-      //     //               },
-      //     //             },
-      //     //           },
-      //     //         };
-      //     //         Constants.isTablet
-      //     //           ? Navigation.setStackRoot('detail', component)
-      //     //           : Navigation.push(componentId, component);
-      //     //       },
-      //     //     },
-      //     //   },
-      //     // });
-      //   }}
-      // /> */}
-    </>
+    </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  list: { height: '100%' },
-  container: { padding: 10 },
-});
 
 export default SquadronsScreen;

@@ -30,12 +30,12 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
 
   return (
     <Animated.View entering={FadeIn} style={tw`flex flex-1`}>
-      <View style={tw`flex bg-white dark:bg-slate-900 rounded-lg pb-1 gap-y-1`}>
+      <View style={tw`flex bg-white dark:bg-zinc-800 rounded-lg pb-1 gap-y-1`}>
         <ImageComponent
           transition={300}
           uri={{ uri: pilot.artwork }}
           style={tw`${slim ? 'h-24' : 'h-30'
-            }  w-full rounded-t-lg justify-end bg-slate-900`}
+            }  w-full rounded-t-lg justify-end bg-zinc-800`}
         >
           <BlurView tint="dark" style={tw` px-2 py-0.5`}>
             <View
@@ -118,13 +118,13 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
           )}
 
           {(pilot?.upgrades?.length || 0) > 0 && (
-            <Text style={tw`italic text-slate-500 dark:text-slate-400`}>
+            <Text style={tw`italic text-zinc-500 dark:text-zinc-400`}>
               {pilot?.upgrades?.map((u) => u.sides[0].title).join(', ')}
             </Text>
           )}
 
           {(pilot?.upgrades?.length || 0) === 0 && slim && (
-            <Text style={tw`italic text-slate-500 dark:text-slate-400`}>No upgrades equipped</Text>
+            <Text style={tw`italic text-zinc-500 dark:text-zinc-400`}>No upgrades equipped</Text>
           )}
         </View>
       </View>

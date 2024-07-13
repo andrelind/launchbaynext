@@ -21,7 +21,6 @@ export default {
         ? 'se.andrelind.launch-bay-2.dev'
         : 'se.andrelind.launch-bay-2',
       associatedDomains: ['applinks:launchbaynext.app'],
-      usesAppleSignIn: true,
     },
     android: {
       runtimeVersion: {

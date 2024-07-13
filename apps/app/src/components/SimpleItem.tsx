@@ -1,4 +1,4 @@
-import { Octicons } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 import React, { FC, ReactNode } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { useTailwind } from '../helpers/tailwind';
@@ -44,7 +44,7 @@ export const SimpleItem: FC<Props> = ({
           </View>
         </View>
         {!hideArrow && (
-          <Octicons name="chevron-right" size={20} color={'white'} />
+          <Feather name="chevron-right" size={20} color={'white'} />
         )}
       </TouchableOpacity>
       {children}

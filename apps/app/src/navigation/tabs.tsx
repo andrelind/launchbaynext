@@ -141,7 +141,7 @@ export const TabComponent: FC<{}> = () => {
 
   return (
     <Tab.Navigator
-      screenOptions={{ tabBarInactiveTintColor: tw.color('slate-600') }}
+      screenOptions={{ tabBarInactiveTintColor: tw.color('zinc-500') }}
     >
       <Tab.Screen
         name="OverviewStack"

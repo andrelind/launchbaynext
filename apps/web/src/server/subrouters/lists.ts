@@ -1,12 +1,10 @@
-// import { PrismaClient } from '@prisma/client';
-import { PrismaClient } from '@prisma/client';
+import { eq } from 'drizzle-orm';
 import { compareVersions } from 'lbn-core/src/helpers/versioning';
 import type { XWS } from 'lbn-core/src/types';
 import { z } from 'zod';
+import { db } from '../db';
+import { Lists } from '../drizzle/schema';
 import { protectedProcedure, router } from '../trpc';
-
-const prisma = new PrismaClient();
-// use `prisma` in your application to read and write data in your DBt()
 
 export const xwsZod = z.object({
   name: z.string(),
@@ -41,11 +39,7 @@ export const xwsZod = z.object({
 });
 
 const getUserLists = async (user: string) => {
-  return await prisma.lists.findMany({
-    where: {
-      UserId: user,
-    },
-  });
+  return db.query.Lists.findMany({ where: (l, { eq }) => eq(l.UserId, user) });
 };
 
 export const listRouter = router({
@@ -59,7 +53,9 @@ export const listRouter = router({
       const remove: string[] = [];
 
       for (const list of lists) {
-        const saved = await prisma.lists.findFirst({ where: { Id: list.id } });
+        const saved = await db.query.Lists.findFirst({
+          where: (l, { eq }) => eq(l.Id, list.id),
+        });
         if (!saved) {
           // Not saved on server, send it
           send.push(list.id);
@@ -91,52 +87,48 @@ export const listRouter = router({
       }
 
       // console.log({ send, get, remove });
-
       return { send, get, remove };
     }),
 
   all: protectedProcedure.query(async ({ ctx }) => {
-    return prisma.lists
-      .findMany({
-        where: { UserId: ctx.user.id, DeletedUtc: null },
-      })
-      .then((lists: any) => lists.map((list: any) => list.Xws as unknown as XWS));
+    return db.query.Lists.findMany({
+      where: (l, { eq, and, isNull }) =>
+        and(eq(l.UserId, ctx.user.id), isNull(l.DeletedUtc)),
+    }).then((lists) => lists.map((list) => list.Xws as unknown as XWS));
   }),
 
-  get: protectedProcedure
+  single: protectedProcedure
     .input(z.array(z.string()))
     .query(async ({ input, ctx }) => {
-      return prisma.lists
-        .findMany({
-          where: { UserId: ctx.user.id, Id: { in: input } },
-        })
-        .then((lists: any) => lists.map((list: any) => list.Xws as unknown as XWS));
+      return db.query.Lists.findFirst({
+        where: (l, { eq, and }) =>
+          and(eq(l.UserId, ctx.user.id), eq(l.Id, input[0])),
+      }).then((list) => list?.Xws as unknown as XWS);
     }),
 
   update: protectedProcedure
     .input(z.array(xwsZod))
     .mutation(async ({ input, ctx }) => {
       for (const xws of input) {
-        const list = await prisma.lists.findFirst({
-          where: { Id: xws.vendor.lbn.uid, UserId: ctx.user.id },
+        const list = await db.query.Lists.findFirst({
+          where: (l, { eq, and }) =>
+            and(eq(l.Id, xws.vendor.lbn.uid), eq(l.UserId, ctx.user.id)),
         });
         if (list) {
-          await prisma.lists.update({
-            where: { Id: list.Id },
-            data: {
+          await db
+            .update(Lists)
+            .set({
               Xws: xws,
-              UpdatedUtc: new Date(),
-            },
-          });
+              UpdatedUtc: new Date().toISOString(),
+            })
+            .where(eq(Lists.Id, list.Id));
         } else {
-          await prisma.lists.create({
-            data: {
-              Id: xws.vendor.lbn.uid,
-              UserId: ctx.user.id,
-              Xws: xws,
-              CreatedUtc: new Date(),
-              UpdatedUtc: new Date(),
-            },
+          await db.insert(Lists).values({
+            Id: xws.vendor.lbn.uid,
+            UserId: ctx.user.id,
+            Xws: xws,
+            CreatedUtc: new Date().toISOString(),
+            UpdatedUtc: new Date().toISOString(),
           });
         }
       }
@@ -146,12 +138,12 @@ export const listRouter = router({
     .input(z.array(z.string()))
     .mutation(async ({ input, ctx }) => {
       for (const id of input) {
-        await prisma.lists.update({
-          where: { Id: id },
-          data: {
-            DeletedUtc: new Date(),
-          },
-        });
+        await db
+          .update(Lists)
+          .set({
+            DeletedUtc: new Date().toISOString(),
+          })
+          .where(eq(Lists.Id, id));
       }
     }),
 });
