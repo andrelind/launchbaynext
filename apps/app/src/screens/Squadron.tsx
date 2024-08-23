@@ -11,11 +11,11 @@ import {
   ScrollView,
   Text,
   TouchableOpacity,
-  View
+  View,
+  useWindowDimensions
 } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
 import Dialog from 'react-native-dialog';
-import PagerView from 'react-native-pager-view';
 import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
 import { PilotListItem } from '../components/PilotListItem';
 import {
@@ -41,6 +41,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   const { uid } = route.params;
 
   const { tw } = useTailwind();
+  const { width } = useWindowDimensions()
 
   const { xws, setFormat, setRuleset, setName, setWins, setTies, setLosses, setTags } =
     xwsStore((s) => ({
@@ -54,7 +55,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
       setTags: s.setTags,
     }));
 
-  const pagerRef = useRef<PagerView>(null);
   const [page, setPage] = useState(0);
 
   const listRef = useRef<FlashList<EShip>>(null);
@@ -89,8 +89,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   //   setHasMissingItems(missingItems);
   // }, [available]);
 
-  console.log({ hasMissingItems });
-
   if (!xws) {
     return <View />;
   }
@@ -113,19 +111,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   //         },
   //       });
   //     }
-  //     case 'rename': {
-  //       Platform.OS === 'ios'
-  //         ? Alert.prompt(
-  //             'Change name',
-  //             'Please type in the new name of the squadron',
-  //             text => setName(uid, text),
-  //             undefined,
-  //             xws?.name !== 'New Squadron' ? xws?.name : undefined,
-  //           )
-  //         : setShowRename(true);
-  //       return;
-  //     }
-  //   }
   // }, componentId);
 
   useLayoutEffect(() => {
@@ -212,7 +197,24 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
           title={xws?.ruleset || 'xwa'}
           color={blue}
           onPress={() => {
-            xws?.ruleset === 'xwa' ? setRuleset(uid, 'legacy') : setRuleset(uid, 'xwa');
+            Alert.alert('Change ruleset', 'Do you want to change the ruleset?', [
+              {
+                text: 'X-Wing Alliance',
+                onPress: () => setRuleset(uid, 'xwa'),
+              },
+              {
+                text: '2.0 Legacy',
+                onPress: () => setRuleset(uid, 'legacy'),
+              },
+              {
+                text: 'AMG',
+                onPress: () => setRuleset(uid, 'amg'),
+              },
+              {
+                text: 'Cancel',
+                style: 'cancel',
+              }
+            ]);
           }}
         />
       </View>
@@ -356,7 +358,14 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
     <View style={tw`flex flex-1`}>
       {renderHeader()}
 
-      <ScrollView style={tw`flex-1`} horizontal pagingEnabled showsHorizontalScrollIndicator={false}>
+      <ScrollView style={tw`flex-1`} horizontal pagingEnabled showsHorizontalScrollIndicator={false}
+        onScroll={e => {
+          if (e.nativeEvent.contentOffset.x > (width / 2)) {
+            setPage(1)
+          } else {
+            setPage(0)
+          }
+        }}>
         <View style={tw`w-screen`}>
           <FlashList
             ref={listRef}
@@ -364,7 +373,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
             data={ships || []}
             estimatedItemSize={138}
             keyExtractor={(l: EShip) => l.key}
-            contentContainerStyle={tw`p-1`}
+            contentContainerStyle={tw`px-2 py-2`}
             renderItem={({ item, index }) => (
               <TouchableOpacity
                 activeOpacity={0.8}
@@ -403,7 +412,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
       </View>
 
       <TouchableOpacity
-        style={tw`bg-orange-500 h-14 w-14 rounded-full absolute bottom-4 right-2 items-center justify-center`}
+        style={tw`bg-orange-500 h-12 w-12 rounded-full absolute bottom-4 right-2 items-center justify-center`}
         onPress={async () => {
           navigation.navigate('SelectModal', {
             screen: 'SelectShip',
@@ -411,7 +420,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
           });
         }}
       >
-        <Feather name="plus" size={44} color="white" />
+        <Feather name="plus" color={'white'} size={36} />
       </TouchableOpacity>
 
       <Dialog.Container visible={showRename}>

@@ -40,7 +40,14 @@ export default {
       favicon: './assets/favicon.png',
     },
     updates: { url: 'https://u.expo.dev/ef07a76c-686b-488d-a99c-41839da38ffc' },
-    plugins: ['expo-camera', 'expo-apple-authentication', 'expo-font'],
+    plugins: [
+      [
+        'expo-camera',
+        { cameraPermission: 'Allow $(PRODUCT_NAME) to access your camera' },
+      ],
+      'expo-apple-authentication',
+      'expo-font',
+    ],
     extra: {
       eas: {
         projectId: 'ef07a76c-686b-488d-a99c-41839da38ffc',

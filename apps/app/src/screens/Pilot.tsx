@@ -111,7 +111,7 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
 
   return (
     <ScrollView
-      contentContainerStyle={tw`mt-2 gap-y-2`}
+      contentContainerStyle={tw`mt-2 gap-y-2 pb-2`}
       showsVerticalScrollIndicator={false}
     >
       <Animated.View entering={FadeInUp} style={tw`flex-1 mx-2`}>

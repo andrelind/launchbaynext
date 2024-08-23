@@ -8,53 +8,63 @@ export const collectionStore = create<CollectionState>()(
   persist(
     (set, get) => ({
       expansions: {},
-      setExpansions: (expansions) => {
+      setExpansions: (expansions, sync) => {
         set({ expansions });
-        const { ships, pilots, upgrades } = get();
-        saveCollectionOnServer({
-          expansions,
-          ships,
-          pilots,
-          upgrades,
-        });
+
+        if (sync) {
+          const { ships, pilots, upgrades } = get();
+          saveCollectionOnServer({
+            expansions,
+            ships,
+            pilots,
+            upgrades,
+          });
+        }
       },
 
       pilots: {},
-      setPilots: (pilots) => {
+      setPilots: (pilots, sync) => {
         set({ pilots });
 
-        const { expansions, ships, upgrades } = get();
-        saveCollectionOnServer({
-          expansions,
-          ships,
-          pilots,
-          upgrades,
-        });
+        if (sync) {
+          const { expansions, ships, upgrades } = get();
+          saveCollectionOnServer({
+            expansions,
+            ships,
+            pilots,
+            upgrades,
+          });
+        }
       },
 
       ships: {},
-      setShips: (ships) => {
+      setShips: (ships, sync) => {
         set({ ships });
 
-        const { expansions, pilots, upgrades } = get();
-        saveCollectionOnServer({
-          expansions,
-          ships,
-          pilots,
-          upgrades,
-        });
+        if (sync) {
+          const { expansions, pilots, upgrades } = get();
+          saveCollectionOnServer({
+            expansions,
+            ships,
+            pilots,
+            upgrades,
+          });
+        }
       },
 
       upgrades: {},
-      setUpgrades: (upgrades) => {
+      setUpgrades: (upgrades, sync) => {
         set({ upgrades });
-        const { expansions, ships, pilots } = get();
-        saveCollectionOnServer({
-          expansions,
-          ships,
-          pilots,
-          upgrades,
-        });
+
+        if (sync) {
+          const { expansions, ships, pilots } = get();
+          saveCollectionOnServer({
+            expansions,
+            ships,
+            pilots,
+            upgrades,
+          });
+        }
       },
     }),
     {

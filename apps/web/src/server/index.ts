@@ -4,10 +4,10 @@ import { ServerClient } from 'postmark';
 import { v4 } from 'uuid';
 import { z } from 'zod';
 import { db } from './db';
-import { Lists, UserLoginCodes, Users } from './drizzle/schema';
+import { Collections, Games, Lists, Participants, Tournaments, UserLoginCodes, Users } from './drizzle/schema';
 import { collectionRouter } from './subrouters/collection';
 import { listRouter } from './subrouters/lists';
-import { publicProcedure, router } from './trpc';
+import { protectedProcedure, publicProcedure, router } from './trpc';
 
 export const appRouter = router({
   hello: publicProcedure.query(async () => {
@@ -139,6 +139,31 @@ export const appRouter = router({
       ctx.resHeaders.getSetCookie();
       return token;
     }),
+
+  deleteAccount: protectedProcedure.mutation(async ({ ctx }) => {
+    const user = ctx.user;
+    if (!user) {
+      throw new Error('User not found');
+    }
+
+    const tournaments = await db.query.Tournaments.findMany({
+      where: (t, { eq }) => eq(t.CreatorId, user.id),
+    });
+
+    await Promise.all(
+      tournaments.map(async (t) => {
+        await db.delete(Games).where(eq(Games.TournamentId, t.Id));
+        await db.delete(Participants).where(eq(Tournaments.Id, t.Id));
+        await db.delete(Tournaments).where(eq(Tournaments.Id, t.Id));
+      })
+    );
+
+    await db.delete(Collections).where(eq(Collections.UserId, user.id));
+    await db.delete(Lists).where(eq(Lists.UserId, user.id));
+    await db.delete(UserLoginCodes).where(eq(UserLoginCodes.UserId, user.id));
+    await db.delete(Users).where(eq(Users.Id, user.id));
+  }
+  ),
 
   collection: collectionRouter,
   lists: listRouter,

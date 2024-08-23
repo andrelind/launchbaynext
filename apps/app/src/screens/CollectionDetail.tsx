@@ -233,7 +233,7 @@ export const CollectionDetailScreen: FC<Props> = ({ route, navigation }) => {
                 } else {
                   exp[xws] = nv;
                 }
-                set(exp);
+                set(exp, true);
               }}
             >
               <Octicons name="dash" size={30} style={tw`text-black dark:text-white`} />
@@ -249,7 +249,7 @@ export const CollectionDetailScreen: FC<Props> = ({ route, navigation }) => {
                 } else {
                   exp[xws] = nv;
                 }
-                set(exp);
+                set(exp, true);
               }}
             >
               <Octicons name="plus" size={30} style={tw`text-black dark:text-white`} />

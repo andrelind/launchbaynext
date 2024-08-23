@@ -1,13 +1,9 @@
-import { parseJSON } from 'date-fns';
 
 import { systemStore } from '../stores/system';
 import {
   CollectionState,
-  SystemState,
-  TournamentResponse,
-  TournamentState,
   XWS,
-  XWSState,
+  XWSState
 } from '../stores/types';
 import { smooth } from './animation';
 import { trpc } from './trpc';
@@ -25,7 +21,6 @@ export interface CollectionResponse extends CollectionRequest {
 
 export const syncWithServer = async (
   xwsState: XWSState,
-  tournamentState: TournamentState,
   collectionState: CollectionState
 ) => {
   const { token } = systemStore.getState();
@@ -42,7 +37,7 @@ export const syncWithServer = async (
 
     const { get: toGet, send, remove } = await trpc.lists.sync.query(body);
 
-    const got: XWS[] = await trpc.lists.get.query(toGet);
+    const got: XWS[] = await trpc.lists.multiple.query(toGet);
     await trpc.lists.update.mutate(
       local.filter((l) => send.includes(l.vendor.lbn.uid))
     );
@@ -55,6 +50,11 @@ export const syncWithServer = async (
       ),
       ...got,
     ];
+    final.forEach((l) => {
+      if (!l.ruleset) {
+        l.ruleset = l.points > 100 ? 'legacy' : 'xwa';
+      }
+    });
 
     smooth();
     xwsState.setLists(final);
@@ -64,42 +64,12 @@ export const syncWithServer = async (
 
   try {
     const fromServer = await trpc.collection.get.query();
-    collectionState.setExpansions(fromServer.expansions);
-    collectionState.setShips(fromServer.ships);
-    collectionState.setPilots(fromServer.pilots);
-    collectionState.setUpgrades(fromServer.upgrades);
+    collectionState.setExpansions(fromServer.expansions, false);
+    collectionState.setShips(fromServer.ships, false);
+    collectionState.setPilots(fromServer.pilots, false);
+    collectionState.setUpgrades(fromServer.upgrades, false);
   } catch (error) {
     console.log(error, 'collection');
-  }
-
-  try {
-    const local = tournamentState.tournaments || [];
-    const body = local.map((l) => ({ id: l.id, version: l.version }));
-
-    const {
-      get: toGet,
-      send,
-      remove,
-    } = await trpc.tournaments.sync.query(body);
-
-    const got = await trpc.tournaments.get.query(toGet);
-    await trpc.tournaments.update.mutate(
-      local
-        .filter((l) => send.includes(l.id))
-        .map((l) => ({ ...l, date: parseJSON(l.date) }))
-    );
-
-    const final = [
-      ...local
-        .filter((l) => !remove.includes(l.id))
-        .filter((l) => !toGet.includes(l.id)),
-      ...got,
-    ];
-
-    smooth();
-    tournamentState.setTournaments(final);
-  } catch (error) {
-    console.log(error, 'tournaments');
   }
 };
 
@@ -142,34 +112,3 @@ export const saveCollectionOnServer = async (req: CollectionRequest) => {
   }
 };
 
-export const saveTournamentOnServer = async (
-  state: SystemState,
-  l: TournamentResponse
-) => {
-  const token = state.token;
-  if (!token) {
-    return;
-  }
-
-  try {
-    await trpc.tournaments.update.mutate([{ ...l, date: parseJSON(l.date) }]);
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-export const removeTournamentOnServer = async (
-  state: SystemState,
-  id: string
-) => {
-  const token = state.token;
-  if (!token) {
-    return;
-  }
-
-  try {
-    await trpc.tournaments.remove.mutate([id]);
-  } catch (error) {
-    console.log(error);
-  }
-};

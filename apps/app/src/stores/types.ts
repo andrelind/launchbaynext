@@ -24,7 +24,7 @@ export type XWS = {
   version: string;
   obstacles?: string[];
   pilots: PilotXWS[];
-  ruleset: 'legacy' | 'xwa';
+  ruleset: RuleSet;
   vendor: {
     lbn: {
       builder?: string;
@@ -167,14 +167,14 @@ export type TournamentState = {
 
 export type CollectionState = {
   expansions: { [s: string]: number };
-  setExpansions: (e: { [s: string]: number }) => void;
+  setExpansions: (e: { [s: string]: number }, sync: boolean) => void;
 
   pilots: { [s: string]: number };
-  setPilots: (e: { [s: string]: number }) => void;
+  setPilots: (e: { [s: string]: number }, sync: boolean) => void;
 
   ships: { [s: string]: number };
-  setShips: (e: { [s: string]: number }) => void;
+  setShips: (e: { [s: string]: number }, sync: boolean) => void;
 
   upgrades: { [s: string]: number };
-  setUpgrades: (e: { [s: string]: number }) => void;
+  setUpgrades: (e: { [s: string]: number }, sync: boolean) => void;
 };

@@ -8,6 +8,8 @@ export type ModalStackParams = {
 
 export type OverviewStackParams = {
   Overview: undefined;
+  Login: undefined;
+  Account: undefined;
 };
 
 export type SelectStackParams = {

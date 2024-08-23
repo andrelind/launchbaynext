@@ -30,11 +30,13 @@ export const SquadronComponent: FC<Props<XWS>> = ({
   isActive,
   onPress,
 }) => {
-  console.log('Render squadron', item.name);
+  console.log('Render squadron', item.vendor.lbn.uid, item.name,);
   const { tw } = useTailwind();
   const { copySquadron, removeSquadron } = xwsStore(selector);
 
-  const all = item.pilots.map((p) => p.id);
+  if (!item) return null;
+
+  const all = item?.pilots.map((p) => p.id);
   const fullCount = [...new Set(all)].map((u) => ({
     xws: u,
     count: all.filter((a) => a === u).length,
@@ -42,7 +44,7 @@ export const SquadronComponent: FC<Props<XWS>> = ({
 
   const pNames = fullCount
     .map((u) => {
-      const pilot = item.pilots.find((p) => p.id === u.xws);
+      const pilot = item?.pilots?.find((p) => p.id === u.xws);
       if (!pilot) {
         return '';
       }
@@ -94,10 +96,10 @@ export const SquadronComponent: FC<Props<XWS>> = ({
 
         <View style={tw`flex flex-1`}>
           <View style={tw`flex-row justify-between`}>
-            <View style={tw`flex-row`}>
+            <View style={tw`flex-row gap-x-2 items-end`}>
               <Text style={tw`font-semibold dark:text-white`}>{item.name}</Text>
               {(item.vendor.lbn.wins > 0 || item.vendor.lbn.losses > 0) && (
-                <Text style={tw`text-xs`}>
+                <Text style={tw`text-xs dark:text-white`}>
                   {item.vendor.lbn.wins} / {item.vendor.lbn.losses}
                 </Text>
               )}
@@ -108,22 +110,15 @@ export const SquadronComponent: FC<Props<XWS>> = ({
             {pNames}
           </Text>
           <View style={tw`flex-row items-center justify-between`}>
-            <ShipFont icons={item.pilots.map((p) => p.ship)} size={6} />
+            <ShipFont icons={item?.pilots?.map((p) => p.ship)} size={6} />
 
-            {/* {item.vendor.lbn.tags && item.vendor.lbn.tags.length > 0 && (
-              <View row marginT-5 style={styles.wrap}>
+            {item.vendor.lbn.tags && item.vendor.lbn.tags.length > 0 && (
+              <View style={tw``}>
                 {item.vendor.lbn.tags.map(tag => (
-                  <Chip
-                    key={tag}
-                    label={tag}
-                    margin-2
-                    containerStyle={styles.chip}
-                    labelStyle={styles.chipLabel}
-                    size={20}
-                  />
+                  <Text key={tag} style={tw`text-xs`}>{tag}</Text>
                 ))}
               </View>
-            )} */}
+            )}
           </View>
         </View>
       </View>

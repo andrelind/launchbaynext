@@ -10,6 +10,7 @@ export const xwsZod = z.object({
   name: z.string(),
   description: z.string().optional(),
   format: z.string(),
+  ruleset: z.string().optional(),
   faction: z.string(),
   points: z.number(),
   version: z.string(),
@@ -104,6 +105,16 @@ export const listRouter = router({
         where: (l, { eq, and }) =>
           and(eq(l.UserId, ctx.user.id), eq(l.Id, input[0])),
       }).then((list) => list?.Xws as unknown as XWS);
+    }),
+
+  multiple: protectedProcedure
+    .input(z.array(z.string()))
+    .query(async ({ input, ctx }) => {
+      if (input.length === 0) return []
+      return db.query.Lists.findMany({
+        where: (l, { eq, and, inArray }) =>
+          and(eq(l.UserId, ctx.user.id), inArray(l.Id, input)),
+      }).then((lists) => lists?.map(list => list?.Xws as unknown as XWS));
     }),
 
   update: protectedProcedure

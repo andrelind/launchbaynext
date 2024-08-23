@@ -30,7 +30,8 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
     navigation.setOptions({
       headerSearchBarOptions: {
         placeholder: 'Search',
-        textColor: 'white',
+        textColor: 'black',
+        barTintColor: 'white',
         hideWhenScrolling: false,
         onChangeText: (e) => setNeedle(e.nativeEvent.text.toLowerCase()),
       },
@@ -42,17 +43,12 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
       return [];
     }
 
-    // const fShips: ShipType[] = [];
     const fPilots: TShip[] = [];
     const fUpgrades: UpgradeBase[] = [];
 
     factions.forEach((faction) => {
       Object.keys(assets[ruleset].pilots[faction]).forEach((key) => {
         const ship: ShipType = assets[ruleset].pilots[faction][key];
-        // if (ship.name.toLowerCase().includes(needle)) {
-        //   fShips.push(ship);
-        // }
-
         const filtered = ship.pilots.filter(
           (p) =>
             p.name.toLowerCase().includes(needle) ||
@@ -105,7 +101,6 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
     });
 
     return [
-      // ...fShips.map((ship) => ({ ship })),
       ...fPilots.map((pilot) => ({ pilot })),
       ...fUpgrades.map((upgrade) => ({ upgrade })),
     ];
@@ -117,44 +112,7 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
 
     return (
       <View>
-        {/* {ship && (
-          <View enableShadow={false} paddingH-8 paddingB-8 row flex>
-            <View flex>
-              <View flex marginL-5>
-                <View row spread centerV>
-                  <Image
-                    style={styles.icon}
-                    source={{ uri: ship.icon || ' ' }}
-                    // resizeMode={Image.Image.re}
-                  />
-                  <Text text80M>{ship.name || ' '}</Text>
-                </View>
-              </View>
-
-              <View row spread centerV>
-                <ShipStats stats={ship?.stats} />
-                <Dial dial={ship?.dial} />
-                <ActionsComponent actions={ship.actions} />
-              </View>
-
-              {ship?.ability && (
-                <View
-                  flex
-                  marginT-8
-                  backgroundColor={'#1E2228'}
-                  paddingV-8
-                  paddingH-9
-                  br30
-                >
-                  <Text text80M>{ship?.ability?.name}</Text>
-                  <FormattedText text80 text={ship?.ability?.text} />
-                </View>
-              )}
-            </View>
-          </View>
-        )} */}
-
-        {pilot && <PilotListItem key={`${p.xws}_${pilot.xws}`} pilot={pilot} />}
+        {pilot && <PilotListItem key={`${p.xws}_${pilot.xws}`} pilot={pilot} ship={{ ...ship!, pointsWithUpgrades: 0 }} ruleset={ruleset} />}
 
         {upgrade && (
           <UpgradeComponent

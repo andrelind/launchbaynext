@@ -300,6 +300,7 @@ export const xwsStore = create<XWSState>()(
             const edit: XWS = JSON.parse(JSON.stringify(l));
 
             edit.ruleset = ruleset;
+            edit.points = pointsForSquadron2(edit);
             edit.version = bumpMinor(edit.version || '2.5.0');
 
             saveListOnServer(edit);

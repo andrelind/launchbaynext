@@ -4,12 +4,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { FC } from 'react';
 
 import { useTailwind } from '../helpers/tailwind';
+import { AccountScreen } from '../screens/Account';
 import CollectionScreen from '../screens/Collection';
 import CollectionDetailScreen from '../screens/CollectionDetail';
 import CounterScreen from '../screens/Counter';
 import DatabaseScreen from '../screens/Database';
 import ImageScreen from '../screens/Image';
 import LoadoutsScreen from '../screens/Loadouts';
+import { LoginScreen } from '../screens/Login';
 import MissingItemsScreen from '../screens/MissingItems';
 import { OverviewScreen } from '../screens/Overview';
 import PilotScreen from '../screens/Pilot';
@@ -35,10 +37,16 @@ const OverviewStackComponent = () => {
         name="Overview"
         component={OverviewScreen}
         options={{
-          title: '',
-          headerTransparent: true,
-          headerTitleStyle: { color: 'transparent' },
+          headerShown: true,
         }}
+      />
+      <OverviewStack.Screen
+        name="Login"
+        component={LoginScreen}
+      />
+      <OverviewStack.Screen
+        name="Account"
+        component={AccountScreen}
       />
     </OverviewStack.Navigator>
   );

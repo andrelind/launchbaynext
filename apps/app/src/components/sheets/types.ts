@@ -1,6 +1,8 @@
 import { SheetDefinition } from "react-native-actions-sheet";
 import { CreateSquadronSheetProps, CreateSquadronSheetReturn } from "./createSquadron";
+import { FilterSquadronsSheetProps, FilterSquadronsSheetReturn } from "./filterSquadron";
 import { PilotActionSheetProps, PilotActionSheetReturn } from "./pilotActions";
+import { ScanQRCodeSheetProps, ScanQRCodeSheetReturn } from "./scanQRCode";
 import { SelectFormatSheetProps, SelectFormatSheetReturn } from "./selectFormat";
 import { SelectObstaclesSheetProps, SelectObstaclesSheetReturn } from "./selectObstacles";
 
@@ -9,6 +11,10 @@ declare module 'react-native-actions-sheet' {
         CreateSquadronSheet: SheetDefinition<{
             payload: CreateSquadronSheetProps;
             returnValue: CreateSquadronSheetReturn;
+        }>;
+        FilterSquadronsSheet: SheetDefinition<{
+            payload: FilterSquadronsSheetProps;
+            returnValue: FilterSquadronsSheetReturn;
         }>;
         PilotActionSheet: SheetDefinition<{
             payload: PilotActionSheetProps;
@@ -21,6 +27,10 @@ declare module 'react-native-actions-sheet' {
         SelectObstaclesSheet: SheetDefinition<{
             payload: SelectObstaclesSheetProps;
             returnValue: SelectObstaclesSheetReturn;
+        }>;
+        ScanQRCodeSheet: SheetDefinition<{
+            payload: ScanQRCodeSheetProps;
+            returnValue: ScanQRCodeSheetReturn;
         }>;
     }
 }

@@ -1,6 +1,5 @@
 import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { FlashList } from '@shopify/flash-list';
 import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
 import {
   Alert,
@@ -12,7 +11,9 @@ import {
   View
 } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
-import SquadronComponent from '../components/SquadronComponent';
+import DraggableFlatList from 'react-native-draggable-flatlist';
+import SquadronComponent from '../components/Squadron';
+import { move } from '../helpers/misc';
 import { pilotName } from '../helpers/names';
 import { useTailwind } from '../helpers/tailwind';
 import { FilterState, filterStore } from '../stores/filter';
@@ -46,20 +47,18 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
   const [stateLists, setStateLists] = useState(lists);
   const [needle, setNeedle] = useState<string>('');
 
-  // useNavigationSearchBarUpdate(e => {
-  //   setNeedle(e.text?.toLowerCase());
-  // }, componentId);
-
   useLayoutEffect(() => {
     navigation.setOptions({
       headerSearchBarOptions: {
-
         placeholder: 'Search',
+        textColor: tw.prefixMatch('dark') ? tw.color('white') : tw.color('black'),
+        barTintColor: tw.prefixMatch('dark') ? tw.color('zinc-800') : tw.color('white'),
         onChangeText: (t) => setNeedle(t?.nativeEvent.text.toLowerCase()),
       },
       headerLeft: () => (
         <TouchableOpacity
           onPress={() => {
+            SheetManager.show('FilterSquadronsSheet');
             // navigation.navigate('Filter');
           }}
           style={tw`mr-2`}
@@ -110,36 +109,6 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
       return true;
     });
 
-  // const renderHeader = useCallback(
-  //   () => (
-  //     <View row paddingB-8>
-  //       <Button
-  //         flex
-  //         backgroundColor={'transparent'}
-  //         text70M
-  //         label={'Filter'}
-  //         iconSource={() => <FunnelIcon stroke={blue} />}
-  //         onPress={
-  //           () => {}
-  //           // Navigation.showModal({ component: { name: 'Filter' } })
-  //         }
-  //       />
-  //       <Button
-  //         flex
-  //         backgroundColor={'transparent'}
-  //         text70M
-  //         label={'Sort'}
-  //         iconSource={() => <BarsArrowDownIcon stroke={blue} />}
-  //         onPress={
-  //           () => {}
-  //           // Navigation.showModal({ component: { name: 'Sorting' } })
-  //         }
-  //       />
-  //     </View>
-  //   ),
-  //   [],
-  // );
-
   return (
     <SafeAreaView style={tw`flex-1`}>
       {Platform.OS === 'android' && (
@@ -157,23 +126,40 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
         </View>
       )}
 
-      <FlashList
-        contentContainerStyle={tw`p-2`}
+      <DraggableFlatList
+        contentContainerStyle={tw`py-2 px-2`}
         data={filtered || []}
         keyExtractor={(l: XWS) => l.vendor.lbn.uid}
-        estimatedItemSize={87}
+        onDragBegin={() => {
+
+        }}
+        onDragEnd={({ from, to }: any) => {
+          if (from !== to) {
+            setFirstSorting('Custom');
+            setSecondSorting('Custom');
+          }
+
+          if (filtered && stateLists) {
+            const index = stateLists?.indexOf(filtered[from]);
+            const delta = to - from;
+            const newLists = move(stateLists, index, index + delta);
+            setStateLists(newLists);
+            setLists([...newLists]);
+          }
+        }}
         ListEmptyComponent={() => (
           <View style={tw`items-center justify-center flex-1 h-screen`}>
             <Text style={tw`text-zinc-500 text-lg`}>No squadrons found</Text>
           </View>
         )}
-        renderItem={({ item }) => (
+        renderItem={({ item, drag }) => (
           <SquadronComponent
             key={item.vendor.lbn.uid}
             item={item}
             onPress={() => {
               navigation.navigate('Squadron', { uid: item.vendor.lbn.uid });
             }}
+            drag={drag}
           />
         )}
       />
@@ -187,14 +173,33 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
                 text: 'X-Wing Alliance',
                 onPress: async () => {
                   const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'xwa' } });
-                  uid && navigation.navigate('Squadron', { uid });
+                  if (uid === 'scanQR') {
+                    SheetManager.show('ScanQRCodeSheet');
+                  } else if (uid) {
+                    navigation.navigate('Squadron', { uid });
+                  }
                 }
               },
               {
                 text: '2.0 Legacy',
                 onPress: async () => {
                   const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'legacy' } });
-                  uid && navigation.navigate('Squadron', { uid });
+                  if (uid === 'scanQR') {
+
+                  } else if (uid) {
+                    navigation.navigate('Squadron', { uid });
+                  }
+                }
+              },
+              {
+                text: 'AMG',
+                onPress: async () => {
+                  const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'amg' } });
+                  if (uid === 'scanQR') {
+                    SheetManager.show('ScanQRCodeSheet');
+                  } else if (uid) {
+                    navigation.navigate('Squadron', { uid });
+                  }
                 }
               },
               {

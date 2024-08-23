@@ -403,7 +403,7 @@ export type XWS = {
   version: string;
   obstacles?: string[];
   pilots: PilotXWS[];
-  ruleset: 'legacy' | 'xwa';
+  ruleset: RuleSet;
   vendor: {
     lbn: {
       builder?: string;

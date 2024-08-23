@@ -1,15 +1,9 @@
-import ffgXws from 'lbn-core/src/assets/ffg-xws';
+import { factionFromKey, keyFromFaction, keyFromObstacle, obstacleFromKey } from 'lbn-core/src/helpers/convert';
 import { slotKeys } from 'lbn-core/src/helpers/enums';
-import { SlotKey } from 'lbn-core/src/types';
+import { loadShip2 } from 'lbn-core/src/helpers/loading';
+import { PilotXWS, SlotKey, XWS } from 'lbn-core/src/types';
 import { v4 as uuid } from 'uuid';
-import { PilotXWS, XWS } from '../stores/xws';
-import {
-  factionFromKey,
-  keyFromFaction,
-  keyFromObstacle,
-  obstacleFromKey,
-} from './convert';
-import { loadShip2 } from './loading';
+
 
 const rep = (c: string, t: string, d: string | number) => {
   if (typeof d === 'number') {

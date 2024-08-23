@@ -1,5 +1,5 @@
 import { importFromClipboard } from '@/src/helpers/import';
-import Clipboard from 'expo-clipboard';
+import * as Clipboard from 'expo-clipboard';
 import { RuleSet } from 'lbn-core/src';
 import { factionFromKey } from 'lbn-core/src/helpers/convert';
 import { factionKeys } from 'lbn-core/src/helpers/enums';
@@ -29,7 +29,7 @@ const CreateSquadronSheet = ({
     <ActionSheet id={sheetId} useBottomSafeAreaPadding>
       <View style={tw`flex-row`}>
         <TouchableOpacity
-          style={tw`px-3 py-2 flex-1 items-center`}
+          style={tw`px-3 py-3 flex-1 items-center`}
           onPress={async () => {
             const clipboard = await Clipboard.getStringAsync();
             console.log({ clipboard });
@@ -61,22 +61,22 @@ const CreateSquadronSheet = ({
             }
           }}
         >
-          {/* <ClipboardIcon color={'black'} /> */}
           <Text style={tw`text-black`}>Import from clipboard</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={tw`px-3 py-2 flex-1 items-center`}
+        {/* <TouchableOpacity
+          style={tw`px-3 py-3 flex-1 items-center`}
           onPress={async () => {
-            //   await Navigation.dismissModal(componentId);
-            //   onQRCode();
+            await SheetManager.hide(sheetId);
+            setTimeout(() => {
+              SheetManager.show('ScanQRCodeSheet', { payload });
+            }, 300);
           }}
         >
-          <View>{/* <QrCodeIcon color={'black'} /> */}</View>
           <Text style={{ color: 'black' }}>Import from QR</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <View />
       </View>
-      <View style={tw`mt-2 pt-2 border-t mx-3 border-gray-300 flex-row`}>
+      <View style={tw`pt-2 border-t mx-3 border-gray-300 flex-row`}>
         <View style={tw`flex flex-1`}>
           {factionKeys.slice(0, 4).map((f) => (
             <TouchableOpacity

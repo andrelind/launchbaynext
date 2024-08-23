@@ -15,7 +15,6 @@ import './components/sheets';
 import { syncWithServer } from './helpers/api';
 import { useTailwind } from './helpers/tailwind';
 import { collectionStore } from './stores/collection';
-import { tournamentStore } from './stores/tournaments';
 import { xwsStore } from './stores/xws';
 import { green, orange, red, yellow } from './theme';
 
@@ -41,7 +40,6 @@ const runUpdates = async () => {
 
   await syncWithServer(
     xwsStore.getState(),
-    tournamentStore.getState(),
     collectionStore.getState()
   );
 };
@@ -50,6 +48,10 @@ xwsStore.subscribe(state => {
   if (!state.loaded) {
     // Reload all lists at startup to clean and recount points
     const lists = xwsStore.getState().lists?.map(l => {
+      if (!l.ruleset) {
+        l.ruleset = 'xwa';
+      }
+
       const pilots = l.pilots
         .filter(p => {
           try {
