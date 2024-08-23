@@ -1,6 +1,7 @@
-
-// import ffgXws from '../assets/ffg-xws';
-import { Faction, SquadronXWS } from '../types';
+import { v4 as uuid } from 'uuid';
+import { manifest } from '../assets/manifest';
+import { Faction, SlotKey, SquadronXWS } from '../types';
+import { slotKeys } from './enums';
 
 const rep = (c: string, t: string, d: string) => {
   while (d.indexOf(c) >= 0) {
@@ -36,100 +37,106 @@ export const getFactionKey = (faction: Faction) => {
 };
 
 export const serialize = (o: SquadronXWS) => {
-  // const lbx = [
-  //   rep("'", '', encodeURIComponent(o.name)),
-  //   o.cost,
-  //   getKeyByValue(ffgXws.factions, o.faction),
-  //   o.format === 'Extended' ? 0 : 1,
-  //   ...o.pilots.map((p) => {
-  //     const upgrades: (string | number)[][] = [];
-  //     slotKeys.forEach((key) => {
-  //       const up = p.upgrades && p.upgrades[key];
-  //       if (up && up.length > 0) {
-  //         upgrades.push([
-  //           getKeyByValue(ffgXws.slots, key),
-  //           ...((p.upgrades && p.upgrades[key]) || []).map((u) =>
-  //             getKeyByValue(ffgXws.upgrades, u)
-  //           ),
-  //         ]);
-  //       }
-  //     });
+  const lbx = [
+    rep("'", '', encodeURIComponent(o.name)),
+    o.cost,
+    getKeyByValue(manifest.factions, o.faction),
+    o.format === 'Extended' ? 0 : 1,
+    ...o.pilots.map((p) => {
+      const upgrades: (string | number)[][] = [];
+      slotKeys.forEach((key) => {
+        const up = p.upgrades && p.upgrades[key];
+        if (up && up.length > 0) {
+          upgrades.push([
+            getKeyByValue(manifest.slots, key),
+            ...((p.upgrades && p.upgrades[key]) || []).map((u) =>
+              getKeyByValue(manifest.upgrades, u)
+            ),
+          ]);
+        }
+      });
 
-  //     const data = [
-  //       getKeyByValue(ffgXws.ships, p.ship),
-  //       getKeyByValue(ffgXws.pilots, p.name),
-  //     ];
+      const data = [
+        getKeyByValue(manifest.ships, p.ship),
+        // @ts-expect-error
+        getKeyByValue(manifest.pilots, p.name || p.id),
+      ];
 
-  //     if (upgrades.length > 0) {
-  //       return [...data, ...upgrades];
-  //     }
-  //     return data;
-  //   }),
-  // ];
+      if (upgrades.length > 0) {
+        return [...data, ...upgrades];
+      }
+      return data;
+    }),
+  ];
 
-  // let d = JSON.stringify(lbx);
-  // d = rep(',', '.', d);
-  // d = rep('[', 'l', d);
-  // d = rep(']', 'r', d);
-  // d = rep('"', "'", d);
-  // d = d.substring(1, d.length - 1);
+  let d = JSON.stringify(lbx);
+  d = rep(',', '.', d);
+  d = rep('[', 'l', d);
+  d = rep(']', 'r', d);
+  d = rep('"', "'", d);
+  d = d.substring(1, d.length - 1);
 
-  // return d;
+  return d;
 };
 
 export const deserialize = (o: string, uid?: string): SquadronXWS | void => {
   // New format, replace "l with (" and "r with )"
-  // o = o
-  //   .split('.')
-  //   .map((s, i) => {
-  //     if (i > 2) {
-  //       return rep('l', '(', rep('r', ')', s));
-  //     }
-  //     return s;
-  //   })
-  //   .join('.');
-  // o = rep('.', ',', o);
+  o = o
+    .split('.')
+    .map((s, i) => {
+      if (i > 2) {
+        return rep('l', '(', rep('r', ')', s));
+      }
+      return s;
+    })
+    .join('.');
+  o = rep('.', ',', o);
 
-  // o = rep('(', '[', o);
-  // o = rep(')', ']', o);
-  // o = rep("'", '"', o);
-  // o = rep('""', '"', o);
+  o = rep('(', '[', o);
+  o = rep(')', ']', o);
+  o = rep("'", '"', o);
+  o = rep('""', '"', o);
 
-  // if (o[0] !== '[') {
-  //   o = `[${o}]`;
-  // }
+  if (o[0] !== '[') {
+    o = `[${o}]`;
+  }
 
-  // const d = JSON.parse(o);
-  // const [name, cost, faction, format, ...pilots] = d;
+  const d = JSON.parse(o);
+  const [name, cost, faction, format, ...pilots] = d;
 
-  // const xws: SquadronXWS = {
-  //   uid: uid || uuid(),
-  //   name: decodeURIComponent(name),
-  //   cost: parseInt(cost),
-  //   faction: ffgXws.factions[faction],
-  //   favourite: false,
-  //   format: parseInt(format) === 1 ? 'Standard' : 'Extended',
-  //   pilots: pilots.map((p: any) => {
-  //     const [ship, name, ...upgrades] = p;
-  //     const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
-  //     (upgrades || []).forEach((u: any) => {
-  //       const [key, ...list] = u;
-  //       parsedUpgrades[ffgXws.slots[key]] = list.map(
-  //         (l: string) => ffgXws.upgrades[l] || l
-  //       );
-  //     });
+  const xws: SquadronXWS = {
+    uid: uid || uuid(),
+    name: decodeURIComponent(name),
+    cost: parseInt(cost),
+    // @ts-expect-error
+    faction: manifest.factions[faction],
+    favourite: false,
+    format: parseInt(format) === 1 ? 'Standard' : 'Extended',
+    pilots: pilots.map((p: any) => {
+      const [ship, name, ...upgrades] = p;
+      const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
+      (upgrades || []).forEach((u: any) => {
+        const [key, ...list] = u;
+        // @ts-expect-error
+        parsedUpgrades[manifest.slots[key]] = list.map(
+          // @ts-expect-error
+          (l: string) => manifest.upgrades[l] || l
+        );
+      });
 
-  //     return {
-  //       uid: uuid(),
-  //       ship: ffgXws.ships[ship] || ship,
-  //       name: ffgXws.pilots[name] || name,
-  //       upgrades: parsedUpgrades,
-  //     };
-  //   }),
-  //   version: '2.0.0',
-  // };
+      return {
+        uid: uuid(),
+        // @ts-expect-error
+        ship: manifest.ships[ship] || ship,
+        // @ts-expect-error
+        name: manifest.pilots[name] || name,
+        upgrades: parsedUpgrades,
+      };
+    }),
+    version: '2.0.0',
+  };
 
-  // return xws;
+  return xws;
 };
 
 export const serializeXWS = (o: SquadronXWS) => {

@@ -1,9 +1,7 @@
 import { v4 as uuid } from 'uuid';
-import { assets } from '../';
-// import xwsMap from '../assets/ffg-xws';
-// import upgradeData from '../assets/upgrades';
 import { RuleSet } from '..';
-import { Faction, FactionKey, SlotKey, Squadron, SquadronXWS, XWS } from '../types';
+import { assets } from '../';
+import { Faction, FactionKey, SlotKey, Squadron, SquadronXWS } from '../types';
 import { xwsFromSquadron } from './convert';
 import { slotKeys } from './enums';
 import { deserialize, getFactionKey, serialize } from './serializer';
@@ -222,8 +220,10 @@ export const exportAsXws = (squadron: Squadron) => {
       });
 
       return {
-        id: p.name,
+        // @ts-expect-error
+        id: p.name || p.id,
         ship: p.ship,
+        // @ts-expect-error
         points: p.cost || 0,
         upgrades,
       };
@@ -311,102 +311,9 @@ export const importFromQR = (data: any, skipParse: boolean = false) => {
   }
 };
 
-export const convertFromFFG = (ffgSquad: any) => {
-  // console.log(ffgSquad);
-  // const {
-  //   faction,
-  //   // id = '',
-  //   description = '',
-  //   name = '',
-  //   deck = [],
-  //   cost = 0,
-  //   game_format,
-  // } = ffgSquad;
 
-  // const pilots = deck.map(
-  //   (
-  //     {
-  //       pilot_card = {},
-  //       slots = [],
-  //       cost = 0,
-  //     }: { pilot_card: any; slots: any[]; cost: any },
-  //     index: number
-  //   ) => {
-  //     const { id: pilotId, name: pilotName = '', ship_type } = pilot_card;
-  //     const xwsId = xwsMap.pilots[pilotId];
-  //     if (!xwsId) {
-  //       throw new Error(
-  //         `Unknown pilot with ID "${pilotId}" (name: "${pilotName}") in ship ${index + 1
-  //         }`
-  //       );
-  //     }
-  //     const ship = xwsMap.ships[ship_type];
-  //     const upgrades: { [key in SlotKey]?: string[] } = {};
-  //     slots.forEach(
-  //       ({ upgrade_types, id: upgradeId, name: upgradeName = '' }) => {
-  //         const slotId = upgrade_types[0];
-  //         let slot = xwsMap.slots[`${slotId}`];
-  //         // console.log({ slot });
-  //         if (!slot) {
-  //           throw new Error(
-  //             `Unknown slot with ID "${slotId}" for upgrade "${upgradeName}"`
-  //           );
-  //         }
-  //         const upgradeXwsID = xwsMap.upgrades[upgradeId];
-  //         // console.log({ upgradeXwsID });
-  //         if (!upgradeXwsID) {
-  //           throw new Error(
-  //             `Unknown upgrade with ID "${upgradeId}" (name: "${upgradeName}") for pilot ${pilotName}`
-  //           );
-  //         }
 
-  //         // Fix for FFG mismatch
-  //         if (
-  //           upgradeXwsID === 'calibratedlasertargeting' &&
-  //           slot === 'modification'
-  //         ) {
-  //           slot = 'configuration';
-  //         }
-
-  //         if (!Array.isArray(upgrades[slot])) {
-  //           upgrades[slot] = [];
-  //         }
-  //         const u = upgrades[slot];
-  //         u && u.push(upgradeXwsID);
-  //       }
-  //     );
-
-  //     const result = {
-  //       uid: uuid(),
-  //       name: xwsId,
-  //       upgrades,
-  //       cost,
-  //       ship,
-  //     };
-
-  //     return result;
-  //   }
-  // );
-
-  // const parsedFaction: Faction = xwsMap.factions[faction.id];
-
-  // const xws = {
-  //   uid: uuid(),
-  //   name,
-  //   description,
-  //   pilots,
-  //   cost,
-  //   favourite: false,
-  //   format: game_format.name,
-  //   faction: parsedFaction,
-  //   version: '2.0.0',
-  // };
-
-  // // console.log(xws);
-  // return xws;
-};
-
-export const xwsFromString = async (text: string): Promise<XWS | void> => {
+export const xwsFromString = async (text: string): Promise<SquadronXWS | void> => {
   try {
     if (text.indexOf('https://launchbaynext.app') === 0) {
       const { searchParams } = new URL(text);
