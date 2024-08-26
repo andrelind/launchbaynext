@@ -1,10 +1,11 @@
 import { v4 as uuid } from 'uuid';
 import { RuleSet } from '..';
 import { assets } from '../';
-import { Faction, FactionKey, SlotKey, Squadron, SquadronXWS } from '../types';
-import { xwsFromSquadron } from './convert';
+import { FactionKey, SlotKey, SquadronXWS, XWS } from '../types';
+import { getFaction } from './convert';
 import { slotKeys } from './enums';
-import { deserialize, getFactionKey, serialize } from './serializer';
+import { loadShip2 } from './loading';
+import { deserialize, serialize } from './serializer';
 
 const cleanText = (text?: string) => {
   return text?.replace(/ *\([^)]*\) */g, '');
@@ -147,37 +148,6 @@ export const canImportXws = (data: string): SquadronXWS => {
   }
 };
 
-export const getFaction = (faction: string): Faction => {
-  switch (faction) {
-    case 'rebel':
-    case 'rebelalliance':
-      return 'Rebel Alliance';
-
-    case 'scumandvillainy':
-    case 'scum':
-      return 'Scum and Villainy';
-
-    case 'galacticempire':
-    case 'imperial':
-      return 'Galactic Empire';
-
-    case 'resistance':
-      return 'Resistance';
-
-    case 'firstorder':
-      return 'First Order';
-
-    case 'galacticrepublic':
-      return 'Galactic Republic';
-
-    case 'separatistalliance':
-      return 'Separatist Alliance';
-
-    default:
-      return 'Rebel Alliance';
-  }
-};
-
 export type ExportXWS = {
   name: string;
   description: string;
@@ -199,16 +169,16 @@ export type ExportXWS = {
   };
 };
 
-export const exportAsXws = (squadron: Squadron) => {
-  const xws = xwsFromSquadron(squadron);
+export const exportAsXws = (xws: XWS) => {
   const link = serialize(xws);
 
-  const e: ExportXWS = {
+  const e = {
     name: xws.name,
     description: xws.description || '',
-    faction: getFactionKey(xws.faction),
-    points: xws.cost,
-    version: xws.version || '2.0.0',
+    faction: xws.faction,
+    points: xws.points,
+    version: xws.version || '2.5.0',
+    obstacles: xws.obstacles?.map((o) => o.replace('obstacle-', '')),
     pilots: xws.pilots.map((p) => {
       const upgrades: { [s: string]: string[] } = {};
       Object.keys(p.upgrades || {}).map((key) => {
@@ -220,11 +190,9 @@ export const exportAsXws = (squadron: Squadron) => {
       });
 
       return {
-        // @ts-expect-error
-        id: p.name || p.id,
+        id: p.id,
         ship: p.ship,
-        // @ts-expect-error
-        points: p.cost || 0,
+        points: p.points || 0,
         upgrades,
       };
     }),
@@ -233,6 +201,7 @@ export const exportAsXws = (squadron: Squadron) => {
         builder: 'Launch Bay Next',
         builder_url: 'https://launchbaynext.app',
         link: `https://launchbaynext.app/print?lbx=${link}`,
+        ...xws.vendor.lbn,
       },
     },
   };
@@ -240,11 +209,14 @@ export const exportAsXws = (squadron: Squadron) => {
   return JSON.stringify(e);
 };
 
-export const exportAsText = (squadron: Squadron) => {
+export const exportAsText = (squadron: XWS) => {
   let text = `${squadron.name}\n`;
 
-  squadron.ships.map((ship) => {
-    text += `\n(${ship.pilot.cost}) ${ship.pilot.name} [${ship.name}]`;
+  squadron.pilots.map((p) => {
+    const ship = loadShip2(p, { faction: squadron.faction, format: squadron.format, ruleset: squadron.ruleset });
+    if (!ship) return;
+
+    text += `\n(${ship!.pilot!.cost}) ${ship!.pilot!.name} [${ship.name}]`;
 
     slotKeys.forEach((key) => {
       const up = ship.upgrades && ship.upgrades[key];
@@ -257,18 +229,19 @@ export const exportAsText = (squadron: Squadron) => {
     text += `\nPoints: ${ship.pointsWithUpgrades}\n`;
   });
 
-  text += `\nTotal points: ${squadron.cost}`;
+  text += `\nTotal points: ${squadron.points}`;
   return text;
 };
 
-export const exportAsTTS = (squadron: Squadron) => {
+export const exportAsTTS = (squadron: XWS) => {
   let text = '';
 
-  squadron.ships.map((ship) => {
-    text += ship.pilot.name;
+  squadron.pilots?.map((pilot) => {
+    const s = loadShip2(pilot, { faction: squadron.faction, format: squadron.format, ruleset: squadron.ruleset });
 
+    text += s.pilot?.name;
     slotKeys.forEach((key) => {
-      const up = ship.upgrades && ship.upgrades[key];
+      const up = s.upgrades && s.upgrades[key];
       if (up) {
         up.forEach((u) => {
           text += ` + ${cleanText(u.sides[0].title)}`;
@@ -276,15 +249,15 @@ export const exportAsTTS = (squadron: Squadron) => {
       }
     });
     text += ' / ';
-  });
+  })
 
   return text;
 };
 
-export const exportAsQR = (squadron: Squadron) => {
-  const xws = xwsFromSquadron(squadron);
-  return serialize(xws);
-};
+// export const exportAsQR = (squadron: Squadron) => {
+//   const xws = xwsFromSquadron(squadron);
+//   return serialize(xws);
+// };
 
 export const importFromQR = (data: any, skipParse: boolean = false) => {
   try {
@@ -313,7 +286,7 @@ export const importFromQR = (data: any, skipParse: boolean = false) => {
 
 
 
-export const xwsFromString = async (text: string): Promise<SquadronXWS | void> => {
+export const xwsFromString = async (text: string): Promise<XWS | void> => {
   try {
     if (text.indexOf('https://launchbaynext.app') === 0) {
       const { searchParams } = new URL(text);

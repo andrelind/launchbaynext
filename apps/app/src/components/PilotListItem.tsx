@@ -74,7 +74,7 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
               <View style={tw`flex flex-row items-center`}>
                 <View>
                   <Text style={tw`ml-2 font-bold text-right text-white`}>
-                    {ruleset === 'legacy' ? ship?.pointsWithUpgrades : pilot?.cost}
+                    {ruleset.includes('legacy') ? ship?.pointsWithUpgrades : pilot?.cost}
                   </Text>
 
                   {pilot.loadout !== undefined &&

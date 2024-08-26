@@ -414,7 +414,7 @@ export type XWS = {
       ties: number;
       losses: number;
       tags: string[];
-      created: string;
+      created: Date;
     };
   };
 };

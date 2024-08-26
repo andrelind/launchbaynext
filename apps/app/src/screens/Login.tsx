@@ -84,12 +84,10 @@ export const LoginScreen: FC<Props> = ({ navigation }) => {
     }, [url]);
 
     return (
-        <View style={tw`w-full gap-y-3 px-2`}>
-            <Text style={tw`px-2 text-center text-2xl font-semibold`}>
-                Welcome to Launch Bay Next!
-            </Text>
+        <View style={tw`w-full gap-y-3 p-2`}>
             <Text style={tw`px-2 text-center text-xs text-zinc-400`}>
                 {!waitingForLink ? 'Enter your email to get started' : 'Fill in the code we sent you'}
+                {!waitingForLink && '\nIf you previously had an account via Facebook, Google or Apple, please use the same email address to log in, and your data will be merged into the new account.'}
             </Text>
             {!waitingForLink && (
                 <View

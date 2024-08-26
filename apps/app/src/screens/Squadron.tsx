@@ -18,6 +18,7 @@ import { SheetManager } from 'react-native-actions-sheet';
 import Dialog from 'react-native-dialog';
 import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
 import { PilotListItem } from '../components/PilotListItem';
+import { ExportSquadronSheetId } from '../components/sheets/exportSquadron';
 import {
   PilotActionSheetId
 } from '../components/sheets/pilotActions';
@@ -138,6 +139,14 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
               style={tw`text-primary-500`}
               size={24}
             />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={tw`p-2`}
+            onPress={() => {
+              SheetManager.show(ExportSquadronSheetId, { payload: { xws } });
+            }}
+          >
+            <Feather name="share" style={tw`text-primary-500`} size={24} />
           </TouchableOpacity>
         </View>
       ),

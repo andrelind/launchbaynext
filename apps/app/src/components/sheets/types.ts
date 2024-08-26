@@ -1,5 +1,6 @@
 import { SheetDefinition } from "react-native-actions-sheet";
 import { CreateSquadronSheetProps, CreateSquadronSheetReturn } from "./createSquadron";
+import { ExportSquadronSheetProps, ExportSquadronSheetReturn } from "./exportSquadron";
 import { FilterSquadronsSheetProps, FilterSquadronsSheetReturn } from "./filterSquadron";
 import { PilotActionSheetProps, PilotActionSheetReturn } from "./pilotActions";
 import { ScanQRCodeSheetProps, ScanQRCodeSheetReturn } from "./scanQRCode";
@@ -11,6 +12,10 @@ declare module 'react-native-actions-sheet' {
         CreateSquadronSheet: SheetDefinition<{
             payload: CreateSquadronSheetProps;
             returnValue: CreateSquadronSheetReturn;
+        }>;
+        ExportSquadronSheet: SheetDefinition<{
+            payload: ExportSquadronSheetProps;
+            returnValue: ExportSquadronSheetReturn;
         }>;
         FilterSquadronsSheet: SheetDefinition<{
             payload: FilterSquadronsSheetProps;

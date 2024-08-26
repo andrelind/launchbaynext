@@ -67,13 +67,13 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
             {ship?.pilot?.name}
           </Text>
 
-          {xws?.ruleset === 'legacy' && (
+          {xws?.ruleset.includes('legacy') && (
             <Text style={tw`text-sm text-gray-300 -mt-1`}>
               {`${(xws?.points)}/200`}
             </Text>
           )}
 
-          {xws?.ruleset === 'xwa' && !ship?.pilot?.standardLoadout && (
+          {xws?.ruleset.includes('xwa') || xws?.ruleset.includes('amg') && !ship?.pilot?.standardLoadout && (
             <Text style={tw`text-sm text-zinc-300 -mt-1`}>
               {`Loadout ${(ship?.pointsWithUpgrades || 0) - (ship?.pilot?.cost || 0)
                 }/${ship?.pilot?.loadout}`}
@@ -164,7 +164,7 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
 
                   <View style={tw`flex flex-row items-center bg-transparent`}>
                     <Text style={tw`ml-2 font-bold text-right text-white`}>
-                      {xws?.ruleset === 'legacy' ? ship?.pointsWithUpgrades : ship?.pilot?.cost}
+                      {xws?.ruleset.includes('legacy') ? ship?.pointsWithUpgrades : ship?.pilot?.cost}
                     </Text>
                   </View>
                 </View>

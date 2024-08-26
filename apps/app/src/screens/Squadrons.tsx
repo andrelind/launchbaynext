@@ -40,12 +40,15 @@ const filterSel = (s: FilterState) => ({
 export const SquadronsScreen: FC<Props> = ({ navigation }) => {
   const { tw } = useTailwind();
 
-  const { lists, setLists, addSquadron } = xwsStore(xwsSel);
+  const { lists, setLists } = xwsStore(xwsSel);
   const { filters, tags, setFirstSorting, setSecondSorting } =
     filterStore(filterSel);
 
   const [stateLists, setStateLists] = useState(lists);
   const [needle, setNeedle] = useState<string>('');
+
+  console.log(tw.color('orange-500'));
+
 
   useLayoutEffect(() => {
     navigation.setOptions({

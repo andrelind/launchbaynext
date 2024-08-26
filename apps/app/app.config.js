@@ -11,7 +11,7 @@ export default {
     splash: {
       image: './assets/splash.png',
       resizeMode: 'contain',
-      backgroundColor: '#ffffff',
+      backgroundColor: '#09090b',
     },
     assetBundlePatterns: ['**/*'],
     ios: {
@@ -29,7 +29,7 @@ export default {
       package: IS_DEV ? 'com.launchbaynext.dev' : 'com.launchbaynext',
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#09090b',
       },
       permissions: [
         'android.permission.CAMERA',

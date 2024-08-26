@@ -83,7 +83,7 @@ const CreateSquadronSheet = ({
               key={f}
               style={tw`px-3 py-2 items-center`}
               onPress={async () => {
-                const item = addSquadron(f, payload?.ruleset === 'legacy' ? 'Extended' : 'Standard', payload?.ruleset || 'xwa');
+                const item = addSquadron(f, payload?.ruleset.includes('legacy') ? 'Extended' : 'Standard', payload?.ruleset || 'xwa');
                 SheetManager.hide(sheetId, {
                   payload: item.vendor.lbn.uid,
                 });

@@ -1,7 +1,9 @@
 import { v4 as uuid } from 'uuid';
 import { manifest } from '../assets/manifest';
-import { Faction, SlotKey, SquadronXWS } from '../types';
+import { Faction, PilotXWS, SlotKey, SquadronXWS, XWS } from '../types';
+import { factionFromKey, keyFromFaction, keyFromObstacle, obstacleFromKey } from './convert';
 import { slotKeys } from './enums';
+import { loadShip2 } from './loading';
 
 const rep = (c: string, t: string, d: string) => {
   while (d.indexOf(c) >= 0) {
@@ -36,20 +38,24 @@ export const getFactionKey = (faction: Faction) => {
   }
 };
 
-export const serialize = (o: SquadronXWS) => {
+export const serialize = (o?: XWS) => {
+  if (!o) {
+    return;
+  }
+
   const lbx = [
     rep("'", '', encodeURIComponent(o.name)),
-    o.cost,
-    getKeyByValue(manifest.factions, o.faction),
+    o.points,
+    getKeyByValue(manifest.factions, factionFromKey(o.faction)),
     o.format === 'Extended' ? 0 : 1,
-    ...o.pilots.map((p) => {
+    o.pilots.map((p) => {
       const upgrades: (string | number)[][] = [];
       slotKeys.forEach((key) => {
-        const up = p.upgrades && p.upgrades[key];
+        const up = p.upgrades && p.upgrades[key as SlotKey];
         if (up && up.length > 0) {
           upgrades.push([
             getKeyByValue(manifest.slots, key),
-            ...((p.upgrades && p.upgrades[key]) || []).map((u) =>
+            ...((p.upgrades && p.upgrades[key as SlotKey]) || []).map((u) =>
               getKeyByValue(manifest.upgrades, u)
             ),
           ]);
@@ -58,8 +64,7 @@ export const serialize = (o: SquadronXWS) => {
 
       const data = [
         getKeyByValue(manifest.ships, p.ship),
-        // @ts-expect-error
-        getKeyByValue(manifest.pilots, p.name || p.id),
+        getKeyByValue(manifest.pilots, p.id),
       ];
 
       if (upgrades.length > 0) {
@@ -67,6 +72,7 @@ export const serialize = (o: SquadronXWS) => {
       }
       return data;
     }),
+    o.obstacles?.map((p) => keyFromObstacle(p)) || [],
   ];
 
   let d = JSON.stringify(lbx);
@@ -79,7 +85,7 @@ export const serialize = (o: SquadronXWS) => {
   return d;
 };
 
-export const deserialize = (o: string, uid?: string): SquadronXWS | void => {
+export const deserialize = (o: string, uid?: string): XWS => {
   // New format, replace "l with (" and "r with )"
   o = o
     .split('.')
@@ -102,39 +108,75 @@ export const deserialize = (o: string, uid?: string): SquadronXWS | void => {
   }
 
   const d = JSON.parse(o);
-  const [name, cost, faction, format, ...pilots] = d;
+  const [squadName, cost, faction, format, pilots, obstacles, ...rest] = d;
 
-  const xws: SquadronXWS = {
-    uid: uid || uuid(),
-    name: decodeURIComponent(name),
-    cost: parseInt(cost),
-    // @ts-expect-error
-    faction: manifest.factions[faction],
-    favourite: false,
-    format: parseInt(format) === 1 ? 'Standard' : 'Extended',
-    pilots: pilots.map((p: any) => {
-      const [ship, name, ...upgrades] = p;
+  // @ts-expect-error
+  const fa = keyFromFaction(manifest.factions[faction]);
+  const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
+
+  const getPilots = () => {
+    if (Array.isArray(pilots[0]) || pilots.length === 0) {
+      return pilots;
+    } else {
+      return [pilots, obstacles, ...rest];
+    }
+  };
+
+  const xws: XWS = {
+    name: decodeURIComponent(squadName),
+    description: '',
+    points: parseInt(cost, 10),
+    faction: fa,
+    format: fo,
+    ruleset: 'xwa',
+    obstacles: Array.isArray(pilots[0])
+      ? obstacles?.map((p: any) => obstacleFromKey(p))
+      : undefined,
+    pilots: getPilots().map((p: any): PilotXWS => {
+      const [dShip, dId, ...upgrades] = p;
+      const ship = rep(']', 'r', rep('[', 'l', dShip));
+      const id = rep(']', 'r', rep('[', 'l', dId));
+
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
         // @ts-expect-error
-        parsedUpgrades[manifest.slots[key]] = list.map(
+        parsedUpgrades[manifest.slots[key]] = list.map((l: string) => {
+          const xws = rep(']', 'r', rep('[', 'l', l));
           // @ts-expect-error
-          (l: string) => manifest.upgrades[l] || l
-        );
+          return manifest.upgrades[xws] || xws;
+        });
       });
 
-      return {
-        uid: uuid(),
+      const pp = {
         // @ts-expect-error
-        ship: manifest.ships[ship] || ship,
+        id: manifest.pilots[`${id}`] || id,
         // @ts-expect-error
-        name: manifest.pilots[name] || name,
+        ship: manifest.ships[`${ship}`] || ship,
+        points: 0,
         upgrades: parsedUpgrades,
       };
+
+      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: 'xwa' });
+      return {
+        ...pp,
+        points: s.pilot?.cost || 0,
+      };
     }),
-    version: '2.0.0',
+    version: '3.0.0',
+    vendor: {
+      lbn: {
+        uid: uid || uuid(),
+        wins: 0,
+        ties: 0,
+        losses: 0,
+        tags: [],
+        created: new Date(),
+      },
+    },
   };
+
+  // console.log({ xws: JSON.stringify(xws) });
 
   return xws;
 };

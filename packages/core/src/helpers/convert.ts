@@ -55,6 +55,37 @@ export const factionFromKey = (key: FactionKey) => {
   }
 };
 
+export const getFaction = (faction: string): Faction => {
+  switch (faction) {
+    case 'rebel':
+    case 'rebelalliance':
+      return 'Rebel Alliance';
+
+    case 'scumandvillainy':
+    case 'scum':
+      return 'Scum and Villainy';
+
+    case 'galacticempire':
+    case 'imperial':
+      return 'Galactic Empire';
+
+    case 'resistance':
+      return 'Resistance';
+
+    case 'firstorder':
+      return 'First Order';
+
+    case 'galacticrepublic':
+      return 'Galactic Republic';
+
+    case 'separatistalliance':
+      return 'Separatist Alliance';
+
+    default:
+      return 'Rebel Alliance';
+  }
+};
+
 export const obstacles = [
   'coreasteroid0',
   'coreasteroid1',

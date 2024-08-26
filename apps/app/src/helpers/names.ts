@@ -1,6 +1,6 @@
 
 import { RuleSet, assets } from 'lbn-core/src';
-import { getFaction } from 'lbn-core/src/helpers/import+export';
+import { getFaction } from 'lbn-core/src/helpers/convert';
 import { FactionKey, PilotXWS, SlotKey } from 'lbn-core/src/types';
 
 let pilots: { [s: string]: string } = {};

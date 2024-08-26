@@ -10,6 +10,7 @@ import React, { FC, useCallback, useLayoutEffect, useState } from 'react';
 import { Text, View } from 'react-native';
 import { v4 as uuid } from 'uuid';
 import { PilotListItem } from '../components/PilotListItem';
+import { SegmentedControl } from '../components/SegmentedControl';
 import { UpgradeComponent } from '../components/Upgrade';
 import { useTailwind } from '../helpers/tailwind';
 import { darkgrey } from '../theme';
@@ -18,6 +19,8 @@ import { DatabaseStackParams } from '../types/navigation';
 type Props = NativeStackScreenProps<DatabaseStackParams, 'Database'>;
 
 type Data = { ship?: ShipType; pilot?: TShip; upgrade?: UpgradeBase };
+
+const segments = ['xwa', 'legacy', 'amg'] as RuleSet[];
 
 export const DatabaseScreen: FC<Props> = ({ navigation }) => {
   const { tw } = useTailwind();
@@ -30,8 +33,8 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
     navigation.setOptions({
       headerSearchBarOptions: {
         placeholder: 'Search',
-        textColor: 'black',
-        barTintColor: 'white',
+        textColor: tw.prefixMatch('dark') ? tw.color('white') : tw.color('black'),
+        barTintColor: tw.prefixMatch('dark') ? tw.color('zinc-800') : tw.color('white'),
         hideWhenScrolling: false,
         onChangeText: (e) => setNeedle(e.nativeEvent.text.toLowerCase()),
       },
@@ -112,7 +115,7 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
 
     return (
       <View>
-        {pilot && <PilotListItem key={`${p.xws}_${pilot.xws}`} pilot={pilot} ship={{ ...ship!, pointsWithUpgrades: 0 }} ruleset={ruleset} />}
+        {pilot && <PilotListItem key={`${p.xws}_${pilot.xws}`} pilot={pilot} ship={{ ...ship!, pointsWithUpgrades: pilot?.cost }} ruleset={ruleset} />}
 
         {upgrade && (
           <UpgradeComponent
@@ -146,6 +149,12 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
       data={data}
       renderItem={renderItem}
       ItemSeparatorComponent={() => <View style={tw`h-2`} />}
+      ListHeaderComponent={() => (
+        <SegmentedControl segments={['XWA', 'Legacy', 'AMG']} selectedSegment={segments.indexOf(ruleset)} onChange={(index) => {
+          setRuleset(segments[index] as RuleSet);
+        }} />
+      )
+      }
       ListEmptyComponent={() => (
         <View style={tw`flex items-center justify-center p-2 h-100`}>
           {/* <MagnifyingGlassIcon size={50} color={darkgrey} /> */}
