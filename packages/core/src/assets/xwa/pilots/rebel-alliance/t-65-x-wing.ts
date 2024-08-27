@@ -535,11 +535,11 @@ const t: ShipType = {
     },
     {
       name: 'Kendy Idele',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       initiative: 4,
       limited: 1,
       cost: 4,
-      xws: 'kenidyidele-battleoverendor',
+      xws: 'kendyidele-battleoverendor',
       standardLoadout: [
         'itsatrap-battleoverendor',
         'modifiedr4punit-battleoverendor',
@@ -557,6 +557,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Wedge Antilles',

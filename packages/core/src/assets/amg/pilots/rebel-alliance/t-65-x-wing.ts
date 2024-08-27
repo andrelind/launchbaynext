@@ -529,7 +529,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 4,
-      xws: 'kenidyidele-battleoverendor',
+      xws: 'kendyidele-battleoverendor',
       standardLoadout: [
         'itsatrap-battleoverendor',
         'modifiedr4punit-battleoverendor',

@@ -229,7 +229,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/netrempollard.png',
     },
     {
-      xws: 'adonfox',
+      xws: 'adonfox-battleoverendor',
       name: 'Adon Fox',
       caption: 'Battle over Endor',
       cost: 5,

@@ -346,7 +346,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 4,
-      xws: 'hortonsalm-Leader',
+      xws: 'hortonsalm-swz106',
       ability:
         'While you perform an attack, you may reroll 1 attack die for each other friendly ship at range 0-1 of the defender.',
       standardLoadout: ['ioncannonturret', 'proximitymines'],

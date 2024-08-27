@@ -231,10 +231,10 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/netrempollard.png',
     },
     {
-      xws: 'adonfox',
+      xws: 'adonfox-battleoverendor',
       name: 'Adon Fox',
-      caption: 'Battle over Endor',
-      cost: 5,
+      caption: 'Battle Over Endor',
+      cost: 4,
       initiative: 1,
       limited: 1,
       ability: 'While you defend, if you are stressed, roll 1 additional die.',
@@ -272,6 +272,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/adonfox-battleoverendor.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/adonfox-battleoverendor.png',
+      loadout: 0,
     },
     {
       xws: 'braylenstramm-battleoverendor',
