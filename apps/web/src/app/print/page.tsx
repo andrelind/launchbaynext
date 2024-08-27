@@ -11,7 +11,7 @@ import Logo from '../../components/logo';
 type Props = {};
 
 const PrintPage: NextPage<Props> = ({ }) => {
-  const queryLbx = useSearchParams().get('lbx');
+  const queryLbx = useSearchParams()?.get('lbx');
 
   const xws = queryLbx ? deserialize(queryLbx) : undefined;
 

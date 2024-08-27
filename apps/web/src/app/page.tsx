@@ -43,8 +43,8 @@ export type DataItem = {
 type Props = {};
 
 const MainPage = () => {
-  const queryLbx = useSearchParams().get('lbx');
-  const queryFaction = useSearchParams().get('faction');
+  const queryLbx = useSearchParams()?.get('lbx');
+  const queryFaction = useSearchParams()?.get('faction');
 
   // Either we get a squad from url or we create one
   const initialXws: XWS = queryLbx
