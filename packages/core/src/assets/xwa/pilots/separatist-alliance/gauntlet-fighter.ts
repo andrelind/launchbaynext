@@ -42,7 +42,7 @@ const t: ShipType = {
       ability:
         'Before a friendly ship at range 0-2 activates, you may spend 1 [Charge]. If you do, that ship may gain 1 strain token to remove 1 non-stress red or orange token.',
       cost: 6,
-      loadout: 12,
+      loadout: 8,
       initiative: 4,
       limited: 1,
       standard: true,
@@ -68,8 +68,8 @@ const t: ShipType = {
     {
       xws: 'previzsla',
       name: 'Pre Vizsla',
-      cost: 6,
-      loadout: 14,
+      cost: 7,
+      loadout: 20,
       initiative: 3,
       limited: 1,
       ability:
@@ -95,10 +95,10 @@ const t: ShipType = {
     {
       xws: 'deathwatchwarrior',
       name: 'Death Watch Warrior',
-      cost: 7,
-      loadout: 10,
+      cost: 6,
+      loadout: 15,
       initiative: 1,
-      limited: 0,
+      limited: 1,
       standard: true,
       extended: true,
       epic: true,

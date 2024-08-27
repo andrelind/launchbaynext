@@ -50,7 +50,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/howlrunner.png',
       artwork:
@@ -70,7 +70,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 4,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/maulermithel.png',
       artwork:
@@ -90,7 +90,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 4,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nightbeast.png',
       artwork:
@@ -105,12 +105,12 @@ const t: ShipType = {
       xws: 'scourgeskutu',
       ability:
         'While you perform an attack against a defender in your [Bullseye Arc], roll 1 additional attack die.',
-      slots: ['Talent'],
+      slots: ['Talent', 'Modification'],
       ffg: 82,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 3,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/scourgeskutu.png',
       artwork:
@@ -131,7 +131,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 5,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wampa.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
@@ -143,35 +143,37 @@ const t: ShipType = {
       cost: 2,
       xws: 'academypilot',
       text: 'The Galactic Empire uses the fast and agile TIE/ln, developed by Sienar Fleet Systems and produced in staggering quantity, as its primary starfighter.',
-      slots: [],
+      slots: ['Modification'],
       ffg: 92,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 0,
+      loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/academypilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/academypilot.png',
+      caption: '',
     },
     {
       name: 'Black Squadron Ace',
       initiative: 3,
       limited: 0,
-      cost: 2,
+      cost: 3,
       xws: 'blacksquadronace',
       text: 'The elite TIE/ln pilots of Black Squadron accompanied Darth Vader on a devastating strike against the Rebel forces at the Battle of Yavin.',
-      slots: [],
+      slots: ['Talent', 'Modification'],
       ffg: 90,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 0,
+      loadout: 14,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/blacksquadronace.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace.png',
+      caption: '',
     },
     {
       name: 'Del Meeko',
@@ -182,12 +184,12 @@ const t: ShipType = {
       xws: 'delmeeko',
       ability:
         'While a friendly ship at range 0-2 defends against a damaged attacker, the defender may reroll 1 defense die.',
-      slots: ['Talent', 'Cannon', 'Modification'],
+      slots: ['Cannon', 'Talent', 'Modification'],
       ffg: 85,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/delmeeko.png',
       artwork:
@@ -228,7 +230,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/idenversio.png',
       artwork:
@@ -241,7 +243,7 @@ const t: ShipType = {
       cost: 2,
       xws: 'obsidiansquadronpilot',
       text: "The TIE fighter's Twin Ion Engine system was designed for speed, making the TIE/ln one of the most maneuverable starships ever mass-produced.",
-      slots: [],
+      slots: ['Talent'],
       ffg: 91,
       standard: true,
       epic: true,
@@ -251,6 +253,8 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/obsidiansquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/obsidiansquadronpilot.png',
+      caption: '',
+      keywords: ['TIE'],
     },
     {
       name: 'Seyn Marana',
@@ -302,10 +306,10 @@ const t: ShipType = {
         'Before you engage, you may choose 1 enemy ship in your [Front Arc] at range 0-1. If you do, that ship gains 1 deplete or strain token of your choice unless it chooses to remove 1 green token.',
       slots: ['Talent', 'Illicit'],
       keywords: ['TIE'],
-      cost: 3,
+      cost: 4,
       standard: true,
       epic: true,
-      loadout: 5,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/isbjingoist.png',
       artwork:
@@ -320,19 +324,19 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       ability:
         'While an enemy ship at range 1-3 defends, before attack dice are rolled, you may spend 1 [Charge] and choose a friendly ship at range 0-1 of the defender. If you do, defense dice cannot be modified during this attack and the chosen friendly ship gains 1 strain token.',
-      slots: ['Talent', 'Missile', 'Illicit', 'Illicit', 'Modification'],
+      slots: ['Talent', 'Missile', 'Modification'],
       keywords: ['TIE'],
       cost: 4,
       standard: true,
       epic: true,
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/moffgideon.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/moffgideon.png',
     },
     {
-      name: 'Backstabber',
+      name: '“Backstabber”',
       caption: 'Battle of Yavin',
       initiative: 5,
       limited: 1,
@@ -351,9 +355,10 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/backstabber-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/backstabber.png',
+      loadout: 0,
     },
     {
-      name: 'Dark Curse',
+      name: '“Dark Curse”',
       caption: 'Battle of Yavin',
       initiative: 6,
       limited: 1,
@@ -370,6 +375,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/darkcurse-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darkcurse.png',
+      loadout: 0,
     },
     {
       name: '“Mauler” Mithel',
@@ -381,7 +387,7 @@ const t: ShipType = {
         'While you perform a primary attack, if a friendly Darth Vader or "Backstabber" is in your [Left Arc] or [Right Arc] at range 0-1, roll 1 additional attack die.',
       slots: [],
       keywords: ['TIE'],
-      cost: 3,
+      cost: 4,
       standard: true,
       epic: true,
       extended: true,
@@ -390,6 +396,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/maulermithel-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
+      loadout: 0,
     },
     {
       name: '“Wampa”',
@@ -410,6 +417,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/wampa-battleofyavin.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
+      loadout: 0,
     },
     {
       name: 'Magna Tolvan',
@@ -466,6 +474,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      caption: 'Inferno Leader',
+      loadout: 0,
     },
     {
       name: '“Night Beast”',
@@ -483,6 +493,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      caption: 'Obsidian Two',
+      loadout: 0,
     },
     {
       name: 'Valen Rudor',
@@ -500,10 +512,12 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      caption: 'Braggadocious Baron',
+      loadout: 0,
     },
     {
       name: 'Lieutenant Hebsly',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'lieutenanthebsly-battleoverendor',
       initiative: 3,
       limited: 1,
@@ -530,18 +544,15 @@ const t: ShipType = {
         },
         { difficulty: 'Red', type: 'Boost' },
       ],
-      // image:
-      //   'https://infinitearenas.com/xw2/images/quickbuilds/valenrudor-swz105.png',
-      // artwork:
-      //   'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Scythe 6',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'scythe6-battleoverendor',
       initiative: 2,
       limited: 1,
@@ -568,18 +579,15 @@ const t: ShipType = {
           linked: { difficulty: 'Red', type: 'Evade' },
         },
       ],
-      // image:
-      //   'https://infinitearenas.com/xw2/images/quickbuilds/valenrudor-swz105.png',
-      // artwork:
-      //   'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Major Mianda',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'majormianda-battleoverendor',
       initiative: 5,
       limited: 1,
@@ -602,14 +610,11 @@ const t: ShipType = {
         },
         { difficulty: 'Red', type: 'Coordinate' },
       ],
-      // image:
-      //   'https://infinitearenas.com/xw2/images/quickbuilds/valenrudor-swz105.png',
-      // artwork:
-      //   'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      loadout: 0,
     },
   ],
 };

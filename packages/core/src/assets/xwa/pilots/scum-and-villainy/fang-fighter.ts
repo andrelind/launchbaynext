@@ -56,11 +56,11 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       cost: 6,
-      loadout: 12,
+      loadout: 10,
       xws: 'fennrau',
       ability:
         'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
-      slots: ['Talent', 'Talent', 'Torpedo', 'Modification', 'Modification'],
+      slots: ['Talent', 'Talent', 'Modification', 'Modification', 'Torpedo'],
       ffg: 155,
       standard: true,
       epic: true,
@@ -84,7 +84,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Mandalorian'],
-      loadout: 7,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/joyrekkoff.png',
       artwork:
@@ -123,7 +123,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Mandalorian'],
-      loadout: 10,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/oldteroch.png',
       artwork:
@@ -141,12 +141,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Mandalorian'],
-      loadout: 6,
+      loadout: 5,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/skullsquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/skullsquadronpilot.png',
+      caption: '',
     },
     {
       name: 'Zealous Recruit',
@@ -155,16 +156,17 @@ const t: ShipType = {
       cost: 4,
       xws: 'zealousrecruit',
       text: "Mandalorian Fang fighter pilots must master the Concordia Faceoff maneuver, leveraging their ships' narrow attack profile to execute deadly head-on charges.",
-      slots: ['Modification', 'Modification'],
+      slots: ['Modification', 'Modification', 'Missile'],
       ffg: 160,
       standard: true,
       epic: true,
       keywords: ['Mandalorian'],
-      loadout: 5,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zealousrecruit.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/zealousrecruit.png',
+      caption: '',
     },
     {
       name: 'Mandalorian Royal Guard',
@@ -179,7 +181,7 @@ const t: ShipType = {
       cost: 4,
       standard: true,
       epic: true,
-      loadout: 7,
+      loadout: 4,
       extended: true,
       caption: 'Selfless Protector',
       image:
@@ -192,8 +194,8 @@ const t: ShipType = {
       caption: 'Direct Pressure',
       initiative: 3,
       limited: 1,
-      cost: 4,
-      loadout: 11,
+      cost: 5,
+      loadout: 16,
       xws: 'torphun',
       ability:
         'After you perform an attack, if the defender was destroyed, you may perform an action, even while stressed. Then you may gain 2 strain tokens to perform a bonus attack.',

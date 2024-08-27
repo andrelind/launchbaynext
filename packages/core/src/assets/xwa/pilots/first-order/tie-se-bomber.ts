@@ -58,7 +58,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       standard: true,
-      cost: 5,
+      cost: 4,
       slots: [
         'Talent',
         'Talent',
@@ -76,7 +76,7 @@ const t: ShipType = {
       caption: 'Ordnance Expert',
       keywords: ['TIE'],
       epic: true,
-      loadout: 18,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/breach.png',
       artwork:
@@ -105,7 +105,7 @@ const t: ShipType = {
       caption: 'Jad Bean',
       keywords: ['TIE'],
       epic: true,
-      loadout: 7,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/scorch_tiesebomber.png',
@@ -118,7 +118,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       standard: true,
-      cost: 3,
+      cost: 4,
       slots: [
         'Tech',
         'Torpedo',
@@ -135,7 +135,7 @@ const t: ShipType = {
       caption: 'Devotee of Devastation',
       ability:
         'After you reload, each ship in your [Bullseye Arc] gains 1 deplete token.',
-      loadout: 8,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dread.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dread.png',
@@ -148,8 +148,8 @@ const t: ShipType = {
       standard: true,
       cost: 4,
       slots: [
-        'Talent',
         'Tech',
+        'Talent',
         'Missile',
         'Gunner',
         'Device',
@@ -162,7 +162,7 @@ const t: ShipType = {
       caption: 'Hateful Harrier',
       keywords: ['TIE'],
       epic: true,
-      loadout: 15,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/grudge.png',
       artwork:
@@ -174,7 +174,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 0,
       standard: true,
-      cost: 4,
+      cost: 3,
       slots: [
         'Tech',
         'Torpedo',
@@ -188,11 +188,12 @@ const t: ShipType = {
       ffg: 917,
       keywords: ['TIE'],
       epic: true,
-      loadout: 7,
+      loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/firstordercadet.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/firstordercadet.png',
+      caption: '',
     },
     {
       name: 'Sienar-Jaemus Test Pilot',
@@ -200,18 +201,19 @@ const t: ShipType = {
       initiative: 2,
       limited: 0,
       standard: true,
-      cost: 4,
+      cost: 3,
       slots: ['Tech', 'Tech', 'Missile', 'Device', 'Device', 'Modification'],
       text: 'Equipped with four laser cannons and advanced systems, the TIE/se bomber is a remarkably maneuverable craft that brings devastating ordnance to bear against any who dare to stand against the First Order.',
       ffg: 918,
       keywords: ['TIE'],
       epic: true,
-      loadout: 8,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/sienarjaemustestpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sienarjaemustestpilot.png',
+      caption: '',
     },
     {
       name: 'Jul Jerjerrod',
@@ -224,8 +226,8 @@ const t: ShipType = {
       },
       standard: true,
       extended: true,
-      cost: 4,
-      loadout: 13,
+      cost: 3,
+      loadout: 7,
       slots: [
         'Tech',
         'Talent',

@@ -62,7 +62,7 @@ const t: ShipType = {
       ],
       cost: 8,
       ffg: 800,
-      loadout: 22,
+      loadout: 21,
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/jangofett.png',
@@ -92,7 +92,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 801,
-      loadout: 22,
+      loadout: 17,
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/zamwesell.png',
@@ -108,8 +108,8 @@ const t: ShipType = {
         'While you defend, if there are no other friendly ships at range 0-2, you may change 1 of your blank results to a [Focus] result.',
       standard: true,
       extended: true,
-      cost: 7,
-      loadout: 16,
+      cost: 6,
+      loadout: 5,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bobafett-separatistalliance.png',
       artwork:
@@ -125,6 +125,7 @@ const t: ShipType = {
       ],
       keywords: ['Bounty Hunter'],
       epic: true,
+      caption: 'Survivor',
     },
     {
       name: 'Separatist Racketeer',
@@ -134,15 +135,17 @@ const t: ShipType = {
       text: 'Emboldened by the bitter stalemate of the Outer Rim Sieges, mercenary groups across the galaxy take the opportunity to profit from the ongoing war.',
       standard: true,
       slots: ['Cannon', 'Missile', 'Device'],
-      cost: 7,
+      cost: 6,
       epic: true,
       ffg: 803,
-      loadout: 10,
+      loadout: 9,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/separatistracketeer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/separatistracketeer.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Aurra Sing',
@@ -156,7 +159,7 @@ const t: ShipType = {
         'Before you engage, you may spend 1 [Force] to choose 2 enemy ships at range 0-1. Transfer any number of orange and red tokens between those two ships.',
       force: { value: 1, recovers: 1, side: ['dark'] },
       cost: 7,
-      loadout: 10,
+      loadout: 15,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/aurrasing.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/aurrasing.png',

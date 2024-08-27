@@ -55,7 +55,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Spectre'],
-      loadout: 3,
+      loadout: 4,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/zeborrelios-sheathipedeclassshuttle.png',
@@ -79,7 +79,7 @@ const t: ShipType = {
       ffg: 41,
       standard: true,
       epic: true,
-      loadout: 5,
+      loadout: 7,
       extended: true,
       keywords: ['Droid', 'Spectre'],
       image: 'https://infinitearenas.com/xw2/images/pilots/ap5.png',
@@ -95,11 +95,11 @@ const t: ShipType = {
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade]/[Hit] results.',
       force: { value: 1, recovers: 1, side: ['light'] },
-      slots: ['Force Power', 'Crew', 'Astromech', 'Modification', 'Title'],
+      slots: ['Crew', 'Astromech', 'Modification', 'Title', 'Force Power'],
       ffg: 39,
       standard: true,
       epic: true,
-      loadout: 6,
+      loadout: 12,
       extended: true,
       keywords: ['Light Side', 'Spectre'],
       image:
@@ -112,7 +112,7 @@ const t: ShipType = {
       caption: 'Reluctant Rebel',
       initiative: 6,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'fennrau-sheathipedeclassshuttle',
       ability:
         'Before an enemy ship in your firing arc engages, if you are not stressed, you may gain 1 stress token. If you do, that ship cannot spend tokens to modify dice while it performs an attack during this phase.',
@@ -120,7 +120,7 @@ const t: ShipType = {
       ffg: 38,
       standard: true,
       epic: true,
-      loadout: 10,
+      loadout: 6,
       extended: true,
       keywords: ['Mandalorian', 'Spectre'],
       image:

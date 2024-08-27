@@ -57,12 +57,13 @@ const t: ShipType = {
       slots: ['Torpedo', 'Device', 'Modification', 'Configuration'],
       ffg: 568,
       keywords: ['Droid'],
-      loadout: 6,
+      loadout: 13,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/technounionbomber.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/technounionbomber.png',
+      caption: '',
     },
     {
       name: 'Bombardment Drone',
@@ -78,7 +79,7 @@ const t: ShipType = {
       slots: ['Device', 'Device', 'Modification', 'Configuration'],
       ffg: 565,
       keywords: ['Droid'],
-      loadout: 8,
+      loadout: 9,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bombardmentdrone.png',
@@ -94,12 +95,12 @@ const t: ShipType = {
         'While you perform an attack at attack range 1, you <strong>must</strong> roll 1 additional die. After the attack hits, suffer 1 [Critical Hit] damage.',
       standard: true,
       epic: true,
-      cost: 4,
+      cost: 3,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
       ffg: 563,
       caption: 'Preservation Protocol Not Found',
       keywords: ['Droid'],
-      loadout: 10,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dbs404.png',
       artwork:
@@ -119,7 +120,7 @@ const t: ShipType = {
       slots: ['Sensor', 'Missile', 'Missile', 'Modification', 'Configuration'],
       ffg: 566,
       keywords: ['Droid'],
-      loadout: 9,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/baktoidprototype.png',
@@ -138,12 +139,13 @@ const t: ShipType = {
       slots: ['Missile', 'Device', 'Modification', 'Configuration'],
       ffg: 567,
       keywords: ['Droid'],
-      loadout: 4,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/separatistbomber.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/separatistbomber.png',
+      caption: '',
     },
     {
       name: 'DBS-32C',
@@ -165,11 +167,11 @@ const t: ShipType = {
       ],
       standard: true,
       epic: true,
-      cost: 4,
+      cost: 3,
       slots: ['Sensor', 'Tactical Relay', 'Modification', 'Configuration'],
       ffg: 564,
       keywords: ['Droid'],
-      loadout: 16,
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dbs32c.png',
       artwork:
@@ -196,10 +198,10 @@ const t: ShipType = {
       ],
       standard: true,
       epic: true,
-      cost: 3,
+      cost: 4,
       slots: [],
       keywords: ['Droid'],
-      loadout: 16,
+      loadout: 0,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/dbs32c-siegeofcoruscant.png',
@@ -216,7 +218,7 @@ const t: ShipType = {
       caption: 'Siege of Coruscant',
       initiative: 4,
       limited: 1,
-      cost: 3,
+      cost: 4,
       xws: 'dbs404-siegeofcoruscant',
       ability:
         'While you perform an attack at range 1, you must roll 1 additional die. After the attack hits, suffer 1 [Critical Hit] damage.',
@@ -238,13 +240,14 @@ const t: ShipType = {
       extended: true,
       keywords: ['Droid'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Baktoid Prototype',
       caption: 'Siege of Coruscant',
       initiative: 1,
       limited: 2,
-      cost: 3,
+      cost: 2,
       xws: 'baktoidprototype-siegeofcoruscant',
       ability:
         'While you perform a special attack, if a friendly ship with the Networked Calculations ship ability has a lock on the defender, you may ignore the [Focus], [Calculate], or [Lock] requirement of that attack.',
@@ -266,6 +269,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Droid'],
       epic: true,
+      loadout: 0,
     },
   ],
   ffg: 64,

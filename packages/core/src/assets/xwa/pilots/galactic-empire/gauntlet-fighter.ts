@@ -69,7 +69,7 @@ const t: ShipType = {
         "While a friendly unit at range 0-2 performs a primary attack, if the attacker is in the defender's [Rear Arc], you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die.",
       charges: { value: 2, recovers: 1 },
       cost: 7,
-      loadout: 18,
+      loadout: 19,
       initiative: 3,
       limited: 1,
       standard: true,
@@ -93,7 +93,7 @@ const t: ShipType = {
     {
       xws: 'imperialsupercommando',
       name: 'Imperial Super Commando',
-      cost: 7,
+      cost: 6,
       loadout: 10,
       initiative: 2,
       limited: 0,
@@ -115,6 +115,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/imperialsupercommando.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/imperialsupercommando.png',
+      caption: '',
     },
   ],
 };

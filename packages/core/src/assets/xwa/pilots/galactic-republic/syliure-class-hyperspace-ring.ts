@@ -33,6 +33,8 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/transgalmegcontrollink.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/transgalmegcontrollink.png',
+      caption: '',
+      keywords: [],
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Syliure-class_Hyperspace_Ring.png',

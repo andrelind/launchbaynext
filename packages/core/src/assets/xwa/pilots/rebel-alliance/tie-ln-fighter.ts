@@ -50,7 +50,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE', 'Spectre'],
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/zeborrelios-tielnfighter.png',
@@ -72,7 +72,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Clone', 'TIE'],
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainrex.png',
       artwork:
@@ -88,11 +88,11 @@ const t: ShipType = {
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade] or [Hit] results.',
       force: { value: 1, recovers: 1, side: ['light'] },
-      slots: ['Force Power', 'Crew', 'Modification'],
+      slots: ['Modification', 'Crew', 'Force Power'],
       ffg: 46,
       standard: true,
       epic: true,
-      loadout: 6,
+      loadout: 11,
       extended: true,
       keywords: ['Light Side', 'Spectre', 'TIE'],
       image:
@@ -105,7 +105,7 @@ const t: ShipType = {
       caption: 'Spectre-5',
       initiative: 3,
       limited: 1,
-      cost: 2,
+      cost: 3,
       xws: 'sabinewren-tielnfighter',
       ability:
         'Before you activate, you may perform a [Barrel Roll] or [Boost] action.',
@@ -113,7 +113,7 @@ const t: ShipType = {
       ffg: 47,
       standard: true,
       epic: true,
-      loadout: 3,
+      loadout: 11,
       extended: true,
       keywords: ['Mandalorian', 'TIE', 'Spectre'],
       image:

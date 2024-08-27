@@ -61,7 +61,7 @@ const t: ShipType = {
         'After a ship at range 1 performs an action during its Perform Action step, if that action is on your action bar, you may spend 1 [Charge] to perform that action, treating it as red.',
       charges: { value: 1, recovers: 1 },
       caption: 'Corsair of Kijimi',
-      loadout: 9,
+      loadout: 12,
       epic: true,
       keywords: ['Y-wing'],
       extended: true,
@@ -93,7 +93,7 @@ const t: ShipType = {
       caption: 'Old Soldier',
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 12,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/tezanasz.png',
       artwork:
@@ -105,7 +105,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       standard: true,
-      cost: 4,
+      cost: 3,
       slots: [
         'Tech',
         'Missile',
@@ -115,7 +115,6 @@ const t: ShipType = {
         'Device',
         'Modification',
         'Modification',
-        'Configuration',
       ],
       text: '???',
       ffg: 905,
@@ -124,7 +123,7 @@ const t: ShipType = {
       ability:
         'After you perform an attack, if the defender was dealt a faceup damage card, the defender gains 1 strain token unless it chooses 1 non-recurring [Charge] from 1 of its equipped upgrades and loses that [Charge].',
       keywords: ['Y-wing'],
-      loadout: 12,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wilsateshlo.png',
       artwork:
@@ -144,7 +143,6 @@ const t: ShipType = {
         'Device',
         'Modification',
         'Modification',
-        'Configuration',
       ],
       ability:
         'After you defend, you may choose a friendly ship in your [Full Rear Arc] at range 0-2 and 1 of your green tokens. If you do, that ship gains a matching token.',
@@ -152,7 +150,7 @@ const t: ShipType = {
       caption: 'Artistic Ace',
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 9,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/shasazaro.png',
       artwork:
@@ -173,7 +171,6 @@ const t: ShipType = {
         'Device',
         'Modification',
         'Modification',
-        'Configuration',
       ],
       ability:
         'While you perform a primary or [Turret] attack, you may reroll 1 attack die for each friendly device or calculating friendly ship in the attack arc.',
@@ -181,7 +178,7 @@ const t: ShipType = {
       caption: 'Hero of Humbarine',
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 7,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/legafossang.png',
       artwork:
@@ -211,7 +208,7 @@ const t: ShipType = {
       ability:
         'After you execute a red basic maneuver or perform a red action, if you have exactly 1 stress token, you may gain 1 strain token to remove that stress token.',
       keywords: ['Y-wing'],
-      loadout: 13,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/aftabackbar.png',
       artwork:
@@ -232,7 +229,6 @@ const t: ShipType = {
         'Modification',
         'Modification',
         'Illicit',
-        'Configuration',
       ],
       text: '???',
       ffg: 909,
@@ -241,7 +237,7 @@ const t: ShipType = {
       ability:
         'Before you engage, you may choose 1 ship in your firing arc at range 0-1. If you do, transfer 1 green token from that ship to yourself.',
       keywords: ['Y-wing'],
-      loadout: 8,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/coruskapellim.png',
       artwork:
@@ -270,7 +266,7 @@ const t: ShipType = {
       caption: 'Tenacious Survivor',
       keywords: ['Y-wing'],
       epic: true,
-      loadout: 10,
+      loadout: 18,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/caithrenalli-btanr2ywing.png',
@@ -297,12 +293,13 @@ const t: ShipType = {
       ffg: 911,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 7,
+      loadout: 20,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/newrepublicpatrol.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/newrepublicpatrol.png',
+      caption: '',
     },
     {
       name: 'Kijimi Spice Runner',
@@ -310,7 +307,7 @@ const t: ShipType = {
       initiative: 2,
       limited: 0,
       standard: true,
-      cost: 4,
+      cost: 3,
       slots: [
         'Tech',
         'Turret',
@@ -318,18 +315,18 @@ const t: ShipType = {
         'Device',
         'Modification',
         'Illicit',
-        'Configuration',
       ],
       text: 'Led by Zorii Bliss, the Kijimi Spice Runners set aside their usual mercenary ways to take the fight to the Final Order at the Battle of Exegol.',
       ffg: 912,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 4,
+      loadout: 8,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/kijimispicerunner.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/kijimispicerunner.png',
+      caption: '',
     },
   ],
   icon: '???',

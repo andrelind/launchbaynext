@@ -53,7 +53,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ahhav.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ahhav.png',
@@ -73,7 +73,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 7,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainseevor.png',
       artwork:
@@ -93,7 +93,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 6,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/foremanproach.png',
       artwork:
@@ -103,7 +103,7 @@ const t: ShipType = {
       name: 'Mining Guild Surveyor',
       initiative: 2,
       limited: 0,
-      cost: 3,
+      cost: 2,
       xws: 'miningguildsurveyor',
       text: 'With Imperial construction projects consuming raw materials at an unprecedented rate, the Mining Guild ruthlessly exploits newly discovered deposits of doonium ore on worlds such as Batonn, Lothal, and Umbara.',
       slots: ['Talent'],
@@ -111,12 +111,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 1,
+      loadout: 0,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/miningguildsurveyor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/miningguildsurveyor.png',
+      caption: '',
     },
     {
       name: 'Overseer Yushyn',
@@ -128,12 +129,12 @@ const t: ShipType = {
       ability:
         'Before a friendly ship at range 1 would gain a disarm token, if that ship is not stressed, you may spend 1 [Charge]. If you do, that ship gains 1 stress token instead.',
       charges: { value: 1, recovers: 1 },
-      slots: ['Talent', 'Modification'],
+      slots: ['Talent', 'Illicit', 'Modification'],
       ffg: 444,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 7,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/overseeryushyn.png',
       artwork:
@@ -151,12 +152,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 3,
+      loadout: 8,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/miningguildsentry.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/miningguildsentry.png',
+      caption: '',
     },
     {
       name: 'Lapin',

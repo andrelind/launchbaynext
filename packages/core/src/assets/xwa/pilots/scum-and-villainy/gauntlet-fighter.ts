@@ -41,8 +41,8 @@ const t: ShipType = {
       ability:
         'While you perform a [Coordinate] action, if you choose a ship with an initiative lower than yours, you may spend 1 [Force]. If you do, treat the action as white and you may coordinate 1 additional friendly ship with an initiative lower than yours; each friendly ship you coordinate this way gains 1 strain token.',
       force: { side: ['dark'], value: 3, recovers: 1 },
-      cost: 8,
-      loadout: 15,
+      cost: 7,
+      loadout: 12,
       initiative: 5,
       limited: 1,
       standard: true,
@@ -68,8 +68,8 @@ const t: ShipType = {
     {
       xws: 'rookkast',
       name: 'Rook Kast',
-      cost: 7,
-      loadout: 14,
+      cost: 6,
+      loadout: 8,
       initiative: 3,
       limited: 1,
       ability:
@@ -96,7 +96,7 @@ const t: ShipType = {
       xws: 'shadowcollectiveoperator',
       name: 'Shadow Collective Operator',
       cost: 7,
-      loadout: 10,
+      loadout: 20,
       initiative: 1,
       limited: 0,
       standard: true,
@@ -116,6 +116,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/shadowcollectiveoperator.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/shadowcollectiveoperator.png',
+      caption: '',
     },
   ],
 };

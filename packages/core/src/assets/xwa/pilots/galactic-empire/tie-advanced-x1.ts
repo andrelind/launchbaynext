@@ -52,25 +52,25 @@ const t: ShipType = {
       caption: 'Black Leader',
       initiative: 6,
       limited: 1,
-      cost: 7,
+      cost: 6,
       xws: 'darthvader',
       ability:
         'After you perform an action, you may spend 1 [Force] to perform an action.',
       force: { value: 3, recovers: 1, side: ['dark'] },
       slots: [
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Tech',
         'Sensor',
         'Missile',
         'Modification',
         'Modification',
+        'Force Power',
+        'Force Power',
+        'Talent',
+        'Tech',
       ],
       ffg: 93,
       standard: true,
       epic: true,
-      loadout: 21,
+      loadout: 12,
       extended: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       image: 'https://infinitearenas.com/xw2/images/pilots/darthvader.png',
@@ -91,7 +91,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/maarekstele.png',
       artwork:
@@ -104,17 +104,18 @@ const t: ShipType = {
       cost: 4,
       xws: 'stormsquadronace',
       text: 'The TIE Advanced x1 was produced in limited quantities, but Sienar engineers incorporated many of its best qualities into their next TIE model: the TIE Interceptor.',
-      slots: ['Talent', 'Sensor', 'Modification'],
+      slots: ['Sensor', 'Talent', 'Modification'],
       ffg: 97,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 2,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/stormsquadronace.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/stormsquadronace.png',
+      caption: '',
     },
     {
       name: 'Tempest Squadron Pilot',
@@ -128,12 +129,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 4,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/tempestsquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/tempestsquadronpilot.png',
+      caption: '',
     },
     {
       name: 'Ved Foslo',
@@ -149,7 +151,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/vedfoslo.png',
       artwork:
@@ -169,7 +171,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 14,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zertikstrom.png',
       artwork:
@@ -180,7 +182,7 @@ const t: ShipType = {
       caption: 'Battle of Yavin',
       initiative: 6,
       limited: 1,
-      cost: 6,
+      cost: 7,
       xws: 'darthvader-battleofyavin',
       ability:
         'While you perform an attack, you may spend 1 [Force] to change 1 blank result to a [Hit] result.',
@@ -201,6 +203,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+      loadout: 0,
     },
     {
       name: 'Juno Eclipse',
@@ -208,7 +211,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 4,
-      loadout: 8,
+      loadout: 9,
       xws: 'junoeclipse',
       ability:
         'After you perform an action, you may perform a red [Boost] action.',
@@ -217,7 +220,7 @@ const t: ShipType = {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
-      slots: ['Talent', 'Tech', 'Sensor', 'Missile', 'Modification'],
+      slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -230,7 +233,7 @@ const t: ShipType = {
       caption: 'Black Leader',
       initiative: 6,
       limited: 1,
-      cost: 6,
+      cost: 7,
       xws: 'darthvader-swz105',
       force: { value: 3, recovers: 1, side: ['dark'] },
       stats: [
@@ -249,6 +252,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Maarek Stele',
@@ -266,6 +270,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      caption: 'Servant of the Empire',
+      loadout: 0,
     },
   ],
 };

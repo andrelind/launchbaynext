@@ -71,7 +71,7 @@ const t: ShipType = {
       xws: 'quickdraw',
       ability:
         'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
-      slots: ['Talent', 'Talent', 'Sensor', 'Tech', 'Gunner', 'Modification'],
+      slots: ['Talent', 'Talent', 'Sensor', 'Modification', 'Gunner', 'Tech'],
       charges: { value: 1, recovers: 1 },
       ffg: 406,
       standard: true,
@@ -92,12 +92,12 @@ const t: ShipType = {
       xws: 'backdraft',
       ability:
         'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
-      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
+      slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       ffg: 407,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 5,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/backdraft.png',
       artwork:
@@ -107,20 +107,21 @@ const t: ShipType = {
       name: 'Omega Squadron Expert',
       initiative: 3,
       limited: 0,
-      cost: 4,
+      cost: 5,
       xws: 'omegasquadronexpert',
       text: 'The TIE/sf is a versatile starfighter that carries specialized armament and experimental systems for long-range operations by First Order Special Forces.',
-      slots: ['Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
+      slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech', 'Talent'],
       ffg: 408,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 3,
+      loadout: 13,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronexpert.png',
+      caption: '',
     },
     {
       name: 'Zeta Squadron Survivor',
@@ -129,17 +130,18 @@ const t: ShipType = {
       cost: 4,
       xws: 'zetasquadronsurvivor',
       text: 'Humiliated by their failure, the remaining pilots from Starkiller Base are eager to prove their worth in pursuit of the Resistance.',
-      slots: ['Talent', 'Sensor', 'Tech', 'Gunner'],
+      slots: ['Sensor', 'Talent', 'Gunner', 'Tech'],
       ffg: 409,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 4,
+      loadout: 11,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/zetasquadronsurvivor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronsurvivor.png',
+      caption: '',
     },
     {
       name: 'Lieutenant LeHuse',
@@ -163,7 +165,7 @@ const t: ShipType = {
       ability:
         "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
       keywords: ['TIE'],
-      loadout: 7,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
@@ -192,7 +194,7 @@ const t: ShipType = {
       ability:
         'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
       keywords: ['TIE'],
-      loadout: 6,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainphasma.png',
       artwork:

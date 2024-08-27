@@ -58,12 +58,13 @@ const t: ShipType = {
       ffg: 696,
       text: 'At Carida Academy, Imperial Navy cadets are taught to be ruthless and loyal, prioritizing victory over the lives of their comrades.',
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 18,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/caridaacademycadet.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/caridaacademycadet.png',
+      caption: '',
     },
     {
       xws: 'onyxsquadronsentry',
@@ -77,12 +78,13 @@ const t: ShipType = {
       ffg: 695,
       text: 'The TIE/rb heavy, sometimes called the "brute," is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.',
       keywords: ['TIE'],
-      loadout: 7,
+      loadout: 17,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/onyxsquadronsentry.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronsentry.png',
+      caption: '',
     },
     {
       xws: 'rampage',
@@ -105,7 +107,7 @@ const t: ShipType = {
       epic: true,
       ffg: 693,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/rampage.png',
       artwork:
@@ -129,10 +131,10 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      cost: 5,
+      cost: 4,
       ffg: 694,
       keywords: ['TIE'],
-      loadout: 14,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/lyttandree.png',
       artwork:
@@ -141,8 +143,8 @@ const t: ShipType = {
     {
       name: 'Flight Leader Ubbel',
       caption: 'Onyx Leader',
-      cost: 5,
-      loadout: 12,
+      cost: 4,
+      loadout: 8,
       initiative: 5,
       limited: 1,
       slots: [

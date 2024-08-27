@@ -425,7 +425,7 @@ const t: ShipType = {
     {
       name: 'Sapphire 2',
       caption: 'Battle over Endor',
-      xws: 'sappphire2-battleoverendor',
+      xws: 'sapphire2-battleoverendor',
       initiative: 1,
       limited: 1,
       shipAbility: {

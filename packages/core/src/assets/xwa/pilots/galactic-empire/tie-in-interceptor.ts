@@ -46,7 +46,7 @@ const t: ShipType = {
       name: 'Alpha Squadron Pilot',
       initiative: 1,
       limited: 0,
-      cost: 4,
+      cost: 3,
       xws: 'alphasquadronpilot',
       text: 'Sienar Fleet Systems designed the TIE interceptor with four wing-mounted laser cannons, a dramatic increase in firepower over its predecessors.',
       slots: ['Talent', 'Configuration'],
@@ -54,12 +54,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 2,
+      loadout: 0,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/alphasquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/alphasquadronpilot.png',
+      caption: '',
     },
     {
       name: 'Saber Squadron Ace',
@@ -68,33 +69,34 @@ const t: ShipType = {
       cost: 4,
       xws: 'sabersquadronace',
       text: "Led by Baron Soontir Fel, the pilots of Saber Squadron are among the Empire's best. Their TIE interceptors are marked with red stripes to designate pilots with at least ten confirmed kills.",
-      slots: ['Talent', 'Configuration'],
+      slots: ['Talent', 'Configuration', 'Modification'],
       ffg: 105,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 3,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/sabersquadronace.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sabersquadronace.png',
+      caption: '',
     },
     {
       name: 'Soontir Fel',
       caption: 'Ace of Legend',
       initiative: 6,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'soontirfel',
       ability:
         'At the start of the Engagement Phase, if there is an enemy ship in your [Bullseye Arc], gain 1 focus token.',
-      slots: ['Talent', 'Talent', 'Modification', 'Configuration'],
+      slots: ['Talent', 'Modification'],
       ffg: 103,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 1,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/soontirfel.png',
       artwork:
@@ -114,7 +116,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 9,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/turrphennir.png',
       artwork:
@@ -124,7 +126,7 @@ const t: ShipType = {
       xws: 'cienaree',
       name: 'Ciena Ree',
       caption: 'Look Through My Eyes',
-      cost: 5,
+      cost: 4,
       initiative: 6,
       limited: 1,
       ability:
@@ -134,7 +136,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 889,
-      loadout: 14,
+      loadout: 4,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
@@ -153,7 +155,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 892,
-      loadout: 7,
+      loadout: 4,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
@@ -193,7 +195,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 891,
-      loadout: 8,
+      loadout: 9,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/commandantgoran.png',
@@ -203,7 +205,7 @@ const t: ShipType = {
       xws: 'lieutenantlorrir',
       name: 'Lieutenant Lorrir',
       caption: 'Requiem for Brentaal',
-      cost: 3,
+      cost: 4,
       initiative: 3,
       limited: 1,
       ability:
@@ -213,7 +215,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 893,
-      loadout: 6,
+      loadout: 13,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlorrir.png',
@@ -235,7 +237,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 894,
-      loadout: 6,
+      loadout: 11,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/nashwindrider.png',
@@ -265,6 +267,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-battleofyavin.png',
       epic: true,
+      loadout: 0,
     },
     {
       xws: 'sigma4-battleofyavin',
@@ -290,6 +293,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/sigma4-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma4.png',
+      loadout: 0,
     },
     {
       xws: 'sigma5-battleofyavin',
@@ -315,6 +319,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/sigma5-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma5.png',
+      loadout: 0,
     },
     {
       xws: 'sigma6-battleofyavin',
@@ -340,6 +345,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/sigma6-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma6.png',
+      loadout: 0,
     },
     {
       xws: 'sigma7-battleofyavin',
@@ -365,6 +371,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/sigma7-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma7.png',
+      loadout: 0,
     },
     {
       name: 'Second Sister',
@@ -379,7 +386,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 5,
-      loadout: 14,
+      loadout: 15,
       slots: [
         'Force Power',
         'Talent',
@@ -390,7 +397,7 @@ const t: ShipType = {
       ability:
         'While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force]. If you do, change all of your [Hit] results to [Critical Hit] results.',
       force: { value: 2, recovers: 1, side: ['dark'] },
-      keywords: ['TIE'],
+      keywords: ['Dark Side', 'TIE'],
       image: 'https://infinitearenas.com/xw2/images/pilots/secondsister.png',
       epic: true,
       artwork:
@@ -398,7 +405,7 @@ const t: ShipType = {
     },
     {
       name: 'Maus Monare',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'mausmonare-battleoverendor',
       initiative: 3,
       limited: 1,
@@ -406,7 +413,7 @@ const t: ShipType = {
         name: 'Sensitive Controls',
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
-      cost: 5,
+      cost: 4,
       slots: [],
       standardLoadout: [
         'noescape-battleoverendor',
@@ -417,15 +424,13 @@ const t: ShipType = {
       extended: true,
       ability: 'After you perform an [Evade] action, gain a calculate token.',
       keywords: ['TIE'],
-      // image: 'https://infinitearenas.com/xw2/images/pilots/secondsister.png',
       epic: true,
-      // artwork:
-      //   'https://infinitearenas.com/xw2/images/artwork/pilots/secondsister.png',
+      loadout: 0,
     },
     {
       name: 'Sapphire 2',
-      caption: 'Battle over Endor',
-      xws: 'sappphire2-battleoverendor',
+      caption: 'Battle Over Endor',
+      xws: 'sapphire2-battleoverendor',
       initiative: 1,
       limited: 1,
       shipAbility: {
@@ -450,10 +455,11 @@ const t: ShipType = {
         'While you defend, if you are focused, roll 1 additional defense die.',
       keywords: ['TIE'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Soontir Fel',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'soontirfel-battleoverendor',
       initiative: 6,
       limited: 1,
@@ -480,6 +486,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/soontirfel-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel-battleoverendor.png',
+      loadout: 0,
     },
   ],
 };

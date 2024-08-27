@@ -44,7 +44,7 @@ const t: ShipType = {
   icon: 'https://infinitearenas.com/xw2/images/shipicons/rebel-alliance/I_YT-2400.png',
   pilots: [
     {
-      name: '"Leebo"',
+      name: '“Leebo”',
       caption: "He Thinks He's Funny",
       initiative: 3,
       limited: 1,
@@ -70,6 +70,8 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/leebo-hethinkshesfunny-scumandvillainy.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/leebo.png',
+      loadout: 0,
+      keywords: ['Droid', 'Freighter'],
     },
     {
       name: 'Dash Rendar',
@@ -99,6 +101,8 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/dashrendar-initforhimself-scumandvillainy.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dashrendar.png',
+      loadout: 0,
+      keywords: ['Droid', 'Freighter'],
     },
   ],
 };

@@ -1,6 +1,5 @@
 import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import * as Linking from 'expo-linking';
 import React, { FC, useLayoutEffect } from 'react';
 import {
   ScrollView,
@@ -9,12 +8,10 @@ import {
   View
 } from 'react-native';
 import { XWingFont } from '../components/fonts/XWingIcon';
-import { SimpleItem } from '../components/SimpleItem';
 import { useTailwind } from '../helpers/tailwind';
 import { captureScroll } from '../helpers/ui';
 import { notifications } from '../notifications';
 import { systemStore } from '../stores/system';
-import { yellow } from '../theme';
 import { OverviewStackParams } from '../types/navigation';
 
 
@@ -87,7 +84,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
 
         <View style={tw`px-2 gap-y-2`}>
           {notifications.sort((a, b) => b.id - a.id).map((n) => (
-            <View key={n.id} style={tw`px-2 py-3 gap-y-1 bg-white rounded-md`}>
+            <View key={n.id} style={tw`px-2 py-3 gap-y-1 bg-white dark:bg-zinc-800 rounded-md`}>
               <Text style={tw`text-zinc-900 font-semibold`}>{n.title}</Text>
               <Text style={tw`text-zinc-900`}>{n.body}</Text>
             </View>
@@ -95,7 +92,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
           ))}
         </View>
 
-        <View style={tw`px-2`}>
+        {/* <View style={tw`px-2`}>
           <Text style={tw`text-white`}>Like the app?</Text>
           <Text style={tw`text-white`}>Please consider donating</Text>
           <View style={tw`flex-row items-center justify-around`}>
@@ -124,7 +121,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
               }}
             />
           </View>
-        </View>
+        </View> */}
       </ScrollView>
     </View>
   );

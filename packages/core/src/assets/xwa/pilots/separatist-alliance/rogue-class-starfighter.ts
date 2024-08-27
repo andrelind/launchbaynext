@@ -65,14 +65,14 @@ const t: ShipType = {
       loadout: 13,
       xws: 'cadbane-separatistalliance',
       slots: [
-        'Talent',
         'Cannon',
         'Cannon',
-        'Missile',
-        'Illicit',
-        'Illicit',
         'Modification',
         'Title',
+        'Illicit',
+        'Illicit',
+        'Talent',
+        'Missile',
       ],
       ability:
         'During the Engagement Phase, after another ship at range 0-3 is destroyed, you may spend 1 [Charge] to perform an action, even while stressed.',
@@ -96,7 +96,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 4,
-      loadout: 11,
+      loadout: 16,
       xws: 'ig101',
       slots: ['Cannon', 'Cannon', 'Modification', 'Modification'],
       ability:
@@ -132,7 +132,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 0,
       cost: 4,
-      loadout: 6,
+      loadout: 16,
       xws: 'magnaguardexecutioner',
       slots: ['Cannon', 'Cannon', 'Modification'],
       text: 'In addition to guarding Separatist leaders, MagneGuard droids are sometimes dispatched in swift Rogue-class Starfighters to eliminate their enemies.',
@@ -163,6 +163,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/magnaguardexecutioner.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/magnaguardexecutioner.png',
+      caption: '',
     },
     {
       name: 'MagnaGuard Protector',
@@ -170,9 +171,9 @@ const t: ShipType = {
       initiative: 4,
       limited: 2,
       cost: 4,
-      loadout: 10,
+      loadout: 6,
       xws: 'magnaguardprotector',
-      slots: ['Cannon', 'Cannon', 'Missile', 'Modification'],
+      slots: ['Cannon', 'Cannon', 'Modification', 'Missile'],
       ability:
         'After placing forces, assign the Guarded condition to 1 friendly ship other than MagnaGuard Protector.',
       shipActions: [
@@ -209,7 +210,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 4,
-      loadout: 11,
+      loadout: 13,
       xws: 'ig102',
       slots: ['Cannon', 'Cannon', 'Modification', 'Modification'],
       ability:
@@ -246,7 +247,7 @@ const t: ShipType = {
       initiative: 1,
       limited: 1,
       cost: 4,
-      loadout: 12,
+      loadout: 8,
       xws: 'ig111',
       slots: ['Cannon', 'Cannon', 'Modification', 'Modification'],
       ability:
@@ -283,7 +284,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 4,
-      loadout: 10,
+      loadout: 6,
       charges: { value: 1, recovers: 0 },
       xws: 'durge-separatistalliance',
       slots: [
@@ -293,7 +294,6 @@ const t: ShipType = {
         'Illicit',
         'Modification',
         'Modification',
-        'Title',
       ],
       ability:
         'When you would be destroyed, you may spend 1 [Charge] to reveal all of your facedown damage cards. If you do, discard each Direct Hit! and each of your damage cards with the Pilot trait, then repair all of your faceup damage cards.',

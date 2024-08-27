@@ -65,13 +65,13 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      cost: 3,
+      cost: 4,
       caption: 'Clever Circuits',
       ability:
         "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship in the enemy ship's firing arc to change 1 [Focus] result to an [Evade] or [Hit] result.",
       ffg: 794,
       keywords: ['Droid'],
-      loadout: 3,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dist81.png',
       artwork:
@@ -94,11 +94,11 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      cost: 3,
+      cost: 4,
       epic: true,
       ffg: 796,
       keywords: ['Droid'],
-      loadout: 6,
+      loadout: 14,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/phlacarphoccprototype.png',
@@ -155,7 +155,7 @@ const t: ShipType = {
       epic: true,
       ffg: 795,
       keywords: ['Droid'],
-      loadout: 4,
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dis347.png',
       artwork:
@@ -173,12 +173,13 @@ const t: ShipType = {
       epic: true,
       ffg: 798,
       keywords: ['Droid'],
-      loadout: 3,
+      loadout: 4,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/separatistinterceptor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/separatistinterceptor.png',
+      caption: '',
     },
     {
       name: 'Colicoid Interceptor',
@@ -192,19 +193,20 @@ const t: ShipType = {
       epic: true,
       ffg: 799,
       keywords: ['Droid'],
-      loadout: 4,
+      loadout: 5,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/colicoidinterceptor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/colicoidinterceptor.png',
+      caption: '',
     },
     {
       name: 'DIS-347',
       caption: 'Siege of Coruscant',
       initiative: 3,
       limited: 1,
-      cost: 3,
+      cost: 4,
       xws: 'dis347-siegeofcoruscant',
       ability:
         'At the start of the Engagement Phase, you may acquire a lock on an object at range 1-3 that has a friendly lock.',
@@ -226,6 +228,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Droid'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'DIS-T81',
@@ -254,6 +257,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Droid'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -282,6 +286,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Droid'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Volan Das',
@@ -313,7 +318,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a red maneuver, you may chose an enemy ship at range 1. The chosen ship gains 1 strain token and you may remove 1 stress token.',
       cost: 4,
-      loadout: 12,
+      loadout: 10,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/volandas.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/volandas.png',

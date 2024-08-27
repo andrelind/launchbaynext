@@ -42,19 +42,20 @@ const t: ShipType = {
       caption: 'Intelligence Chief',
       initiative: 5,
       limited: 1,
-      cost: 4,
+      cost: 3,
       xws: 'airencracken',
       ability:
         'After you perform an attack, you may choose 1 friendly ship at range 1. That ship may perform an action, treating it as red.',
-      slots: ['Talent', 'Sensor', 'Torpedo', 'Modification'],
+      slots: ['Talent', 'Torpedo', 'Sensor', 'Modification'],
       ffg: 27,
       standard: true,
       epic: true,
-      loadout: 11,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/airencracken.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/airencracken.png',
+      keywords: [],
     },
     {
       name: 'Bandit Squadron Pilot',
@@ -67,12 +68,14 @@ const t: ShipType = {
       ffg: 30,
       standard: true,
       epic: true,
-      loadout: 5,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/banditsquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/banditsquadronpilot.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Lieutenant Blount',
@@ -93,6 +96,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/lieutenantblount.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantblount.png',
+      keywords: [],
     },
     {
       name: 'Tala Squadron Pilot',
@@ -105,12 +109,14 @@ const t: ShipType = {
       ffg: 29,
       standard: true,
       epic: true,
-      loadout: 4,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/talasquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/talasquadronpilot.png',
+      caption: '',
+      keywords: [],
     },
   ],
 };

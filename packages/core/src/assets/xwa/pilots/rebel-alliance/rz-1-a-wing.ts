@@ -58,7 +58,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 5,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/arvelcrynyd.png',
       artwork:
@@ -71,17 +71,18 @@ const t: ShipType = {
       cost: 4,
       xws: 'greensquadronpilot',
       text: 'Due to its sensitive controls and high maneuverability, only the most talented pilots belong in an A-wing cockpit.',
-      slots: ['Talent', 'Talent', 'Configuration'],
+      slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       ffg: 21,
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 4,
+      loadout: 18,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/greensquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronpilot.png',
+      caption: '',
     },
     {
       name: 'Jake Farrell',
@@ -97,7 +98,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 11,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jakefarrell.png',
       artwork:
@@ -107,7 +108,7 @@ const t: ShipType = {
       name: 'Phoenix Squadron Pilot',
       initiative: 1,
       limited: 0,
-      cost: 4,
+      cost: 3,
       xws: 'phoenixsquadronpilot',
       text: 'Led by Commander Jun Sato, the brave but inexperienced pilots of Phoenix Squadron face staggering odds in their battle against the Galactic Empire.',
       slots: ['Talent', 'Configuration'],
@@ -115,12 +116,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 3,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/phoenixsquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/phoenixsquadronpilot.png',
+      caption: '',
     },
     {
       xws: 'wedgeantilles-rz1awing',
@@ -131,12 +133,12 @@ const t: ShipType = {
       limited: 1,
       ability:
         'While you perform a primary attack, if the defender is in your [Front Arc], the defender rolls 1 fewer defense die.',
-      slots: ['Talent', 'Talent', 'Missile', 'Modification', 'Configuration'],
+      slots: ['Talent', 'Talent', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
       keywords: ['A-wing'],
       ffg: 883,
-      loadout: 5,
+      loadout: 4,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-rz1awing.png',
@@ -156,7 +158,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 885,
-      loadout: 7,
+      loadout: 4,
       extended: true,
       keywords: ['A-wing', 'Mandalorian'],
       artwork:
@@ -176,15 +178,15 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Talent',
-        'Sensor',
         'Missile',
+        'Sensor',
         'Modification',
         'Configuration',
       ],
       standard: true,
       epic: true,
       ffg: 880,
-      loadout: 5,
+      loadout: 4,
       extended: true,
       keywords: ['A-wing', 'Spectre'],
       artwork:
@@ -213,7 +215,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 881,
-      loadout: 12,
+      loadout: 16,
       extended: true,
       keywords: ['A-wing', 'Light Side'],
       artwork:
@@ -225,7 +227,7 @@ const t: ShipType = {
       xws: 'sharabey-rz1awing',
       name: 'Shara Bey',
       caption: 'Green Four',
-      cost: 4,
+      cost: 3,
       initiative: 4,
       limited: 1,
       ability:
@@ -256,7 +258,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['A-wing'],
       ffg: 884,
-      loadout: 6,
+      loadout: 9,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/derekklivian.png',
@@ -274,8 +276,8 @@ const t: ShipType = {
       caption: 'Auspicious Ace',
       standard: true,
       extended: true,
-      cost: 3,
-      loadout: 7,
+      cost: 4,
+      loadout: 12,
       force: { value: 1, recovers: 0, side: ['light'] },
       slots: ['Talent', 'Missile', 'Configuration'],
       ability:
@@ -299,7 +301,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 4,
-      loadout: 14,
+      loadout: 10,
       slots: ['Talent', 'Talent', 'Cannon', 'Missile', 'Configuration'],
       ability:
         'While you have 2 or fewer stress tokens, you may perform actions, even while stressed.',
@@ -328,13 +330,14 @@ const t: ShipType = {
       extended: true,
       keywords: ['A-wing'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Jake Farrell',
       caption: 'Sage Instructor',
       initiative: 4,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'jakefarrell-swz106',
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may choose a friendly ship at range 0-1. That ship may perform a [Focus] action.',
@@ -348,6 +351,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['A-wing'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Shara Bey',
@@ -368,16 +372,17 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/sharabey-swz106.png',
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Gemmer Sojan',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'gemmersojan-battleoverendor',
       initiative: 2,
       limited: 1,
       standard: true,
       extended: true,
-      cost: 3,
+      cost: 4,
       ability:
         'While defending, you may gain 1 strain token to change up to 2 of your blank results to [Focus] results.',
       standardLoadout: [
@@ -397,10 +402,11 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/gemmersojan-battleoverendor.png',
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Arvel Crynyd',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'arvelcrynyd-battleoverendor',
       initiative: 3,
       limited: 1,
@@ -420,15 +426,12 @@ const t: ShipType = {
       },
       slots: [],
       keywords: ['A-wing'],
-      // artwork:
-      //   'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
-      // image:
-      //   'https://infinitearenas.com/xw2/images/quickbuilds/sharabey-swz106.png',
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Tycho Celchu',
-      caption: 'Battle over Endor',
+      caption: 'Battle Over Endor',
       xws: 'tychocelchu-battleoverendor',
       initiative: 5,
       limited: 1,
@@ -475,6 +478,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/tychocelchu-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu-battleoverendor.png',
+      loadout: 0,
     },
   ],
 };

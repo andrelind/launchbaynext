@@ -51,7 +51,7 @@ const t: ShipType = {
       caption: 'Espionage Expert',
       initiative: 5,
       limited: 1,
-      cost: 6,
+      cost: 5,
       xws: 'janors',
       ability:
         'While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may gain 1 stress token. If you do, that ship may roll 1 additional attack die.',
@@ -68,7 +68,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 10,
+      loadout: 0,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/janors.png',
       artwork:
@@ -79,7 +79,7 @@ const t: ShipType = {
       caption: 'Relentless Operative',
       initiative: 3,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'kylekatarn',
       ability:
         'At the start of the Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.',
@@ -88,7 +88,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 8,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kylekatarn.png',
       artwork:
@@ -98,7 +98,7 @@ const t: ShipType = {
       name: 'Rebel Scout',
       initiative: 2,
       limited: 0,
-      cost: 4,
+      cost: 3,
       xws: 'rebelscout',
       text: 'Designed to look like a bird in flight by the Corellian Engineering Corporation, "hawk" series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',
       slots: ['Device', 'Modification'],
@@ -106,11 +106,12 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 6,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/rebelscout.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/rebelscout.png',
+      caption: '',
     },
     {
       name: 'Roark Garnet',
@@ -133,7 +134,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 12,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/roarkgarnet.png',
       artwork:

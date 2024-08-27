@@ -50,8 +50,8 @@ const t: ShipType = {
       xws: 'anakinskywalker-nabooroyaln1starfighter',
       standard: true,
       epic: true,
-      cost: 5,
-      loadout: 20,
+      cost: 4,
+      loadout: 9,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       force: { value: 1, recovers: 1, side: ['light'] },
       ffg: 558,
@@ -81,6 +81,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/ricolie.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/ricolie.png',
+      keywords: [],
     },
     {
       name: 'Padmé Amidala',
@@ -92,14 +93,15 @@ const t: ShipType = {
       epic: true,
       ability:
         'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
-      cost: 4,
+      cost: 5,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ffg: 559,
-      loadout: 16,
+      loadout: 22,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/padmeamidala.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/padmeamidala.png',
+      keywords: [],
     },
     {
       name: 'Dineé Ellberger',
@@ -119,6 +121,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/dineeellberger.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dineeellberger.png',
+      keywords: [],
     },
     {
       name: 'Bravo Flight Officer',
@@ -128,15 +131,17 @@ const t: ShipType = {
       text: 'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
       standard: true,
       epic: true,
-      cost: 4,
+      cost: 3,
       slots: ['Sensor', 'Torpedo', 'Astromech'],
       ffg: 562,
-      loadout: 8,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bravoflightofficer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bravoflightofficer.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Naboo Handmaiden',
@@ -149,19 +154,20 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 4,
-      slots: ['Sensor', 'Astromech', 'Modification'],
+      slots: ['Sensor', 'Modification', 'Astromech'],
       ffg: 561,
       caption: 'Regal Ruse',
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/naboohandmaiden.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/naboohandmaiden.png',
+      keywords: [],
     },
     {
       name: 'Gavyn Sykes',
       xws: 'gavynsykes',
-      caption: 'Bravo Six',
+      caption: 'Bravo Three',
       initiative: 3,
       limited: 1,
       shipAbility: {
@@ -179,6 +185,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/gavynsykes.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/gavynsykes.png',
       epic: true,
+      keywords: [],
     },
   ],
   ffg: 66,

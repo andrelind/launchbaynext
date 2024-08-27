@@ -143,13 +143,19 @@ export const SwipeComponent: FC<Props> = ({
       renderLeftActions={renderLeftActions}
       renderRightActions={renderRightActions}
       onSwipeableOpen={(direction) => {
+        console.log(direction);
+
         direction === 'left' ? onLeftOpen() : onRightOpen();
       }}
     >
       <TouchableOpacity
         style={{ flex: 1 }}
         activeOpacity={0.7}
-        onPress={onPress}
+        onPress={() => {
+          console.log('onPress');
+
+          onPress?.()
+        }}
         onLongPress={onLongPress}
       >
         {children}

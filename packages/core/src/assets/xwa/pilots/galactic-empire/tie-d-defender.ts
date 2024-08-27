@@ -50,7 +50,7 @@ const t: ShipType = {
       caption: 'Contemplative Commander',
       initiative: 4,
       limited: 1,
-      cost: 7,
+      cost: 8,
       xws: 'colonelvessery',
       ability:
         'While you perform an attack against a locked ship, after you roll attack dice, you may acquire a lock on the defender.',
@@ -59,7 +59,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 23,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/colonelvessery.png',
       artwork:
@@ -96,7 +96,7 @@ const t: ShipType = {
       name: 'Delta Squadron Pilot',
       initiative: 1,
       limited: 0,
-      cost: 7,
+      cost: 6,
       xws: 'deltasquadronpilot',
       text: 'In addition to its missile launchers and six wingtip laser cannons, the formidable TIE defender is equipped with deflector shields and a hyperdrive.',
       slots: ['Sensor', 'Cannon', 'Configuration'],
@@ -104,12 +104,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 4,
+      loadout: 11,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/deltasquadronpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/deltasquadronpilot.png',
+      caption: '',
     },
     {
       name: 'Onyx Squadron Ace',
@@ -123,11 +124,12 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 6,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/onyxsquadronace.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronace.png',
+      caption: '',
     },
     {
       name: 'Rexler Brath',
@@ -177,7 +179,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 887,
-      loadout: 13,
+      loadout: 14,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/vultskerris.png',
@@ -198,7 +200,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       ffg: 886,
-      loadout: 10,
+      loadout: 5,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader-tieddefender.png',
@@ -219,7 +221,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 888,
-      loadout: 15,
+      loadout: 18,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captaindobbs.png',
@@ -228,8 +230,8 @@ const t: ShipType = {
     {
       xws: 'captainyorr-battleoverendor',
       name: 'Captain Yorr',
-      caption: 'Battle over Endor',
-      cost: 6,
+      caption: 'Battle Over Endor',
+      cost: 7,
       initiative: 4,
       limited: 1,
       ability:
@@ -259,18 +261,19 @@ const t: ShipType = {
       ],
       standard: true,
       epic: true,
-      keywords: ['TIE'],
+      keywords: [],
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/captainyorr-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captainyorr-battleoverendor.png',
+      loadout: 0,
     },
     {
       xws: 'coloneljendon-battleoverendor',
       name: 'Colonel Jendon',
-      caption: 'Battle over Endor',
-      cost: 7,
+      caption: 'Battle Over Endor',
+      cost: 8,
       initiative: 6,
       limited: 1,
       ability:
@@ -300,12 +303,13 @@ const t: ShipType = {
       ],
       standard: true,
       epic: true,
-      keywords: ['TIE'],
+      keywords: [],
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/coloneljendon-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon-battleoverendor.png',
+      loadout: 0,
     },
   ],
 };

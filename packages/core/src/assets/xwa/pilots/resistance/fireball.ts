@@ -55,12 +55,14 @@ const t: ShipType = {
       epic: true,
       ffg: 623,
       text: 'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
-      loadout: 5,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/colossusstationmechanic.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/colossusstationmechanic.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Jarek Yeager',
@@ -70,7 +72,7 @@ const t: ShipType = {
       xws: 'jarekyeager',
       ability:
         'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
-      cost: 3,
+      cost: 4,
       slots: [
         'Talent',
         'Talent',
@@ -84,11 +86,12 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 620,
-      loadout: 9,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jarekyeager.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/jarekyeager.png',
+      keywords: [],
     },
     {
       name: 'Kazuda Xiono',
@@ -111,11 +114,12 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 621,
-      loadout: 14,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kazudaxiono.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/kazudaxiono.png',
+      keywords: [],
     },
     {
       name: 'R1-J5',
@@ -137,7 +141,7 @@ const t: ShipType = {
       epic: true,
       ffg: 622,
       keywords: ['Droid'],
-      loadout: 8,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/r1j5.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/r1j5.png',

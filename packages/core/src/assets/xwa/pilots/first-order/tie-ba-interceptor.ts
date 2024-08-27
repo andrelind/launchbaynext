@@ -67,7 +67,7 @@ const t: ShipType = {
       epic: true,
       ffg: 624,
       keywords: ['TIE'],
-      loadout: 14,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorvonreg.png',
       artwork:
@@ -123,12 +123,13 @@ const t: ShipType = {
       ffg: 627,
       text: "Major Vonreg's vision guided the enhancement of proven designs while engineering this one-of-a-kind precise and lethal craft from Sienar-Jaemus Fleet Systems.",
       keywords: ['TIE'],
-      loadout: 3,
+      loadout: 11,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/firstorderprovocateur.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/firstorderprovocateur.png',
+      caption: '',
     },
   ],
 };

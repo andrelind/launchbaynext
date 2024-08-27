@@ -43,7 +43,7 @@ const t: ShipType = {
       caption: 'Set to Blow',
       initiative: 1,
       limited: 1,
-      cost: 2,
+      cost: 1,
       xws: 'autopilotdrone',
       text: "Sometimes, manufacturer's warnings are made to be broken.",
       charges: { value: 3, recovers: 0 },
@@ -65,6 +65,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/autopilotdrone.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/autopilotdrone.png',
+      keywords: ['Droid'],
     },
     {
       name: 'L3-37',
@@ -85,7 +86,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Droid'],
-      loadout: 4,
+      loadout: 13,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/l337-escapecraft.png',
@@ -105,12 +106,13 @@ const t: ShipType = {
       ffg: 226,
       standard: true,
       epic: true,
-      loadout: 4,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/landocalrissian-escapecraft.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-escapecraft.png',
+      keywords: [],
     },
     {
       name: 'Outer Rim Pioneer',
@@ -125,11 +127,12 @@ const t: ShipType = {
       ffg: 227,
       standard: true,
       epic: true,
-      loadout: 4,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/outerrimpioneer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimpioneer.png',
+      keywords: [],
     },
   ],
 };

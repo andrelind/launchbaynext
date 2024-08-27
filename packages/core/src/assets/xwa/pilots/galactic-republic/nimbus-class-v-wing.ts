@@ -67,7 +67,7 @@ const t: ShipType = {
       ffg: 791,
       loadout: 8,
       extended: true,
-      keywords: ['TIE'],
+      keywords: [],
       image: 'https://infinitearenas.com/xw2/images/pilots/wilhufftarkin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wilhufftarkin.png',
@@ -91,8 +91,8 @@ const t: ShipType = {
       epic: true,
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
-      keywords: ['Clone', 'TIE'],
-      loadout: 9,
+      keywords: ['Clone'],
+      loadout: 8,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
@@ -112,8 +112,8 @@ const t: ShipType = {
       cost: 3,
       epic: true,
       ffg: 789,
-      keywords: ['Clone', 'TIE'],
-      loadout: 11,
+      keywords: ['Clone'],
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
       artwork:
@@ -132,8 +132,8 @@ const t: ShipType = {
       cost: 3,
       epic: true,
       ffg: 790,
-      keywords: ['Clone', 'TIE'],
-      loadout: 8,
+      keywords: ['Clone'],
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/klick.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
@@ -149,13 +149,14 @@ const t: ShipType = {
       cost: 3,
       epic: true,
       ffg: 792,
-      keywords: ['Clone', 'TIE'],
-      loadout: 3,
+      keywords: ['Clone'],
+      loadout: 4,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/shadowsquadronescort.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronescort.png',
+      caption: '',
     },
     {
       name: 'Loyalist Volunteer',
@@ -168,13 +169,14 @@ const t: ShipType = {
       cost: 3,
       epic: true,
       ffg: 793,
-      loadout: 4,
+      loadout: 5,
       extended: true,
-      keywords: ['TIE'],
+      keywords: [],
       image:
         'https://infinitearenas.com/xw2/images/pilots/loyalistvolunteer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/loyalistvolunteer.png',
+      caption: '',
     },
     {
       name: '“Klick”',
@@ -189,8 +191,8 @@ const t: ShipType = {
       cost: 4,
       epic: true,
       ffg: 790,
-      keywords: ['Clone', 'TIE'],
-      loadout: 8,
+      keywords: ['Clone'],
+      loadout: 0,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
@@ -220,7 +222,7 @@ const t: ShipType = {
       cost: 4,
       epic: true,
       ffg: 789,
-      keywords: ['Clone', 'TIE'],
+      keywords: ['Clone'],
       loadout: 0,
       extended: true,
       image:

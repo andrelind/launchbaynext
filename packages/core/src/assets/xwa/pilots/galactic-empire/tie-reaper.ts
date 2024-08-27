@@ -56,7 +56,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 12,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/vizier.png',
       artwork:
@@ -106,7 +106,7 @@ const t: ShipType = {
       name: 'Scarif Base Pilot',
       initiative: 1,
       limited: 0,
-      cost: 4,
+      cost: 5,
       xws: 'scarifbasepilot',
       text: "The TIE reaper was designed to ferry elite troops to flashpoints on the battlefield, notably carrying Director Krennic's dreaded death troopers at the Battle of Scarif.",
       slots: ['Crew', 'Modification'],
@@ -114,11 +114,12 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 6,
+      loadout: 19,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/scarifbasepilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/scarifbasepilot.png',
+      caption: '',
     },
   ],
 };

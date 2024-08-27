@@ -50,17 +50,17 @@ const t: ShipType = {
         'Talent',
         'Turret',
         'Torpedo',
-        'Missile',
         'Astromech',
         'Device',
         'Device',
         'Modification',
+        'Missile',
       ],
       ffg: 14,
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 12,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dutchvander.png',
       artwork:
@@ -76,7 +76,6 @@ const t: ShipType = {
       ability:
         'At the start of the Engagement Phase, you may spend 1 focus token to choose a friendly ship at range 0-1. If you do, that ship rolls 1 additional defense die while defending until the end of the round.',
       slots: [
-        'Talent',
         'Turret',
         'Torpedo',
         'Missile',
@@ -89,7 +88,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 8,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/evaanverlaine.png',
       artwork:
@@ -99,20 +98,21 @@ const t: ShipType = {
       name: 'Gold Squadron Veteran',
       initiative: 3,
       limited: 0,
-      cost: 4,
+      cost: 3,
       xws: 'goldsquadronveteran',
       text: 'Commanded by Jon "Dutch" Vander, Gold Squadron played an instrumental role in the Battles of Scarif and Yavin.',
-      slots: ['Turret', 'Missile', 'Modification'],
+      slots: ['Turret', 'Modification', 'Missile'],
       ffg: 17,
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 6,
+      loadout: 8,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/goldsquadronveteran.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/goldsquadronveteran.png',
+      caption: '',
     },
     {
       name: 'Gray Squadron Bomber',
@@ -121,41 +121,41 @@ const t: ShipType = {
       cost: 4,
       xws: 'graysquadronbomber',
       text: 'Long after the Y-wing was phased out by the Galactic Empire, its durability, dependability, and heavy armament help it remain a staple in the Rebel fleet.',
-      slots: ['Device', 'Missile', 'Modification'],
+      slots: ['Turret', 'Astromech', 'Device', 'Modification', 'Missile'],
       ffg: 18,
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 8,
+      loadout: 18,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/graysquadronbomber.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/graysquadronbomber.png',
+      caption: '',
     },
     {
       name: 'Horton Salm',
       caption: 'Gray Leader',
       initiative: 4,
       limited: 1,
-      cost: 3,
+      cost: 4,
       xws: 'hortonsalm',
       ability:
         'While you perform an attack, you may reroll 1 attack die for each other friendly ship at range 0-1 of the defender.',
       slots: [
-        'Talent',
         'Turret',
         'Torpedo',
-        'Missile',
         'Astromech',
         'Device',
         'Modification',
+        'Missile',
       ],
       ffg: 15,
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 7,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/hortonsalm.png',
       artwork:
@@ -174,6 +174,7 @@ const t: ShipType = {
         'Talent',
         'Turret',
         'Gunner',
+        'Torpedo',
         'Astromech',
         'Device',
         'Modification',
@@ -182,7 +183,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 18,
+      loadout: 25,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/norrawexley-btla4ywing.png',
@@ -212,6 +213,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/dextiree-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dextiree-battleofyavin.png',
+      loadout: 0,
     },
     {
       name: '“Dutch” Vander',
@@ -240,13 +242,14 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/dutchvander-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dutchvander.png',
+      loadout: 0,
     },
     {
       name: 'Hol Okand',
       caption: 'Battle of Yavin',
       initiative: 4,
       limited: 1,
-      cost: 3,
+      cost: 4,
       xws: 'holokand-battleofyavin',
       ability:
         'During the System Phasse, if there are no enemy ships at range 1-2, you may recover 1 [Charge] on any upgrade.',
@@ -268,6 +271,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/holokand-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/holokand-battleofyavin.png',
+      loadout: 0,
     },
     {
       name: '“Pops” Krail',
@@ -292,14 +296,15 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/popskrail-battleofyavin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/popskrail-battleofyavin.png',
+      loadout: 0,
     },
     {
       name: '“Pops” Krail',
       caption: 'Gold Five',
       initiative: 3,
       limited: 1,
-      cost: 4,
-      loadout: 16,
+      cost: 3,
+      loadout: 4,
       xws: 'popskrail',
       ability:
         'After you fully execute a white maneuver, you may choose a friendly ship at range 0-1. If you do, it may perform a [Focus] action.',
@@ -339,6 +344,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Y-wing'],
       epic: true,
+      loadout: 0,
     },
     {
       name: 'Horton Salm',

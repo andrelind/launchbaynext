@@ -46,8 +46,8 @@ const t: ShipType = {
       caption: 'Din Djarin',
       initiative: 5,
       limited: 1,
-      cost: 6,
-      loadout: 10,
+      cost: 7,
+      loadout: 25,
       ability:
         'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of you blank results to a [Focus] result.',
       slots: [
@@ -73,7 +73,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 6,
-      loadout: 16,
+      loadout: 14,
       ability:
         'After you fully execute an advanced maneuver, you may perform a [Calculate] or [Barrel Roll] action, even while stressed. If you do, gain 1 strain token.',
       shipActions: [
@@ -96,8 +96,8 @@ const t: ShipType = {
       name: 'Guild Bounty Hunter',
       initiative: 3,
       limited: 2,
-      cost: 6,
-      loadout: 14,
+      cost: 5,
+      loadout: 6,
       ability:
         'While you perform an attack at attack range 1-2, you may spend 1 non-recurring [Charge] from 1 of your equipped [Illicit] upgrades to change 1 [Focus] result to a [Crit] result.',
       slots: ['Talent', 'Crew', 'Gunner', 'Illicit', 'Illicit', 'Modification'],
@@ -116,7 +116,7 @@ const t: ShipType = {
       name: 'Outer Rim Enforcer',
       initiative: 2,
       limited: 0,
-      cost: 6,
+      cost: 5,
       loadout: 10,
       slots: ['Crew', 'Gunner', 'Illicit', 'Modification', 'Modification'],
       standard: true,
@@ -126,6 +126,8 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/outerrimenforcer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimenforcer.png',
+      caption: '',
+      keywords: [],
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_ST-70.png',

@@ -3,8 +3,6 @@ import prettier from 'prettier';
 import { pilots, upgrades } from '../src/assets/xwa';
 import { Faction, SlotKey } from '../src/types';
 
-
-
 type Manifest = {
     ships: { [s: string]: string };
     pilots: { [s: string]: string };

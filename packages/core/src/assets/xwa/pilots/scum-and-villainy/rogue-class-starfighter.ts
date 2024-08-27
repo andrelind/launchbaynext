@@ -145,7 +145,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 0,
       cost: 4,
-      loadout: 5,
+      loadout: 15,
       xws: 'outerrimhunter',
       slots: ['Cannon', 'Cannon', 'Illicit', 'Modification'],
       text: 'Due to its association with Cad Bane, the Rogue-class Starfighterhas found its way into the hands of other bounty hunters, especially those who operate in the lawless Outer Rim.',
@@ -155,6 +155,8 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/outerrimhunter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimhunter.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Durge',
@@ -162,7 +164,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 4,
-      loadout: 10,
+      loadout: 8,
       xws: 'durge',
       slots: [
         'Talent',
@@ -179,7 +181,7 @@ const t: ShipType = {
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
       image: 'https://infinitearenas.com/xw2/images/pilots/durge.png',
-      keywords: [],
+      keywords: ['Bounty Hunter'],
       standard: true,
       extended: true,
       epic: true,

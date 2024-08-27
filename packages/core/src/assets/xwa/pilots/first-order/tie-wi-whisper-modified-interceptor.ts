@@ -63,7 +63,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       standard: true,
-      cost: 5,
+      cost: 6,
       slots: [
         'Force Power',
         'Force Power',
@@ -81,7 +81,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Light Side', 'TIE'],
       force: { value: 3, recovers: 1, side: ['dark', 'light'] },
       epic: true,
-      loadout: 14,
+      loadout: 17,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
@@ -102,7 +102,7 @@ const t: ShipType = {
       caption: 'Herald of Destruction',
       keywords: ['TIE'],
       epic: true,
-      loadout: 15,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wrath.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wrath.png',
@@ -122,7 +122,7 @@ const t: ShipType = {
       caption: '709th Legion Veteran',
       ability:
         'After you fully execute a maneuver or perform a [Boost] action, each ship you moved through gains 2 jam tokens.',
-      loadout: 10,
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nightfall.png',
       artwork:
@@ -135,7 +135,7 @@ const t: ShipType = {
       limited: 1,
       text: '???',
       standard: true,
-      cost: 4,
+      cost: 5,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ffg: 922,
       keywords: ['TIE'],
@@ -143,7 +143,7 @@ const t: ShipType = {
       caption: 'Reap What You Sow',
       ability:
         'Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its [Front Arc].',
-      loadout: 12,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/whirlwind.png',
       artwork:
@@ -161,11 +161,12 @@ const t: ShipType = {
       ffg: 923,
       keywords: ['TIE'],
       epic: true,
-      loadout: 10,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/709thlegionace.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/709thlegionace.png',
+      caption: '',
     },
     {
       name: 'Red Fury Zealot',
@@ -179,11 +180,12 @@ const t: ShipType = {
       ffg: 924,
       keywords: ['TIE'],
       epic: true,
-      loadout: 3,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/redfuryzealot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/redfuryzealot.png',
+      caption: '',
     },
   ],
   icon: '???',

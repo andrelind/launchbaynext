@@ -60,11 +60,12 @@ const t: ShipType = {
       cost: 5,
       ffg: 569,
       caption: 'Evacuation Escort',
-      loadout: 20,
+      loadout: 19,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/covanell.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/covanell.png',
+      keywords: [],
     },
     {
       name: 'Pammich Nerro Goode',
@@ -89,12 +90,13 @@ const t: ShipType = {
       ],
       cost: 4,
       ffg: 570,
-      loadout: 12,
+      loadout: 17,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/pammichnerrogoode.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/pammichnerrogoode.png',
+      keywords: [],
     },
     {
       name: 'Nodin Chavdri',
@@ -115,14 +117,15 @@ const t: ShipType = {
         'Astromech',
         'Modification',
       ],
-      cost: 5,
+      cost: 4,
       ffg: 571,
       caption: 'Insubordinate Insurgent',
-      loadout: 20,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nodinchavdri.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/nodinchavdri.png',
+      keywords: [],
     },
     {
       name: 'Logistics Division Pilot',
@@ -135,12 +138,14 @@ const t: ShipType = {
       slots: ['Cannon', 'Crew', 'Astromech', 'Astromech'],
       cost: 4,
       ffg: 572,
-      loadout: 6,
+      loadout: 18,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/logisticsdivisionpilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/logisticsdivisionpilot.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Taka Jamoreesa',
@@ -168,6 +173,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/takajamoreesa.png',
       epic: true,
+      keywords: [],
     },
   ],
   ffg: 63,

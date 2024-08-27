@@ -36,7 +36,7 @@ const t: ShipType = {
   pilots: [
     {
       name: 'Benthic Two Tubes',
-      caption: 'Cavern Angels Marks- man',
+      caption: 'Cavern Angels Marksman',
       initiative: 2,
       limited: 1,
       cost: 5,
@@ -56,7 +56,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Partisan'],
-      loadout: 16,
+      loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/benthictwotubes.png',
       artwork:
@@ -69,23 +69,25 @@ const t: ShipType = {
       cost: 5,
       xws: 'bluesquadronscout',
       text: "Used for deploying troops under the cover of darkness or into the heat of battle, the UT-60D U-wing fulfills the Rebellion's need for a swift and hardy troop transport.",
-      slots: ['Modification', 'Configuration'],
+      slots: ['Sensor', 'Crew', 'Crew', 'Modification', 'Configuration'],
       ffg: 60,
       standard: true,
       epic: true,
-      loadout: 6,
+      loadout: 22,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bluesquadronscout.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronscout.png',
+      caption: '',
+      keywords: [],
     },
     {
       name: 'Bodhi Rook',
       caption: 'Imperial Defector',
       initiative: 4,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'bodhirook',
       ability:
         'Friendly ships can acquire locks onto objects at range 0-3 of any friendly ship.',
@@ -93,11 +95,12 @@ const t: ShipType = {
       ffg: 54,
       standard: true,
       epic: true,
-      loadout: 10,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/bodhirook.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bodhirook.png',
+      keywords: [],
     },
     {
       name: 'Cassian Andor',
@@ -112,11 +115,12 @@ const t: ShipType = {
       ffg: 56,
       standard: true,
       epic: true,
-      loadout: 12,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/cassianandor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cassianandor.png',
+      keywords: [],
     },
     {
       name: 'Heff Tobber',
@@ -138,11 +142,12 @@ const t: ShipType = {
       ffg: 59,
       standard: true,
       epic: true,
-      loadout: 9,
+      loadout: 21,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/hefftobber.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/hefftobber.png',
+      keywords: [],
     },
     {
       name: 'Magva Yarro',
@@ -166,7 +171,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Partisan'],
-      loadout: 14,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/magvayarro.png',
       artwork:
@@ -179,17 +184,18 @@ const t: ShipType = {
       cost: 5,
       xws: 'partisanrenegade',
       text: "Saw Gerrera's partisans were first established to oppose Separatist forces on Onderon during the Clone Wars and continued to wage war against galactic tyranny as the Empire rose to power.",
-      slots: ['Illicit', 'Configuration'],
+      slots: ['Crew', 'Crew', 'Illicit', 'Configuration', 'Modification'],
       ffg: 61,
       standard: true,
       epic: true,
       keywords: ['Partisan'],
-      loadout: 6,
+      loadout: 22,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/partisanrenegade.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/partisanrenegade.png',
+      caption: '',
     },
     {
       name: 'Saw Gerrera',
@@ -213,7 +219,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Partisan'],
-      loadout: 18,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/sawgerrera.png',
       artwork:
@@ -224,7 +230,7 @@ const t: ShipType = {
       caption: 'Cassian Said I Had To',
       initiative: 3,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'k2so',
       ability: 'After you gain a stress token, gain 1 calculate token.',
       shipActions: [
@@ -237,7 +243,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Droid'],
-      loadout: 10,
+      loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/k2so.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/k2so.png',

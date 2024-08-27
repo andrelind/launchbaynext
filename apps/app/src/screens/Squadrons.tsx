@@ -3,10 +3,8 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
 import {
   Alert,
-  Platform,
   SafeAreaView,
   Text,
-  TextInput,
   TouchableOpacity,
   View
 } from 'react-native';
@@ -19,7 +17,6 @@ import { useTailwind } from '../helpers/tailwind';
 import { FilterState, filterStore } from '../stores/filter';
 import { XWS, XWSState } from '../stores/types';
 import { xwsStore } from '../stores/xws';
-import { darkgrey } from '../theme';
 import { ListStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<ListStackParams, 'Squadrons'>;
@@ -47,15 +44,13 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
   const [stateLists, setStateLists] = useState(lists);
   const [needle, setNeedle] = useState<string>('');
 
-  console.log(tw.color('orange-500'));
-
-
   useLayoutEffect(() => {
     navigation.setOptions({
       headerSearchBarOptions: {
         placeholder: 'Search',
         textColor: tw.prefixMatch('dark') ? tw.color('white') : tw.color('black'),
         barTintColor: tw.prefixMatch('dark') ? tw.color('zinc-800') : tw.color('white'),
+        headerIconColor: tw.color('orange-500'),
         onChangeText: (t) => setNeedle(t?.nativeEvent.text.toLowerCase()),
       },
       headerLeft: () => (
@@ -114,20 +109,6 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
 
   return (
     <SafeAreaView style={tw`flex-1`}>
-      {Platform.OS === 'android' && (
-        <View paddingH-10>
-          <TextInput
-            autoCapitalize={'none'}
-            placeholder={'Search'}
-            autoCorrect={false}
-            value={needle}
-            onChangeText={(t) => setNeedle(t?.toLowerCase())}
-            placeholderTextColor={darkgrey}
-            underlineColorAndroid={darkgrey}
-            style={{ color: 'white' }}
-          />
-        </View>
-      )}
 
       <DraggableFlatList
         contentContainerStyle={tw`py-2 px-2`}

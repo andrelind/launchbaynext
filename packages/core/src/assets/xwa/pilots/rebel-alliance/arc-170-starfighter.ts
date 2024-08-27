@@ -48,8 +48,8 @@ const t: ShipType = {
         'After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.',
       slots: [
         'Talent',
-        'Cannon',
         'Missile',
+        'Cannon',
         'Gunner',
         'Astromech',
         'Modification',
@@ -57,11 +57,12 @@ const t: ShipType = {
       ffg: 66,
       standard: true,
       epic: true,
-      loadout: 7,
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/garvendreis.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis.png',
+      keywords: [],
     },
     {
       name: 'Ibtisam',
@@ -76,11 +77,12 @@ const t: ShipType = {
       ffg: 68,
       standard: true,
       epic: true,
-      loadout: 9,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ibtisam.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/ibtisam.png',
+      keywords: [],
     },
     {
       name: 'Norra Wexley',
@@ -91,22 +93,30 @@ const t: ShipType = {
       xws: 'norrawexley',
       ability:
         'While you defend, if there is an enemy ship at range 0-1, add 1 [Evade] result to your dice results.',
-      slots: ['Talent', 'Torpedo', 'Gunner', 'Astromech', 'Modification'],
+      slots: [
+        'Talent',
+        'Talent',
+        'Torpedo',
+        'Gunner',
+        'Astromech',
+        'Modification',
+      ],
       ffg: 65,
       standard: true,
       epic: true,
-      loadout: 8,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/norrawexley.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/norrawexley.png',
+      keywords: [],
     },
     {
       name: 'Shara Bey',
       caption: 'Green Four',
       initiative: 4,
       limited: 1,
-      cost: 4,
+      cost: 5,
       xws: 'sharabey',
       ability:
         'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
@@ -121,11 +131,12 @@ const t: ShipType = {
       ffg: 67,
       standard: true,
       epic: true,
-      loadout: 8,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/sharabey.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey.png',
+      keywords: [],
     },
   ],
 };

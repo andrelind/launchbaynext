@@ -51,8 +51,8 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Crew',
-        'Torpedo',
         'Gunner',
+        'Torpedo',
         'Device',
         'Illicit',
         'Modification',
@@ -69,8 +69,8 @@ const t: ShipType = {
     {
       xws: 'niteowlliberator',
       name: 'Nite Owl Liberator',
-      cost: 7,
-      loadout: 12,
+      cost: 6,
+      loadout: 16,
       initiative: 2,
       limited: 1,
       standard: true,
@@ -81,6 +81,7 @@ const t: ShipType = {
         'Crew',
         'Gunner',
         'Device',
+        'Illicit',
         'Modification',
         'Configuration',
       ],
