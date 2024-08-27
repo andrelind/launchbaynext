@@ -4,7 +4,8 @@ export default {
   expo: {
     name: IS_DEV ? 'LBN (dev)' : 'Launch Bay Next',
     slug: 'lbn',
-    version: '1.0.0',
+    version: '4.0.0',
+    runtimeVersion:{ policy: 'appVersion' },
     orientation: 'portrait',
     icon: './assets/icon.png',
     userInterfaceStyle: 'automatic',
@@ -15,7 +16,7 @@ export default {
     },
     assetBundlePatterns: ['**/*'],
     ios: {
-      runtimeVersion: '1.0.0',
+      buildNumber: '1',
       supportsTablet: true,
       bundleIdentifier: IS_DEV
         ? 'se.andrelind.launch-bay-2.dev'
@@ -23,9 +24,7 @@ export default {
       associatedDomains: ['applinks:launchbaynext.app'],
     },
     android: {
-      runtimeVersion: {
-        policy: 'appVersion',
-      },
+      versionCode: 52,
       package: IS_DEV ? 'com.launchbaynext.dev' : 'com.launchbaynext',
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
