@@ -86,6 +86,7 @@ const handler = async (req: NextRequest, context: RouteHandlerContext) =>
           email: user?.email || '',
         };
 
+        // @ts-ignore
         const jwt = await trpc.auth.mutate({
           provider: userState.provider,
           providerId: userState.id,

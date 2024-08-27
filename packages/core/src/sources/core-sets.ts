@@ -1,4 +1,4 @@
-import { Source } from '../../../types';
+import { type Source } from '../../src/types';
 
 export const t: Source[] = [
   {

@@ -3,7 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev:web": "cd apps/web && bun run dev"
+    "dev:web": "cd apps/web && bun run dev",
+    "web:build": "cd apps/web && bun run build"
   },
   "devDependencies": {
     "@types/bun": "latest"

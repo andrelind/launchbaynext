@@ -11,6 +11,7 @@ const t: ShipType = {
     { type: 'shields', value: 2 },
   ],
   actions: [],
+  dial: [],
   pilots: [
     {
       name: 'TransGalMeg Control Link',

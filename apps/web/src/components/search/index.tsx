@@ -117,6 +117,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
 
   useEffect(() => {
     refreshData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [needle]);
 
   if (!needle || needle.length < 3) {

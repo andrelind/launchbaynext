@@ -157,7 +157,7 @@ const t: ShipType = {
       wildspace: true,
       ability:
         'Before you engage, you may spend 1 [Force] to choose 2 enemy ships at range 0-1. Transfer any number of orange and red tokens between those two ships.',
-      force: { value: 1, recovers: 1 },
+      force: { value: 1, recovers: 1, side: ['dark'] },
       cost: 77,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/aurrasing.png',

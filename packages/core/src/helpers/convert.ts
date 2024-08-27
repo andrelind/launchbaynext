@@ -133,6 +133,7 @@ export const xwsFromSquadron = (squadron: Squadron): SquadronXWS => {
     favourite: s.favourite,
     format: s.format,
     version: s.version,
+    // @ts-ignore
     pilots: s.ships.map((ship) => {
       const upgrades: { [s: string]: string[] } = {};
       slotKeys.forEach((key) => {
