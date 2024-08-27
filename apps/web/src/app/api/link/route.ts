@@ -1,6 +1,6 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { serialize } from '../../../helpers/export';
-import { xwsFromString } from '../../../helpers/import';
+
+import { xwsFromString } from 'lbn-core/src/helpers/import+export';
+import { serialize } from 'lbn-core/src/helpers/serializer';
 import { NextRequest, NextResponse } from 'next/server';
 
 const getLink = async (req: NextRequest) => {
@@ -11,7 +11,6 @@ const getLink = async (req: NextRequest) => {
       const link = serialize(xws);
 
       return NextResponse.json(`https://launchbaynext.app/?lbx=${link}`);
-      return;
     }
   }
 

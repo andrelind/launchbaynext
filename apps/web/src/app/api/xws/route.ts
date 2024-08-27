@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { deserialize, exportAsXws } from '../../../helpers/export';
+
+import { deserialize, exportAsXws } from 'lbn-core/src/helpers/serializer';
 import { NextRequest, NextResponse } from 'next/server';
 
 const getXws = async (req: NextRequest, res: NextResponse) => {

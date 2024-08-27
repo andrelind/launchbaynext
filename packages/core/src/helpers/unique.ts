@@ -1,5 +1,5 @@
 // @flow
-import {
+import type {
   Format,
   Pilot,
   Ship,
@@ -7,8 +7,10 @@ import {
   SlotKey,
   Squadron,
   Upgrade,
-} from '../../types';
+  XWS,
+} from '../types';
 import { slotKeys } from './enums';
+import { loadShip2, TShip } from './loading';
 
 export const limitedWarning = (
   xws: string,
@@ -43,7 +45,7 @@ export const upgradeFormatWarning = (upgrade: Upgrade, format: Format) => {
 };
 
 export const shipFormatWarning = (
-  ship: Ship,
+  ship: TShip,
   format: Format,
   validateUpgrades: boolean = true
 ) => {
@@ -67,14 +69,14 @@ export const shipFormatWarning = (
 
   switch (format) {
     case 'Standard': {
-      if (!ship.pilot.standard) {
+      if (!ship.pilot?.standard) {
         return true;
       }
       return checkUpgrades();
     }
 
     case 'Epic': {
-      if (!ship.pilot.epic) {
+      if (!ship.pilot?.epic) {
         return true;
       }
       return checkUpgrades();
@@ -119,10 +121,11 @@ export const pilotFormatWarning = (
   return false;
 };
 
-export const squadronFormatWarning = (squadron: Squadron) => {
+export const squadronFormatWarning = (xws: XWS) => {
   let warning = false;
-  squadron.ships.forEach((s) => {
-    if (shipFormatWarning(s, squadron.format)) {
+  xws.pilots.forEach((p) => {
+    const s = loadShip2(p, xws);
+    if (shipFormatWarning(s, xws.format)) {
       warning = true;
     }
   });
