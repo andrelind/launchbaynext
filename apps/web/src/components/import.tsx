@@ -1,8 +1,8 @@
 import { serializer } from 'lbn-core/src/helpers';
 import { canImportXws } from 'lbn-core/src/helpers/import+export';
-import { SquadronXWS } from 'lbn-core/src/types';
+import { type XWS } from 'lbn-core/src/types';
 import { useRouter } from 'next/navigation';
-import { FC, useState } from 'react';
+import { type FC, useState } from 'react';
 
 type Props = {
   onClose: () => void;
@@ -10,7 +10,7 @@ type Props = {
 
 export const ImportComponent: FC<Props> = ({ onClose }) => {
   const [error, setError] = useState<Error>();
-  const [xws, setXws] = useState<SquadronXWS>();
+  const [xws, setXws] = useState<XWS>();
 
   const router = useRouter();
 

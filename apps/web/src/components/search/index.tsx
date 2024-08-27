@@ -1,10 +1,11 @@
 import { Transition } from '@headlessui/react';
-import { conditions, pilots, upgrades } from 'lbn-core/src/assets';
+import { loadShip2 } from '@web/helpers/loading';
+import { conditions, pilots, upgrades } from 'lbn-core/src/assets/xwa';
+import { keyFromFaction } from 'lbn-core/src/helpers/convert';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
-import { loadPilot } from 'lbn-core/src/helpers/unit';
-import { Ship, ShipType, UpgradeBase } from 'lbn-core/src/types';
-import React, { FC, useEffect, useState } from 'react';
-import { v4 as uuid } from 'uuid';
+import type { TShip } from 'lbn-core/src/helpers/loading';
+import type { ShipType, UpgradeBase } from 'lbn-core/src/types';
+import { type FC, useEffect, useState } from 'react';
 import { Modal } from '../modal';
 import PilotComponent from '../pilot';
 import { ShipTypeComponent } from '../ship-type';
@@ -34,17 +35,17 @@ const options = [
 export const SearchComponent: FC<Props> = ({ needle }) => {
   const [tab, setTab] = useState<TabOption>(TabOption.All);
   const [filteredShips, setFilteredShips] = useState<ShipType[]>([]);
-  const [filteredPilots, setFilteredPilots] = useState<Ship[]>([]);
+  const [filteredPilots, setFilteredPilots] = useState<TShip[]>([]);
   const [filteredUpgrades, setFilteredUpgrades] = useState<UpgradeBase[]>([]);
 
   const [showShip, setShowShip] = useState<ShipType>();
-  const [showPilot, setShowPilot] = useState<Ship>();
+  const [showPilot, setShowPilot] = useState<TShip>();
   const [showUpgrade, setShowUpgrade] = useState<UpgradeBase>();
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
   const refreshData = () => {
     const fShips: ShipType[] = [];
-    const fPilots: Ship[] = [];
+    const fPilots: TShip[] = [];
     const fUpgrades: UpgradeBase[] = [];
 
     if (!needle || needle.length < 3) {
@@ -75,14 +76,15 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
             ...filtered.map((pilot) =>
               Object.assign(
                 {},
-                loadPilot(
+                loadShip2(
                   {
-                    uid: uuid(),
-                    name: pilot.xws,
+                    id: pilot.xws,
                     ship: ship.xws,
+                    points: pilot.cost,
                     upgrades: {},
                   },
-                  faction
+                  keyFromFaction(faction),
+                  'Extended'
                 )
               )
             )
@@ -220,7 +222,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                   setShowPilot(s);
                 }
               }}
-              key={`${s.faction}_${s.xws}_${s.pilot.xws}`}
+              key={`${s.faction}_${s.xws}_${s.pilot?.xws}`}
               className="py-1 px-3 hover:bg-gray-100"
               onMouseEnter={(e) => {
                 if (!process.browser || window.innerWidth < 640) {
@@ -299,7 +301,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         style={{ top: pos.y - 65 }}
       >
         {showShip && <ShipTypeComponent shipType={showShip} showFaction />}
-        {showPilot && (
+        {showPilot && showPilot.pilot && (
           <PilotComponent
             pilot={showPilot.pilot}
             ship={showPilot}
@@ -326,7 +328,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         }}
       >
         {showShip && <ShipTypeComponent shipType={showShip} showFaction />}
-        {showPilot && (
+        {showPilot && showPilot.pilot && (
           <PilotComponent
             pilot={showPilot.pilot}
             ship={showPilot}

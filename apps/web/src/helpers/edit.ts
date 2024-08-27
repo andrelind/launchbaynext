@@ -1,9 +1,9 @@
-import upgradeData from 'lbn-core/src/assets/upgrades';
+import upgradeData from 'lbn-core/src/assets/xwa/upgrades';
 import { bumpMinor, bumpPatch } from 'lbn-core/src/helpers/versioning';
-import { SlotKey, Upgrade, UpgradeXWS } from 'lbn-core/src/types';
+import type { PilotXWS, SlotKey, Upgrade, UpgradeXWS, XWS } from 'lbn-core/src/types';
 import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from './loading';
 import { upgradesForSlot2 } from './select';
-import { PilotXWS, XWS } from './types';
+
 
 export const addShip2 = (
   list: XWS,

@@ -1,6 +1,6 @@
-import { purple, red } from 'lbn-core/src/assets/colors';
-import { Action, Difficulty } from 'lbn-core/src/types';
-import React, { FC } from 'react';
+import { purple, red } from 'lbn-core/src/colors';
+import type { Action, Difficulty } from 'lbn-core/src/types';
+import type { FC } from 'react';
 import XwingFont from './fonts/xwing';
 
 type Props = {

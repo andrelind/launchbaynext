@@ -3,10 +3,10 @@ import {
   limitedWarning,
   pilotFormatWarning,
 } from 'lbn-core/src/helpers/unique';
-import { FactionKey, Format, Pilot, ShipType } from 'lbn-core/src/types';
-import { FC, useState } from 'react';
+import type { FactionKey, Format, Pilot, ShipType } from 'lbn-core/src/types';
+import { type FC, useState } from 'react';
 import { factionFromKey } from '../../helpers/convert';
-import { TShip } from '../../helpers/loading';
+import { type TShip } from '../../helpers/loading';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { pilotOptions } from '../../helpers/select';
 import { FormatError } from '../format-error';

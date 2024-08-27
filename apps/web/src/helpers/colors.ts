@@ -4,8 +4,8 @@ import {
   orange,
   red,
   scum,
-} from 'lbn-core/src/assets/colors';
-import { Faction, FactionKey } from 'lbn-core/src/types';
+} from 'lbn-core/src/colors';
+import type { Faction, FactionKey } from 'lbn-core/src/types';
 
 export const colorForFaction = (faction: Faction) => {
   switch (faction) {

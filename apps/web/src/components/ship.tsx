@@ -1,5 +1,5 @@
-import { ShipType } from 'lbn-core/src/types';
-import React, { FC } from 'react';
+import { type ShipType } from 'lbn-core/src/types';
+import { type FC } from 'react';
 import { colorForFaction } from '../helpers/colors';
 import ShipFont from './fonts/ships';
 import XwingFont from './fonts/xwing';

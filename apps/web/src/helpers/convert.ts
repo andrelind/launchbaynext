@@ -1,4 +1,4 @@
-import { Faction, FactionKey } from 'lbn-core/src/types';
+import type { Faction, FactionKey } from 'lbn-core/src/types';
 
 export const keyFromFaction = (faction: Faction) => {
   switch (faction) {

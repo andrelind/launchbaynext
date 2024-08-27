@@ -1,7 +1,6 @@
 // @flow
-import { blue, red, yellow } from 'lbn-core/src/assets/colors';
-import { Format } from 'lbn-core/src/types';
-import React from 'react';
+import { blue, red, yellow } from 'lbn-core/src/colors';
+import { type Format } from 'lbn-core/src/types';
 
 type Props = {
   format: Format;

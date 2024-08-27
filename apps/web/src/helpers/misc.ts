@@ -1,4 +1,6 @@
-import { SortingType, XWS } from './types';
+import type { XWS } from "lbn-core/src/types";
+import type { SortingType } from "./types";
+
 
 export const move = (arr: any[], old_index: number, new_index: number) => {
   while (old_index < 0) {

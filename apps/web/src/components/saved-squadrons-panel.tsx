@@ -1,13 +1,13 @@
 import { Transition } from '@headlessui/react';
 import { useRouter } from 'next/navigation';
-import { FC, useState } from 'react';
+import { type FC, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
 import { colorForFactionKey } from '../helpers/colors';
 import { serialize } from '../helpers/export';
 import { compare } from '../helpers/misc';
 import { pilotName } from '../helpers/names';
-import { SortingType } from '../helpers/types';
+import { type SortingType } from '../helpers/types';
 import XwingFont from './fonts/xwing';
 import { colorForFormat } from './format';
 import { TagComponent } from './tag';

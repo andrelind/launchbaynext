@@ -1,20 +1,20 @@
+import { Transition } from '@headlessui/react';
 import {
   CloudIcon,
   CogIcon,
-  LinkIcon,
   EllipsisHorizontalCircleIcon,
+  LinkIcon,
   PlusCircleIcon,
   PrinterIcon,
   TagIcon,
   XCircleIcon,
 } from '@heroicons/react/24/outline';
-import { Transition } from '@headlessui/react';
 import { factions } from 'lbn-core/src/helpers/enums';
 import { getFactionKey } from 'lbn-core/src/helpers/serializer';
+import type { XWS } from 'lbn-core/src/types';
 import { signIn, signOut, useSession } from 'next-auth/react';
-import React, { FC, useEffect, useState } from 'react';
+import React, { type FC, useEffect, useState } from 'react';
 import { colorForFaction, colorForFactionKey } from '../helpers/colors';
-import { XWS } from '../helpers/types';
 import { AboutComponent } from './about';
 import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
@@ -89,8 +89,8 @@ export const Layout: FC<Props> = ({
                           onClick={() => setShowAdd(!showAdd)}
                           type="button"
                           className={`inline-flex ${showAdd
-                              ? 'bg-gray-900 text-white'
-                              : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                            ? 'bg-gray-900 text-white'
+                            : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                             } px-3 py-2 rounded-md text-sm font-medium`}
                           id="options-menu"
                           aria-haspopup="true"

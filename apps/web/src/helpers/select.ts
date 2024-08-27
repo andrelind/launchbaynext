@@ -1,8 +1,9 @@
-import pilotData from 'lbn-core/src/assets/pilots';
-import upgradeData from 'lbn-core/src/assets/upgrades';
+import pilotData from 'lbn-core/src/assets/xwa/pilots';
+import upgradeData from 'lbn-core/src/assets/xwa/upgrades';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
 import { allSlots, slotKeys } from 'lbn-core/src/helpers/enums';
-import {
+import { freeSlotsForShip2, pointsForUpgrade2, type TShip } from 'lbn-core/src/helpers/loading';
+import type {
   Faction,
   Format,
   Pilot,
@@ -14,10 +15,10 @@ import {
   UpgradeCostInitiative,
   UpgradeCostSize,
   UpgradeCostValue,
+  XWS,
 } from 'lbn-core/src/types';
 import { factionFromKey } from './convert';
-import { TShip, freeSlotsForShip2, pointsForUpgrade2 } from './loading';
-import { XWS } from './types';
+
 
 export const getUpgradeCost = (cost: any) => {
   if (!cost) {
@@ -42,8 +43,7 @@ export const getUpgradeCost = (cost: any) => {
       .slice(0, 3)
       .map(
         (key) =>
-          `${key}: ${
-            typedCost.values[key as 'Small' | 'Medium' | 'Large' | 'Huge']
+          `${key}: ${typedCost.values[key as 'Small' | 'Medium' | 'Large' | 'Huge']
           }`
       )
       .join('\n');
@@ -58,7 +58,7 @@ export const upgradesForSlot2 = (
   showUnavailable: boolean,
   needle?: string
 ): Upgrade[] => {
-  const freeSlots = freeSlotsForShip2(ship);
+  const freeSlots = freeSlotsForShip2(ship, { ruleset: 'xwa' });
   const allXws = usedShipXws2(ship);
 
   const upgrades: { [key in SlotKey]?: string[] } = {};
@@ -72,7 +72,7 @@ export const upgradesForSlot2 = (
   const data = upgradeData[keyFromSlot(slot)]
     .map((u) => ({
       ...u,
-      finalCost: pointsForUpgrade2(u.cost, ship),
+      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset: 'xwa' }),
       available: 0,
       //   available: countForUpgrade(u.xws, collection, squadron),
     }))

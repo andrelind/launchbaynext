@@ -1,7 +1,7 @@
-import conditionData from 'lbn-core/src/assets/conditions';
-import { Pilot, ShipType } from 'lbn-core/src/types';
-import { FC } from 'react';
-import { TShip } from '../helpers/loading';
+import conditionData from 'lbn-core/src/assets/xwa/conditions';
+import type { Pilot, ShipType } from 'lbn-core/src/types';
+import { type FC } from 'react';
+import { type TShip } from '../helpers/loading';
 import AbilityComponent from './ability';
 import ActionsComponent from './actions';
 import { DialComponent } from './dial';

@@ -1,14 +1,12 @@
 'use client';
 
-import { SlotKey } from 'lbn-core/src/types';
-import { NextPage } from 'next';
-import QRCode from 'qrcode.react';
-import React from 'react';
-import Logo from '../../components/logo';
-import { deserialize, exportAsXws } from '../../helpers/export';
-import { loadShip2, TShip } from '../../helpers/loading';
-import { XWS } from '../../helpers/types';
+import { loadShip2, type TShip } from 'lbn-core/src/helpers/loading';
+import { deserialize, exportAsXws } from 'lbn-core/src/helpers/serializer';
+import { type SlotKey } from 'lbn-core/src/types';
+import { type NextPage } from 'next';
 import { useSearchParams } from 'next/navigation';
+import QRCode from 'qrcode.react';
+import Logo from '../../components/logo';
 
 type Props = {};
 
@@ -21,7 +19,7 @@ const PrintPage: NextPage<Props> = ({ }) => {
     return <div />;
   }
 
-  const ships = xws?.pilots.map((p) => loadShip2(p, xws.faction, xws.format));
+  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }));
 
   const threshold = (ship: TShip) => {
     const shields = ship.stats.filter((s) => s.type === 'shields')[0]

@@ -1,5 +1,5 @@
-import { Slot, Upgrade } from 'lbn-core/src/types';
-import React, { FC } from 'react';
+import type { Slot, Upgrade } from 'lbn-core/src/types';
+import { type FC } from 'react';
 import { colorForFaction } from '../../helpers/colors';
 import { getUpgradeCost } from '../../helpers/cost';
 import { XwingFont } from '../fonts/xwing';

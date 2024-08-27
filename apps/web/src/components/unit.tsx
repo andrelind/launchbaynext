@@ -1,6 +1,5 @@
 import { slotKeys } from 'lbn-core/src/helpers/enums';
-import { Ship } from 'lbn-core/src/types';
-import React from 'react';
+import { type Ship } from 'lbn-core/src/types';
 import { ActionsComponent } from './actions';
 import ShipStats from './ship-stats';
 

@@ -1,4 +1,4 @@
-import {
+import type {
   UpgradeCostAgility,
   UpgradeCostInitiative,
   UpgradeCostSize,
@@ -28,8 +28,7 @@ export const getUpgradeCost = (cost: any) => {
       .slice(0, 3)
       .map(
         (key) =>
-          `${key}:${
-            typedCost.values[key as 'Small' | 'Medium' | 'Large' | 'Huge']
+          `${key}:${typedCost.values[key as 'Small' | 'Medium' | 'Large' | 'Huge']
           }`
       )
       .join('\n');

@@ -1,10 +1,10 @@
+import type { XWS } from 'lbn-core/src/types';
 import React from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { v4 as uuid } from 'uuid';
 import { trpc } from '../app/_trpc/client';
 import { colorForFactionKey } from '../helpers/colors';
 import { pilotName } from '../helpers/names';
-import { XWS } from '../helpers/types';
 import { XwingFont } from './fonts/xwing';
 import { colorForFormat } from './format';
 import { TagComponent } from './tag';
@@ -60,7 +60,7 @@ export const SavePanel: React.FC<Props> = ({ xws, onClose }) => {
                       const edit: XWS = JSON.parse(JSON.stringify(xws));
                       edit.vendor.lbn.uid = s.vendor.lbn.uid;
 
-                      await trpc.lists.update.mutate([edit]);
+                      // await trpc.lists.update.mutate([edit]);
                       mutate('/lists');
                       onClose();
                     }}
@@ -109,7 +109,7 @@ export const SavePanel: React.FC<Props> = ({ xws, onClose }) => {
                 const edit: XWS = JSON.parse(JSON.stringify(xws));
                 edit.vendor.lbn.uid = uuid();
 
-                await trpc.lists.update.mutate([edit]);
+                // await trpc.lists.update.mutate([edit]);
                 mutate('/lists');
                 onClose();
               }}

@@ -1,5 +1,4 @@
-import { blue, purple, red } from 'lbn-core/src/assets/colors';
-import React from 'react';
+import { blue, purple, red } from 'lbn-core/src/colors';
 import XwingFont from '../fonts/xwing';
 
 const colorForValue = (value: string) => {

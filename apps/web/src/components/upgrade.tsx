@@ -1,6 +1,6 @@
-import { red } from 'lbn-core/src/assets/colors';
-import { Upgrade } from 'lbn-core/src/types';
-import React, { FC } from 'react';
+import { red } from 'lbn-core/src/colors';
+import { type Upgrade } from 'lbn-core/src/types';
+import { type FC } from 'react';
 import XwingFont from './fonts/xwing';
 import { FormattedText } from './formatted-text';
 import Grants from './grants';

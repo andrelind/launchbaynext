@@ -1,5 +1,5 @@
 import textHelper from 'lbn-core/src/helpers/text';
-import React, { FC } from 'react';
+import { type FC } from 'react';
 import XwingFont from './fonts/xwing';
 
 type Props = {

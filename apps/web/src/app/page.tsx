@@ -2,7 +2,10 @@
 
 import { DocumentDuplicateIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
-import { FactionKey, Ship, ShipType, Slot, Upgrade } from 'lbn-core/src/types';
+import { exportAsTTS, exportAsText } from 'lbn-core/src/helpers/import+export';
+import { loadShip2, loadUpgrades2 } from 'lbn-core/src/helpers/loading';
+import { deserialize, exportAsXws, serialize } from 'lbn-core/src/helpers/serializer';
+import type { FactionKey, Ship, ShipType, Slot, Upgrade, XWS } from 'lbn-core/src/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
@@ -24,16 +27,7 @@ import {
   setUpgrade2,
   toggleFormat,
 } from '../helpers/edit';
-import {
-  deserialize,
-  exportAsTTS,
-  exportAsText,
-  exportAsXws,
-  serialize,
-} from '../helpers/export';
-import { loadShip2, loadUpgrades2 } from '../helpers/loading';
 import { shipTypes, upgradesForSlot2, usedXWS } from '../helpers/select';
-import { XWS } from '../helpers/types';
 export type DataItem = {
   type: 'Ship' | 'Upgrade' | 'Empty' | 'SlotOptions';
   key: string;
@@ -60,6 +54,7 @@ const MainPage = () => {
       description: '',
       faction: (queryFaction as FactionKey) || 'rebelalliance',
       format: 'Standard',
+      ruleset: 'xwa',
       pilots: [],
       points: 0,
       version: '2.0.0',
@@ -70,13 +65,13 @@ const MainPage = () => {
           ties: 0,
           losses: 0,
           tags: [],
-          created: new Date().toDateString(),
+          created: new Date(),
         },
       },
     };
 
   const [xws, setXws] = useState<XWS>(initialXws);
-  const ships = xws?.pilots.map((p) => loadShip2(p, xws.faction, xws.format));
+  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }));
 
   const [shipBase, setShipBase] = useState<ShipType>();
 
@@ -272,8 +267,8 @@ const MainPage = () => {
                       onChange={(newValue) => {
                         const slot = newValue?.sides[0].slots[0] || 'Hardpoint';
                         let slotIndex = 0;
-                        for (let i = 0; i < (s.pilot?.slots.length || 0); i++) {
-                          if (s.pilot?.slots[i] === slot) {
+                        for (let i = 0; i < (s.pilot?.slots?.length || 0); i++) {
+                          if (s.pilot?.slots?.[i] === slot) {
                             if (i === 0) {
                               return slotIndex;
                             }

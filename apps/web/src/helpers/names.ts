@@ -1,8 +1,8 @@
-import pilotData from 'lbn-core/src/assets/pilots';
-import upgradeData from 'lbn-core/src/assets/upgrades';
-import { getFaction } from 'lbn-core/src/helpers/import+export';
-import { FactionKey, SlotKey } from 'lbn-core/src/types';
-import { PilotXWS } from './types';
+import pilotData from 'lbn-core/src/assets/xwa/pilots';
+import upgradeData from 'lbn-core/src/assets/xwa/upgrades';
+import { getFaction } from 'lbn-core/src/helpers/convert';
+import type { FactionKey, PilotXWS, SlotKey } from 'lbn-core/src/types';
+
 
 let pilots: { [s: string]: string } = {};
 let upgrades: { [s: string]: string } = {};

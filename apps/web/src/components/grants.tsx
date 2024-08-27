@@ -5,9 +5,8 @@ import {
   purple,
   red,
   yellow,
-} from 'lbn-core/src/assets/colors';
-import { Difficulty, Grant } from 'lbn-core/src/types';
-import React from 'react';
+} from 'lbn-core/src/colors';
+import type { Difficulty, Grant } from 'lbn-core/src/types';
 import XwingFont from './fonts/xwing';
 
 type Props = {

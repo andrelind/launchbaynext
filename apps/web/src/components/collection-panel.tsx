@@ -1,9 +1,9 @@
 import { Transition } from '@headlessui/react';
-import { pilots, upgrades } from 'lbn-core/src/assets';
-import sources, { SourceKey } from 'lbn-core/src/assets/sources';
+import { pilots, upgrades } from 'lbn-core/src/assets/xwa';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
-import { Faction } from 'lbn-core/src/types';
-import { FC, useEffect, useState } from 'react';
+import sources, { type SourceKey } from 'lbn-core/src/sources';
+import { type Faction } from 'lbn-core/src/types';
+import { type FC, useEffect, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
 import { colorForFaction } from '../helpers/colors';

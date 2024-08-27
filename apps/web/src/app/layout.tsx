@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* @ts-ignore */}
         <NextAuthProvider>{children}</NextAuthProvider>
       </body>
     </html>

@@ -1,11 +1,11 @@
 import { Transition } from '@headlessui/react';
-import { red } from 'lbn-core/src/assets/colors';
+import { red } from 'lbn-core/src/colors';
 import {
   limitedWarning,
   upgradeFormatWarning,
 } from 'lbn-core/src/helpers/unique';
-import { Format, Slot, Upgrade } from 'lbn-core/src/types';
-import React, { FC, useState } from 'react';
+import type { Format, Slot, Upgrade } from 'lbn-core/src/types';
+import { type FC, useState } from 'react';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { FormatError } from '../format-error';
 import { LimitError } from '../limit-error';

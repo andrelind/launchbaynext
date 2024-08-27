@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid';
 import { RuleSet } from '..';
 import { assets } from '../';
-import { FactionKey, SlotKey, SquadronXWS, XWS } from '../types';
+import { FactionKey, SlotKey, XWS } from '../types';
 import { getFaction } from './convert';
 import { slotKeys } from './enums';
 import { loadShip2 } from './loading';
@@ -119,7 +119,7 @@ const validateJSON = (data: any): any | undefined => {
   return data;
 };
 
-export const canImportXws = (data: string): SquadronXWS => {
+export const canImportXws = (data: string): XWS => {
   let json;
   try {
     json = JSON.parse(data);

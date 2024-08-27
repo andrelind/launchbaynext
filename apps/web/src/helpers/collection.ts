@@ -1,7 +1,7 @@
-import sources from 'lbn-core/src/assets/sources';
 import { slotKeys, sourceKeys } from 'lbn-core/src/helpers/enums';
-import { SlotKey } from 'lbn-core/src/types';
-import { CollectionState, XWS } from './types';
+import sources from 'lbn-core/src/sources';
+import { type SlotKey, type XWS } from 'lbn-core/src/types';
+import { type CollectionState } from './types';
 
 export type TCollection = {
   timestamp: string;

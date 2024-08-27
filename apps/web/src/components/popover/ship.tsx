@@ -1,6 +1,6 @@
 import { Transition } from '@headlessui/react';
-import { ShipType } from 'lbn-core/src/types';
-import React, { FC, useEffect, useState } from 'react';
+import { type ShipType } from 'lbn-core/src/types';
+import { type FC, useEffect, useState } from 'react';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { ShipTypeComponent } from '../ship-type';
 import { SlimShip } from '../slim/ship';

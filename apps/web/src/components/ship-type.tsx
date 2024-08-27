@@ -1,5 +1,5 @@
-import { ShipType } from 'lbn-core/src/types';
-import { FC } from 'react';
+import { type ShipType } from 'lbn-core/src/types';
+import { type FC } from 'react';
 import { AbilityComponent } from './ability';
 import ActionsComponent from './actions';
 import BaseSize from './base-size';
@@ -29,12 +29,9 @@ export const ShipTypeComponent: FC<Props> = ({ shipType, showFaction }) => (
 
     <div className="flex-1 justify-between items-center hidden sm:flex">
       <span>
-        {shipType.pilots.length > 0 &&
-          shipType.pilots
-            .sort((a, b) => a.initiative - b.initiative)[0]
-            .slots.map((s, i) => (
-              <XwingFont key={`${s}_${i}`} icon={s} className="mr-1" />
-            ))}
+        {shipType.pilots.length > 0 && shipType?.pilots?.sort((a, b) => a?.initiative - b?.initiative)?.[0]?.slots?.map((s, i) => (
+          <XwingFont key={`${s}_${i}`} icon={s} className="mr-1" />
+        ))}
       </span>
       <BaseSize size={shipType.size} />
     </div>

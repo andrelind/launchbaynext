@@ -1,7 +1,7 @@
-import { FC, useState } from 'react';
+import type { XWS } from 'lbn-core/src/types';
+import { type FC, useState } from 'react';
 import useSwr from 'swr';
 import { trpc } from '../app/_trpc/client';
-import { XWS } from '../helpers/types';
 import { TagComponent } from './tag';
 
 type Props = {

@@ -6,9 +6,9 @@ import {
   purple,
   red,
   yellow,
-} from 'lbn-core/src/assets/colors';
-import { Stat } from 'lbn-core/src/types';
-import React, { FC } from 'react';
+} from 'lbn-core/src/colors';
+import type { Stat } from 'lbn-core/src/types';
+import { type FC } from 'react';
 import XwingFont from './fonts/xwing';
 
 export const colorForStat = (stat: string) => {

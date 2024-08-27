@@ -1,4 +1,4 @@
-import React, { FC, memo } from 'react';
+import { memo, type FC } from 'react';
 import Row from './row';
 
 type Props = {
