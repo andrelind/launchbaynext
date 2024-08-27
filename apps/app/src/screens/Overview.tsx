@@ -1,5 +1,6 @@
 import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import * as Linking from 'expo-linking';
 import React, { FC, useLayoutEffect } from 'react';
 import {
   ScrollView,
@@ -8,6 +9,7 @@ import {
   View
 } from 'react-native';
 import { XWingFont } from '../components/fonts/XWingIcon';
+import { SimpleItem } from '../components/SimpleItem';
 import { useTailwind } from '../helpers/tailwind';
 import { captureScroll } from '../helpers/ui';
 import { notifications } from '../notifications';
@@ -38,16 +40,6 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
         </View>
 
       ),
-      // headerLeft: () => (
-      //   <TouchableOpacity
-      //     style={tw`px-2 py-4`}
-      //     onPress={() => {
-      //       // navigation.navigate('Settings');
-      //     }}
-      //   >
-      //     <Feather name="settings" size={20} color={tw.color('orange-500')} />
-      //   </TouchableOpacity>
-      // ),
       headerRight: user ? () => (
         <TouchableOpacity
           style={tw`px-2 py-4`}
@@ -122,6 +114,22 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
             />
           </View>
         </View> */}
+
+        <View style={tw`flex-row items-center justify-center`}>
+          <SimpleItem
+            text={'Privacy Policy'}
+            hideArrow
+            onPress={async () => {
+              if (
+                await Linking.canOpenURL('https://launchbaynext.app/privacy')
+              ) {
+                Linking.openURL('https://launchbaynext.app/privacy');
+              }
+            }}
+          />
+
+        </View>
+
       </ScrollView>
     </View>
   );

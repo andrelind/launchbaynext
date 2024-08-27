@@ -31,6 +31,8 @@ export const SwipeComponent: FC<Props> = ({
 }) => {
   const swiper = useRef<Swipeable>(null);
 
+  const [_isSwiping, setIsSwiping] = React.useState(false);
+
   const renderAction = (
     text: ReactElement,
     color: string,
@@ -142,20 +144,16 @@ export const SwipeComponent: FC<Props> = ({
       containerStyle={style || styles.container}
       renderLeftActions={renderLeftActions}
       renderRightActions={renderRightActions}
+      onSwipeableWillOpen={() => setIsSwiping(true)}
+      onSwipeableWillClose={() => setIsSwiping(false)}
       onSwipeableOpen={(direction) => {
-        console.log(direction);
-
         direction === 'left' ? onLeftOpen() : onRightOpen();
       }}
     >
       <TouchableOpacity
         style={{ flex: 1 }}
         activeOpacity={0.7}
-        onPress={() => {
-          console.log('onPress');
-
-          onPress?.()
-        }}
+        onPress={onPress}
         onLongPress={onLongPress}
       >
         {children}
