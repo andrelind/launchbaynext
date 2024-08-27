@@ -1,8 +1,8 @@
+import type { TShip } from 'lbn-core/src/helpers/loading';
 import type { Pilot, ShipType } from 'lbn-core/src/types';
 import Image from 'next/image';
 import type { FC } from 'react';
 import { colorForFaction } from '../../helpers/colors';
-import type { TShip } from '../../helpers/loading';
 import AbilityComponent from '../ability';
 import ShipFont from '../fonts/ships';
 import XwingFont from '../fonts/xwing';

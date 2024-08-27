@@ -1,9 +1,8 @@
 import { Transition } from '@headlessui/react';
-import { loadShip2 } from '@web/helpers/loading';
 import { conditions, pilots, upgrades } from 'lbn-core/src/assets/xwa';
 import { keyFromFaction } from 'lbn-core/src/helpers/convert';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
-import type { TShip } from 'lbn-core/src/helpers/loading';
+import { loadShip2, type TShip } from 'lbn-core/src/helpers/loading';
 import type { ShipType, UpgradeBase } from 'lbn-core/src/types';
 import { type FC, useEffect, useState } from 'react';
 import { Modal } from '../modal';
@@ -83,8 +82,11 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                     points: pilot.cost,
                     upgrades: {},
                   },
-                  keyFromFaction(faction),
-                  'Extended'
+                  {
+                    faction: keyFromFaction(faction),
+                    format: 'Extended',
+                    ruleset: 'xwa',
+                  }
                 )
               )
             )

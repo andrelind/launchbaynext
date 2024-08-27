@@ -1,10 +1,10 @@
 import { Transition } from '@headlessui/react';
+import { serialize } from 'lbn-core/src/helpers/serializer';
 import { useRouter } from 'next/navigation';
 import { type FC, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
 import { colorForFactionKey } from '../helpers/colors';
-import { serialize } from '../helpers/export';
 import { compare } from '../helpers/misc';
 import { pilotName } from '../helpers/names';
 import { type SortingType } from '../helpers/types';

@@ -1,4 +1,5 @@
 import { Transition } from '@headlessui/react';
+import type { TShip } from 'lbn-core/src/helpers/loading';
 import {
   limitedWarning,
   pilotFormatWarning,
@@ -6,7 +7,6 @@ import {
 import type { FactionKey, Format, Pilot, ShipType } from 'lbn-core/src/types';
 import { type FC, useState } from 'react';
 import { factionFromKey } from '../../helpers/convert';
-import { type TShip } from '../../helpers/loading';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { pilotOptions } from '../../helpers/select';
 import { FormatError } from '../format-error';

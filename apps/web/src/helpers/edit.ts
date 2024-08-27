@@ -1,7 +1,7 @@
 import upgradeData from 'lbn-core/src/assets/xwa/upgrades';
+import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
 import { bumpMinor, bumpPatch } from 'lbn-core/src/helpers/versioning';
 import type { PilotXWS, SlotKey, Upgrade, UpgradeXWS, XWS } from 'lbn-core/src/types';
-import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from './loading';
 import { upgradesForSlot2 } from './select';
 
 
@@ -19,7 +19,7 @@ export const addShip2 = (
     points: 0,
   };
 
-  const ship = loadShip2(pilot, list.faction, list.format);
+  const ship = loadShip2(pilot, { faction: list.faction, format: list.format, ruleset: list.ruleset || 'xwa' });
   // Check for free configurations
   const configs = upgradesForSlot2(
     ship,
@@ -161,9 +161,9 @@ export const setUpgrade2 = (
   }
 
   // Make sure we have correct amount of upgrades
-  const ship = loadShip2(pilot, squad.faction, squad.format);
+  const ship = loadShip2(pilot, { faction: squad.faction, format: squad.format, ruleset: squad.ruleset || 'xwa' });
   // FIXME: CleanupUpgrades should work with just ship...
-  pilot.upgrades = cleanupUpgrades2(pilot.upgrades, ship, squad.format);
+  pilot.upgrades = cleanupUpgrades2(pilot.upgrades, ship, { format: squad.format, ruleset: squad.ruleset || 'xwa' });
 
   squad.points = pointsForSquadron2(squad);
   squad.version = bumpPatch(squad.version || '2.0.0');
@@ -178,16 +178,16 @@ export const changePilot2 = (
   const edit: XWS = JSON.parse(JSON.stringify(xws));
   const pilot = edit.pilots[pilotIndex];
   pilot.id = pilotXws;
-  const ship = loadShip2(pilot, xws.faction, xws.format);
+  const ship = loadShip2(pilot, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'xwa' });
   edit.pilots[pilotIndex].upgrades = cleanupUpgrades2(
     pilot.upgrades,
     ship,
-    xws.format
+    { format: edit.format, ruleset: edit.ruleset || 'xwa' }
   );
 
   const pilots = edit.pilots.map((p) => {
-    const s = loadShip2(p, xws.faction, xws.format);
-    const upgrades = cleanupUpgrades2(p.upgrades, s, xws.format);
+    const s = loadShip2(p, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'xwa' });
+    const upgrades = cleanupUpgrades2(p.upgrades, s, { format: edit.format, ruleset: edit.ruleset || 'xwa' });
 
     return {
       ...p,
