@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs';
 import prettier from 'prettier';
-import { pilots as pilotData, } from '../../src/assets/xwa';
+import { pilots as pilotData, upgrades as upgradeData } from '../../src/assets/xwa';
 import { factionFromKey } from '../../src/helpers/convert';
-import { FactionKey, Slot } from '../../src/types';
+import { FactionKey, Restrictions, Slot } from '../../src/types';
 import { getName } from '../xwing-data/utils';
 
 type XWAPilot = {
@@ -81,6 +81,85 @@ const runner = async () => {
                 );
             })
         })
+    }
+
+    const upgradeFile = await fs.readFile(`./upgrades.json`, 'utf-8')
+    const upgrades = JSON.parse(upgradeFile) as { [key: string]: { name: string, cost: number, limited: number, standard: boolean, extended: boolean, epic: boolean, slots: Slot[], restrictions: Restrictions[] } }
+
+    Object.keys(upgrades).forEach(async (upgradeXws) => {
+        const upgrade = upgrades[upgradeXws]
+
+        // Find the upgrade in the data
+        Object.keys(upgradeData).forEach((slotKey) => {
+            const slotUpgrades = upgradeData[slotKey as keyof typeof upgradeData]
+            const up = slotUpgrades.find((upgrade) => upgrade.xws === upgradeXws)
+            if (!up) {
+                return
+            }
+
+            // up.name = upgrade.name
+            up.cost = { value: upgrade.cost }
+            up.limited = upgrade.limited
+            up.standard = upgrade.standard
+            up.extended = upgrade.extended
+            up.epic = upgrade.epic
+            // @ts-ignore
+            up.sides[0].slots = upgrade.slots.map((slot) => slot === 'Payload' ? 'Device' : slot)
+            // @ts-ignore
+            if (upgrade.restrictions.find((restriction) => restriction.standardized)) {
+                up.standarized = true
+            }
+            if (upgrade.restrictions.length > 0) {
+                up.restrictions = upgrade.restrictions
+                    // @ts-ignore
+                    .filter(r => !r.standardized && !r.shipStat)
+                    .map((restriction) => {
+                        if (restriction.factions) {
+                            return { factions: restriction.factions.map((faction) => factionFromKey(faction as FactionKey)) }
+                            // @ts-expect-error
+                        } else if (restriction.sizes) {
+                            // @ts-expect-error
+                            return { baseSizes: restriction.sizes }
+                            // @ts-expect-error
+                        } else if (restriction.ships) {
+                            // @ts-expect-error
+                            return { chassis: restriction.ships }
+                        }
+                        // else if (restriction.shipStat) {
+                        //     console.log(restriction.shipStat);
+
+                        //     // @ts-expect-error
+                        //     const type: StatType = (restriction.shipStat as string).split(' ')[0].toLowerCase()
+                        //     // @ts-expect-error
+                        //     const value = parseInt((restriction.shipStat as string).split(' ')[1])
+                        //     return { stat: { type, value } }
+                        // }
+
+                        return restriction
+                    })
+            }
+        })
+    })
+
+    for await (const slotKey of Object.keys(upgradeData)) {
+        const upgrade = upgradeData[slotKey as keyof typeof upgradeData]
+
+        const header =
+            'import { UpgradeBase } from "../../../types";\n\nconst t: UpgradeBase[] = ';
+        const formatted = await prettier.format(
+            `${header}${JSON.stringify(upgrade)};\n\nexport default t;`,
+            {
+                trailingComma: 'all',
+                singleQuote: true,
+                parser: 'typescript',
+            }
+        );
+
+        await fs.writeFile(
+            `../../src/assets/xwa/upgrades/${slotKey}.ts`,
+            formatted,
+            'utf8'
+        );
     }
 }
 

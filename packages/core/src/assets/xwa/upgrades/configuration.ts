@@ -331,6 +331,7 @@ const t: UpgradeBase[] = [
     epic: true,
     cost: { value: 6 },
     restrictions: [{ chassis: ['croccruiser'] }],
+    extended: false,
   },
   {
     limited: 0,
@@ -603,7 +604,7 @@ const t: UpgradeBase[] = [
     standarized: true,
     standard: true,
     epic: true,
-    restrictions: [{ chassis: ['tieininterceptor', 'tievnsilencer'] }],
+    restrictions: [{ shipAbility: ['Autothrusters'] }],
     extended: true,
   },
   {
@@ -664,6 +665,7 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     restrictions: [{ chassis: ['rz1awing'] }],
+
   },
   {
     limited: 0,
@@ -689,7 +691,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/wartimeloadout.png',
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 0 },
     restrictions: [{ chassis: ['btanr2ywing'] }],
     standarized: true,
     standard: true,
@@ -745,6 +747,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    standarized: true,
   },
   {
     xws: 'swivelwing',

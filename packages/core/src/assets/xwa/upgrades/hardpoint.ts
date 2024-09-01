@@ -30,6 +30,7 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -57,6 +58,7 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -87,6 +89,7 @@ const t: UpgradeBase[] = [
     cost: { value: 9 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -117,6 +120,7 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -147,6 +151,7 @@ const t: UpgradeBase[] = [
     cost: { value: 10 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     xws: 'tractortentacles',
@@ -173,7 +178,11 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { baseSizes: ['Huge'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
+    extended: false,
   },
   {
     xws: 'drillbeak',
@@ -200,7 +209,11 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { baseSizes: ['Huge'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
+    extended: false,
   },
   {
     xws: 'enhancedpropulsion',
@@ -227,7 +240,11 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { baseSizes: ['Huge'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
+    extended: false,
   },
   {
     xws: 'protoncannonbattery',
@@ -254,6 +271,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
+    extended: false,
   },
 ];
 

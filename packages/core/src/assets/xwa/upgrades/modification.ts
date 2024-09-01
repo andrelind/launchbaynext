@@ -19,7 +19,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/ablativeplating.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 2 },
     restrictions: [{ baseSizes: ['Medium', 'Large'] }],
     standard: true,
     epic: true,
@@ -134,7 +134,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/hullupgrade.png',
       },
     ],
-    cost: { value: 6 },
+    cost: { value: 9 },
     standard: false,
     epic: true,
     extended: true,
@@ -178,7 +178,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/shieldupgrade.png',
       },
     ],
-    cost: { value: 8 },
+    cost: { value: 10 },
     standard: true,
     epic: true,
     extended: true,
@@ -227,6 +227,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: true,
+    restrictions: [{ baseSizes: ['Medium', 'Large'] }],
   },
   {
     limited: 0,
@@ -294,7 +295,7 @@ const t: UpgradeBase[] = [
     ],
     restrictions: [
       { factions: ['Galactic Republic'] },
-      { action: { type: 'Lock' } },
+      { action: { type: 'Lock', difficulty: 'White' } },
     ],
     standard: true,
     epic: true,
@@ -373,7 +374,7 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Small', 'Medium'] },
       { stat: { type: 'shields', value: 1 } },
     ],
-    cost: { value: 4 },
+    cost: { value: 1 },
     extended: true,
   },
   {
@@ -475,7 +476,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/precisionionengines.png',
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 1 },
     restrictions: [
       { keywords: ['TIE'] },
       { stat: { type: 'agility', value: 3 } },
@@ -511,7 +512,7 @@ const t: UpgradeBase[] = [
     xws: 'beskarreinforcedplating',
     standard: true,
     epic: true,
-    cost: { value: 3 },
+    cost: { value: 6 },
     sides: [
       {
         ability:
@@ -579,7 +580,7 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [{ chassis: ['gauntletfighter'] }],
-    cost: { value: 5 },
+    cost: { value: 2 },
     standard: true,
     extended: true,
     epic: true,

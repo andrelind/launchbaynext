@@ -22,6 +22,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Galactic Empire'] }, { baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -47,6 +48,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['tieadvancedx1', 'tieadvancedv1'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -71,6 +73,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { baseSizes: ['Huge'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -94,6 +97,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Galactic Empire'] }, { baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -117,6 +121,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Rebel Alliance'] }, { baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -142,6 +147,7 @@ const t: UpgradeBase[] = [
       { factions: ['First Order'] },
       { chassis: ['tiesffighter', 'tievnsilencer'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -163,6 +169,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Rebel Alliance'] }, { baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -185,6 +192,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Rebel Alliance'] }, { baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -207,6 +215,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 1,
@@ -230,6 +239,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -252,6 +262,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ baseSizes: ['Small'] }],
+    extended: false,
   },
   {
     limited: 2,
@@ -274,6 +285,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ baseSizes: ['Small'] }, { initiative: { min: 4 } }],
+    extended: false,
   },
   {
     limited: 0,
@@ -311,6 +323,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Republic'] },
       { chassis: ['delta7aethersprite', 'eta2actis'] },
     ],
+    extended: false,
   },
   {
     xws: 'shadowwing',
@@ -346,6 +359,7 @@ const t: UpgradeBase[] = [
     restrictions: [
       { chassis: ['tielnfighter', 'tieininterceptor', 'tiesabomber'] },
     ],
+    extended: false,
   },
   {
     xws: 'bounty',
@@ -377,6 +391,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     xws: 'initforthemoney',
@@ -436,6 +451,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Rebel Alliance'] }],
+    extended: false,
   },
   {
     xws: 'skystrikeacademyclass',
@@ -473,6 +489,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['tielnfighter', 'tieininterceptor'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -499,6 +516,7 @@ const t: UpgradeBase[] = [
       { chassis: ['asf01bwing'] },
     ],
     epic: true,
+    extended: false,
   },
   {
     xws: 'asajjventress',
@@ -572,7 +590,11 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { baseSizes: ['Huge'] },
+    ],
+    extended: false,
   },
   {
     xws: 'rifftamson',
@@ -593,7 +615,11 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { baseSizes: ['Huge'] },
+    ],
+    extended: false,
   },
   {
     xws: 'zealouscaptain',
@@ -615,6 +641,8 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
+    extended: false,
+    restrictions: [{ baseSizes: ['Huge'] }],
   },
   {
     limited: 0,
@@ -647,8 +675,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [{ factions: ['Scum and Villainy'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { 'non-limited': false },
+    ],
     epic: true,
+    extended: false,
+    standarized: true,
   },
   {
     limited: 0,
@@ -667,7 +700,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/combatboardingtube.png',
       },
     ],
-    cost: { value: 1 },
+    cost: { value: 0 },
     restrictions: [{ chassis: ['gauntletfighter'] }],
     standard: false,
     extended: false,
@@ -676,7 +709,7 @@ const t: UpgradeBase[] = [
   {
     limited: 1,
     xws: 'asajjventresscommand',
-    standard: true,
+    standard: false,
     extended: false,
     epic: true,
     sides: [
@@ -712,7 +745,7 @@ const t: UpgradeBase[] = [
   {
     limited: 1,
     xws: 'hondoohnakacommand',
-    standard: true,
+    standard: false,
     extended: false,
     epic: true,
     sides: [
@@ -745,7 +778,7 @@ const t: UpgradeBase[] = [
   {
     limited: 1,
     xws: 'generalgrievouscommand',
-    standard: true,
+    standard: false,
     extended: false,
     epic: true,
     sides: [

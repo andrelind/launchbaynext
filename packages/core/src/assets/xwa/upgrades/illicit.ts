@@ -188,6 +188,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -210,6 +211,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 1,
@@ -232,6 +234,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ baseSizes: ['Huge'] }],
+    extended: false,
   },
   {
     limited: 0,

@@ -31,6 +31,7 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -69,6 +70,7 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -100,6 +102,7 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -131,6 +134,7 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -154,6 +158,7 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -185,6 +190,7 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -216,6 +222,7 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     xws: 'droidcrew',
@@ -237,6 +244,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ factions: ['Separatist Alliance'] }],
+    extended: false,
   },
   {
     xws: 'tractortechnicians',
@@ -258,6 +266,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
+    extended: false,
   },
   {
     xws: 'corsaircrew',
@@ -276,8 +285,10 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/corsaircrew.png',
       },
     ],
-    standard: false,
+    standard: true,
     epic: true,
+    extended: false,
+    restrictions: [{ factions: ['Scum and Villainy'] }],
   },
 ];
 

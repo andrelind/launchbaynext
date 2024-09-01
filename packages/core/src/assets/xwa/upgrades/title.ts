@@ -71,7 +71,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/dauntless.png',
       },
     ],
-    cost: { value: 0 },
+    cost: { value: 4 },
     restrictions: [
       { factions: ['Galactic Empire'] },
       { chassis: ['vt49decimator'] },
@@ -149,7 +149,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/houndstooth.png',
       },
     ],
-    cost: { value: 0 },
+    cost: { value: 6 },
     restrictions: [
       { factions: ['Scum and Villainy'] },
       { chassis: ['yv666lightfreighter'] },
@@ -413,7 +413,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/st321.png',
       },
     ],
-    cost: { value: 0 },
+    cost: { value: 3 },
     restrictions: [
       { factions: ['Galactic Empire'] },
       { chassis: ['lambdaclasst4ashuttle'] },
@@ -465,12 +465,12 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/slavei.png',
       },
     ],
-    cost: { value: 0 },
+    cost: { value: 10 },
     restrictions: [
       { factions: ['Scum and Villainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
-    standard: false,
+    standard: true,
     extended: true,
     epic: true,
   },
@@ -495,7 +495,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/virago.png',
       },
     ],
-    cost: { value: 0 },
+    cost: { value: 8 },
     restrictions: [{ chassis: ['starviperclassattackplatform'] }],
     standard: false,
     epic: true,
@@ -550,7 +550,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    cost: { value: 0 },
+    cost: { value: 9 },
     extended: true,
   },
   {
@@ -610,6 +610,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -639,6 +640,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -663,6 +665,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['gr75mediumtransport'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -708,6 +711,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -737,6 +741,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -762,6 +767,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -789,6 +795,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -820,6 +827,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { chassis: ['croccruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -845,6 +853,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -873,6 +882,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['gr75mediumtransport'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -902,6 +912,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { chassis: ['croccruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -930,6 +941,7 @@ const t: UpgradeBase[] = [
       { factions: ['Scum and Villainy'] },
       { chassis: ['croccruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -960,6 +972,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['gr75mediumtransport'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -985,6 +998,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -1009,6 +1023,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -1037,6 +1052,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -1067,6 +1083,7 @@ const t: UpgradeBase[] = [
       { factions: ['Rebel Alliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -1095,6 +1112,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -1119,6 +1137,7 @@ const t: UpgradeBase[] = [
       { factions: ['Galactic Empire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
+    extended: false,
   },
   {
     limited: 1,
@@ -1216,6 +1235,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     restrictions: [{ chassis: ['tridentclassassaultship'] }],
+    extended: false,
   },
   {
     xws: 'nautolansrevenge',
@@ -1237,7 +1257,11 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
+    extended: false,
   },
   {
     xws: 'neimoidiangrasp',
@@ -1263,6 +1287,7 @@ const t: UpgradeBase[] = [
       { factions: ['Separatist Alliance'] },
       { chassis: ['tridentclassassaultship'] },
     ],
+    extended: false,
   },
   {
     xws: 'trident',
@@ -1287,6 +1312,7 @@ const t: UpgradeBase[] = [
       { factions: ['Separatist Alliance'] },
       { chassis: ['tridentclassassaultship'] },
     ],
+    extended: false,
   },
   {
     xws: 'nightbrother',
@@ -1312,8 +1338,8 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     restrictions: [
+      { factions: ['Scum and Villainy', 'Rebel Alliance'] },
       { chassis: ['gauntletfighter'] },
-      { factions: ['Rebel Alliance', 'Scum and Villainy'] },
     ],
     extended: true,
   },
@@ -1340,14 +1366,14 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     restrictions: [
-      { chassis: ['gauntletfighter'] },
       { factions: ['Galactic Republic', 'Separatist Alliance'] },
+      { chassis: ['gauntletfighter'] },
     ],
     extended: true,
   },
   {
     xws: 'razorcrest',
-    limited: 0,
+    limited: 1,
     cost: { value: 0 },
     sides: [
       {

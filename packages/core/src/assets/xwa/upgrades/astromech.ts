@@ -37,7 +37,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/genius.png',
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 0 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
     standard: true,
     epic: true,
@@ -59,7 +59,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/r2astromech.png',
       },
     ],
-    cost: { value: 6 },
+    cost: { value: 8 },
     standard: false,
     epic: true,
     extended: true,
@@ -80,7 +80,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2.png',
       },
     ],
-    cost: { value: 8 },
+    cost: { value: 10 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     standard: true,
     extended: true,
@@ -143,7 +143,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/r5astromech.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 7 },
     standard: false,
     epic: true,
     extended: true,
@@ -164,7 +164,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/r5d8.png',
       },
     ],
-    cost: { value: 6 },
+    cost: { value: 9 },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     standard: true,
     epic: true,
@@ -314,7 +314,7 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 7 },
     restrictions: [{ factions: ['Resistance'] }],
     standard: true,
     epic: true,
@@ -340,7 +340,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Galactic Republic'] }],
     standard: true,
     epic: true,
-    cost: { value: 2 },
+    cost: { value: 3 },
     extended: true,
   },
   {
@@ -457,7 +457,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Galactic Republic'] }],
     standard: true,
     epic: true,
-    cost: { value: 8 },
+    cost: { value: 10 },
     extended: true,
   },
   {
@@ -508,7 +508,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'r2d2-resistance',
     limited: 1,
-    cost: { value: 6 },
+    cost: { value: 8 },
     sides: [
       {
         ability:
@@ -531,7 +531,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'r6d8',
     limited: 1,
-    cost: { value: 4 },
+    cost: { value: 6 },
     sides: [
       {
         ability:
@@ -661,8 +661,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { action: { type: 'Rotate Arc' } },
       { factions: ['Resistance'] },
+      { action: { type: 'Rotate Arc' } },
     ],
     standard: true,
     epic: true,
