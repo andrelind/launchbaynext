@@ -29,7 +29,8 @@
       "bun": "1.1.17",
       "channel": "production",
       "android": { "image": "latest" },
-      "ios": { "image": "latest" }
+      "ios": { "image": "latest" },
+      "env": { "EXPO_PUBLIC_SERVER_URL": "https://launchbaynext.app" }
     }
   },
   "submit": {
