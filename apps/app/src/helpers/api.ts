@@ -52,7 +52,7 @@ export const syncWithServer = async (
     ];
     final.forEach((l) => {
       if (!l.ruleset) {
-        l.ruleset = l.points > 100 ? 'legacy' : 'xwa';
+        l.ruleset = l.points > 100 ? 'legacy' : 'amg';
       }
     });
 

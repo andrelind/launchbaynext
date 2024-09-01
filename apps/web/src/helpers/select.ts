@@ -58,7 +58,7 @@ export const upgradesForSlot2 = (
   showUnavailable: boolean,
   needle?: string
 ): Upgrade[] => {
-  const freeSlots = freeSlotsForShip2(ship, { ruleset: 'xwa' });
+  const freeSlots = freeSlotsForShip2(ship, { ruleset: 'amg' });
   const allXws = usedShipXws2(ship);
 
   const upgrades: { [key in SlotKey]?: string[] } = {};
@@ -72,7 +72,7 @@ export const upgradesForSlot2 = (
   const data = upgradeData[keyFromSlot(slot)]
     .map((u) => ({
       ...u,
-      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset: 'xwa' }),
+      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset: 'amg' }),
       available: 0,
       //   available: countForUpgrade(u.xws, collection, squadron),
     }))

@@ -128,7 +128,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
     points: parseInt(cost, 10),
     faction: fa,
     format: fo,
-    ruleset: 'xwa',
+    ruleset: 'amg',
     obstacles: Array.isArray(pilots[0])
       ? obstacles?.map((p: any) => obstacleFromKey(p))
       : undefined,
@@ -157,7 +157,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
         upgrades: parsedUpgrades,
       };
 
-      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: 'xwa' });
+      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: 'amg' });
       return {
         ...pp,
         points: s.pilot?.cost || 0,

@@ -49,7 +49,7 @@ xwsStore.subscribe(state => {
     // Reload all lists at startup to clean and recount points
     const lists = xwsStore.getState().lists?.map(l => {
       if (!l.ruleset) {
-        l.ruleset = 'xwa';
+        l.ruleset = 'amg';
       }
 
       const pilots = l.pilots
@@ -75,7 +75,7 @@ xwsStore.subscribe(state => {
         pilots,
         points: pilots.reduce((a, c) => a + c.points, 0),
         obstacles: l.obstacles?.map(o => o.replace('obstacle-', '')),
-        ruleset: l.ruleset || 'xwa',
+        ruleset: l.ruleset || 'amg',
         vendor: {
           ...l.vendor,
           lbn: {

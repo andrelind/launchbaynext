@@ -83,7 +83,7 @@ const CreateSquadronSheet = ({
               key={f}
               style={tw`px-3 py-2 items-center`}
               onPress={async () => {
-                const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', payload?.ruleset || 'xwa');
+                const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', payload?.ruleset || 'amg');
                 SheetManager.hide(sheetId, {
                   payload: item.vendor.lbn.uid,
                 });
@@ -105,7 +105,7 @@ const CreateSquadronSheet = ({
               key={f}
               style={tw`px-3 py-2 items-center`}
               onPress={async () => {
-                const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', payload?.ruleset || 'xwa');
+                const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', payload?.ruleset || 'amg');
                 SheetManager.hide(sheetId, {
                   payload: item.vendor.lbn.uid,
                 });

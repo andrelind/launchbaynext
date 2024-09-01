@@ -208,7 +208,7 @@ const t: UpgradeBase[] = [
       { action: { type: 'Calculate', difficulty: 'White' } },
       { factions: ['Separatist Alliance'] },
     ],
-    cost: { value: 4 },
+    cost: { value: 2 },
     standard: true,
     epic: true,
     extended: true,

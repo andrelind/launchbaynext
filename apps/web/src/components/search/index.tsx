@@ -85,7 +85,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                   {
                     faction: keyFromFaction(faction),
                     format: 'Extended',
-                    ruleset: 'xwa',
+                    ruleset: 'amg',
                   }
                 )
               )

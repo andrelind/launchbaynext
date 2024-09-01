@@ -19,7 +19,7 @@ export const addShip2 = (
     points: 0,
   };
 
-  const ship = loadShip2(pilot, { faction: list.faction, format: list.format, ruleset: list.ruleset || 'xwa' });
+  const ship = loadShip2(pilot, { faction: list.faction, format: list.format, ruleset: list.ruleset || 'amg' });
   // Check for free configurations
   const configs = upgradesForSlot2(
     ship,
@@ -161,9 +161,9 @@ export const setUpgrade2 = (
   }
 
   // Make sure we have correct amount of upgrades
-  const ship = loadShip2(pilot, { faction: squad.faction, format: squad.format, ruleset: squad.ruleset || 'xwa' });
+  const ship = loadShip2(pilot, { faction: squad.faction, format: squad.format, ruleset: squad.ruleset || 'amg' });
   // FIXME: CleanupUpgrades should work with just ship...
-  pilot.upgrades = cleanupUpgrades2(pilot.upgrades, ship, { format: squad.format, ruleset: squad.ruleset || 'xwa' });
+  pilot.upgrades = cleanupUpgrades2(pilot.upgrades, ship, { format: squad.format, ruleset: squad.ruleset || 'amg' });
 
   squad.points = pointsForSquadron2(squad);
   squad.version = bumpPatch(squad.version || '2.0.0');
@@ -178,16 +178,16 @@ export const changePilot2 = (
   const edit: XWS = JSON.parse(JSON.stringify(xws));
   const pilot = edit.pilots[pilotIndex];
   pilot.id = pilotXws;
-  const ship = loadShip2(pilot, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'xwa' });
+  const ship = loadShip2(pilot, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'amg' });
   edit.pilots[pilotIndex].upgrades = cleanupUpgrades2(
     pilot.upgrades,
     ship,
-    { format: edit.format, ruleset: edit.ruleset || 'xwa' }
+    { format: edit.format, ruleset: edit.ruleset || 'amg' }
   );
 
   const pilots = edit.pilots.map((p) => {
-    const s = loadShip2(p, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'xwa' });
-    const upgrades = cleanupUpgrades2(p.upgrades, s, { format: edit.format, ruleset: edit.ruleset || 'xwa' });
+    const s = loadShip2(p, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'amg' });
+    const upgrades = cleanupUpgrades2(p.upgrades, s, { format: edit.format, ruleset: edit.ruleset || 'amg' });
 
     return {
       ...p,

@@ -110,7 +110,7 @@ const validateJSON = (data: any): any | undefined => {
     return undefined;
   }
 
-  const pilots = validatePilots(data.pilots, data.ruleset || 'xwa');
+  const pilots = validatePilots(data.pilots, data.ruleset || 'amg');
   if (!pilots) {
     console.log('Invalid list of pilots');
     return undefined;
@@ -176,7 +176,7 @@ export const exportAsXws = (xws: XWS) => {
     name: xws.name,
     description: xws.description || '',
     faction: xws.faction,
-    ruleset: xws.ruleset || 'xwa',
+    ruleset: xws.ruleset || 'amg',
     points: xws.points,
     version: xws.version || '2.5.0',
     obstacles: xws.obstacles?.map((o) => o.replace('obstacle-', '')),

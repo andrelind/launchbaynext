@@ -31,7 +31,7 @@ export const xwsStore = create<XWSState>()(
           points: 0,
           version: '2.5.0',
           obstacles: [],
-          ruleset: ruleset || 'xwa',
+          ruleset: ruleset || 'amg',
           vendor: {
             lbn: {
               uid: uuid(),
@@ -39,7 +39,7 @@ export const xwsStore = create<XWSState>()(
               ties: 0,
               losses: 0,
               tags: [],
-              created: new Date().toDateString(),
+              created: new Date(),
             },
           },
         };
@@ -70,7 +70,7 @@ export const xwsStore = create<XWSState>()(
           const copy: XWS = JSON.parse(JSON.stringify(list));
           copy.version = '2.5.0';
           copy.vendor.lbn.uid = uuid();
-          copy.vendor.lbn.created = new Date().toDateString();
+          copy.vendor.lbn.created = new Date();
           if (!copy.pilots) {
             copy.pilots = [];
           }

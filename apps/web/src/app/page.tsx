@@ -54,7 +54,7 @@ const MainPage = () => {
       description: '',
       faction: (queryFaction as FactionKey) || 'rebelalliance',
       format: 'Standard',
-      ruleset: 'xwa',
+      ruleset: 'amg',
       pilots: [],
       points: 0,
       version: '2.0.0',
@@ -71,7 +71,7 @@ const MainPage = () => {
     };
 
   const [xws, setXws] = useState<XWS>(initialXws);
-  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }));
+  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'amg' }));
 
   const [shipBase, setShipBase] = useState<ShipType>();
 

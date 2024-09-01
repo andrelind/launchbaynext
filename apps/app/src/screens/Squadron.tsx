@@ -203,7 +203,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
       <View style={tw`flex-row justify-between items-center`}>
         <Text style={tw`font-bold text-sm text-white`}>Ruleset</Text>
         <Button
-          title={xws?.ruleset || 'xwa'}
+          title={xws?.ruleset || 'amg'}
           color={blue}
           onPress={() => {
             Alert.alert('Change ruleset', 'Do you want to change the ruleset?', [

@@ -19,7 +19,7 @@ const PrintPage: NextPage<Props> = ({ }) => {
     return <div />;
   }
 
-  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }));
+  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'amg' }));
 
   const threshold = (ship: TShip) => {
     const shields = ship.stats.filter((s) => s.type === 'shields')[0]
