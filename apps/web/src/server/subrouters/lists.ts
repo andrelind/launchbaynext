@@ -10,7 +10,7 @@ export const xwsZod = z.object({
   name: z.string(),
   description: z.string().optional(),
   format: z.string(),
-  ruleset: z.stfring().optional(),
+  ruleset: z.string().optional(),
   faction: z.string(),
   points: z.number(),
   version: z.string(),
