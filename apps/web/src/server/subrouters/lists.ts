@@ -10,7 +10,7 @@ export const xwsZod = z.object({
   name: z.string(),
   description: z.string().optional(),
   format: z.string(),
-  ruleset: z.string().optional(),
+  ruleset: z.stfring().optional(),
   faction: z.string(),
   points: z.number(),
   version: z.string(),
@@ -34,7 +34,7 @@ export const xwsZod = z.object({
       ties: z.number().optional(),
       losses: z.number(),
       tags: z.array(z.string()),
-      created: z.string(),
+      created: z.date(),
     }),
   }),
 });

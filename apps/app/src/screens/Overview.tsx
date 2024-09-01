@@ -14,6 +14,7 @@ import { useTailwind } from '../helpers/tailwind';
 import { captureScroll } from '../helpers/ui';
 import { notifications } from '../notifications';
 import { systemStore } from '../stores/system';
+import { blue } from '../theme';
 import { OverviewStackParams } from '../types/navigation';
 
 
@@ -84,13 +85,13 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
           ))}
         </View>
 
-        {/* <View style={tw`px-2`}>
+        <View style={tw`px-2`}>
           <Text style={tw`text-white`}>Like the app?</Text>
           <Text style={tw`text-white`}>Please consider donating</Text>
           <View style={tw`flex-row items-center justify-around`}>
             <SimpleItem
               text={'Patreon'}
-              icon={<Feather name="star" size={20} color={yellow} />}
+              icon={<Feather name="star" size={20} color={tw.color('yellow-500')} />}
               hideArrow
               onPress={async () => {
                 if (
@@ -102,7 +103,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
             />
             <SimpleItem
               text={'PayPal'}
-              icon={<Feather name="star" size={20} color={yellow} />}
+              icon={<Feather name="star" size={20} color={tw.color('yellow-500')} />}
               hideArrow
               onPress={async () => {
                 if (
@@ -113,11 +114,12 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
               }}
             />
           </View>
-        </View> */}
+        </View>
 
         <View style={tw`flex-row items-center justify-center`}>
           <SimpleItem
             text={'Privacy Policy'}
+            color={blue}
             hideArrow
             onPress={async () => {
               if (

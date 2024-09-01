@@ -80,14 +80,10 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
                   {pilot.loadout !== undefined &&
                     <>
                       {!pilot?.standardLoadout && !slim && (
-                        <Text
-                          style={tw`ml-2 text-white`}
-                        >{`Loadout ${pilot?.loadout}`}</Text>
+                        <Text style={tw`ml-2 text-white`}>{`Loadout ${pilot?.loadout}`}</Text>
                       )}
-                      {!pilot?.standardLoadout && pilot.loadout && slim && (
-                        <Text
-                          style={tw`ml-2 text-white`}
-                        >{`${upgradesCost}/${pilot?.loadout}`}</Text>
+                      {!pilot?.standardLoadout && slim && (
+                        <Text style={tw`ml-2 text-white`}>{`${upgradesCost}/${pilot?.loadout}`}</Text>
                       )}
                     </>}
                 </View>

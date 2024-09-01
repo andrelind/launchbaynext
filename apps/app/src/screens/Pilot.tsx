@@ -73,7 +73,7 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
             </Text>
           )}
 
-          {xws?.ruleset.includes('xwa') || xws?.ruleset.includes('amg') && !ship?.pilot?.standardLoadout && (
+          {(xws?.ruleset.includes('xwa') || xws?.ruleset.includes('amg')) && !ship?.pilot?.standardLoadout && (
             <Text style={tw`text-sm text-zinc-300 -mt-1`}>
               {`Loadout ${(ship?.pointsWithUpgrades || 0) - (ship?.pilot?.cost || 0)
                 }/${ship?.pilot?.loadout}`}
