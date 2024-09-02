@@ -233,7 +233,7 @@ const t: UpgradeBase[] = [
     extended: true,
     restrictions: [
       { baseSizes: ['Small', 'Medium'] },
-      { 'non-limited': false },
+      // { 'non-limited': false },
     ],
   },
   {
