@@ -6,6 +6,7 @@ import { PilotActionSheetProps, PilotActionSheetReturn } from "./pilotActions";
 import { ScanQRCodeSheetProps, ScanQRCodeSheetReturn } from "./scanQRCode";
 import { SelectFormatSheetProps, SelectFormatSheetReturn } from "./selectFormat";
 import { SelectObstaclesSheetProps, SelectObstaclesSheetReturn } from "./selectObstacles";
+import { SelectTagsSheetProps, SelectTagsSheetReturn } from "./selectTags";
 
 declare module 'react-native-actions-sheet' {
     interface Sheets {
@@ -32,6 +33,10 @@ declare module 'react-native-actions-sheet' {
         SelectObstaclesSheet: SheetDefinition<{
             payload: SelectObstaclesSheetProps;
             returnValue: SelectObstaclesSheetReturn;
+        }>;
+        SelectTagsSheet: SheetDefinition<{
+            payload: SelectTagsSheetProps;
+            returnValue: SelectTagsSheetReturn;
         }>;
         ScanQRCodeSheet: SheetDefinition<{
             payload: ScanQRCodeSheetProps;

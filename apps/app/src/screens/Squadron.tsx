@@ -68,9 +68,9 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
 
   // @ts-ignore
   const ships: EShip[] | undefined = xws?.pilots
-    .map((p) => {
+    .map((p, i) => {
       try {
-        return { key: p.id, ...loadShip2(p, xws) };
+        return { key: `${p.id}_${i}`, ...loadShip2(p, xws) };
       } catch (error) {
         console.log(error);
       }
@@ -248,7 +248,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
             }}
           />
         </View>
-        <View style={tw`flex-row`}>
+        <View style={tw`flex-row gap-x-2`}>
           {xws?.obstacles?.map((o, i) => (
             <Image
               transition={300}
@@ -265,41 +265,17 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
           title="Edit"
           color={tw.color('primary-500')}
           onPress={() => {
-            // Navigation.showModal({
-            //   component: {
-            //     name: 'SelectTags',
-            //     passProps: {
-            //       tags: xws?.vendor.lbn.tags || [],
-            //       onTags: (tt: string[]) => {
-            //         setTags(uid, tt);
-            //       },
-            //     },
-            //   },
-            // });
+            SheetManager.show('SelectTagsSheet', { payload: { uid } });
           }}
         />
       </View>
-      <View >
-        <View >
-          {/* {xws?.vendor.lbn.tags?.map((tag, i) => (
-            <Chip
-              key={tag}
-              label={tag}
-              margin-2
-              containerStyle={styles.chip}
-              labelStyle={styles.chipLabel}
-              size={20}
-              dismissColor={darkgrey}
-              dismissIconStyle={styles.dismiss}
-              onDismiss={() => {
-                const tt = [...(xws?.vendor.lbn.tags || [])];
-                tt.splice(i, 1);
-                setTags(uid, tt);
-              }}
-            />
-          ))} */}
-        </View>
+
+      <View style={tw`px-2 flex-row gap-x-2 items-center`}>
+        {xws?.vendor.lbn.tags?.map((tag, i) => (
+          <Text key={tag} style={tw`text-xs text-white`}>{tag}</Text>
+        ))}
       </View>
+
 
       <View style={tw`flex-row justify-around`}>
         <View style={tw`items-center w-1/4`}>

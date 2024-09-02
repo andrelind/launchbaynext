@@ -31,7 +31,7 @@ export const SwipeComponent: FC<Props> = ({
 }) => {
   const swiper = useRef<Swipeable>(null);
 
-  const [_isSwiping, setIsSwiping] = React.useState(false);
+  const [isSwiping, setIsSwiping] = React.useState(false);
 
   const renderAction = (
     text: ReactElement,
@@ -153,7 +153,9 @@ export const SwipeComponent: FC<Props> = ({
       <TouchableOpacity
         style={{ flex: 1 }}
         activeOpacity={0.7}
-        onPress={onPress}
+        onPress={() => {
+          if (!isSwiping) onPress?.()
+        }}
         onLongPress={onLongPress}
       >
         {children}

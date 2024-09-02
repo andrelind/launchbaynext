@@ -113,7 +113,7 @@ export const SquadronComponent: FC<Props<XWS>> = ({
             <ShipFont icons={item?.pilots?.map((p) => p.ship)} size={6} />
 
             {item.vendor.lbn.tags && item.vendor.lbn.tags.length > 0 && (
-              <View style={tw``}>
+              <View style={tw`flex-row gap-x-1`}>
                 {item.vendor.lbn.tags.map(tag => (
                   <Text key={tag} style={tw`text-xs`}>{tag}</Text>
                 ))}

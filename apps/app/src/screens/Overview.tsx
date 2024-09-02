@@ -78,8 +78,8 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
         <View style={tw`px-2 gap-y-2`}>
           {notifications.sort((a, b) => b.id - a.id).map((n) => (
             <View key={n.id} style={tw`px-2 py-3 gap-y-1 bg-white dark:bg-zinc-800 rounded-md`}>
-              <Text style={tw`text-zinc-900 font-semibold`}>{n.title}</Text>
-              <Text style={tw`text-zinc-900`}>{n.body}</Text>
+              <Text style={tw`text-zinc-900 dark:text-white font-semibold`}>{n.title}</Text>
+              <Text style={tw`text-zinc-900 dark:text-white`}>{n.body}</Text>
             </View>
 
           ))}
