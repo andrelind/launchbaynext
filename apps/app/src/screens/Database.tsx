@@ -7,7 +7,7 @@ import { TShip, loadShip2 } from 'lbn-core/src/helpers/loading';
 import { getFactionKey } from 'lbn-core/src/helpers/serializer';
 import { ShipType, UpgradeBase } from 'lbn-core/src/types';
 import React, { FC, useCallback, useLayoutEffect, useState } from 'react';
-import { Text, View } from 'react-native';
+import { Platform, Text, View } from 'react-native';
 import { v4 as uuid } from 'uuid';
 import { PilotListItem } from '../components/PilotListItem';
 import { SegmentedControl } from '../components/SegmentedControl';
@@ -29,17 +29,25 @@ export const DatabaseScreen: FC<Props> = ({ navigation }) => {
 
   const [ruleset, setRuleset] = useState<RuleSet>('xwa');
 
-  useLayoutEffect(() => {
+  const updateHeader = () => {
     navigation.setOptions({
       headerSearchBarOptions: {
         placeholder: 'Search',
+        headerIconColor: tw.color('orange-500'),
         textColor: tw.prefixMatch('dark') ? tw.color('white') : tw.color('black'),
         barTintColor: tw.prefixMatch('dark') ? tw.color('zinc-800') : tw.color('white'),
         hideWhenScrolling: false,
         onChangeText: (e) => setNeedle(e.nativeEvent.text.toLowerCase()),
       },
     });
-  }, [navigation]);
+  }
+
+  useLayoutEffect(() => {
+    Platform.OS === 'ios' && updateHeader();
+    Platform.OS === 'android' && setTimeout(() => {
+      updateHeader();
+    }, 0);
+  }, [navigation, tw]);
 
   const refreshData = (): Data[] => {
     if (needle.length < 3) {
