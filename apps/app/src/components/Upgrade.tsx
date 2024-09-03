@@ -166,6 +166,7 @@ export const UpgradeComponent: FC<Props> = ({
           onPress={() => onImagePress?.(upgradeCardUri(upgradeSide))}
         >
           <ImageComponent
+            recyclingKey={upgradeArtUri(upgradeSide)?.uri}
             transition={300}
             style={tw`w-20 h-full justify-end rounded-l-lg bg-zinc-700 flex-1`}
             uri={upgradeArtUri(upgradeSide)}
