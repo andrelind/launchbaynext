@@ -45,7 +45,7 @@ const t: ShipType = {
       xws: 'hawk',
       ffg: 660,
       name: '“Hawk”',
-      cost: 6,
+      cost: 5,
       limited: 1,
       initiative: 4,
       caption: 'Valkyrie 2929',
@@ -64,7 +64,7 @@ const t: ShipType = {
       ability:
         'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
       keywords: ['Clone'],
-      loadout: 25,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/hawk.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hawk.png',
@@ -73,7 +73,7 @@ const t: ShipType = {
       xws: 'hound',
       ffg: 662,
       name: '“Hound”',
-      cost: 6,
+      cost: 5,
       limited: 1,
       initiative: 2,
       caption: 'Vigilant Tracker',
@@ -92,7 +92,7 @@ const t: ShipType = {
       ability:
         'After a friendly small ship in your [Single Turret Arc] gains a deplete or strain token, if you have no tokens of that type, you may transfer that token to yourself.',
       keywords: ['Clone'],
-      loadout: 20,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/hound.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hound.png',
@@ -120,7 +120,7 @@ const t: ShipType = {
       ability:
         'After you or a friendly non-limited ship at range 0-2 are destroyed during the Engagement Phase, that ship is not removed until the end of that phase.',
       keywords: ['Clone'],
-      loadout: 18,
+      loadout: 26,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/warthog.png',
       artwork:
@@ -143,10 +143,10 @@ const t: ShipType = {
         'Gunner',
         'Modification',
       ],
-      cost: 5,
+      cost: 4,
       ffg: 663,
       keywords: ['Clone'],
-      loadout: 7,
+      loadout: 5,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/212thbattalionpilot.png',
