@@ -50,7 +50,8 @@ const t: ShipType = {
       cost: 44,
       xws: 'deathrain',
       ability: 'After you drop or launch a device, you may perform an action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/deathrain.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deathrain.png',
       slots: [
         'Sensor',
         'Torpedo',
@@ -62,7 +63,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathrain.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathrain.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -87,9 +88,10 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/redline.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redline.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/redline.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redline.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -103,7 +105,7 @@ const t: ShipType = {
       xws: 'cutlasssquadronpilot',
       text: "The TIE punisher's design builds upon the success of the TIE bomber, adding shielding, a second bomb chute, and three additional ordnance pods, each equipped with a twin ion engine.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/cutlasssquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cutlasssquadronpilot.png',
       slots: [
         'Sensor',
         'Torpedo',
@@ -115,7 +117,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cutlasssquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cutlasssquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],

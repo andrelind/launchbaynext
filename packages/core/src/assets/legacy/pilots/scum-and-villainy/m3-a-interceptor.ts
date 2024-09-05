@@ -45,14 +45,15 @@ const t: ShipType = {
       cost: 26,
       xws: 'cartelspacer',
       text: "MandalMotors' M3-A “Scyk” Interceptor is purchased in large quantities by the Hutt Cartel and the Car'das smugglers due to its low cost and customizability.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/cartelspacer.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cartelspacer.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cartelspacer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelspacer.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -66,14 +67,15 @@ const t: ShipType = {
       xws: 'genesisred',
       ability:
         'After you acquire a lock, you must remove all of your focus and evade tokens. Then, gain the same number of focus and evade tokens that the locked ship has.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/genesisred.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/genesisred.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/genesisred.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/genesisred.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -87,14 +89,15 @@ const t: ShipType = {
       xws: 'inaldra',
       ability:
         'While you defend or perform an attack, you may suffer 1 [Hit] damage to reroll any number of your dice.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/inaldra.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/inaldra.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/inaldra.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/inaldra.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -108,14 +111,15 @@ const t: ShipType = {
       xws: 'laetinashera',
       ability:
         'After you defend or perform an attack, if the attack missed, gain 1 evade token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/laetinashera.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/laetinashera.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/laetinashera.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/laetinashera.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -129,14 +133,15 @@ const t: ShipType = {
       xws: 'quinnjast',
       ability:
         'At the start of the Engagement Phase, you may gain 1 disarm token to recover 1 [Charge] on 1 of your equipped upgrades.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/quinnjast.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/quinnjast.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/quinnjast.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/quinnjast.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -151,14 +156,15 @@ const t: ShipType = {
       xws: 'serissu',
       ability:
         'While a friendly ship at range 0-1 defends, it may reroll 1 of its dice.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/serissu.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/serissu.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/serissu.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/serissu.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -172,14 +178,15 @@ const t: ShipType = {
       xws: 'sunnybounder',
       ability:
         'While you defend or perform an attack, after you roll or reroll your dice, if you have the same result on each of your dice, you may add 1 matching result.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sunnybounder.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sunnybounder.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sunnybounder.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunnybounder.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -192,14 +199,14 @@ const t: ShipType = {
       xws: 'tansariipointveteran',
       text: "The defeat of Black Sun ace Talonbane Cobra by Car'das smugglers turned the tide of the Battle of Tansarii Point Station. Survivors of the clash are respected throughout the sector.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/tansariipointveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tansariipointveteran.png',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tansariipointveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tansariipointveteran.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -221,8 +228,9 @@ const t: ShipType = {
         'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
       cost: 25,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/g4rgorvm.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/g4rgorvm.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/g4rgorvm.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/g4rgorvm.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Evade' },

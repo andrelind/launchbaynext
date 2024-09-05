@@ -13,9 +13,9 @@ const t: UpgradeBase[] = [
         ability:
           'Setup: You can be placed anywhere in the play area beyond range 1 of obstacles, beyond range 3 of enemy ships, and beyond range 3 of the enemy table edge.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/syliure31hyperdrive.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/syliure31hyperdrive.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/syliure31hyperdrive.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/syliure31hyperdrive.png',
       },
     ],
     cost: { value: 0 },

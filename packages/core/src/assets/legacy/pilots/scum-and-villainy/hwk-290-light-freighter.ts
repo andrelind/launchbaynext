@@ -55,7 +55,8 @@ const t: ShipType = {
       xws: 'dacebonearm',
       ability:
         'After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 3 [Charge]. If you do, that ship gains 2 additional ion tokens.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dacebonearm.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dacebonearm.png',
       charges: { value: 3, recovers: 1 },
       slots: [
         'Talent',
@@ -67,7 +68,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dacebonearm.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dacebonearm.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -82,7 +83,8 @@ const t: ShipType = {
       xws: 'palobgodalhi',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your firing arc at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/palobgodalhi.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/palobgodalhi.png',
       slots: [
         'Talent',
         'Crew',
@@ -93,7 +95,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/palobgodalhi.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/palobgodalhi.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -106,7 +108,8 @@ const t: ShipType = {
       cost: 26,
       xws: 'spicerunner',
       text: 'Though its cargo space is limited compared to other light freighters, the small, swift HWK-290 is a favorite choice of smugglers who specialize in discreetly transporting precious goods.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/spicerunner.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/spicerunner.png',
       slots: [
         'Crew',
         'Device',
@@ -116,7 +119,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/spicerunner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/spicerunner.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -131,7 +134,8 @@ const t: ShipType = {
       xws: 'torkilmux',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, that ship engages at initiative 0 instead of its normal initiative value this round.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/torkilmux.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/torkilmux.png',
       slots: [
         'Crew',
         'Device',
@@ -141,7 +145,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/torkilmux.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/torkilmux.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -170,8 +174,9 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       caption: 'Collaborationist Governor',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gamutkey.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/gamutkey.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gamutkey.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gamutkey.png',
       epic: true,
     },
     {
@@ -197,9 +202,9 @@ const t: ShipType = {
       ability:
         'While you or a ship in your [Single Turret Arc] defends, you may spend 1 [Force]. If you do, the attacker rolls 1 fewer attack die.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kananjarrus-hwk290lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kananjarrus-hwk290lightfreighter.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/kananjarrus-hwk290lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kananjarrus-hwk290lightfreighter.png',
       epic: true,
     },
     {
@@ -223,8 +228,9 @@ const t: ShipType = {
       ability:
         'During the End Phase, before an enemy ship in your [Single Turret Arc] recovers 1 recurring [Charge] or [Force], you may spend 2 [Charge]. If you do, that ship does not recover that [Charge] or [Force].',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tapusk.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/tapusk.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tapusk.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tapusk.png',
       keywords: ['Freighter'],
       epic: true,
     },

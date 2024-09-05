@@ -47,7 +47,8 @@ const t: ShipType = {
       xws: 'chopper',
       ability:
         'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/chopper.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chopper.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -68,7 +69,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/chopper.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chopper.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid', 'Freighter', 'Spectre'],
@@ -84,7 +85,7 @@ const t: ShipType = {
       ability:
         'After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/herasyndulla-vcx100lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-vcx100lightfreighter.png',
       shipAbility: {
         name: 'Tail Gun',
         text: "While you have a docked ship, you have a primary [Rear Arc] weapon with an attack value equal to your docked ship's primary [Front Arc] attack value.",
@@ -101,7 +102,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla-vcx100lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla-vcx100lightfreighter.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'Spectre'],
@@ -116,7 +117,8 @@ const t: ShipType = {
       xws: 'kananjarrus',
       ability:
         'While a friendly ship in your firing arc defends, you may spend 1 [Force]. If you do, the attacker rolls 1 fewer attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kananjarrus.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kananjarrus.png',
       force: { value: 2, recovers: 1, side: ['light'] },
       shipAbility: {
         name: 'Tail Gun',
@@ -134,7 +136,7 @@ const t: ShipType = {
         'Force Power',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kananjarrus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kananjarrus.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'Jedi', 'Light Side', 'Spectre'],
@@ -147,7 +149,8 @@ const t: ShipType = {
       cost: 68,
       xws: 'lothalrebel',
       text: 'Another successful Corellian Engineering Corporation freighter design, the VCX-100 is larger than the ubiquitous YT-series, boasting more living space and customizability.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lothalrebel.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lothalrebel.png',
       shipAbility: {
         name: 'Tail Gun',
         text: "While you have a docked ship, you have a primary [Rear Arc] weapon with an attack value equal to your docked ship's primary [Front Arc] attack value.",
@@ -163,7 +166,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lothalrebel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lothalrebel.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -182,7 +185,6 @@ const t: ShipType = {
         name: 'Tail Gun',
         text: "While you have a docked ship, you have a primary [Rear Arc] weapon with an attack value equal to your docked ship's primary [Front Arc] attack value.",
       },
-
       standard: true,
       wildspace: true,
       slots: [
@@ -197,8 +199,9 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/alexsandrkallus.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/alexsandrkallus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/alexsandrkallus.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/alexsandrkallus.png',
       keywords: ['Freighter', 'Spectre'],
       epic: true,
     },

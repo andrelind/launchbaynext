@@ -43,7 +43,8 @@ const t: ShipType = {
       xws: 'benthictwotubes',
       ability:
         'After you perform a [Focus] action, you may transfer 1 of your focus tokens to a friendly ship at range 1-2.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/benthictwotubes.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/benthictwotubes.png',
       slots: [
         'Sensor',
         'Crew',
@@ -53,7 +54,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/benthictwotubes.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/benthictwotubes.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan'],
@@ -67,10 +68,10 @@ const t: ShipType = {
       xws: 'bluesquadronscout',
       text: "Used for deploying troops under the cover of darkness or into the heat of battle, the UT-60D U-wing fulfills the Rebellion's need for a swift and hardy troop transport.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronscout.png',
       slots: ['Sensor', 'Crew', 'Crew', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronscout.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -84,7 +85,8 @@ const t: ShipType = {
       xws: 'bodhirook',
       ability:
         'Friendly ships can acquire locks onto objects at range 0-3 of any friendly ship.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/bodhirook.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bodhirook.png',
       slots: [
         'Talent',
         'Sensor',
@@ -94,7 +96,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bodhirook.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bodhirook.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -108,7 +110,8 @@ const t: ShipType = {
       xws: 'cassianandor',
       ability:
         'At the start of the Activation Phase, you may choose 1 friendly ship at range 1-3. If you do, that ship removes 1 stress token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/cassianandor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cassianandor.png',
       slots: [
         'Talent',
         'Sensor',
@@ -118,7 +121,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cassianandor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cassianandor.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -132,7 +135,8 @@ const t: ShipType = {
       xws: 'hefftobber',
       ability:
         'After an enemy ship executes a maneuver, if it is at range 0, you may perform an action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hefftobber.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hefftobber.png',
       slots: [
         'Talent',
         'Sensor',
@@ -142,7 +146,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hefftobber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hefftobber.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -156,7 +160,8 @@ const t: ShipType = {
       xws: 'magvayarro',
       ability:
         'While a friendly ship at range 0-2 defends, the attacker cannot reroll more than 1 attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/magvayarro.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/magvayarro.png',
       slots: [
         'Talent',
         'Sensor',
@@ -167,7 +172,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/magvayarro.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magvayarro.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan'],
@@ -189,9 +194,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/partisanrenegade.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/partisanrenegade.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/partisanrenegade.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/partisanrenegade.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan'],
@@ -206,7 +211,8 @@ const t: ShipType = {
       xws: 'sawgerrera',
       ability:
         'While a damaged friendly ship at range 0-3 performs an attack, it may reroll 1 attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sawgerrera.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sawgerrera.png',
       slots: [
         'Talent',
         'Sensor',
@@ -217,7 +223,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sawgerrera.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sawgerrera.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan'],
@@ -246,8 +252,10 @@ const t: ShipType = {
       ],
       standard: true,
       wildspace: true,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/k2so.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/k2so.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/k2so.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/k2so.png',
       keywords: ['Droid'],
       epic: true,
     },

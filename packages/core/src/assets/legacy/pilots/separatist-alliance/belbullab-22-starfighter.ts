@@ -56,13 +56,14 @@ const t: ShipType = {
       xws: 'generalgrievous',
       ability:
         "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/generalgrievous.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/generalgrievous.png',
       standard: true,
       wildspace: true,
       cost: 44,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/generalgrievous.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/generalgrievous.png',
       epic: true,
     },
     {
@@ -73,13 +74,14 @@ const t: ShipType = {
       xws: 'wattambor',
       ability:
         'While you perform a primary attack, you may reroll 1 attack die for each calculating friendly ship at range 1 of the defender.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/wattambor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wattambor.png',
       standard: true,
       wildspace: true,
       cost: 40,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wattambor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wattambor.png',
       epic: true,
     },
     {
@@ -89,7 +91,7 @@ const t: ShipType = {
       xws: 'feethanottrawautopilot',
       text: 'Unlike the more disposable fighters it also built for the Separatists, Feethan Ottraw Scalable Assemblies designed the Belbullab-22 with a solid mix of firepower, durability, and speed.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/feethanottrawautopilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/feethanottrawautopilot.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -109,7 +111,7 @@ const t: ShipType = {
       cost: 35,
       slots: ['Modification', 'Title', 'Tactical Relay'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/feethanottrawautopilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/feethanottrawautopilot.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -121,13 +123,14 @@ const t: ShipType = {
       xws: 'captainsear',
       ability:
         'While a friendly ship at range 0-3 performs a primary attack, if the defender is in its [Bullseye Arc], before the Neutralize Results step, the friendly ship may spend 1 calculate token to cancel 1 [Evade] result.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainsear.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainsear.png',
       standard: true,
       wildspace: true,
       cost: 44,
       slots: ['Modification', 'Title', 'Tactical Relay'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainsear.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsear.png',
       epic: true,
     },
     {
@@ -137,9 +140,10 @@ const t: ShipType = {
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       initiative: 3,
       limited: 0,
-      image: 'https://infinitearenas.com/xw2/images/pilots/skakoanace.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/skakoanace.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/skakoanace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/skakoanace.png',
       text: 'With its powerful engines, devastating triple laser cannons, and high customizability, the Belbullab-22 is the chosen craft of several elite Separatist Alliance pilots, including the infamous General Grievous.',
       standard: true,
       wildspace: true,

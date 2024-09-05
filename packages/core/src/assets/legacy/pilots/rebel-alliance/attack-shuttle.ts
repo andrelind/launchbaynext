@@ -51,14 +51,15 @@ const t: ShipType = {
       xws: 'zeborrelios',
       ability:
         'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/zeborrelios.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zeborrelios.png',
       shipAbility: {
         name: 'Locked and Loaded',
         text: 'While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack.',
       },
       slots: ['Talent', 'Turret', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zeborrelios.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios.png',
       standard: true,
       wildspace: true,
       keywords: ['Spectre'],
@@ -73,7 +74,8 @@ const t: ShipType = {
       xws: 'ezrabridger',
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade] or [Hit] results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ezrabridger.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ezrabridger.png',
       force: { value: 1, recovers: 1, side: ['light'] },
       shipAbility: {
         name: 'Locked and Loaded',
@@ -81,7 +83,7 @@ const t: ShipType = {
       },
       slots: ['Turret', 'Crew', 'Modification', 'Title', 'Force Power'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger.png',
       standard: true,
       wildspace: true,
       keywords: ['Light Side', 'Spectre'],
@@ -96,14 +98,15 @@ const t: ShipType = {
       xws: 'herasyndulla',
       ability:
         'After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/herasyndulla.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla.png',
       shipAbility: {
         name: 'Locked and Loaded',
         text: 'While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack.',
       },
       slots: ['Talent', 'Turret', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla.png',
       standard: true,
       wildspace: true,
       keywords: ['Spectre'],
@@ -118,14 +121,15 @@ const t: ShipType = {
       xws: 'sabinewren',
       ability:
         'Before you activate, you may perform a [Barrel Roll] or [Boost] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sabinewren.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabinewren.png',
       shipAbility: {
         name: 'Locked and Loaded',
         text: 'While you are docked, after your carrier ship performs a primary [Front Arc] or [Turret] attack, it may perform a bonus primary [Rear Arc] attack.',
       },
       slots: ['Talent', 'Turret', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian', 'Spectre'],

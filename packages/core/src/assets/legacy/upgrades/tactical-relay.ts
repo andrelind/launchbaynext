@@ -11,15 +11,13 @@ const t: UpgradeBase[] = [
         type: 'Tactical Relay',
         ability:
           'During the End Phase, you may choose up to 3 friendly ships at range 0-3. If you do, each of these ships does not remove 1 calculate token.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kraken.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kraken.png',
         slots: ['Tactical Relay'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kraken.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kraken.png',
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
       },
     ],
@@ -39,10 +37,11 @@ const t: UpgradeBase[] = [
         type: 'Tactical Relay',
         ability:
           'While a friendly ship at range 0-3 performs a primary attack against a defender in its [Bullseye Arc], if there are 2 or fewer attack dice, it may spend 1 calculate token to add 1 [Hit] result.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/tv94.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tv94.png',
         slots: ['Tactical Relay'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tv94.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tv94.png',
       },
     ],
     restrictions: [{ factions: ['Separatist Alliance'] }],
@@ -61,10 +60,11 @@ const t: UpgradeBase[] = [
         type: 'Tactical Relay',
         ability:
           'While a friendly ship at range 0-3 defends, it may spend 1 calculate token. If it does, add 1 [Evade] result unless the attacker chooses to gain 1 strain token.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/k2b4.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/k2b4.png',
         slots: ['Tactical Relay'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/k2b4.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/k2b4.png',
       },
     ],
     restrictions: [{ factions: ['Separatist Alliance'] }],
@@ -83,10 +83,11 @@ const t: UpgradeBase[] = [
         type: 'Tactical Relay',
         ability:
           'After a friendly ship at range 0-3 with [Calculate] on its action bar is destroyed, each friendly ship at range 0-3 with [Calculate] in its action bar gains 1 calculate token.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ta175.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ta175.png',
         slots: ['Tactical Relay'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ta175.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ta175.png',
       },
     ],
     restrictions: [{ factions: ['Separatist Alliance'] }],
@@ -105,16 +106,14 @@ const t: UpgradeBase[] = [
         type: 'Tactical Relay',
         slots: ['Tactical Relay'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kalani.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kalani.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kalani.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kalani.png',
         ability:
           'After an enemy ship executes a maneuver, if it is in the [Bullseye Arc] of a friendly ship at range 0-3, you may spend 1 [Charge]. If you do, that friendly ship acquires a lock on that enemy ship, then gains 1 stress token.',
         charges: { value: 3, recovers: 3 },
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
       },
     ],

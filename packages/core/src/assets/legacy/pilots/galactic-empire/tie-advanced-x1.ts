@@ -52,7 +52,8 @@ const t: ShipType = {
       xws: 'darthvader',
       ability:
         'After you perform an action, you may spend 1 [Force] to perform an action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/darthvader.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader.png',
       force: { value: 3, recovers: 1, side: ['dark'] },
       shipAbility: {
         name: 'Advanced Targeting Computer',
@@ -60,7 +61,7 @@ const t: ShipType = {
       },
       slots: ['Sensor', 'Missile', 'Modification', 'Force Power'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
@@ -75,14 +76,15 @@ const t: ShipType = {
       xws: 'maarekstele',
       ability:
         'While you perform an attack, if the defender would be dealt a faceup damage card, instead draw 3 damage cards, choose 1, and discard the rest.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/maarekstele.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maarekstele.png',
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maarekstele.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maarekstele.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -96,14 +98,14 @@ const t: ShipType = {
       xws: 'stormsquadronace',
       text: 'The TIE Advanced x1 was produced in limited quantities, but Sienar engineers incorporated many of its best qualities into their next TIE model: the TIE Interceptor.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/stormsquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/stormsquadronace.png',
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/stormsquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stormsquadronace.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -122,9 +124,9 @@ const t: ShipType = {
       },
       slots: ['Sensor', 'Missile', 'Modification'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/tempestsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tempestsquadronpilot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tempestsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tempestsquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -139,14 +141,15 @@ const t: ShipType = {
       xws: 'vedfoslo',
       ability:
         'While you execute a maneuver, you may execute a maneuver of the same bearing and difficulty of a speed 1 higher or lower instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/vedfoslo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vedfoslo.png',
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vedfoslo.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vedfoslo.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -161,14 +164,15 @@ const t: ShipType = {
       xws: 'zertikstrom',
       ability:
         "During the End Phase, you may spend a lock you have on an enemy ship to expose 1 of that ship's damage cards.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/zertikstrom.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zertikstrom.png',
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
       slots: ['Sensor', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zertikstrom.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zertikstrom.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -184,7 +188,7 @@ const t: ShipType = {
       ability:
         'While you perform an attack, you may spend 1 [Force] to change 1 blank result to a [Hit] result.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-battleofyavin.png',
       force: { value: 3, recovers: 1, side: ['dark'] },
       shipAbility: {
         name: 'Advanced Targeting Computer',
@@ -199,7 +203,7 @@ const t: ShipType = {
       ],
       standardLoadout: ['marksmanship', 'hate', 'afterburners'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
@@ -215,7 +219,7 @@ const t: ShipType = {
       ability:
         'While you perform an attack, you may spend 1 [Force] to change 1 blank result to a [Hit] result.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-battleofyavin-lsl.png',
       force: { value: 3, recovers: 1, side: ['dark'] },
       shipAbility: {
         name: 'Advanced Targeting Computer',
@@ -229,7 +233,7 @@ const t: ShipType = {
       ],
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
@@ -244,9 +248,10 @@ const t: ShipType = {
       xws: 'junoeclipse',
       ability:
         'After you perform an action, you may perform a red [Boost] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/junoeclipse.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/junoeclipse.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/junoeclipse.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/junoeclipse.png',
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
@@ -267,7 +272,7 @@ const t: ShipType = {
       ability:
         'After you perform an action, you may spend 1 [Force] to perform an action.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-swz105.png',
       force: { value: 3, recovers: 1, side: ['dark'] },
       shipAbility: {
         name: 'Advanced Targeting Computer',
@@ -282,7 +287,7 @@ const t: ShipType = {
       ],
       standardLoadout: ['hate', 'ionmissiles', 'afterburners'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
@@ -299,14 +304,14 @@ const t: ShipType = {
       ability:
         'While you perform an attack, if the defender would be dealt a faceup damage card, instead draw 3 damage cards, choose 1, and discard the rest.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/maarekstele-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maarekstele-swz105.png',
       slots: [],
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maarekstele.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maarekstele-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],

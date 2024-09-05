@@ -45,13 +45,14 @@ const t: ShipType = {
       xws: 'sinker',
       ability:
         'While a friendly ship at range 1-2 in your [Left Arc] or [Right Arc] performs a primary attack, it may reroll 1 attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sinker.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sinker.png',
       slots: ['Torpedo', 'Crew', 'Astromech', 'Modification', 'Gunner'],
       standard: true,
       wildspace: true,
       cost: 51,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sinker.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sinker.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -63,8 +64,10 @@ const t: ShipType = {
       caption: 'CT-55/11-9009',
       initiative: 3,
       limited: 1,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jag.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/jag.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jag.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jag.png',
       ability:
         'After a friendly ship at range 1-2 in your [Left Arc] or [Right Arc] defends, you may acquire a lock on the attacker.',
       standard: true,
@@ -88,9 +91,9 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-arc170starfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-arc170starfighter.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/oddball-arc170starfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-arc170starfighter.png',
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       standard: true,
@@ -114,8 +117,9 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wolffe.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/wolffe.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wolffe.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wolffe.png',
       charges: { value: 1, recovers: 0 },
       ability:
         'While you perform a primary [Front Arc] attack, you may spend 1 [Charge] to reroll 1 attack die. While you perform a primary [Rear Arc] attack, you may recover 1 [Charge] to roll 1 additional attack die.',
@@ -132,9 +136,9 @@ const t: ShipType = {
       initiative: 2,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/104thbattalionpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/104thbattalionpilot.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/104thbattalionpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/104thbattalionpilot.png',
       text: "The ARC-170 was designed as a dominating heavy escort fighter with powerful front and rear lasers, ordnance, and an astromech for navigation. Squadrons of these mighty ships bolster the Republic Navy's presence at any battle where they are deployed.",
       standard: true,
       wildspace: true,
@@ -156,9 +160,9 @@ const t: ShipType = {
       initiative: 3,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/squadsevenveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/squadsevenveteran.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/squadsevenveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/squadsevenveteran.png',
       text: 'Clone Flight Seven serves as part of the Open Circle Fleet under legendary Jedi Generals such as Plo Koon and Obi-Wan Kenobi, and won glory at the battles of Coruscant and Cato Neimoidia.',
       standard: true,
       wildspace: true,
@@ -179,9 +183,9 @@ const t: ShipType = {
       ability:
         'After you fully execute a red maneuver or perform a red action, you camy choose a friendly ship at range 0-3 and an enemy at range 0-1. The chosen frendly ship gains a lock on the enemy ship.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/oddball-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-siegeofcoruscant.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-arc170starfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-siegeofcoruscant.png',
       standardLoadout: ['selfless', 'veterantailgunner', 'r4pastromech'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 3 },
@@ -209,9 +213,9 @@ const t: ShipType = {
       ability:
         'After you fully execute a red maneuver or perform a red action, you camy choose a friendly ship at range 0-3 and an enemy at range 0-1. The chosen frendly ship gains a lock on the enemy ship.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/oddball-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-siegeofcoruscant-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-arc170starfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Torpedo', 'Crew', 'Astromech', 'Gunner'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 3 },
@@ -239,9 +243,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary [Front Arc] attack, you may spend 1 [Charge] to reroll 1 attack die. While you perform a primary [Rear Arc] attack, you may recover 1 [Charge] to roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wolffe-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wolffe-siegeofcoruscant.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wolffe.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wolffe-siegeofcoruscant.png',
       charges: { value: 1, recovers: 0 },
       standardLoadout: [
         'wolfpack-siegeofcoruscant',
@@ -267,9 +271,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary [Front Arc] attack, you may spend 1 [Charge] to reroll 1 attack die. While you perform a primary [Rear Arc] attack, you may recover 1 [Charge] to roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wolffe-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wolffe-siegeofcoruscant-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wolffe.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wolffe-siegeofcoruscant-lsl.png',
       charges: { value: 1, recovers: 0 },
       slots: [
         'Talent',
@@ -298,8 +302,9 @@ const t: ShipType = {
       ability:
         'After a friendly ship at range 0-2 in your [Left Arc] or [Right Arc] performs an attack, if you are not strained, you may acquire a lock on the defender.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jag-siegeofcoruscant.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jag.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jag-siegeofcoruscant.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jag-siegeofcoruscant.png',
       standardLoadout: [
         'veterantailgunner',
         'r4pastromech',
@@ -324,8 +329,9 @@ const t: ShipType = {
       ability:
         'After a friendly ship at range 0-2 in your [Left Arc] or [Right Arc] performs an attack, if you are not strained, you may acquire a lock on the defender.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jag-siegeofcoruscant.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jag.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jag-siegeofcoruscant-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jag-siegeofcoruscant-lsl.png',
       slots: ['Torpedo', 'Crew', 'Astromech', 'Modification', 'Gunner'],
       standard: true,
       wildspace: true,

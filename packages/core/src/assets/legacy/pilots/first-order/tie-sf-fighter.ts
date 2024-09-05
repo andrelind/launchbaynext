@@ -73,9 +73,10 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       charges: { value: 1, recovers: 1 },
-      image: 'https://infinitearenas.com/xw2/images/pilots/quickdraw.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/quickdraw.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/quickdraw.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/quickdraw.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -95,9 +96,10 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/backdraft.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/backdraft.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/backdraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/backdraft.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -116,9 +118,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/omegasquadronexpert.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronexpert.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/omegasquadronexpert.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -137,9 +139,9 @@ const t: ShipType = {
       },
       slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/zetasquadronsurvivor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zetasquadronsurvivor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronsurvivor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zetasquadronsurvivor.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -162,9 +164,9 @@ const t: ShipType = {
         "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
       cost: 37,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantlehuse.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantlehuse.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -185,8 +187,9 @@ const t: ShipType = {
         'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
       cost: 34,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainphasma.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainphasma.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainphasma.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainphasma.png',
       keywords: ['TIE'],
       epic: true,
     },

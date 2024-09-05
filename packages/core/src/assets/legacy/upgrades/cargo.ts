@@ -13,9 +13,9 @@ const t: UpgradeBase[] = [
         type: 'Cargo',
         slots: ['Cargo'],
         image:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/adaptiveshields.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/adaptiveshields.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/upgrades/adaptiveshields.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/adaptiveshields.png',
       },
     ],
     cost: { value: 4 },
@@ -35,9 +35,9 @@ const t: UpgradeBase[] = [
         type: 'Cargo',
         slots: ['Cargo'],
         image:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/boostedscanners.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/boostedscanners.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/upgrades/boostedscanners.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/boostedscanners.png',
       },
     ],
     cost: { value: 6 },
@@ -56,9 +56,9 @@ const t: UpgradeBase[] = [
         type: 'Cargo',
         slots: ['Cargo'],
         image:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/optimizedpowercore.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/optimizedpowercore.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/upgrades/optimizedpowercore.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/optimizedpowercore.png',
       },
     ],
     cost: { value: 7 },
@@ -78,9 +78,9 @@ const t: UpgradeBase[] = [
         slots: ['Cargo'],
         charges: { value: 3, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tibannareserves.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tibannareserves.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/upgrades/tibannareserves.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tibannareserves.png',
       },
     ],
     cost: { value: 3 },

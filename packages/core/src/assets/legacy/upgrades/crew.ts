@@ -12,10 +12,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the Perform Action step, you may perform 1 action, even while stressed. After you perform an action while stressed, suffer 1 [Hit] damage unless you expose 1 of your damage cards.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/chopper-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chopper-crew.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chopper-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chopper-crew.png',
       },
     ],
     cost: { value: 1 },
@@ -36,9 +36,9 @@ const t: UpgradeBase[] = [
           'You can perform primary attacks at range 0. Enemy ships at range 0 can perform primary attacks against you.',
         slots: ['Crew'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/Card_Upgrade_94.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zeborrelios.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/zeborrelios.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zeborrelios.png',
       },
     ],
     cost: { value: 1 },
@@ -57,10 +57,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'At the start of the Engagement Phase, you may choose 1 enemy ship at range 0-1. If you do, you gain 1 calculate token unless that ship chooses to gain 1 stress token.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/000.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/000.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/000.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/000.png',
       },
     ],
     cost: { value: 5 },
@@ -81,10 +82,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'While you perform an attack, after rolling attack dice, you may name a type of green token. If you do, gain 2 ion tokens and, during this attack, the defender cannot spend tokens of the named type.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/4lom.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/4lom.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/4lom.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/4lom.png',
       },
     ],
     cost: { value: 2 },
@@ -104,10 +106,10 @@ const t: UpgradeBase[] = [
         ability:
           'After another friendly ship at range 0-3 defends, if it is destroyed, the attacker gains 2 stress tokens. While a friendly ship at range 0-3 performs an attack against a stressed ship, it may reroll 1 attack die.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/admiralsloane.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/admiralsloane.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/admiralsloane.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/admiralsloane.png',
       },
     ],
     cost: { value: 18 },
@@ -126,11 +128,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'Setup: After placing forces, assign the Hunted condition to 1 enemy ship. While you perform an attack against the ship with the Hunted condition, you may change 1 of your [Focus] results to a [Hit] result.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/agentkallus.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentkallus.png',
         conditions: ['hunted'],
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/agentkallus.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentkallus.png',
       },
     ],
     cost: { value: 5 },
@@ -150,9 +153,10 @@ const t: UpgradeBase[] = [
         ability:
           'While you perform a [Focus] action, you may treat it as red. If you do, gain 1 additional focus token for each enemy ship at range 0-1, to a maximum of 2.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bazemalbus.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bazemalbus.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bazemalbus.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bazemalbus.png',
       },
     ],
     cost: { value: 3 },
@@ -171,10 +175,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'Setup: Start in reserve. At the end of Setup, place yourself at range 0 of an obstacle and beyond range 3 of any enemy ship.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bobafett.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bobafett.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bobafett.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bobafett.png',
       },
     ],
     cost: { value: 2 },
@@ -196,14 +201,12 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         actions: [{ type: 'Calculate', difficulty: 'White' }],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/c3po.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c3po.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c3po.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c3po.png',
       },
     ],
     cost: { value: 7 },
@@ -222,10 +225,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'After you drop or launch a device, you may perform a red [Boost] action.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/cadbane.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cadbane.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cadbane.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cadbane.png',
       },
     ],
     cost: { value: 3 },
@@ -246,9 +250,9 @@ const t: UpgradeBase[] = [
           'At the end of the Engagement Phase, each enemy ship at range 0-1 that is not stressed gains 1 stress token.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/captainphasma.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/captainphasma.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/captainphasma.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/captainphasma.png',
       },
     ],
     cost: { value: 5 },
@@ -269,9 +273,9 @@ const t: UpgradeBase[] = [
           "During the System Phase, you may choose 1 enemy ship at range 1-2 and guess aloud a bearing and speed, then look at that ship's dial. If the chosen ship's bearing and speed match your guess, you may set your dial to another maneuver.",
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/cassianandor.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cassianandor.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cassianandor.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cassianandor.png',
       },
     ],
     cost: { value: 5 },
@@ -292,9 +296,10 @@ const t: UpgradeBase[] = [
           'At the start of the Engagement Phase, you may spend 2 [Charge] to repair 1 faceup damage card.',
         slots: ['Crew'],
         charges: { value: 2, recovers: 1 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/chewbacca.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chewbacca.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chewbacca.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chewbacca.png',
       },
     ],
     cost: { value: 3 },
@@ -315,9 +320,9 @@ const t: UpgradeBase[] = [
           'At the start of the End Phase, you may spend 1 focus token to repair 1 of your faceup damage cards.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/chewbacca-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chewbacca-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chewbacca-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chewbacca-crew.png',
       },
     ],
     cost: { value: 3 },
@@ -337,9 +342,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform a [Coordinate] action, if the ship you coordinated performed a [Barrel Roll] or [Boost] action, it may gain 1 stress token to rotate 90°.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/cienaree.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cienaree.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cienaree.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cienaree.png',
       },
     ],
     cost: { value: 4 },
@@ -362,10 +368,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the End Phase, you may choose 2 [Illicit] upgrades equipped to friendly ships at range 0-1. If you do, you may exchange these upgrades. End of Game: Return all [Illicit] upgrades to their original ships.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/cikatrovizago.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cikatrovizago.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cikatrovizago.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cikatrovizago.png',
       },
     ],
     cost: { value: 1 },
@@ -386,9 +392,10 @@ const t: UpgradeBase[] = [
           'At the start of the Engagement Phase, you may choose 1 ship in your firing arc at range 0-2 and spend 1 [Force]. If you do, that ship suffers 1 [Hit] damage unless it chooses to remove 1 green token.',
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/darthvader.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/darthvader.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/darthvader.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/darthvader.png',
       },
     ],
     cost: { value: 16 },
@@ -409,9 +416,9 @@ const t: UpgradeBase[] = [
           'During the Activation Phase, enemy ships at range 0-1 cannot remove stress tokens.',
         slots: ['Crew', 'Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/deathtroopers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deathtroopers.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/deathtroopers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/deathtroopers.png',
       },
     ],
     cost: { value: 6 },
@@ -431,18 +438,13 @@ const t: UpgradeBase[] = [
         ability:
           'Setup: Before placing forces, assign the Optimized Prototype condition to another friendly ship.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/directorkrennic.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/directorkrennic.png',
         conditions: ['optimizedprototype'],
         slots: ['Crew'],
         actions: [{ type: 'Lock', difficulty: 'White' }],
-        grants: [
-          {
-            action: { type: 'Lock', difficulty: 'White' },
-            value: 1,
-          },
-        ],
+        grants: [{ action: { type: 'Lock', difficulty: 'White' }, value: 1 }],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/directorkrennic.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/directorkrennic.png',
       },
     ],
     cost: { value: 4 },
@@ -462,11 +464,11 @@ const t: UpgradeBase[] = [
         ability:
           'While another friendly ship defends or performs an attack, you may spend 1 [Force] to modify 1 of its dice as though that ship had spent 1 [Force].',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/emperorpalpatine.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/emperorpalpatine.png',
         slots: ['Crew', 'Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/emperorpalpatine.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/emperorpalpatine.png',
       },
     ],
     cost: { value: 12 },
@@ -487,9 +489,9 @@ const t: UpgradeBase[] = [
           'While you defend, before attack dice are rolled, you may spend a lock you have on the attacker to roll 1 attack die. If you do, the attacker gains 1 jam token. Then, on a [Hit] or [Critical Hit] result, gain 1 jam token.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/freelanceslicer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/freelanceslicer.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/freelanceslicer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/freelanceslicer.png',
       },
     ],
     cost: { value: 2 },
@@ -508,9 +510,10 @@ const t: UpgradeBase[] = [
         ability:
           'While you perform a white [Coordinate] action, you may treat it as red. If you do, you may coordinate up to 2 additional ships of the same ship type, and each ship you coordinate must perform the same action, treating that action as red.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/generalhux.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/generalhux.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/generalhux.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/generalhux.png',
       },
     ],
     cost: { value: 2 },
@@ -532,9 +535,9 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         charges: { value: 1, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/gnkgonkdroid.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/gnkgonkdroid.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/gnkgonkdroid.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/gnkgonkdroid.png',
       },
     ],
     cost: { value: 5 },
@@ -553,11 +556,11 @@ const t: UpgradeBase[] = [
         ability:
           'After an enemy ship at range 0-2 reveals its dial, you may spend 1 [Force] to perform 1 white action on your action bar, treating that action as red.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/grandinquisitor.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grandinquisitor.png',
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/grandinquisitor.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/grandinquisitor.png',
       },
     ],
     cost: { value: 13 },
@@ -577,11 +580,11 @@ const t: UpgradeBase[] = [
         ability:
           'During the System Phase, you may spend 2 [Charge]. If you do, each friendly ship may acquire a lock on a ship that you have locked.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/grandmofftarkin.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grandmofftarkin.png',
         slots: ['Crew'],
         charges: { value: 2, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/grandmofftarkin.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/grandmofftarkin.png',
       },
     ],
     cost: { value: 4 },
@@ -604,10 +607,10 @@ const t: UpgradeBase[] = [
         ability:
           'You can execute red maneuvers even while stressed. After you fully execute a red maneuver, if you have 3 or more stress tokens, remove 1 stress token and suffer 1 [Hit] damage.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/herasyndulla.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/herasyndulla.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/herasyndulla.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/herasyndulla.png',
       },
     ],
     cost: { value: 4 },
@@ -626,17 +629,15 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'You have the pilot ability of each other friendly ship with the IG-2000 upgrade. After you perform a [Calculate] action, gain 1 calculate token.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ig88d.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig88d.png',
         slots: ['Crew'],
         actions: [{ type: 'Calculate', difficulty: 'White' }],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ig88d.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ig88d.png',
       },
     ],
     cost: { value: 3 },
@@ -656,9 +657,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the End Phase, enemy ships at range 1-2 cannot remove jam tokens.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/isbslicer.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/isbslicer.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/isbslicer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/isbslicer.png',
       },
     ],
     cost: { value: 1 },
@@ -679,9 +681,10 @@ const t: UpgradeBase[] = [
           'Setup: After placing forces, choose 1 enemy ship and assign the Listening Device condition to it.',
         conditions: ['listeningdevice'],
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/informant.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/informant.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/informant.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/informant.png',
       },
     ],
     cost: { value: 4 },
@@ -700,11 +703,11 @@ const t: UpgradeBase[] = [
         ability:
           'During the End Phase, you may choose 1 friendly ship at range 0-2 and spend 1 [Charge]. If you do, that ship recovers 1 [Charge] on 1 of its equipped [Illicit] upgrades.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/jabbathehutt.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jabbathehutt.png',
         slots: ['Crew', 'Crew'],
         charges: { value: 4, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jabbathehutt.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jabbathehutt.png',
       },
     ],
     cost: { value: 11 },
@@ -724,9 +727,10 @@ const t: UpgradeBase[] = [
         ability:
           'If a friendly ship at range 0-3 would gain a focus token, it may gain 1 evade token instead.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/jynerso.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jynerso.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jynerso.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jynerso.png',
       },
     ],
     cost: { value: 4 },
@@ -747,9 +751,10 @@ const t: UpgradeBase[] = [
           'After a friendly ship at range 0-2 fully executes a white maneuver, you may spend 1 [Force] to remove 1 stress token from that ship.',
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['light'] },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kananjarrus.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kananjarrus.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kananjarrus.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kananjarrus.png',
       },
     ],
     cost: { value: 12 },
@@ -768,10 +773,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'At the start of the End Phase, you may choose 1 enemy ship at range 0-2 in your firing arc. If you do, that ship does not remove its tractor tokens.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ketsuonyo.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ketsuonyo.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ketsuonyo.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ketsuonyo.png',
       },
     ],
     cost: { value: 3 },
@@ -793,9 +799,10 @@ const t: UpgradeBase[] = [
         conditions: ['illshowyouthedarkside'],
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kyloren.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kyloren.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kyloren.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kyloren.png',
       },
     ],
     cost: { value: 8 },
@@ -815,9 +822,10 @@ const t: UpgradeBase[] = [
         ability:
           'Setup: Equip this side faceup. While you defend, you may flip this card. If you do, the attacker must reroll all attack dice.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/l337.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/l337.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/l337.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/l337-sideb.png',
       },
       {
         title: "L3-37's Programming",
@@ -825,9 +833,10 @@ const t: UpgradeBase[] = [
         ability:
           'If you are not shielded, decrease the difficulty of your bank ([Bank Left] and [Bank Right]) maneuvers.',
         slots: ['Configuration'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/l337-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/l337-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/l337-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/l337.png',
       },
     ],
     cost: { value: 4 },
@@ -848,9 +857,9 @@ const t: UpgradeBase[] = [
           'After you roll dice, you may spend 1 green token to reroll up to 2 of your results.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/landocalrissian-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landocalrissian-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/landocalrissian-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landocalrissian-crew.png',
       },
     ],
     cost: { value: 6 },
@@ -871,9 +880,9 @@ const t: UpgradeBase[] = [
           'Action: Roll 2 defense dice. For each [Focus] result, gain 1 focus token. For each [Evade] result, gain 1 evade token. If both results are blank, the opposing player chooses focus or evade. You gain 1 token of that type.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/landocalrissian.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landocalrissian.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/landocalrissian.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landocalrissian.png',
       },
     ],
     cost: { value: 2 },
@@ -892,10 +901,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'While you defend, if the attacker is stressed, you may remove 1 stress from the attacker to change 1 of your blank/[Focus] results to an [Evade] result.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/lattsrazzi.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/lattsrazzi.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/lattsrazzi.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/lattsrazzi.png',
       },
     ],
     cost: { value: 5 },
@@ -914,11 +924,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'At the start of the Activation Phase, you may spend 3 [Charge]. During this phase, each friendly ship reduces the difficulty of its red maneuvers.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/leiaorgana.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/leiaorgana.png',
         slots: ['Crew'],
         charges: { value: 3, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/leiaorgana.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/leiaorgana.png',
       },
     ],
     cost: { value: 8 },
@@ -938,9 +949,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you defend, if the attack hit, you may acquire a lock on the attacker.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/magvayarro.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/magvayarro.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/magvayarro.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/magvayarro.png',
       },
     ],
     cost: { value: 5 },
@@ -959,12 +971,13 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'After you suffer damage, you may gain 1 stress token to recover 1 [Force]. You can equip “Dark Side” upgrades.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/maul.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/maul.png',
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         grants: [{ value: 1 }],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/maul.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/maul.png',
       },
     ],
     cost: { value: 11 },
@@ -985,10 +998,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'At the start of the Engagement Phase, if you are damaged, you may perform a red [Reinforce] action.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ministertua.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ministertua.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ministertua.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ministertua.png',
       },
     ],
     cost: { value: 5 },
@@ -1008,11 +1022,11 @@ const t: UpgradeBase[] = [
         ability:
           'During the System Phase, you may spend 2 [Charge]. If you do, choose the [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] template. Each friendly ship may perform a red [Boost] action using that template.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/moffjerjerrod.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/moffjerjerrod.png',
         slots: ['Crew'],
         charges: { value: 2, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/moffjerjerrod.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/moffjerjerrod.png',
       },
     ],
     cost: { value: 7 },
@@ -1035,9 +1049,10 @@ const t: UpgradeBase[] = [
         ability:
           'Decrease the difficulty of your bank maneuvers ([Bank Left] and [Bank Right]).',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/niennunb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/niennunb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/niennunb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/niennunb.png',
       },
     ],
     cost: { value: 5 },
@@ -1058,9 +1073,9 @@ const t: UpgradeBase[] = [
           'At the end of the round, you may roll 1 attack die to repair 1 faceup damage card. Then on a [Hit] result, expose 1 damage card.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/novicetechnician.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/novicetechnician.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/novicetechnician.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/novicetechnician.png',
       },
     ],
     cost: { value: 2 },
@@ -1079,9 +1094,9 @@ const t: UpgradeBase[] = [
         ability: 'After you perform a [Focus] action, gain 1 focus token.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/perceptivecopilot.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/perceptivecopilot.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/perceptivecopilot.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/perceptivecopilot.png',
       },
     ],
     cost: { value: 8 },
@@ -1101,9 +1116,9 @@ const t: UpgradeBase[] = [
           'During the Activation or Engagement Phase, after an enemy ship in your [Front Arc] at range 0-1 gains a red or orange token, if you are not stressed, you may gain 1 stress token. If you do, that ship gains 1 additional token of the type that it gained.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/pettyofficerthanisson.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pettyofficerthanisson.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/pettyofficerthanisson.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pettyofficerthanisson.png',
       },
     ],
     cost: { value: 3 },
@@ -1123,9 +1138,10 @@ const t: UpgradeBase[] = [
         ability:
           'While you move and perform attacks, you ignore obstacles that you are locking.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/qira.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/qira.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/qira.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/qira.png',
       },
     ],
     cost: { value: 2 },
@@ -1145,9 +1161,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the End Phase, if you are damaged and not shielded, you may roll 1 attack die to recover 1 shield. On a [Hit] result, expose 1 of your damage cards.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r2d2-crew.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2d2-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2d2-crew.png',
       },
     ],
     cost: { value: 8 },
@@ -1167,9 +1184,10 @@ const t: UpgradeBase[] = [
         ability:
           'Setup: Place 1 ion, 1 jam, 1 stress, and 1 tractor token on this card. After a ship suffers the effect of a friendly bomb, you may remove 1 ion, jam, stress, or tractor token from this card. If you do, that ship gains a matching token.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/sabinewren.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sabinewren.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sabinewren.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sabinewren.png',
       },
     ],
     cost: { value: 3 },
@@ -1189,9 +1207,10 @@ const t: UpgradeBase[] = [
         ability:
           'While you perform an attack, you may suffer 1 [Hit] damage to change all of your [Focus] results to [Critical Hit] results.',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/sawgerrera.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sawgerrera.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sawgerrera.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sawgerrera.png',
       },
     ],
     cost: { value: 9 },
@@ -1212,9 +1231,9 @@ const t: UpgradeBase[] = [
           'After you reveal your dial, you may set your dial to another non-red maneuver of the same speed. While you execute that maneuver, increase its difficulty.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/seasonednavigator.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seasonednavigator.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/seasonednavigator.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seasonednavigator.png',
       },
     ],
     cost: {
@@ -1246,11 +1265,11 @@ const t: UpgradeBase[] = [
         ability:
           'If an enemy ship at range 0-1 would gain a stress token, you may spend 1 [Force] to have it gain 1 jam or tractor token instead.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/seventhsister.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seventhsister.png',
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/seventhsister.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seventhsister.png',
       },
     ],
     cost: { value: 10 },
@@ -1272,9 +1291,9 @@ const t: UpgradeBase[] = [
         slots: ['Crew', 'Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/supremeleadersnoke.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/supremeleadersnoke.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/supremeleadersnoke.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/supremeleadersnoke.png',
       },
     ],
     cost: { value: 13 },
@@ -1295,15 +1314,12 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         actions: [{ type: 'Coordinate', difficulty: 'White' }],
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'White' }, value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/tacticalofficer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tacticalofficer.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tacticalofficer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tacticalofficer.png',
       },
     ],
     cost: { value: 3 },
@@ -1324,9 +1340,9 @@ const t: UpgradeBase[] = [
           'Setup: After placing forces, you may choose 1 obstacle in the play area. If you do, place it anywhere in the play area beyond range 2 of any board edge or ship and beyond range 1 of other obstacles.',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/tobiasbeckett.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tobiasbeckett.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tobiasbeckett.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tobiasbeckett.png',
       },
     ],
     cost: { value: 1 },
@@ -1345,10 +1361,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'After you partially execute a maneuver, you may suffer 1 [Hit] damage to perform 1 white action.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/unkarplutt.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/unkarplutt.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/unkarplutt.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/unkarplutt.png',
       },
     ],
     cost: { value: 2 },
@@ -1367,10 +1384,11 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'While you perform an attack, if you are not stressed, you may choose 1 defense die and gain 1 stress token. If you do, the defender must reroll that die.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/zuckuss.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zuckuss.png',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/zuckuss.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zuckuss.png',
       },
     ],
     cost: { value: 2 },
@@ -1389,19 +1407,14 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'While you coordinate, you can choose friendly ships beyond range 2 if they have [Calculate] on their action bar. After you perform the [Calculate] or [Coordinate] action, gain 1 calculate token.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/c3po-crew.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c3po-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c3po-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c3po-crew.png',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
-          {
-            action: { type: 'Coordinate', difficulty: 'Red' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
         ],
       },
     ],
@@ -1422,16 +1435,11 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform an [Evade] action, gain additional evade tokens equal to the number of enemy ships at range 0-1.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/hansolo-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hansolo-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hansolo-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hansolo-crew.png',
         slots: ['Crew'],
-        grants: [
-          {
-            action: { type: 'Evade', difficulty: 'Red' },
-            value: 1,
-          },
-        ],
+        grants: [{ action: { type: 'Evade', difficulty: 'Red' }, value: 1 }],
       },
     ],
     cost: { value: 3 },
@@ -1451,9 +1459,9 @@ const t: UpgradeBase[] = [
         ability:
           'Setup: Lose 1 [Charge]. After a friendly ship at range 0-3 is dealt 1 damage card, recover 1 [Charge]. While you perform an attack, you may spend 2 [Charge] to change 1 [Focus] result to a [Critical Hit] result.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/chewbacca-crew-swz19.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chewbacca-crew-swz19.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chewbacca-crew-swz19.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chewbacca-crew-swz19.png',
         slots: ['Crew'],
         charges: { value: 2, recovers: 0 },
       },
@@ -1474,9 +1482,10 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'While you defend or perform an attack, you may spend 1 of your results to acquire a lock on the enemy ship.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/rosetico.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rosetico.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/rosetico.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rosetico.png',
         slots: ['Crew'],
       },
     ],
@@ -1497,17 +1506,14 @@ const t: UpgradeBase[] = [
         ability:
           'Setup: Equip this side faceup. After you defend, if the attacker is at range 0-2, you may spend 1 [Force]. If you do, the attacker gains 1 stress token. During the End Phase, you may flip this card.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/chancellorpalpatine.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chancellorpalpatine.png',
         force: { value: 1, recovers: 1, side: ['dark'] },
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
         ],
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chancellorpalpatine.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chancellorpalpatine-sideb.png',
       },
       {
         title: 'Darth Sidious',
@@ -1515,17 +1521,14 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform a purple [Coordinate] action, the ship you coordinated gains 1 stress token. Then, it gains 1 focus token or recovers 1 [Force].',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/chancellorpalpatine-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chancellorpalpatine-sideb.png',
         force: { value: 1, recovers: 1, side: ['dark'] },
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
         ],
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chancellorpalpatine-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chancellorpalpatine.png',
       },
     ],
     cost: { value: 14 },
@@ -1545,11 +1548,11 @@ const t: UpgradeBase[] = [
         ability:
           'Before a ship at range 0-2 rolls attack or defense dice, if all of your [Force] are active, you may spend 1 [Force] and name a result. If the roll does not contain the named result, the ship must change 1 die to that result.',
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/a1920988dd8634d9780c6363e3f36f6e.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/countdooku.png',
         force: { value: 1, recovers: 1, side: ['dark'] },
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/countdooku.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/countdooku.png',
       },
     ],
     cost: { value: 14 },
@@ -1569,11 +1572,11 @@ const t: UpgradeBase[] = [
         ability:
           'While you defend, after the Neutralize Results step, if there are 2 or more [Hit]/[Critical Hit] results, you may spend 1 [Charge] to cancel 1 [Hit] or [Critical Hit] result. After a friendly ship is destroyed, recover 1 [Charge].',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/generalgrievous.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/generalgrievous.png',
         charges: { value: 1, recovers: 0 },
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/generalgrievous.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/generalgrievous.png',
       },
     ],
     cost: { value: 3 },
@@ -1594,8 +1597,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/amilynholdo.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/amilynholdo.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/amilynholdo.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/amilynholdo.png',
       },
     ],
     cost: { value: 8 },
@@ -1618,14 +1622,12 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         charges: { value: 5, recovers: 1 },
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ga97.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ga97.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ga97.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ga97.png',
       },
     ],
     cost: { value: 3 },
@@ -1646,9 +1648,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kaydelconnix.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kaydelconnix.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/kaydelconnix.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kaydelconnix.png',
       },
     ],
     cost: { value: 5 },
@@ -1669,8 +1671,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/korrsella.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/korrsella.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/korrsella.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/korrsella.png',
       },
     ],
     cost: { value: 6 },
@@ -1691,8 +1694,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/larmadacy.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/larmadacy.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/larmadacy.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/larmadacy.png',
       },
     ],
     cost: { value: 2 },
@@ -1714,15 +1718,12 @@ const t: UpgradeBase[] = [
         slots: ['Crew', 'Crew'],
         force: { value: 1, recovers: 1, side: ['light'] },
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/leiaorgana-resistance.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/leiaorgana-resistance.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/leiaorgana-resistance.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/leiaorgana-resistance.png',
       },
     ],
     cost: { value: 16 },
@@ -1743,14 +1744,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/pz4co.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/pz4co.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pz4co.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pz4co.png',
       },
     ],
     cost: { value: 3 },
@@ -1767,18 +1766,15 @@ const t: UpgradeBase[] = [
       {
         title: 'C-3PO',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c3po-republic.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c3po-republic.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/c3po-republic.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c3po-republic.png',
         ability:
           'While you defend, if you are calculating, you may reroll 1 defense die. After you perform a [Calculate] action, gain 1 calculate token.',
         slots: ['Crew'],
         type: 'Crew',
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
       },
     ],
@@ -1811,8 +1807,9 @@ const t: UpgradeBase[] = [
           },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/aaylasecura.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/aaylasecura.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/aaylasecura.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/aaylasecura.png',
       },
     ],
     cost: { value: 12 },
@@ -1832,17 +1829,18 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/agentterex.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/agentterex.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentterex-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentterex.png',
       },
       {
         slots: ['Crew'],
         title: 'Agent Terex (Cyborg)',
         type: 'Crew',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/agentterex-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentterex.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/agentterex-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentterex-sideb.png',
         ability:
           'During the System Phase, roll 1 attack die. On a [Hit] or [Critical Hit] result, gain 1 calculate token. Otherwise gain 1 jam token. Action: Transfer 1 calculate token or 1 jam token to a ship at range 0-3.',
       },
@@ -1864,18 +1862,13 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
-          {
-            action: { type: 'Jam', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+          { action: { type: 'Jam', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/k2so.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/k2so.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/k2so.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/k2so.png',
       },
     ],
     cost: { value: 6 },
@@ -1896,14 +1889,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Reinforce', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Reinforce', difficulty: 'Purple' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/plokoon.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/plokoon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/plokoon.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/plokoon.png',
       },
     ],
     cost: {
@@ -1935,9 +1926,10 @@ const t: UpgradeBase[] = [
             value: 1,
           },
         ],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/torynfarr.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/torynfarr.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/torynfarr.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/torynfarr.png',
       },
     ],
     cost: { value: 4 },
@@ -1955,17 +1947,13 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kitfisto.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kitfisto.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kitfisto.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kitfisto.png',
         ability:
           'At the start of the Engagement Phase, you may choose 1 friendly ship at range 0-1 and spend 1 [Force]. If you do, it may perform a red [Evade] action.',
         force: { value: 1, recovers: 1, side: ['light'] },
-        grants: [
-          {
-            action: { type: 'Evade', difficulty: 'Purple' },
-            value: 1,
-          },
-        ],
+        grants: [{ action: { type: 'Evade', difficulty: 'Purple' }, value: 1 }],
       },
     ],
     cost: { value: 8 },
@@ -1983,16 +1971,14 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/yoda.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/yoda.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/yoda.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/yoda.png',
         ability:
           'After another friendly ship at range 0-2 fully executes a purple maneuver or performs a purple action, you may spend 1 [Force]. If you do, that ship recovers 1 [Force].',
         force: { value: 2, recovers: 1, side: ['light'] },
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
         ],
       },
     ],
@@ -2011,8 +1997,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/fives.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/fives.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fives.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fives.png',
         ability:
           "After you perform an attack that missed, if the defender's initiative is equal to or greater than your initiative, place 1 evade or focus token on this card. Before you engage, you may remove 1 token from this card to gain 1 matching token.",
       },
@@ -2032,8 +2019,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew', 'Gunner'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/wolfpack.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/wolfpack.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/wolfpack.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/wolfpack.png',
         ability:
           'After a friendly ship at range 0-3 defends, if the attacker is in your firing arc, the defender may gain 1 strain token to acquire a lock on the attacker.',
       },
@@ -2053,9 +2041,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/commandermalarus.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/commandermalarus.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/commandermalarus.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/commandermalarus.png',
         ability:
           'Setup: Equip this side faceup. While a friendly non-limited ship at range 0-1 performs a primary attack, that ship may reroll 1 blank result. If it does and the attack does not hit, you must flip this card.',
       },
@@ -2064,9 +2052,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/commandermalarus-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/commandermalarus-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/commandermalarus-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/commandermalarus-sideb.png',
         ability:
           'While you perform an attack, if the defender is in your [Bullseye Arc], you must convert all [Focus] results to [Hit] results and gain 1 stress token. Then, if you have 2 or more stress tokens, suffer 1 [Hit] damage.',
       },
@@ -2086,9 +2074,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew', 'Gunner'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ghostcompany.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ghostcompany.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/ghostcompany.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ghostcompany.png',
         ability:
           'After you perform a primary attack, if you are focused, you may perform a [Single Turret Arc] attack against a ship you have not attacked this round as a bonus attack.',
         grants: [
@@ -2118,9 +2106,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/commanderpyre.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/commanderpyre.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/commanderpyre.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/commanderpyre.png',
         ability:
           'Setup: After placing forces, choose an enemy ship. It gains 2 stress tokens. While you defend, if the attacker is stressed, you may reroll 1 defense die.',
       },
@@ -2141,9 +2129,10 @@ const t: UpgradeBase[] = [
         title: 'Hondo Ohnaka',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/hondoohnaka.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hondoohnaka.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hondoohnaka.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hondoohnaka.png',
       },
     ],
     cost: { value: 5 },
@@ -2162,9 +2151,10 @@ const t: UpgradeBase[] = [
         title: 'Jango Fett',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/jangofett.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jangofett.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jangofett.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jangofett.png',
       },
     ],
     cost: { value: 4 },
@@ -2186,9 +2176,10 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         conditions: ['youdbettermeanbusiness', 'youshouldthankme'],
         charges: { value: 2, recovers: 0 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/zamwesell.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zamwesell.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/zamwesell.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zamwesell.png',
       },
     ],
     cost: { value: 11 },
@@ -2209,9 +2200,10 @@ const t: UpgradeBase[] = [
         charges: { value: 2, recovers: 1 },
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/gamutkey.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/gamutkey.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/gamutkey.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/gamutkey.png',
       },
     ],
     cost: { value: 6 },
@@ -2232,15 +2224,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Red' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/protectorategleb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protectorategleb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/protectorategleb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protectorategleb.png',
       },
     ],
     cost: { value: 6 },
@@ -2263,15 +2252,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Reinforce', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Reinforce', difficulty: 'White' }, value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/themandalorian.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/themandalorian.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/themandalorian.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/themandalorian.png',
       },
     ],
     cost: { value: 4 },
@@ -2292,9 +2278,10 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         force: { value: 2, recovers: 0, side: ['light'] },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/thechild.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/thechild.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/thechild.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/thechild.png',
       },
     ],
     cost: { value: 6 },
@@ -2320,14 +2307,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
         ],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ig11.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig11.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ig11.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ig11.png',
       },
       {
         ability:
@@ -2335,9 +2320,10 @@ const t: UpgradeBase[] = [
         title: 'IG-11 (Anti-Capture Protocol)',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ig11-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig11-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ig11-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ig11-sideb.png',
       },
     ],
     cost: { value: 6 },
@@ -2355,14 +2341,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Red' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
         ],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/greefkarga.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/greefkarga.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/greefkarga.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/greefkarga.png',
       },
     ],
     cost: { value: 8 },
@@ -2385,9 +2369,10 @@ const t: UpgradeBase[] = [
         title: 'Kuiil',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kuiil.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kuiil.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/kuiil.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/kuiil.png',
       },
     ],
     cost: { value: 6 },
@@ -2404,9 +2389,10 @@ const t: UpgradeBase[] = [
         title: 'Peli Motto',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/pelimotto.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pelimotto.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/pelimotto.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pelimotto.png',
       },
     ],
     cost: { value: 3 },
@@ -2430,9 +2416,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/primeministeralmec.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/primeministeralmec.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/primeministeralmec.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/primeministeralmec.png',
       },
       {
         ability:
@@ -2441,9 +2427,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/primeministeralmec-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/primeministeralmec-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/primeministeralmec-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/primeministeralmec-sideb.png',
       },
     ],
     cost: { value: 9 },
@@ -2463,9 +2449,10 @@ const t: UpgradeBase[] = [
         title: 'Rook Kast',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/rookkast.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rookkast.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/rookkast.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rookkast.png',
         grants: [{ action: { type: 'Lock', difficulty: 'Red' }, value: 1 }],
       },
     ],
@@ -2488,9 +2475,9 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['light'] },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/obiwankenobi.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/obiwankenobi.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/obiwankenobi.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/obiwankenobi.png',
       },
     ],
     cost: { value: 9 },
@@ -2511,9 +2498,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/bokatankryze.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bokatankryze.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bokatankryze.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bokatankryze.png',
       },
     ],
     cost: { value: 5 },
@@ -2534,9 +2521,9 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/bokatankryze-rebel-scum.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bokatankryze-rebel-scum.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bokatankryze-rebel-scum.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bokatankryze-rebel-scum.png',
       },
     ],
     cost: { value: 2 },
@@ -2555,9 +2542,10 @@ const t: UpgradeBase[] = [
           'After a friendly ship in your [Full Front Arc] at range 1-2 becomes the defender, you may transfer 1 green token to it. \n\nWhile a friendly ship in your [Full Front Arc] at range 1-2 defends, if you obstruct the attack, the defender rolls 1 additional defense die.',
         title: 'Korkie Kryze',
         type: 'Crew',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/korkiekryze.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/korkiekryze.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/korkiekryze.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/korkiekryze.png',
         slots: ['Crew'],
       },
     ],
@@ -2579,9 +2567,10 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         charges: { value: 2, recovers: 1 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/satinekryze.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/satinekryze.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/satinekryze.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/satinekryze.png',
       },
     ],
     cost: { value: 9 },
@@ -2602,9 +2591,10 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         conditions: ['falsefriend'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/talmerrik.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/talmerrik.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/talmerrik.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/talmerrik.png',
       },
     ],
     cost: { value: 8 },
@@ -2626,9 +2616,9 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/savageopress.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/savageopress.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/savageopress.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/savageopress.png',
       },
     ],
     cost: { value: 10 },
@@ -2648,9 +2638,10 @@ const t: UpgradeBase[] = [
         title: 'Fenn Rau',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/fennrau.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fennrau.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/fennrau.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fennrau.png',
       },
     ],
     cost: { value: 6 },
@@ -2670,9 +2661,10 @@ const t: UpgradeBase[] = [
         title: 'Gar Saxon',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/garsaxon.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/garsaxon.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/garsaxon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/garsaxon.png',
       },
     ],
     cost: { value: 6 },
@@ -2693,14 +2685,12 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'White' }, value: 1 },
         ],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/previzsla.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/previzsla.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/previzsla.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/previzsla.png',
       },
     ],
     cost: { value: 9 },
@@ -2720,9 +2710,10 @@ const t: UpgradeBase[] = [
         title: 'Tristan Wren',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/tristanwren.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tristanwren.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tristanwren.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tristanwren.png',
         charges: { value: 1, recovers: 1 },
       },
     ],
@@ -2743,9 +2734,10 @@ const t: UpgradeBase[] = [
         title: 'Ursa Wren',
         type: 'Crew',
         slots: ['Crew'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ursawren.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ursawren.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ursawren.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ursawren.png',
       },
     ],
     cost: { value: 7 },
@@ -2766,9 +2758,10 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         charges: { value: 2, recovers: 0 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/captainhark.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/captainhark.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/captainhark.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/captainhark.png',
       },
     ],
     cost: { value: 5 },
@@ -2790,9 +2783,9 @@ const t: UpgradeBase[] = [
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['light'] },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/ahsokatano-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ahsokatano-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ahsokatano-crew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ahsokatano-crew.png',
       },
     ],
     cost: { value: 10 },
@@ -2813,16 +2806,13 @@ const t: UpgradeBase[] = [
         slots: ['Crew', 'Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
           { slot: 'Illicit', value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/maul-doublecrew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/maul-crew.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/maul-doublecrew.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/maul-crew.png',
       },
     ],
     cost: { value: 10 },
@@ -2865,9 +2855,9 @@ const t: UpgradeBase[] = [
           ],
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/clanwrencommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clanwrencommandos.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/clanwrencommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clanwrencommandos.png',
       },
     ],
     cost: { value: 10 },
@@ -2913,9 +2903,9 @@ const t: UpgradeBase[] = [
           ],
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/imperialsupercommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/imperialsupercommandos.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/imperialsupercommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/imperialsupercommandos.png',
       },
     ],
     cost: { value: 10 },
@@ -2961,9 +2951,9 @@ const t: UpgradeBase[] = [
           ],
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/mandaloriansupercommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/mandaloriansupercommandos.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/mandaloriansupercommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/mandaloriansupercommandos.png',
       },
     ],
     cost: { value: 10 },
@@ -3009,9 +2999,9 @@ const t: UpgradeBase[] = [
           ],
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/niteowlcommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/niteowlcommandos.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/niteowlcommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/niteowlcommandos.png',
       },
     ],
     cost: { value: 10 },
@@ -3057,9 +3047,9 @@ const t: UpgradeBase[] = [
           ],
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/deathwatchcommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deathwatchcommandos.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/deathwatchcommandos.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/deathwatchcommandos.png',
       },
     ],
     cost: { value: 10 },

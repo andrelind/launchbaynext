@@ -57,9 +57,9 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/chopper-gauntletfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chopper-gauntletfighter.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/chopper-gauntletfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chopper-gauntletfighter.png',
       keywords: ['Droid', 'Spectre'],
     },
     {
@@ -85,9 +85,9 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger-gauntletfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-gauntletfighter.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/ezrabridger-gauntletfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ezrabridger-gauntletfighter.png',
       keywords: ['Light Side', 'Spectre'],
     },
     {
@@ -111,9 +111,9 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianresistancepilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mandalorianresistancepilot.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/mandalorianresistancepilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mandalorianresistancepilot.png',
       keywords: ['Mandalorian'],
     },
   ],

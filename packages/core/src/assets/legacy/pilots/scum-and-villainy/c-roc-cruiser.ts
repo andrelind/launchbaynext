@@ -44,9 +44,9 @@ const t: ShipType = {
       cost: 63,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/syndicatesmugglers.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/syndicatesmugglers.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/syndicatesmugglers.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/syndicatesmugglers.png',
       shipAbility: {
         name: 'Overdrive Burners',
         text: 'While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die.',

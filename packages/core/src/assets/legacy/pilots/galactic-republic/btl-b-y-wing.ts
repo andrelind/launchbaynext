@@ -43,7 +43,7 @@ const t: ShipType = {
       xws: 'shadowsquadronveteran',
       text: 'Shadow Squadron has served since the early days of the Clone Wars, winning victories at Kadavo and against the flagship of Grievous, Malevolence.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowsquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowsquadronveteran.png',
       shipAbility: {
         name: 'Plated Hull',
         text: 'While you defend, if you are not critically damaged, change 1 [Critical Hit] result to a [Hit] result.',
@@ -51,7 +51,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowsquadronveteran.png',
       cost: 31,
       slots: [
         'Talent',
@@ -79,9 +79,9 @@ const t: ShipType = {
       wildspace: true,
       caption: 'Hero of the Republic',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-btlbywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-btlbywing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-btlbywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker-btlbywing.png',
       ability:
         'After you fully execute a maneuver, if there is an enemy ship in your [Front Arc] at range 0-1 or in your [Bullseye Arc], you may spend 1 [Force] to remove 1 stress token.',
       cost: 48,
@@ -103,8 +103,10 @@ const t: ShipType = {
       caption: 'Bucket of Bolts',
       cost: 31,
       limited: 1,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/r2d2.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/r2d2.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/r2d2.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/r2d2.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -146,9 +148,9 @@ const t: ShipType = {
       wildspace: true,
       cost: 37,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-btlbywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-btlbywing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/oddball-btlbywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-btlbywing.png',
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       slots: [
@@ -176,8 +178,9 @@ const t: ShipType = {
       wildspace: true,
       caption: 'Shadow Two',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/matchstick.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/matchstick.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/matchstick.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/matchstick.png',
       ability:
         'While you perform a primary or [Single Turret Arc] attack, you may reroll 1 attack die for each red token you have.',
       cost: 39,
@@ -206,8 +209,9 @@ const t: ShipType = {
       wildspace: true,
       caption: 'Shadow Three',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/broadside.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/broadside.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/broadside.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/broadside.png',
       ability:
         'While you perform a [Single Turret Arc] attack, if your [Single Turret Arc] indicator is in your [Left Arc] or [Right Arc], you may change 1 blank result to a [Focus] result.',
       cost: 35,
@@ -235,8 +239,10 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       caption: 'Payload Specialist',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/goji.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/goji.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goji.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/goji.png',
       ability:
         'While a friendly ship at range 0-3 defends, it may roll 1 additional defense die for each friendly bomb at range 0-1 of it.',
       cost: 29,
@@ -264,9 +270,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronbomber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redsquadronbomber.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/redsquadronbomber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redsquadronbomber.png',
       cost: 30,
       slots: [
         'Turret',

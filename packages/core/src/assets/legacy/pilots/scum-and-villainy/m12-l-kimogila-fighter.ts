@@ -46,7 +46,7 @@ const t: ShipType = {
       xws: 'cartelexecutioner',
       text: 'Many veteran pilots in the service of the Hutt kajidics and other criminal operations choose the M12-L Kimogila for its firepower and dreaded reputation alike.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/cartelexecutioner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cartelexecutioner.png',
       shipAbility: {
         name: 'Dead to Rights',
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
@@ -61,7 +61,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cartelexecutioner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelexecutioner.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -75,7 +75,8 @@ const t: ShipType = {
       xws: 'dalanoberos',
       ability:
         'At the start of the Engagement Phase, you may choose 1 shielded ship in your [Bullseye Arc] and spend 1 [Charge]. If you do, that ship loses 1 shield and you recover 1 shield.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dalanoberos.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dalanoberos.png',
       charges: { value: 2, recovers: 0 },
       shipAbility: {
         name: 'Dead to Rights',
@@ -91,7 +92,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -106,7 +107,8 @@ const t: ShipType = {
       xws: 'toranikulda',
       ability:
         'After you perform an attack, each enemy ship in your [Bullseye Arc] suffers 1 [Hit] damage unless it removes 1 green token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/toranikulda.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/toranikulda.png',
       shipAbility: {
         name: 'Dead to Rights',
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
@@ -121,7 +123,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/toranikulda.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/toranikulda.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],

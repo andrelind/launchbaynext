@@ -13,10 +13,7 @@ const t: UpgradeBase[] = [
           'While you perform a primary attack, if the defender is not in your [Bullseye Arc], roll 1 fewer attack die. Before you activate, you may flip this card.',
         slots: ['Configuration'],
         grants: [
-          {
-            action: { type: 'Barrel Roll', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 },
           {
             action: {
               type: 'Focus',
@@ -27,9 +24,9 @@ const t: UpgradeBase[] = [
           },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/integratedsfoils.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/integratedsfoils-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/integratedsfoils.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/integratedsfoils.png',
       },
       {
         title: 'Integrated S-foils (Open)',
@@ -37,9 +34,9 @@ const t: UpgradeBase[] = [
         ability: 'Before you activate, you may flip this card.',
         slots: ['Configuration'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/integratedsfoils-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/integratedsfoils.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/integratedsfoils-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/integratedsfoils-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -64,9 +61,9 @@ const t: UpgradeBase[] = [
           { slot: 'Missile', value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/os1arsenalloadout.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/os1arsenalloadout.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/os1arsenalloadout.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/os1arsenalloadout.png',
       },
     ],
     cost: { value: 0 },
@@ -86,9 +83,10 @@ const t: UpgradeBase[] = [
         ability:
           'While you defend, roll 1 fewer defense die. After you execute a [0 [Stationary]] maneuver, you may rotate your ship 90° or 180°. Before you activate, you may flip this card.',
         slots: ['Configuration'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/pivotwing.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pivotwing-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/pivotwing.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pivotwing.png',
       },
       {
         title: 'Pivot Wing (Open)',
@@ -96,9 +94,9 @@ const t: UpgradeBase[] = [
         ability: 'Before you activate, you may flip this card.',
         slots: ['Configuration'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/pivotwing-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pivotwing.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/pivotwing-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pivotwing-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -118,9 +116,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you execute a [0 [Stationary]] maneuver, you may rotate your ship 90° or 180°. If you do, you must flip this card.',
         slots: ['Configuration'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/swivelwing.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/swivelwing.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/swivelwing.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/swivelwing.png',
       },
       {
         title: 'Swivel Wing (Up)',
@@ -129,9 +128,9 @@ const t: UpgradeBase[] = [
           'While you defend, roll 1 fewer defense die. After you fully execute a non-stationary ([Stationary]) maneuver, you may flip this card.',
         slots: ['Configuration'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/swivelwing-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/swivelwing-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/swivelwing-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/swivelwing-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -160,10 +159,7 @@ const t: UpgradeBase[] = [
           },
         ],
         grants: [
-          {
-            action: { type: 'Boost', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Boost', difficulty: 'White' }, value: 1 },
           {
             action: {
               type: 'Focus',
@@ -174,9 +170,9 @@ const t: UpgradeBase[] = [
           },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/servomotorsfoils.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/servomotorsfoils-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/servomotorsfoils.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/servomotorsfoils.png',
       },
       {
         title: 'Servomotor S-foils (Open)',
@@ -184,9 +180,9 @@ const t: UpgradeBase[] = [
         ability: 'Before you activate, you may flip this card.',
         slots: ['Configuration'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/servomotorsfoils-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/servomotorsfoils.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/servomotorsfoils-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/servomotorsfoils-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -208,9 +204,9 @@ const t: UpgradeBase[] = [
         slots: ['Configuration'],
         grants: [{ slot: 'Cannon', value: 1 }],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/xg1assaultconfiguration.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/xg1assaultconfiguration.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/xg1assaultconfiguration.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/xg1assaultconfiguration.png',
       },
     ],
     cost: { value: 0 },
@@ -231,9 +227,9 @@ const t: UpgradeBase[] = [
           'Setup: Equip this side faceup. While you execute a maneuver, if you overlap an asteroid or debris cloud and there are 1 or fewer other friendly ships at range 0 of that obstacle, you may flip this card.',
         slots: ['Configuration'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/ca74271f47c42b390ca0ba0b389144a5.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grapplingstruts.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/grapplingstruts.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/grapplingstruts.png',
       },
       {
         title: 'Grappling Struts (Open)',
@@ -242,9 +238,9 @@ const t: UpgradeBase[] = [
           'You ignore obstacles at range 0 and while you move through them. After you reveal your dial, if you reveal a maneuver other than a [2 [Straight]] and are at range 0 of an asteroid or debris cloud, skip your Execute Maneuver step and remove 1 stress token; if you revealed a right or left maneuver, rotate your ship 90° in that direction. After you execute a maneuver, flip this card.',
         slots: ['Configuration'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/be82da17cfd39003fda380bead210eb9.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/grapplingstruts-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/grapplingstruts-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/grapplingstruts-sideb.png',
       },
     ],
     restrictions: [{ chassis: ['vultureclassdroidfighter'] }],
@@ -267,23 +263,16 @@ const t: UpgradeBase[] = [
           { stat: 'shields', value: 2 },
           { stat: 'attack', arc: 'Front Arc', value: 1 },
         ],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/delta7b.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/delta7b.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/delta7b.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/delta7b.png',
         text: "The Delta-7B was designed as a heavier variant of the Delta-7 Aethersprite-class Interceptor, identifiable by the repositioned astromech slot. Many Jedi Generals favor this craft's greater firepower and durability.",
       },
     ],
     cost: {
       variable: 'initiative',
-      values: {
-        '0': 15,
-        '1': 15,
-        '2': 15,
-        '3': 15,
-        '4': 16,
-        '5': 18,
-        '6': 22,
-      },
+      values: { '0': 15, '1': 15, '2': 15, '3': 15, '4': 16, '5': 18, '6': 22 },
     },
     restrictions: [{ chassis: ['delta7aethersprite'] }],
     standard: false,
@@ -302,9 +291,9 @@ const t: UpgradeBase[] = [
         ability:
           'While you perform a primary attack, if the defender is in your [Bullseye Arc], add 1 [Focus] result.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/calibratedlasertargeting.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/calibratedlasertargeting.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/calibratedlasertargeting.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/calibratedlasertargeting.png',
       },
     ],
     cost: {
@@ -328,9 +317,9 @@ const t: UpgradeBase[] = [
           'Setup: Equip this side faceup. While you execute a maneuver, if you overlap an asteroid or debris cloud and there are 1 or fewer other friendly ships at range 0 of that obstacle, you may flip this card.',
         slots: ['Configuration'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/c23a0130bad7330c0abb6218745910aa.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landingstruts.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/landingstruts.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landingstruts.png',
       },
       {
         title: 'Landing Struts (Open)',
@@ -339,9 +328,9 @@ const t: UpgradeBase[] = [
           'You ignore obstacles at range 0 and while you move through them. After you reveal your dial, if you reveal a maneuver other than a [2 [Straight]] and are at range 0 of an asteroid or debris cloud, skip your Execute Maneuver step and remove 1 stress token; if you revealed a right or left maneuver, rotate your ship 90° in that direction. After you execute a maneuver, flip this card.',
         slots: ['Configuration'],
         image:
-          'https://sb-cdn.fantasyflightgames.com/card_images/en/aba79159308e850b635f6c43721ccdee.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landingstruts-sideb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/landingstruts-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/landingstruts-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -370,9 +359,9 @@ const t: UpgradeBase[] = [
           { stat: 'energy', value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/corsairrefit.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/corsairrefit.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/corsairrefit.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/corsairrefit.png',
       },
     ],
     cost: { value: 6 },
@@ -401,15 +390,12 @@ const t: UpgradeBase[] = [
             },
             value: 1,
           },
-          {
-            action: { type: 'Reload', difficulty: 'Red' },
-            value: 1,
-          },
+          { action: { type: 'Reload', difficulty: 'Red' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/stabilizedsfoils.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/stabilizedsfoils.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/stabilizedsfoils.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/stabilizedsfoils-sideb.png',
       },
       {
         ability:
@@ -428,9 +414,9 @@ const t: UpgradeBase[] = [
           },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/stabilizedsfoils-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/stabilizedsfoils-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/stabilizedsfoils-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/stabilizedsfoils.png',
       },
     ],
     cost: { value: 0 },
@@ -449,9 +435,9 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/repulsorliftstabilizers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/repulsorliftstabilizers.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/repulsorliftstabilizers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/repulsorliftstabilizers.png',
         ability:
           'Setup: Equip this side faceup. Reduce the difficulty of your straight ([Straight]) maneuvers. After you fully execute a maneuver, you may flip this card.',
       },
@@ -460,9 +446,9 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/repulsorliftstabilizers-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/repulsorliftstabilizers-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/repulsorliftstabilizers-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/repulsorliftstabilizers-sideb.png',
         ability:
           'After you reveal a bank ([Bank Left] or [Bank Right]) or turn ([Turn Left] or [Turn Right]) maneuver, you must perform that maneuver as a sideslip, then flip this card. After you fully execute a non-sideslip maneuver, you may flip this card.',
       },
@@ -485,8 +471,9 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/alpha3bbesh.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/alpha3bbesh.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/alpha3bbesh.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/alpha3bbesh.png',
       },
     ],
     cost: { value: 1 },
@@ -508,8 +495,9 @@ const t: UpgradeBase[] = [
         slots: ['Configuration'],
         charges: { value: 2, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/alpha3eesk.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/alpha3eesk.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/alpha3eesk.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/alpha3eesk.png',
       },
     ],
     cost: { value: 0 },
@@ -541,9 +529,9 @@ const t: UpgradeBase[] = [
           },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/interceptbooster.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/interceptbooster.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/interceptbooster.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/interceptbooster.png',
       },
       {
         text: 'Unhindered by the frailty of an organic pilot, Droid Tri-Fighters are capable of radical acceleration and acute maneuvering. Fitted with booster rockets and fired from the missile tubes of Separatist capital ships, they can intercept hostiles well beyond the range of conventionally deployed starfighters.',
@@ -551,9 +539,9 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/interceptbooster-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/interceptbooster-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/interceptbooster-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/interceptbooster-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -574,10 +562,7 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
           {
             action: {
               type: 'Barrel Roll',
@@ -588,9 +573,9 @@ const t: UpgradeBase[] = [
           },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/maneuverassistmgk300.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/maneuverassistmgk300.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/maneuverassistmgk300.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/maneuverassistmgk300.png',
       },
     ],
     cost: { value: 0 },
@@ -611,10 +596,7 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         grants: [
-          {
-            action: { type: 'Calculate', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
           {
             action: {
               type: 'Rotate Arc',
@@ -625,9 +607,9 @@ const t: UpgradeBase[] = [
           },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/targetassistmgk300.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/targetassistmgk300.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/targetassistmgk300.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/targetassistmgk300.png',
       },
     ],
     cost: { value: 2 },
@@ -648,9 +630,9 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sensitivecontrols.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sensitivecontrols.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/sensitivecontrols.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sensitivecontrols.png',
       },
     ],
     restrictions: [{ chassis: ['tieininterceptor', 'tievnsilencer'] }],
@@ -672,9 +654,9 @@ const t: UpgradeBase[] = [
         type: 'Configuration',
         slots: ['Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tiedefenderelite.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tiedefenderelite.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/tiedefenderelite.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tiedefenderelite.png',
       },
     ],
     restrictions: [
@@ -707,9 +689,9 @@ const t: UpgradeBase[] = [
         },
         grants: [{ arc: 'Single Turret Arc', value: 1 }],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/vectoredcannonsrz1.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/vectoredcannonsrz1.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/vectoredcannonsrz1.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/vectoredcannonsrz1.png',
       },
     ],
     cost: { value: 0 },
@@ -731,20 +713,14 @@ const t: UpgradeBase[] = [
         ability:
           'Gain 1 [Torpedo] slot and 1 [Missile] slot. Replace your ship ability with the following: Devastating Barrage: While you perform a [Torpedo] or [Missile] attack, if the defender is in your [Bullseye Arc], your [Critical Hit] results cannont be canceled by [Evade] results.',
         grants: [
-          {
-            action: { type: 'Lock', difficulty: 'White' },
-            value: 1,
-          },
-          {
-            action: { type: 'Reload', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Lock', difficulty: 'White' }, value: 1 },
+          { action: { type: 'Reload', difficulty: 'White' }, value: 1 },
           { stat: 'shields', value: 2 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/wartimeloadout.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/wartimeloadout.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/wartimeloadout.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/wartimeloadout.png',
       },
     ],
     cost: { value: 5 },
@@ -790,15 +766,12 @@ const t: UpgradeBase[] = [
             },
             value: 1,
           },
-          {
-            action: { type: 'Jam', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Jam', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/enhancedjammingsuite.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/enhancedjammingsuite.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/enhancedjammingsuite.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/enhancedjammingsuite.png',
       },
     ],
     cost: { value: 0 },

@@ -48,8 +48,10 @@ const t: ShipType = {
         name: 'Notched Stabilizers',
         text: 'While you move, you ignore asteroids.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/ahhav.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ahhav.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahhav.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahhav.png',
       slots: ['Talent', 'Modification'],
       standard: true,
       wildspace: true,
@@ -65,9 +67,10 @@ const t: ShipType = {
       xws: 'captainseevor',
       ability:
         "While you defend or perform an attack, before attack dice are rolled, if you are not in the enemy ship's [Bullseye Arc], you may spend 1 [Charge]. If you do, the enemy ship gains 1 jam token.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainseevor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainseevor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainseevor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainseevor.png',
       charges: { value: 1, recovers: 1 },
       shipAbility: {
         name: 'Notched Stabilizers',
@@ -92,9 +95,10 @@ const t: ShipType = {
         name: 'Notched Stabilizers',
         text: 'While you move, you ignore asteroids.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/foremanproach.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/foremanproach.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/foremanproach.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/foremanproach.png',
       slots: ['Talent', 'Modification'],
       standard: true,
       wildspace: true,
@@ -113,9 +117,9 @@ const t: ShipType = {
         text: 'While you move, you ignore asteroids.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/miningguildsurveyor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/miningguildsurveyor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/miningguildsurveyor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/miningguildsurveyor.png',
       slots: ['Talent', 'Modification'],
       standard: true,
       wildspace: true,
@@ -136,9 +140,10 @@ const t: ShipType = {
         text: 'While you move, you ignore asteroids.',
       },
       charges: { value: 1, recovers: 1 },
-      image: 'https://infinitearenas.com/xw2/images/pilots/overseeryushyn.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/overseeryushyn.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/overseeryushyn.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/overseeryushyn.png',
       slots: ['Modification'],
       standard: true,
       wildspace: true,
@@ -157,9 +162,9 @@ const t: ShipType = {
         text: 'While you move, you ignore asteroids.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/miningguildsentry.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/miningguildsentry.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/miningguildsentry.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/miningguildsentry.png',
       slots: ['Modification'],
       standard: true,
       wildspace: true,
@@ -179,8 +184,10 @@ const t: ShipType = {
         name: 'Notched Stabilizers',
         text: 'While you move, you ignore asteroids.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/lapin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lapin.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lapin.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lapin.png',
       slots: ['Modification'],
       standard: true,
       wildspace: true,

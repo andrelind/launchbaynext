@@ -44,7 +44,8 @@ const t: ShipType = {
       cost: 29,
       xws: 'crymorahgoon',
       text: "Though far from nimble, the Y-wing's heavy hull, substantial shielding, and turret-mounted cannons make it an excellent patrol craft.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/crymorahgoon.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/crymorahgoon.png',
       slots: [
         'Turret',
         'Torpedo',
@@ -55,7 +56,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/crymorahgoon.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/crymorahgoon.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -80,9 +81,10 @@ const t: ShipType = {
         'Modification',
         'Missile',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/drearenthal.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/drearenthal.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/drearenthal.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/drearenthal.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -95,7 +97,8 @@ const t: ShipType = {
       cost: 30,
       xws: 'hiredgun',
       text: 'Just the mention of Imperial credits can bring a host of less-than-trustworthy individuals to your side.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hiredgun.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hiredgun.png',
       slots: [
         'Talent',
         'Turret',
@@ -107,7 +110,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hiredgun.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hiredgun.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -122,7 +125,8 @@ const t: ShipType = {
       xws: 'kavil',
       ability:
         'While you perform a non-[Front Arc] attack, roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kavil.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kavil.png',
       slots: [
         'Talent',
         'Turret',
@@ -133,7 +137,8 @@ const t: ShipType = {
         'Modification',
         'Missile',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kavil.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kavil.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -161,8 +166,9 @@ const t: ShipType = {
         "Before you engage, if you are not in any enemy ship's [Front Arc], you may acquire a lock on an enemy ship in your full front arc.",
       caption: 'Opportunity Knocks',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/leemakai.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/leemakai.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leemakai.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leemakai.png',
       epic: true,
     },
     {
@@ -187,8 +193,9 @@ const t: ShipType = {
         'While you perform a [Front Arc] attack, if you are damaged, you may change 1 of your [Focus] results to a [Critical Hit] result. While you defend, if you are damaged, before the Modify Defense Dice step, you must change 1 of your [Focus] results to a blank result.',
       caption: 'Crimson Blade',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arlizhadrassian.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/arlizhadrassian.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arlizhadrassian.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arlizhadrassian.png',
       epic: true,
     },
     {
@@ -211,8 +218,9 @@ const t: ShipType = {
       ],
       keywords: ['Y-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/amaxinewarrior.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/amaxinewarrior.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/amaxinewarrior.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/amaxinewarrior.png',
       epic: true,
     },
     {
@@ -237,8 +245,9 @@ const t: ShipType = {
         'After a friendly device that you have locked detonates, each enemy ship at range 0-1 of that device gains 1 strain token.',
       keywords: ['Y-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/padric.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/padric.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/padric.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padric.png',
       epic: true,
     },
     {
@@ -253,9 +262,9 @@ const t: ShipType = {
       slots: ['Tech', 'Turret', 'Torpedo', 'Missile', 'Astromech', 'Device'],
       keywords: ['Y-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jinatasecurityofficer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jinatasecurityofficer.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/jinatasecurityofficer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jinatasecurityofficer.png',
       epic: true,
     },
   ],

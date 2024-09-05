@@ -46,14 +46,14 @@ const t: ShipType = {
       ability:
         'While you defend, after the Neutralize Results step, if you are not stressed, you may suffer 1 [Hit] damage and gain 1 stress token. If you do, cancel all dice results.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_118.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/countdown.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/countdown.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdown.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -69,14 +69,14 @@ const t: ShipType = {
       ability:
         'You may choose not to use your Adaptive Ailerons. You may use your Adaptive Ailerons even while stressed.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_117.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/duchess.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/duchess.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/duchess.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -92,14 +92,14 @@ const t: ShipType = {
       ability:
         'While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_119.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/puresabacc.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/puresabacc.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/puresabacc.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -113,14 +113,14 @@ const t: ShipType = {
       xws: 'blacksquadronscout',
       text: 'These heavily armed atmospheric craft employ their specialized moveable wings to gain additional speed and maneuverability.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_120.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksquadronscout.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Talent', 'Device', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksquadronscout.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -134,14 +134,14 @@ const t: ShipType = {
       xws: 'planetarysentinel',
       text: 'To protect its many military installations, the Empire requires a swift and vigilant defense force.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_121.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/planetarysentinel.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Device', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/planetarysentinel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/planetarysentinel.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -164,8 +164,9 @@ const t: ShipType = {
         'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
       cost: 32,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vagabond.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/vagabond.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vagabond.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vagabond.png',
       keywords: ['TIE'],
       epic: true,
     },

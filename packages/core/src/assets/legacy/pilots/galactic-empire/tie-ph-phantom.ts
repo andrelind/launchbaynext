@@ -48,7 +48,8 @@ const t: ShipType = {
       xws: 'echo',
       ability:
         'While you decloak, you must use the [2 [Bank Left]] or [2 [Bank Right]] template instead of the [2 [Straight]] template.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/echo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo.png',
       shipAbility: {
         name: 'Stygium Array',
         text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
@@ -58,6 +59,8 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png',
     },
     {
       name: '“Whisper”',
@@ -67,14 +70,15 @@ const t: ShipType = {
       cost: 61,
       xws: 'whisper',
       ability: 'After you perform an attack that hits, gain 1 evade token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/whisper.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper.png',
       shipAbility: {
         name: 'Stygium Array',
         text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/whisper.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -87,14 +91,15 @@ const t: ShipType = {
       cost: 43,
       xws: 'imdaartestpilot',
       text: 'The primary result of a hidden research facility on Imdaar Alpha, the TIE phantom achieves what many thought was impossible: a small starfighter equipped with an advanced cloaking device.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/imdaartestpilot.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/imdaartestpilot.png',
       shipAbility: {
         name: 'Stygium Array',
         text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
       slots: ['Sensor', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/imdaartestpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/imdaartestpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -108,14 +113,14 @@ const t: ShipType = {
       xws: 'sigmasquadronace',
       text: 'Featuring a hyperdrive and shields, the TIE phantom is also equipped with five laser cannons, giving it substantial firepower for an Imperial fighter.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sigmasquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigmasquadronace.png',
       shipAbility: {
         name: 'Stygium Array',
         text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigmasquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigmasquadronace.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],

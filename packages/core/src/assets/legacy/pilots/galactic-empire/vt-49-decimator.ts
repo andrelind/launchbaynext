@@ -48,7 +48,7 @@ const t: ShipType = {
       xws: 'captainoicunn',
       ability: 'You can perform primary attacks at range 0.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_146.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainoicunn.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -61,7 +61,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainoicunn.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainoicunn.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -73,7 +73,8 @@ const t: ShipType = {
       cost: 67,
       xws: 'patrolleader',
       text: 'To be granted command of a VT-49 Decimator is seen as a significant promotion for a middling officer of the Imperial Navy.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/patrolleader.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/patrolleader.png',
       slots: [
         'Torpedo',
         'Crew',
@@ -85,7 +86,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/patrolleader.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/patrolleader.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -100,7 +101,7 @@ const t: ShipType = {
       ability:
         'While you perform an attack, if you are reinforced and the defender is in the [Full Front Arc] or [Full Rear Arc] matching your reinforce token, you may change 1 of your [Focus] results to a [Critical Hit] result.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/rearadmiralchiraneau.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rearadmiralchiraneau.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -113,7 +114,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rearadmiralchiraneau.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rearadmiralchiraneau.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -142,8 +143,9 @@ const t: ShipType = {
         'During the End Phase, you may spend 1 [Charge] to flip 1 of your reinforce tokens to your other full arc instead of removing it.',
       cost: 70,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mornakee.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/mornakee.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mornakee.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mornakee.png',
       epic: true,
     },
   ],

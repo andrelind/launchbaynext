@@ -41,9 +41,9 @@ const t: ShipType = {
       cost: 66,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstordersympathizers.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordersympathizers.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/firstordersympathizers.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordersympathizers.png',
       shipAbility: {
         name: 'Docking Clamps',
         text: 'You can dock up to 4 small ships.',

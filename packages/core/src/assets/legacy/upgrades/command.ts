@@ -13,9 +13,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/agentoftheempire.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agentoftheempire.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/agentoftheempire.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agentoftheempire.png',
       },
     ],
     cost: { value: 4 },
@@ -35,9 +35,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/dreadnoughthunter.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dreadnoughthunter.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/dreadnoughthunter.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dreadnoughthunter.png',
       },
     ],
     cost: { value: 3 },
@@ -57,9 +57,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/firstorderelite.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/firstorderelite.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/firstorderelite.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/firstorderelite.png',
       },
     ],
     cost: { value: 4 },
@@ -79,9 +79,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/veteranwingleader.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/veteranwingleader.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/veteranwingleader.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/veteranwingleader.png',
       },
     ],
     cost: { value: 2 },
@@ -101,9 +101,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/admiralozzel.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/admiralozzel.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/admiralozzel.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/admiralozzel.png',
       },
     ],
     cost: { value: 6 },
@@ -123,8 +123,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/azmorigan.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/azmorigan.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/azmorigan.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/azmorigan.png',
       },
     ],
     cost: { value: 4 },
@@ -145,9 +146,9 @@ const t: UpgradeBase[] = [
         slots: ['Command', 'Crew'],
         charges: { value: 4, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/captainneeda.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/captainneeda.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/captainneeda.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/captainneeda.png',
       },
     ],
     cost: { value: 8 },
@@ -166,16 +167,11 @@ const t: UpgradeBase[] = [
         title: 'Carlist Rieekan',
         type: 'Command',
         slots: ['Command', 'Crew'],
-        grants: [
-          {
-            action: { type: 'Evade', difficulty: 'Red' },
-            value: 1,
-          },
-        ],
+        grants: [{ action: { type: 'Evade', difficulty: 'Red' }, value: 1 }],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/carlistrieekan.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/carlistrieekan.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/carlistrieekan.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/carlistrieekan.png',
       },
     ],
     cost: { value: 4 },
@@ -195,8 +191,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jandodonna.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/jandodonna.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jandodonna.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jandodonna.png',
       },
     ],
     cost: { value: 3 },
@@ -216,9 +213,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/raymusantilles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/raymusantilles.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/raymusantilles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/raymusantilles.png',
       },
     ],
     cost: { value: 8 },
@@ -238,9 +235,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/stalwartcaptain.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/stalwartcaptain.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/stalwartcaptain.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/stalwartcaptain.png',
       },
     ],
     cost: { value: 10 },
@@ -262,9 +259,9 @@ const t: UpgradeBase[] = [
         slots: ['Command', 'Crew'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/strategiccommander.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/strategiccommander.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/strategiccommander.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/strategiccommander.png',
       },
     ],
     cost: { value: 6 },
@@ -285,9 +282,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jedicommander.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jedicommander-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/jedicommander.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jedicommander-sideb.png',
       },
       {
         ability:
@@ -296,9 +293,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jedicommander-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jedicommander.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/jedicommander-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jedicommander.png',
       },
     ],
     cost: { value: 4 },
@@ -322,9 +319,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Title'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/b6bladewingprototype-command.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/b6bladewingprototype-command.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/b6bladewingprototype-command.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/b6bladewingprototype-command.png',
       },
     ],
     cost: { value: 4 },
@@ -348,8 +345,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bounty.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bounty.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bounty.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bounty.png',
       },
       {
         text: 'Bounty hunting is a complicated profession. Any assassin can kill, but the best hunters are renowned for their ability to bring a mark in alive, as doing so is more difficult but invariably commands a much greater reward.',
@@ -357,9 +355,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bounty-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bounty-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/bounty-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bounty-sideb.png',
       },
     ],
     cost: { value: 1 },
@@ -379,9 +377,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/phoenixsquadron.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/phoenixsquadron-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/phoenixsquadron.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/phoenixsquadron-sideb.png',
       },
       {
         ability:
@@ -390,9 +388,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/phoenixsquadron-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/phoenixsquadron.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/phoenixsquadron-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/phoenixsquadron.png',
       },
     ],
     cost: { value: 4 },
@@ -412,8 +410,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowwing.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/shadowwing.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/shadowwing-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shadowwing-sideb.png',
       },
       {
         ability:
@@ -422,9 +421,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowwing-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/shadowwing.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/shadowwing-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shadowwing.png',
       },
     ],
     cost: { value: 4 },
@@ -444,9 +443,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/skystrikeacademyclass.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/skystrikeacademyclass-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/skystrikeacademyclass.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/skystrikeacademyclass-sideb.png',
       },
       {
         ability:
@@ -455,9 +454,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/skystrikeacademyclass-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/skystrikeacademyclass.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/skystrikeacademyclass-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/skystrikeacademyclass.png',
       },
     ],
     cost: { value: 3 },
@@ -477,9 +476,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/initforthemoneyrebellion.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/initforthemoney.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/initforthemoneyrebellion.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney.png',
       },
       {
         ability:
@@ -488,9 +487,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/initforthemoneyrebellion-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/initforthemoney-sideb.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/initforthemoneyrebellion-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney-sideb.png',
       },
     ],
     cost: { value: 1 },
@@ -515,8 +514,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/martuuk.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/martuuk.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/martuuk.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/martuuk.png',
       },
     ],
     cost: { value: 4 },
@@ -540,8 +540,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/rifftamson.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/rifftamson.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rifftamson.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rifftamson.png',
       },
     ],
     cost: { value: 6 },
@@ -576,9 +577,9 @@ const t: UpgradeBase[] = [
           { value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/asajjventresscommand.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/asajjventresscommand.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/asajjventresscommand.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/asajjventresscommand.png',
       },
     ],
     cost: { value: 8 },
@@ -602,9 +603,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/zealouscaptain.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/zealouscaptain.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/zealouscaptain.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/zealouscaptain.png',
       },
     ],
     cost: { value: 4 },
@@ -636,9 +637,9 @@ const t: UpgradeBase[] = [
           },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hondoohnakacommand.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hondoohnakacommand.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/hondoohnakacommand.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hondoohnakacommand.png',
       },
     ],
     cost: { value: 6 },
@@ -659,9 +660,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/generalgrievouscommand.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/generalgrievouscommand.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/generalgrievouscommand.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/generalgrievouscommand.png',
       },
     ],
     cost: { value: 5 },
@@ -685,9 +686,9 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Configuration'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/combatboardingtube.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/combatboardingtube.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/combatboardingtube.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/combatboardingtube.png',
       },
     ],
     cost: { value: 0 },

@@ -44,9 +44,9 @@ const t: ShipType = {
       cost: 63,
       limited: 0,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/separatistprivateers.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistprivateers.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistprivateers.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistprivateers.png',
       shipAbility: {
         name: 'Overdrive Burners',
         text: 'While you defend, if your revealed maneuver is speed 3-5, roll 1 additional defense die.',

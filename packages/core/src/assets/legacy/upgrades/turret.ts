@@ -20,15 +20,12 @@ const t: UpgradeBase[] = [
         },
         actions: [{ type: 'Rotate Arc', difficulty: 'White' }],
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/dorsalturret.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dorsalturret.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/dorsalturret.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dorsalturret.png',
       },
     ],
     cost: { value: 2 },
@@ -47,7 +44,7 @@ const t: UpgradeBase[] = [
         ability:
           'Attack: If this attack hits, spend 1 [Hit] or [Critical Hit] result to cause the defender to suffer 1 [Hit] damage. All remaining [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/ioncannonturret.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ioncannonturret.png',
         slots: ['Turret'],
         attack: {
           arc: 'Single Turret Arc',
@@ -58,13 +55,10 @@ const t: UpgradeBase[] = [
         },
         actions: [{ type: 'Rotate Arc', difficulty: 'White' }],
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ioncannonturret.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ioncannonturret.png',
       },
     ],
     cost: { value: 5 },

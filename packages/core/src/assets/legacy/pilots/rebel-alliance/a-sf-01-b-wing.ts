@@ -50,7 +50,7 @@ const t: ShipType = {
       xws: 'bladesquadronveteran',
       text: "A unique gyrostabilization system surrounds the B-wing's cockpit, ensuring that the pilot always remains stationary during flight.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bladesquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bladesquadronveteran.png',
       slots: [
         'Talent',
         'Sensor',
@@ -62,7 +62,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bladesquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bladesquadronveteran.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing'],
@@ -76,7 +76,7 @@ const t: ShipType = {
       xws: 'bluesquadronpilot',
       text: "Due to its heavy weapons array and resilient shielding, the B-wing has solidified itself as the Rebel Alliance's most innovative assault fighter.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronpilot.png',
       slots: [
         'Sensor',
         'Cannon',
@@ -87,7 +87,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing'],
@@ -102,7 +102,8 @@ const t: ShipType = {
       xws: 'braylenstramm',
       ability:
         'While you defend or perform an attack, if you are stressed, you may reroll up to 2 of your dice.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/braylenstramm.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm.png',
       slots: [
         'Talent',
         'Sensor',
@@ -114,7 +115,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/braylenstramm.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing'],
@@ -129,7 +130,8 @@ const t: ShipType = {
       xws: 'tennumb',
       ability:
         'While you defend or perform an attack, you may spend 1 stress token to change all of your [Focus] results to [Evade] or [Hit] results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/tennumb.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tennumb.png',
       slots: [
         'Talent',
         'Sensor',
@@ -141,7 +143,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tennumb.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tennumb.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing'],
@@ -167,8 +169,9 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ginamoonsong.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ginamoonsong.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing'],
@@ -194,9 +197,9 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla-asf01bwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla-asf01bwing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/herasyndulla-asf01bwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-asf01bwing.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing', 'Spectre'],
@@ -222,8 +225,9 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/netrempollard.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/netrempollard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/netrempollard.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/netrempollard.png',
       standard: true,
       wildspace: true,
       keywords: ['B-wing'],
@@ -265,9 +269,9 @@ const t: ShipType = {
       ],
       keywords: ['B-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/adonfox-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adonfox-battleoverendor.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/adonfox-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -311,9 +315,9 @@ const t: ShipType = {
       ],
       keywords: ['B-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/adonfox-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adonfox-battleoverendor-lsl.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/adonfox-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -360,9 +364,9 @@ const t: ShipType = {
       ],
       keywords: ['B-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ginamoonsong-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong-battleoverendor.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/ginamoonsong-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -412,9 +416,9 @@ const t: ShipType = {
       ],
       keywords: ['B-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ginamoonsong-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ginamoonsong-battleoverendor-lsl.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/ginamoonsong-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -461,9 +465,9 @@ const t: ShipType = {
       ],
       keywords: ['B-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/braylenstramm-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm-battleoverendor.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/braylenstramm-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -513,9 +517,9 @@ const t: ShipType = {
       ],
       keywords: ['B-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/braylenstramm-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm-battleoverendor-lsl.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/braylenstramm-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,

@@ -59,8 +59,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorvonreg.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/majorvonreg.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvonreg.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvonreg.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -80,8 +81,10 @@ const t: ShipType = {
       slots: ['Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
       wildspace: true,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/holo.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/holo.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/holo.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -101,8 +104,10 @@ const t: ShipType = {
       slots: ['Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
       wildspace: true,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ember.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ember.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ember.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ember.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -121,9 +126,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstorderprovocateur.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstorderprovocateur.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/firstorderprovocateur.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstorderprovocateur.png',
       keywords: ['TIE'],
       epic: true,
     },

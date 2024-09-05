@@ -42,7 +42,8 @@ const t: ShipType = {
       cost: 11,
       xws: 'autopilotdrone',
       text: "Sometimes, manufacturer's warnings are made to be broken.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/autopilotdrone.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/autopilotdrone.png',
       charges: { value: 3, recovers: 0 },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -55,7 +56,7 @@ const t: ShipType = {
       },
       slots: [],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/autopilotdrone.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/autopilotdrone.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid'],
@@ -71,7 +72,7 @@ const t: ShipType = {
       ability:
         'If you are not shielded, decrease the difficulty of your bank ([Bank Left] and [Bank Right]) maneuvers.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/l337-escapecraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/l337-escapecraft.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Barrel Roll' },
@@ -83,7 +84,7 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/l337-escapecraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/l337-escapecraft.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid'],
@@ -104,9 +105,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Crew', 'Modification'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/landocalrissian-escapecraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian-escapecraft.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-escapecraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-escapecraft.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -120,14 +121,15 @@ const t: ShipType = {
       xws: 'outerrimpioneer',
       ability:
         'Friendly ships at range 0-1 can perform attacks at range 0 of obstacles.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/outerrimpioneer.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/outerrimpioneer.png',
       shipAbility: {
         name: 'Co-Pilot',
         text: 'While you are docked, your carrier ship has your pilot ability in addition to its own.',
       },
       slots: ['Talent', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimpioneer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimpioneer.png',
       standard: true,
       wildspace: true,
       epic: true,

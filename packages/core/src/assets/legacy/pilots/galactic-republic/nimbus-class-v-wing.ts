@@ -58,9 +58,10 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       cost: 30,
-      image: 'https://infinitearenas.com/xw2/images/pilots/wilhufftarkin.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wilhufftarkin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wilhufftarkin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wilhufftarkin.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['TIE'],
       epic: true,
@@ -81,9 +82,9 @@ const t: ShipType = {
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       cost: 31,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-nimbusclassvwing.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-nimbusclassvwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-nimbusclassvwing.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
@@ -103,9 +104,10 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       cost: 32,
-      image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contrail.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contrail.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
@@ -126,8 +128,10 @@ const t: ShipType = {
       ability:
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
       cost: 31,
-      image: 'https://infinitearenas.com/xw2/images/pilots/klick.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/klick.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/klick.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
@@ -146,9 +150,9 @@ const t: ShipType = {
       wildspace: true,
       cost: 28,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowsquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowsquadronescort.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowsquadronescort.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
@@ -167,9 +171,9 @@ const t: ShipType = {
       wildspace: true,
       cost: 26,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/loyalistvolunteer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/loyalistvolunteer.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/loyalistvolunteer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/loyalistvolunteer.png',
       slots: ['Astromech', 'Modification', 'Configuration'],
       keywords: ['TIE'],
       epic: true,
@@ -188,8 +192,9 @@ const t: ShipType = {
       ability:
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/klick-siegeofcoruscant.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/klick-siegeofcoruscant.png',
       charges: { value: 1, recovers: 1 },
       standardLoadout: ['r3astromech', 'precisionionengines', 'alpha3eesk'],
       stats: [
@@ -217,8 +222,9 @@ const t: ShipType = {
       ability:
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/klick-siegeofcoruscant-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/klick-siegeofcoruscant-lsl.png',
       charges: { value: 1, recovers: 1 },
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       stats: [
@@ -246,9 +252,9 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/contrail-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contrail-siegeofcoruscant.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contrail-siegeofcoruscant.png',
       standardLoadout: [
         'ionlimiteroverride',
         'preciseastromech-battleofyavin',
@@ -274,9 +280,9 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/contrail-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contrail-siegeofcoruscant-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contrail-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       standard: true,
       wildspace: true,

@@ -55,8 +55,10 @@ const t: ShipType = {
         'Gunner',
       ],
       limited: 1,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hawk.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hawk.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hawk.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hawk.png',
       shipAbility: {
         name: 'Fire Convergence',
         text: 'While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice.',
@@ -86,8 +88,10 @@ const t: ShipType = {
         'Gunner',
       ],
       limited: 1,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hound.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hound.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hound.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hound.png',
       shipAbility: {
         name: 'Fire Convergence',
         text: 'While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice.',
@@ -117,8 +121,9 @@ const t: ShipType = {
       ],
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/warthog.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/warthog.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/warthog.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/warthog.png',
       shipAbility: {
         name: 'Fire Convergence',
         text: 'While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice.',
@@ -150,9 +155,9 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/212thbattalionpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/212thbattalionpilot.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/212thbattalionpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/212thbattalionpilot.png',
       shipAbility: {
         name: 'Fire Convergence',
         text: 'While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice.',
@@ -177,8 +182,10 @@ const t: ShipType = {
         'Gunner',
       ],
       limited: 1,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sicko.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sicko.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sicko.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sicko.png',
       shipAbility: {
         name: 'Fire Convergence',
         text: 'While a friendly ship performs a non-[Single Turret Arc] attack, if the defender is in your [Single Turret Arc], you may spend 1 [Charge]. If you do, the attacker rerolls up to 2 attack dice.',

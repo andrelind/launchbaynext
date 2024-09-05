@@ -44,9 +44,9 @@ const t: ShipType = {
       cost: 131,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstordercollaborators.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordercollaborators.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/firstordercollaborators.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordercollaborators.png',
       shipAbility: {
         name: 'Concentrated Batteries',
         text: 'While you perform a primary, [Torpedo], or [Missile] attack, if the defender is in your [Bullseye Arc], roll 1 additional die.',

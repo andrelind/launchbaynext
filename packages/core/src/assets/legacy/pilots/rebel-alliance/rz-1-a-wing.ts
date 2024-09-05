@@ -50,14 +50,14 @@ const t: ShipType = {
       ability:
         'You can perform primary attacks at range 0. If you would fail a [Boost] action by overlapping another ship, resolve it as though you were partially executing a maneuver instead.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_20.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd.png',
       shipAbility: {
         name: 'Vectored Thrusters',
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -71,14 +71,14 @@ const t: ShipType = {
       xws: 'greensquadronpilot',
       text: 'Due to its sensitive controls and high maneuverability, only the most talented pilots belong in an A-wing cockpit.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/greensquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/greensquadronpilot.png',
       shipAbility: {
         name: 'Vectored Thrusters',
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greensquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -93,14 +93,15 @@ const t: ShipType = {
       xws: 'jakefarrell',
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may choose a friendly ship at range 0-1. That ship may perform a [Focus] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/jakefarrell.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jakefarrell.png',
       shipAbility: {
         name: 'Vectored Thrusters',
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jakefarrell.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakefarrell.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -114,14 +115,14 @@ const t: ShipType = {
       xws: 'phoenixsquadronpilot',
       text: 'Led by Commander Jun Sato, the brave but inexperienced pilots of Phoenix Squadron face staggering odds in their battle against the Galactic Empire.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/phoenixsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/phoenixsquadronpilot.png',
       shipAbility: {
         name: 'Vectored Thrusters',
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       slots: ['Talent', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/phoenixsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/phoenixsquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -145,9 +146,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-rz1awing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/wedgeantilles-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-rz1awing.png',
       epic: true,
     },
     {
@@ -168,9 +169,9 @@ const t: ShipType = {
         "While you defend or perform an attack, if the attack range is 1 and you are in the enemy ship's [Front Arc], you may change 1 of your results to an [Evade] or [Hit] result.",
       caption: 'Daughter of Mandalore',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-rz1awing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sabinewren-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabinewren-rz1awing.png',
       epic: true,
     },
     {
@@ -191,9 +192,9 @@ const t: ShipType = {
         'While another friendly ship at range 1-2 defends or performs an attack, during a Modify Dice step, you may transfer 1 of your focus tokens, evade tokens, or locks to that ship.',
       keywords: ['A-wing', 'Spectre'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla-rz1awing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/herasyndulla-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-rz1awing.png',
       epic: true,
     },
     {
@@ -215,9 +216,9 @@ const t: ShipType = {
         'After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 [Force]. That ship may perform an action, even while stressed.',
       keywords: ['A-wing', 'Light Side'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahsokatano-rz1awing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/ahsokatano-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahsokatano-rz1awing.png',
       epic: true,
     },
     {
@@ -238,9 +239,9 @@ const t: ShipType = {
         'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sharabey-rz1awing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sharabey-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey-rz1awing.png',
       epic: true,
     },
     {
@@ -261,8 +262,9 @@ const t: ShipType = {
         'After you acquire or spend a lock, you may remove 1 red token from yourself.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/derekklivian.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/derekklivian.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/derekklivian.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/derekklivian.png',
       epic: true,
     },
     {
@@ -283,9 +285,10 @@ const t: ShipType = {
       ability:
         'If you have no active [Force], after you reveal a bank [[Bank Left] or [Bank Right]] or turn [[Turn Left] or [Turn Right]] maneuver, you may increase the difficulty of the maneuver. If you do, perform that maneuver as a sideslip and recover 1 [Force].',
       keywords: ['A-wing'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/keovenzee.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/keovenzee.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/keovenzee.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/keovenzee.png',
       epic: true,
     },
     {
@@ -305,9 +308,10 @@ const t: ShipType = {
       ability:
         'While you have 2 or fewer stress tokens, you may perform actions, even while stressed.',
       keywords: ['A-wing'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/tychocelchu.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu.png',
       epic: true,
     },
     {
@@ -320,14 +324,14 @@ const t: ShipType = {
       ability:
         'If you would fail a [Boost] action by overlapping another ship, you may resolve it as though you were partially executing a maneuver instead. While you perform an attack at attack range 0, treat it as an attack at attack range 1.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/arvelcrynyd-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-swz106.png',
       shipAbility: {
         name: 'Vectored Thrusters',
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       standardLoadout: ['predator', 'afterburners'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-swz106.png',
       standard: false,
       wildspace: true,
       keywords: ['A-wing'],
@@ -343,14 +347,14 @@ const t: ShipType = {
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may choose a friendly ship at range 0-1. That ship may perform a [Focus] action.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jakefarrell-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jakefarrell-swz106.png',
       shipAbility: {
         name: 'Vectored Thrusters',
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       standardLoadout: ['elusive', 'outmaneuver', 'ionmissiles'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jakefarrell.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakefarrell-swz106.png',
       standard: false,
       wildspace: true,
       keywords: ['A-wing'],
@@ -374,9 +378,9 @@ const t: ShipType = {
         'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sharabey-swz106.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sharabey-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey-swz106.png',
       epic: true,
     },
     {
@@ -417,9 +421,9 @@ const t: ShipType = {
         'While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-battleoverendor.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/arvelcrynyd-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -458,9 +462,9 @@ const t: ShipType = {
         'While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-battleoverendor-lsl.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/arvelcrynyd-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -507,9 +511,9 @@ const t: ShipType = {
         'While you are disarmed, you can still perform [Missile] attacks. When you perform a [Missile] attack while disarmed, roll a maximum of 4 dice.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu-battleoverendor.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tychocelchu-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -551,9 +555,9 @@ const t: ShipType = {
         'While you are disarmed, you can still perform [Missile] attacks. When you perform a [Missile] attack while disarmed, roll a maximum of 4 dice.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu-battleoverendor-lsl.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tychocelchu-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -585,9 +589,9 @@ const t: ShipType = {
         'While defending, you may gain 1 strain token to change up to 2 of your blank results to [Focus] results.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gemmersojan-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gemmersojan-battleoverendor.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/gemmersojan-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gemmersojan-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -614,9 +618,9 @@ const t: ShipType = {
         'While defending, you may gain 1 strain token to change up to 2 of your blank results to [Focus] results.',
       keywords: ['A-wing'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gemmersojan-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gemmersojan-battleoverendor-lsl.png',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/gemmersojan-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gemmersojan-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,

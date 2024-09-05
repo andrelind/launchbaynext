@@ -46,10 +46,11 @@ const t: ShipType = {
       xws: 'airencracken',
       ability:
         'After you perform an attack, you may choose 1 friendly ship at range 1. That ship may perform an action, treating it as red.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/airencracken.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/airencracken.png',
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/airencracken.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/airencracken.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -62,10 +63,10 @@ const t: ShipType = {
       xws: 'banditsquadronpilot',
       text: "The Z-95 Headhunter was the primary inspiration for Incom Corporation's exemplary T-65 X-wing starfighter. Though it is considered outdated by modern standards, it remains a versatile and potent snub fighter.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/banditsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/banditsquadronpilot.png',
       slots: ['Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/banditsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/banditsquadronpilot.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -80,10 +81,10 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, if there is at least 1 other friendly ship at range 0-1 of the defender, you may roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantblount.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantblount.png',
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantblount.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantblount.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -96,10 +97,10 @@ const t: ShipType = {
       xws: 'talasquadronpilot',
       text: 'The AF4 series is the latest in a long line of Headhunter designs. Cheap and relatively durable, it is a favorite among independent outfits like the Rebellion.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/talasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/talasquadronpilot.png',
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/talasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/talasquadronpilot.png',
       standard: true,
       wildspace: true,
       epic: true,

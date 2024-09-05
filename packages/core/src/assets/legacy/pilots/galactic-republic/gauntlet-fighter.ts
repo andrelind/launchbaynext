@@ -56,9 +56,9 @@ const t: ShipType = {
         'Title',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bokatankryze-galactic-republic.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bokatankryze.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bokatankryze-galactic-republic.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bokatankryze.png',
       keywords: ['Mandalorian'],
       standard: true,
       wildspace: true,
@@ -83,9 +83,9 @@ const t: ShipType = {
         'Title',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/niteowlliberator.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/niteowlliberator.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/niteowlliberator.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/niteowlliberator.png',
       keywords: ['Mandalorian'],
       standard: true,
       wildspace: true,

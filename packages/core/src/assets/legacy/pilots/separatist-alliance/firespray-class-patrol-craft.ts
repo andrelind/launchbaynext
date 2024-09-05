@@ -51,9 +51,10 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       cost: 79,
-      image: 'https://infinitearenas.com/xw2/images/pilots/jangofett.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jangofett.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jangofett.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jangofett.png',
       slots: [
         'Talent',
         'Cannon',
@@ -80,9 +81,10 @@ const t: ShipType = {
         "Setup: Lose 2 [Charge]. During the System Phase, you may assign 1 of your secret conditions to yourself facedown: “You Should Thank Me” or “You'd Better Mean Business”",
       charges: { value: 4, recovers: 0 },
       cost: 83,
-      image: 'https://infinitearenas.com/xw2/images/pilots/zamwesell.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zamwesell.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zamwesell.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zamwesell.png',
       slots: [
         'Talent',
         'Cannon',
@@ -108,9 +110,9 @@ const t: ShipType = {
         'While you defend, if there are no other friendly ships at range 0-2, you may change 1 of your blank results to a [Focus] result.',
       cost: 68,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bobafett-separatistalliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bobafett-firesprayclasspatrolcraft.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bobafett-separatistalliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bobafett-firesprayclasspatrolcraft.png',
       slots: [
         'Cannon',
         'Missile',
@@ -133,9 +135,9 @@ const t: ShipType = {
       wildspace: true,
       cost: 62,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/separatistracketeer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistracketeer.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistracketeer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistracketeer.png',
       slots: [
         'Cannon',
         'Missile',
@@ -160,8 +162,9 @@ const t: ShipType = {
       force: { value: 1, recovers: 1, side: ['dark'] },
       cost: 77,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/aurrasing.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/aurrasing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/aurrasing.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/aurrasing.png',
       slots: [
         'Force Power',
         'Cannon',

@@ -52,7 +52,8 @@ const t: ShipType = {
       cost: 41,
       xws: 'contractedscout',
       text: 'Built for long-distance reconnaissance and plotting new hyperspace routes, the lightly armed JumpMaster 5000 is often extensively retrofitted with custom upgrades.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/contractedscout.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contractedscout.png',
       slots: [
         'Cannon',
         'Torpedo',
@@ -63,7 +64,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contractedscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contractedscout.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -77,7 +78,8 @@ const t: ShipType = {
       xws: 'dengar',
       ability:
         'After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge] to perform a bonus attack against the attacker.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dengar.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dengar.png',
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -90,7 +92,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dengar.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dengar.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -105,7 +107,8 @@ const t: ShipType = {
       xws: 'manaroo',
       ability:
         'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, transfer all green tokens assigned to you to that ship.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/manaroo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/manaroo.png',
       slots: [
         'Talent',
         'Cannon',
@@ -117,7 +120,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/manaroo.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/manaroo.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -132,7 +135,8 @@ const t: ShipType = {
       xws: 'teltrevura',
       ability:
         'If you would be destroyed, you may spend 1 [Charge]. If you do, discard all of your damage cards, suffer 5 [Hit] damage, and place yourself in reserves instead. At the start of the next Planning Phase, place yourself within range 1 of your player edge.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/teltrevura.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/teltrevura.png',
       charges: { value: 1, recovers: 0 },
       slots: [
         'Talent',
@@ -145,7 +149,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/teltrevura.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/teltrevura.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -171,8 +175,9 @@ const t: ShipType = {
         'After you become the defender, if the attacker is not in your [Single Turret Arc], you must rotate your [Single Turret Arc] indicator to a standard arc the attacker is in.',
       cost: 39,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/nomlumb.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nomlumb.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nomlumb.png',
       keywords: ['Bounty Hunter'],
       epic: true,
     },

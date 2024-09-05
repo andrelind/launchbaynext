@@ -45,10 +45,11 @@ const t: ShipType = {
       xws: 'howlrunner',
       ability:
         'While a friendly ship at range 0-1 performs a primary attack, that ship may reroll 1 attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/howlrunner.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/howlrunner.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/howlrunner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/howlrunner.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -63,10 +64,11 @@ const t: ShipType = {
       xws: 'maulermithel',
       ability:
         'While you perform an attack at attack range 1, roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/maulermithel.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maulermithel.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maulermithel.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -81,10 +83,11 @@ const t: ShipType = {
       xws: 'nightbeast',
       ability:
         'After you fully execute a blue maneuver, you may perform a [Focus] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/nightbeast.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nightbeast.png',
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nightbeast.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nightbeast.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -99,10 +102,11 @@ const t: ShipType = {
       xws: 'scourgeskutu',
       ability:
         'While you perform an attack against a defender in your [Bullseye Arc], roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/scourgeskutu.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scourgeskutu.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scourgeskutu.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scourgeskutu.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -117,10 +121,12 @@ const t: ShipType = {
       xws: 'wampa',
       ability:
         'While you perform an attack, you may spend 1 [Charge] to roll 1 additional attack die. After defending, lose 1 [Charge].',
-      image: 'https://infinitearenas.com/xw2/images/pilots/wampa.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wampa.png',
       charges: { value: 1, recovers: 1 },
       slots: ['Modification'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wampa.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -133,10 +139,11 @@ const t: ShipType = {
       cost: 22,
       xws: 'academypilot',
       text: 'The Galactic Empire uses the fast and agile TIE/ln, developed by Sienar Fleet Systems and produced in staggering quantity, as its primary starfighter.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/academypilot.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/academypilot.png',
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/academypilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/academypilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -150,11 +157,10 @@ const t: ShipType = {
       xws: 'blacksquadronace',
       text: 'The elite TIE/ln pilots of Black Squadron accompanied Darth Vader on a devastating strike against the Rebel forces at the Battle of Yavin.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksquadronace.png',
       slots: ['Talent', 'Modification'],
-
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksquadronace.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -169,10 +175,11 @@ const t: ShipType = {
       xws: 'delmeeko',
       ability:
         'While a friendly ship at range 0-2 defends against a damaged attacker, the defender may reroll 1 defense die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/delmeeko.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/delmeeko.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/delmeeko.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/delmeeko.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -187,10 +194,11 @@ const t: ShipType = {
       xws: 'gideonhask',
       ability:
         'While you perform an attack against a damaged defender, roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/gideonhask.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -205,11 +213,12 @@ const t: ShipType = {
       xws: 'idenversio',
       ability:
         'Before a friendly TIE/ln fighter at range 0-1 would suffer 1 or more damage, you may spend 1 [Charge]. If you do, prevent that damage.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/idenversio.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio.png',
       charges: { value: 1, recovers: 0 },
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -223,11 +232,10 @@ const t: ShipType = {
       xws: 'obsidiansquadronpilot',
       text: "The TIE fighter's Twin Ion Engine system was designed for speed, making the TIE/ln one of the most maneuverable starships ever mass-produced.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/obsidiansquadronpilot.png',
-
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/obsidiansquadronpilot.png',
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/obsidiansquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obsidiansquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -242,10 +250,11 @@ const t: ShipType = {
       xws: 'seynmarana',
       ability:
         'While you perform an attack, you may spend 1 [Critical Hit] result. If you do, deal 1 facedown damage card to the defender, then cancel your remaining results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/seynmarana.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/seynmarana.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/seynmarana.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seynmarana.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -260,10 +269,11 @@ const t: ShipType = {
       xws: 'valenrudor',
       ability:
         'After a friendly ship at range 0-1 defends (after damage is resolved, if any), you may perform an action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/valenrudor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/valenrudor.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/valenrudor.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -278,10 +288,11 @@ const t: ShipType = {
       xws: 'isbjingoist',
       ability:
         'Before you engage, you may choose 1 enemy ship in your [Front Arc] at range 0-1. If you do, that ship gains 1 deplete or strain token of your choice unless it chooses to remove 1 green token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/isbjingoist.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/isbjingoist.png',
       slots: ['Talent', 'Illicit', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/isbjingoist.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/isbjingoist.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -297,10 +308,11 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       ability:
         'While an enemy ship at range 1-3 defends, before attack dice are rolled, you may spend 1 [Charge] and choose a friendly ship at range 0-1 of the defender. If you do, defense dice cannot be modified during this attack and the chosen friendly ship gains 1 strain token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/moffgideon.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/moffgideon.png',
       slots: ['Talent', 'Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/moffgideon.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/moffgideon.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -316,9 +328,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, if a friendly Darth Vader or “Mauler” Mithel is in your [Left Arc] or [Right Arc] at range 0-1, roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/backstabber-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/backstabber-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/backstabber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/backstabber-battleofyavin.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -340,9 +352,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, if a friendly Darth Vader or “Mauler” Mithel is in your [Left Arc] or [Right Arc] at range 0-1, roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/backstabber-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/backstabber-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/backstabber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/backstabber-battleofyavin-lsl.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -363,9 +375,9 @@ const t: ShipType = {
       xws: 'darkcurse-battleofyavin',
       ability: "While you defend, the attacker's dice cannot be modified.",
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darkcurse-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darkcurse-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darkcurse.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darkcurse-battleofyavin.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -386,9 +398,9 @@ const t: ShipType = {
       xws: 'darkcurse-battleofyavin-lsl',
       ability: "While you defend, the attacker's dice cannot be modified.",
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darkcurse-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darkcurse-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darkcurse.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darkcurse-battleofyavin-lsl.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -410,9 +422,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, if a friendly Darth Vader or “Backstabber” is in your [Left Arc] or [Right Arc] at range 0-1, roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/maulermithel-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maulermithel-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maulermithel-battleofyavin.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -434,9 +446,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, if a friendly Darth Vader or “Backstabber” is in your [Left Arc] or [Right Arc] at range 0-1, roll 1 additional attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/maulermithel-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maulermithel-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maulermithel-battleofyavin-lsl.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -459,8 +471,9 @@ const t: ShipType = {
         'While you perform an attack, you may spend 1 [Charge] to roll 1 additional attack die. After defending, lose 1 [Charge].',
       charges: { value: 1, recovers: 1 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wampa-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wampa-battleofyavin.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wampa-battleofyavin.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -483,8 +496,9 @@ const t: ShipType = {
         'While you perform an attack, you may spend 1 [Charge] to roll 1 additional attack die. After defending, lose 1 [Charge].',
       charges: { value: 1, recovers: 1 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wampa-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wampa-battleofyavin-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wampa-battleofyavin-lsl.png',
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -505,9 +519,10 @@ const t: ShipType = {
       xws: 'magnatolvan',
       ability:
         'While you have 2 or fewer stress tokens, you can perform white actions, even while stressed. After you gain a stress token, you may perform a white action, if able.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/magnatolvan.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/magnatolvan.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/magnatolvan.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magnatolvan.png',
       slots: ['Talent', 'Modification'],
       standard: true,
       wildspace: true,
@@ -523,9 +538,10 @@ const t: ShipType = {
       xws: 'yricaquell',
       ability:
         'After you fully execute a maneuver, you may acquire a lock on an enemy ship in your [Bullseye Arc].',
-      image: 'https://infinitearenas.com/xw2/images/pilots/yricaquell.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yricaquell.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/yricaquell.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yricaquell.png',
       slots: ['Talent', 'Modification'],
       standard: true,
       wildspace: true,
@@ -543,10 +559,10 @@ const t: ShipType = {
       ability:
         'Before a friendly TIE/ln fighter at range 0-1 would suffer 1 or more damage, you may spend 1 [Charge]. If you do, prevent that damage.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio-swz105.png',
       charges: { value: 1, recovers: 0 },
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -562,10 +578,10 @@ const t: ShipType = {
       ability:
         'After you fully execute a blue maneuver, you may perform a [Focus] action.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/nightbeast-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nightbeast-swz105.png',
       standardLoadout: ['disciplined', 'predator'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nightbeast.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nightbeast-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -581,10 +597,10 @@ const t: ShipType = {
       ability:
         'After a friendly ship at range 0-1 defends (after damage is resolved, if any), you may perform an action.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/valenrudor-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/valenrudor-swz105.png',
       standardLoadout: ['disciplined', 'precisionionengines'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/valenrudor-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -625,9 +641,9 @@ const t: ShipType = {
         'After you defend, you may perform a red [Boost] action, even while stressed.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/lieutenanthebsly-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenanthebsly-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenanthebsly-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenanthebsly-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -663,9 +679,9 @@ const t: ShipType = {
         'After you defend, you may perform a red [Boost] action, even while stressed.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/lieutenanthebsly-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenanthebsly-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenanthebsly-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenanthebsly-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -705,9 +721,9 @@ const t: ShipType = {
         'While you perform an attack at attack range 1-2, roll 1 additional attack die.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/scythe6-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scythe6-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scythe6-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scythe6-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -742,9 +758,9 @@ const t: ShipType = {
         'While you perform an attack at attack range 1-2, roll 1 additional attack die.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/scythe6-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scythe6-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scythe6-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scythe6-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -781,9 +797,9 @@ const t: ShipType = {
         'During the End Phase, you may choose up to 2 friendly small ships at range 0-2. You and the chosen ships may perform a red [Barrel Roll] or red [Boost] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/majormianda-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majormianda-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majormianda-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majormianda-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -820,9 +836,9 @@ const t: ShipType = {
         'During the End Phase, you may choose up to 2 friendly small ships at range 0-2. You and the chosen ships may perform a red [Barrel Roll] or red [Boost] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/majormianda-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majormianda-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majormianda-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majormianda-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,

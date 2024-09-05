@@ -49,7 +49,8 @@ const t: ShipType = {
       xws: 'doubleedge',
       ability:
         'After you perform a [Turret] or [Missile] attack that misses, you may perform a bonus attack using a different weapon.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/doubleedge.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/doubleedge.png',
       slots: [
         'Talent',
         'Sensor',
@@ -60,7 +61,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/doubleedge.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/doubleedge.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -76,7 +77,7 @@ const t: ShipType = {
       ability:
         "While you perform an attack, after the defender rolls defense dice, you may spend 1 focus token to cancel all of the defender's blank/[Focus] results.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantkestal.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkestal.png',
       slots: [
         'Talent',
         'Sensor',
@@ -87,7 +88,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantkestal.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkestal.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -101,7 +102,7 @@ const t: ShipType = {
       xws: 'onyxsquadronscout',
       text: 'Designed for extended engagements, the TIE/ag is flown primarily by elite pilots trained to leverage both its unique weapons loadout and its maneuverability to full effect.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/onyxsquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onyxsquadronscout.png',
       slots: [
         'Talent',
         'Sensor',
@@ -112,7 +113,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronscout.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -126,7 +127,7 @@ const t: ShipType = {
       xws: 'sienarspecialist',
       text: 'During the development of the TIE aggressor, Sienar Fleet Systems valued performance and versatility over raw cost efficiency.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sienarspecialist.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sienarspecialist.png',
       slots: [
         'Sensor',
         'Turret',
@@ -136,7 +137,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sienarspecialist.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sienarspecialist.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],

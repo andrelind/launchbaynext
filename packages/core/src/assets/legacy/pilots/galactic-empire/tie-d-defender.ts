@@ -50,14 +50,15 @@ const t: ShipType = {
       xws: 'colonelvessery',
       ability:
         'While you perform an attack against a locked ship, after you roll attack dice, you may acquire a lock on the defender.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/colonelvessery.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/colonelvessery.png',
       shipAbility: {
         name: 'Full Throttle',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/colonelvessery.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/colonelvessery.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -72,14 +73,15 @@ const t: ShipType = {
       xws: 'countessryad',
       ability:
         'While you would execute a [Straight] maneuver, you may increase the difficulty of the maneuver. If you do, execute it as a [Koiogran Turn] maneuver instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/countessryad.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/countessryad.png',
       shipAbility: {
         name: 'Full Throttle',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/countessryad.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countessryad.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -93,14 +95,14 @@ const t: ShipType = {
       xws: 'deltasquadronpilot',
       text: 'In addition to its missile launchers and six wingtip laser cannons, the formidable TIE defender is equipped with deflector shields and a hyperdrive.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/deltasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deltasquadronpilot.png',
       shipAbility: {
         name: 'Full Throttle',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deltasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deltasquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -113,14 +115,15 @@ const t: ShipType = {
       cost: 71,
       xws: 'onyxsquadronace',
       text: 'The experimental TIE defender outclasses all other contemporary starfighters, though its size, speed, and array of weapons come at a tremendous cost in credits.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/onyxsquadronace.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onyxsquadronace.png',
       shipAbility: {
         name: 'Full Throttle',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronace.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -135,14 +138,15 @@ const t: ShipType = {
       xws: 'rexlerbrath',
       ability:
         "After you perform an attack that hits, if you are evading, expose 1 of the defender's damage cards.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/rexlerbrath.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rexlerbrath.png',
       shipAbility: {
         name: 'Full Throttle',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rexlerbrath.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rexlerbrath.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -164,8 +168,9 @@ const t: ShipType = {
       charges: { value: 1, recovers: -1 },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vultskerris.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/vultskerris.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vultskerris.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vultskerris.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -187,9 +192,9 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['dark'] },
       slots: ['Force Power', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader-tieddefender.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-tieddefender.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/darthvader-tieddefender.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-tieddefender.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
@@ -210,8 +215,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captaindobbs.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captaindobbs.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captaindobbs.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captaindobbs.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -227,7 +233,7 @@ const t: ShipType = {
       ability:
         'After you perform a primary attack that hits, you may spend 1 [Charge] to perform a bonus [Cannon] attack.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainyorr-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainyorr-battleoverendor.png',
       charges: { value: 2, recovers: 0 },
       shipAbility: {
         name: 'Chiss Engineering',
@@ -252,7 +258,7 @@ const t: ShipType = {
         'computerassistedhandling-battleoverendor',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainyorr-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -267,7 +273,7 @@ const t: ShipType = {
       ability:
         'After you perform a primary attack that hits, you may spend 1 [Charge] to perform a bonus [Cannon] attack.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainyorr-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainyorr-battleoverendor-lsl.png',
       charges: { value: 2, recovers: 0 },
       shipAbility: {
         name: 'Chiss Engineering',
@@ -286,7 +292,7 @@ const t: ShipType = {
       ],
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainyorr-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -301,7 +307,7 @@ const t: ShipType = {
       ability:
         'While you defend, if you are not shielded, you may change 1 of your blank results to a [Focus] result.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/coloneljendon-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/coloneljendon-battleoverendor.png',
       shipAbility: {
         name: 'Chiss Engineering',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform a [Lock] action. While attacking, if you are not stressed, you may spend 1 [Shield] to apply the range 1 bonus.',
@@ -325,7 +331,7 @@ const t: ShipType = {
         'computerassistedhandling-battleoverendor',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -340,7 +346,7 @@ const t: ShipType = {
       ability:
         'While you defend, if you are not shielded, you may change 1 of your blank results to a [Focus] result.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/coloneljendon-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/coloneljendon-battleoverendor-lsl.png',
       shipAbility: {
         name: 'Chiss Engineering',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform a [Lock] action. While attacking, if you are not stressed, you may spend 1 [Shield] to apply the range 1 bonus.',
@@ -358,7 +364,7 @@ const t: ShipType = {
       ],
       slots: ['Talent', 'Sensor', 'Cannon', 'Missile'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,

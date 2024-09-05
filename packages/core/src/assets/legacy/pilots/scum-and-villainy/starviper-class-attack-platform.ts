@@ -54,14 +54,14 @@ const t: ShipType = {
       xws: 'blacksunassassin',
       text: 'Although assassinations can be handled with a shot in the dark or a dire substance added to a drink, a flaming shuttle tumbling from the sky sends a special kind of message.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksunassassin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunassassin.png',
       shipAbility: {
         name: 'Microthrusters',
         text: 'While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template.',
       },
       slots: ['Talent', 'Tech', 'Torpedo', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunassassin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunassassin.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -74,14 +74,14 @@ const t: ShipType = {
       xws: 'blacksunenforcer',
       text: 'Prince Xizor himself collaborated with MandalMotors to design the StarViper-class attack platform, one of the most formidable starfighters in the galaxy.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksunenforcer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunenforcer.png',
       shipAbility: {
         name: 'Microthrusters',
         text: 'While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template.',
       },
       slots: ['Tech', 'Torpedo', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunenforcer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunenforcer.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -96,14 +96,14 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90°.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/dalanoberos-starviperclassattackplatform.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dalanoberos-starviperclassattackplatform.png',
       shipAbility: {
         name: 'Microthrusters',
         text: 'While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template.',
       },
       slots: ['Talent', 'Tech', 'Torpedo', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos-starviperclassattackplatform.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -118,7 +118,8 @@ const t: ShipType = {
       xws: 'guri',
       ability:
         'At the start of the Engagement Phase, if there is at least 1 enemy ship at range 0-1, you may gain 1 focus token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/guri.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/guri.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -138,7 +139,8 @@ const t: ShipType = {
         text: 'While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template.',
       },
       slots: ['Talent', 'Tech', 'Torpedo', 'Modification', 'Title'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/guri.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/guri.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid'],
@@ -153,14 +155,15 @@ const t: ShipType = {
       xws: 'princexizor',
       ability:
         'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 [Hit] or [Critical Hit] damage. If it does, cancel 1 matching result.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/princexizor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/princexizor.png',
       shipAbility: {
         name: 'Microthrusters',
         text: 'While you perform a barrel roll, you must use the [Bank Left] or [Bank Right] template instead of the [Straight] template.',
       },
       slots: ['Talent', 'Tech', 'Torpedo', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/princexizor.png',
       standard: true,
       wildspace: true,
       epic: true,

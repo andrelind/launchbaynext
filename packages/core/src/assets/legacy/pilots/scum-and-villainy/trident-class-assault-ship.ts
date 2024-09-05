@@ -44,8 +44,9 @@ const t: ShipType = {
       cost: 85,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lawlesspirates.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lawlesspirates.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lawlesspirates.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lawlesspirates.png',
       shipAbility: {
         name: 'Tractor Grasp',
         text: 'After you perform a Tractor Tentacles attack that hits, the defender gains 1 tractor token.',

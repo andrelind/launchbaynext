@@ -48,9 +48,10 @@ const t: ShipType = {
       xws: 'midnight',
       ability:
         "While you defend or perform an attack, if you have a lock on the enemy ship, that ship's dice cannot be modified.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/midnight.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/midnight.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/midnight.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/midnight.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -67,9 +68,9 @@ const t: ShipType = {
       ability:
         'At the start of the Engagement Phase, you may spend 1 [Charge] and gain 1 stress token. If you do, until the end of the round, while you defend or perform an attack, you may change all of your [Focus] results to [Evade] or [Hit] results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/commandermalarus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandermalarus.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/commandermalarus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/commandermalarus.png',
       slots: ['Talent', 'Modification', 'Tech'],
       charges: { value: 2, recovers: 0 },
       standard: true,
@@ -86,9 +87,10 @@ const t: ShipType = {
       xws: 'scorch',
       ability:
         'While you perform a primary attack, if you are not stressed, you may gain 1 stress token to roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/scorch.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scorch.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scorch.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scorch.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -104,9 +106,10 @@ const t: ShipType = {
       xws: 'static',
       ability:
         'While you perform a primary attack, you may spend your lock on the defender and a focus token to change all of your results to [Critical Hit] results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/static.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/static.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/static.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/static.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -122,9 +125,10 @@ const t: ShipType = {
       xws: 'longshot',
       ability:
         'While you perform a primary attack at attack range 3, roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/longshot.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/longshot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/longshot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/longshot.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -139,9 +143,9 @@ const t: ShipType = {
       xws: 'omegasquadronace',
       text: 'Only pilots who have demonstrated both exceptional skill and unwavering dedication are rewarded with coveted positions in the First Order squadrons operating secretly against the New Republic during the Cold War.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/omegasquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/omegasquadronace.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/omegasquadronace.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -157,8 +161,10 @@ const t: ShipType = {
       xws: 'muse',
       ability:
         'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/muse.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/muse.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/muse.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/muse.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -174,9 +180,10 @@ const t: ShipType = {
       xws: 'tn3465',
       ability:
         "While another friendly ship performs an attack, if you are at range 0-1 of the defender, you may suffer 1 [Critical Hit] damage to change 1 of the attacker's results to a [Critical Hit] result.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/tn3465.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tn3465.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tn3465.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tn3465.png',
       slots: ['Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -191,9 +198,9 @@ const t: ShipType = {
       xws: 'zetasquadronpilot',
       text: "Unhampered by a cumbersome galactic bureaucracy, technologies originally researched by the Empire's TIE Advanced program are now mass-produced on First Order starfighters. As a result, TIE/fo pilots enjoy higher survival rates than their predecessors in the Galactic Empire.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/zetasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zetasquadronpilot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zetasquadronpilot.png',
       slots: ['Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -208,9 +215,9 @@ const t: ShipType = {
       xws: 'epsilonsquadroncadet',
       text: "Trained from childhood aboard Resurgent-class Star Destroyers in deep space, many First Order TIE pilots have never even set foot on a planet's surface.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/epsilonsquadroncadet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/epsilonsquadroncadet.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/epsilonsquadroncadet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/epsilonsquadroncadet.png',
       slots: ['Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -224,9 +231,10 @@ const t: ShipType = {
       limited: 1,
       cost: 28,
       xws: 'lieutenantrivas',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantrivas.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantrivas.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantrivas.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantrivas.png',
       ability:
         'After a ship at range 1-2 gains a red or orange token, if you do not have that ship locked, you may acquire a lock on that ship.',
       slots: ['Modification', 'Tech'],
@@ -243,8 +251,10 @@ const t: ShipType = {
       cost: 29,
       xws: 'null',
       ability: 'While you are not damaged, treat your initiative value as 7.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/null.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/null.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/null.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/null.png',
       slots: ['Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -260,9 +270,10 @@ const t: ShipType = {
       xws: 'lieutenantgalek',
       ability:
         'After another friendly ship at range 0-2 is destroyed, you may perform a [Coordinate] action, even while stressed. While you coordinate, the ship you choose can perform an action only if that action is also on your action bar.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantgalek.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantgalek.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantgalek.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantgalek.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -278,8 +289,10 @@ const t: ShipType = {
       xws: 'dt798',
       ability:
         'While you perform a primary attack, if you are not strained, you may gain 1 strain token to roll 1 additional die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dt798.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dt798.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dt798.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dt798.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,
@@ -296,9 +309,10 @@ const t: ShipType = {
       ability:
         'Setup: After placing forces, assign the Primed for Speed condition to yourself and up to 2 other friendly TIE/fo or TIE/sf Fighters that have no equipped [Modification] upgrades.',
       conditions: ['primedforspeed'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/lingaava.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lingaava.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lingaava.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lingaava.png',
       slots: ['Talent', 'Modification', 'Tech'],
       standard: true,
       wildspace: true,

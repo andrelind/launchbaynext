@@ -12,9 +12,9 @@ const t: UpgradeBase[] = [
         ability:
           'Attack ([Lock]): Spend 1 [Charge]. After you declare the defender, the defender may choose to suffer 1 [Critical Hit] damage. If it does, skip the Attack and Defense Dice steps and the attack is treated as hitting.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/homingtorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/homingtorpedoes.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/homingtorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/homingtorpedoes.png',
         slots: ['Torpedo'],
         charges: { value: 2, recovers: 0 },
         attack: {
@@ -51,9 +51,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/advprotontorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/advprotontorpedoes.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/advprotontorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/advprotontorpedoes.png',
       },
     ],
     cost: { value: 5 },
@@ -81,9 +81,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/iontorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/iontorpedoes.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/iontorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/iontorpedoes.png',
       },
     ],
     cost: { value: 4 },
@@ -102,7 +102,7 @@ const t: UpgradeBase[] = [
         ability:
           'Attack ([Lock]): Spend 1 [Charge]. Change 1 [Hit] result to a [Critical Hit] result.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/protontorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protontorpedoes.png',
         slots: ['Torpedo'],
         charges: { value: 2, recovers: 0 },
         attack: {
@@ -113,7 +113,7 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/protontorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protontorpedoes.png',
       },
     ],
     cost: { value: 12 },
@@ -141,9 +141,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/plasmatorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/plasmatorpedoes.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/plasmatorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/plasmatorpedoes.png',
       },
     ],
     cost: {
@@ -167,9 +167,9 @@ const t: UpgradeBase[] = [
         slots: ['Torpedo'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/trackingtorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/trackingtorpedoes.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/trackingtorpedoes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trackingtorpedoes.png',
       },
     ],
     cost: { value: 8 },

@@ -44,10 +44,10 @@ const t: ShipType = {
       xws: 'kashyyykdefender',
       text: 'Equipped with three wide-range Sureggi twin laser cannons, the Auzituck gunship acts as a powerful deterrent to slaver operations in the Kashyyyk system.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/kashyyykdefender.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kashyyykdefender.png',
       slots: ['Crew', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kashyyykdefender.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kashyyykdefender.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -61,10 +61,11 @@ const t: ShipType = {
       xws: 'lowhhrick',
       ability:
         'After a friendly ship at range 0-1 becomes the defender, you may spend 1 reinforce token. If you do, that ship gains 1 evade token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lowhhrick.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lowhhrick.png',
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lowhhrick.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lowhhrick.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -78,10 +79,11 @@ const t: ShipType = {
       xws: 'wullffwarro',
       ability:
         'While you perform a primary attack, if you are damaged, you may roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/wullffwarro.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wullffwarro.png',
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wullffwarro.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wullffwarro.png',
       standard: true,
       wildspace: true,
       epic: true,

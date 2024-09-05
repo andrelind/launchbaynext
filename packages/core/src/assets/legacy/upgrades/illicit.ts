@@ -12,11 +12,11 @@ const t: UpgradeBase[] = [
         ability:
           'Action: Spend 1 [Charge] to perform a [Cloak] action. At the start of the Planning Phase, roll 1 attack die. On a [Focus] result, decloak or discard your cloak token.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/cloakingdevice.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cloakingdevice.png',
         slots: ['Illicit'],
         charges: { value: 2, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cloakingdevice.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/cloakingdevice.png',
       },
     ],
     cost: { value: 3 },
@@ -36,11 +36,11 @@ const t: UpgradeBase[] = [
         ability:
           'Before you activate, you may spend 1 [Charge]. If you do, until the end of the round, you can perform actions and execute red maneuvers, even while stressed.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/contrabandcybernetics.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/contrabandcybernetics.png',
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/contrabandcybernetics.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/contrabandcybernetics.png',
       },
     ],
     cost: { value: 3 },
@@ -59,10 +59,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you are destroyed, each other ship at range 0-1 suffers 1 [Hit] damage.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/deadmansswitch.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deadmansswitch.png',
         slots: ['Illicit'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/deadmansswitch.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/deadmansswitch.png',
       },
     ],
     cost: { value: 2 },
@@ -81,10 +81,10 @@ const t: UpgradeBase[] = [
         ability:
           'Before you engage, you may gain 1 ion token and 1 disarm token. If you do, each ship at range 0 suffers 1 [Hit] damage.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/feedbackarray.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/feedbackarray.png',
         slots: ['Illicit'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/feedbackarray.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/feedbackarray.png',
       },
     ],
     cost: { value: 2 },
@@ -103,10 +103,10 @@ const t: UpgradeBase[] = [
         ability:
           'Before you would execute a maneuver, you may spend 1 shield. If you do, execute a white [0 [Stationary]] instead of the maneuver you revealed, then gain 1 stress token.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/inertialdampeners.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/inertialdampeners.png',
         slots: ['Illicit'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/inertialdampeners.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/inertialdampeners.png',
       },
     ],
     cost: {
@@ -138,7 +138,7 @@ const t: UpgradeBase[] = [
         ability:
           'Action: Spend 1 [Charge]. Drop 1 loose cargo using the [1 [Straight]] template.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/riggedcargochute.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/riggedcargochute.png',
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         device: {
@@ -147,7 +147,7 @@ const t: UpgradeBase[] = [
           effect: 'Loose cargo is a debris cloud.',
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/riggedcargochute.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/riggedcargochute.png',
       },
     ],
     cost: { value: 4 },
@@ -168,9 +168,9 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/coaxiumhyperfuel.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/coaxiumhyperfuel.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/coaxiumhyperfuel.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/coaxiumhyperfuel.png',
       },
     ],
     cost: { value: 1 },
@@ -191,9 +191,9 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 2, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/quickreleaselocks.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/quickreleaselocks.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/quickreleaselocks.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/quickreleaselocks.png',
       },
     ],
     cost: { value: 4 },
@@ -214,9 +214,9 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/saboteursmap.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/saboteursmap.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/saboteursmap.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/saboteursmap.png',
       },
     ],
     cost: { value: 2 },
@@ -237,9 +237,9 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/scannerbaffler.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/scannerbaffler.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/scannerbaffler.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/scannerbaffler.png',
       },
     ],
     cost: { value: 7 },
@@ -261,9 +261,9 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/falsetranspondercodes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/falsetranspondercodes.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/falsetranspondercodes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/falsetranspondercodes.png',
       },
     ],
     cost: { value: 3 },
@@ -284,8 +284,9 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/babufrik.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/babufrik.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/babufrik.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/babufrik.png',
       },
     ],
     restrictions: [{ factions: ['Scum and Villainy', 'Resistance'] }],
@@ -307,9 +308,9 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/overtunedmodulators.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/overtunedmodulators.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/overtunedmodulators.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/overtunedmodulators.png',
       },
     ],
     cost: { value: 3 },
@@ -330,8 +331,9 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         conditions: ['markedforelimination'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/trackingfob.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/trackingfob.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/trackingfob.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trackingfob.png',
       },
     ],
     restrictions: [{ keywords: ['Bounty Hunter'] }],
@@ -360,9 +362,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hotshottailblaster.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hotshottailblaster.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/hotshottailblaster.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hotshottailblaster.png',
       },
     ],
     cost: { value: 2 },

@@ -20,9 +20,9 @@ const t: UpgradeBase[] = [
             'At the end of the Activation Phase, this device detonates. When this device detonates, each ship and remote at range 0-1 rolls 2 attack dice. Each ship or remote suffers 1 [Hit] damage for each [Hit]/[Critical Hit] result.',
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/bombletgenerator.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bombletgenerator.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bombletgenerator.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bombletgenerator.png',
       },
     ],
     cost: { value: 3 },
@@ -48,9 +48,10 @@ const t: UpgradeBase[] = [
           effect:
             "At the end of the Activation Phase, this device detonates. When this device detonates, each ship and remote at range 0-1 rolls 1 attack die. Each ship or remote suffers 1 [Hit] damage for each [Hit]/[Critical Hit] result. After this device detonates, place a Blaze by aligning the Blaze's guides to the device's tab. A Blaze is an obstacle. After this obstacle is placed, place a fuse marker on it. During the End Phase, remove each Blaze with no fuse markers, then remove one fuse marker from each Blaze.",
         },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/blazerbomb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/blazerbomb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/blazerbomb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/blazerbomb.png',
       },
     ],
     cost: { value: 4 },
@@ -76,9 +77,10 @@ const t: UpgradeBase[] = [
           effect:
             'After a ship overlaps or moves through this device, it detonates. When this device detonates, the ship suffers 1 [Hit] damage and gains 3 ion tokens.',
         },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/connernets.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/connernets.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/connernets.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/connernets.png',
       },
     ],
     cost: { value: 3 },
@@ -96,7 +98,8 @@ const t: UpgradeBase[] = [
         type: 'Device',
         ability:
           'During the System Phase, you may spend 1 [Charge] to drop a Proton Bomb using the [1 [Straight]] template.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/protonbombs.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protonbombs.png',
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
         device: {
@@ -106,7 +109,7 @@ const t: UpgradeBase[] = [
             'At the end of the Activation Phase, this device detonates. When this device detonates, each ship and remote at range 0-1 suffers 1 [Critical Hit] damage.',
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/protonbombs.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protonbombs.png',
       },
     ],
     cost: { value: 4 },
@@ -133,9 +136,9 @@ const t: UpgradeBase[] = [
             'After a ship overlaps or moves through this device, it detonates. When this device detonates, that ship rolls 2 attack dice. That ship then suffers 1 [Hit] damage plus 1 [Hit]/[Critical Hit] damage for each matching result.',
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/proximitymines.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/proximitymines.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/proximitymines.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/proximitymines.png',
       },
     ],
     cost: { value: 6 },
@@ -154,9 +157,9 @@ const t: UpgradeBase[] = [
         ability:
           'During the System Phase, you may spend 1 [Charge] to drop a Seismic Charge with the [1 [Straight]] template.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/seismiccharges.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seismiccharges.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/seismiccharges.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seismiccharges.png',
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
         device: {
@@ -183,9 +186,9 @@ const t: UpgradeBase[] = [
         ability:
           "During the End Phase, you may spend 1 [Charge] to drop or launch 1 DRK-1 probe droid using a speed 3 template. This card's [Charge] cannot be recovered.",
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/drk1probedroids.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/drk1probedroids.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/drk1probedroids.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/drk1probedroids.png',
         slots: ['Device'],
         charges: { value: 2, recovers: 0 },
         device: {
@@ -220,9 +223,9 @@ const t: UpgradeBase[] = [
         ability:
           "During the System Phase, you may spend 1 [Charge] to drop an Electro-Proton Bomb with the [1 [Straight]] template. Then place 1 fuse marker on that device. This card's [Charge] cannot be recovered.",
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/electroprotonbomb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/electroprotonbomb.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/electroprotonbomb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/electroprotonbomb.png',
         slots: ['Device', 'Modification'],
         charges: { value: 1, recovers: 0 },
         device: {
@@ -249,9 +252,9 @@ const t: UpgradeBase[] = [
         type: 'Device',
         slots: ['Device'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/clustermines.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clustermines.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/clustermines.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clustermines.png',
         ability:
           "During the System Phase, you may spend 1 [Charge] to drop a Cluster Mine set using the [1 [Straight]] template. This card's [Charge] cannot be recovered.",
         charges: { value: 1, recovers: 0 },
@@ -278,8 +281,9 @@ const t: UpgradeBase[] = [
         type: 'Device',
         slots: ['Device'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ionbombs.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ionbombs.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ionbombs.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ionbombs.png',
         ability:
           'During the System Phase, you may spend 1 [Charge] to drop an Ion Bomb using the [1 [Straight]] template.',
         charges: { value: 2, recovers: 0 },
@@ -306,9 +310,9 @@ const t: UpgradeBase[] = [
         type: 'Device',
         slots: ['Device'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/concussionbombs.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/concussionbombs.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/concussionbombs.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/concussionbombs.png',
         ability:
           "During the System Phase, if any of this card's [Charge] are inactive, you must spend 1 [Charge] to drop 1 concussion bomb using the [1 [Straight]] template, if able. Otherwise, you may spend 1 [Charge] to drop 1 concussion bomb.",
         charges: { value: 3, recovers: 0 },
@@ -338,9 +342,9 @@ const t: UpgradeBase[] = [
         slots: ['Device'],
         charges: { value: 4, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/thermaldetonators.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/thermaldetonators.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/thermaldetonators.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/thermaldetonators.png',
         device: {
           name: 'Thermal Detonators',
           type: 'Bomb',

@@ -20,9 +20,9 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/heavylasercannon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/heavylasercannon.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/heavylasercannon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/heavylasercannon.png',
       },
     ],
     cost: { value: 4 },
@@ -48,9 +48,10 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: false,
         },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ioncannon.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ioncannon.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ioncannon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ioncannon.png',
       },
     ],
     cost: { value: 6 },
@@ -76,9 +77,10 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: false,
         },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/jammingbeam.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jammingbeam.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jammingbeam.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/jammingbeam.png',
       },
     ],
     cost: { value: 0 },
@@ -104,9 +106,10 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: false,
         },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/tractorbeam.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tractorbeam.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tractorbeam.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tractorbeam.png',
       },
     ],
     cost: { value: 4 },
@@ -133,9 +136,9 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/autoblasters.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/autoblasters.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/autoblasters.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/autoblasters.png',
       },
     ],
     cost: { value: 4 },
@@ -160,9 +163,9 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/syncedlasercannons.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/syncedlasercannons.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/syncedlasercannons.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/syncedlasercannons.png',
         ability:
           'Attack: If you are calculating, the defender does not apply the range bonus.',
       },
@@ -181,9 +184,9 @@ const t: UpgradeBase[] = [
         ability:
           'Attack: Spend 2 [Charge]. Change 1 [Focus] or [Hit] result to a [Critical Hit] result.',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/protoncannons.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protoncannons.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/protoncannons.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protoncannons.png',
         charges: { value: 2, recovers: 1 },
         title: 'Proton Cannons',
         type: 'Cannon',
@@ -221,15 +224,12 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/underslungblastercannon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/underslungblastercannon.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/underslungblastercannon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/underslungblastercannon.png',
       },
     ],
     cost: { value: 2 },

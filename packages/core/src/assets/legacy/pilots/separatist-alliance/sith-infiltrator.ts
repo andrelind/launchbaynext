@@ -49,7 +49,8 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['dark'] },
       ability:
         'After you perform an attack, you may spend 2 [Force] to perform a bonus primary attack against a different target. If your attack missed, you may perform that bonus primary attack against the same target instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/darthmaul.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthmaul.png',
       standard: true,
       wildspace: true,
       cost: 62,
@@ -65,7 +66,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthmaul.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthmaul.png',
       keywords: ['Dark Side', 'Sith'],
       epic: true,
     },
@@ -78,7 +79,8 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['dark'] },
       ability:
         'After you defend, if the attacker is in your firing arc, you may spend 1 [Force] to remove 1 of your blue or red tokens. After you perform an attack that hits, you may spend 1 [Force] to perform an action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/countdooku.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/countdooku.png',
       standard: true,
       wildspace: true,
       cost: 60,
@@ -94,7 +96,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/countdooku.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdooku.png',
       keywords: ['Dark Side', 'Sith'],
       epic: true,
     },
@@ -104,7 +106,8 @@ const t: ShipType = {
       limited: 0,
       xws: 'darkcourier',
       text: 'The vessel called the Scimitar was heavily modified, equipped with stealth technologies and advanced surveillance devices for infiltration and assassination missions.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/darkcourier.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darkcourier.png',
       standard: true,
       wildspace: true,
       cost: 45,
@@ -119,7 +122,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darkcourier.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darkcourier.png',
       epic: true,
     },
     {
@@ -140,8 +143,10 @@ const t: ShipType = {
       caption: 'Sinister Automaton',
       initiative: 3,
       limited: 1,
-      image: 'https://infinitearenas.com/xw2/images/pilots/066.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/066.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/066.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/066.png',
       ability:
         'After you defend, you may spend 1 calculate token to perform an action.',
       shipActions: [
@@ -171,11 +176,11 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Cloak' },
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/countdooku-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/countdooku-siegeofcoruscant.png',
       force: { value: 3, recovers: 1, side: ['dark'] },
       standardLoadout: ['malice', 'roilinganger-siegeofcoruscant', 'scimitar'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/countdooku.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdooku-siegeofcoruscant.png',
       standard: false,
       wildspace: true,
       keywords: ['Dark Side', 'Sith'],
@@ -198,7 +203,7 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Cloak' },
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/countdooku-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/countdooku-siegeofcoruscant-lsl.png',
       force: { value: 3, recovers: 1, side: ['dark'] },
       slots: [
         'Cannon',
@@ -212,7 +217,7 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/countdooku.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdooku-siegeofcoruscant-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'Sith'],

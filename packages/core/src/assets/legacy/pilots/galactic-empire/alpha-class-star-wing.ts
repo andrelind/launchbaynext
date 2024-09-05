@@ -54,9 +54,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantkarsabi.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantkarsabi.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkarsabi.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -78,9 +78,10 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/majorvynder.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorvynder.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvynder.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -92,10 +93,11 @@ const t: ShipType = {
       cost: 32,
       xws: 'nusquadronpilot',
       text: 'With a design inspired by other Cygnus Spaceworks vessels, the Alpha-class star wing is a versatile craft assigned to Imperial Navy specialist units that need a starfighter they can outfit for multiple roles.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/nusquadronpilot.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nusquadronpilot.png',
       slots: ['Sensor', 'Torpedo', 'Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nusquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nusquadronpilot.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -116,9 +118,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/rhosquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rhosquadronpilot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rhosquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rhosquadronpilot.png',
       standard: true,
       wildspace: true,
       epic: true,

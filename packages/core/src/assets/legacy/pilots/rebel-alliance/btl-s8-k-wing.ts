@@ -43,7 +43,8 @@ const t: ShipType = {
       xws: 'esegetuketu',
       ability:
         'While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/esegetuketu.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/esegetuketu.png',
       slots: [
         'Torpedo',
         'Missile',
@@ -55,7 +56,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/esegetuketu.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/esegetuketu.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -69,7 +70,8 @@ const t: ShipType = {
       xws: 'mirandadoni',
       ability:
         'While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/mirandadoni.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mirandadoni.png',
       slots: [
         'Torpedo',
         'Missile',
@@ -81,7 +83,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mirandadoni.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mirandadoni.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -94,7 +96,7 @@ const t: ShipType = {
       xws: 'wardensquadronpilot',
       text: "Koensayr Manufacturing's K-wing boasts an advanced SubLight Acceleration Motor and an unprecedented 18 hard points, granting it unrivaled speed and firepower.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/wardensquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wardensquadronpilot.png',
       slots: [
         'Torpedo',
         'Missile',
@@ -106,7 +108,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wardensquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wardensquadronpilot.png',
       standard: false,
       wildspace: true,
       epic: true,

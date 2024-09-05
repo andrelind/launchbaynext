@@ -57,9 +57,10 @@ const t: ShipType = {
         'Title',
         'Configuration',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainhark.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainhark.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainhark.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainhark.png',
       keywords: ['Mandalorian'],
     },
     {
@@ -84,9 +85,10 @@ const t: ShipType = {
         'Title',
         'Configuration',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/garsaxon.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garsaxon.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/garsaxon.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garsaxon.png',
       keywords: ['Mandalorian'],
     },
     {
@@ -109,9 +111,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/imperialsupercommando.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/imperialsupercommando.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/imperialsupercommando.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/imperialsupercommando.png',
       keywords: ['Mandalorian'],
     },
   ],

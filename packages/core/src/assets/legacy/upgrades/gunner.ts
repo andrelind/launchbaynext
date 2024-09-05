@@ -12,9 +12,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the End Phase, you may rotate your [Single Turret Arc] indicator.',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/agilegunner.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/agilegunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/agilegunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/agilegunner.png',
       },
     ],
     cost: { value: 3 },
@@ -32,10 +33,11 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         ability:
           'While you perform an attack, you may change 1 [Hit] result to a [Critical Hit] result for each stress token the defender has.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bt1.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bt1.png',
         slots: ['Gunner'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bt1.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bt1.png',
       },
     ],
     cost: { value: 3 },
@@ -57,9 +59,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform a primary attack, if you are focused, you may perform a bonus [Single Turret Arc] attack against a ship you have not already attacked this round.',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bistan.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bistan.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bistan.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bistan.png',
       },
     ],
     cost: { value: 8 },
@@ -78,10 +81,11 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         ability:
           'After you perform a primary attack that misses, if you are not stressed, you must receive 1 stress token to perform a bonus primary attack against the same target.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bossk.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bossk.png',
         slots: ['Gunner'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bossk.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bossk.png',
       },
     ],
     cost: { value: 8 },
@@ -100,11 +104,12 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         ability:
           'After you defend, if the attacker is in your firing arc, you may spend 1 [Charge]. If you do, roll 1 attack die unless the attacker chooses to remove 1 green token. On a [Hit] or [Critical Hit] result, the attacker suffers 1 [Hit] damage.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/dengar.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dengar.png',
         slots: ['Gunner'],
         charges: { value: 1, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/dengar.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dengar.png',
       },
     ],
     cost: { value: 6 },
@@ -123,11 +128,12 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         ability:
           'After you perform a primary attack, you may spend 1 [Force] to perform a bonus [Single Turret Arc] attack from a [Single Turret Arc] you have not attacked from this round. If you do and you are stressed, you may reroll 1 attack die.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ezrabridger.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ezrabridger.png',
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ezrabridger.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ezrabridger.png',
       },
     ],
     cost: { value: 10 },
@@ -147,11 +153,11 @@ const t: UpgradeBase[] = [
         ability:
           'While you perform an attack, you may spend 1 [Force] to change 1 of your [Focus] results to a [Critical Hit] result.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/fifthbrother.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fifthbrother.png',
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/fifthbrother.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fifthbrother.png',
       },
     ],
     cost: { value: 12 },
@@ -170,11 +176,12 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         ability:
           'While you perform an attack, you may spend 1 [Charge] to change 1 [Hit] result to a [Critical Hit] result. While you defend, if your [Charge] is active, the attacker may change 1 [Hit] result to a [Critical Hit] result.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/greedo.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/greedo.png',
         slots: ['Gunner'],
         charges: { value: 1, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/greedo.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/greedo.png',
       },
     ],
     cost: { value: 1 },
@@ -194,9 +201,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the Engagement Phase, at initiative 7, you may perform a [Single Turret Arc] attack. You cannot attack from that [Single Turret Arc] again this round.',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/hansolo.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hansolo.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hansolo.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hansolo.png',
       },
     ],
     cost: { value: 10 },
@@ -216,9 +224,9 @@ const t: UpgradeBase[] = [
         ability: 'Before you engage, you may perform a red [Focus] action.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/hansolo-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hansolo-gunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hansolo-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hansolo-gunner.png',
       },
     ],
     cost: { value: 10 },
@@ -239,9 +247,9 @@ const t: UpgradeBase[] = [
           'While you perform a [Single Turret Arc] attack, after the Modify Defense Dice step, the defender removes 1 focus or calculate token.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/hotshotgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hotshotgunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hotshotgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hotshotgunner.png',
       },
     ],
     cost: { value: 6 },
@@ -262,9 +270,9 @@ const t: UpgradeBase[] = [
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/lukeskywalker.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/lukeskywalker.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/lukeskywalker.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/lukeskywalker.png',
       },
     ],
     cost: { value: 26 },
@@ -285,9 +293,9 @@ const t: UpgradeBase[] = [
           'If you would drop or launch a device, you may use a template of the same bearing with a speed 1 higher or lower.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/skilledbombardier.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/skilledbombardier.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/skilledbombardier.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/skilledbombardier.png',
       },
     ],
     cost: { value: 2 },
@@ -307,9 +315,9 @@ const t: UpgradeBase[] = [
           'While you perform a primary [Front Arc] attack, if your [Single Turret Arc] is in your [Front Arc], you may roll 1 additional attack die. After you perform a primary [Front Arc] attack, if your [Single Turret Arc] is in your [Rear Arc], you may perform a bonus primary [Single Turret Arc] attack.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/specialforcesgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/specialforcesgunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/specialforcesgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/specialforcesgunner.png',
       },
     ],
     cost: { value: 9 },
@@ -333,9 +341,9 @@ const t: UpgradeBase[] = [
           'After you perform a primary [Front Arc] attack, you may perform a bonus primary [Rear Arc] attack.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/veterantailgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/veterantailgunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/veterantailgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/veterantailgunner.png',
       },
     ],
     cost: { value: 2 },
@@ -356,9 +364,9 @@ const t: UpgradeBase[] = [
           'After you perform a primary attack, you may perform a bonus [Single Turret Arc] attack using a [Single Turret Arc] you did not already attack from this round.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/veteranturretgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/veteranturretgunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/veteranturretgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/veteranturretgunner.png',
       },
     ],
     cost: {
@@ -381,9 +389,10 @@ const t: UpgradeBase[] = [
         ability:
           'While you defend or perform a primary attack, if the enemy ship is in your [Front Arc], you may add 1 blank result to your roll (this die can be rerolled or otherwise modified).',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/finn.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/finn.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/finn.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/finn.png',
       },
     ],
     cost: { value: 8 },
@@ -403,9 +412,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform a primary attack, you may drop 1 bomb or rotate your [Single Turret Arc]. After you are destroyed, you may drop 1 bomb.',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/paigetico.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/paigetico.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/paigetico.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/paigetico.png',
       },
     ],
     cost: { value: 6 },
@@ -426,9 +436,10 @@ const t: UpgradeBase[] = [
           'While you defend or perform an attack, if the enemy ship is in your [Single Turret Arc], you may spend 1 [Force] to change 1 of your blank results to a [Evade] or [Hit] result.',
         slots: ['Gunner'],
         force: { value: 1, recovers: 1, side: ['light'] },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/rey-gunner.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/rey-gunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/rey-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/rey-gunner.png',
       },
     ],
     restrictions: [{ factions: ['Resistance'] }],
@@ -450,9 +461,9 @@ const t: UpgradeBase[] = [
           'While another friendly ship performs a primary attack, if the defender is in your firing arc, you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die, to a maximum of 4. During the System Phase, you may gain 1 disarm token to recover 1 [Charge].',
         charges: { value: 1, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/seventhfleetgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seventhfleetgunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/seventhfleetgunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seventhfleetgunner.png',
       },
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
@@ -473,9 +484,9 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform an attack that missed, if 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/clonecommandercody.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clonecommandercody.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/clonecommandercody.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clonecommandercody.png',
       },
     ],
     restrictions: [{ factions: ['Galactic Republic'] }],
@@ -492,8 +503,9 @@ const t: UpgradeBase[] = [
       {
         title: 'Ahsoka Tano',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ahsokatano.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ahsokatano.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ahsokatano.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ahsokatano.png',
         ability:
           'After you execute a maneuver, you may spend 1 [Force] and choose a friendly ship at range 1-3 in your firing arc. If you do, it may perform a red [Focus] action, even while stressed.',
         slots: ['Gunner'],
@@ -516,9 +528,9 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         slots: ['Gunner'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/clonecaptainrex.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clonecaptainrex.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/clonecaptainrex.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clonecaptainrex.png',
         ability:
           'While you perform an attack, you may spend 1 [Focus] result. If you do, each friendly ship that has the defender in its [Bullseye Arc] may gain 1 strain to perform a [Focus] action.',
       },
@@ -538,9 +550,9 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         slots: ['Gunner'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/suppressivegunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/suppressivegunner.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/suppressivegunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/suppressivegunner.png',
         ability:
           'While you perform an attack, you may spend 1 [Focus] result. If you do, the defender gains 1 deplete token unless it chooses to suffer 1 [Hit] damage.',
       },
@@ -562,9 +574,9 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/bobafett-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bobafett-gunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bobafett-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bobafett-gunner.png',
       },
     ],
     cost: { value: 4 },
@@ -584,9 +596,9 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/weaponssystemsofficer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/weaponssystemsofficer.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/weaponssystemsofficer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/weaponssystemsofficer.png',
       },
     ],
     cost: { value: 5 },
@@ -606,9 +618,9 @@ const t: UpgradeBase[] = [
         type: 'Gunner',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/sabinewren-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sabinewren-gunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sabinewren-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sabinewren-gunner.png',
       },
     ],
     cost: { value: 2 },
@@ -627,9 +639,10 @@ const t: UpgradeBase[] = [
         ability:
           'At the start of the Engagement Phase, you may choose a friendly ship in your firing arc. If you do, that ship gains 1 strain token. While you perform an attack, you may reroll up to 1 die for each ship in the attack arc with 1 or more non-lock red or orange tokens.',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/dt798.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dt798.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/dt798.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dt798.png',
       },
     ],
     cost: { value: 3 },
@@ -659,9 +672,9 @@ const t: UpgradeBase[] = [
           },
         ],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/firstorderordnancetech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/firstorderordnancetech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/firstorderordnancetech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/firstorderordnancetech.png',
       },
     ],
     cost: { value: 3 },
@@ -682,9 +695,9 @@ const t: UpgradeBase[] = [
           'While you perform the [Lock] action, you can only choose an object in your [Front Arc] or [Rear Arc]. While you perform a primary attack, if the defender is in your [Front Arc] or [Rear Arc], you may remove 1 orange or red token from the defender to roll 1 additional die, to a maximum of 4.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/garsaxon-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/garsaxon-gunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/garsaxon-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/garsaxon-gunner.png',
       },
     ],
     cost: { value: 10 },
@@ -708,9 +721,10 @@ const t: UpgradeBase[] = [
           'After you perform an attack at attack range 1-2 that hits, if the defender has no faceup damage cards, you may spend 1 or more [Charge]. For each [Charge] you spend, the defender gains 1 strain token.',
         slots: ['Gunner'],
         charges: { value: 2, recovers: 1 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/tibersaxon.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tibersaxon.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tibersaxon.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tibersaxon.png',
       },
     ],
     cost: { value: 5 },
@@ -731,9 +745,9 @@ const t: UpgradeBase[] = [
           'After you acquire a lock on an enemy unit beyond range 2, if there are no friendly units at range 0-1 of the locked unit, gain 1 calculate token.',
         slots: ['Gunner'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/ursawren-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ursawren-gunner.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ursawren-gunner.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ursawren-gunner.png',
       },
     ],
     cost: { value: 4 },
@@ -753,9 +767,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you perform a [Front Arc] attack, you may perform a [Rear Arc] or [Single Turret Arc] attack as a bonus attack against a different target with 1 or more red or orange tokens.',
         slots: ['Gunner'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/migsmayfeld.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/migsmayfeld.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/migsmayfeld.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/migsmayfeld.png',
       },
     ],
     cost: {

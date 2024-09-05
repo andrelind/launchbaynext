@@ -6,7 +6,7 @@ const baseUrl =
 
 const runner = async () => {
   // @ts-ignore
-  await runMerge(baseUrl, assets);
+  await runMerge(baseUrl, assets, 'legacy');
 };
 
 runner();

@@ -12,9 +12,10 @@ const t: UpgradeBase[] = [
         ability:
           'Action: Spend 1 non-recurring [Charge] from another equipped upgrade to recover 1 shield. Action: Spend 2 shields to recover 1 non-recurring [Charge] on an equipped upgrade.',
         slots: ['Astromech'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/chopper.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chopper.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chopper.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chopper.png',
       },
     ],
     cost: { value: 2 },
@@ -33,10 +34,11 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'After you fully execute a maneuver, if you have not dropped or launched a device this round, you may drop 1 bomb.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/genius.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/genius.png',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/genius.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/genius.png',
       },
     ],
     cost: { value: 2 },
@@ -57,15 +59,13 @@ const t: UpgradeBase[] = [
           'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r2astromech.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2astromech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2astromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2astromech.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 2, '1': 2, '2': 4, '3': 8 },
-    },
+    cost: { variable: 'agility', values: { '0': 2, '1': 2, '2': 4, '3': 8 } },
     standard: true,
     wildspace: true,
     epic: true,
@@ -80,17 +80,15 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r2d2.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2d2.png',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2d2.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 3, '1': 4, '2': 7, '3': 11 },
-    },
+    cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 7, '3': 11 } },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     standard: true,
     wildspace: true,
@@ -107,9 +105,10 @@ const t: UpgradeBase[] = [
         ability:
           'You can maintain up to 2 locks. Each lock must be on a different object. After you perform a [Lock] action, you may acquire a lock.',
         slots: ['Astromech'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r3astromech.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r3astromech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r3astromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r3astromech.png',
       },
     ],
     cost: { value: 3 },
@@ -128,9 +127,10 @@ const t: UpgradeBase[] = [
         ability:
           'Decrease the difficulty of your speed 1-2 basic maneuvers ([Turn Left], [Bank Left], [Straight], [Bank Right], [Turn Right]).',
         slots: ['Astromech'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r4astromech.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4astromech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4astromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4astromech.png',
       },
     ],
     cost: { value: 2 },
@@ -151,15 +151,13 @@ const t: UpgradeBase[] = [
           'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r5astromech.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5astromech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5astromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5astromech.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 1, '1': 2, '2': 3, '3': 4 },
-    },
+    cost: { variable: 'agility', values: { '0': 1, '1': 2, '2': 3, '3': 4 } },
     standard: true,
     wildspace: true,
     epic: true,
@@ -176,15 +174,13 @@ const t: UpgradeBase[] = [
           'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r5d8.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5d8.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5d8.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5d8.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 3, '1': 4, '2': 4, '3': 6 },
-    },
+    cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 4, '3': 6 } },
     restrictions: [{ factions: ['Rebel Alliance'] }],
     standard: true,
     wildspace: true,
@@ -200,11 +196,12 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'While you perform an attack against a defender in your [Front Arc], you may spend 1 [Charge] to reroll 1 attack die. If the rerolled result is a [Critical Hit] result, suffer 1 [Critical Hit] damage.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r5p8.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5p8.png',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5p8.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5p8.png',
       },
     ],
     cost: { value: 4 },
@@ -222,10 +219,11 @@ const t: UpgradeBase[] = [
         title: 'R5-TK',
         type: 'Astromech',
         ability: 'You can perform attacks against friendly ships.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r5tk.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5tk.png',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5tk.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5tk.png',
       },
     ],
     cost: { value: 0 },
@@ -245,10 +243,11 @@ const t: UpgradeBase[] = [
         charges: { value: 2, recovers: 0 },
         ability:
           'Before you activate or engage, you may spend 1 [Charge] to ignore obstacles until the end of this phase.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r5x3.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r5x3.png',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5x3.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r5x3.png',
       },
     ],
     cost: { value: 5 },
@@ -267,9 +266,10 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'While you defend, you may spend your lock on the attacker to reroll any number of your defense dice.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r2ha.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2ha.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2ha.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2ha.png',
         slots: ['Astromech'],
       },
     ],
@@ -289,9 +289,10 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] or [Boost] action.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bb8.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bb8.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bb8.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bb8.png',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -325,9 +326,10 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'Before you execute a blue maneuver, you may spend 1 [Charge] to perform a [Barrel Roll] action.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bbastromech.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/bbastromech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bbastromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/bbastromech.png',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -361,9 +363,10 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/m9g8.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/m9g8.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/m9g8.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/m9g8.png',
         slots: ['Astromech'],
       },
     ],
@@ -383,10 +386,11 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         ability:
           'While you perform an attack, you may spend 1 evade token to change 1 [Focus] result to a [Hit] result.',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r2c4.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2c4.png',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2c4.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2c4.png',
       },
     ],
     cost: { value: 3 },
@@ -408,9 +412,9 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/r4pastromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4pastromech.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4pastromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4pastromech.png',
       },
     ],
     cost: { value: 2 },
@@ -431,9 +435,10 @@ const t: UpgradeBase[] = [
           'After you fully execute a red maneuver, you may spend 1 [Charge] to perform an action, even while stressed.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r4p17.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4p17.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4p17.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4p17.png',
       },
     ],
     cost: { value: 5 },
@@ -453,9 +458,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you fully execute a red maneuver, if there is an enemy ship in your [Bullseye Arc], gain 1 calculate token.',
         slots: ['Astromech'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r4p44.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4p44.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4p44.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4p44.png',
       },
     ],
     cost: { value: 2 },
@@ -476,8 +482,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2a6.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r2a6.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2a6.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2a6.png',
       },
     ],
     cost: { value: 6 },
@@ -494,8 +501,9 @@ const t: UpgradeBase[] = [
       {
         title: 'C1-10P',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c110p.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/c110p.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c110p.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c110p.png',
         ability:
           'Setup: Equip this side faceup. After you execute a maneuver, you may spend 1 [Charge] to perform a red [Evade] action, even while stressed. During the End Phase, if this card has 0 active [Charge], flip it.',
         slots: ['Astromech'],
@@ -505,8 +513,9 @@ const t: UpgradeBase[] = [
       {
         title: 'C1-10P (Erratic)',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c110p-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/c110p-sideb.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/c110p-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c110p-sideb.png',
         ability:
           'After you execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token.',
         slots: ['Astromech'],
@@ -532,8 +541,9 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r1j5.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r1j5.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r1j5.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r1j5.png',
       },
     ],
     cost: { value: 5 },
@@ -554,8 +564,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/q7astromech.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/q7astromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/q7astromech.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/q7astromech.png',
       },
     ],
     cost: {
@@ -579,15 +590,12 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-republic.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2d2-republic.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/r2d2-republic.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2d2-republic.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 2, '1': 4, '2': 6, '3': 8 },
-    },
+    cost: { variable: 'agility', values: { '0': 2, '1': 4, '2': 6, '3': 8 } },
     restrictions: [{ factions: ['Galactic Republic'] }],
     standard: true,
     wildspace: true,
@@ -606,9 +614,9 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 4, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-resistance.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r2d2-resistance.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/r2d2-resistance.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r2d2-resistance.png',
       },
     ],
     cost: { value: 6 },
@@ -629,8 +637,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r6d8.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r6d8.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r6d8.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r6d8.png',
       },
     ],
     cost: { value: 4 },
@@ -652,8 +661,9 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r7a7.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r7a7.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r7a7.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r7a7.png',
       },
     ],
     cost: { value: 3 },
@@ -674,8 +684,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4b11.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r4b11.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/r4b11.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/r4b11.png',
       },
     ],
     cost: { value: 3 },
@@ -696,9 +707,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/watchfulastromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/watchfulastromech.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/watchfulastromech.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/watchfulastromech.png',
       },
     ],
     cost: { value: 1 },
@@ -718,8 +729,9 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/l4er5.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/l4er5.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/l4er5.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/l4er5.png',
         grants: [
           {
             action: {

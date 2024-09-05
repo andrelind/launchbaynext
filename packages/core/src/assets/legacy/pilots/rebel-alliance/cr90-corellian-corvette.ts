@@ -45,9 +45,9 @@ const t: ShipType = {
       cost: 128,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/alderaanianguard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/alderaanianguard.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/alderaanianguard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/alderaanianguard.png',
       shipAbility: {
         name: 'Broadside Batteries',
         text: 'You can acquire locks and perform primary attacks at range 1-4.',

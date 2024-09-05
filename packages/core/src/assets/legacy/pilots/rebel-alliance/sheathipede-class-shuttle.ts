@@ -47,14 +47,14 @@ const t: ShipType = {
       ability:
         'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/zeborrelios-sheathipedeclassshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zeborrelios-sheathipedeclassshuttle.png',
       shipAbility: {
         name: 'Comms Shuttle',
         text: 'While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action.',
       },
       slots: ['Talent', 'Crew', 'Astromech', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zeborrelios-sheathipedeclassshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios-sheathipedeclassshuttle.png',
       standard: true,
       wildspace: true,
       keywords: ['Spectre'],
@@ -69,7 +69,8 @@ const t: ShipType = {
       xws: 'ap5',
       ability:
         'While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ap5.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ap5.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Coordinate' },
@@ -79,7 +80,8 @@ const t: ShipType = {
         text: 'While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action.',
       },
       slots: ['Talent', 'Crew', 'Astromech', 'Modification', 'Title'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ap5.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ap5.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid', 'Spectre'],
@@ -95,7 +97,7 @@ const t: ShipType = {
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade]/[Hit] results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/ezrabridger-sheathipedeclassshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ezrabridger-sheathipedeclassshuttle.png',
       force: { value: 1, recovers: 1, side: ['light'] },
       shipAbility: {
         name: 'Comms Shuttle',
@@ -103,7 +105,7 @@ const t: ShipType = {
       },
       slots: ['Force Power', 'Crew', 'Astromech', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger-sheathipedeclassshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-sheathipedeclassshuttle.png',
       standard: true,
       wildspace: true,
       keywords: ['Light Side', 'Spectre'],
@@ -119,14 +121,14 @@ const t: ShipType = {
       ability:
         'Before an enemy ship in your firing arc engages, if you are not stressed, you may gain 1 stress token. If you do, that ship cannot spend tokens to modify dice while it performs an attack during this phase.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/fennrau-sheathipedeclassshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fennrau-sheathipedeclassshuttle.png',
       shipAbility: {
         name: 'Comms Shuttle',
         text: 'While you are docked, your carrier ship gains [Coordinate]. Before your carrier ship activates, it may perform a [Coordinate] action.',
       },
       slots: ['Talent', 'Crew', 'Astromech', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-sheathipedeclassshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau-sheathipedeclassshuttle.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian', 'Spectre'],

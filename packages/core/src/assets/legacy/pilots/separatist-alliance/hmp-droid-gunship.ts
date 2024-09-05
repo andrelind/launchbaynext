@@ -58,8 +58,9 @@ const t: ShipType = {
       ],
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dgs047.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dgs047.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dgs047.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dgs047.png',
       shipAbility: {
         name: 'Networked Aim',
         text: 'You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender.',
@@ -87,8 +88,9 @@ const t: ShipType = {
       ],
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/baktoiddrone.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/baktoiddrone.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoiddrone.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baktoiddrone.png',
       shipAbility: {
         name: 'Networked Aim',
         text: 'You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender.',
@@ -116,9 +118,9 @@ const t: ShipType = {
       ],
       limited: 2,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/geonosianprototype.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/geonosianprototype.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/geonosianprototype.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/geonosianprototype.png',
       shipAbility: {
         name: 'Networked Aim',
         text: 'You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender.',
@@ -147,8 +149,9 @@ const t: ShipType = {
       ],
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dgs286.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dgs286.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dgs286.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dgs286.png',
       shipAbility: {
         name: 'Networked Aim',
         text: 'You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender.',
@@ -177,9 +180,9 @@ const t: ShipType = {
       ],
       limited: 2,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/onderonoppressor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onderonoppressor.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/onderonoppressor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onderonoppressor.png',
       shipAbility: {
         name: 'Networked Aim',
         text: 'You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender.',
@@ -214,9 +217,9 @@ const t: ShipType = {
         'Tactical Relay',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistpredator.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistpredator.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/separatistpredator.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistpredator.png',
       keywords: ['Droid'],
       epic: true,
     },

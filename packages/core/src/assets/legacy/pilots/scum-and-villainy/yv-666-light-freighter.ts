@@ -45,7 +45,8 @@ const t: ShipType = {
       xws: 'bossk',
       ability:
         'While you perform a primary attack, after the Neutralize Results step, you may spend 1 [Critical Hit] result to add 2 [Hit] results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/bossk.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bossk.png',
       slots: [
         'Talent',
         'Cannon',
@@ -57,7 +58,8 @@ const t: ShipType = {
         'Title',
         'Gunner',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bossk.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bossk.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Freighter'],
@@ -72,7 +74,8 @@ const t: ShipType = {
       xws: 'lattsrazzi',
       ability:
         'At the start of the Engagement Phase, you may choose a ship at range 1 and spend a lock you have on that ship. If you do, that ship gains 1 tractor token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lattsrazzi.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lattsrazzi.png',
       slots: [
         'Talent',
         'Cannon',
@@ -85,7 +88,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lattsrazzi.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lattsrazzi.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Freighter'],
@@ -100,7 +103,8 @@ const t: ShipType = {
       xws: 'moraloeval',
       ability:
         'If you would flee, you may spend 1 [Charge]. If you do, place yourself in reserves instead. At the start of the next Planning Phase, place yourself within range 1 of the edge of the play area that you fled from.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/moraloeval.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/moraloeval.png',
       charges: { value: 2, recovers: 0 },
       slots: [
         'Talent',
@@ -114,7 +118,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/moraloeval.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/moraloeval.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -128,7 +132,7 @@ const t: ShipType = {
       xws: 'trandoshanslaver',
       text: 'The spacious triple-decker design of the YV-666 makes it popular among bounty hunters and slavers, who often retrofit an entire deck for prisoner transport.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/trandoshanslaver.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/trandoshanslaver.png',
       slots: [
         'Cannon',
         'Missile',
@@ -140,7 +144,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/trandoshanslaver.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/trandoshanslaver.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -155,9 +159,10 @@ const t: ShipType = {
       xws: 'doctoraphra',
       ability:
         'Before you engage, you may spend 1 green token and 1 [Charge]. If you do, you may choose another ship at range 0-1 that is not stressed. The chosen ship gains 1 stress token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/doctoraphra.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/doctoraphra.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/doctoraphra.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/doctoraphra.png',
       charges: { value: 3, recovers: 0 },
       slots: [
         'Talent',

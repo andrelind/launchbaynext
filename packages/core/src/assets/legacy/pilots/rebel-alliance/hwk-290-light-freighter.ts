@@ -55,7 +55,8 @@ const t: ShipType = {
       xws: 'janors',
       ability:
         'While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may gain 1 stress token. If you do, that ship may roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/janors.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/janors.png',
       slots: [
         'Talent',
         'Crew',
@@ -65,7 +66,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/janors.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/janors.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -80,7 +81,8 @@ const t: ShipType = {
       xws: 'kylekatarn',
       ability:
         'At the start of the Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kylekatarn.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kylekatarn.png',
       slots: [
         'Talent',
         'Crew',
@@ -90,7 +92,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kylekatarn.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kylekatarn.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -103,10 +105,11 @@ const t: ShipType = {
       cost: 26,
       xws: 'rebelscout',
       text: 'Designed to look like a bird in flight by the Corellian Engineering Corporation, “hawk” series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/rebelscout.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rebelscout.png',
       slots: ['Crew', 'Device', 'Modification', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rebelscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rebelscout.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -121,7 +124,8 @@ const t: ShipType = {
       xws: 'roarkgarnet',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, it engages at initiative 7 instead of its standard initiative value this phase.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/roarkgarnet.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/roarkgarnet.png',
       slots: [
         'Talent',
         'Crew',
@@ -131,7 +135,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/roarkgarnet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/roarkgarnet.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],

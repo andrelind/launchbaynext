@@ -60,7 +60,8 @@ const t: ShipType = {
       xws: 'corranhorn',
       ability:
         'At initiative 0, you may perform a bonus primary attack against an enemy ship in your [Bullseye Arc]. If you do, at the start of the next Planning Phase, gain 1 disarm token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/corranhorn.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/corranhorn.png',
       shipAbility: {
         name: 'Experimental Scanners',
         text: 'You can acquire locks beyond range 3. You cannot acquire locks at range 1.',
@@ -74,7 +75,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/corranhorn.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -89,7 +90,7 @@ const t: ShipType = {
       ability:
         'While a friendly ship performs an attack, if the defender is in your [Front Arc], the attacker may change 1 [Hit] result to a [Critical Hit] result.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/gavindarklighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gavindarklighter.png',
       shipAbility: {
         name: 'Experimental Scanners',
         text: 'You can acquire locks beyond range 3. You cannot acquire locks at range 1.',
@@ -103,7 +104,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gavindarklighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gavindarklighter.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -116,14 +117,14 @@ const t: ShipType = {
       xws: 'knavesquadronescort',
       text: 'Designed to combine the best features of the X-wing series with the A-wing series, the E-wing boasts superior firepower, speed, and maneuverability.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/knavesquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/knavesquadronescort.png',
       shipAbility: {
         name: 'Experimental Scanners',
         text: 'You can acquire locks beyond range 3. You cannot acquire locks at range 1.',
       },
       slots: ['Sensor', 'Tech', 'Torpedo', 'Astromech', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/knavesquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/knavesquadronescort.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -136,7 +137,7 @@ const t: ShipType = {
       xws: 'roguesquadronescort',
       text: "The elite pilots of Rogue Squadron are among the Rebellion's very best.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/roguesquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/roguesquadronescort.png',
       shipAbility: {
         name: 'Experimental Scanners',
         text: 'You can acquire locks beyond range 3. You cannot acquire locks at range 1.',
@@ -150,7 +151,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/roguesquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/roguesquadronescort.png',
       standard: true,
       wildspace: true,
       epic: true,

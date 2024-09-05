@@ -55,8 +55,9 @@ const t: ShipType = {
       ],
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/agentterex.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/agentterex.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/agentterex.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/agentterex.png',
       ability:
         'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
       standard: true,
@@ -72,9 +73,9 @@ const t: ShipType = {
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       limited: 1,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/commandermalarus-xiclasslightshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/commandermalarus-xiclasslightshuttle.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/commandermalarus-xiclasslightshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandermalarus-xiclasslightshuttle.png',
       ability:
         'While a friendly ship at range 0-2 performs a primary attack, before the Modify Dice step, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.',
       standard: true,
@@ -89,9 +90,9 @@ const t: ShipType = {
       slots: ['Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstordercourier.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordercourier.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/firstordercourier.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordercourier.png',
       text: 'The First Order lurks in many bases hidden in shadowy corners of the galaxy, slowly spreading its insidious influence.',
       standard: true,
       wildspace: true,
@@ -110,9 +111,9 @@ const t: ShipType = {
       cost: 40,
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask-xiclasslightshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask-xiclasslightshuttle.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/gideonhask-xiclasslightshuttle.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask-xiclasslightshuttle.png',
       epic: true,
     },
     {
@@ -129,8 +130,9 @@ const t: ShipType = {
       cost: 49,
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/agenttierny.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/agenttierny.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/agenttierny.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/agenttierny.png',
       epic: true,
     },
   ],

@@ -50,13 +50,14 @@ const t: ShipType = {
       limited: 1,
       ability:
         'After you perform a [Barrel Roll] action, you may perform a red [Lock] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kickback.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback.png',
       standard: true,
       wildspace: true,
       cost: 27,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kickback.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -68,13 +69,14 @@ const t: ShipType = {
       limited: 1,
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/oddball.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball.png',
       standard: true,
       wildspace: true,
       cost: 29,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -86,12 +88,14 @@ const t: ShipType = {
       limited: 1,
       ability:
         'After a friendly small or medium ship fully executes a speed 3-4 maneuver, if it is at range 0-1, it may perform a red [Boost] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/swoop.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/swoop.png',
       standard: true,
       wildspace: true,
       cost: 27,
       slots: ['Missile', 'Modification'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/swoop.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/swoop.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -103,12 +107,14 @@ const t: ShipType = {
       limited: 1,
       ability:
         'After you defend or perform an attack, you may choose a friendly ship at range 1-2 in your [Left Arc] or [Right Arc]. If you do, transfer 1 green token to that ship.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/axe.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe.png',
       standard: true,
       wildspace: true,
       cost: 26,
       slots: ['Talent', 'Missile', 'Modification'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/axe.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -120,13 +126,14 @@ const t: ShipType = {
       limited: 1,
       ability:
         'After a friendly ship at range 1-2 performs an attack against an enemy ship in your [Front Arc], you may perform a [Focus] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/tucker.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tucker.png',
       standard: true,
       wildspace: true,
       cost: 26,
       slots: ['Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tucker.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tucker.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -137,13 +144,13 @@ const t: ShipType = {
       limited: 0,
       text: "Blue Squadron's elite clone pilots are trained to fly their V-19s in conjunction with Jedi and often support famous commanders such as Anakin Skywalker and Ahsoka Tano.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronprotector.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronprotector.png',
       standard: true,
       wildspace: true,
       cost: 26,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronprotector.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronprotector.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -154,13 +161,13 @@ const t: ShipType = {
       limited: 0,
       text: 'The V-19 Torrent starfighter was designed to be a light escort to nimble Delta-7 interceptors flown by Jedi Knights, and has a unique flight profile to reflect this role.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/goldsquadrontrooper.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/goldsquadrontrooper.png',
       standard: true,
       wildspace: true,
       cost: 25,
       slots: ['Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/goldsquadrontrooper.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goldsquadrontrooper.png',
       keywords: ['Clone'],
       epic: true,
     },
@@ -178,9 +185,9 @@ const t: ShipType = {
       ability:
         'After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/kickback-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback-siegeofcoruscant.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kickback.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback-siegeofcoruscant.png',
       standardLoadout: ['diamondboronmissiles', 'munitionsfailsafe'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
@@ -206,9 +213,9 @@ const t: ShipType = {
       ability:
         'After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/kickback-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback-siegeofcoruscant-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kickback.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Missile'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
@@ -234,8 +241,9 @@ const t: ShipType = {
       ability:
         'After you perform an attack, you may choose another friendly ship with the Born for This ability at range 0-2 in your [Left Arc] or [Right Arc]. The chosen ship gains a lock on the defender.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/axe-siegeofcoruscant.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/axe.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe-siegeofcoruscant.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe-siegeofcoruscant.png',
       standardLoadout: ['deadeyeshot', 'barragerockets'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
@@ -261,8 +269,9 @@ const t: ShipType = {
       ability:
         'After you perform an attack, you may choose another friendly ship with the Born for This ability at range 0-2 in your [Left Arc] or [Right Arc]. The chosen ship gains a lock on the defender.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/axe-siegeofcoruscant.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/axe.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe-siegeofcoruscant-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Missile'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
@@ -288,8 +297,9 @@ const t: ShipType = {
       cost: 34,
       slots: ['Missile', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/slammer.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/slammer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/slammer.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/slammer.png',
       keywords: ['Clone'],
       epic: true,
     },

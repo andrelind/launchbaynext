@@ -49,9 +49,9 @@ const t: ShipType = {
         'While another friendly ship at range 0-1 defends, before the Neutralize Results step, if you are in the attack arc, you may suffer 1 [Hit] or [Critical Hit] damage to cancel 1 matching result.',
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/biggsdarklighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/biggsdarklighter.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -65,9 +65,9 @@ const t: ShipType = {
       xws: 'bluesquadronescort',
       text: 'Designed by Incom Corporation, the T-65 X-wing quickly proved to be one of the most effective and versatile military vehicles in the galaxy and a boon to the Rebellion.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronescort.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronescort.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronescort.png',
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       standard: true,
       wildspace: true,
@@ -89,9 +89,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/cavernangelszealot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cavernangelszealot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cavernangelszealot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cavernangelszealot.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
@@ -106,7 +106,8 @@ const t: ShipType = {
       xws: 'edriotwotubes',
       ability:
         'Before you activate, if you are focused, you may perform an action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/edriotwotubes.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/edriotwotubes.png',
       slots: [
         'Torpedo',
         'Astromech',
@@ -115,7 +116,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/edriotwotubes.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/edriotwotubes.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
@@ -131,7 +132,7 @@ const t: ShipType = {
       ability:
         'After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/garvendreis-t65xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis-t65xwing.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -140,7 +141,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-t65xwing.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -162,9 +163,10 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/jekporkins.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -179,7 +181,8 @@ const t: ShipType = {
       xws: 'kullbeesperado',
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may flip your equipped [Configuration] upgrade card.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kullbeesperado.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kullbeesperado.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -189,7 +192,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kullbeesperado.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kullbeesperado.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
@@ -204,7 +207,8 @@ const t: ShipType = {
       xws: 'leevantenza',
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may perform a red [Evade] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/leevantenza.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leevantenza.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -214,7 +218,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/leevantenza.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leevantenza.png',
       standard: true,
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
@@ -229,7 +233,8 @@ const t: ShipType = {
       xws: 'lukeskywalker',
       ability:
         'After you become the defender (before dice are rolled), you may recover 1 [Force].',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lukeskywalker.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker.png',
       force: { value: 2, recovers: 1, side: ['light'] },
       slots: [
         'Force Power',
@@ -239,7 +244,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker.png',
       standard: true,
       wildspace: true,
       keywords: ['Light Side', 'X-wing'],
@@ -260,9 +265,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/redsquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redsquadronveteran.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redsquadronveteran.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -277,7 +282,8 @@ const t: ShipType = {
       xws: 'thanekyrell',
       ability:
         "While you perform an attack, you may spend 1 [Focus], [Hit], or [Critical Hit] result to look at the defender's facedown damage cards, choose 1, and expose it.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/thanekyrell.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/thanekyrell.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -286,7 +292,7 @@ const t: ShipType = {
         'Configuration',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/thanekyrell.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/thanekyrell.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -308,9 +314,10 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/wedgeantilles.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -336,9 +343,9 @@ const t: ShipType = {
         'r2f2-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/biggsdarklighter-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/biggsdarklighter-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -359,9 +366,9 @@ const t: ShipType = {
       },
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/biggsdarklighter-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/biggsdarklighter-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -382,9 +389,9 @@ const t: ShipType = {
       },
       standardLoadout: ['advprotontorpedoes', 'r5k6-battleofyavin'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/garvendreis-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -405,9 +412,9 @@ const t: ShipType = {
       },
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/garvendreis-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -432,9 +439,9 @@ const t: ShipType = {
         'unstablesublightengines-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -455,9 +462,9 @@ const t: ShipType = {
       },
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -484,9 +491,9 @@ const t: ShipType = {
         'r2d2-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -514,9 +521,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -542,9 +549,9 @@ const t: ShipType = {
         'r2a3-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -565,9 +572,9 @@ const t: ShipType = {
       },
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -590,9 +597,9 @@ const t: ShipType = {
         'Configuration',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/corranhorn-t65xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/corranhorn-t65xwing.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn-t65xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/corranhorn-t65xwing.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -615,9 +622,10 @@ const t: ShipType = {
         'Modification',
         'Configuration',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/wesjanson.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wesjanson.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wesjanson.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wesjanson.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -635,8 +643,9 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       standardLoadout: ['instinctiveaim', 'protontorpedoes', 'r2d2'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-swz106.png',
-      artwork: '',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lukeskywalker-swz106.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-swz106.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -653,8 +662,9 @@ const t: ShipType = {
         'After you receive a stress token, you may roll 1 attack die to remove it. On a [Hit] result, suffer 1 [Hit] damage.',
       standardLoadout: ['predator', 'protontorpedoes', 'r5d8-battleofyavin'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-swz106.png',
-      artwork: '',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jekporkins-swz106.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-swz106.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -699,9 +709,9 @@ const t: ShipType = {
         'r2a3-battleoverendor',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleoverendor.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -741,9 +751,9 @@ const t: ShipType = {
       ],
       slots: ['Talent', 'Torpedo', 'Astromech'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -782,9 +792,9 @@ const t: ShipType = {
         'stabilizingastromech-battleoverendor',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/yendor-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yendor-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/yendor-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yendor-battleoverendor.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -819,9 +829,9 @@ const t: ShipType = {
       ],
       slots: ['Talent', 'Torpedo', 'Astromech', 'Modification'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/yendor-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yendor-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/yendor-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yendor-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -861,9 +871,9 @@ const t: ShipType = {
         'chaffparticles-battleoverendor',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/kendyidele-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kendyidele-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kendyidele-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kendyidele-battleoverendor.png',
       standard: false,
       wildspace: true,
       keywords: ['X-wing'],
@@ -898,9 +908,9 @@ const t: ShipType = {
       ],
       slots: ['Talent', 'Torpedo', 'Astromech', 'Modification'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/kendyidele-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kendyidele-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kendyidele-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kendyidele-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],

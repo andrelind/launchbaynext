@@ -55,14 +55,15 @@ const t: ShipType = {
       xws: 'fennrau',
       ability:
         'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/fennrau.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fennrau.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -77,14 +78,15 @@ const t: ShipType = {
       xws: 'joyrekkoff',
       ability:
         'While you perform an attack, you may spend 1 [Charge] from an equipped [Torpedo] upgrade. If you do, the defender rolls 1 fewer defense die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/joyrekkoff.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/joyrekkoff.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/joyrekkoff.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/joyrekkoff.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -98,14 +100,15 @@ const t: ShipType = {
       cost: 48,
       xws: 'kadsolus',
       ability: 'After you fully execute a red maneuver, gain 2 focus tokens.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kadsolus.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kadsolus.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kadsolus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kadsolus.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -120,14 +123,15 @@ const t: ShipType = {
       xws: 'oldteroch',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship at range 1. If you do and you are in its [Front Arc], it removes all of its green tokens.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/oldteroch.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oldteroch.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oldteroch.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oldteroch.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -141,14 +145,14 @@ const t: ShipType = {
       xws: 'skullsquadronpilot',
       text: "The aces of Skull Squadron favor an aggressive approach, using their craft's pivot wing technology to achieve unmatched agility in the pursuit of their quarry.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/skullsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/skullsquadronpilot.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/skullsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/skullsquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -161,14 +165,15 @@ const t: ShipType = {
       cost: 41,
       xws: 'zealousrecruit',
       text: "Mandalorian Fang fighter pilots must master the Concordia Faceoff maneuver, leveraging their ships' narrow attack profile to execute deadly head-on charges.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/zealousrecruit.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zealousrecruit.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zealousrecruit.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zealousrecruit.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -183,14 +188,14 @@ const t: ShipType = {
       ability:
         'While a friendly non-small ship defends, if you are in the attack arc, you may gain 1 deplete and 1 strain token. If you do, the defender may change 1 result to an [Evade] result.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/mandalorianroyalguard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mandalorianroyalguard.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianroyalguard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mandalorianroyalguard.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian'],
@@ -206,9 +211,10 @@ const t: ShipType = {
       xws: 'torphun',
       ability:
         'After you perform an attack, if the defender was destroyed, you may perform an action, even while stressed. Then you may gain 2 strain tokens to perform a bonus attack.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/torphun.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/torphun.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/torphun.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",

@@ -51,9 +51,10 @@ const t: ShipType = {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/poedameron.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/poedameron.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/poedameron.png',
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -93,9 +94,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/poedameron-swz68.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/poedameron-swz68.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-swz68.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/poedameron-swz68.png',
       keywords: ['X-wing'],
       epic: true,
     },
@@ -111,9 +112,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronrookie.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronrookie.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronrookie.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronrookie.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
       wildspace: true,
@@ -132,9 +133,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/redsquadronexpert.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redsquadronexpert.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronexpert.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redsquadronexpert.png',
       slots: [
         'Talent',
         'Astromech',
@@ -160,9 +161,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksquadronace-t70xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksquadronace-t70xwing.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace-t70xwing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksquadronace-t70xwing.png',
       slots: [
         'Talent',
         'Astromech',
@@ -197,9 +198,10 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/elloasty.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/elloasty.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/elloasty.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/elloasty.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -225,9 +227,10 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/jophseastriker.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jophseastriker.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jophseastriker.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jophseastriker.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -254,9 +257,10 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/karekun.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/karekun.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/karekun.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/karekun.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -276,9 +280,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantbastian.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantbastian.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantbastian.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantbastian.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
       wildspace: true,
@@ -306,9 +310,10 @@ const t: ShipType = {
         'Configuration',
         'Tech',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/niennunb.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/niennunb.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/niennunb.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/niennunb.png',
       standard: true,
       wildspace: true,
       keywords: ['X-wing'],
@@ -327,9 +332,10 @@ const t: ShipType = {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/jaycristubbs.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jaycristubbs.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jaycristubbs.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jaycristubbs.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
       wildspace: true,
@@ -350,9 +356,10 @@ const t: ShipType = {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/jessikapava.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jessikapava.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jessikapava.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jessikapava.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
       wildspace: true,
@@ -372,9 +379,10 @@ const t: ShipType = {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/temminwexley.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/temminwexley.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/temminwexley.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/temminwexley.png',
       slots: [
         'Talent',
         'Astromech',
@@ -412,9 +420,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/temminwexley-swz68.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/temminwexley-swz68.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/temminwexley-swz68.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/temminwexley-swz68.png',
       keywords: ['X-wing'],
       epic: true,
     },
@@ -441,16 +449,16 @@ const t: ShipType = {
       ],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/caithrenalli.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caithrenalli.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caithrenalli.png',
       keywords: ['X-wing'],
       epic: true,
     },
     {
       name: 'Nimi Chireen',
       caption: 'Hopeful Hero',
-
       initiative: 2,
       limited: 1,
       xws: 'nimichireen',
@@ -464,9 +472,10 @@ const t: ShipType = {
       slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/nimichireen.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nimichireen.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nimichireen.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nimichireen.png',
       keywords: ['X-wing'],
       epic: true,
     },
@@ -493,9 +502,10 @@ const t: ShipType = {
       ],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/venisadoza.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/venisadoza.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/venisadoza.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/venisadoza.png',
       keywords: ['X-wing'],
       epic: true,
     },
@@ -522,9 +532,10 @@ const t: ShipType = {
       ],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/zayversio.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zayversio.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zayversio.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zayversio.png',
       keywords: ['X-wing'],
       epic: true,
     },

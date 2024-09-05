@@ -61,9 +61,10 @@ const t: ShipType = {
       ability:
         'After a ship at range 1 performs an action during its Perform Action step, if that action is on your action bar, you may spend 1 [Charge] to perform that action, treating it as red.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zoriibliss.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zoriibliss.png',
       charges: { value: 1, recovers: 1 },
-      image: 'https://infinitearenas.com/xw2/images/pilots/zoriibliss.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zoriibliss.png',
       caption: 'Corsair of Kijimi',
       keywords: ['Y-wing'],
       epic: true,
@@ -93,8 +94,9 @@ const t: ShipType = {
       ability:
         'While a friendly ship at range 0-2 performs an attack, if the defender has a ship friendly to the attacker in each of its side arcs ([Left Arc] and [Right Arc]), the attacker may reroll 1 attack die.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tezanasz.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/tezanasz.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tezanasz.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tezanasz.png',
       caption: 'Old Soldier',
       keywords: ['Y-wing'],
       epic: true,
@@ -123,8 +125,9 @@ const t: ShipType = {
       ability:
         'After you perform an attack, if the defender was dealt a faceup damage card, the defender gains 1 strain token unless it chooses 1 non-recurring [Charge] from 1 of its equipped upgrades and loses that [Charge].',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wilsateshlo.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/wilsateshlo.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wilsateshlo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wilsateshlo.png',
       caption: 'Veiled Sorority Privateer',
       keywords: ['Y-wing'],
       epic: true,
@@ -153,8 +156,9 @@ const t: ShipType = {
       ability:
         'After you defend, you may choose a friendly ship in your [Full Rear Arc] at range 0-2 and 1 of your green tokens. If you do, that ship gains a matching token.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shasazaro.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/shasazaro.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shasazaro.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shasazaro.png',
       caption: 'Artistic Ace',
       keywords: ['Y-wing'],
       epic: true,
@@ -184,8 +188,9 @@ const t: ShipType = {
       ability:
         'While you perform a primary or [Turret] attack, you may reroll 1 attack die for each friendly device or calculating friendly ship in the attack arc.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/legafossang.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/legafossang.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/legafossang.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/legafossang.png',
       caption: 'Hero of Humbarine',
       keywords: ['Y-wing'],
       epic: true,
@@ -215,8 +220,9 @@ const t: ShipType = {
       ability:
         'After you execute a red basic maneuver or perform a red action, if you have exactly 1 stress token, you may gain 1 strain token to remove that stress token.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/aftabackbar.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/aftabackbar.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/aftabackbar.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/aftabackbar.png',
       caption: '“Junior”',
       keywords: ['Y-wing'],
       epic: true,
@@ -245,8 +251,9 @@ const t: ShipType = {
       ability:
         'Before you engage, you may choose 1 ship in your firing arc at range 0-1. If you do, transfer 1 green token from that ship to yourself.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/coruskapellim.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/coruskapellim.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coruskapellim.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/coruskapellim.png',
       caption: '“Gentleman Flyer”',
       keywords: ['Y-wing'],
       epic: true,
@@ -276,9 +283,9 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver, if you moved through a friendly ship, you may perform an [Evade] action.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli-btanr2ywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caithrenalli-btanr2ywing.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/caithrenalli-btanr2ywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caithrenalli-btanr2ywing.png',
       caption: 'Tenacious Survivor',
       keywords: ['Y-wing'],
       epic: true,
@@ -307,9 +314,9 @@ const t: ShipType = {
       ],
       text: 'Designed for customization, the BTA-NR2 Y-wing is used by numerous military organizations across the galaxy in a variety of roles, from law enforcement craft to wartime bombers.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/newrepublicpatrol.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/newrepublicpatrol.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/newrepublicpatrol.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/newrepublicpatrol.png',
       keywords: ['Y-wing'],
       epic: true,
     },
@@ -336,9 +343,9 @@ const t: ShipType = {
       ],
       text: 'Led by Zorii Bliss, the Kijimi Spice Runners set aside their usual mercenary ways to take the fight to the Final Order at the Battle of Exegol.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kijimispicerunner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kijimispicerunner.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/kijimispicerunner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kijimispicerunner.png',
       keywords: ['Y-wing'],
       epic: true,
     },

@@ -47,14 +47,15 @@ const t: ShipType = {
       xws: 'constablezuvio',
       ability:
         'If you would drop a device, you may launch it using a [1 [Straight]] template instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/constablezuvio.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/constablezuvio.png',
       shipAbility: {
         name: 'Spacetug Tractor Array',
         text: 'Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1.',
       },
       slots: ['Talent', 'Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/constablezuvio.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/constablezuvio.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -66,14 +67,15 @@ const t: ShipType = {
       cost: 28,
       xws: 'jakkugunrunner',
       text: 'The Quadrijet transfer spacetug, commonly called a “Quadjumper,” is nimble in space and atmosphere alike, making it popular among both smugglers and explorers.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/jakkugunrunner.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jakkugunrunner.png',
       shipAbility: {
         name: 'Spacetug Tractor Array',
         text: 'Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1.',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jakkugunrunner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakkugunrunner.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -87,14 +89,15 @@ const t: ShipType = {
       xws: 'sarcoplank',
       ability:
         'While you defend, you may treat your agility value as equal to the speed of the maneuver you executed this round.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sarcoplank.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sarcoplank.png',
       shipAbility: {
         name: 'Spacetug Tractor Array',
         text: 'Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1.',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sarcoplank.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sarcoplank.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -109,14 +112,15 @@ const t: ShipType = {
       xws: 'unkarplutt',
       ability:
         'At the start of the Engagement Phase, if there are one or more other ships at range 0, you and each other ship at range 0 gain 1 tractor token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/unkarplutt.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/unkarplutt.png',
       shipAbility: {
         name: 'Spacetug Tractor Array',
         text: 'Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1.',
       },
       slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/unkarplutt.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/unkarplutt.png',
       standard: true,
       wildspace: true,
       epic: true,

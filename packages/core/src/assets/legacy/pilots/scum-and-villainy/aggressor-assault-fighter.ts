@@ -48,7 +48,8 @@ const t: ShipType = {
       xws: 'ig88a',
       ability:
         'At the start of the Engagement Phase, you may choose 1 friendly ship with [Calculate] on its action bar at range 1-3. If you do, transfer 1 of your calculate tokens to it.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig88a.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig88a.png',
       shipAbility: {
         name: 'Advanced Droid Brain',
         text: 'After you perform a [Calculate] action, gain 1 calculate token.',
@@ -63,7 +64,8 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig88a.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88a.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
@@ -78,7 +80,8 @@ const t: ShipType = {
       xws: 'ig88b',
       ability:
         'After you perform an attack that misses, you may perform a bonus [Cannon] attack.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig88b.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig88b.png',
       shipAbility: {
         name: 'Advanced Droid Brain',
         text: 'After you perform a [Calculate] action, gain 1 calculate token.',
@@ -93,7 +96,8 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig88b.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88b.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
@@ -108,7 +112,8 @@ const t: ShipType = {
       xws: 'ig88c',
       ability:
         'After you perform a [Boost] action, you may perform an [Evade] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig88c.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig88c.png',
       shipAbility: {
         name: 'Advanced Droid Brain',
         text: 'After you perform a [Calculate] action, gain 1 calculate token.',
@@ -123,7 +128,8 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig88c.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88c.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
@@ -138,7 +144,8 @@ const t: ShipType = {
       xws: 'ig88d',
       ability:
         "While you execute a Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuver, you may use another template of the same speed instead: either the turn ([Turn Left] or [Turn Right]) of the same direction or the straight ([Straight]) template.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig88d.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig88d.png',
       shipAbility: {
         name: 'Advanced Droid Brain',
         text: 'After you perform a [Calculate] action, gain 1 calculate token.',
@@ -153,7 +160,8 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig88d.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88d.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],

@@ -47,8 +47,10 @@ const t: ShipType = {
       slots: ['Talent', 'Tech', 'Crew', 'Modification'],
       ability:
         'During the System Phase, you may perform a red [Barrel Roll] or [Boost] action.',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bb8.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/bb8.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bb8.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bb8.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'Red', type: 'Lock' },
@@ -72,8 +74,9 @@ const t: ShipType = {
       ability:
         'While you defend or perform an attack, you may reroll up to 1 of your results for each other friendly ship in the attack arc.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rosetico.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/rosetico.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rosetico.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rosetico.png',
       epic: true,
     },
     {
@@ -90,8 +93,9 @@ const t: ShipType = {
         'Setup: After placing forces, assign the Compromising Intel condition to 1 enemy ship.',
       conditions: ['compromisingintel'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vimoradi.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/vimoradi.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vimoradi.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vimoradi.png',
       epic: true,
     },
     {
@@ -106,8 +110,10 @@ const t: ShipType = {
       slots: ['Talent', 'Tech', 'Crew', 'Modification'],
       ability:
         'While you defend or perform an attack, you may add 1 blank result, or you may gain 1 strain token to add 1 focus result instead.',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/finn.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/finn.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/finn.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/finn.png',
       epic: true,
     },
   ],

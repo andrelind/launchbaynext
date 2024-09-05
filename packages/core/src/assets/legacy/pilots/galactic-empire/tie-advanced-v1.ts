@@ -58,10 +58,10 @@ const t: ShipType = {
       xws: 'baronoftheempire',
       text: "Sienar Fleet System's TIE Advanced v1 is a groundbreaking starfighter design, featuring upgraded engines, a missile launcher, and folding s-foils.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/baronoftheempire.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/baronoftheempire.png',
       slots: ['Talent', 'Sensor', 'Missile'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/baronoftheempire.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baronoftheempire.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -76,11 +76,12 @@ const t: ShipType = {
       xws: 'grandinquisitor',
       ability:
         'While you defend at attack range 1, you may spend 1 [Force] to prevent the range 1 bonus. While you perform an attack against a defender at attack range 2-3, you may spend 1 [Force] to apply the range 1 bonus.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/grandinquisitor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/grandinquisitor.png',
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/grandinquisitor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/grandinquisitor.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
@@ -93,11 +94,12 @@ const t: ShipType = {
       cost: 38,
       xws: 'inquisitor',
       text: "The fearsome Inquisitors are given a great deal of autonomy and access to the Empire's latest technology, like the prototype TIE Advanced v1.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/inquisitor.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/inquisitor.png',
       force: { value: 1, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/inquisitor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/inquisitor.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
@@ -112,11 +114,12 @@ const t: ShipType = {
       xws: 'seventhsister',
       ability:
         'While you perform a primary attack, before the Neutralize Results step, you may spend 2 [Force] to cancel 1 [Evade] result.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/seventhsister.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/seventhsister.png',
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Sensor', 'Missile', 'Force Power'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/seventhsister.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seventhsister.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
@@ -134,8 +137,9 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: ['Force Power', 'Sensor', 'Missile'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fifthbrother.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/fifthbrother.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fifthbrother.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fifthbrother.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],

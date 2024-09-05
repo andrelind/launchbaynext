@@ -14,9 +14,9 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/ablativeplating.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ablativeplating.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ablativeplating.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ablativeplating.png',
       },
     ],
     cost: { value: 3 },
@@ -37,9 +37,9 @@ const t: UpgradeBase[] = [
           'After you perform a [SLAM] action, if you fully executed the maneuver, you may perform a white action on your action bar, treating that action as red.',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/advancedslam.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/advancedslam.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/advancedslam.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/advancedslam.png',
       },
     ],
     cost: { value: 3 },
@@ -61,9 +61,9 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/afterburners.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/afterburners.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/afterburners.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/afterburners.png',
       },
     ],
     cost: {
@@ -87,9 +87,9 @@ const t: UpgradeBase[] = [
           'During the End Phase, you may suffer 1 [Hit] damage to remove 1 red token.',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/electronicbaffle.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/electronicbaffle.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/electronicbaffle.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/electronicbaffle.png',
       },
     ],
     cost: { value: 2 },
@@ -108,16 +108,11 @@ const t: UpgradeBase[] = [
         text: 'Large military forces such as the Galactic Empire have standardized engines, but individual pilots and small organizations often replace the power couplings, add thrusters, or use high-performance fuel to get extra push out of their engines.',
         slots: ['Modification'],
         actions: [{ type: 'Boost', difficulty: 'White' }],
-        grants: [
-          {
-            action: { type: 'Boost', difficulty: 'White' },
-            value: 1,
-          },
-        ],
+        grants: [{ action: { type: 'Boost', difficulty: 'White' }, value: 1 }],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/engineupgrade.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/engineupgrade.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/engineupgrade.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/engineupgrade.png',
       },
     ],
     cost: {
@@ -140,15 +135,13 @@ const t: UpgradeBase[] = [
         text: 'For those who cannot afford an enhanced shield generator, bolting additional plates onto the hull of a ship can serve as an adequate substitute.',
         slots: ['Modification'],
         grants: [{ stat: 'hull', value: 1 }],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/hullupgrade.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hullupgrade.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hullupgrade.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hullupgrade.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 2, '1': 3, '2': 5, '3': 7 },
-    },
+    cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 5, '3': 7 } },
     standard: true,
     wildspace: true,
     epic: true,
@@ -165,9 +158,9 @@ const t: UpgradeBase[] = [
           'While you perform a [Torpedo] or [Missile] attack, after rolling attack dice, you may cancel all dice results to recover 1 [Charge] you spent as a cost for the attack.',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/munitionsfailsafe.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/munitionsfailsafe.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/munitionsfailsafe.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/munitionsfailsafe.png',
       },
     ],
     cost: { value: 1 },
@@ -187,15 +180,12 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         grants: [{ stat: 'shields', value: 1 }],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/shieldupgrade.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shieldupgrade.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/shieldupgrade.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/shieldupgrade.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 3, '1': 4, '2': 6, '3': 8 },
-    },
+    cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 6, '3': 8 } },
     standard: true,
     wildspace: true,
     epic: true,
@@ -212,9 +202,9 @@ const t: UpgradeBase[] = [
           'Before you would gain 1 ion or jam token, if you are not stressed, you may choose another ship at range 0-1 and gain 1 stress token. If you do, the chosen ship gains that ion or jam token instead, then you suffer 1 [Hit] damage.',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/staticdischargevanes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/staticdischargevanes.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/staticdischargevanes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/staticdischargevanes.png',
       },
     ],
     cost: { value: 4 },
@@ -235,15 +225,12 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 1, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/stealthdevice.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/stealthdevice.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/stealthdevice.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/stealthdevice.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 3, '1': 4, '2': 6, '3': 8 },
-    },
+    cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 6, '3': 8 } },
     standard: true,
     wildspace: true,
     epic: true,
@@ -260,9 +247,9 @@ const t: UpgradeBase[] = [
           "While you obstruct an enemy ship's attack, the defender rolls 1 additional defense die.",
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/tacticalscrambler.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tacticalscrambler.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tacticalscrambler.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tacticalscrambler.png',
       },
     ],
     cost: { value: 1 },
@@ -284,9 +271,9 @@ const t: UpgradeBase[] = [
         charges: { value: 2, recovers: 0 },
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/imperviumplating.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/imperviumplating.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/imperviumplating.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/imperviumplating.png',
       },
     ],
     restrictions: [{ chassis: ['belbullab22starfighter'] }],
@@ -307,9 +294,9 @@ const t: UpgradeBase[] = [
           'After you perform an attack, you may choose a friendly ship at range 1 or a friendly ship with the Synchronized Console upgrade at range 1-3 and spend a lock you have on the defender. If you do, the friendly ship you chose may acquire a lock on the defender.',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/synchronizedconsole.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/synchronizedconsole.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/synchronizedconsole.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/synchronizedconsole.png',
       },
     ],
     restrictions: [
@@ -334,9 +321,9 @@ const t: UpgradeBase[] = [
         charges: { value: 1, recovers: 0 },
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/sparepartscanisters.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sparepartscanisters.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sparepartscanisters.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sparepartscanisters.png',
       },
     ],
     restrictions: [{ equipped: ['Astromech'] }],
@@ -357,9 +344,9 @@ const t: UpgradeBase[] = [
           'After you drop, launch, or place a bomb or mine, you may place 1 fuse marker on that device.',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/delayedfuses.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/delayedfuses.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/delayedfuses.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/delayedfuses.png',
       },
     ],
     cost: { value: 1 },
@@ -379,21 +366,15 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         grants: [
           { stat: 'shields', value: -1 },
-          {
-            action: { type: 'Reinforce', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Reinforce', difficulty: 'White' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/angleddeflectors.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/angleddeflectors.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/angleddeflectors.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/angleddeflectors.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 6, '1': 3, '2': 1, '3': 1 },
-    },
+    cost: { variable: 'agility', values: { '0': 6, '1': 3, '2': 1, '3': 1 } },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
     wildspace: true,
@@ -407,18 +388,13 @@ const t: UpgradeBase[] = [
       {
         title: 'Targeting Computer',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/targetingcomputer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/targetingcomputer.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/targetingcomputer.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/targetingcomputer.png',
         text: 'Targeting computers are standard features on many vessels, especially those designed to deliver ordnance. Some light starfighters and transport craft lack such weapons guidance, though it can be installed as an after-market modification.',
         slots: ['Modification'],
         type: 'Modification',
-        grants: [
-          {
-            action: { type: 'Lock', difficulty: 'White' },
-            value: 1,
-          },
-        ],
+        grants: [{ action: { type: 'Lock', difficulty: 'White' }, value: 1 }],
       },
     ],
     cost: { value: 2 },
@@ -438,9 +414,9 @@ const t: UpgradeBase[] = [
         type: 'Modification',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/independentcalculations.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/independentcalculations.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/independentcalculations.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/independentcalculations.png',
       },
     ],
     restrictions: [
@@ -472,9 +448,9 @@ const t: UpgradeBase[] = [
         type: 'Modification',
         slots: ['Modification'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/overdrivethruster.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/overdrivethruster.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/overdrivethruster.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/overdrivethruster.png',
       },
     ],
     cost: {
@@ -499,9 +475,9 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/precisionionengines.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/precisionionengines.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/precisionionengines.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/precisionionengines.png',
       },
     ],
     cost: {
@@ -529,9 +505,9 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/mandalorianoptics.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/mandalorianoptics.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/mandalorianoptics.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/mandalorianoptics.png',
       },
     ],
     cost: { value: 5 },
@@ -555,9 +531,10 @@ const t: UpgradeBase[] = [
           { slot: 'Device', value: -1 },
         ],
         slots: ['Modification'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/dropseatbay.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/dropseatbay.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/dropseatbay.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/dropseatbay.png',
       },
     ],
     restrictions: [{ chassis: ['gauntletfighter'] }],
@@ -579,15 +556,12 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/beskarreinforcedplating.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/beskarreinforcedplating.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/beskarreinforcedplating.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/beskarreinforcedplating.png',
       },
     ],
-    cost: {
-      variable: 'agility',
-      values: { '0': 2, '1': 3, '2': 4, '3': 5 },
-    },
+    cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 4, '3': 5 } },
     restrictions: [{ keywords: ['Mandalorian'] }],
     standard: true,
     wildspace: true,
@@ -606,15 +580,10 @@ const t: UpgradeBase[] = [
         slots: ['Modification'],
         charges: { value: 1, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/burnoutthrusters.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/burnoutthrusters.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/burnoutthrusters.png',
-        grants: [
-          {
-            action: { type: 'SLAM', difficulty: 'White' },
-            value: 1,
-          },
-        ],
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/burnoutthrusters.png',
+        grants: [{ action: { type: 'SLAM', difficulty: 'White' }, value: 1 }],
       },
     ],
     restrictions: [

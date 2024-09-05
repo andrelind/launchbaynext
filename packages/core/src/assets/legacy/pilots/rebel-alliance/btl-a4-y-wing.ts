@@ -46,7 +46,8 @@ const t: ShipType = {
       xws: 'dutchvander',
       ability:
         'After you perform the [Lock] action, you may choose 1 friendly ship at range 1-3. That ship may acquire a lock on the object you locked, ignoring range restrictions.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dutchvander.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dutchvander.png',
       slots: [
         'Talent',
         'Turret',
@@ -57,7 +58,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dutchvander.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -72,7 +73,8 @@ const t: ShipType = {
       xws: 'evaanverlaine',
       ability:
         'At the start of the Engagement Phase, you may spend 1 focus token to choose a friendly ship at range 0-1. If you do, that ship rolls 1 additional defense die while defending until the end of the round.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/evaanverlaine.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/evaanverlaine.png',
       slots: [
         'Talent',
         'Turret',
@@ -83,7 +85,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/evaanverlaine.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/evaanverlaine.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -97,7 +99,7 @@ const t: ShipType = {
       xws: 'goldsquadronveteran',
       text: 'Commanded by Jon “Dutch” Vander, Gold Squadron played an instrumental role in the Battles of Scarif and Yavin.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/goldsquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/goldsquadronveteran.png',
       slots: [
         'Talent',
         'Turret',
@@ -108,7 +110,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/goldsquadronveteran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goldsquadronveteran.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -122,7 +124,7 @@ const t: ShipType = {
       xws: 'graysquadronbomber',
       text: 'Long after the Y-wing was phased out by the Galactic Empire, its durability, dependability, and heavy armament help it remain a staple in the Rebel fleet.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/graysquadronbomber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/graysquadronbomber.png',
       slots: [
         'Turret',
         'Torpedo',
@@ -132,7 +134,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/graysquadronbomber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/graysquadronbomber.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -147,7 +149,8 @@ const t: ShipType = {
       xws: 'hortonsalm',
       ability:
         'While you perform an attack, you may reroll 1 attack die for each other friendly ship at range 0-1 of the defender.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hortonsalm.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hortonsalm.png',
       slots: [
         'Talent',
         'Turret',
@@ -158,7 +161,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hortonsalm.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hortonsalm.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -174,7 +177,7 @@ const t: ShipType = {
       ability:
         'While you defend, if there is an enemy ship at range 0-1, add 1 [Evade] result to your dice results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/norrawexley-btla4ywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/norrawexley-btla4ywing.png',
       slots: [
         'Talent',
         'Turret',
@@ -185,7 +188,7 @@ const t: ShipType = {
         'Missile',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/norrawexley-btla4ywing.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/norrawexley-btla4ywing.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -206,9 +209,9 @@ const t: ShipType = {
       },
       standardLoadout: ['dorsalturret', 'advprotontorpedoes', 'r4astromech'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dextiree-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dextiree-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dextiree-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dextiree-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -236,9 +239,9 @@ const t: ShipType = {
         'Missile',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dextiree-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dextiree-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dextiree-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dextiree-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -263,9 +266,9 @@ const t: ShipType = {
         'targetingastromech-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dutchvander-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dutchvander-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dutchvander.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -293,9 +296,9 @@ const t: ShipType = {
         'Missile',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dutchvander-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dutchvander-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dutchvander.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -320,9 +323,9 @@ const t: ShipType = {
         'preciseastromech-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/holokand-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/holokand-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/holokand-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holokand-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -350,9 +353,9 @@ const t: ShipType = {
         'Missile',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/holokand-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/holokand-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/holokand-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holokand-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -373,9 +376,9 @@ const t: ShipType = {
       },
       standardLoadout: ['ioncannonturret', 'advprotontorpedoes', 'r4astromech'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/popskrail-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/popskrail-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/popskrail-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -403,9 +406,9 @@ const t: ShipType = {
         'Missile',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/popskrail-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/popskrail-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/popskrail-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -420,9 +423,10 @@ const t: ShipType = {
       xws: 'popskrail',
       ability:
         'After you fully execute a white maneuver, you may choose a friendly ship at range 0-1. If you do, it may perform a [Focus] action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/popskrail.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/popskrail.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/popskrail.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail.png',
       slots: [
         'Turret',
         'Torpedo',
@@ -447,9 +451,9 @@ const t: ShipType = {
         'After you perform the [Lock] action, you may choose 1 friendly ship at range 1-3. That ship may acquire a lock on the object you locked, ignoring range restrictions.',
       standardLoadout: ['ioncannonturret', 'protonbombs'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dutchvander-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dutchvander-swz106.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dutchvander-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-swz106.png',
       standard: false,
       wildspace: true,
       keywords: ['Y-wing'],
@@ -466,9 +470,9 @@ const t: ShipType = {
         'While you perform an attack, you may reroll 1 attack die for each other friendly ship at range 0-1 of the defender.',
       standardLoadout: ['ioncannonturret', 'proximitymines'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/hortonsalm-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hortonsalm-swz106.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hortonsalm-swz106.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hortonsalm-swz106.png',
       standard: false,
       wildspace: true,
       keywords: ['Y-wing'],

@@ -44,10 +44,11 @@ const t: ShipType = {
       cost: 22,
       xws: 'binayrepirate',
       text: "Operating from the Double Worlds, Talus and Tralus, Kath Scarlet's gang of smugglers and pirates would never be described as reputable or dependable—even by other criminals.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/binayrepirate.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/binayrepirate.png',
       slots: ['Missile', 'Illicit', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/binayrepirate.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/binayrepirate.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -59,10 +60,11 @@ const t: ShipType = {
       cost: 23,
       xws: 'blacksunsoldier',
       text: "The vast and influential Black Sun crime syndicate can always find a use for talented pilots, provided they aren't particular about how they earn their credits.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/blacksunsoldier.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunsoldier.png',
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunsoldier.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunsoldier.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -76,10 +78,11 @@ const t: ShipType = {
       xws: 'kaatoleeachos',
       ability:
         'At the start of the Engagement Phase, you may choose 1 friendly ship at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kaatoleeachos.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kaatoleeachos.png',
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kaatoleeachos.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kaatoleeachos.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -95,9 +98,10 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, if there are no other friendly ships at range 0-2, roll 1 additional attack die.',
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/ndrusuhlak.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ndrusuhlak.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ndrusuhlak.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ndrusuhlak.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -116,9 +120,10 @@ const t: ShipType = {
         text: "Setup: Requires the Hound's Tooth. You must begin the game docked with the Hound's Tooth.",
       },
       slots: ['Missile', 'Illicit', 'Modification'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/nashtahpup.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nashtahpup.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nashtahpup.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nashtahpup.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -140,9 +145,9 @@ const t: ShipType = {
       wildspace: true,
       cost: 25,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bossk-z95af4headhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bossk-z95af4headhunter.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bossk-z95af4headhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bossk-z95af4headhunter.png',
       keywords: ['Bounty Hunter'],
       epic: true,
     },

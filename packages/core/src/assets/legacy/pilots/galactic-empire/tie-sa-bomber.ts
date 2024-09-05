@@ -50,7 +50,8 @@ const t: ShipType = {
       xws: 'deathfire',
       ability:
         'After you are destroyed, before you are removed, you may perform an attack and drop or launch 1 device.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/deathfire.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deathfire.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -65,7 +66,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathfire.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -80,7 +81,8 @@ const t: ShipType = {
       xws: 'captainjonus',
       ability:
         'While a friendly ship at range 0-1 performs a [Torpedo] or [Missile] attack, that ship may reroll up to 2 attack dice.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainjonus.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainjonus.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -96,7 +98,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainjonus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -110,7 +112,7 @@ const t: ShipType = {
       xws: 'gammasquadronace',
       text: "Though it sacrifices a degree of speed and maneuverability compared to a TIE/ln, the TIE bomber's increased payload can carry enough firepower to destroy virtually any enemy target.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/gammasquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gammasquadronace.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -126,7 +128,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gammasquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gammasquadronace.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -141,7 +143,8 @@ const t: ShipType = {
       xws: 'majorrhymer',
       ability:
         'While you perform a [Torpedo] or [Missile] attack, you may increase or decrease the range requirement by 1, to a limit of 0-3.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/majorrhymer.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorrhymer.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -157,7 +160,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorrhymer.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -171,7 +174,7 @@ const t: ShipType = {
       xws: 'scimitarsquadronpilot',
       text: 'The TIE/sa is exceptionally nimble for a bomber, allowing it to pinpoint its target while avoiding excessive collateral damage to the surrounding area.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/scimitarsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scimitarsquadronpilot.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -186,7 +189,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scimitarsquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitarsquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -201,7 +204,8 @@ const t: ShipType = {
       xws: 'tomaxbren',
       ability:
         'After you perform a [Reload] action, you may recover 1 [Charge] token on 1 of your equipped [Talent] upgrade cards.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/tomaxbren.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tomaxbren.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -217,7 +221,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tomaxbren.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -233,14 +237,14 @@ const t: ShipType = {
       ability:
         'While a friendly ship at range 0-1 performs a [Torpedo] or [Missile] attack, that ship may reroll up to 2 attack dice.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainjonus-swz105.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['feedbackping', 'plasmatorpedoes', 'protonbombs'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainjonus.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -256,14 +260,14 @@ const t: ShipType = {
       ability:
         'After you perform a [Reload] action, you may recover 1 [Charge] token on 1 of your equipped [Talent] upgrade cards.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz105.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tomaxbren-swz105.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['elusive', 'barragerockets', 'proximitymines'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tomaxbren.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren-swz105.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -280,14 +284,14 @@ const t: ShipType = {
         'After you fully execute a speed 3-5 maneuver, if you have not dropped or launched a device this round, you may spend 2 [Charge] to drop or launch a bomb using the (3 [Straight]) template.',
       charges: { value: 2, recovers: 1 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/deathfire-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deathfire-swz98.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['swiftapproach-swz98', 'connernets', 'protonbombs'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathfire-swz98.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -304,7 +308,7 @@ const t: ShipType = {
         'After you fully execute a speed 3-5 maneuver, if you have not dropped or launched a device this round, you may spend 2 [Charge] to drop or launch a bomb using the (3 [Straight]) template.',
       charges: { value: 2, recovers: 1 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/deathfire-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deathfire-swz98-lsl.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -319,7 +323,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathfire-swz98-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -334,13 +338,14 @@ const t: ShipType = {
       xws: 'captainjonus-swz98',
       ability: 'After you drop or launch a device, gain an evade token.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainjonus-swz98.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['topcover-swz98', 'barragerockets', 'protonbombs'],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus-swz98.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -355,7 +360,7 @@ const t: ShipType = {
       xws: 'captainjonus-swz98-lsl',
       ability: 'After you drop or launch a device, gain an evade token.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainjonus-swz98-lsl.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -370,7 +375,8 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus-swz98-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -387,13 +393,14 @@ const t: ShipType = {
         'After you perform a [Barrel Roll] action, you may spend 2 [Charge]. If you do, gain a focus token.',
       charges: { value: 2, recovers: 1 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tomaxbren-swz98.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['truegrit-swz98', 'plasmatorpedoes', 'ionbombs'],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren-swz98.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -410,7 +417,7 @@ const t: ShipType = {
         'After you perform a [Barrel Roll] action, you may spend 2 [Charge]. If you do, gain a focus token.',
       charges: { value: 2, recovers: 1 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tomaxbren-swz98-lsl.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -425,7 +432,8 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren-swz98-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -441,7 +449,7 @@ const t: ShipType = {
       ability:
         'While you perform a [Torpedo] attack, if the defender is in your [Bullseye Arc], change 1 [Focus] result to a [Critical Hit] result.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/majorrhymer-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorrhymer-swz98.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -452,7 +460,7 @@ const t: ShipType = {
         'afterburners',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorrhymer-swz98.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -468,7 +476,7 @@ const t: ShipType = {
       ability:
         'While you perform a [Torpedo] attack, if the defender is in your [Bullseye Arc], change 1 [Focus] result to a [Critical Hit] result.',
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/majorrhymer-swz98.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorrhymer-swz98-lsl.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -484,7 +492,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorrhymer-swz98-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -501,7 +509,7 @@ const t: ShipType = {
         'After a friendly ship at range 0-3 performs an attack, you may spend 1 [Charge] to acquire a lock on the defender.',
       charges: { value: 2, recovers: 0 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/scimitar1-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scimitar1-battleoverendor.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -512,7 +520,8 @@ const t: ShipType = {
         'protontorpedoes',
         'ionbombs',
       ],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar1-battleoverendor.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -529,7 +538,7 @@ const t: ShipType = {
         'After a friendly ship at range 0-3 performs an attack, you may spend 1 [Charge] to acquire a lock on the defender.',
       charges: { value: 2, recovers: 0 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/scimitar1-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scimitar1-battleoverendor-lsl.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -544,7 +553,8 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar1-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -561,7 +571,7 @@ const t: ShipType = {
         'After you drop a bomb, you may spend 1 [Charge] to perform a [Boost] action.',
       charges: { value: 2, recovers: 0 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/scimitar3-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scimitar3-battleoverendor.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -572,7 +582,8 @@ const t: ShipType = {
         'protontorpedoes',
         'protonbombs',
       ],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar3-battleoverendor.png',
       standard: false,
       wildspace: true,
       keywords: ['TIE'],
@@ -589,7 +600,7 @@ const t: ShipType = {
         'After you drop a bomb, you may spend 1 [Charge] to perform a [Boost] action.',
       charges: { value: 2, recovers: 0 },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/scimitar3-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scimitar3-battleoverendor-lsl.png',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
@@ -604,7 +615,8 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      artwork: '',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar3-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],

@@ -13,9 +13,9 @@ const t: UpgradeBase[] = [
           'At the start of the Engagement Phase, you may spend 1 [Force]. If you do, engage at initiative 7 instead of your standard initiative value this phase.',
         slots: ['Force Power'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/heightenedperception.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/heightenedperception.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/heightenedperception.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/heightenedperception.png',
       },
     ],
     cost: { value: 3 },
@@ -35,9 +35,9 @@ const t: UpgradeBase[] = [
           'While you perform a special attack, you may spend 1 [Force] to ignore the [Focus] or [Lock] requirement.',
         slots: ['Force Power'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/instinctiveaim.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/instinctiveaim.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/instinctiveaim.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/instinctiveaim.png',
       },
     ],
     cost: { value: 1 },
@@ -56,9 +56,10 @@ const t: UpgradeBase[] = [
         ability:
           'During the System Phase, you may choose 1 ship at range 0-1 and look at its dial. If you spend 1 [Force], you may choose a ship at range 0-3 instead.',
         slots: ['Force Power'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/sense.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/sense.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sense.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/sense.png',
       },
     ],
     cost: { value: 7 },
@@ -78,9 +79,9 @@ const t: UpgradeBase[] = [
           'Before you activate, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, suffer 1 [Hit] damage.',
         slots: ['Force Power'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/supernaturalreflexes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/supernaturalreflexes.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/supernaturalreflexes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/supernaturalreflexes.png',
       },
     ],
     cost: {
@@ -104,9 +105,9 @@ const t: UpgradeBase[] = [
           "While you defend, if you are not in the attacker's [Bullseye Arc], you may spend 1 [Force] to change 2 of your [Focus] results to [Evade] results.",
         slots: ['Force Power'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/brilliantevasion.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/brilliantevasion.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/brilliantevasion.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/brilliantevasion.png',
       },
     ],
     cost: { value: 2 },
@@ -125,9 +126,10 @@ const t: UpgradeBase[] = [
         ability:
           'After you suffer 1 or more damage, recover that many [Force].',
         slots: ['Force Power'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/hate.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hate.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hate.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/hate.png',
       },
     ],
     cost: { value: 4 },
@@ -148,9 +150,9 @@ const t: UpgradeBase[] = [
           'After you declare an attack, if the defender is in your [Bullseye Arc], you may spend 1 [Force]. If you do, during the Roll Defense Dice step, the defender cannot roll more defense dice than the number of your [Hit]/[Critical Hit] results.',
         slots: ['Force Power'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/predictiveshot.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/predictiveshot.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/predictiveshot.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/predictiveshot.png',
       },
     ],
     cost: { value: 1 },
@@ -170,15 +172,12 @@ const t: UpgradeBase[] = [
           'You cannot coordinate limited ships. While you perform a purple [Coordinate] action, you may coordinate 1 additional friendly non-limited ship of the same type. Both ships must perform the same action.',
         slots: ['Force Power'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/battlemeditation.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/battlemeditation.png',
         grants: [
-          {
-            action: { type: 'Coordinate', difficulty: 'Purple' },
-            value: 1,
-          },
+          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
         ],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/battlemeditation.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/battlemeditation.png',
       },
     ],
     cost: {
@@ -198,8 +197,9 @@ const t: UpgradeBase[] = [
       {
         title: 'Foresight',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/foresight.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/foresight.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/foresight.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/foresight.png',
         ability:
           'After an enemy ship executes a maneuver, you may spend 1 [Force] to perform this attack against it as a bonus attack. Attack: You may change 1 [Focus] result to a [Hit] result; your dice cannot be modified otherwise.',
         slots: ['Force Power'],
@@ -226,9 +226,9 @@ const t: UpgradeBase[] = [
       {
         title: 'Precognitive Reflexes',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/precognitivereflexes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/precognitivereflexes.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/precognitivereflexes.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/precognitivereflexes.png',
         ability:
           'After you reveal your dial, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, gain 1 strain token. If you do, you cannot perform another action during your activation.',
         slots: ['Force Power'],
@@ -256,9 +256,9 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/extrememaneuvers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/extrememaneuvers.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/extrememaneuvers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/extrememaneuvers.png',
       },
     ],
     cost: { value: 5 },
@@ -278,8 +278,9 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/compassion.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/compassion.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/compassion.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/compassion.png',
       },
     ],
     cost: { value: 1 },
@@ -300,8 +301,9 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/malice.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/malice.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/malice.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/malice.png',
       },
     ],
     cost: { value: 6 },
@@ -322,9 +324,9 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/shatteringshot.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/shatteringshot.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/shatteringshot.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shatteringshot.png',
       },
     ],
     cost: { value: 3 },
@@ -344,8 +346,9 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/patience.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/patience.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/patience.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/patience.png',
       },
     ],
     cost: { value: 2 },

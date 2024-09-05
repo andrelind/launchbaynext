@@ -56,14 +56,14 @@ const t: ShipType = {
       ability:
         'Before a friendly ship at range 1-2 engages, if there is an enemy ship in its [Front Arc] at range 1, that friendly ship may remove 1 non-lock red token.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/fennrau-rebel-fang.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fennrau-fangfighter.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-rebel-fang.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau-fangfighter.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -78,14 +78,15 @@ const t: ShipType = {
       xws: 'bodicavenj',
       ability:
         'After another friendly ship defends, if you are not depleted, you may perform a bonus primary attack against the attacker. If you do, after performing that attack, gain 1 deplete token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/bodicavenj.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bodicavenj.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bodicavenj.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bodicavenj.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -100,14 +101,15 @@ const t: ShipType = {
       xws: 'dirkullodin',
       ability:
         'After you fully execute a red maneuver or perform a red action, you may acquire a lock on an enemy ship in your [Front Arc] at range 1.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dirkullodin.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dirkullodin.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dirkullodin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dirkullodin.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -123,14 +125,14 @@ const t: ShipType = {
       ability:
         'While you perform an attack at range 1, if the speed of your revealed maneuver matches that of a friendly ship at range 1, you may reroll 1 attack die.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/clanwrenvolunteer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/clanwrenvolunteer.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/clanwrenvolunteer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/clanwrenvolunteer.png',
       standard: true,
       wildspace: true,
       epic: true,

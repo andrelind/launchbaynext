@@ -56,9 +56,9 @@ const t: ShipType = {
         'Gunner',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/freightercaptain.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/freightercaptain.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/freightercaptain.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/freightercaptain.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -73,7 +73,8 @@ const t: ShipType = {
       xws: 'hansolo',
       ability:
         'While you defend or perform a primary attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hansolo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hansolo.png',
       slots: [
         'Talent',
         'Missile',
@@ -85,7 +86,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -100,7 +101,8 @@ const t: ShipType = {
       xws: 'l337',
       ability:
         'If you are not shielded, decrease the difficulty of your bank ([Bank Left] and [Bank Right]) maneuvers.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/l337.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/l337.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -116,7 +118,8 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/l337.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/l337.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid', 'Freighter', 'YT-1300'],
@@ -131,7 +134,8 @@ const t: ShipType = {
       xws: 'landocalrissian',
       ability:
         'After you roll dice, if you are not stressed, you may gain 1 stress token to reroll all of your blank results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/landocalrissian.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian.png',
       slots: [
         'Talent',
         'Missile',
@@ -143,7 +147,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],

@@ -55,9 +55,9 @@ const t: ShipType = {
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-nabooroyaln1starfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-nabooroyaln1starfighter.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-nabooroyaln1starfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker-nabooroyaln1starfighter.png',
       caption: 'Hero of Naboo',
       keywords: ['Light Side'],
       epic: true,
@@ -79,8 +79,9 @@ const t: ShipType = {
       ability:
         "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ricolie.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ricolie.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ricolie.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ricolie.png',
       epic: true,
     },
     {
@@ -100,8 +101,9 @@ const t: ShipType = {
       ability:
         'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/padmeamidala.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/padmeamidala.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/padmeamidala.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padmeamidala.png',
       epic: true,
     },
     {
@@ -121,8 +123,9 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dineeellberger.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dineeellberger.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dineeellberger.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dineeellberger.png',
       epic: true,
     },
     {
@@ -140,9 +143,9 @@ const t: ShipType = {
       cost: 28,
       slots: ['Sensor', 'Torpedo', 'Astromech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bravoflightofficer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bravoflightofficer.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bravoflightofficer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bravoflightofficer.png',
       epic: true,
     },
     {
@@ -163,8 +166,9 @@ const t: ShipType = {
       cost: 31,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/naboohandmaiden.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/naboohandmaiden.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/naboohandmaiden.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/naboohandmaiden.png',
       epic: true,
     },
     {
@@ -184,8 +188,9 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the speed of your revealed maneuver is greater than the enemy ship's, you may reroll your blank results.",
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gavynsykes.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/gavynsykes.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gavynsykes.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gavynsykes.png',
       epic: true,
     },
   ],

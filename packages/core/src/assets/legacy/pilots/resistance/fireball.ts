@@ -62,9 +62,9 @@ const t: ShipType = {
       cost: 26,
       text: 'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/colossusstationmechanic.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/colossusstationmechanic.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/colossusstationmechanic.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/colossusstationmechanic.png',
       epic: true,
     },
     {
@@ -92,8 +92,9 @@ const t: ShipType = {
         'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
       caption: 'Too Old for This',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jarekyeager.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/jarekyeager.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jarekyeager.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jarekyeager.png',
       epic: true,
     },
     {
@@ -121,8 +122,9 @@ const t: ShipType = {
         "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
       cost: 38,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kazudaxiono.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kazudaxiono.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kazudaxiono.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kazudaxiono.png',
       epic: true,
     },
     {
@@ -148,8 +150,10 @@ const t: ShipType = {
       ability:
         'Before you expose 1 of your damage cards, you may look at your facedown damage cards, choose 1, and expose that card instead.',
       cost: 24,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/r1j5.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/r1j5.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/r1j5.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/r1j5.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Evade' },

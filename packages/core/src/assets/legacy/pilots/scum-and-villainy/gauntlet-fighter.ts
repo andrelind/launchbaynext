@@ -46,7 +46,8 @@ const t: ShipType = {
       limited: 1,
       ability:
         'While you perform a [Coordinate] action, if you choose a ship with an initiative lower than yours, you may spend 1 [Force]. If you do, treat the action as white and you may coordinate 1 additional friendly ship with an initiative lower than yours; each friendly ship you coordinate this way gains 1 strain token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/maul.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maul.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -60,7 +61,8 @@ const t: ShipType = {
         'Configuration',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/maul.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maul.png',
       keywords: ['Dark Side'],
     },
     {
@@ -85,9 +87,10 @@ const t: ShipType = {
         'Configuration',
         'Title',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/rookkast.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rookkast.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rookkast.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rookkast.png',
       keywords: ['Mandalorian'],
     },
     {
@@ -110,9 +113,9 @@ const t: ShipType = {
         'Title',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowcollectiveoperator.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowcollectiveoperator.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowcollectiveoperator.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowcollectiveoperator.png',
       keywords: ['Mandalorian'],
     },
   ],

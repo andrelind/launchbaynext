@@ -73,8 +73,9 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver or perform a [Boost] action, if you moved through an enemy ship, you may acquire a lock on that ship.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/breach.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/breach.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/breach.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/breach.png',
       caption: 'Ordnance Expert',
       keywords: ['TIE'],
       epic: true,
@@ -104,9 +105,9 @@ const t: ShipType = {
       ability:
         'While a friendly ship at range 0-1 performs a primary attack, it may spend 1 [Hit] result. If it does, after defending, the defender gains 1 strain token.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scorch-tiesebomber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scorch-tiesebomber.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/scorch_tiesebomber.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scorch-tiesebomber.png',
       caption: 'Jad Bean',
       keywords: ['TIE'],
       epic: true,
@@ -135,8 +136,10 @@ const t: ShipType = {
       ],
       ability:
         'After you reload, each ship in your [Bullseye Arc] gains 1 deplete token.',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dread.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dread.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dread.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dread.png',
       caption: 'Devotee of Devastation',
       keywords: ['TIE'],
       epic: true,
@@ -165,8 +168,9 @@ const t: ShipType = {
       ability:
         'While a friendly bomb or mine at range 0-2 detonates, each time attack dice are rolled to resolve its effect, you may reroll up to 1 of those dice.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/grudge.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/grudge.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/grudge.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/grudge.png',
       caption: 'Hateful Harrier',
       keywords: ['TIE'],
       epic: true,
@@ -195,8 +199,9 @@ const t: ShipType = {
       ],
       text: 'The live-fire exercises of the First Order are intended to root out the weak, enforcing the maxim that only the strong survive.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstordercadet.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/firstordercadet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordercadet.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordercadet.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -223,9 +228,9 @@ const t: ShipType = {
       ],
       text: 'Equipped with four laser cannons and advanced systems, the TIE/se bomber is a remarkably maneuverable craft that brings devastating ordnance to bear against any who dare to stand against the First Order.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sienarjaemustestpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sienarjaemustestpilot.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sienarjaemustestpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sienarjaemustestpilot.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -255,8 +260,9 @@ const t: ShipType = {
         'After you perform a [Boost] action, you may spend 1 [Charge] to remove 1 non-lock red or orange token.',
       charges: { value: 2, recovers: 0 },
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/juljerjerrod.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/juljerjerrod.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/juljerjerrod.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/juljerjerrod.png',
       caption: 'Security Commander',
       keywords: ['TIE'],
       epic: true,

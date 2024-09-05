@@ -19,7 +19,10 @@ const t: UpgradeBase[] = [
           maxrange: 4,
           ordnance: false,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ioncannonbattery.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ioncannonbattery.png',
       },
       {
         ability:
@@ -28,12 +31,12 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ioncannonbattery-siedb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ioncannonbattery-sideb.png',
       },
     ],
     cost: { value: 6 },
@@ -52,7 +55,10 @@ const t: UpgradeBase[] = [
         title: 'Ordnance Tubes',
         type: 'Hardpoint',
         slots: ['Hardpoint'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ordnancetubes.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ordnancetubes.png',
       },
       {
         ability:
@@ -60,7 +66,10 @@ const t: UpgradeBase[] = [
         title: 'Ordnance Tubes (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ordnancetubes-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ordnancetubes-sideb.png',
       },
     ],
     cost: { value: 1 },
@@ -80,10 +89,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         attack: {
           arc: 'Double Turret Arc',
@@ -92,7 +98,10 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: false,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pointdefensebattery.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pointdefensebattery.png',
       },
       {
         ability:
@@ -100,7 +109,10 @@ const t: UpgradeBase[] = [
         title: 'Point-Defense Battery (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pointdefensebattery-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pointdefensebattery-sideb.png',
       },
     ],
     cost: { value: 8 },
@@ -120,10 +132,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         attack: {
           arc: 'Single Turret Arc',
@@ -132,7 +141,10 @@ const t: UpgradeBase[] = [
           maxrange: 5,
           ordnance: false,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/targetingbattery.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/targetingbattery.png',
       },
       {
         ability:
@@ -140,7 +152,10 @@ const t: UpgradeBase[] = [
         title: 'Targeting Battery (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/targetingbattery-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/targetingbattery-sideb.png',
       },
     ],
     cost: { value: 5 },
@@ -160,10 +175,7 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         grants: [
-          {
-            action: { type: 'Rotate Arc', difficulty: 'White' },
-            value: 1,
-          },
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         attack: {
           arc: 'Single Turret Arc',
@@ -172,7 +184,10 @@ const t: UpgradeBase[] = [
           maxrange: 5,
           ordnance: false,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/turbolaserbattery.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/turbolaserbattery.png',
       },
       {
         ability:
@@ -180,7 +195,10 @@ const t: UpgradeBase[] = [
         title: 'Turbolaser Battery (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/turbolaserbattery-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/turbolaserbattery-sideb.png',
       },
     ],
     cost: { value: 10 },
@@ -210,14 +228,20 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: true,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tractortentacles.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tractortentacles.png',
       },
       {
         ability: 'Action: Spend 1 [Energy] to repair this card.',
         title: 'Tractor Tentacles (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/tractortentacles-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tractortentacles-sideb.png',
       },
     ],
     cost: { value: 0 },
@@ -243,14 +267,20 @@ const t: UpgradeBase[] = [
           maxrange: 5,
           ordnance: false,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protoncannonbattery.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protoncannonbattery.png',
       },
       {
         ability: 'Action: Spend 1 [Energy] to repair this card.',
         title: 'Proton Cannon Battery (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint', 'Cargo'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protoncannonbattery-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protoncannonbattery-sideb.png',
       },
     ],
     cost: { value: 10 },
@@ -269,14 +299,20 @@ const t: UpgradeBase[] = [
         title: 'Enhanced Propulsion',
         type: 'Hardpoint',
         slots: ['Hardpoint', 'Cargo'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/enhancedpropulsion.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/enhancedpropulsion.png',
       },
       {
         ability: 'Action: Spend 1 [Energy] to repair this card.',
         title: 'Enhanced Propulsion (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint', 'Cargo'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/enhancedpropulsion-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/enhancedpropulsion-sideb.png',
       },
     ],
     cost: { value: 2 },
@@ -306,14 +342,20 @@ const t: UpgradeBase[] = [
           maxrange: 1,
           ordnance: true,
         },
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/drillbeak.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/drillbeak.png',
       },
       {
         ability: 'Action: Spend 1 [Energy] to repair this card.',
         title: 'Drill Beak (Offline)',
         type: 'Hardpoint',
         slots: ['Hardpoint', 'Cargo'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/drillbeak-sideb.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/drillbeak-sideb.png',
       },
     ],
     cost: { value: 2 },

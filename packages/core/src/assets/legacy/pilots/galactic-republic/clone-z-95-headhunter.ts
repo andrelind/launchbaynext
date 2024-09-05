@@ -50,9 +50,10 @@ const t: ShipType = {
         name: 'Versatile Frame',
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/killer.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/killer.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/killer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/killer.png',
       slots: ['Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -72,8 +73,10 @@ const t: ShipType = {
         name: 'Versatile Frame',
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/drift.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/drift.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/drift.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/drift.png',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -93,8 +96,10 @@ const t: ShipType = {
         name: 'Versatile Frame',
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/boost.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/boost.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/boost.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/boost.png',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -114,8 +119,10 @@ const t: ShipType = {
         name: 'Versatile Frame',
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/stub.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/stub.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/stub.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stub.png',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -135,8 +142,10 @@ const t: ShipType = {
         name: 'Versatile Frame',
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/knack.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/knack.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/knack.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/knack.png',
       slots: ['Talent', 'Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -157,9 +166,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/hawk-clonez95headhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hawk-clonez95headhunter.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hawk-clonez95headhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hawk-clonez95headhunter.png',
       slots: ['Talent', 'Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -178,9 +187,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/7thskycorpspilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/7thskycorpspilot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/7thskycorpspilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/7thskycorpspilot.png',
       slots: ['Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -199,9 +208,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/reapersquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/reapersquadronscout.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/reapersquadronscout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/reapersquadronscout.png',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -222,9 +231,10 @@ const t: ShipType = {
         name: 'Versatile Frame',
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/slider.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/slider.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/slider.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/slider.png',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,
@@ -245,9 +255,9 @@ const t: ShipType = {
         text: 'You can equip 1 [Torpedo] or [Missile] upgrade. While your revealed maneuver is blue, add white [Boost] to your action bar.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/warthog-clonez95headhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/warthog-clonez95headhunter.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/warthog-clonez95headhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/warthog-clonez95headhunter.png',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       wildspace: true,

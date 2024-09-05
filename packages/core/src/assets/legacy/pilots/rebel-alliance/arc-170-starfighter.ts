@@ -46,7 +46,8 @@ const t: ShipType = {
       xws: 'garvendreis',
       ability:
         'After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/garvendreis.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/garvendreis.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -56,7 +57,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -70,7 +71,8 @@ const t: ShipType = {
       xws: 'ibtisam',
       ability:
         'After you fully execute a maneuver, if you are stressed, you may roll 1 attack die. On a [Hit] or [Critical Hit] result, remove 1 stress token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ibtisam.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ibtisam.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -80,7 +82,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ibtisam.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ibtisam.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -94,7 +96,8 @@ const t: ShipType = {
       xws: 'norrawexley',
       ability:
         'While you defend, if there is an enemy ship at range 0-1, add 1 [Evade] result to your dice results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/norrawexley.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/norrawexley.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -104,7 +107,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/norrawexley.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/norrawexley.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -118,7 +121,8 @@ const t: ShipType = {
       xws: 'sharabey',
       ability:
         'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sharabey.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey.png',
       slots: [
         'Talent',
         'Torpedo',
@@ -128,7 +132,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sharabey.png',
       standard: true,
       wildspace: true,
       epic: true,

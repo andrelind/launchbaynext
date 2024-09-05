@@ -4,13 +4,13 @@ import ora from 'ora';
 import prettier from 'prettier';
 // import assets from '../../src/assets';
 
-import { AssetType } from '../../src/assets/';
+
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
 import { XWDPilot, XWDShip, XWDUpgrade } from './data2-types';
 import { asyncForEach, getFaction, getName } from './utils';
 // import { slotFromKey } from '../../src/helpers/convert';
 
-export const runMerge = async (baseUrl: string, assets: AssetType) => {
+export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   const get = async (url: string) => {
     const result = await fetch(baseUrl + url, {
       headers: {
@@ -87,7 +87,7 @@ export const runMerge = async (baseUrl: string, assets: AssetType) => {
     });
 
     const header =
-      'import { ShipType } from "../../../types";\n\nconst t: ShipType = ';
+      'import { ShipType } from "../../../../types";\n\nconst t: ShipType = ';
     const formatted = await prettier.format(
       `${header}${JSON.stringify(ship)};\n\nexport default t;`,
       {
@@ -98,7 +98,7 @@ export const runMerge = async (baseUrl: string, assets: AssetType) => {
     );
 
     fs.writeFileSync(
-      `./src/assets/pilots/${getName(faction)}/${getName(shipData.name)}.ts`,
+      `../../src/assets/${path}/pilots/${getName(faction)}/${getName(shipData.name)}.ts`,
       formatted,
       'utf8'
     );
@@ -309,7 +309,7 @@ export const runMerge = async (baseUrl: string, assets: AssetType) => {
     });
 
     const header =
-      'import { UpgradeBase } from "../../types";\n\nconst t: UpgradeBase[] = ';
+      'import { UpgradeBase } from "../../../types";\n\nconst t: UpgradeBase[] = ';
     const formatted = await prettier.format(
       `${header}${JSON.stringify(
         assets.upgrades[getName(key).replaceAll('-', '') as SlotKey]
@@ -321,7 +321,7 @@ export const runMerge = async (baseUrl: string, assets: AssetType) => {
       }
     );
     fs.writeFileSync(
-      `./src/assets/upgrades/${getName(key)}.ts`,
+      `../../src/assets/${path}/upgrades/${getName(key)}.ts`,
       formatted,
       'utf8'
     );

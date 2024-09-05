@@ -44,7 +44,8 @@ const t: ShipType = {
       cost: 38,
       xws: 'blacksunace',
       text: 'The Kihraxz assault fighter was developed specifically for the Black Sun crime syndicate, whose highly paid ace pilots demanded a nimble, powerful ship to match their skills.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/blacksunace.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunace.png',
       slots: [
         'Talent',
         'Missile',
@@ -54,7 +55,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunace.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -68,10 +69,11 @@ const t: ShipType = {
       xws: 'captainjostero',
       ability:
         'After an enemy ship suffers damage, if it is not defending, you may perform a bonus attack against that ship.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainjostero.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainjostero.png',
       slots: ['Missile', 'Illicit', 'Illicit', 'Modification', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainjostero.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjostero.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -83,10 +85,11 @@ const t: ShipType = {
       cost: 37,
       xws: 'cartelmarauder',
       text: "The versatile Kihraxz was modeled after Incom's popular X-wing starfighter, but an array of after-market modification kits ensure a wide variety of designs.",
-      image: 'https://infinitearenas.com/xw2/images/pilots/cartelmarauder.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cartelmarauder.png',
       slots: ['Missile', 'Illicit', 'Illicit', 'Modification', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cartelmarauder.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelmarauder.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -100,7 +103,8 @@ const t: ShipType = {
       xws: 'graz',
       ability:
         'While you defend, if you are behind the attacker, roll 1 additional defense die. While you perform an attack, if you are behind the defender, roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/graz.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/graz.png',
       slots: [
         'Talent',
         'Missile',
@@ -109,7 +113,8 @@ const t: ShipType = {
         'Modification',
         'Modification',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/graz.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/graz.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -124,7 +129,8 @@ const t: ShipType = {
       xws: 'talonbanecobra',
       ability:
         'While you defend at attack range 3 or perform an attack at attack range 1, roll 1 additional die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/talonbanecobra.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/talonbanecobra.png',
       slots: [
         'Talent',
         'Missile',
@@ -134,7 +140,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/talonbanecobra.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/talonbanecobra.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -148,7 +154,8 @@ const t: ShipType = {
       xws: 'viktorhel',
       ability:
         'After you defend, if you did not roll exactly 2 defense dice, the attacker gains 1 stress token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/viktorhel.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/viktorhel.png',
       slots: [
         'Talent',
         'Missile',
@@ -158,7 +165,7 @@ const t: ShipType = {
         'Modification',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/viktorhel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/viktorhel.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],

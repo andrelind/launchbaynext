@@ -49,7 +49,8 @@ const t: ShipType = {
       xws: 'bobafett',
       ability:
         'While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/bobafett.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bobafett.png',
       slots: [
         'Talent',
         'Cannon',
@@ -61,7 +62,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bobafett.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bobafett.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -74,7 +75,8 @@ const t: ShipType = {
       cost: 62,
       xws: 'bountyhunter',
       text: 'The Firespray-class patrol craft is infamous for its association with the deadly bounty hunters Jango Fett and Boba Fett, who packed their craft with countless deadly armaments.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/bountyhunter.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bountyhunter.png',
       slots: [
         'Cannon',
         'Missile',
@@ -85,7 +87,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bountyhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bountyhunter.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -100,7 +102,8 @@ const t: ShipType = {
       xws: 'emonazzameen',
       ability:
         'If you would drop a device using a [1 [Straight]] template, you may use the [3 [Turn Left]], [3 [Straight]], or [3 [Turn Right]] template instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/emonazzameen.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/emonazzameen.png',
       slots: [
         'Talent',
         'Cannon',
@@ -112,7 +115,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/emonazzameen.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/emonazzameen.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -126,7 +129,8 @@ const t: ShipType = {
       xws: 'kathscarlet',
       ability:
         'While you perform a primary attack, if there is at least 1 friendly non-limited ship at range 0 of the defender, roll 1 additional attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/kathscarlet.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kathscarlet.png',
       slots: [
         'Talent',
         'Cannon',
@@ -138,7 +142,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kathscarlet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kathscarlet.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -152,7 +156,8 @@ const t: ShipType = {
       xws: 'koshkafrost',
       ability:
         'While you defend or perform an attack, if the enemy ship is stressed, you may reroll 1 of your dice.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/koshkafrost.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/koshkafrost.png',
       slots: [
         'Talent',
         'Cannon',
@@ -164,7 +169,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/koshkafrost.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/koshkafrost.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -179,7 +184,8 @@ const t: ShipType = {
       xws: 'krassistrelix',
       ability:
         'You can perform [Front Arc] special attacks from your [Rear Arc]. While you perform a special attack, you may reroll 1 attack die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/krassistrelix.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/krassistrelix.png',
       slots: [
         'Talent',
         'Cannon',
@@ -191,7 +197,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/krassistrelix.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/krassistrelix.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -205,9 +211,10 @@ const t: ShipType = {
       xws: 'hondoohnaka',
       ability:
         'Action: Choose 2 non-huge ships at range 0-3 of you that are not friendly to each other. Each chosen ship may perform an action that is on your action bar, even while stressed, in the order of your choice. Then, gain 1 calculate token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/hondoohnaka.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hondoohnaka.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hondoohnaka.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hondoohnaka.png',
       slots: [
         'Cannon',
         'Missile',

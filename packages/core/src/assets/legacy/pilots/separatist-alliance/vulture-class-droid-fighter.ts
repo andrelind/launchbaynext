@@ -52,13 +52,13 @@ const t: ShipType = {
       },
       text: 'The Trade Federation deployed countless Vulture Droids at the Battle of Naboo, and continues to use these inexpensive starfighters in the Clone Wars.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/tradefederationdrone.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tradefederationdrone.png',
       standard: true,
       wildspace: true,
       cost: 21,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tradefederationdrone.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tradefederationdrone.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -74,13 +74,14 @@ const t: ShipType = {
       },
       ability:
         'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/precisehunter.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/precisehunter.png',
       standard: true,
       wildspace: true,
       cost: 23,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/precisehunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/precisehunter.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -97,13 +98,13 @@ const t: ShipType = {
       ability:
         'After an enemy ship in your [Bullseye Arc] at range 0-2 declares another friendly ship as the defender, you may perform a [Calculate] or [Lock] action.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/haorchallprototype.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/haorchallprototype.png',
       standard: true,
       wildspace: true,
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -119,13 +120,14 @@ const t: ShipType = {
       },
       ability:
         'While a friendly ship at range 0-1 defends, it may spend 1 calculate token to change all [Critical Hit] results to [Hit] results.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dfs081.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081.png',
       standard: true,
       wildspace: true,
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -139,13 +141,14 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       text: 'As the Clone Wars escalate, the Separatist Alliance continues to develop the technology of droid starfighters, as well as the tactical droids that command them.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/separatistdrone.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistdrone.png',
       standard: true,
       wildspace: true,
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistdrone.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistdrone.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -161,13 +164,14 @@ const t: ShipType = {
       },
       ability:
         'At the start of the Engagement Phase, you may transfer 1 of your calculate tokens to another friendly ship at range 0-3.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dfs311.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs311.png',
       standard: true,
       wildspace: true,
       cost: 23,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311.png',
       keywords: ['Droid'],
       epic: true,
     },
@@ -186,14 +190,14 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dfs081-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081-siegeofcoruscant.png',
       standardLoadout: [
         'discordmissiles',
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081-siegeofcoruscant.png',
       standard: false,
       wildspace: true,
       keywords: ['Droid'],
@@ -214,10 +218,10 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dfs081-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081-siegeofcoruscant-lsl.png',
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081-siegeofcoruscant-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid'],
@@ -237,14 +241,14 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dfs311-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs311-siegeofcoruscant.png',
       standardLoadout: [
         'discordmissiles',
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311-siegeofcoruscant.png',
       standard: false,
       wildspace: true,
       keywords: ['Droid'],
@@ -264,10 +268,10 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dfs311-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs311-siegeofcoruscant-lsl.png',
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311-siegeofcoruscant-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid'],
@@ -287,14 +291,14 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/haorchallprototype-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/haorchallprototype-siegeofcoruscant.png',
       standardLoadout: [
         'ionmissiles',
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype-siegeofcoruscant.png',
       standard: false,
       wildspace: true,
       keywords: ['Droid'],
@@ -314,10 +318,10 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/haorchallprototype-siegeofcoruscant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/haorchallprototype-siegeofcoruscant-lsl.png',
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype-siegeofcoruscant-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid'],
@@ -338,9 +342,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/theironassembler.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/theironassembler.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/theironassembler.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/theironassembler.png',
       cost: 22,
       charges: { value: 3, recovers: 0 },
       slots: ['Missile', 'Modification', 'Configuration'],
@@ -371,9 +375,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/kelrodoaiholdout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kelrodoaiholdout.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kelrodoaiholdout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kelrodoaiholdout.png',
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       epic: true,

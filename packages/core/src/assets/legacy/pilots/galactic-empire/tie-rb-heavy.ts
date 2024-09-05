@@ -64,9 +64,9 @@ const t: ShipType = {
       text: 'At Carida Academy, Imperial Navy cadets are taught to be ruthless and loyal, prioritizing victory over the lives of their comrades.',
       limited: 0,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/caridaacademycadet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caridaacademycadet.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/caridaacademycadet.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caridaacademycadet.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -92,9 +92,9 @@ const t: ShipType = {
       text: 'The TIE/rb heavy, sometimes called the “brute”, is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.',
       limited: 0,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/onyxsquadronsentry.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/onyxsquadronsentry.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/onyxsquadronsentry.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronsentry.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -121,9 +121,10 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/rampage.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rampage.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rampage.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rampage.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -149,9 +150,10 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/lyttandree.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lyttandree.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lyttandree.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lyttandree.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -179,9 +181,9 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       image:
-        'https://infinitearenas.com/xw2/images/pilots/flightleaderubbel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/flightleaderubbel.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/flightleaderubbel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/flightleaderubbel.png',
       keywords: ['TIE'],
       epic: true,
     },

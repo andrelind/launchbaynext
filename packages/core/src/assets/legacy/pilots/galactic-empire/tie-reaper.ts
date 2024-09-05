@@ -48,14 +48,14 @@ const t: ShipType = {
       ability:
         'After you fully execute a speed 1 maneuver using your Adaptive Ailerons ship ability, you may perform a [Coordinate] action. If you do, skip your Perform Action step.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_115.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vizier.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Crew', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vizier.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vizier.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -71,14 +71,14 @@ const t: ShipType = {
       ability:
         'While you defend, if the attacker does not have any green tokens, you may change 1 of your blank or [Focus] results to an [Evade] result.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_114.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainferoph.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainferoph.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainferoph.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -94,14 +94,14 @@ const t: ShipType = {
       ability:
         'While you perform an attack, if the defender does not have any green tokens, you may change 1 of your blank or [Focus] results to a [Hit] result.',
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_113.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvermeil.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorvermeil.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvermeil.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -115,14 +115,14 @@ const t: ShipType = {
       xws: 'scarifbasepilot',
       text: "The TIE reaper was designed to ferry elite troops to flashpoints on the battlefield, notably carrying Director Krennic's dreaded death troopers at the Battle of Scarif.",
       image:
-        'https://sb-cdn.fantasyflightgames.com/card_images/Card_Pilot_116.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/scarifbasepilot.png',
       shipAbility: {
         name: 'Adaptive Ailerons',
         text: 'Before you reveal your dial, if you are not stressed, you must execute a white [1 [Bank Left]], [1 [Straight]], or [1 [Bank Right]] maneuver.',
       },
       slots: ['Crew', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scarifbasepilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scarifbasepilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],

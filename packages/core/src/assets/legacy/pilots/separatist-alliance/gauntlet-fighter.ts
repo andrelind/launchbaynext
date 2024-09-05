@@ -57,9 +57,9 @@ const t: ShipType = {
         'Title',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bokatankryze-separatist-alliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bokatankryze-separatistalliance.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bokatankryze-separatist-alliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bokatankryze-separatistalliance.png',
       keywords: ['Mandalorian'],
       standard: true,
       wildspace: true,
@@ -85,9 +85,10 @@ const t: ShipType = {
         'Configuration',
         'Title',
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/previzsla.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/previzsla.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/previzsla.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/previzsla.png',
       keywords: ['Mandalorian'],
       standard: true,
       wildspace: true,
@@ -112,9 +113,9 @@ const t: ShipType = {
         'Title',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/deathwatchwarrior.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/deathwatchwarrior.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathwatchwarrior.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathwatchwarrior.png',
       keywords: ['Mandalorian'],
       standard: true,
       wildspace: true,

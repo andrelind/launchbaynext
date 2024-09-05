@@ -54,9 +54,10 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/lulolampar.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lulolampar.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lulolampar.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lulolampar.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -75,9 +76,10 @@ const t: ShipType = {
         name: 'Refined Gyrostabilizers',
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/tallissanlintra.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tallissanlintra.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tallissanlintra.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tallissanlintra.png',
       charges: { value: 1, recovers: 1 },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
@@ -98,9 +100,10 @@ const t: ShipType = {
         name: 'Refined Gyrostabilizers',
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/zaribangel.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zaribangel.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zaribangel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zaribangel.png',
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
       wildspace: true,
@@ -120,9 +123,10 @@ const t: ShipType = {
         name: 'Refined Gyrostabilizers',
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/greersonnel.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/greersonnel.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/greersonnel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greersonnel.png',
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
       wildspace: true,
@@ -142,9 +146,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/greensquadronexpert.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/greensquadronexpert.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronexpert.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greensquadronexpert.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -163,9 +167,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Missile', 'Tech'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronrecruit.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronrecruit.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronrecruit.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronrecruit.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -187,8 +191,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Talent', 'Tech', 'Missile'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zizitlo.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/zizitlo.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zizitlo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zizitlo.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -209,8 +214,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Tech', 'Missile'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ronithblario.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ronithblario.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ronithblario.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ronithblario.png',
       standard: true,
       wildspace: true,
       keywords: ['A-wing'],
@@ -232,9 +238,10 @@ const t: ShipType = {
       slots: ['Talent', 'Missile', 'Tech'],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/merlcobben.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/merlcobben.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/merlcobben.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/merlcobben.png',
       keywords: ['A-wing'],
       epic: true,
     },
@@ -254,9 +261,10 @@ const t: ShipType = {
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/suralindajavos.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/suralindajavos.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/suralindajavos.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/suralindajavos.png',
       keywords: ['A-wing'],
       epic: true,
     },
@@ -276,9 +284,10 @@ const t: ShipType = {
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/wrobietyce.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wrobietyce.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wrobietyce.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wrobietyce.png',
       keywords: ['A-wing'],
       epic: true,
     },
@@ -298,9 +307,10 @@ const t: ShipType = {
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
       wildspace: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/seftinvanik.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/seftinvanik.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/seftinvanik.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seftinvanik.png',
       keywords: ['A-wing'],
       epic: true,
     },

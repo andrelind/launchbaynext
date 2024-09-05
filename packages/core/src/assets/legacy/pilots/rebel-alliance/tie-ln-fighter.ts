@@ -46,10 +46,10 @@ const t: ShipType = {
       ability:
         'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/zeborrelios-tielnfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zeborrelios-tielnfighter.png',
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zeborrelios-tielnfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios-tielnfighter.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE', 'Spectre'],
@@ -64,11 +64,12 @@ const t: ShipType = {
       xws: 'captainrex',
       ability:
         'After you perform an attack, assign the Suppressive Fire condition to the defender.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainrex.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainrex.png',
       conditions: ['suppressivefire'],
       slots: ['Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainrex.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainrex.png',
       standard: true,
       wildspace: true,
       keywords: ['Clone', 'TIE'],
@@ -84,11 +85,11 @@ const t: ShipType = {
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade] or [Hit] results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/ezrabridger-tielnfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ezrabridger-tielnfighter.png',
       force: { value: 1, recovers: 1, side: ['light'] },
       slots: ['Force Power', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger-tielnfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-tielnfighter.png',
       standard: true,
       wildspace: true,
       keywords: ['Light Side', 'Spectre', 'TIE'],
@@ -104,10 +105,10 @@ const t: ShipType = {
       ability:
         'Before you activate, you may perform a [Barrel Roll] or [Boost] action.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sabinewren-tielnfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabinewren-tielnfighter.png',
       slots: ['Talent', 'Modification'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-tielnfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-tielnfighter.png',
       standard: true,
       wildspace: true,
       keywords: ['Mandalorian', 'TIE', 'Spectre'],

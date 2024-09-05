@@ -44,10 +44,11 @@ const t: ShipType = {
       xws: 'captainkagi',
       ability:
         'At the start of the Engagement Phase, you may choose 1 or more friendly ships at range 0-3. If you do, transfer all enemy lock tokens from the chosen ships to you.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainkagi.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainkagi.png',
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainkagi.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainkagi.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -61,11 +62,12 @@ const t: ShipType = {
       xws: 'coloneljendon',
       ability:
         'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, while friendly ships acquire locks this round, they must acquire locks beyond range 3 instead of at range 0-3.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/coloneljendon.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/coloneljendon.png',
       charges: { value: 2, recovers: 0 },
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -79,10 +81,11 @@ const t: ShipType = {
       xws: 'lieutenantsai',
       ability:
         'After you a perform a [Coordinate] action, if the ship you chose performed an action on your action bar, you may perform that action.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantsai.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantsai.png',
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantsai.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantsai.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -95,10 +98,10 @@ const t: ShipType = {
       xws: 'omicrongrouppilot',
       text: 'Noted for its tri-wing design and advanced sensor suite, the Lambda-class shuttle serves a critical role as a light utility craft in the Imperial Navy.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/omicrongrouppilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/omicrongrouppilot.png',
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/omicrongrouppilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/omicrongrouppilot.png',
       standard: true,
       wildspace: true,
       epic: true,

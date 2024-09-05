@@ -41,9 +41,9 @@ const t: ShipType = {
       cost: 62,
       limited: 0,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/echobaseevacuees.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echobaseevacuees.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/echobaseevacuees.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echobaseevacuees.png',
       shipAbility: {
         name: 'Resupply Craft',
         text: 'After another friendly ship at range 0-1 performs an action, you may spend 1 [Energy]. If you do, it removes 1 orange or red token, or recovers 1 shield.',

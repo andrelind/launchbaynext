@@ -70,9 +70,9 @@ const t: ShipType = {
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/durge-separatistalliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/durge-separatistalliance.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/durge-separatistalliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/durge-separatistalliance.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,
@@ -94,9 +94,9 @@ const t: ShipType = {
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/cadbane-separatistalliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cadbane-separatistalliance.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane-separatistalliance.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cadbane-separatistalliance.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,
@@ -135,8 +135,10 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'Red', type: 'Boost' },
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig101.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig101.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig101.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig101.png',
       keywords: ['Droid'],
       standard: true,
       wildspace: true,
@@ -174,9 +176,9 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Boost' },
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/magnaguardexecutioner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/magnaguardexecutioner.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/magnaguardexecutioner.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magnaguardexecutioner.png',
       keywords: ['Droid'],
       standard: true,
       wildspace: true,
@@ -216,9 +218,9 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Boost' },
       ],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/magnaguardprotector.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/magnaguardprotector.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/magnaguardprotector.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magnaguardprotector.png',
       keywords: ['Droid'],
       standard: true,
       wildspace: true,
@@ -257,8 +259,10 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'Red', type: 'Boost' },
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig102.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig102.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig102.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig102.png',
       keywords: ['Droid'],
       standard: true,
       wildspace: true,
@@ -297,8 +301,10 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'Red', type: 'Boost' },
       ],
-      image: 'https://infinitearenas.com/xw2/images/pilots/ig111.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig111.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ig111.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig111.png',
       keywords: ['Droid'],
       standard: true,
       wildspace: true,

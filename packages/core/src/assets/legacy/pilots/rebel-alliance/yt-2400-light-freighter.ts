@@ -48,7 +48,8 @@ const t: ShipType = {
       xws: 'leebo',
       ability:
         'After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/leebo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo.png',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         { difficulty: 'White', type: 'Lock' },
@@ -67,7 +68,8 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/leebo.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo.png',
       standard: true,
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
@@ -81,7 +83,8 @@ const t: ShipType = {
       cost: 83,
       xws: 'dashrendar',
       ability: 'While you move, you ignore obstacles.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/dashrendar.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar.png',
       shipAbility: {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, do not apply the range 0-1 bonus and roll 1 fewer attack die.',
@@ -96,7 +99,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dashrendar.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],
@@ -110,14 +113,14 @@ const t: ShipType = {
       xws: 'wildspacefringer',
       text: 'Although stock YT-2400 light freighters have plenty of room for cargo, that space is often annexed to support modified weapon systems and oversized engines.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/wildspacefringer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wildspacefringer.png',
       shipAbility: {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, do not apply the range 0-1 bonus and roll 1 fewer attack die.',
       },
       slots: ['Missile', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wildspacefringer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wildspacefringer.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter'],

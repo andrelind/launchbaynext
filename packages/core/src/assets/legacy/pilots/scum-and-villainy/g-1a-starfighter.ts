@@ -47,7 +47,8 @@ const t: ShipType = {
       xws: '4lom',
       ability:
         'After you fully execute a red maneuver, gain 1 calculate token. At the start of the End Phase, you may choose 1 ship at range 0-1. If you do, transfer 1 of your stress tokens to that ship.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/4lom.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/4lom.png',
       slots: [
         'Talent',
         'Sensor',
@@ -62,7 +63,8 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'White', type: 'Jam' },
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/4lom.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/4lom.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
@@ -75,10 +77,11 @@ const t: ShipType = {
       cost: 41,
       xws: 'gandfindsman',
       text: 'The legendary Findsmen of Gand worship the enshrouding mists of their home planet, using signs, augurs, and mystical rituals to track their quarry.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/gandfindsman.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gandfindsman.png',
       slots: ['Sensor', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gandfindsman.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gandfindsman.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
@@ -93,7 +96,8 @@ const t: ShipType = {
       xws: 'zuckuss',
       ability:
         'While you perform a primary attack, you may roll 1 additional attack die. If you do, the defender rolls 1 additional defense die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/zuckuss.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zuckuss.png',
       slots: [
         'Talent',
         'Sensor',
@@ -104,7 +108,7 @@ const t: ShipType = {
         'Title',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zuckuss.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zuckuss.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],

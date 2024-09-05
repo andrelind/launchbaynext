@@ -51,9 +51,9 @@ const t: ShipType = {
       wildspace: true,
       text: 'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/stalgasinhiveguard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stalgasinhiveguard.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/stalgasinhiveguard.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/stalgasinhiveguard.png',
       cost: 33,
       slots: ['Talent'],
       epic: true,
@@ -71,8 +71,9 @@ const t: ShipType = {
       wildspace: true,
       caption: 'Archduke’s Enforcer',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sunfac.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/sunfac.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunfac.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sunfac.png',
       ability:
         'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
       cost: 41,
@@ -92,8 +93,9 @@ const t: ShipType = {
       wildspace: true,
       caption: 'Hive Guard Captain',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/berwerkret.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/berwerkret.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/berwerkret.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/berwerkret.png',
       ability:
         'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
       cost: 36,
@@ -113,8 +115,9 @@ const t: ShipType = {
       wildspace: true,
       caption: 'Opportunistic Ace',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/chertek.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/chertek.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chertek.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chertek.png',
       ability:
         'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
       cost: 36,
@@ -124,13 +127,13 @@ const t: ShipType = {
     {
       name: 'Gorgol',
       caption: 'Handy Engineer',
-
       limited: 1,
       initiative: 2,
       xws: 'gorgol',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gorgol.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/gorgol.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gorgol.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gorgol.png',
       shipAbility: {
         name: 'Pinpoint Tractor Array',
         text: 'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you fully execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
@@ -150,9 +153,9 @@ const t: ShipType = {
       initiative: 4,
       xws: 'petranakiarenaace',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/petranakiarenaace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/petranakiarenaace.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/petranakiarenaace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/petranakiarenaace.png',
       shipAbility: {
         name: 'Pinpoint Tractor Array',
         text: 'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',

@@ -48,7 +48,8 @@ const t: ShipType = {
       xws: 'asajjventress',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your [Single Turret Arc] at range 0-2 and spend 1 [Force]. If you do, that ship gains 1 stress token unless it removes 1 green token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/asajjventress.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/asajjventress.png',
       force: { value: 2, recovers: 1, side: ['dark'] },
       slots: [
         'Crew',
@@ -59,7 +60,7 @@ const t: ShipType = {
         'Force Power',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/asajjventress.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/asajjventress.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Dark Side'],
@@ -74,10 +75,11 @@ const t: ShipType = {
       xws: 'ketsuonyo',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in both your [Front Arc] and [Single Turret Arc] at range 0-1. If you do, that ship gains 1 tractor token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/ketsuonyo.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ketsuonyo.png',
       slots: ['Talent', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ketsuonyo.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ketsuonyo.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
@@ -93,10 +95,10 @@ const t: ShipType = {
       ability:
         'While you defend, if the attacker is in your [Single Turret Arc] at range 0-2, you may add 1 [Focus] result to your dice results.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sabinewren-lancerclasspursuitcraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabinewren-lancerclasspursuitcraft.png',
       slots: ['Talent', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-lancerclasspursuitcraft.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-lancerclasspursuitcraft.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
@@ -110,10 +112,10 @@ const t: ShipType = {
       xws: 'shadowporthunter',
       text: 'Crime syndicates augment the lethal skills of their loyal contractors with the best technology available, like the fast and formidable Lancer-class pursuit craft.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowporthunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowporthunter.png',
       slots: ['Crew', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowporthunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowporthunter.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],

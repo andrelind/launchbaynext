@@ -76,9 +76,9 @@ const t: ShipType = {
       ability:
         'Before an enemy ship in your [Bullseye Arc] is dealt a facedown damage card, you may spend 1 [Force]. If you do, that damage card is dealt faceup instead.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
       caption: 'Supreme Leader of the First Order',
       keywords: ['Dark Side', 'Light Side', 'TIE'],
       force: { value: 3, recovers: 1, side: ['dark', 'light'] },
@@ -99,8 +99,10 @@ const t: ShipType = {
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
         'After you perform a [Bullseye Arc] attack, if you have 1 or more non-lock red or orange tokens, you may perform a bonus attack against a different target.',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wrath.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/wrath.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wrath.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wrath.png',
       caption: 'Herald of Destruction',
       keywords: ['TIE'],
       epic: true,
@@ -121,8 +123,9 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver or perform a [Boost] action, each ship you moved through gains 2 jam tokens.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nightfall.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/nightfall.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nightfall.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nightfall.png',
       caption: '709th Legion Veteran',
       keywords: ['TIE'],
       epic: true,
@@ -143,8 +146,9 @@ const t: ShipType = {
       ability:
         'Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its [Front Arc].',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/whirlwind.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/whirlwind.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whirlwind.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whirlwind.png',
       caption: 'Reap What You Sow',
       keywords: ['TIE'],
       epic: true,
@@ -164,8 +168,9 @@ const t: ShipType = {
       cost: 44,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/709thlegionace.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/709thlegionace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/709thlegionace.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/709thlegionace.png',
       keywords: ['TIE'],
       epic: true,
     },
@@ -184,8 +189,9 @@ const t: ShipType = {
       cost: 41,
       slots: ['Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/redfuryzealot.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/redfuryzealot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redfuryzealot.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redfuryzealot.png',
       keywords: ['TIE'],
       epic: true,
     },

@@ -45,9 +45,9 @@ const t: ShipType = {
       xws: 'resistancesympathizer',
       text: 'After witnessing the Hosnian Cataclysm, some spacers willingly aided the Resistance with whatever ships they had.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/resistancesympathizer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/resistancesympathizer.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/resistancesympathizer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/resistancesympathizer.png',
       cost: 55,
       slots: [
         'Missile',
@@ -72,9 +72,9 @@ const t: ShipType = {
       ability:
         'After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/chewbacca-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chewbacca-scavengedyt1300.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/chewbacca-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chewbacca-scavengedyt1300.png',
       cost: 59,
       slots: [
         'Talent',
@@ -100,9 +100,9 @@ const t: ShipType = {
       ability:
         'Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/hansolo-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hansolo-scavengedyt1300.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-scavengedyt1300.png',
       cost: 62,
       slots: [
         'Talent',
@@ -127,8 +127,10 @@ const t: ShipType = {
       xws: 'rey',
       ability:
         'While you defend or perform an attack, if the enemy ship is in your [Front Arc], you may spend 1 [Force] to change 1 of your blank results to an [Evade] or [Hit] result.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/rey.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rey.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rey.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rey.png',
       force: { value: 2, recovers: 1, side: ['light'] },
       cost: 70,
       slots: [
@@ -155,9 +157,9 @@ const t: ShipType = {
       ability:
         'Before you execute a maneuver, you may spend 1 [Charge]. If you do, ignore obstacles during that maneuver. After you fully execute a maneuver, you may spend 2 [Charge] to perform a white [Boost] or red [Barrel Roll] action. Then if you performed a red [Barrel Roll] action, expose 1 damage card, if able.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/poedameron-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/poedameron-scavengedyt1300.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/poedameron-scavengedyt1300.png',
       charges: { value: 2, recovers: 1 },
       cost: 67,
       slots: [
@@ -184,9 +186,9 @@ const t: ShipType = {
       ability:
         'After you fully execute a red maneuver or perform a red action, you may spend any number of [Charge] to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/landocalrissian-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian-scavengedyt1300.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-scavengedyt1300.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-scavengedyt1300.png',
       charges: { value: 3, recovers: 1 },
       cost: 70,
       slots: [

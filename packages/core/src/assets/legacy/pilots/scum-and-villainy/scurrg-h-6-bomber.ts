@@ -46,7 +46,8 @@ const t: ShipType = {
       xws: 'captainnym',
       ability:
         'Before a friendly bomb or mine would detonate, you may spend 1 [Charge] to prevent it from detonating. While you defend against an attack obstructed by a bomb or mine, roll 1 additional defense die.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/captainnym.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainnym.png',
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -59,7 +60,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainnym.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainnym.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -71,7 +72,8 @@ const t: ShipType = {
       cost: 42,
       xws: 'lokrevenant',
       text: 'The Nubian Design Collective crafted the Scurrg H-6 Bomber with combat versatility in mind, arming it with powerful shields and a bristling array of destructive weaponry.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/lokrevenant.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lokrevenant.png',
       slots: [
         'Turret',
         'Crew',
@@ -82,7 +84,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lokrevenant.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lokrevenant.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -96,7 +98,8 @@ const t: ShipType = {
       xws: 'solsixxa',
       ability:
         'If you would drop a device using a [1 [Straight]] template, you may drop it using any other speed 1 template instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/solsixxa.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/solsixxa.png',
       slots: [
         'Talent',
         'Turret',
@@ -108,7 +111,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/solsixxa.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/solsixxa.png',
       standard: true,
       wildspace: true,
       epic: true,

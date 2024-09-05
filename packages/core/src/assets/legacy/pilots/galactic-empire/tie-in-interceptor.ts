@@ -46,14 +46,14 @@ const t: ShipType = {
       xws: 'alphasquadronpilot',
       text: 'Sienar Fleet Systems designed the TIE interceptor with four wing-mounted laser cannons, a dramatic increase in firepower over its predecessors.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/alphasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/alphasquadronpilot.png',
       shipAbility: {
         name: 'Autothrusters',
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Modification', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/alphasquadronpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/alphasquadronpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -67,14 +67,14 @@ const t: ShipType = {
       xws: 'sabersquadronace',
       text: "Led by Baron Soontir Fel, the pilots of Saber Squadron are among the Empire's best. Their TIE interceptors are marked with red stripes to designate pilots with at least ten confirmed kills.",
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sabersquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabersquadronace.png',
       shipAbility: {
         name: 'Autothrusters',
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabersquadronace.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabersquadronace.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -89,14 +89,15 @@ const t: ShipType = {
       xws: 'soontirfel',
       ability:
         'At the start of the Engagement Phase, if there is an enemy ship in your [Bullseye Arc], gain 1 focus token.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/soontirfel.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/soontirfel.png',
       shipAbility: {
         name: 'Autothrusters',
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -111,14 +112,15 @@ const t: ShipType = {
       xws: 'turrphennir',
       ability:
         'After you perform an attack, you may perform a [Barrel Roll] or [Boost] action, even if you are stressed.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/turrphennir.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/turrphennir.png',
       shipAbility: {
         name: 'Autothrusters',
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/turrphennir.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/turrphennir.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -142,8 +144,10 @@ const t: ShipType = {
         'After you perform an attack, if the defender was destroyed, gain 1 stress token. After a friendly ship at range 0-3 is destroyed, remove 1 stress token.',
       caption: 'Look Through My Eyes',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cienaree.png',
       epic: true,
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cienaree.png',
     },
     {
       name: 'Gideon Hask',
@@ -163,8 +167,10 @@ const t: ShipType = {
       ability:
         'While you perform an attack against a damaged defender, roll 1 additional attack die.',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask-tieininterceptor.png',
       epic: true,
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask-tieininterceptor.png',
     },
     {
       name: 'Vult Skerris',
@@ -185,9 +191,9 @@ const t: ShipType = {
       charges: { value: 1, recovers: -1 },
       keywords: ['TIE'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vultskerris-tieininterceptor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vultskerris-tieininterceptor.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/vultskerris-tieininterceptor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vultskerris-tieininterceptor.png',
       epic: true,
     },
     {
@@ -208,8 +214,9 @@ const t: ShipType = {
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       keywords: ['TIE'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/commandantgoran.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/commandantgoran.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/commandantgoran.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandantgoran.png',
       epic: true,
     },
     {
@@ -230,9 +237,9 @@ const t: ShipType = {
         'While you barrel roll, you must use the [[Bank Left] or [Bank Right]] template instead of the [[Straight]] template.',
       keywords: ['TIE'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlorrir.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantlorrir.png',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantlorrir.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantlorrir.png',
       epic: true,
     },
     {
@@ -254,8 +261,9 @@ const t: ShipType = {
         'During the Engagement Phase, after a friendly small ship at range 0-3 is destroyed, if that ship has not engaged this phase, you may spend 1 [Charge]. If you do, that ship engages at the current initiative.',
       keywords: ['TIE'],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nashwindrider.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/nashwindrider.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nashwindrider.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nashwindrider.png',
       epic: true,
     },
     {
@@ -284,9 +292,9 @@ const t: ShipType = {
         'Before a friendly TIE at range 0-1 would suffer damage, you may spend 2 [Charge]. If you do, prevent 1 damage.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-battleofyavin.png',
       epic: true,
     },
     {
@@ -314,9 +322,9 @@ const t: ShipType = {
         'Before a friendly TIE at range 0-1 would suffer damage, you may spend 2 [Charge]. If you do, prevent 1 damage.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/idenversio-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-battleofyavin-lsl.png',
       epic: true,
     },
     {
@@ -344,9 +352,9 @@ const t: ShipType = {
         'After you perform a [Barrel Roll] action, you may spend 1 [Charge] to perform a [Boost] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma4-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma4-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma4.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma4-battleofyavin.png',
       epic: true,
     },
     {
@@ -373,9 +381,9 @@ const t: ShipType = {
         'After you perform a [Barrel Roll] action, you may spend 1 [Charge] to perform a [Boost] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma4-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma4-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma4.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma4-battleofyavin-lsl.png',
       epic: true,
     },
     {
@@ -403,9 +411,9 @@ const t: ShipType = {
         'After you perform an attack that hits, you may spend 1 [Charge] to perform an [Evade] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma5-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma5-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma5.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma5-battleofyavin.png',
       epic: true,
     },
     {
@@ -432,9 +440,9 @@ const t: ShipType = {
         'After you perform an attack that hits, you may spend 1 [Charge] to perform an [Evade] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma5-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma5-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma5.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma5-battleofyavin-lsl.png',
       epic: true,
     },
     {
@@ -462,9 +470,9 @@ const t: ShipType = {
         'After you fully execute a speed 3-5 maneuver, you may spend 1 [Charge] to perform a [SLAM] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma6-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma6-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma6.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma6-battleofyavin.png',
       epic: true,
     },
     {
@@ -491,9 +499,9 @@ const t: ShipType = {
         'After you fully execute a speed 3-5 maneuver, you may spend 1 [Charge] to perform a [SLAM] action.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma6-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma6-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma6.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma6-battleofyavin-lsl.png',
       epic: true,
     },
     {
@@ -528,9 +536,9 @@ const t: ShipType = {
         'During the System Phase, you may spend 1 [Charge] to acquire a lock on an enemy ship at range 0-1.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma7-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma7-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma7.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma7-battleofyavin.png',
       epic: true,
     },
     {
@@ -564,9 +572,9 @@ const t: ShipType = {
         'During the System Phase, you may spend 1 [Charge] to acquire a lock on an enemy ship at range 0-1.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma7-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sigma7-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma7.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma7-battleofyavin-lsl.png',
       epic: true,
     },
     {
@@ -587,9 +595,10 @@ const t: ShipType = {
         'While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force]. If you do, change all of your [Hit] results to [Critical Hit] results.',
       force: { value: 2, recovers: 1, side: ['dark'] },
       keywords: ['Dark Side', 'TIE'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/secondsister.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/secondsister.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/secondsister.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/secondsister.png',
       epic: true,
     },
     {
@@ -614,9 +623,9 @@ const t: ShipType = {
         'While you defend, if you are focused, roll 1 additional defense die.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sapphire2-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sapphire2-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sapphire2-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sapphire2-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -637,9 +646,9 @@ const t: ShipType = {
         'While you defend, if you are focused, roll 1 additional defense die.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sapphire2-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sapphire2-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sapphire2-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sapphire2-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -667,9 +676,9 @@ const t: ShipType = {
         'After you perform an attack, you may spend 1 [Charge] and gain 1 deplete token to boost or barrel roll.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/soontirfel-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/soontirfel-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -691,9 +700,9 @@ const t: ShipType = {
         'After you perform an attack, you may spend 1 [Charge] and gain 1 deplete token to boost or barrel roll.',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/soontirfel-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/soontirfel-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,
@@ -724,9 +733,9 @@ const t: ShipType = {
       ability: 'After you perform an [Evade] action, gain a calculate token',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/mausmonare-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mausmonare-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mausmonare-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mausmonare-battleoverendor.png',
       standard: false,
       wildspace: true,
       epic: true,
@@ -752,9 +761,9 @@ const t: ShipType = {
       ability: 'After you perform an [Evade] action, gain a calculate token',
       keywords: ['TIE'],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/mausmonare-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mausmonare-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mausmonare-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mausmonare-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       epic: true,

@@ -13,9 +13,9 @@ const t: UpgradeBase[] = [
           'After you reveal your dial, you may perform 1 action. If you do, you cannot perform another action during your activation.',
         slots: ['Sensor'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/advancedsensors.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/advancedsensors.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/advancedsensors.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/advancedsensors.png',
       },
     ],
     cost: {
@@ -39,9 +39,9 @@ const t: UpgradeBase[] = [
         slots: ['Sensor'],
         charges: { value: 2, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/collisiondetector.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/collisiondetector.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/collisiondetector.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/collisiondetector.png',
       },
     ],
     cost: { value: 6 },
@@ -61,9 +61,9 @@ const t: UpgradeBase[] = [
           'While you perform an attack, if you have a lock on the defender, you may reroll 1 attack die. If you do, you cannot spend your lock during this attack.',
         slots: ['Sensor'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/firecontrolsystem.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/firecontrolsystem.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/firecontrolsystem.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/firecontrolsystem.png',
       },
     ],
     cost: { value: 2 },
@@ -83,9 +83,9 @@ const t: UpgradeBase[] = [
           'During the System Phase, if you would drop or launch a bomb, you may launch it using the [5 [Straight]] template instead.',
         slots: ['Sensor'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/trajectorysimulator.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trajectorysimulator.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/trajectorysimulator.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/trajectorysimulator.png',
       },
     ],
     cost: {
@@ -109,9 +109,9 @@ const t: UpgradeBase[] = [
         slots: ['Sensor'],
         charges: { value: 1, recovers: 1 },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/passivesensors.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/passivesensors.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/passivesensors.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/passivesensors.png',
       },
     ],
     cost: {

@@ -68,8 +68,10 @@ const t: ShipType = {
         name: 'Dead to Rights',
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/durge.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/durge.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/durge.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/durge.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,
@@ -90,9 +92,10 @@ const t: ShipType = {
         name: 'Dead to Rights',
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/cadbane.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cadbane.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cadbane.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,
@@ -113,9 +116,9 @@ const t: ShipType = {
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/viktorhel-rogueclassstarfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/viktorhel-rogueclassstarfighter.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/viktorhel-rogueclassstarfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/viktorhel-rogueclassstarfighter.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,
@@ -136,9 +139,9 @@ const t: ShipType = {
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
       image:
-        'https://infinitearenas.com/xw2/images/pilots/nomlumb-rogueclassstarfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nomlumb-rogueclassstarfighter.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb-rogueclassstarfighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nomlumb-rogueclassstarfighter.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,
@@ -156,9 +159,10 @@ const t: ShipType = {
         name: 'Dead to Rights',
         text: 'While you perform an attack, if the defender is in your [Bullseye Arc], defense dice cannot be modified using green tokens.',
       },
-      image: 'https://infinitearenas.com/xw2/images/pilots/outerrimhunter.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/outerrimhunter.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimhunter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimhunter.png',
       keywords: ['Bounty Hunter'],
       standard: true,
       wildspace: true,

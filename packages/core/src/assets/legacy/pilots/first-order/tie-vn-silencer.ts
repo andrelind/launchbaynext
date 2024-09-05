@@ -53,9 +53,10 @@ const t: ShipType = {
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Talent', 'Torpedo', 'Missile', 'Tech', 'Configuration'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/blackout.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blackout.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blackout.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blackout.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -77,9 +78,10 @@ const t: ShipType = {
       },
       conditions: ['illshowyouthedarkside'],
       slots: ['Force Power', 'Torpedo', 'Missile', 'Tech', 'Configuration'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/kyloren.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kyloren.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kyloren.png',
       standard: true,
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
@@ -98,9 +100,9 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Torpedo', 'Missile', 'Tech', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/firstordertestpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordertestpilot.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstordertestpilot.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordertestpilot.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -120,9 +122,10 @@ const t: ShipType = {
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Talent', 'Torpedo', 'Missile', 'Tech', 'Configuration'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/recoil.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/recoil.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/recoil.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/recoil.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -142,9 +145,10 @@ const t: ShipType = {
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       slots: ['Talent', 'Torpedo', 'Missile', 'Tech', 'Configuration'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/avenger.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/avenger.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/avenger.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/avenger.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -163,9 +167,9 @@ const t: ShipType = {
       },
       slots: ['Torpedo', 'Missile', 'Tech', 'Configuration'],
       image:
-        'https://infinitearenas.com/xw2/images/pilots/sienarjaemusengineer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sienarjaemusengineer.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sienarjaemusengineer.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sienarjaemusengineer.png',
       standard: true,
       wildspace: true,
       keywords: ['TIE'],
@@ -186,8 +190,10 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       slots: ['Torpedo', 'Missile', 'Tech', 'Configuration'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rush.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/rush.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rush.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rush.png',
       keywords: ['TIE'],
       epic: true,
     },

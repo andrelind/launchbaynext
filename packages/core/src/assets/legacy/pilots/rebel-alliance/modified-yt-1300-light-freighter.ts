@@ -48,7 +48,8 @@ const t: ShipType = {
       xws: 'chewbacca',
       ability:
         'Before you would be dealt a faceup damage card, you may spend 1 [Charge] to be dealt the card facedown instead.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/chewbacca.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chewbacca.png',
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -61,7 +62,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/chewbacca.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chewbacca.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -77,7 +78,7 @@ const t: ShipType = {
       ability:
         'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/hansolo-modifiedyt1300lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hansolo-modifiedyt1300lightfreighter.png',
       slots: [
         'Talent',
         'Missile',
@@ -89,7 +90,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-modifiedyt1300lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-modifiedyt1300lightfreighter.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -105,7 +106,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-3. That ship may perform an action.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
       slots: [
         'Talent',
         'Missile',
@@ -117,7 +118,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -131,7 +132,7 @@ const t: ShipType = {
       xws: 'outerrimsmuggler',
       text: 'Known for its durability and modular design, the YT-1300 is one of the most popular, widely used, and extensively customized freighters in the galaxy.',
       image:
-        'https://infinitearenas.com/xw2/images/pilots/outerrimsmuggler.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/outerrimsmuggler.png',
       slots: [
         'Missile',
         'Crew',
@@ -142,7 +143,7 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimsmuggler.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimsmuggler.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -169,8 +170,9 @@ const t: ShipType = {
         'Gunner',
       ],
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/leiaorgana.png',
-      image: 'https://infinitearenas.com/xw2/images/pilots/leiaorgana.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leiaorgana.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leiaorgana.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300', 'Light Side'],
@@ -196,9 +198,9 @@ const t: ShipType = {
         'l337sprogramming-battleofyavin',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/hansolo-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hansolo-battleofyavin.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-battleofyavin.png',
       standard: false,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -228,9 +230,9 @@ const t: ShipType = {
         'Gunner',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/hansolo-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hansolo-battleofyavin-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-battleofyavin.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-battleofyavin-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -270,9 +272,9 @@ const t: ShipType = {
         'millenniumfalcon-battleoverendor',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/landocalrissian-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian-battleoverendor.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-battleoverendor.png',
       standard: false,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -315,9 +317,9 @@ const t: ShipType = {
         'Gunner',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/landocalrissian-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/landocalrissian-battleoverendor-lsl.png',
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-battleoverendor.png',
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-battleoverendor-lsl.png',
       standard: true,
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],

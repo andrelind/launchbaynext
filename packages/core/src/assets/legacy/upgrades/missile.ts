@@ -21,9 +21,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/barragerockets.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/barragerockets.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/barragerockets.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/barragerockets.png',
       },
     ],
     cost: { value: 8 },
@@ -51,9 +51,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/clustermissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/clustermissiles.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/clustermissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/clustermissiles.png',
       },
     ],
     cost: {
@@ -75,7 +75,7 @@ const t: UpgradeBase[] = [
         ability:
           'Attack ([Lock]): Spend 1 [Charge]. After this attack hits, each ship at range 0-1 of the defender exposes 1 of its damage cards.',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/concussionmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/concussionmissiles.png',
         slots: ['Missile'],
         charges: { value: 3, recovers: 0 },
         attack: {
@@ -86,7 +86,7 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/concussionmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/concussionmissiles.png',
       },
     ],
     cost: { value: 6 },
@@ -114,9 +114,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/homingmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/homingmissiles.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/homingmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/homingmissiles.png',
       },
     ],
     cost: { value: 5 },
@@ -143,9 +143,10 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: true,
         },
-        image: 'https://infinitearenas.com/xw2/images/upgrades/ionmissiles.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ionmissiles.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ionmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ionmissiles.png',
       },
     ],
     cost: { value: 2 },
@@ -163,7 +164,7 @@ const t: UpgradeBase[] = [
         type: 'Missile',
         ability: 'Attack ([Focus]): Spend 1 [Charge].',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/protonrockets.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protonrockets.png',
         slots: ['Missile'],
         charges: { value: 1, recovers: 0 },
         attack: {
@@ -174,7 +175,7 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/protonrockets.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/protonrockets.png',
       },
     ],
     cost: { value: 5 },
@@ -201,10 +202,10 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/energyshellcharges.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/energyshellcharges.png',
         slots: ['Missile'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/energyshellcharges.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/energyshellcharges.png',
       },
     ],
     restrictions: [
@@ -228,7 +229,7 @@ const t: UpgradeBase[] = [
           "At the start of the Engagement Phase, you may spend 1 calculate token and 1 [Charge] to launch 1 buzz droid swarm using the [3 [Bank Left]], [3 [Straight]], or [3 [Bank Right]] template. This card's [Charge] cannot be recovered.",
         charges: { value: 1, recovers: 0 },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/discordmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/discordmissiles.png',
         slots: ['Missile'],
         device: {
           name: 'Buzz Droid Swarm',
@@ -242,7 +243,7 @@ const t: UpgradeBase[] = [
           ],
         },
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/discordmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/discordmissiles.png',
       },
     ],
     cost: { value: 4 },
@@ -271,9 +272,9 @@ const t: UpgradeBase[] = [
           ordnance: true,
         },
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/diamondboronmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/diamondboronmissiles.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/diamondboronmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/diamondboronmissiles.png',
       },
     ],
     cost: { value: 5 },
@@ -301,9 +302,9 @@ const t: UpgradeBase[] = [
         type: 'Missile',
         slots: ['Missile'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/magpulsewarheads.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/magpulsewarheads.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/magpulsewarheads.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/magpulsewarheads.png',
       },
     ],
     cost: {
@@ -327,9 +328,9 @@ const t: UpgradeBase[] = [
         type: 'Missile',
         slots: ['Missile', 'Device'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/electrochaffmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/electrochaffmissiles.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/electrochaffmissiles.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/electrochaffmissiles.png',
       },
     ],
     cost: { value: 4 },
@@ -357,9 +358,9 @@ const t: UpgradeBase[] = [
         type: 'Missile',
         slots: ['Missile', 'Missile'],
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/multimissilepods.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/multimissilepods.png',
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/multimissilepods.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/multimissilepods.png',
       },
     ],
     cost: { value: 4 },
@@ -387,9 +388,9 @@ const t: UpgradeBase[] = [
         type: 'Missile',
         slots: ['Missile'],
         image:
-          'https://infinitearenas.com/xw2/images/upgrades/xx23sthreadtracers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/xx23sthreadtracers.png',
         artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/xx23sthreadtracers.png',
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/xx23sthreadtracers.png',
       },
     ],
     cost: { value: 4 },
