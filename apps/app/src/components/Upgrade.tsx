@@ -156,7 +156,10 @@ export const UpgradeComponent: FC<Props> = ({
   const upgradeSide = upgrade?.sides[side || 0];
   const { attack, device, grants } = upgradeSide;
 
+  const art = upgradeArtUri(upgradeSide);
   const showImage = !standardLoadout && upgradeArtUri(upgradeSide);
+
+  console.log(upgradeSide?.title, art);
 
   return (
     <View style={tw`flex-row`}>
@@ -166,10 +169,9 @@ export const UpgradeComponent: FC<Props> = ({
           onPress={() => onImagePress?.(upgradeCardUri(upgradeSide))}
         >
           <ImageComponent
-            recyclingKey={upgradeArtUri(upgradeSide)?.uri}
             transition={300}
             style={tw`w-20 h-full justify-end rounded-l-lg bg-zinc-700 flex-1`}
-            uri={upgradeArtUri(upgradeSide)}
+            uri={art}
           />
         </TouchableOpacity>
       )}

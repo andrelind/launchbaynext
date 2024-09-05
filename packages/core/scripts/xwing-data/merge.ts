@@ -4,7 +4,7 @@ import ora from 'ora';
 import prettier from 'prettier';
 // import assets from '../../src/assets';
 
-import { AssetType } from '../../src';
+import { AssetType } from '../../src/assets/';
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
 import { XWDPilot, XWDShip, XWDUpgrade } from './data2-types';
 import { asyncForEach, getFaction, getName } from './utils';
@@ -120,41 +120,41 @@ export const runMerge = async (baseUrl: string, assets: AssetType) => {
           force: s.force ? { ...s.force, side: ['light', 'dark'] } : undefined,
           grants: s.grants
             ? s.grants.map((g) => {
-                if (g.type === 'action') {
-                  return {
-                    action: g.value,
-                    value: 1,
-                  };
-                } else if (g.type === 'slot') {
-                  return {
-                    slot: g.value,
-                    value: g.amount || 1,
-                  };
-                } else if (g.type === 'stat') {
-                  if (g.arc) {
-                    return {
-                      stat: g.value,
-                      value: g.amount || 1,
-                      arc: g.arc,
-                    };
-                  }
+              if (g.type === 'action') {
+                return {
+                  action: g.value,
+                  value: 1,
+                };
+              } else if (g.type === 'slot') {
+                return {
+                  slot: g.value,
+                  value: g.amount || 1,
+                };
+              } else if (g.type === 'stat') {
+                if (g.arc) {
                   return {
                     stat: g.value,
                     value: g.amount || 1,
-                  };
-                } else if (g.type === 'arc') {
-                  return {
-                    arc: g.value,
-                    value: 1,
-                  };
-                } else if (g.type === 'force') {
-                  return {
-                    side: g.value[0],
-                    value: g.amount || 1,
+                    arc: g.arc,
                   };
                 }
-                return g;
-              })
+                return {
+                  stat: g.value,
+                  value: g.amount || 1,
+                };
+              } else if (g.type === 'arc') {
+                return {
+                  arc: g.value,
+                  value: 1,
+                };
+              } else if (g.type === 'force') {
+                return {
+                  side: g.value[0],
+                  value: g.amount || 1,
+                };
+              }
+              return g;
+            })
             : undefined,
         })),
         epic: true,

@@ -413,7 +413,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
         <Dialog.Description>
           Please type in the new name of the squadron
         </Dialog.Description>
-        <Dialog.Input value={tempName} onChangeText={setTempName} />
+        <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />
         <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
         <Dialog.Button
           label="OK"

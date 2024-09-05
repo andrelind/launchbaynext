@@ -93,7 +93,7 @@ const t: ShipType = {
       caption: 'Old Soldier',
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 15,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/tezanasz.png',
       artwork:
