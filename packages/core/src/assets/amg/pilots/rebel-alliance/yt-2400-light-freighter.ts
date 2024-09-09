@@ -227,7 +227,7 @@ const t: ShipType = {
       caption: 'In it for Himself',
       initiative: 5,
       limited: 1,
-      cost: 7,
+      cost: 6,
       xws: 'dashrendar-swz103-sl-rebelalliance',
       ability:
         'After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1.',

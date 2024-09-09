@@ -65,7 +65,7 @@ const t: ShipType = {
       caption: 'Urbane Ace',
       initiative: 5,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'duchess',
       ability:
         'You may choose not to use your Adaptive Ailerons. You may use your Adaptive Ailerons even while stressed.',
@@ -74,7 +74,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 18,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/duchess.png',
       artwork:

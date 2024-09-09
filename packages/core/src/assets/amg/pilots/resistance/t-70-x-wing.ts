@@ -181,7 +181,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 8,
+      loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/elloasty.png',
       artwork:

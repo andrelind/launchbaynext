@@ -86,7 +86,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Dark Side', 'TIE'],
-      loadout: 22,
+      loadout: 24,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kyloren.png',
       artwork:

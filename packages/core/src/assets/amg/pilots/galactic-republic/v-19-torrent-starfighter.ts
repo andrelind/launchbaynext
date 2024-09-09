@@ -186,7 +186,7 @@ const t: ShipType = {
         'After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.',
       standard: true,
       epic: true,
-      cost: 3,
+      cost: 4,
       slots: [],
       keywords: ['Clone'],
       loadout: 0,

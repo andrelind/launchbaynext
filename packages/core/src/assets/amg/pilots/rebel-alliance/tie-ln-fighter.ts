@@ -113,7 +113,7 @@ const t: ShipType = {
       ffg: 47,
       standard: true,
       epic: true,
-      loadout: 3,
+      loadout: 0,
       extended: true,
       keywords: ['Mandalorian', 'TIE', 'Spectre'],
       image:

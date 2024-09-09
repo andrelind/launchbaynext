@@ -49,7 +49,7 @@ const t: ShipType = {
         'After you perform an attack, you may spend 2 [Force] to perform a bonus primary attack against a different target. If your attack missed, you may perform that bonus primary attack against the same target instead.',
       standard: true,
       epic: true,
-      cost: 7,
+      cost: 6,
       slots: [
         'Force Power',
         'Force Power',
@@ -63,7 +63,7 @@ const t: ShipType = {
         'Modification',
       ],
       ffg: 503,
-      loadout: 19,
+      loadout: 14,
       extended: true,
       keywords: ['Dark Side', 'Sith'],
       image: 'https://infinitearenas.com/xw2/images/pilots/darthmaul.png',

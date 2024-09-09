@@ -175,7 +175,7 @@ const t: ShipType = {
       name: 'Zizi Tlo',
       initiative: 5,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'zizitlo',
       ability:
         'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
@@ -186,7 +186,7 @@ const t: ShipType = {
       ffg: 638,
       caption: 'Committed to the Cause',
       keywords: ['A-wing'],
-      loadout: 10,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zizitlo.png',
       artwork:

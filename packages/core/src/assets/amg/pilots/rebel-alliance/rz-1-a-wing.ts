@@ -196,7 +196,7 @@ const t: ShipType = {
       xws: 'ahsokatano-rz1awing',
       name: 'Ahsoka Tano',
       caption: 'Fulcrum',
-      cost: 5,
+      cost: 4,
       initiative: 5,
       limited: 1,
       ability:
@@ -213,7 +213,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 881,
-      loadout: 12,
+      loadout: 7,
       extended: true,
       keywords: ['A-wing', 'Light Side'],
       artwork:
@@ -377,7 +377,7 @@ const t: ShipType = {
       limited: 1,
       standard: true,
       extended: true,
-      cost: 3,
+      cost: 4,
       ability:
         'While defending, you may gain 1 strain token to change up to 2 of your blank results to [Focus] results.',
       standardLoadout: [

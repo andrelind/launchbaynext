@@ -190,7 +190,7 @@ const t: ShipType = {
     {
       name: '“Odd Ball”',
       xws: 'oddball-siegeofcoruscant',
-      cost: 4,
+      cost: 5,
       slots: [],
       ffg: 523,
       caption: 'Siege of Coruscant',

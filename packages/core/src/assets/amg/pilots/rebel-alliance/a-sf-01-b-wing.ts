@@ -275,7 +275,7 @@ const t: ShipType = {
       xws: 'braylenstramm-battleoverendor',
       name: 'Braylen Stramm',
       caption: 'Battle over Endor',
-      cost: 4,
+      cost: 5,
       initiative: 4,
       limited: 1,
       ability:
