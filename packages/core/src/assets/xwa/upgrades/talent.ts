@@ -597,7 +597,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/snapshot.png',
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 7 },
     extended: true,
   },
   {
