@@ -804,7 +804,7 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         ability:
           'Setup: Equip this side faceup. While you defend, you may flip this card. If you do, the attacker must reroll all attack dice.',
-        slots: ['Crew / Configuration'],
+        slots: ['Crew'],
         ffg: 384,
         artwork:
           'https://infinitearenas.com/xw2/images/artwork/upgrades/l337.png',
