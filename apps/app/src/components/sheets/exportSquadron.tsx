@@ -6,6 +6,7 @@ import { serialize } from 'lbn-core/src/helpers/serializer';
 import { XWS } from 'lbn-core/src/types';
 import { Text, TouchableOpacity, View } from 'react-native';
 import ActionSheet, {
+    SheetManager,
     SheetProps
 } from 'react-native-actions-sheet';
 import Toast from 'react-native-toast-message';
@@ -42,6 +43,7 @@ const ExportSquadronSheet = ({
                             type: 'success',
                             text1: 'XWS copied to clipboard',
                         });
+                        SheetManager.hide(sheetId);
                     }}>
                         <Feather name='clipboard' size={20} color={red} />
                         <Text>XWS</Text>
@@ -53,6 +55,7 @@ const ExportSquadronSheet = ({
                             type: 'success',
                             text1: 'Link copied to clipboard',
                         });
+                        SheetManager.hide(sheetId);
                     }}>
                         <Feather name='clipboard' size={20} color={red} />
                         <Text>Link</Text>
@@ -64,6 +67,7 @@ const ExportSquadronSheet = ({
                             type: 'success',
                             text1: 'Link copied to clipboard',
                         });
+                        SheetManager.hide(sheetId);
                     }}>
                         <Feather name='clipboard' size={20} color={red} />
                         <Text>TTS</Text>
@@ -75,6 +79,7 @@ const ExportSquadronSheet = ({
                             type: 'success',
                             text1: 'Link copied to clipboard',
                         });
+                        SheetManager.hide(sheetId);
                     }}>
                         <Feather name='clipboard' size={20} color={red} />
                         <Text>Text</Text>
@@ -86,6 +91,7 @@ const ExportSquadronSheet = ({
                             type: 'success',
                             text1: 'Link copied to clipboard',
                         });
+                        SheetManager.hide(sheetId);
                     }}>
                         <Feather name='clipboard' size={20} color={red} />
                         <Text>Print URL</Text>

@@ -153,7 +153,7 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
 
       title: xws?.name,
     });
-  }, [xws?.name, xws?.points, columns]);
+  }, [xws?.name, xws?.points, xws?.version, columns]);
 
   const renderHeader = () => (
     <View>
