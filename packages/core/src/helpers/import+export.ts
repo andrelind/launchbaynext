@@ -240,7 +240,7 @@ export const exportAsTTS = (squadron: XWS) => {
   squadron.pilots?.map((pilot) => {
     const s = loadShip2(pilot, { faction: squadron.faction, format: squadron.format, ruleset: squadron.ruleset });
 
-    text += s.pilot?.name;
+    text += s.pilot?.name?.replace("'", '');
     slotKeys.forEach((key) => {
       const up = s.upgrades && s.upgrades[key];
       if (up) {

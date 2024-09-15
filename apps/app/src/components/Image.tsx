@@ -1,4 +1,4 @@
-import { Image, ImageProps } from 'expo-image';
+import { ImageBackground, ImageProps } from 'expo-image';
 import { FC, useEffect, useState } from 'react';
 
 type Props = ImageProps & {
@@ -12,17 +12,23 @@ export const ImageComponent: FC<Props> = ({ uri, ...props }) => {
     setCurrentUri(uri.uri);
   }, [uri.uri]);
 
+
+
   return (
-    <Image
+
+    <ImageBackground
       recyclingKey={currentUri}
       transition={300}
       source={{ uri: currentUri }}
       {...props}
-      onError={() => {
+      onError={(e) => {
+        console.log('ImageComponent onError', e);
         if (uri.backupUri) {
           setCurrentUri(uri.backupUri);
         }
       }}
-    />
+    >
+      {props.children}
+    </ImageBackground>
   );
 };

@@ -409,8 +409,8 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
       </TouchableOpacity>
 
       <Dialog.Container visible={showRename}>
-        <Dialog.Title>Change name</Dialog.Title>
-        <Dialog.Description>
+        <Dialog.Title style={tw`text-black`}>Change name</Dialog.Title>
+        <Dialog.Description style={tw`text-zinc-400`}>
           Please type in the new name of the squadron
         </Dialog.Description>
         <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />

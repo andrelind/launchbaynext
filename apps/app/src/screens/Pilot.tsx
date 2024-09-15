@@ -125,7 +125,6 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
             }}
           >
             <ImageComponent
-              transition={300}
               uri={{ uri: ship?.pilot?.artwork }}
               style={tw`h-40 w-full rounded-t-lg justify-end`}
             >
@@ -143,10 +142,6 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
                           ship?.pilot?.limited > 0 &&
                           `${'•'.repeat(ship?.pilot?.limited)} `}
                         {ship?.pilot?.name}
-                        {/* {count !== undefined && (
-                    <Text
-                      style={tw`pl-2 font-normal text-gray-400`}>{` (${count})`}</Text>
-                  )} */}
                       </Text>
                       {Boolean(ship?.pilot?.caption) && (
                         <Text style={tw`italic text-white`}>
@@ -421,11 +416,11 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
       )}
 
       <Dialog.Container visible={showRename}>
-        <Dialog.Title>Name of loadout</Dialog.Title>
-        <Dialog.Description>
+        <Dialog.Title style={tw`text-black`}>Name of loadout</Dialog.Title>
+        <Dialog.Description style={tw`text-zinc-400`}>
           What do you want to call this loadout?
         </Dialog.Description>
-        <Dialog.Input value={tempName} onChangeText={setTempName} />
+        <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />
         <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
         <Dialog.Button
           label="OK"

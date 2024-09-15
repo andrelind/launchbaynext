@@ -293,7 +293,7 @@ const t: ShipType = {
       ffg: 911,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 20,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/newrepublicpatrol.png',
