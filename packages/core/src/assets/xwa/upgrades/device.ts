@@ -25,7 +25,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/bombletgenerator.png',
       },
     ],
-    cost: { value: 2 },
+    cost: { value: 3 },
     standard: true,
     epic: true,
     extended: true,
