@@ -75,7 +75,7 @@ const t: ShipType = {
       caption: 'Adrenaline Junkie',
       initiative: 5,
       limited: 1,
-      cost: 5,
+      cost: 6,
       xws: 'redline',
       ability:
         'You can maintain up to 2 locks. After you perform an action, you may acquire a lock.',
@@ -93,7 +93,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['TIE'],
-      loadout: 14,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/redline.png',
       artwork:

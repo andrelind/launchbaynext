@@ -83,7 +83,7 @@ const t: ShipType = {
       ffg: 62,
       standard: false,
       epic: true,
-      loadout: 25,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/mirandadoni.png',
       artwork:

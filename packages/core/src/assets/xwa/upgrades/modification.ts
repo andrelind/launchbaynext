@@ -200,7 +200,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/staticdischargevanes.png',
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 12 },
     standard: false,
     epic: true,
     extended: true,

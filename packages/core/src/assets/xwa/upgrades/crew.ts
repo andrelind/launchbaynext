@@ -1606,7 +1606,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/kaydelconnix.png',
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 8 },
     restrictions: [{ factions: ['Resistance'] }],
     standard: false,
     epic: true,

@@ -247,7 +247,7 @@ const t: ShipType = {
       caption: 'Siege of Coruscant',
       initiative: 1,
       limited: 2,
-      cost: 2,
+      cost: 3,
       xws: 'baktoidprototype-siegeofcoruscant',
       ability:
         'While you perform a special attack, if a friendly ship with the Networked Calculations ship ability has a lock on the defender, you may ignore the [Focus], [Calculate], or [Lock] requirement of that attack.',
