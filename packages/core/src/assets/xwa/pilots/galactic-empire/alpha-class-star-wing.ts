@@ -100,7 +100,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       cost: 6,
-      xws: 'lieutenantkarsabi-alphaclassstarwing',
+      xws: 'lieutenantkarsabi-ssl',
       ability: 'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
       shipAbility: {
         name: 'Prioritized Weapons Systems',
@@ -126,7 +126,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 6,
-      xws: 'majorvynder-alphaclassstarwing',
+      xws: 'majorvynder-ssl',
       ability:
         'After you perform a [Missile] attack, you may perform a bonus [Cannon] attack. While you perform this bonus attack, you may change 1 [Focus] result to a [Hit] result.',
       shipAbility: {

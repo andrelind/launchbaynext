@@ -123,7 +123,7 @@ const t: ShipType = {
       limited: 1,
       cost: 7,
       charges: { value: 2, recovers: 0 },
-      xws: 'whisper-tiephphantom',
+      xws: 'whisper-ssl',
       ability: 'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
       shipAbility: {
         name: 'Stygium Array',
@@ -143,7 +143,7 @@ const t: ShipType = {
       limited: 1,
       cost: 6,
       charges: { value: 1, recovers: 1 },
-      xws: 'echo-tiephphantom',
+      xws: 'echo-ssl',
       ability:
         'After an enemy ship at range 0-1 performs an action on its action bar, you may spend 1 [Charge] to perform the same action, treating it as white.',
       shipAbility: {
