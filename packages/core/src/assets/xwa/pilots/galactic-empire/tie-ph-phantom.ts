@@ -78,8 +78,7 @@ const t: ShipType = {
       loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/whisper.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/whisper.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/whisper.png',
     },
     {
       name: 'Imdaar Test Pilot',
@@ -96,8 +95,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/imdaartestpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/imdaartestpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/imdaartestpilot.png',
       caption: '',
     },
     {
@@ -114,52 +112,51 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 3,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sigmasquadronace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigmasquadronace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sigmasquadronace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sigmasquadronace.png',
       caption: '',
     },
     {
-      "name": "“Whisper”",
-      "caption": "Unseen Assailant",
-      "initiative": 5,
-      "limited": 1,
-      "cost": 7,
-      "charges": { "value": 2, "recovers": 0 },
-      "xws": "whisper-tiephphantom",
-      "ability": "After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.",
-      "shipAbility": {
-        "name": "Stygium Array",
-        "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
+      name: '“Whisper”',
+      caption: 'Unseen Assailant',
+      initiative: 5,
+      limited: 1,
+      cost: 7,
+      charges: { value: 2, recovers: 0 },
+      xws: 'whisper-tiephphantom',
+      ability: 'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
+      shipAbility: {
+        name: 'Stygium Array',
+        text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
-      "standardLoadout": ["withoutatrace-tiephphantom", "relaysystem-tiephphantom", "stygiumreserve-tiephphantom"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png",
-      "artwork": "",
-      "standard": true,
-      "extended": true,
-      "epic": true
+      standardLoadout: ['withoutatrace-tiephphantom', 'relaysystem-tiephphantom', 'stygiumreserve-tiephphantom'],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
+      artwork: '',
+      standard: true,
+      extended: true,
+      epic: true,
     },
     {
-      "name": "“Echo”",
-      "caption": "Copycat",
-      "initiative": 4,
-      "limited": 1,
-      "cost": 6,
-      "charges": { "value": 1, "recovers": 1 },
-      "xws": "echo-tiephphantom",
-      "ability": "After an enemy ship at range 0-1 performs an action on its action bar, you may spend 1 [Charge] to perform the same action, treating it as white.",
-      "shipAbility": {
-        "name": "Stygium Array",
-        "text": "After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token."
+      name: '“Echo”',
+      caption: 'Copycat',
+      initiative: 4,
+      limited: 1,
+      cost: 6,
+      charges: { value: 1, recovers: 1 },
+      xws: 'echo-tiephphantom',
+      ability:
+        'After an enemy ship at range 0-1 performs an action on its action bar, you may spend 1 [Charge] to perform the same action, treating it as white.',
+      shipAbility: {
+        name: 'Stygium Array',
+        text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
-      "standardLoadout": ["silenthunter-tiephphantom", "stealthgambit-tiephphantom", "manualailerons-tiephphantom"],
-      "image": "https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png",
-      "artwork": "https://infinitearenas.com/xw2/images/quickbuilds/echo-tiephphantom.png",
-      "standard": true,
-      "extended": true,
-      "epic": true
-    }
+      standardLoadout: ['silenthunter-tiephphantom', 'stealthgambit-tiephphantom', 'manualailerons-tiephphantom'],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
+      artwork: 'https://infinitearenas.com/xw2/images/quickbuilds/echo-tiephphantom.png',
+      standard: true,
+      extended: true,
+      epic: true,
+    },
   ],
 };
 

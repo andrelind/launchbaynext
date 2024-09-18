@@ -46,27 +46,15 @@ const t: ShipType = {
       limited: 1,
       cost: 7,
       xws: 'captainoicunn',
-      ability:
-        'While you perform an attack at attack range 0, treat it as an attack at attack range 1.',
-      slots: [
-        'Talent',
-        'Talent',
-        'Torpedo',
-        'Crew',
-        'Crew',
-        'Gunner',
-        'Device',
-        'Modification',
-        'Title',
-      ],
+      ability: 'While you perform an attack at attack range 0, treat it as an attack at attack range 1.',
+      slots: ['Talent', 'Talent', 'Torpedo', 'Crew', 'Crew', 'Gunner', 'Device', 'Modification', 'Title'],
       ffg: 146,
       standard: true,
       epic: true,
       loadout: 19,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainoicunn.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainoicunn.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainoicunn.png',
     },
     {
       name: 'Patrol Leader',
@@ -82,8 +70,7 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/patrolleader.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/patrolleader.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/patrolleader.png',
     },
     {
       name: 'Rear Admiral Chiraneau',
@@ -94,26 +81,14 @@ const t: ShipType = {
       xws: 'rearadmiralchiraneau',
       ability:
         'While you perform an attack, if you are reinforced and the defender is in the [Full Front Arc] or [Full Rear Arc] matching your reinforce token, you may change 1 of your [Focus] results to a [Critical Hit] result.',
-      slots: [
-        'Talent',
-        'Torpedo',
-        'Crew',
-        'Crew',
-        'Crew',
-        'Gunner',
-        'Device',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Torpedo', 'Crew', 'Crew', 'Crew', 'Gunner', 'Device', 'Modification', 'Title'],
       ffg: 147,
       standard: true,
       epic: true,
       loadout: 20,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/rearadmiralchiraneau.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/rearadmiralchiraneau.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/rearadmiralchiraneau.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rearadmiralchiraneau.png',
     },
     {
       name: 'Morna Kee',
@@ -125,25 +100,14 @@ const t: ShipType = {
       ability:
         'During the End Phase, you may spend 1 [Charge] to flip 1 of your reinforce tokens to your other full arc instead of removing it.',
       charges: { value: 3, recovers: 0 },
-      slots: [
-        'Talent',
-        'Torpedo',
-        'Crew',
-        'Crew',
-        'Gunner',
-        'Device',
-        'Modification',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Torpedo', 'Crew', 'Crew', 'Gunner', 'Device', 'Modification', 'Modification', 'Title'],
       standard: true,
       epic: true,
       ffg: 634,
       loadout: 22,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/mornakee.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mornakee.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/mornakee.png',
     },
   ],
 };
