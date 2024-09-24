@@ -149,6 +149,9 @@ export const SwipeComponent: FC<Props> = ({
       onSwipeableOpen={(direction) => {
         direction === 'left' ? onLeftOpen() : onRightOpen();
       }}
+      onSwipeableOpenStartDrag={() => {
+        setIsSwiping(true);
+      }}
     >
       <TouchableOpacity
         style={{ flex: 1 }}

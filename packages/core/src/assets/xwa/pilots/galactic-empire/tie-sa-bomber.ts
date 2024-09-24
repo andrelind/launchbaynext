@@ -62,8 +62,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/deathfire.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
     },
     {
       name: 'Captain Jonus',
@@ -74,16 +73,7 @@ const t: ShipType = {
       xws: 'captainjonus',
       ability:
         'While a friendly ship at range 0-1 performs a [Torpedo] or [Missile] attack, that ship may reroll up to 2 attack dice.',
-      slots: [
-        'Talent',
-        'Torpedo',
-        'Missile',
-        'Missile',
-        'Device',
-        'Device',
-        'Modification',
-        'Gunner',
-      ],
+      slots: ['Talent', 'Torpedo', 'Missile', 'Missile', 'Device', 'Device', 'Modification', 'Gunner'],
       ffg: 108,
       standard: true,
       epic: true,
@@ -91,14 +81,13 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainjonus.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainjonus.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainjonus.png',
     },
     {
       name: 'Gamma Squadron Ace',
       initiative: 3,
       limited: 0,
-      cost: 3,
+      cost: 4,
       xws: 'gammasquadronace',
       text: "Though it sacrifices a degree of speed and maneuverability compared to a TIE/ln, the TIE bomber's increased payload can carry enough firepower to destroy virtually any enemy target.",
       slots: ['Torpedo', 'Device', 'Device', 'Modification', 'Gunner'],
@@ -106,12 +95,10 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/gammasquadronace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gammasquadronace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/gammasquadronace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gammasquadronace.png',
       caption: '',
     },
     {
@@ -123,15 +110,7 @@ const t: ShipType = {
       xws: 'majorrhymer',
       ability:
         'While you perform a [Torpedo] or [Missile] attack, you may increase or decrease the range requirement by 1, to a limit of 0-3.',
-      slots: [
-        'Talent',
-        'Torpedo',
-        'Missile',
-        'Missile',
-        'Device',
-        'Modification',
-        'Gunner',
-      ],
+      slots: ['Talent', 'Torpedo', 'Missile', 'Missile', 'Device', 'Modification', 'Gunner'],
       ffg: 109,
       standard: true,
       epic: true,
@@ -139,8 +118,7 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorrhymer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
     },
     {
       name: 'Scimitar Squadron Pilot',
@@ -156,10 +134,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 12,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/scimitarsquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scimitarsquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/scimitarsquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/scimitarsquadronpilot.png',
       caption: '',
     },
     {
@@ -171,16 +147,7 @@ const t: ShipType = {
       xws: 'tomaxbren',
       ability:
         'After you perform a [Reload] action, you may recover 1 [Charge] token on 1 of your equipped [Talent] upgrade cards.',
-      slots: [
-        'Talent',
-        'Talent',
-        'Missile',
-        'Missile',
-        'Device',
-        'Device',
-        'Modification',
-        'Gunner',
-      ],
+      slots: ['Talent', 'Talent', 'Missile', 'Missile', 'Device', 'Device', 'Modification', 'Gunner'],
       ffg: 107,
       standard: true,
       epic: true,
@@ -188,8 +155,7 @@ const t: ShipType = {
       loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/tomaxbren.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tomaxbren.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tomaxbren.png',
     },
     {
       name: 'Captain Jonus',
@@ -200,16 +166,14 @@ const t: ShipType = {
       xws: 'captainjonus-swz105',
       ability:
         'While a friendly ship at range 0-1 performs a [Torpedo] or [Missile] attack, that ship may reroll up to 2 attack dice.',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz105.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz105.png',
       slots: [],
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['feedbackping', 'plasmatorpedoes', 'protonbombs'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/captainjonus.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainjonus.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -225,16 +189,14 @@ const t: ShipType = {
       xws: 'tomaxbren-swz105',
       ability:
         'After you perform a [Reload] action, you may recover 1 [Charge] token on 1 of your equipped [Talent] upgrade cards.',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz105.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz105.png',
       slots: [],
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       standardLoadout: ['elusive', 'barragerockets', 'proximitymines'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tomaxbren.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tomaxbren.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -255,11 +217,9 @@ const t: ShipType = {
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       charges: { value: 2, recovers: 1 },
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/deathfire-swz98.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/deathfire-swz98.png',
       standardLoadout: ['swiftapproach-swz98', 'connernets', 'protonbombs'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/deathfire.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -280,8 +240,7 @@ const t: ShipType = {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz98.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/captainjonus-swz98.png',
       standardLoadout: ['topcover-swz98', 'barragerockets', 'protonbombs'],
       artwork: '',
       standard: true,
@@ -298,15 +257,13 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'tomaxbren-swz98',
-      ability:
-        'After you perform a [Barrel Roll] action, you may spend 2 [Charge]. If you do, gain a focus token.',
+      ability: 'After you perform a [Barrel Roll] action, you may spend 2 [Charge]. If you do, gain a focus token.',
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
       charges: { value: 2, recovers: 1 },
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz98.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/tomaxbren-swz98.png',
       standardLoadout: ['truegrit-swz98', 'plasmatorpedoes', 'ionbombs'],
       artwork: '',
       standard: true,
@@ -329,15 +286,9 @@ const t: ShipType = {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/majorrhymer-swz98.png',
-      standardLoadout: [
-        'advprotontorpedoes',
-        'automatedloaders-swz98',
-        'afterburners',
-      ],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/majorrhymer-swz98.png',
+      standardLoadout: ['advprotontorpedoes', 'automatedloaders-swz98', 'afterburners'],
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -359,12 +310,7 @@ const t: ShipType = {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
-      standardLoadout: [
-        'noescape-battleoverendor',
-        'marksmanship',
-        'ionbombs',
-        'protontorpedoes',
-      ],
+      standardLoadout: ['noescape-battleoverendor', 'marksmanship', 'ionbombs', 'protontorpedoes'],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -379,19 +325,13 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'scimitar3-battleoverendor',
-      ability:
-        'After you drop a bomb, you may spend 1 [Charge] to perform a [Boost] action.',
+      ability: 'After you drop a bomb, you may spend 1 [Charge] to perform a [Boost] action.',
       charges: { value: 2, recovers: 0 },
       shipAbility: {
         name: 'Nimble Bomber',
         text: 'If you would drop a device using a [Straight] template, you may use a [Bank Left] or [Bank Right] template of the same speed instead.',
       },
-      standardLoadout: [
-        'noescape-battleoverendor',
-        'partinggift-battleoverendor',
-        'protontorpedoes',
-        'protonbombs',
-      ],
+      standardLoadout: ['noescape-battleoverendor', 'partinggift-battleoverendor', 'protontorpedoes', 'protonbombs'],
       standard: true,
       extended: true,
       keywords: ['TIE'],

@@ -184,7 +184,8 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
               actions={ship?.pilot.shipActions || ship.actions}
             />
           </View>
-          {ship?.pilot?.shipAbility && (
+
+          {(ship?.pilot?.shipAbility || ship?.ability) && (
             <View style={tw`mx-2`}>
               <FormattedText
                 style={tw`text-black dark:text-white`}
