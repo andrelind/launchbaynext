@@ -1,4 +1,7 @@
-# lbn-platform
+# Launch Bay Next platform
+
+This repo holds all of LBN, both server, website and app
+It utilizes [Bun](https://bun.sh) for dependency management and builds
 
 To install dependencies:
 
@@ -6,10 +9,22 @@ To install dependencies:
 bun install
 ```
 
-To run:
+To run app:
 
 ```bash
-bun run index.ts
+cd apps/app
+bun expo start
 ```
 
-This project was created using `bun init` in bun v1.1.16. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To run directly:
+
+```bash
+cd apps/app
+bun expo run:ios / bun expo run:android
+```
+
+To run web/server:
+
+```bash
+bun run dev:web
+```
