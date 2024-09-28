@@ -112,3 +112,5 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 apps/app/*.tar.gz
+
+.env
