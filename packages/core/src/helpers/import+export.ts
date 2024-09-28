@@ -46,7 +46,7 @@ const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
     delete upgrades['force-power'];
   }
 
-  slotKeys.forEach((key) => {
+  slotKeys.forEach(key => {
     // YASB...
     if (slotKeys.indexOf(key) < 0) {
       // No unknown keys please
@@ -65,7 +65,7 @@ const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
     const list = upgrades[key];
     for (let j = 0; j < list.length; j++) {
       const item = list[j];
-      if (assets[ruleset].upgrades[key].filter((u) => u.xws === item).length === 0) {
+      if (assets[ruleset].upgrades[key].filter(u => u.xws === item).length === 0) {
         console.log(`Invalid item ${item}`);
         return undefined;
       }
@@ -179,10 +179,10 @@ export const exportAsXws = (xws: XWS) => {
     ruleset: xws.ruleset || 'amg',
     points: xws.points,
     version: xws.version || '2.5.0',
-    obstacles: xws.obstacles?.map((o) => o.replace('obstacle-', '')),
-    pilots: xws.pilots.map((p) => {
+    obstacles: xws.obstacles?.map(o => o.replace('obstacle-', '')),
+    pilots: xws.pilots.map(p => {
       const upgrades: { [s: string]: string[] } = {};
-      Object.keys(p.upgrades || {}).map((key) => {
+      Object.keys(p.upgrades || {}).map(key => {
         const real = key === 'forcepower' ? 'force-power' : key;
         if (p.upgrades) {
           // @ts-ignore
@@ -213,16 +213,16 @@ export const exportAsXws = (xws: XWS) => {
 export const exportAsText = (squadron: XWS) => {
   let text = `${squadron.name}\n`;
 
-  squadron.pilots.map((p) => {
+  squadron.pilots.map(p => {
     const ship = loadShip2(p, { faction: squadron.faction, format: squadron.format, ruleset: squadron.ruleset });
     if (!ship) return;
 
     text += `\n(${ship!.pilot!.cost}) ${ship!.pilot!.name} [${ship.name}]`;
 
-    slotKeys.forEach((key) => {
+    slotKeys.forEach(key => {
       const up = ship.upgrades && ship.upgrades[key];
       if (up) {
-        up.forEach((u) => {
+        up.forEach(u => {
           text += `\n(${u.finalCost}) ${cleanText(u.sides[0].title)}`;
         });
       }
@@ -237,20 +237,20 @@ export const exportAsText = (squadron: XWS) => {
 export const exportAsTTS = (squadron: XWS) => {
   let text = '';
 
-  squadron.pilots?.map((pilot) => {
+  squadron.pilots?.map(pilot => {
     const s = loadShip2(pilot, { faction: squadron.faction, format: squadron.format, ruleset: squadron.ruleset });
 
     text += s.pilot?.name?.replace("'", '');
-    slotKeys.forEach((key) => {
+    slotKeys.forEach(key => {
       const up = s.upgrades && s.upgrades[key];
       if (up) {
-        up.forEach((u) => {
+        up.forEach(u => {
           text += ` + ${cleanText(u.sides[0].title)}`;
         });
       }
     });
     text += ' / ';
-  })
+  });
 
   return text;
 };
@@ -285,8 +285,6 @@ export const importFromQR = (data: any, skipParse: boolean = false) => {
   }
 };
 
-
-
 export const xwsFromString = async (text: string): Promise<XWS | void> => {
   try {
     if (text.indexOf('https://launchbaynext.app') === 0) {
@@ -296,25 +294,18 @@ export const xwsFromString = async (text: string): Promise<XWS | void> => {
         return deserialize(lbx);
       }
     } else if (text.indexOf('https://raithos.github.io/') === 0) {
-      const url = text.replace(
-        'https://raithos.github.io/',
-        'https://squad2xws.herokuapp.com/yasb/xws'
-      );
+      const url = text.replace('https://raithos.github.io/', 'https://squad2xws.herokuapp.com/yasb/xws');
       const xws = await fetch(url)
-        .then((r) => r.json())
-        .then((d) => validateJSON(d));
+        .then(r => r.json())
+        .then(d => validateJSON(d));
       if (xws) {
         return xws;
       }
-    } else if (
-      text.indexOf(
-        'https://squadbuilder.fantasyflightgames.com/squad-preview/'
-      ) === 0
-    ) {
+    } else if (text.indexOf('https://squadbuilder.fantasyflightgames.com/squad-preview/') === 0) {
       const id = text.substr(text.lastIndexOf('/') + 1);
       const xws = await fetch(`https://squad2xws.herokuapp.com/translate/${id}`)
-        .then((r) => r.json())
-        .then((d) => validateJSON(d));
+        .then(r => r.json())
+        .then(d => validateJSON(d));
       if (xws) {
         return xws;
       }

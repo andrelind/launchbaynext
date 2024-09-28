@@ -13,7 +13,7 @@ const rep = (c: string, t: string, d: string) => {
 };
 
 const getKeyByValue = (object: any, value: string) => {
-  const o = Object.keys(object).find((key) => object[key] === value);
+  const o = Object.keys(object).find(key => object[key] === value);
   return parseInt(o || '0') || value;
 };
 
@@ -39,6 +39,8 @@ export const getFactionKey = (faction: Faction) => {
 };
 
 export const serialize = (o?: XWS) => {
+  console.log('serialize', o);
+
   if (!o) {
     return;
   }
@@ -48,31 +50,27 @@ export const serialize = (o?: XWS) => {
     o.points,
     getKeyByValue(manifest.factions, factionFromKey(o.faction)),
     o.format === 'Extended' ? 0 : 1,
-    o.pilots.map((p) => {
+    o.ruleset === 'amg' ? 0 : o.ruleset === 'xwa' ? 1 : 2,
+    o.pilots.map(p => {
       const upgrades: (string | number)[][] = [];
-      slotKeys.forEach((key) => {
+      slotKeys.forEach(key => {
         const up = p.upgrades && p.upgrades[key as SlotKey];
         if (up && up.length > 0) {
           upgrades.push([
             getKeyByValue(manifest.slots, key),
-            ...((p.upgrades && p.upgrades[key as SlotKey]) || []).map((u) =>
-              getKeyByValue(manifest.upgrades, u)
-            ),
+            ...((p.upgrades && p.upgrades[key as SlotKey]) || []).map(u => getKeyByValue(manifest.upgrades, u)),
           ]);
         }
       });
 
-      const data = [
-        getKeyByValue(manifest.ships, p.ship),
-        getKeyByValue(manifest.pilots, p.id),
-      ];
+      const data = [getKeyByValue(manifest.ships, p.ship), getKeyByValue(manifest.pilots, p.id)];
 
       if (upgrades.length > 0) {
         return [...data, ...upgrades];
       }
       return data;
     }),
-    o.obstacles?.map((p) => keyFromObstacle(p)) || [],
+    o.obstacles?.map(p => keyFromObstacle(p)) || [],
   ];
 
   let d = JSON.stringify(lbx);
@@ -108,11 +106,12 @@ export const deserialize = (o: string, uid?: string): XWS => {
   }
 
   const d = JSON.parse(o);
-  const [squadName, cost, faction, format, pilots, obstacles, ...rest] = d;
+  const [squadName, cost, faction, format, ruleset, pilots, obstacles, ...rest] = d;
 
   // @ts-expect-error
   const fa = keyFromFaction(manifest.factions[faction]);
   const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
+  const rs = ruleset === '0' ? 'amg' : ruleset === '1' ? 'xwa' : 'legacy';
 
   const getPilots = () => {
     if (Array.isArray(pilots[0]) || pilots.length === 0) {
@@ -128,23 +127,21 @@ export const deserialize = (o: string, uid?: string): XWS => {
     points: parseInt(cost, 10),
     faction: fa,
     format: fo,
-    ruleset: 'amg',
-    obstacles: Array.isArray(pilots[0])
-      ? obstacles?.map((p: any) => obstacleFromKey(p))
-      : undefined,
+    ruleset: rs,
+    obstacles: Array.isArray(pilots[0]) ? obstacles?.map((p: any) => obstacleFromKey(p)) : undefined,
     pilots: getPilots().map((p: any): PilotXWS => {
-      const [dShip, dId, ...upgrades] = p;
-      const ship = rep(']', 'r', rep('[', 'l', dShip));
-      const id = rep(']', 'r', rep('[', 'l', dId));
+      const [ship, id, ...upgrades] = p;
+      // console.log({ dShip, dId, upgrades });
+      // const ship = rep(']', 'r', rep('[', 'l', `${dShip}`));
+      // const id = rep(']', 'r', rep('[', 'l', `${dId}`));
 
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
         // @ts-expect-error
         parsedUpgrades[manifest.slots[key]] = list.map((l: string) => {
-          const xws = rep(']', 'r', rep('[', 'l', l));
           // @ts-expect-error
-          return manifest.upgrades[xws] || xws;
+          return manifest.upgrades[`${l}`];
         });
       });
 
@@ -157,7 +154,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
         upgrades: parsedUpgrades,
       };
 
-      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: 'amg' });
+      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: rs });
       return {
         ...pp,
         points: s.pilot?.cost || 0,

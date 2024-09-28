@@ -1,10 +1,6 @@
-
+import { parseJSON } from 'date-fns';
 import { systemStore } from '../stores/system';
-import {
-  CollectionState,
-  XWS,
-  XWSState
-} from '../stores/types';
+import { CollectionState, XWS, XWSState } from '../stores/types';
 import { smooth } from './animation';
 import { trpc } from './trpc';
 
@@ -19,10 +15,7 @@ export interface CollectionResponse extends CollectionRequest {
   updatedUtc: Date;
 }
 
-export const syncWithServer = async (
-  xwsState: XWSState,
-  collectionState: CollectionState
-) => {
+export const syncWithServer = async (xwsState: XWSState, collectionState: CollectionState) => {
   const { token } = systemStore.getState();
   if (!token) {
     return;
@@ -30,7 +23,7 @@ export const syncWithServer = async (
 
   try {
     const local = xwsState.lists || [];
-    const body = local.map((l) => ({
+    const body = local.map(l => ({
       id: l.vendor.lbn.uid,
       version: l.version,
     }));
@@ -39,18 +32,25 @@ export const syncWithServer = async (
 
     const got: XWS[] = await trpc.lists.multiple.query(toGet);
     await trpc.lists.update.mutate(
-      local.filter((l) => send.includes(l.vendor.lbn.uid))
+      local
+        .filter(l => send.includes(l.vendor.lbn.uid))
+        .map(l => ({
+          ...l,
+          vendor: {
+            lbn: {
+              ...l.vendor.lbn,
+              created:
+                typeof l.vendor.lbn.created === 'string' ? parseJSON(l.vendor.lbn.created) : l.vendor.lbn.created,
+            },
+          },
+        })),
     );
 
     const final = [
-      ...local.filter(
-        (l) =>
-          !remove.includes(l.vendor.lbn.uid) &&
-          !got.find((g) => g.vendor.lbn.uid === l.vendor.lbn.uid)
-      ),
+      ...local.filter(l => !remove.includes(l.vendor.lbn.uid) && !got.find(g => g.vendor.lbn.uid === l.vendor.lbn.uid)),
       ...got,
     ];
-    final.forEach((l) => {
+    final.forEach(l => {
       if (!l.ruleset) {
         l.ruleset = l.points > 100 ? 'legacy' : 'amg';
       }
@@ -80,7 +80,18 @@ export const saveListOnServer = async (xws: XWS) => {
   }
 
   try {
-    await trpc.lists.update.mutate([xws]);
+    await trpc.lists.update.mutate([
+      {
+        ...xws,
+        vendor: {
+          lbn: {
+            ...xws.vendor.lbn,
+            created:
+              typeof xws.vendor.lbn.created === 'string' ? parseJSON(xws.vendor.lbn.created) : xws.vendor.lbn.created,
+          },
+        },
+      },
+    ]);
   } catch (error) {
     console.log(error);
   }
@@ -111,4 +122,3 @@ export const saveCollectionOnServer = async (req: CollectionRequest) => {
     console.log(error);
   }
 };
-

@@ -3,7 +3,8 @@ import * as Clipboard from 'expo-clipboard';
 import { RuleSet } from 'lbn-core/src';
 import { factionFromKey } from 'lbn-core/src/helpers/convert';
 import { factionKeys } from 'lbn-core/src/helpers/enums';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { FactionKey } from 'lbn-core/src/types';
+import { Alert, Text, TouchableOpacity, View } from 'react-native';
 import ActionSheet, {
   SheetManager,
   SheetProps,
@@ -25,6 +26,38 @@ const CreateSquadronSheet = ({
   const { tw } = useTailwind();
   const addSquadron = xwsStore((s) => s.addSquadron);
 
+  const onPress = async (f: FactionKey) => {
+    Alert.alert('Ruleset', 'Select the ruleset for the new squadron',
+      [
+        {
+          text: 'X-Wing Alliance',
+          onPress: async () => {
+            const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', 'xwa');
+            SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
+          }
+        },
+        {
+          text: '2.0 Legacy',
+          onPress: async () => {
+            const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', 'legacy');
+            SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
+          }
+        },
+        {
+          text: 'AMG',
+          onPress: async () => {
+            const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', 'amg');
+            SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
+          }
+        },
+        {
+          text: 'Cancel',
+          style: 'cancel'
+        }
+      ]
+    )
+  }
+
   return (
     <ActionSheet id={sheetId} useBottomSafeAreaPadding>
       <View style={tw`flex-row`}>
@@ -32,7 +65,6 @@ const CreateSquadronSheet = ({
           style={tw`px-3 py-3 flex-1 items-center`}
           onPress={async () => {
             const clipboard = await Clipboard.getStringAsync();
-            console.log({ clipboard });
             if (clipboard.length > 0) {
               // setToastMessage({ text: 'Importing', color: darkgrey });
               Toast.show({
@@ -82,12 +114,7 @@ const CreateSquadronSheet = ({
             <TouchableOpacity
               key={f}
               style={tw`px-3 py-2 items-center`}
-              onPress={async () => {
-                const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', payload?.ruleset || 'amg');
-                SheetManager.hide(sheetId, {
-                  payload: item.vendor.lbn.uid,
-                });
-              }}
+              onPress={async () => { onPress(f) }}
             >
               <XWingFont
                 icons={[f]}
@@ -104,12 +131,7 @@ const CreateSquadronSheet = ({
             <TouchableOpacity
               key={f}
               style={tw`px-3 py-2 items-center`}
-              onPress={async () => {
-                const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', payload?.ruleset || 'amg');
-                SheetManager.hide(sheetId, {
-                  payload: item.vendor.lbn.uid,
-                });
-              }}
+              onPress={async () => { onPress(f) }}
             >
               <XWingFont
                 icons={[f]}

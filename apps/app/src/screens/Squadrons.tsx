@@ -2,7 +2,6 @@ import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
 import {
-  Alert,
   SafeAreaView,
   Text,
   TouchableOpacity,
@@ -57,7 +56,6 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
         <TouchableOpacity
           onPress={() => {
             SheetManager.show('FilterSquadronsSheet');
-            // navigation.navigate('Filter');
           }}
           style={tw`mr-2`}
         >
@@ -67,7 +65,7 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
       headerRight: () => (
         <TouchableOpacity
           onPress={() => {
-            // navigation.navigate('Filter');
+            SheetManager.show('SortSquadronsSheet');
           }}
           style={tw`mr-2`}
         >
@@ -114,9 +112,7 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
         contentContainerStyle={tw`py-2 px-2`}
         data={filtered || []}
         keyExtractor={(l: XWS) => l.vendor.lbn.uid}
-        onDragBegin={() => {
-
-        }}
+        onDragBegin={() => { }}
         onDragEnd={({ from, to }: any) => {
           if (from !== to) {
             setFirstSorting('Custom');
@@ -151,47 +147,13 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
       <TouchableOpacity
         style={tw`bg-orange-500 h-12 w-12 rounded-full absolute bottom-4 right-2 items-center justify-center`}
         onPress={async () => {
-          Alert.alert('Ruleset', 'Select the ruleset for the new squadron',
-            [
-              {
-                text: 'X-Wing Alliance',
-                onPress: async () => {
-                  const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'xwa' } });
-                  if (uid === 'scanQR') {
-                    SheetManager.show('ScanQRCodeSheet');
-                  } else if (uid) {
-                    navigation.navigate('Squadron', { uid });
-                  }
-                }
-              },
-              {
-                text: '2.0 Legacy',
-                onPress: async () => {
-                  const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'legacy' } });
-                  if (uid === 'scanQR') {
+          const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'xwa' } });
+          if (uid === 'scanQR') {
+            SheetManager.show('ScanQRCodeSheet');
+          } else if (uid) {
+            navigation.navigate('Squadron', { uid });
+          }
 
-                  } else if (uid) {
-                    navigation.navigate('Squadron', { uid });
-                  }
-                }
-              },
-              {
-                text: 'AMG',
-                onPress: async () => {
-                  const uid = await SheetManager.show('CreateSquadronSheet', { payload: { ruleset: 'amg' } });
-                  if (uid === 'scanQR') {
-                    SheetManager.show('ScanQRCodeSheet');
-                  } else if (uid) {
-                    navigation.navigate('Squadron', { uid });
-                  }
-                }
-              },
-              {
-                text: 'Cancel',
-                style: 'cancel'
-              }
-            ]
-          )
         }}
       >
         <Feather name="plus" color={'white'} size={36} />

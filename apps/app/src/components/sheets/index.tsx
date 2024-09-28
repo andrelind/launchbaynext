@@ -7,11 +7,13 @@ import ScanQRCodeSheet, { ScanQRCodeSheetId } from './scanQRCode';
 import SelectFormatSheet, { SelectFormatSheetId } from './selectFormat';
 import SelectObstaclesSheet, { SelectObstaclesSheetId } from './selectObstacles';
 import SelectTagsSheet, { SelectTagsSheetId } from './selectTags';
+import SortSquadronsSheet, { SortSquadronsSheetId } from './sortSquadrons';
 import './types';
 
 registerSheet('CreateSquadronSheet', CreateSquadronSheet);
 registerSheet(ExportSquadronSheetId, ExportSquadronSheet);
 registerSheet(FilterSquadronsSheetId, FilterSquadronsSheet);
+registerSheet(SortSquadronsSheetId, SortSquadronsSheet);
 registerSheet(PilotActionSheetId, PilotActionSheet);
 registerSheet(SelectFormatSheetId, SelectFormatSheet);
 registerSheet(SelectObstaclesSheetId, SelectObstaclesSheet);
