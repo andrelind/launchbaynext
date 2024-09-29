@@ -184,7 +184,7 @@ const t: ShipType = {
       caption: 'Tenacious Survivor',
       keywords: ['Y-wing'],
       epic: true,
-      loadout: 18,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/caithrenalli-btanr2ywing.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli-btanr2ywing.png',
