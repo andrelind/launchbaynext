@@ -547,6 +547,20 @@ const t: ShipType = {
         'chaffparticles-battleoverendor',
       ],
       slots: [],
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+          linked: { difficulty: 'Red', type: 'Boost' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Boost' },
+      ],
       ability:
         'After you spend a green token, you may choose a friendly ship at range 1–3 and gain a strain token. If you do, that ship may perform a red [Focus] or red [Evade] action.',
       shipAbility: {
@@ -574,6 +588,20 @@ const t: ShipType = {
         'r2a3-battleoverendor',
       ],
       slots: [],
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+          linked: { difficulty: 'Red', type: 'Boost' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Boost' },
+      ],
       shipAbility: {
         name: 'Locked S-Foils',
         text: 'After you perform a [Boost] action, gain a deplete token.',
@@ -603,6 +631,20 @@ const t: ShipType = {
         'stabilizingastromech-battleoverendor',
       ],
       slots: [],
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+          linked: { difficulty: 'Red', type: 'Boost' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Boost' },
+      ],
       shipAbility: {
         name: 'Locked S-Foils',
         text: 'After you perform a [Boost] action, gain a deplete token.',
