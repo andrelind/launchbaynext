@@ -2581,7 +2581,7 @@ const t: UpgradeBase[] = [
     sides: [
       {
         ability:
-          'At the start of the Engagement Phase, you may spend 2 [Charge]. If you do, each friendly ship may choose to gain 1 deplete token and 1 focus tokken or to gain 1 disarm token and 1 evade token.',
+          'At the start of the Engagement Phase, you may spend 2 [Charge]. If you do, each friendly ship may choose to gain 1 deplete token and 1 focus token or to gain 1 disarm token and 1 evade token.',
         title: 'Satine Kryze',
         charges: { value: 2, recovers: 1 },
         type: 'Crew',
