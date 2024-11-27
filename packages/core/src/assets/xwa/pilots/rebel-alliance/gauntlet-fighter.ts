@@ -29,7 +29,7 @@ const t: ShipType = {
     { type: 'shields', value: 2 },
   ],
   actions: [
-    { difficulty: 'White', type: 'Focus' },
+    { difficulty: 'White', type: 'Calculate'},
     { difficulty: 'Red', type: 'Reinforce' },
     { difficulty: 'White', type: 'Lock' },
     { difficulty: 'Red', type: 'Coordinate' },
