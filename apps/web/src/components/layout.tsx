@@ -62,9 +62,7 @@ export const Layout: FC<Props> = ({
   const [name, setName] = useState(xws.name);
 
   const providers = [
-    { id: 'apple', title: 'Login with Apple' },
-    { id: 'facebook', title: 'Login with Facebook' },
-    { id: 'google', title: 'Login with Google' },
+    { id: 'email', title: 'Login with Email' },
   ];
 
   useEffect(() => {

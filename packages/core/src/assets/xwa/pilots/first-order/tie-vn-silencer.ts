@@ -49,7 +49,7 @@ const t: ShipType = {
       caption: 'Ill-Fated Test Pilot',
       initiative: 5,
       limited: 1,
-      cost: 6,
+      cost: 5,
       ability:
         'While you perform an attack, if the attack is obstructed by an obstacle, the defender rolls 2 fewer defense dice.',
       slots: ['Talent', 'Torpedo', 'Missile', 'Tech', 'Tech', 'Configuration'],
@@ -57,11 +57,10 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 17,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/blackout.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blackout.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blackout.png',
     },
     {
       name: 'Kylo Ren',
@@ -74,14 +73,7 @@ const t: ShipType = {
         "After you defend, you may spend 1 [Force] to assign the I'll Show You the Dark Side condition to the attacker.",
       force: { value: 2, recovers: 1, side: ['dark'] },
       conditions: ['illshowyouthedarkside'],
-      slots: [
-        'Torpedo',
-        'Missile',
-        'Force Power',
-        'Talent',
-        'Tech',
-        'Configuration',
-      ],
+      slots: ['Torpedo', 'Missile', 'Force Power', 'Talent', 'Tech', 'Configuration'],
       ffg: 414,
       standard: true,
       epic: true,
@@ -89,8 +81,7 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kyloren.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren.png',
     },
     {
       name: 'First Order Test Pilot',
@@ -106,10 +97,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 9,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/firstordertestpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstordertestpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/firstordertestpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/firstordertestpilot.png',
       caption: '',
     },
     {
@@ -129,8 +118,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/recoil.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/recoil.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/recoil.png',
     },
     {
       name: '“Avenger”',
@@ -139,8 +127,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       cost: 5,
-      ability:
-        'After another friendly ship is destroyed, you may perform an action, even while stressed.',
+      ability: 'After another friendly ship is destroyed, you may perform an action, even while stressed.',
       slots: ['Talent', 'Torpedo', 'Missile', 'Tech', 'Configuration'],
       ffg: 456,
       standard: true,
@@ -149,8 +136,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/avenger.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/avenger.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/avenger.png',
     },
     {
       name: 'Sienar-Jaemus Engineer',
@@ -166,10 +152,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 15,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sienarjaemusengineer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sienarjaemusengineer.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sienarjaemusengineer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sienarjaemusengineer.png',
       caption: '',
     },
     {

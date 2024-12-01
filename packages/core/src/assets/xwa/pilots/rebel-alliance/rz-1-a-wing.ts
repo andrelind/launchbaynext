@@ -61,8 +61,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/arvelcrynyd.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd.png',
     },
     {
       name: 'Green Squadron Pilot',
@@ -78,10 +77,8 @@ const t: ShipType = {
       keywords: ['A-wing'],
       loadout: 18,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/greensquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/greensquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronpilot.png',
       caption: '',
     },
     {
@@ -101,8 +98,7 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jakefarrell.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jakefarrell.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jakefarrell.png',
     },
     {
       name: 'Phoenix Squadron Pilot',
@@ -118,10 +114,8 @@ const t: ShipType = {
       keywords: ['A-wing'],
       loadout: 6,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/phoenixsquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/phoenixsquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/phoenixsquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/phoenixsquadronpilot.png',
       caption: '',
     },
     {
@@ -140,10 +134,8 @@ const t: ShipType = {
       ffg: 883,
       loadout: 4,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-rz1awing.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/wedgeantilles-rz1awing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-rz1awing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/wedgeantilles-rz1awing.png',
     },
     {
       xws: 'sabinewren-rz1awing',
@@ -161,10 +153,8 @@ const t: ShipType = {
       loadout: 4,
       extended: true,
       keywords: ['A-wing', 'Mandalorian'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-rz1awing.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sabinewren-rz1awing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-rz1awing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sabinewren-rz1awing.png',
     },
     {
       xws: 'herasyndulla-rz1awing',
@@ -175,24 +165,15 @@ const t: ShipType = {
       limited: 1,
       ability:
         'While another friendly ship at range 1-2 defends or performs an attack, during a Modify Dice step, you may transfer 1 of your focus tokens, evade tokens, or locks to that ship.',
-      slots: [
-        'Talent',
-        'Talent',
-        'Missile',
-        'Sensor',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Talent', 'Talent', 'Missile', 'Sensor', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
       ffg: 880,
       loadout: 4,
       extended: true,
       keywords: ['A-wing', 'Spectre'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla-rz1awing.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/herasyndulla-rz1awing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/herasyndulla-rz1awing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/herasyndulla-rz1awing.png',
     },
     {
       xws: 'ahsokatano-rz1awing',
@@ -204,30 +185,21 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 [Force]. That ship may perform an action, even while stressed.',
       force: { value: 3, side: ['light'], recovers: 1 },
-      slots: [
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Missile',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Force Power', 'Force Power', 'Talent', 'Missile', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
       ffg: 881,
       loadout: 16,
       extended: true,
       keywords: ['A-wing', 'Light Side'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano-rz1awing.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/ahsokatano-rz1awing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano-rz1awing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/ahsokatano-rz1awing.png',
     },
     {
       xws: 'sharabey-rz1awing',
       name: 'Shara Bey',
       caption: 'Green Four',
-      cost: 3,
+      cost: 4,
       initiative: 4,
       limited: 1,
       ability:
@@ -237,12 +209,10 @@ const t: ShipType = {
       epic: true,
       keywords: ['A-wing'],
       ffg: 882,
-      loadout: 7,
+      loadout: 12,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sharabey-rz1awing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sharabey-rz1awing.png',
     },
     {
       xws: 'derekklivian',
@@ -251,8 +221,7 @@ const t: ShipType = {
       cost: 3,
       initiative: 3,
       limited: 1,
-      ability:
-        'After you acquire or spend a lock, you may remove 1 red token from yourself.',
+      ability: 'After you acquire or spend a lock, you may remove 1 red token from yourself.',
       slots: ['Talent', 'Missile', 'Configuration'],
       standard: true,
       epic: true,
@@ -260,8 +229,7 @@ const t: ShipType = {
       ffg: 884,
       loadout: 9,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/derekklivian.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/derekklivian.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/derekklivian.png',
     },
     {
@@ -285,8 +253,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/keovenzee.png',
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/keovenzee.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/keovenzee.png',
     },
     {
       name: 'Tycho Celchu',
@@ -303,13 +270,11 @@ const t: ShipType = {
       cost: 4,
       loadout: 10,
       slots: ['Talent', 'Talent', 'Cannon', 'Missile', 'Configuration'],
-      ability:
-        'While you have 2 or fewer stress tokens, you may perform actions, even while stressed.',
+      ability: 'While you have 2 or fewer stress tokens, you may perform actions, even while stressed.',
       keywords: ['A-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/tychocelchu.png',
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu.png',
     },
     {
       name: 'Arvel Crynyd',
@@ -320,12 +285,10 @@ const t: ShipType = {
       xws: 'arvelcrynyd-swz106',
       ability:
         'If you would fail a [Boost] action by overlapping another ship, resolve it as though you were partially executing a maneuver instead.\n\nWhile you perform an attack at attack range 0, treat it as an attack at attack range 1.',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/arvelcrynyd-swz106.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/arvelcrynyd-swz106.png',
       standardLoadout: ['predator', 'afterburners'],
       slots: [],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd.png',
       standard: true,
       extended: true,
       keywords: ['A-wing'],
@@ -341,12 +304,10 @@ const t: ShipType = {
       xws: 'jakefarrell-swz106',
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may choose a friendly ship at range 0-1. That ship may perform a [Focus] action.',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/jakefarrell-swz106.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/jakefarrell-swz106.png',
       standardLoadout: ['elusive', 'outmaneuver', 'ionmissiles'],
       slots: [],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jakefarrell.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jakefarrell.png',
       standard: true,
       extended: true,
       keywords: ['A-wing'],
@@ -361,16 +322,14 @@ const t: ShipType = {
       limited: 1,
       standard: true,
       extended: true,
-      cost: 4,
+      cost: 3,
       ability:
         'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
       standardLoadout: ['hopeful', 'concussionmissiles'],
       slots: [],
       keywords: ['A-wing'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sharabey-swz106.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/sharabey-swz106.png',
       epic: true,
       loadout: 0,
     },
@@ -397,10 +356,8 @@ const t: ShipType = {
       },
       slots: [],
       keywords: ['A-wing'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gemmersojan-battleoverendor.png',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/gemmersojan-battleoverendor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gemmersojan-battleoverendor.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/gemmersojan-battleoverendor.png',
       epic: true,
       loadout: 0,
     },
@@ -413,13 +370,8 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 4,
-      ability:
-        'While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.',
-      standardLoadout: [
-        'itsatrap-battleoverendor',
-        'heroicsacrifice-battleoverendor',
-        'protonrockets',
-      ],
+      ability: 'While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.',
+      standardLoadout: ['itsatrap-battleoverendor', 'heroicsacrifice-battleoverendor', 'protonrockets'],
       shipAbility: {
         name: 'Vectored Cannons',
         text: 'During the System Phase, you may perform a red [Boost] or red [Rotate Arc] action. You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc].',
@@ -440,12 +392,7 @@ const t: ShipType = {
       cost: 4,
       ability:
         'While you are disarmed, you can still perform [Missile] attacks. When you perform a [Missile] attack while disarmed, roll a maximum of 4 dice.',
-      standardLoadout: [
-        'itsatrap-battleoverendor',
-        'juke',
-        'protonrockets',
-        'chaffparticles-battleoverendor',
-      ],
+      standardLoadout: ['itsatrap-battleoverendor', 'juke', 'protonrockets', 'chaffparticles-battleoverendor'],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -474,10 +421,8 @@ const t: ShipType = {
       slots: [],
       keywords: ['A-wing'],
       epic: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/tychocelchu-battleoverendor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu-battleoverendor.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/tychocelchu-battleoverendor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu-battleoverendor.png',
       loadout: 0,
     },
   ],

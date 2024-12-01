@@ -55,14 +55,7 @@ const t: ShipType = {
       xws: 'majorvonreg',
       ability:
         'During the System Phase, you may choose 1 enemy ship in your [Bullseye Arc]. That ship gains 1 deplete or strain token of your choice.',
-      slots: [
-        'Talent',
-        'Talent',
-        'Tech',
-        'Missile',
-        'Modification',
-        'Modification',
-      ],
+      slots: ['Talent', 'Talent', 'Tech', 'Missile', 'Modification', 'Modification'],
       standard: true,
       epic: true,
       ffg: 624,
@@ -70,8 +63,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorvonreg.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/majorvonreg.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/majorvonreg.png',
     },
     {
       name: '“Holo”',
@@ -106,7 +98,7 @@ const t: ShipType = {
       epic: true,
       ffg: 626,
       keywords: ['TIE'],
-      loadout: 7,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ember.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ember.png',
@@ -125,10 +117,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 11,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/firstorderprovocateur.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/firstorderprovocateur.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/firstorderprovocateur.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/firstorderprovocateur.png',
       caption: '',
     },
   ],

@@ -121,7 +121,7 @@ const t: ShipType = {
       caption: 'Unseen Assailant',
       initiative: 5,
       limited: 1,
-      cost: 7,
+      cost: 6,
       charges: { value: 2, recovers: 0 },
       xws: 'whisper-ssl',
       ability: 'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',

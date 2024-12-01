@@ -59,10 +59,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 13,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/technounionbomber.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/technounionbomber.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/technounionbomber.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/technounionbomber.png',
       caption: '',
     },
     {
@@ -71,20 +69,17 @@ const t: ShipType = {
       limited: 3,
       initiative: 3,
       xws: 'bombardmentdrone',
-      ability:
-        'If you would drop a device, you may launch that device instead, using the same template.',
+      ability: 'If you would drop a device, you may launch that device instead, using the same template.',
       standard: true,
       epic: true,
       cost: 3,
-      slots: ['Device', 'Device', 'Modification', 'Configuration'],
+      slots: ['Device', 'Device', 'Modification'],
       ffg: 565,
       keywords: ['Droid'],
       loadout: 9,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/bombardmentdrone.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bombardmentdrone.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/bombardmentdrone.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bombardmentdrone.png',
     },
     {
       name: 'DBS-404',
@@ -103,8 +98,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dbs404.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png',
     },
     {
       name: 'Baktoid Prototype',
@@ -122,10 +116,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 10,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/baktoidprototype.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/baktoidprototype.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png',
     },
     {
       name: 'Separatist Bomber',
@@ -141,10 +133,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 10,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/separatistbomber.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistbomber.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/separatistbomber.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/separatistbomber.png',
       caption: '',
     },
     {
@@ -174,8 +164,7 @@ const t: ShipType = {
       loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dbs32c.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png',
     },
     {
       name: 'DBS-32C',
@@ -183,8 +172,7 @@ const t: ShipType = {
       caption: 'Siege of Coruscant',
       limited: 1,
       initiative: 3,
-      ability:
-        'After you perform a [Calculate] action, you may spend 1 [Charge] to perform a [Jam] action.',
+      ability: 'After you perform a [Calculate] action, you may spend 1 [Charge] to perform a [Jam] action.',
       charges: { value: 2, recovers: 0 },
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
@@ -203,10 +191,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dbs32c-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/dbs32c-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dbs32c.png',
       standardLoadout: [
         'plasmatorpedoes',
         'contingencyprotocol-siegeofcoruscant',
@@ -226,16 +212,14 @@ const t: ShipType = {
         name: 'Networked Calculations',
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dbs404-siegeofcoruscant.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/dbs404-siegeofcoruscant.png',
       slots: [],
       standardLoadout: [
         'advprotontorpedoes',
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dbs404.png',
       standard: true,
       extended: true,
       keywords: ['Droid'],
@@ -256,15 +240,9 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       slots: [],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/baktoidprototype-siegeofcoruscant.png',
-      standardLoadout: [
-        'homingmissiles',
-        'contingencyprotocol-siegeofcoruscant',
-        'strutlockoverride-siegeofcoruscant',
-      ],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/baktoidprototype-siegeofcoruscant.png',
+      standardLoadout: ['homingmissiles', 'contingencyprotocol-siegeofcoruscant', 'strutlockoverride-siegeofcoruscant'],
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/baktoidprototype.png',
       standard: true,
       extended: true,
       keywords: ['Droid'],

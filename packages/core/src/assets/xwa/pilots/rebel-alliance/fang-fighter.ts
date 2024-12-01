@@ -57,14 +57,12 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       cost: 5,
-      loadout: 10,
+      loadout: 8,
       ability:
         'Before a friendly ship at range 1-2 engages, if there is an enemy ship in its [Front Arc] at range 1, that friendly ship may remove 1 non-lock red token.',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/fennrau-rebel-fang.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/fennrau-rebel-fang.png',
       slots: ['Talent', 'Talent', 'Torpedo', 'Modification', 'Modification'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-rebel-fang.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-rebel-fang.png',
       standard: true,
       extended: true,
       epic: true,
@@ -80,14 +78,13 @@ const t: ShipType = {
         'After another friendly ship defends, if you are not depleted, you may perform a bonus primary attack against the attacker. If you do, after performing that attack, gain 1 deplete token.',
       slots: ['Talent', 'Talent', 'Torpedo', 'Modification', 'Modification'],
       keywords: ['Mandalorian'],
-      cost: 4,
+      cost: 5,
       epic: true,
       standard: true,
-      loadout: 7,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/bodicavenj.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bodicavenj.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bodicavenj.png',
     },
     {
       name: 'Dirk Ullodin',
@@ -105,8 +102,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dirkullodin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dirkullodin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dirkullodin.png',
     },
     {
       name: 'Clan Wren Volunteer',
@@ -123,10 +119,8 @@ const t: ShipType = {
       standard: true,
       loadout: 12,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/clanwrenvolunteer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/clanwrenvolunteer.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/clanwrenvolunteer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/clanwrenvolunteer.png',
     },
   ],
 };

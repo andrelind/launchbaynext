@@ -55,11 +55,10 @@ const t: ShipType = {
       caption: 'Skull Leader',
       initiative: 6,
       limited: 1,
-      cost: 6,
-      loadout: 10,
+      cost: 5,
+      loadout: 3,
       xws: 'fennrau',
-      ability:
-        'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
+      ability: 'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
       slots: ['Talent', 'Talent', 'Modification', 'Modification', 'Torpedo'],
       ffg: 155,
       standard: true,
@@ -67,8 +66,7 @@ const t: ShipType = {
       keywords: ['Mandalorian'],
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/fennrau.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau.png',
     },
     {
       name: 'Joy Rekkoff',
@@ -87,8 +85,7 @@ const t: ShipType = {
       loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/joyrekkoff.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/joyrekkoff.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/joyrekkoff.png',
     },
     {
       name: 'Kad Solus',
@@ -106,8 +103,7 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kadsolus.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kadsolus.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kadsolus.png',
     },
     {
       name: 'Old Teroch',
@@ -123,11 +119,10 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Mandalorian'],
-      loadout: 9,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/oldteroch.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oldteroch.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/oldteroch.png',
     },
     {
       name: 'Skull Squadron Pilot',
@@ -143,10 +138,8 @@ const t: ShipType = {
       keywords: ['Mandalorian'],
       loadout: 5,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/skullsquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/skullsquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/skullsquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/skullsquadronpilot.png',
       caption: '',
     },
     {
@@ -164,8 +157,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zealousrecruit.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zealousrecruit.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zealousrecruit.png',
       caption: '',
     },
     {
@@ -184,10 +176,8 @@ const t: ShipType = {
       loadout: 4,
       extended: true,
       caption: 'Selfless Protector',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/mandalorianroyalguard.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianroyalguard.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/mandalorianroyalguard.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianroyalguard.png',
     },
     {
       name: 'Tor Phun',
@@ -209,8 +199,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Mandalorian'],
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
     },
   ],
 };

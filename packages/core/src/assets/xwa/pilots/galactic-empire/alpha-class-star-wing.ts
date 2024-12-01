@@ -30,7 +30,7 @@ const t: ShipType = {
       xws: 'lieutenantkarsabi',
       ability:
         'After you gain a disarm token, if you are not stressed, you may gain 1 stress token to remove 1 disarm token.',
-      slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
+      slots: ['Talent', 'Sensor', 'Modification', 'Configuration'],
       ffg: 136,
       standard: false,
       epic: true,
@@ -99,7 +99,7 @@ const t: ShipType = {
       caption: 'Payload Courier',
       initiative: 3,
       limited: 1,
-      cost: 6,
+      cost: 5,
       xws: 'lieutenantkarsabi-ssl',
       ability: 'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
       shipAbility: {

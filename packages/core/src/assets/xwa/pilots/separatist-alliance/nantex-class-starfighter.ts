@@ -54,10 +54,8 @@ const t: ShipType = {
       ffg: 609,
       loadout: 7,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/stalgasinhiveguard.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/stalgasinhiveguard.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/stalgasinhiveguard.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/stalgasinhiveguard.png',
       caption: '',
       keywords: [],
     },
@@ -66,19 +64,17 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       xws: 'sunfac',
-      ability:
-        'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
+      ability: 'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
       standard: true,
       epic: true,
       slots: ['Talent', 'Talent', 'Talent', 'Modification'],
       cost: 5,
       ffg: 604,
       caption: 'Archduke’s Enforcer',
-      loadout: 21,
+      loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/sunfac.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sunfac.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sunfac.png',
       keywords: [],
     },
     {
@@ -97,8 +93,7 @@ const t: ShipType = {
       loadout: 2,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/berwerkret.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/berwerkret.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/berwerkret.png',
       keywords: [],
     },
     {
@@ -106,8 +101,7 @@ const t: ShipType = {
       xws: 'chertek',
       initiative: 4,
       limited: 1,
-      ability:
-        'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
+      ability: 'While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.',
       standard: true,
       epic: true,
       slots: ['Talent', 'Talent'],
@@ -117,8 +111,7 @@ const t: ShipType = {
       loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/chertek.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/chertek.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/chertek.png',
       keywords: [],
     },
     {
@@ -137,8 +130,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/gorgol.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gorgol.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gorgol.png',
       keywords: [],
     },
     {
@@ -154,10 +146,8 @@ const t: ShipType = {
       xws: 'petranakiarenaace',
       loadout: 9,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/petranakiarenaace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/petranakiarenaace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/petranakiarenaace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/petranakiarenaace.png',
       caption: '',
       keywords: [],
     },
