@@ -204,7 +204,7 @@ const t: ShipType = {
       limited: 1,
       ability:
         'While you defend or perform a primary attack, you may spend 1 lock you have on the enemy ship to add 1 [Focus] result to your dice results.',
-      slots: ['Talent', 'Missile', 'Configuration'],
+      slots: ['Talent', 'Missile', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
       keywords: ['A-wing'],

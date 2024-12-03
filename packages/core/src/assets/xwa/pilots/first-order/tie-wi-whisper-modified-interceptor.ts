@@ -162,7 +162,7 @@ const t: ShipType = {
       text: 'Also called Red Fury, the 709th Legion is charged by Supreme Leader Kylo Ren with rooting out dissenters at Black Spire Outpost.',
       standard: true,
       cost: 3,
-      slots: ['Talent', 'Tech', 'Tech', 'Configuration'],
+      slots: ['Talent', 'Tech', 'Tech'],
       ffg: 924,
       keywords: ['TIE'],
       epic: true,

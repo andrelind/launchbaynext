@@ -240,7 +240,7 @@ const t: ShipType = {
       loadout: 5,
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kitfisto.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/kitfisto.png',
-      slots: ['Force Power', 'Force Power', 'Talent', 'Astromech', 'Modification', 'Cannon'],
+      slots: ['Force Power', 'Force Power', 'Astromech', 'Modification', 'Cannon'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
     },

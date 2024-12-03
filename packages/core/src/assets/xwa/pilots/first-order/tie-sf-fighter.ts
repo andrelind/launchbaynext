@@ -90,7 +90,7 @@ const t: ShipType = {
       xws: 'backdraft',
       ability:
         'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
-      slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
+      slots: ['Talent', 'Sensor', 'Missile', 'Missile', 'Modification', 'Modification', 'Gunner', 'Tech'],
       ffg: 407,
       standard: true,
       epic: true,
@@ -142,7 +142,7 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'lieutenantlehuse',
-      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Missile', 'Gunner', 'Modification'],
+      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
       ffg: 641,
       standard: true,
       epic: true,
