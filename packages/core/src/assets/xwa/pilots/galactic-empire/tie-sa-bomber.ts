@@ -115,7 +115,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 15,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorrhymer.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/majorrhymer.png',
