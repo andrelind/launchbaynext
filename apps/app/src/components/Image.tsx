@@ -12,8 +12,6 @@ export const ImageComponent: FC<Props> = ({ uri, ...props }) => {
     setCurrentUri(uri.uri);
   }, [uri.uri]);
 
-
-
   return (
 
     <ImageBackground

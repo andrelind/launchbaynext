@@ -205,9 +205,9 @@ export const CollectionDetailScreen: FC<Props> = ({ route, navigation }) => {
       const v = get[xws] || 0;
 
       return (
-        <View style={tw`flex-row justify-between items-center`}>
-          <View style={tw`flex`}>
-            <Text style={tw`text-white font-semibold`}>{name}</Text>
+        <View style={tw`flex-row justify-between items-center gap-x-2`}>
+          <View style={tw`flex-1`}>
+            <Text style={tw`text-white font-semibold flex-wrap`}>{name}</Text>
             <View style={tw`flex-row items-center gap-x-2`}>
               {icons.map((icon, i) => (
                 <ShipFont

@@ -30,12 +30,12 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
 
   return (
     <Animated.View entering={FadeIn} style={tw`flex flex-1`}>
-      <View style={tw`flex bg-white dark:bg-zinc-800 rounded-lg pb-1 gap-y-1`}>
+      <View style={tw`flex bg-white dark:bg-zinc-800 rounded-lg overflow-hidden pb-1 gap-y-1`}>
         <ImageComponent
           transition={300}
           uri={{ uri: pilot.artwork }}
           style={tw`${slim ? 'h-24' : 'h-30'
-            }  w-full rounded-t-lg justify-end bg-zinc-800`}
+            } w-full rounded-t-lg justify-end bg-zinc-800`}
         >
           <BlurView tint="dark" style={tw` px-2 py-0.5`}>
             <View
@@ -78,14 +78,14 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
                   </Text>
 
                   {pilot.loadout !== undefined &&
-                    <>
+                    <View>
                       {!pilot?.standardLoadout && !slim && (
                         <Text style={tw`ml-2 text-white`}>{`Loadout ${pilot?.loadout}`}</Text>
                       )}
                       {!pilot?.standardLoadout && slim && (
                         <Text style={tw`ml-2 text-white`}>{`${upgradesCost}/${pilot?.loadout}`}</Text>
                       )}
-                    </>}
+                    </View>}
                 </View>
               </View>
             </View>
