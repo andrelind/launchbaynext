@@ -22,7 +22,7 @@ export const xwsZod = z.object({
       upgrades: z.record(z.string(), z.array(z.string())).optional(),
       points: z.number().optional(),
       //   version: z.string(),
-    })
+    }),
   ),
   vendor: z.object({
     lbn: z.object({
@@ -64,10 +64,7 @@ export const listRouter = router({
           // Deleted on server, delete it
           remove.push(list.id);
         } else {
-          const res = compareVersions(
-            list.version,
-            (saved.Xws as unknown as XWS).version || '1.0.0'
-          );
+          const res = compareVersions(list.version, (saved.Xws as unknown as XWS).version || '1.0.0');
           if (res === -1) {
             // Newer version on device, send it
             send.push(list.id);
@@ -80,7 +77,7 @@ export const listRouter = router({
 
       const savedLists = await getUserLists(ctx.user.id);
       for (const saved of savedLists) {
-        if (saved.DeletedUtc || lists.find((l) => l.id === saved.Id)) {
+        if (saved.DeletedUtc || lists.find(l => l.id === saved.Id)) {
           continue;
         }
         // Not on users device, get it
@@ -93,68 +90,56 @@ export const listRouter = router({
 
   all: protectedProcedure.query(async ({ ctx }) => {
     return db.query.Lists.findMany({
-      where: (l, { eq, and, isNull }) =>
-        and(eq(l.UserId, ctx.user.id), isNull(l.DeletedUtc)),
-    }).then((lists) => lists.map((list) => list.Xws as unknown as XWS));
+      where: (l, { eq, and, isNull }) => and(eq(l.UserId, ctx.user.id), isNull(l.DeletedUtc)),
+    }).then(lists => lists.map(list => list.Xws as unknown as XWS));
   }),
 
-  single: protectedProcedure
-    .input(z.array(z.string()))
-    .query(async ({ input, ctx }) => {
-      return db.query.Lists.findFirst({
-        where: (l, { eq, and }) =>
-          and(eq(l.UserId, ctx.user.id), eq(l.Id, input[0])),
-      }).then((list) => list?.Xws as unknown as XWS);
-    }),
+  single: protectedProcedure.input(z.array(z.string())).query(async ({ input, ctx }) => {
+    return db.query.Lists.findFirst({
+      where: (l, { eq, and }) => and(eq(l.UserId, ctx.user.id), eq(l.Id, input[0])),
+    }).then(list => list?.Xws as unknown as XWS);
+  }),
 
-  multiple: protectedProcedure
-    .input(z.array(z.string()))
-    .query(async ({ input, ctx }) => {
-      if (input.length === 0) return []
-      return db.query.Lists.findMany({
-        where: (l, { eq, and, inArray }) =>
-          and(eq(l.UserId, ctx.user.id), inArray(l.Id, input)),
-      }).then((lists) => lists?.map(list => list?.Xws as unknown as XWS));
-    }),
+  multiple: protectedProcedure.input(z.array(z.string())).query(async ({ input, ctx }) => {
+    if (input.length === 0) return [];
+    return db.query.Lists.findMany({
+      where: (l, { eq, and, inArray }) => and(eq(l.UserId, ctx.user.id), inArray(l.Id, input)),
+    }).then(lists => lists?.map(list => list?.Xws as unknown as XWS));
+  }),
 
-  update: protectedProcedure
-    .input(z.array(xwsZod))
-    .mutation(async ({ input, ctx }) => {
-      for (const xws of input) {
-        const list = await db.query.Lists.findFirst({
-          where: (l, { eq, and }) =>
-            and(eq(l.Id, xws.vendor.lbn.uid), eq(l.UserId, ctx.user.id)),
-        });
-        if (list) {
-          await db
-            .update(Lists)
-            .set({
-              Xws: xws,
-              UpdatedUtc: new Date().toISOString(),
-            })
-            .where(eq(Lists.Id, list.Id));
-        } else {
-          await db.insert(Lists).values({
-            Id: xws.vendor.lbn.uid,
-            UserId: ctx.user.id,
-            Xws: xws,
-            CreatedUtc: new Date().toISOString(),
-            UpdatedUtc: new Date().toISOString(),
-          });
-        }
-      }
-    }),
-
-  remove: protectedProcedure
-    .input(z.array(z.string()))
-    .mutation(async ({ input, ctx }) => {
-      for (const id of input) {
+  update: protectedProcedure.input(z.array(xwsZod)).mutation(async ({ input, ctx }) => {
+    for (const xws of input) {
+      const list = await db.query.Lists.findFirst({
+        where: (l, { eq, and }) => and(eq(l.Id, xws.vendor.lbn.uid), eq(l.UserId, ctx.user.id)),
+      });
+      if (list) {
         await db
           .update(Lists)
           .set({
-            DeletedUtc: new Date().toISOString(),
+            Xws: JSON.parse(xws as unknown as string),
+            UpdatedUtc: new Date().toISOString(),
           })
-          .where(eq(Lists.Id, id));
+          .where(eq(Lists.Id, list.Id));
+      } else {
+        await db.insert(Lists).values({
+          Id: xws.vendor.lbn.uid,
+          UserId: ctx.user.id,
+          Xws: JSON.parse(xws as unknown as string),
+          CreatedUtc: new Date().toISOString(),
+          UpdatedUtc: new Date().toISOString(),
+        });
       }
-    }),
+    }
+  }),
+
+  remove: protectedProcedure.input(z.array(z.string())).mutation(async ({ input, ctx }) => {
+    for (const id of input) {
+      await db
+        .update(Lists)
+        .set({
+          DeletedUtc: new Date().toISOString(),
+        })
+        .where(eq(Lists.Id, id));
+    }
+  }),
 });

@@ -349,6 +349,7 @@ const shipMap: { [s: string]: string } = {
   tieininterceptor: 'I',
   upsilonclassshuttle: 'U',
   yt2400: 'o',
+  yt2400lightfreighter2023: '\u006f',
 };
 
 export const shipIcons = (name: string) => {
