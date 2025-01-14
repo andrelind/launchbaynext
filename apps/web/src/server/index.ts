@@ -7,6 +7,7 @@ import { db } from './db';
 import { Collections, Games, Lists, Participants, Tournaments, UserLoginCodes, Users } from './drizzle/schema';
 import { collectionRouter } from './subrouters/collection';
 import { listRouter } from './subrouters/lists';
+import { statsRouter } from './subrouters/stats';
 import { protectedProcedure, publicProcedure, router } from './trpc';
 
 export const appRouter = router({
@@ -14,64 +15,58 @@ export const appRouter = router({
     return 'Hello World';
   }),
 
-  registerOrLogin: publicProcedure
-    .input(z.object({ email: z.string() }))
-    .mutation(async ({ input }) => {
-      const { email } = input;
+  registerOrLogin: publicProcedure.input(z.object({ email: z.string() })).mutation(async ({ input }) => {
+    const { email } = input;
 
-      // Create if not exists (without provider)
-      let user = await db.query.Users.findFirst({
-        where: (u, { eq, and, isNull }) =>
-          and(eq(u.Email, email), isNull(u.Provider)),
-      });
-      if (!user) {
-        const u = await db
-          .insert(Users)
-          .values({
-            Id: v4(),
-            Email: email,
-            Name: email,
-          })
-          .returning();
-        user = u[0];
-      }
+    // Create if not exists (without provider)
+    let user = await db.query.Users.findFirst({
+      where: (u, { eq, and, isNull }) => and(eq(u.Email, email), isNull(u.Provider)),
+    });
+    if (!user) {
+      const u = await db
+        .insert(Users)
+        .values({
+          Id: v4(),
+          Email: email,
+          Name: email,
+        })
+        .returning();
+      user = u[0];
+    }
 
-      if (!user) {
-        throw new Error('User not found');
-      }
+    if (!user) {
+      throw new Error('User not found');
+    }
 
-      // Invalidate all previous codes
-      await db
-        .update(UserLoginCodes)
-        .set({ Active: false })
-        .where(eq(UserLoginCodes.UserId, user.Id));
+    // Invalidate all previous codes
+    await db.update(UserLoginCodes).set({ Active: false }).where(eq(UserLoginCodes.UserId, user.Id));
 
-      // Create 6 digit code
-      const code = Math.floor(100000 + Math.random() * 900000);
-      await db.insert(UserLoginCodes).values({
-        Id: v4(),
-        UserId: user.Id,
-        Code: `${code}`,
-        CreatedAt: new Date().toISOString(),
-        Active: true,
-      });
+    // Create 6 digit code
+    const code = Math.floor(100000 + Math.random() * 900000);
+    await db.insert(UserLoginCodes).values({
+      Id: v4(),
+      UserId: user.Id,
+      Code: `${code}`,
+      CreatedAt: new Date().toISOString(),
+      Active: true,
+    });
 
-      // Send code to email
-      const sender = new ServerClient(process.env.POSTMARK_API_TOKEN as string);
-      await sender.sendEmail({
-        From: 'noreply@launchbaynext.app',
-        To: email,
-        Subject: 'LaunchBayNext Login Code',
-        TextBody: `Your login code is ${code}`,
-      });
-    }),
+    // Send code to email
+    const sender = new ServerClient(process.env.POSTMARK_API_TOKEN as string);
+    await sender.sendEmail({
+      From: 'noreply@launchbaynext.app',
+      To: email,
+      Subject: 'LaunchBayNext Login Code',
+      TextBody: `Your login code is ${code}`,
+    });
+  }),
 
   validateLogin: publicProcedure
     .input(
       z.object({
         email: z.string().optional(),
         code: z.string().optional(),
-      })
+      }),
     )
     .mutation(async ({ input, ctx }) => {
       console.log(ctx);
@@ -82,8 +77,7 @@ export const appRouter = router({
       }
 
       const user = await db.query.Users.findFirst({
-        where: (u, { eq, and, isNull }) =>
-          and(eq(u.Email, email), isNull(u.Provider)),
+        where: (u, { eq, and, isNull }) => and(eq(u.Email, email), isNull(u.Provider)),
       });
       if (!user) {
         throw new Error('User not found');
@@ -91,8 +85,7 @@ export const appRouter = router({
 
       // Find active code
       const code = await db.query.UserLoginCodes.findFirst({
-        where: (c, { eq, and }) =>
-          and(eq(c.UserId, user.Id), eq(c.Active, true)),
+        where: (c, { eq, and }) => and(eq(c.UserId, user.Id), eq(c.Active, true)),
       });
 
       if (!code) {
@@ -113,20 +106,19 @@ export const appRouter = router({
 
       // Find users with this email and provider not null
       const users = await db.query.Users.findMany({
-        where: (u, { eq, and, isNotNull }) =>
-          and(eq(u.Email, email), isNotNull(u.Provider)),
+        where: (u, { eq, and, isNotNull }) => and(eq(u.Email, email), isNotNull(u.Provider)),
       });
 
       // Move all lists to this user
       await Promise.all(
-        users.map(async (u) => {
+        users.map(async u => {
           await db
             .update(Lists)
             .set({
               UserId: user.Id,
             })
             .where(eq(Lists.UserId, u.Id));
-        })
+        }),
       );
 
       const payload = {
@@ -151,22 +143,22 @@ export const appRouter = router({
     });
 
     await Promise.all(
-      tournaments.map(async (t) => {
+      tournaments.map(async t => {
         await db.delete(Games).where(eq(Games.TournamentId, t.Id));
         await db.delete(Participants).where(eq(Tournaments.Id, t.Id));
         await db.delete(Tournaments).where(eq(Tournaments.Id, t.Id));
-      })
+      }),
     );
 
     await db.delete(Collections).where(eq(Collections.UserId, user.id));
     await db.delete(Lists).where(eq(Lists.UserId, user.id));
     await db.delete(UserLoginCodes).where(eq(UserLoginCodes.UserId, user.id));
     await db.delete(Users).where(eq(Users.Id, user.id));
-  }
-  ),
+  }),
 
   collection: collectionRouter,
   lists: listRouter,
+  stats: statsRouter,
 });
 
 export type AppRouter = typeof appRouter;
