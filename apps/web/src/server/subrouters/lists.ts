@@ -116,7 +116,7 @@ export const listRouter = router({
         await db
           .update(Lists)
           .set({
-            Xws: JSON.parse(xws as unknown as string),
+            Xws: xws,
             UpdatedUtc: new Date().toISOString(),
           })
           .where(eq(Lists.Id, list.Id));
@@ -124,7 +124,7 @@ export const listRouter = router({
         await db.insert(Lists).values({
           Id: xws.vendor.lbn.uid,
           UserId: ctx.user.id,
-          Xws: JSON.parse(xws as unknown as string),
+          Xws: xws,
           CreatedUtc: new Date().toISOString(),
           UpdatedUtc: new Date().toISOString(),
         });
