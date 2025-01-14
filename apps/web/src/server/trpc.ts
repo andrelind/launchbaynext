@@ -7,7 +7,7 @@ const t = initTRPC.context<typeof createContext>().create({ transformer: superjs
 export const router = t.router;
 export const publicProcedure = t.procedure;
 
-const isAuthed = t.middleware((opts) => {
+const isAuthed = t.middleware(opts => {
   const { ctx } = opts;
   if (!ctx.user) {
     throw new TRPCError({ code: 'UNAUTHORIZED' });

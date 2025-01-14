@@ -156,7 +156,6 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
             }}
           />
         </View>
-
       </ScrollView>
     </View>
   );
