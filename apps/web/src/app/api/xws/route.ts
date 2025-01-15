@@ -1,4 +1,3 @@
-
 import { deserialize, exportAsXws } from 'lbn-core/src/helpers/serializer';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -10,7 +9,7 @@ const getXws = async (req: NextRequest, res: NextResponse) => {
 
     if (squadronXws) {
       const xws = exportAsXws(squadronXws);
-      return NextResponse.json(xws);
+      return NextResponse.json(JSON.parse(xws));
     }
   }
 

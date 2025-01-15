@@ -166,7 +166,7 @@ export const LoginScreen: FC<Props> = ({ navigation }) => {
                             });
                         } catch (e) {
                             console.error(e);
-                            // setError(e.message);
+                            setError((e as Error).message);
                         }
 
                         // console.log(result);

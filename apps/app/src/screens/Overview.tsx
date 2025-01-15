@@ -26,7 +26,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
 
   const { user } = systemStore((s) => ({ user: s.user }));
 
-  const { data } = useSwr('stats', () => trpc.stats.overview.query());
+  const { data, } = useSwr('stats', () => trpc.stats.overview.query());
   const total = (data?.xwa || 0) + (data?.legacy || 0) + (data?.amg || 0) || 1;
 
   useLayoutEffect(() => {
@@ -156,6 +156,8 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
             }}
           />
         </View>
+
+        {/* <Text style={tw`text-white text-center`}>{TRPC_URL}</Text> */}
       </ScrollView>
     </View>
   );
