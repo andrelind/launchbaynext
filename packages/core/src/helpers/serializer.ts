@@ -203,6 +203,7 @@ export const transformToXWS = (o: string) => {
 export const exportAsXws = (xws: any) => {
   const link = serialize(xws);
 
+  console.log(xws);
   xws.faction = getFactionKey(xws.faction);
   xws.points = xws.cost;
   delete xws.cost;
