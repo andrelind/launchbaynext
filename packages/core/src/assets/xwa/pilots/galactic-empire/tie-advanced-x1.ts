@@ -64,7 +64,6 @@ const t: ShipType = {
         'Modification',
         'Force Power',
         'Force Power',
-        'Talent',
         'Tech',
       ],
       ffg: 93,
