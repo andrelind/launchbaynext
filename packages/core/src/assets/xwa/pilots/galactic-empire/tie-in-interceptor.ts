@@ -389,7 +389,7 @@ const t: ShipType = {
       loadout: 15,
       slots: [
         'Force Power',
-        'Talent',
+        'Force Power',
         'Missile',
         'Modification',
         'Configuration',
