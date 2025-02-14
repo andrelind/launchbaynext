@@ -79,7 +79,7 @@ const t: ShipType = {
       epic: true,
       slots: [
         'Force Power',
-        'Talent',
+        'Force Power',
         'Crew',
         'Gunner',
         'Device',
