@@ -217,11 +217,11 @@ const t: ShipType = {
         'After you become the defender (before dice are rolled), you may recover 1 [Force].',
       force: { value: 2, recovers: 1, side: ['light'] },
       slots: [
-        'Talent',
+        'Force Power',
+        'Force Power',
         'Torpedo',
         'Astromech',
         'Modification',
-        'Force Power',
         'Configuration',
       ],
       ffg: 2,
