@@ -304,7 +304,7 @@ const t: ShipType = {
       xws: 'isbjingoist',
       ability:
         'Before you engage, you may choose 1 enemy ship in your [Front Arc] at range 0-1. If you do, that ship gains 1 deplete or strain token of your choice unless it chooses to remove 1 green token.',
-      slots: ['Talent', 'Illicit'],
+      slots: ['Talent', 'Illicit', 'Modification'],
       keywords: ['TIE'],
       cost: 4,
       standard: true,
@@ -324,7 +324,7 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       ability:
         'While an enemy ship at range 1-3 defends, before attack dice are rolled, you may spend 1 [Charge] and choose a friendly ship at range 0-1 of the defender. If you do, defense dice cannot be modified during this attack and the chosen friendly ship gains 1 strain token.',
-      slots: ['Talent', 'Missile', 'Modification'],
+      slots: ['Talent', 'Missile', 'Modification', 'Modification'],
       keywords: ['TIE'],
       cost: 4,
       standard: true,
