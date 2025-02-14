@@ -185,7 +185,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 [Force]. That ship may perform an action, even while stressed.',
       force: { value: 3, side: ['light'], recovers: 1 },
-      slots: ['Force Power', 'Force Power', 'Talent', 'Missile', 'Modification', 'Configuration'],
+      slots: ['Force Power', 'Force Power', 'Missile', 'Modification', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
       ffg: 881,
