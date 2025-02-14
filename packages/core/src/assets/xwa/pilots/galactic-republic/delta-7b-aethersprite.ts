@@ -58,10 +58,8 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 9,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/jediknight-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jediknight-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/jediknight-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jediknight-delta7baethersprite.png',
       caption: '',
     },
     {
@@ -76,21 +74,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 6,
-      slots: [
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Astromech',
-        'Modification',
-      ],
+      slots: ['Force Power', 'Force Power', 'Astromech', 'Modification', 'Modification', 'Modification'],
       ffg: 511,
       keywords: ['Jedi', 'Light Side'],
       loadout: 9,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/obiwankenobi-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/obiwankenobi-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi-delta7baethersprite.png',
     },
     {
       name: 'Plo Koon',
@@ -104,15 +94,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 6,
-      slots: ['Force Power', 'Talent', 'Astromech', 'Modification'],
+      slots: ['Force Power', 'Force Power', 'Astromech', 'Modification'],
       ffg: 513,
       keywords: ['Jedi', 'Light Side'],
       loadout: 15,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/plokoon-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/plokoon-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/plokoon-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/plokoon-delta7baethersprite.png',
     },
     {
       name: 'Saesee Tiin',
@@ -131,10 +119,8 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 6,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/saeseetiin-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/saeseetiin-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/saeseetiin-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/saeseetiin-delta7baethersprite.png',
     },
     {
       name: 'Mace Windu',
@@ -152,10 +138,8 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 4,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/macewindu-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/macewindu-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/macewindu-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/macewindu-delta7baethersprite.png',
     },
     {
       name: 'Anakin Skywalker',
@@ -170,20 +154,12 @@ const t: ShipType = {
       epic: true,
       cost: 7,
       loadout: 15,
-      slots: [
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Astromech',
-        'Modification',
-      ],
+      slots: ['Force Power', 'Force Power', 'Astromech', 'Modification', 'Modification', 'Modification'],
       ffg: 507,
       keywords: ['Jedi', 'Light Side'],
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-delta7baethersprite.png',
     },
     {
       name: 'Ahsoka Tano',
@@ -202,10 +178,8 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 10,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/ahsokatano-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/ahsokatano-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano-delta7baethersprite.png',
     },
     {
       name: 'Barriss Offee',
@@ -224,10 +198,8 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 12,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/barrissoffee-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/barrissoffee-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/barrissoffee-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/barrissoffee-delta7baethersprite.png',
     },
     {
       name: 'Luminara Unduli',
@@ -246,10 +218,8 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 8,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/luminaraunduli-delta7baethersprite.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/luminaraunduli-delta7baethersprite.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/luminaraunduli-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/luminaraunduli-delta7baethersprite.png',
     },
     {
       name: 'Adi Gallia',
@@ -266,13 +236,11 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/adigallia.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/adigallia-delta7baethersprite.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/adigallia.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/adigallia-delta7baethersprite.png',
       cost: 6,
       loadout: 10,
-      slots: ['Force Power', 'Talent', 'Astromech', 'Modification'],
+      slots: ['Force Power', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
     },

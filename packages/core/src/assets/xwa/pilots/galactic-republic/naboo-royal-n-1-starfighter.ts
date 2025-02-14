@@ -45,23 +45,20 @@ const t: ShipType = {
       name: 'Anakin Skywalker',
       initiative: 4,
       limited: 1,
-      ability:
-        'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
+      ability: 'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
       xws: 'anakinskywalker-nabooroyaln1starfighter',
       standard: true,
       epic: true,
       cost: 4,
       loadout: 9,
-      slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
+      slots: ['Force Power', 'Sensor', 'Torpedo', 'Astromech', 'Modification'],
       force: { value: 1, recovers: 1, side: ['light'] },
       ffg: 558,
       caption: 'Hero of Naboo',
       keywords: ['Light Side'],
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-nabooroyaln1starfighter.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-nabooroyaln1starfighter.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-nabooroyaln1starfighter.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-nabooroyaln1starfighter.png',
     },
     {
       name: 'Ric Olié',
@@ -79,8 +76,7 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ricolie.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ricolie.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ricolie.png',
       keywords: [],
     },
     {
@@ -99,8 +95,7 @@ const t: ShipType = {
       loadout: 22,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/padmeamidala.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/padmeamidala.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/padmeamidala.png',
       keywords: [],
     },
     {
@@ -119,8 +114,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dineeellberger.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dineeellberger.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dineeellberger.png',
       keywords: [],
     },
     {
@@ -136,10 +130,8 @@ const t: ShipType = {
       ffg: 562,
       loadout: 6,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/bravoflightofficer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bravoflightofficer.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/bravoflightofficer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bravoflightofficer.png',
       caption: '',
       keywords: [],
     },
@@ -160,8 +152,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/naboohandmaiden.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/naboohandmaiden.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/naboohandmaiden.png',
       keywords: [],
     },
     {
@@ -181,8 +172,7 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech', 'Modification'],
       ability:
         "While you defend or perform an attack, if the speed of your revealed maneuver is greater than the enemy ship's, you may reroll your blank results.",
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gavynsykes.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gavynsykes.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/gavynsykes.png',
       epic: true,
       keywords: [],

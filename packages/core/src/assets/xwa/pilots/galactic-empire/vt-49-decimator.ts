@@ -80,7 +80,7 @@ const t: ShipType = {
       caption: 'Advisor to Admiral Piett',
       initiative: 5,
       limited: 1,
-      cost: 7,
+      cost: 8,
       xws: 'rearadmiralchiraneau',
       ability:
         'While you perform an attack, if you are reinforced and the defender is in the [Full Front Arc] or [Full Rear Arc] matching your reinforce token, you may change 1 of your [Focus] results to a [Critical Hit] result.',
@@ -88,7 +88,7 @@ const t: ShipType = {
       ffg: 147,
       standard: true,
       epic: true,
-      loadout: 10,
+      loadout: 24,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/rearadmiralchiraneau.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rearadmiralchiraneau.png',

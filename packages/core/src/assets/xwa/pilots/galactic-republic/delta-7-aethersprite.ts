@@ -59,8 +59,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jediknight.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jediknight.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jediknight.png',
       caption: '',
     },
     {
@@ -75,21 +74,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 5,
-      slots: [
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Configuration',
-        'Modification',
-        'Astromech',
-      ],
+      slots: ['Force Power', 'Force Power', 'Force Power', 'Configuration', 'Modification', 'Astromech'],
       ffg: 511,
       keywords: ['Jedi', 'Light Side'],
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/obiwankenobi.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi.png',
     },
     {
       name: 'Plo Koon',
@@ -103,20 +94,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 4,
-      slots: [
-        'Force Power',
-        'Talent',
-        'Configuration',
-        'Modification',
-        'Astromech',
-      ],
+      slots: ['Force Power', 'Force Power', 'Configuration', 'Modification', 'Astromech'],
       ffg: 513,
       keywords: ['Jedi', 'Light Side'],
       loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/plokoon.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/plokoon.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/plokoon.png',
     },
     {
       name: 'Saesee Tiin',
@@ -136,8 +120,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/saeseetiin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/saeseetiin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/saeseetiin.png',
     },
     {
       name: 'Mace Windu',
@@ -150,20 +133,13 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 4,
-      slots: [
-        'Force Power',
-        'Force Power',
-        'Configuration',
-        'Modification',
-        'Astromech',
-      ],
+      slots: ['Force Power', 'Force Power', 'Configuration', 'Modification', 'Astromech'],
       ffg: 512,
       keywords: ['Jedi', 'Light Side'],
       loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/macewindu.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/macewindu.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/macewindu.png',
     },
     {
       name: 'Anakin Skywalker',
@@ -178,20 +154,12 @@ const t: ShipType = {
       epic: true,
       cost: 6,
       loadout: 12,
-      slots: [
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Configuration',
-        'Modification',
-        'Astromech',
-      ],
+      slots: ['Force Power', 'Force Power', 'Force Power', 'Configuration', 'Modification', 'Astromech'],
       ffg: 507,
       extended: true,
       keywords: ['Jedi', 'Light Side'],
       image: 'https://infinitearenas.com/xw2/images/pilots/anakinskywalker.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker.png',
     },
     {
       name: 'Ahsoka Tano',
@@ -211,8 +179,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Jedi', 'Light Side'],
       image: 'https://infinitearenas.com/xw2/images/pilots/ahsokatano.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ahsokatano.png',
     },
     {
       name: 'Barriss Offee',
@@ -232,8 +199,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Jedi', 'Light Side'],
       image: 'https://infinitearenas.com/xw2/images/pilots/barrissoffee.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/barrissoffee.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/barrissoffee.png',
     },
     {
       name: 'Luminara Unduli',
@@ -253,8 +219,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/luminaraunduli.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/luminaraunduli.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/luminaraunduli.png',
     },
     {
       name: 'Adi Gallia',
@@ -271,18 +236,11 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/adigallia.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/adigallia.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/adigallia.png',
       cost: 5,
       loadout: 6,
-      slots: [
-        'Force Power',
-        'Talent',
-        'Configuration',
-        'Modification',
-        'Astromech',
-      ],
+      slots: ['Force Power', 'Force Power', 'Configuration', 'Modification', 'Astromech'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
     },

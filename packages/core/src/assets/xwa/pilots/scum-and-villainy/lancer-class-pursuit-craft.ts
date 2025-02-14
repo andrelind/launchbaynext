@@ -49,14 +49,7 @@ const t: ShipType = {
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your [Single Turret Arc] at range 0-2 and spend 1 [Force]. If you do, that ship gains 1 stress token unless it removes 1 green token.',
       force: { value: 2, recovers: 1, side: ['dark'] },
-      slots: [
-        'Crew',
-        'Talent',
-        'Illicit',
-        'Illicit',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Crew', 'Illicit', 'Illicit', 'Modification', 'Force Power', 'Force Power'],
       ffg: 219,
       standard: false,
       epic: true,
@@ -64,8 +57,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter', 'Dark Side'],
       image: 'https://infinitearenas.com/xw2/images/pilots/asajjventress.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/asajjventress.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/asajjventress.png',
     },
     {
       name: 'Ketsu Onyo',
@@ -84,8 +76,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       image: 'https://infinitearenas.com/xw2/images/pilots/ketsuonyo.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ketsuonyo.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ketsuonyo.png',
     },
     {
       name: 'Sabine Wren',
@@ -103,10 +94,8 @@ const t: ShipType = {
       loadout: 19,
       extended: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sabinewren-lancerclasspursuitcraft.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-lancerclasspursuitcraft.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sabinewren-lancerclasspursuitcraft.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sabinewren-lancerclasspursuitcraft.png',
     },
     {
       name: 'Shadowport Hunter',
@@ -122,10 +111,8 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       loadout: 15,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowporthunter.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowporthunter.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/shadowporthunter.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/shadowporthunter.png',
       caption: '',
     },
   ],

@@ -54,19 +54,9 @@ const t: ShipType = {
       limited: 1,
       cost: 6,
       xws: 'darthvader',
-      ability:
-        'After you perform an action, you may spend 1 [Force] to perform an action.',
+      ability: 'After you perform an action, you may spend 1 [Force] to perform an action.',
       force: { value: 3, recovers: 1, side: ['dark'] },
-      slots: [
-        'Sensor',
-        'Missile',
-        'Modification',
-        'Modification',
-        'Force Power',
-        'Force Power',
-        'Talent',
-        'Tech',
-      ],
+      slots: ['Sensor', 'Missile', 'Modification', 'Modification', 'Force Power', 'Force Power', 'Tech'],
       ffg: 93,
       standard: true,
       epic: true,
@@ -74,8 +64,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       image: 'https://infinitearenas.com/xw2/images/pilots/darthvader.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
     },
     {
       name: 'Maarek Stele',
@@ -94,8 +83,7 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/maarekstele.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maarekstele.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/maarekstele.png',
     },
     {
       name: 'Storm Squadron Ace',
@@ -111,10 +99,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 10,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/stormsquadronace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/stormsquadronace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/stormsquadronace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/stormsquadronace.png',
       caption: '',
     },
     {
@@ -131,10 +117,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 12,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/tempestsquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tempestsquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/tempestsquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tempestsquadronpilot.png',
       caption: '',
     },
     {
@@ -154,8 +138,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/vedfoslo.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vedfoslo.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/vedfoslo.png',
     },
     {
       name: 'Zertik Strom',
@@ -174,8 +157,7 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zertikstrom.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zertikstrom.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zertikstrom.png',
     },
     {
       name: 'Darth Vader',
@@ -184,8 +166,7 @@ const t: ShipType = {
       limited: 1,
       cost: 7,
       xws: 'darthvader-battleofyavin',
-      ability:
-        'While you perform an attack, you may spend 1 [Force] to change 1 blank result to a [Hit] result.',
+      ability: 'While you perform an attack, you may spend 1 [Force] to change 1 blank result to a [Hit] result.',
       force: { value: 3, recovers: 1, side: ['dark'] },
       slots: [],
       standard: true,
@@ -199,10 +180,8 @@ const t: ShipType = {
         { type: 'hull', value: 3 },
         { type: 'shields', value: 3 },
       ],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
       loadout: 0,
     },
     {
@@ -213,8 +192,7 @@ const t: ShipType = {
       cost: 4,
       loadout: 9,
       xws: 'junoeclipse',
-      ability:
-        'After you perform an action, you may perform a red [Boost] action.',
+      ability: 'After you perform an action, you may perform a red [Boost] action.',
       image: 'https://infinitearenas.com/xw2/images/pilots/junoeclipse.png',
       shipAbility: {
         name: 'Advanced Targeting Computer',
@@ -225,8 +203,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/junoeclipse.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/junoeclipse.png',
     },
     {
       name: 'Darth Vader',
@@ -244,10 +221,8 @@ const t: ShipType = {
       ],
       slots: [],
       standardLoadout: ['hate', 'ionmissiles', 'afterburners'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-swz105.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/darthvader-swz105.png',
       standard: true,
       extended: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
@@ -261,11 +236,9 @@ const t: ShipType = {
       cost: 5,
       standardLoadout: ['elusive', 'outmaneuver', 'afterburners'],
       xws: 'maarekstele-swz105',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/maarekstele-swz105.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/maarekstele-swz105.png',
       slots: [],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maarekstele.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/maarekstele.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],

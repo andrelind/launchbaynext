@@ -57,17 +57,15 @@ const t: ShipType = {
       cost: 3,
       xws: 'baronoftheempire',
       text: "Sienar Fleet System's TIE Advanced v1 is a groundbreaking starfighter design, featuring upgraded engines, a missile launcher, and folding s-foils.",
-      slots: ['Talent', 'Sensor', 'Missile'],
+      slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       ffg: 101,
       standard: true,
       epic: true,
       keywords: ['TIE'],
       loadout: 5,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/baronoftheempire.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/baronoftheempire.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/baronoftheempire.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/baronoftheempire.png',
       caption: '',
     },
     {
@@ -80,7 +78,7 @@ const t: ShipType = {
       ability:
         'While you defend at attack range 1, you may spend 1 [Force] to prevent the range 1 bonus. While you perform an attack against a defender at attack range 2-3, you may spend 1 [Force] to apply the range 1 bonus.',
       force: { value: 2, recovers: 1, side: ['dark'] },
-      slots: ['Sensor', 'Missile', 'Force Power', 'Force Power', 'Talent'],
+      slots: ['Sensor', 'Missile', 'Force Power', 'Force Power', 'Force Power', 'Modification'],
       ffg: 99,
       standard: true,
       epic: true,
@@ -88,8 +86,7 @@ const t: ShipType = {
       loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/grandinquisitor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/grandinquisitor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/grandinquisitor.png',
     },
     {
       name: 'Inquisitor',
@@ -99,7 +96,7 @@ const t: ShipType = {
       xws: 'inquisitor',
       text: "The fearsome Inquisitors are given a great deal of autonomy and access to the Empire's latest technology, like the prototype TIE Advanced v1.",
       force: { value: 1, recovers: 1, side: ['dark'] },
-      slots: ['Sensor', 'Force Power'],
+      slots: ['Sensor', 'Force Power', 'Modification'],
       ffg: 102,
       standard: true,
       epic: true,
@@ -107,8 +104,7 @@ const t: ShipType = {
       loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/inquisitor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/inquisitor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/inquisitor.png',
       caption: '',
     },
     {
@@ -121,7 +117,7 @@ const t: ShipType = {
       ability:
         'While you perform a primary attack, before the Neutralize Results step, you may spend 2 [Force] to cancel 1 [Evade] result.',
       force: { value: 2, recovers: 1, side: ['dark'] },
-      slots: ['Sensor', 'Missile', 'Force Power', 'Talent'],
+      slots: ['Sensor', 'Missile', 'Force Power', 'Force Power', 'Modification'],
       ffg: 100,
       standard: true,
       epic: true,
@@ -129,8 +125,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/seventhsister.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/seventhsister.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/seventhsister.png',
     },
     {
       name: 'Fifth Brother',
@@ -142,7 +137,7 @@ const t: ShipType = {
       ability:
         'While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force] to add 1 [Critical Hit] result.',
       force: { value: 2, recovers: 1, side: ['dark'] },
-      slots: ['Force Power', 'Sensor', 'Talent', 'Missile'],
+      slots: ['Force Power', 'Force Power', 'Sensor', 'Missile', 'Modification'],
       standard: true,
       epic: true,
       ffg: 632,
@@ -150,8 +145,7 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/fifthbrother.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/fifthbrother.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/fifthbrother.png',
     },
   ],
 };

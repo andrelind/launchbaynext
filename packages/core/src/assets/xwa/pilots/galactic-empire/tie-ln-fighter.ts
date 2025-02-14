@@ -43,18 +43,16 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'howlrunner',
-      ability:
-        'While a friendly ship at range 0-1 performs a primary attack, that ship may reroll 1 attack die.',
+      ability: 'While a friendly ship at range 0-1 performs a primary attack, that ship may reroll 1 attack die.',
       slots: ['Talent', 'Talent', 'Modification'],
       ffg: 81,
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 11,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/howlrunner.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/howlrunner.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/howlrunner.png',
     },
     {
       name: '“Mauler” Mithel',
@@ -63,8 +61,7 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'maulermithel',
-      ability:
-        'While you perform an attack at attack range 1, roll 1 additional attack die.',
+      ability: 'While you perform an attack at attack range 1, roll 1 additional attack die.',
       slots: ['Talent', 'Cannon'],
       ffg: 80,
       standard: true,
@@ -73,8 +70,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/maulermithel.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
     },
     {
       name: '“Night Beast”',
@@ -83,8 +79,7 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'nightbeast',
-      ability:
-        'After you fully execute a blue maneuver, you may perform a [Focus] action.',
+      ability: 'After you fully execute a blue maneuver, you may perform a [Focus] action.',
       slots: ['Talent', 'Talent'],
       ffg: 88,
       standard: true,
@@ -93,8 +88,7 @@ const t: ShipType = {
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nightbeast.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nightbeast.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nightbeast.png',
     },
     {
       name: '“Scourge” Skutu',
@@ -103,8 +97,7 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'scourgeskutu',
-      ability:
-        'While you perform an attack against a defender in your [Bullseye Arc], roll 1 additional attack die.',
+      ability: 'While you perform an attack against a defender in your [Bullseye Arc], roll 1 additional attack die.',
       slots: ['Talent', 'Modification'],
       ffg: 82,
       standard: true,
@@ -113,8 +106,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/scourgeskutu.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/scourgeskutu.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/scourgeskutu.png',
     },
     {
       name: '“Wampa”',
@@ -151,8 +143,7 @@ const t: ShipType = {
       loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/academypilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/academypilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/academypilot.png',
       caption: '',
     },
     {
@@ -169,10 +160,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 14,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksquadronace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/blacksquadronace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace.png',
       caption: '',
     },
     {
@@ -192,8 +181,7 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/delmeeko.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/delmeeko.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/delmeeko.png',
     },
     {
       name: 'Gideon Hask',
@@ -202,8 +190,7 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'gideonhask',
-      ability:
-        'While you perform an attack against a damaged defender, roll 1 additional attack die.',
+      ability: 'While you perform an attack against a damaged defender, roll 1 additional attack die.',
       slots: ['Talent', 'Talent', 'Missile', 'Modification'],
       ffg: 84,
       standard: true,
@@ -212,8 +199,7 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/gideonhask.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask.png',
     },
     {
       name: 'Iden Versio',
@@ -230,11 +216,10 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 12,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/idenversio.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio.png',
     },
     {
       name: 'Obsidian Squadron Pilot',
@@ -249,10 +234,8 @@ const t: ShipType = {
       epic: true,
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/obsidiansquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/obsidiansquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/obsidiansquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/obsidiansquadronpilot.png',
       caption: '',
       keywords: ['TIE'],
     },
@@ -273,8 +256,7 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/seynmarana.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/seynmarana.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/seynmarana.png',
     },
     {
       name: 'Valen Rudor',
@@ -293,8 +275,7 @@ const t: ShipType = {
       loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/valenrudor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
     },
     {
       name: 'ISB Jingoist',
@@ -304,16 +285,15 @@ const t: ShipType = {
       xws: 'isbjingoist',
       ability:
         'Before you engage, you may choose 1 enemy ship in your [Front Arc] at range 0-1. If you do, that ship gains 1 deplete or strain token of your choice unless it chooses to remove 1 green token.',
-      slots: ['Talent', 'Illicit'],
+      slots: ['Talent', 'Illicit', 'Modification'],
       keywords: ['TIE'],
       cost: 4,
       standard: true,
       epic: true,
-      loadout: 8,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/isbjingoist.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/isbjingoist.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/isbjingoist.png',
     },
     {
       name: 'Moff Gideon',
@@ -324,16 +304,15 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       ability:
         'While an enemy ship at range 1-3 defends, before attack dice are rolled, you may spend 1 [Charge] and choose a friendly ship at range 0-1 of the defender. If you do, defense dice cannot be modified during this attack and the chosen friendly ship gains 1 strain token.',
-      slots: ['Talent', 'Missile', 'Modification'],
+      slots: ['Talent', 'Missile', 'Modification', 'Modification'],
       keywords: ['TIE'],
       cost: 4,
       standard: true,
       epic: true,
-      loadout: 10,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/moffgideon.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/moffgideon.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/moffgideon.png',
     },
     {
       name: '“Backstabber”',
@@ -351,10 +330,8 @@ const t: ShipType = {
       epic: true,
       extended: true,
       standardLoadout: ['crackshot', 'disciplined', 'afterburners'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/backstabber-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/backstabber.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/backstabber-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/backstabber.png',
       loadout: 0,
     },
     {
@@ -371,10 +348,8 @@ const t: ShipType = {
       epic: true,
       extended: true,
       standardLoadout: ['ruthless', 'precisionionengines'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/darkcurse-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/darkcurse.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/darkcurse-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/darkcurse.png',
       loadout: 0,
     },
     {
@@ -392,10 +367,8 @@ const t: ShipType = {
       epic: true,
       extended: true,
       standardLoadout: ['predator', 'afterburners'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/maulermithel-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/maulermithel-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
       loadout: 0,
     },
     {
@@ -414,8 +387,7 @@ const t: ShipType = {
       epic: true,
       extended: true,
       standardLoadout: ['elusive', 'vengeful-battleofyavin'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/wampa-battleofyavin.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/wampa-battleofyavin.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
       loadout: 0,
     },
@@ -435,8 +407,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/magnatolvan.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/magnatolvan.png',
     },
     {
       name: 'Yrica Quell',
@@ -446,16 +417,14 @@ const t: ShipType = {
       cost: 3,
       loadout: 9,
       xws: 'yricaquell',
-      ability:
-        'After you fully execute a maneuver, you may acquire a lock on an enemy ship in your [Bullseye Arc].',
+      ability: 'After you fully execute a maneuver, you may acquire a lock on an enemy ship in your [Bullseye Arc].',
       image: 'https://infinitearenas.com/xw2/images/pilots/yricaquell.png',
       slots: ['Talent', 'Missile', 'Modification'],
       standard: true,
       extended: true,
       keywords: ['TIE'],
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/yricaquell.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/yricaquell.png',
     },
     {
       name: 'Iden Versio',
@@ -465,11 +434,9 @@ const t: ShipType = {
       standardLoadout: ['disciplined', 'elusive'],
       slots: [],
       xws: 'idenversio-swz105',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-swz105.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-swz105.png',
       charges: { value: 1, recovers: 0 },
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -483,12 +450,10 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'nightbeast-swz105',
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/nightbeast-swz105.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/nightbeast-swz105.png',
       standardLoadout: ['disciplined', 'predator'],
       slots: [],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nightbeast.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nightbeast.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -503,11 +468,9 @@ const t: ShipType = {
       cost: 3,
       xws: 'valenrudor-swz105',
       slots: [],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/valenrudor-swz105.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/valenrudor-swz105.png',
       standardLoadout: ['disciplined', 'precisionionengines'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/valenrudor.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -522,14 +485,9 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       cost: 3,
-      ability:
-        'After you defend, you may perform a red [Boost] action, even while stressed',
+      ability: 'After you defend, you may perform a red [Boost] action, even while stressed',
       slots: [],
-      standardLoadout: [
-        'collected-battleoverendor',
-        'elusive',
-        'noescape-battleoverendor',
-      ],
+      standardLoadout: ['collected-battleoverendor', 'elusive', 'noescape-battleoverendor'],
       shipAbility: {
         name: 'Formed Up',
         text: 'At the end of the End Phase, if there is another friendly <strong>TIE/ln Fighter</strong> ship at range 0-1, you may remove 1 stress token.',
@@ -556,9 +514,8 @@ const t: ShipType = {
       xws: 'scythe6-battleoverendor',
       initiative: 2,
       limited: 1,
-      cost: 3,
-      ability:
-        'While you perform an attack at attack range 1-2, roll 1 additional attack die.',
+      cost: 4,
+      ability: 'While you perform an attack at attack range 1-2, roll 1 additional attack die.',
       slots: [],
       standardLoadout: [
         'noescape-battleoverendor',

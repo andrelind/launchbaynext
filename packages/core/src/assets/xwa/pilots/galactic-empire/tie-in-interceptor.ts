@@ -56,10 +56,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/alphasquadronpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/alphasquadronpilot.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/alphasquadronpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/alphasquadronpilot.png',
       caption: '',
     },
     {
@@ -76,10 +74,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 12,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sabersquadronace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sabersquadronace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sabersquadronace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sabersquadronace.png',
       caption: '',
     },
     {
@@ -99,8 +95,7 @@ const t: ShipType = {
       loadout: 0,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/soontirfel.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel.png',
     },
     {
       name: 'Turr Phennir',
@@ -119,8 +114,7 @@ const t: ShipType = {
       loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/turrphennir.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/turrphennir.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/turrphennir.png',
     },
     {
       xws: 'cienaree',
@@ -138,8 +132,7 @@ const t: ShipType = {
       ffg: 889,
       loadout: 4,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
     },
     {
       xws: 'gideonhask-tieininterceptor',
@@ -148,8 +141,7 @@ const t: ShipType = {
       cost: 4,
       initiative: 4,
       limited: 1,
-      ability:
-        'While you perform an attack against a damaged defender, roll 1 additional attack die.',
+      ability: 'While you perform an attack against a damaged defender, roll 1 additional attack die.',
       slots: ['Talent', 'Talent', 'Missile', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
@@ -157,8 +149,7 @@ const t: ShipType = {
       ffg: 892,
       loadout: 4,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
     },
     {
       xws: 'vultskerris-tieininterceptor',
@@ -176,10 +167,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       ffg: 890,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/vultskerris-tieininterceptor.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/vultskerris-tieininterceptor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/vultskerris-tieininterceptor.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/vultskerris-tieininterceptor.png',
     },
     {
       xws: 'commandantgoran',
@@ -197,8 +186,7 @@ const t: ShipType = {
       ffg: 891,
       loadout: 9,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/commandantgoran.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/commandantgoran.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/commandantgoran.png',
     },
     {
@@ -217,10 +205,8 @@ const t: ShipType = {
       ffg: 893,
       loadout: 13,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlorrir.png',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/lieutenantlorrir.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlorrir.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantlorrir.png',
     },
     {
       xws: 'nashwindrider',
@@ -239,8 +225,7 @@ const t: ShipType = {
       ffg: 894,
       loadout: 11,
       extended: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nashwindrider.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nashwindrider.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/nashwindrider.png',
     },
     {
@@ -262,10 +247,8 @@ const t: ShipType = {
       ability:
         'Before a friendly TIE at range 0-1 would suffer damage, you may spend 2 [Charge]. If you do, prevent 1 damage.',
       keywords: ['TIE'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-battleofyavin.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/idenversio-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-battleofyavin.png',
       epic: true,
       loadout: 0,
     },
@@ -276,8 +259,7 @@ const t: ShipType = {
       cost: 4,
       initiative: 4,
       limited: 1,
-      ability:
-        'After you perform a [Barrel Roll] action, you may spend 1 [Charge] to perform a [Boost] action.',
+      ability: 'After you perform a [Barrel Roll] action, you may spend 1 [Charge] to perform a [Boost] action.',
       charges: { value: 2, recovers: 0 },
       slots: [],
       standard: true,
@@ -289,10 +271,8 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standardLoadout: ['disciplined', 'primedthrusters'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma4-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma4.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/sigma4-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sigma4.png',
       loadout: 0,
     },
     {
@@ -302,8 +282,7 @@ const t: ShipType = {
       cost: 4,
       initiative: 4,
       limited: 1,
-      ability:
-        'After you perform an attack that hits, you may spend 1 [Charge] to perform an [Evade] action.',
+      ability: 'After you perform an attack that hits, you may spend 1 [Charge] to perform an [Evade] action.',
       charges: { value: 2, recovers: 0 },
       slots: [],
       standard: true,
@@ -315,10 +294,8 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standardLoadout: ['sensorjammer-battleofyavin', 'elusive'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma5-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma5.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/sigma5-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sigma5.png',
       loadout: 0,
     },
     {
@@ -328,8 +305,7 @@ const t: ShipType = {
       cost: 4,
       initiative: 4,
       limited: 1,
-      ability:
-        'After you fully execute a speed 3-5 maneuver, you may spend 1 [Charge] to perform a [Slam] action.',
+      ability: 'After you fully execute a speed 3-5 maneuver, you may spend 1 [Charge] to perform a [Slam] action.',
       charges: { value: 2, recovers: 0 },
       slots: [],
       standard: true,
@@ -341,10 +317,8 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standardLoadout: ['daredevil', 'afterburners'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma6-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma6.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/sigma6-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sigma6.png',
       loadout: 0,
     },
     {
@@ -354,8 +328,7 @@ const t: ShipType = {
       cost: 4,
       initiative: 4,
       limited: 1,
-      ability:
-        'During the System Phase, you may spend 1 [Charge] to acquire a lock on an enemy ship at range 0-1.',
+      ability: 'During the System Phase, you may spend 1 [Charge] to acquire a lock on an enemy ship at range 0-1.',
       charges: { value: 2, recovers: 0 },
       slots: [],
       standard: true,
@@ -367,10 +340,8 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standardLoadout: ['marksmanship', 'firecontrolsystem'],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sigma7-battleofyavin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigma7.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/sigma7-battleofyavin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sigma7.png',
       loadout: 0,
     },
     {
@@ -387,21 +358,14 @@ const t: ShipType = {
       extended: true,
       cost: 5,
       loadout: 15,
-      slots: [
-        'Force Power',
-        'Talent',
-        'Missile',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Force Power', 'Force Power', 'Missile', 'Modification', 'Configuration'],
       ability:
         'While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force]. If you do, change all of your [Hit] results to [Critical Hit] results.',
       force: { value: 2, recovers: 1, side: ['dark'] },
       keywords: ['Dark Side', 'TIE'],
       image: 'https://infinitearenas.com/xw2/images/pilots/secondsister.png',
       epic: true,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/secondsister.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/secondsister.png',
     },
     {
       name: 'Maus Monare',
@@ -415,11 +379,7 @@ const t: ShipType = {
       },
       cost: 4,
       slots: [],
-      standardLoadout: [
-        'noescape-battleoverendor',
-        'outmaneuver',
-        'fuelinjectionoverride-battleoverendor',
-      ],
+      standardLoadout: ['noescape-battleoverendor', 'outmaneuver', 'fuelinjectionoverride-battleoverendor'],
       standard: true,
       extended: true,
       ability: 'After you perform an [Evade] action, gain a calculate token.',
@@ -445,14 +405,11 @@ const t: ShipType = {
         'targetingmatrix-battleoverendor',
         'primedthrusters',
       ],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/sapphire2-battleoverendor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sapphire2-battleoverendor.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/sapphire2-battleoverendor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sapphire2-battleoverendor.png',
       standard: true,
       extended: true,
-      ability:
-        'While you defend, if you are focused, roll 1 additional defense die.',
+      ability: 'While you defend, if you are focused, roll 1 additional defense die.',
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
@@ -482,10 +439,8 @@ const t: ShipType = {
       charges: { value: 2, recovers: 0 },
       keywords: ['TIE'],
       epic: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/soontirfel-battleoverendor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel-battleoverendor.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/soontirfel-battleoverendor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel-battleoverendor.png',
       loadout: 0,
     },
   ],

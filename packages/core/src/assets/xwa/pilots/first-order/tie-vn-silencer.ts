@@ -73,7 +73,7 @@ const t: ShipType = {
         "After you defend, you may spend 1 [Force] to assign the I'll Show You the Dark Side condition to the attacker.",
       force: { value: 2, recovers: 1, side: ['dark'] },
       conditions: ['illshowyouthedarkside'],
-      slots: ['Torpedo', 'Missile', 'Force Power', 'Talent', 'Tech', 'Configuration'],
+      slots: ['Torpedo', 'Missile', 'Force Power', 'Force Power', 'Tech', 'Configuration'],
       ffg: 414,
       standard: true,
       epic: true,
