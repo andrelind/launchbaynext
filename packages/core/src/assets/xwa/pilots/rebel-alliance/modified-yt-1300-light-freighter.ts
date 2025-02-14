@@ -75,7 +75,7 @@ const t: ShipType = {
       caption: 'Scoundrel for Hire',
       initiative: 6,
       limited: 1,
-      cost: 7,
+      cost: 9,
       xws: 'hansolo-modifiedyt1300lightfreighter',
       ability:
         'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
@@ -93,7 +93,7 @@ const t: ShipType = {
       ffg: 69,
       standard: true,
       epic: true,
-      loadout: 9,
+      loadout: 25,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image:
@@ -124,7 +124,7 @@ const t: ShipType = {
       ffg: 70,
       standard: true,
       epic: true,
-      loadout: 12,
+      loadout: 15,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image:
