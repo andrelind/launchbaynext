@@ -14,6 +14,7 @@ import { SimpleItem } from '../components/SimpleItem';
 import { useTailwind } from '../helpers/tailwind';
 import { trpc } from '../helpers/trpc';
 import { captureScroll } from '../helpers/ui';
+import { notifications } from '../notifications';
 import { systemStore } from '../stores/system';
 import { blue } from '../theme';
 import { OverviewStackParams } from '../types/navigation';
@@ -79,7 +80,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
           </TouchableOpacity>
         )}
 
-        {/* <View style={tw`px-2 gap-y-2`}>
+        <View style={tw`px-2 gap-y-2`}>
           {notifications.sort((a, b) => b.id - a.id).map((n) => (
             <View key={n.id} style={tw`px-2 py-3 gap-y-1 bg-white dark:bg-zinc-800 rounded-md`}>
               <Text style={tw`text-zinc-900 dark:text-white font-semibold`}>{n.title}</Text>
@@ -87,7 +88,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
             </View>
 
           ))}
-        </View> */}
+        </View>
 
         <View style={tw`gap-y-2`}>
           <View style={tw`px-2 flex-row items-center justify-around`}>
