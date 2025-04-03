@@ -2142,7 +2142,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Rebel Alliance'] }],
+    restrictions: [{ factions: ['Rebel Alliance'], character: ['Gar Saxon'] }],
     extended: true,
   },
   {
