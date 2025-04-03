@@ -172,6 +172,18 @@ const t: ShipType = {
       standard: true,
       epic: true,
       slots: [],
+      shipActions: [
+        { difficulty: 'White', type: 'Focus'},
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'Red', type: 'Boost' },
+        { difficulty: 'White', type: 'Rotate' },
+        {
+          difficulty: 'Red',
+          type: 'Coordinate',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+      ],
       ability:
         'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, choose an initiative from 1 to 6. You activate at that initiative this phase.',
       cost: 7,
