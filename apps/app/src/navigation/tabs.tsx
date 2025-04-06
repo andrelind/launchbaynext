@@ -20,6 +20,7 @@ import SelectShipScreen from '../screens/SelectShip';
 import SelectUpgradeScreen from '../screens/SelectUpgrade';
 import SquadronScreen from '../screens/Squadron';
 import SquadronsScreen from '../screens/Squadrons';
+import SquadronSettingsScreen from '../screens/SquadronSettings';
 import {
   CollectionStackParams,
   CounterStackParams,
@@ -71,6 +72,7 @@ const SelectStackComponent = () => {
         component={SelectUpgradeScreen}
         options={{ headerTitle: 'Select Upgrade' }}
       />
+      <SelectStack.Screen name='SquadronSettings' component={SquadronSettingsScreen} />
       <ListStack.Screen
         name="Image"
         component={ImageScreen}

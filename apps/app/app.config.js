@@ -4,8 +4,8 @@ export default {
   expo: {
     name: IS_DEV ? 'LBN (dev)' : 'Launch Bay Next',
     slug: 'lbn',
-    version: '4.0.0',
-    runtimeVersion:{ policy: 'appVersion' },
+    version: '4.0.1',
+    runtimeVersion: { policy: 'appVersion' },
     orientation: 'portrait',
     icon: './assets/icon.png',
     userInterfaceStyle: 'automatic',
@@ -18,34 +18,27 @@ export default {
     ios: {
       buildNumber: '1',
       supportsTablet: true,
-      bundleIdentifier: IS_DEV
-        ? 'se.andrelind.launch-bay-2.dev'
-        : 'se.andrelind.launch-bay-2',
+      bundleIdentifier: IS_DEV ? 'se.andrelind.launch-bay-2.dev' : 'se.andrelind.launch-bay-2',
       associatedDomains: ['applinks:launchbaynext.app'],
     },
     android: {
-      versionCode: 52,
+      versionCode: 53,
       package: IS_DEV ? 'com.launchbaynext.dev' : 'com.launchbaynext',
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
         backgroundColor: '#09090b',
       },
-      permissions: [
-        'android.permission.CAMERA',
-        'android.permission.RECORD_AUDIO',
-      ],
+      permissions: ['android.permission.CAMERA', 'android.permission.RECORD_AUDIO'],
     },
     web: {
       favicon: './assets/favicon.png',
     },
     updates: { url: 'https://u.expo.dev/ef07a76c-686b-488d-a99c-41839da38ffc' },
     plugins: [
-      [
-        'expo-camera',
-        { cameraPermission: 'Allow $(PRODUCT_NAME) to access your camera' },
-      ],
+      ['expo-camera', { cameraPermission: 'Allow $(PRODUCT_NAME) to access your camera' }],
       'expo-apple-authentication',
       'expo-font',
+      'expo-asset',
     ],
     extra: {
       eas: {

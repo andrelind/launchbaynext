@@ -4,10 +4,20 @@ import { allSlots, slotKeys } from '../helpers/enums';
 import {
   FactionKey,
   Format,
-  Pilot, PilotXWS, ShipBase, ShipType, Slot, SlotKey,
-  Upgrade, UpgradeCostAgility, UpgradeCostFaction, UpgradeCostInitiative, UpgradeCostSize, UpgradeCostValue, XWS
+  Pilot,
+  PilotXWS,
+  ShipBase,
+  ShipType,
+  Slot,
+  SlotKey,
+  Upgrade,
+  UpgradeCostAgility,
+  UpgradeCostFaction,
+  UpgradeCostInitiative,
+  UpgradeCostSize,
+  UpgradeCostValue,
+  XWS,
 } from '../types';
-
 
 export interface TShip extends ShipBase {
   pointsWithUpgrades: number;
@@ -23,62 +33,64 @@ export type SlotValue = {
   upgrade?: Upgrade;
 };
 
-export const pilotExists2 = (pilotXws: PilotXWS, xws: { faction: FactionKey, ruleset: RuleSet }) => {
+export const pilotExists2 = (pilotXws: PilotXWS, xws: { faction: FactionKey; ruleset: RuleSet }) => {
   const ship = assets[xws.ruleset || 'amg'].pilots[factionFromKey(xws.faction)][pilotXws.ship];
   if (ship === undefined) {
     return false;
   }
-  return Boolean(ship.pilots.find((p) => p.xws === pilotXws.id));
+  return Boolean(ship.pilots.find(p => p.xws === pilotXws.id));
 };
 
 export const upgradeExists = (slot: SlotKey, xws: string, ruleset: RuleSet) => {
-  return assets[ruleset]?.upgrades[slot].filter((u) => u.xws === xws)[0] !== undefined;
+  return assets[ruleset]?.upgrades[slot].filter(u => u.xws === xws)[0] !== undefined;
 };
 
 export const pointsForSquadron2 = (xws: XWS): number => {
   return xws.pilots
-    .filter((pilot) => pilotExists2(pilot, xws))
-    .map((pilot) => {
-      const ship = loadShip2(pilot, xws)
-      return xws?.ruleset.includes('legacy') ? ship.pointsWithUpgrades : ship?.pilot?.cost || 0
+    .filter(pilot => pilotExists2(pilot, xws))
+    .map(pilot => {
+      const ship = loadShip2(pilot, xws);
+      return xws?.ruleset.includes('legacy') ? ship.pointsWithUpgrades : ship?.pilot?.cost || 0;
     })
     .reduce((s, p) => s + p, 0);
 };
 
 export const loadShip2 = (
   pilot: PilotXWS,
-  xws:
-    {
-      faction: FactionKey,
-      format: Format, ruleset: RuleSet
-    }
+  xws: {
+    faction: FactionKey;
+    format: Format;
+    ruleset: RuleSet;
+  },
 ) => {
+  console.log(`Loading ship ${pilot.ship} for ${pilot.id} (${xws.faction})`);
+
   const shipType: ShipType = JSON.parse(
-    JSON.stringify(assets[xws.ruleset || 'amg'].pilots[getFaction(xws.faction)][pilot.ship])
+    JSON.stringify(assets[xws.ruleset || 'amg'].pilots[getFaction(xws.faction)][pilot.ship]),
   );
 
   const { pilots, ...rest } = shipType;
   const ship: TShip = {
     ...rest,
-    pilot: pilots?.find((sp) => sp.xws === pilot.id),
+    pilot: pilots?.find(sp => sp.xws === pilot.id),
     upgrades: {},
     pointsWithUpgrades: 0,
   };
 
-  Object.keys(cleanupUpgrades2(pilot.upgrades, ship, xws)).forEach((key) => {
+  Object.keys(cleanupUpgrades2(pilot.upgrades, ship, xws)).forEach(key => {
     const upgrades = pilot.upgrades?.[key as SlotKey];
     if (upgrades) {
       ship.upgrades![key as SlotKey] = upgrades
-        .filter((x) => upgradeExists(key as SlotKey, x, xws.ruleset || 'amg'))
-        .map((u) => loadUpgrade2(u, key as SlotKey, ship, xws.ruleset || 'amg'));
+        .filter(x => upgradeExists(key as SlotKey, x, xws.ruleset || 'amg'))
+        .map(u => loadUpgrade2(u, key as SlotKey, ship, xws.ruleset || 'amg'));
     }
   });
   ship.pointsWithUpgrades = pointsForShip2(ship);
 
   if (ship.upgrades && ship.pilot) {
     ship.pilot.upgrades = slotKeys
-      .map((key) => ship.upgrades![key])
-      .filter((x) => x)
+      .map(key => ship.upgrades![key])
+      .filter(x => x)
       .reduce((a, c) => [...a!, ...c!], []);
   }
   getStandardLoadout(xws, ship.pilot);
@@ -90,10 +102,8 @@ export const getStandardLoadout = (xws: { ruleset: RuleSet }, pilot?: Pilot) => 
   if (pilot?.standardLoadout) {
     pilot.upgrades = [];
     pilot.standardLoadout.forEach((upgradeXws, index) => {
-      slotKeys.forEach((slotKey) => {
-        const u = assets[xws.ruleset || 'amg'].upgrades[slotKey].find(
-          (upgrade) => upgrade.xws === upgradeXws
-        );
+      slotKeys.forEach(slotKey => {
+        const u = assets[xws.ruleset || 'amg'].upgrades[slotKey].find(upgrade => upgrade.xws === upgradeXws);
         if (u) {
           pilot!.upgrades!.push({ ...u, finalCost: 0, available: 0 });
         }
@@ -104,10 +114,10 @@ export const getStandardLoadout = (xws: { ruleset: RuleSet }, pilot?: Pilot) => 
 
 export const pointsForShip2 = (ship: TShip): number =>
   slotKeys
-    .map((key) => {
+    .map(key => {
       const upgrade = ship.upgrades && ship.upgrades[key];
       if (upgrade) {
-        return upgrade.map((u) => u.finalCost).reduce((s, p) => s + p, 0);
+        return upgrade.map(u => u.finalCost).reduce((s, p) => s + p, 0);
       }
       return 0;
     })
@@ -120,23 +130,17 @@ export const loadUpgrades2 = (ship?: TShip, format?: Format): SlotValue[] => {
     return [];
   }
 
-  if (
-    format === 'Epic' &&
-    Boolean(ship?.pilot?.slots) &&
-    !ship?.pilot?.slots.find((s) => s === 'Command')
-  ) {
+  if (format === 'Epic' && Boolean(ship?.pilot?.slots) && !ship?.pilot?.slots.find(s => s === 'Command')) {
     ship.pilot.slots = [...ship.pilot.slots, 'Command'];
   }
 
   // For ship with Hardpoint
-  const extraSlots = ship?.ability?.slotOptions?.find(
-    (sl) => ship?.upgrades?.[keyFromSlot(sl)]
-  );
+  const extraSlots = ship?.ability?.slotOptions?.find(sl => ship?.upgrades?.[keyFromSlot(sl)]);
   if (extraSlots && Boolean(ship?.pilot?.slots)) {
     ship.pilot.slots = [...ship.pilot.slots, extraSlots];
   }
 
-  return ship?.pilot?.slots.map((slot) => {
+  return ship?.pilot?.slots.map(slot => {
     const key = keyFromSlot(slot);
     const i = checked[key] !== undefined ? checked[key] : 0;
     checked[key] = i + 1;
@@ -154,17 +158,14 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
     return 0;
   }
 
-
   if (cost.value) {
     return (cost as UpgradeCostValue).value;
   }
   if (cost.variable && cost.variable === 'agility') {
     const typedCost = cost as UpgradeCostAgility;
 
-    const fresh: ShipType = JSON.parse(
-      JSON.stringify(assets[xws.ruleset || 'amg'].pilots[ship.faction][ship.xws])
-    );
-    const agility = fresh.stats.find((s) => s.type === 'agility');
+    const fresh: ShipType = JSON.parse(JSON.stringify(assets[xws.ruleset || 'amg'].pilots[ship.faction][ship.xws]));
+    const agility = fresh.stats.find(s => s.type === 'agility');
     if (agility) {
       return typedCost.values[agility.value];
     }
@@ -181,30 +182,19 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
   return 0;
 };
 
-export const loadUpgrade2 = (
-  xws: string,
-  slotKey: SlotKey,
-  ship: TShip,
-  ruleset: RuleSet
-): Upgrade => {
-  const upgrade: Upgrade = JSON.parse(
-    JSON.stringify(assets[ruleset].upgrades[slotKey].find((u) => u.xws === xws))
-  );
+export const loadUpgrade2 = (xws: string, slotKey: SlotKey, ship: TShip, ruleset: RuleSet): Upgrade => {
+  const upgrade: Upgrade = JSON.parse(JSON.stringify(assets[ruleset].upgrades[slotKey].find(u => u.xws === xws)));
 
   upgrade.finalCost = pointsForUpgrade2(upgrade.cost, ship, { ruleset });
 
   if (upgrade.sides[0].grants) {
-    upgrade.sides[0].grants.forEach((g) => {
+    upgrade.sides[0].grants.forEach(g => {
       const { slot, stat, action, side, arc, value } = g;
       if (slot) {
         if (value > 0 && ship.pilot) {
           if (ship.pilot?.slots && ship.pilot?.slots.indexOf(slot) > 0) {
             for (let count = 0; count < value; count++) {
-              ship.pilot?.slots.splice(
-                ship.pilot?.slots.indexOf(slot),
-                0,
-                slot
-              );
+              ship.pilot?.slots.splice(ship.pilot?.slots.indexOf(slot), 0, slot);
             }
           } else {
             for (let count = 0; count < value; count++) {
@@ -215,13 +205,11 @@ export const loadUpgrade2 = (
           ship.pilot?.slots?.splice(ship.pilot?.slots.indexOf(slot), 1);
         }
       } else if (stat) {
-        const stats = ship.stats.filter(
-          (s) => s.type === stat && s.arc === arc
-        );
+        const stats = ship.stats.filter(s => s.type === stat && s.arc === arc);
         if (stats.length === 0 && value > 0) {
           ship.stats.push({ type: stat, value: value, arc });
         } else {
-          stats.forEach((s) => (s.value += value));
+          stats.forEach(s => (s.value += value));
         }
       } else if (action) {
         if (value > 0) {
@@ -231,12 +219,10 @@ export const loadUpgrade2 = (
             ship.actions.push(action);
           }
         } else if (ship.pilot && ship.pilot?.shipActions) {
-          const a = ship.pilot?.shipActions.filter(
-            (b) => b.type === action.type
-          )[0];
+          const a = ship.pilot?.shipActions.filter(b => b.type === action.type)[0];
           ship.pilot?.shipActions.splice(ship.pilot?.shipActions.indexOf(a), 1);
         } else {
-          const a = ship.actions.filter((b) => b.type === action.type)[0];
+          const a = ship.actions.filter(b => b.type === action.type)[0];
           ship.actions.splice(ship.actions.indexOf(a), 1);
         }
       } else if (side && ship.pilot) {
@@ -275,38 +261,34 @@ export const freeSlotsForShip2 = (ship: TShip, xws: { ruleset: RuleSet }) => {
     return {};
   }
   // Start with loading the ship
-  const shipType: ShipType = JSON.parse(
-    JSON.stringify(assets[xws.ruleset || 'amg'].pilots[ship.faction][ship.xws])
-  );
-  const pilot = shipType.pilots.find((p) => p.xws === ship.pilot?.xws);
+  const shipType: ShipType = JSON.parse(JSON.stringify(assets[xws.ruleset || 'amg'].pilots[ship.faction][ship.xws]));
+  const pilot = shipType.pilots.find(p => p.xws === ship.pilot?.xws);
 
   // Get all available slots from ship
   const freeSlots: { [key in Slot]?: number } = {};
-  pilot?.slots?.forEach((slot) => {
+  pilot?.slots?.forEach(slot => {
     freeSlots[slot] = freeSlots[slot] ? freeSlots[slot]! + 1 : 1;
   });
 
   // Now load each and every upgrade and +/- on free slots
-  allSlots.forEach((slot) => {
+  allSlots.forEach(slot => {
     const upgrades = ship.upgrades?.[keyFromSlot(slot)];
     if (!upgrades) {
       return;
     }
 
-    upgrades.forEach((u) => {
+    upgrades.forEach(u => {
       // Remove each slot used
-      u.sides[0].slots.forEach((us) => {
+      u.sides[0].slots.forEach(us => {
         freeSlots[us] = freeSlots[us] ? freeSlots[us]! - 1 : -1;
       });
 
       // Add for each slot granted
-      u.sides[0].grants?.forEach((g) => {
+      u.sides[0].grants?.forEach(g => {
         if (!g.slot) {
           return;
         }
-        freeSlots[g.slot] = freeSlots[g.slot]
-          ? freeSlots[g.slot]! + g.value
-          : g.value;
+        freeSlots[g.slot] = freeSlots[g.slot] ? freeSlots[g.slot]! + g.value : g.value;
       });
     });
   });
@@ -318,7 +300,7 @@ export const cleanupUpgrades2 = (
   upgrades: { [key in SlotKey]?: string[] } = {},
   ship: TShip,
 
-  xws: { format: Format, ruleset: RuleSet }
+  xws: { format: Format; ruleset: RuleSet },
 ) => {
   const usedSlots = freeSlotsForShip2(ship, xws);
 
@@ -326,7 +308,7 @@ export const cleanupUpgrades2 = (
     upgrades = {};
   }
 
-  Object.keys(usedSlots).forEach((s) => {
+  Object.keys(usedSlots).forEach(s => {
     const slot = s as Slot;
     let count = usedSlots[slot]!;
 
@@ -339,10 +321,7 @@ export const cleanupUpgrades2 = (
     ) {
       // Weapon hardpoint, this is ok...
       count = 0;
-    } else if (
-      (slot === 'Torpedo' || slot === 'Missile') &&
-      ship.xws === 'clonez95headhunter'
-    ) {
+    } else if ((slot === 'Torpedo' || slot === 'Missile') && ship.xws === 'clonez95headhunter') {
       // Weapon hardpoint, this is ok...
       count = 0;
     }
@@ -351,14 +330,11 @@ export const cleanupUpgrades2 = (
       // We need to remove something...
       if (upgrades[keyFromSlot(slot)]?.length) {
         // Just remove from here while we can...
-        upgrades[keyFromSlot(slot)]!.splice(
-          upgrades[keyFromSlot(slot)]!.length - 1,
-          1
-        );
+        upgrades[keyFromSlot(slot)]!.splice(upgrades[keyFromSlot(slot)]!.length - 1, 1);
         count += 1;
       } else if (ship.upgrades) {
         // Remove upgrades that occupy this kind of slot...
-        Object.keys(ship.upgrades || {}).forEach((key) => {
+        Object.keys(ship.upgrades || {}).forEach(key => {
           const ups = ship.upgrades?.[key as SlotKey];
           if (!ups || ups === null) {
             return;
@@ -376,7 +352,7 @@ export const cleanupUpgrades2 = (
   });
 
   try {
-    slotKeys.forEach((s) => {
+    slotKeys.forEach(s => {
       if (upgrades[s] && upgrades[s]?.length === 0) {
         delete upgrades[s];
       }

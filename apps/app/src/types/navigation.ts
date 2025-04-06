@@ -22,6 +22,7 @@ export type SelectStackParams = {
     slot: Slot;
     slotIndex: number;
   };
+  SquadronSettings: { uid: string };
   Image: { url?: { uri?: string } };
 };
 
