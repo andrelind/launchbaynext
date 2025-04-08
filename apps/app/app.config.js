@@ -20,6 +20,9 @@ export default {
       supportsTablet: true,
       bundleIdentifier: IS_DEV ? 'se.andrelind.launch-bay-2.dev' : 'se.andrelind.launch-bay-2',
       associatedDomains: ['applinks:launchbaynext.app'],
+      infoPlist: {
+        ITSAppUsesNonExemptEncryption: false,
+      },
     },
     android: {
       versionCode: 53,

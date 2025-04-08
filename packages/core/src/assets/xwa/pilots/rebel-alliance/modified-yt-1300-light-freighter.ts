@@ -173,11 +173,11 @@ const t: ShipType = {
       epic: true,
       slots: [],
       shipActions: [
-        { difficulty: 'White', type: 'Focus'},
+        { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'White', type: 'Evade' },
         { difficulty: 'Red', type: 'Boost' },
-        { difficulty: 'White', type: 'Rotate' },
+        { difficulty: 'White', type: 'Rotate Arc' },
         {
           difficulty: 'Red',
           type: 'Coordinate',
