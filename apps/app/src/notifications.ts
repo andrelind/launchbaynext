@@ -1,10 +1,10 @@
 export const notifications = [
   {
-    id: 21,
+    id: 22,
     link: undefined,
-    title: 'New XWA points!',
-    body: `The latest beta points released by XWA have been added to the app!
-Feel free to reach out if you have any questions or feedback.
+    title: 'New XWA standard loadouts!',
+    body: `I've just added a new standard loadouts from the XWA
+As always, feel free to suggest any changes or improvements.
 
 Best Regards, 
 André`,
