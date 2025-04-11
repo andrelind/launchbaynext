@@ -64,16 +64,7 @@ const t: ShipType = {
       cost: 4,
       loadout: 13,
       xws: 'cadbane',
-      slots: [
-        'Talent',
-        'Cannon',
-        'Cannon',
-        'Missile',
-        'Illicit',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Cannon', 'Cannon', 'Missile', 'Illicit', 'Illicit', 'Modification', 'Title'],
       ability:
         'After you perform an attack that hits, you may spend 2 [Charge] to transfer 1 of your non-lock red or orange tokens to the defender.',
       charges: { value: 2, recovers: 1 },
@@ -82,8 +73,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/cadbane.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane.png',
     },
     {
       name: 'Viktor Hel',
@@ -93,24 +83,14 @@ const t: ShipType = {
       cost: 4,
       loadout: 11,
       xws: 'viktorhel-rogueclassstarfighter',
-      slots: [
-        'Talent',
-        'Cannon',
-        'Cannon',
-        'Missile',
-        'Illicit',
-        'Modification',
-      ],
-      ability:
-        'After you defend, if you did not roll exactly 2 defense dice, the attacker gains 1 stress token.',
+      slots: ['Talent', 'Cannon', 'Cannon', 'Missile', 'Illicit', 'Modification'],
+      ability: 'After you defend, if you did not roll exactly 2 defense dice, the attacker gains 1 stress token.',
       standard: true,
       extended: true,
       epic: true,
       keywords: ['Bounty Hunter'],
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/viktorhel-rogueclassstarfighter.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/viktorhel-rogueclassstarfighter.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/viktorhel-rogueclassstarfighter.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/viktorhel-rogueclassstarfighter.png',
     },
     {
       name: 'Nom Lumb',
@@ -120,25 +100,15 @@ const t: ShipType = {
       cost: 4,
       loadout: 11,
       xws: 'nomlumb-rogueclassstarfighter',
-      slots: [
-        'Talent',
-        'Cannon',
-        'Cannon',
-        'Missile',
-        'Illicit',
-        'Modification',
-        'Modification',
-      ],
+      slots: ['Talent', 'Cannon', 'Cannon', 'Missile', 'Illicit', 'Modification', 'Modification'],
       ability:
         "At the start of the Engagement Phase, you may choose 1 enemy ship in your [Front Arc]. If you do, treat your initiative as equal to that ship's until the end of the round.",
       standard: true,
       extended: true,
       epic: true,
       keywords: ['Bounty Hunter'],
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/nomlumb-rogueclassstarfighter.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb-rogueclassstarfighter.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/nomlumb-rogueclassstarfighter.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb-rogueclassstarfighter.png',
     },
     {
       name: 'Outer Rim Hunter',
@@ -153,8 +123,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/outerrimhunter.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimhunter.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimhunter.png',
       caption: '',
       keywords: [],
     },
@@ -166,14 +135,7 @@ const t: ShipType = {
       cost: 4,
       loadout: 8,
       xws: 'durge',
-      slots: [
-        'Talent',
-        'Talent',
-        'Cannon',
-        'Cannon',
-        'Illicit',
-        'Modification',
-      ],
+      slots: ['Talent', 'Talent', 'Cannon', 'Cannon', 'Illicit', 'Modification'],
       ability:
         'While you defend, after the Neutralize Results step, if there are more [Hit]/[Critical Hit] results than your active shield, you may change 1 [Hit] result to a [Critical Hit] and cancel 1 [Hit] result.',
       shipAbility: {
@@ -186,6 +148,44 @@ const t: ShipType = {
       extended: true,
       epic: true,
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/durge.png',
+    },
+    {
+      name: 'Cad Bane',
+      caption: 'Armed and Dangerous',
+      initiative: 4,
+      limited: 1,
+      cost: 4,
+      loadout: 0,
+      xws: 'cadbane-armedanddangerous',
+      slots: [],
+      ability:
+        'After you perform an attack that hits, you may spend 2 [charges] to transfer 1 of your non-lock red or orange tokens to the defender.',
+      charges: {
+        value: 2,
+        recovers: 1,
+      },
+      shipAbility: {
+        name: 'Dead to Rights',
+        text: 'While you perform an attack, if the defender is in your [bullseye], defense dice cannot be modified using green tokens.',
+      },
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/cadbane-armedanddangerous.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane-armedanddangerous.png',
+      keywords: ['Bounty Hunter'],
+      standardLoadout: [
+        'flechettecannons-armedanddangerous',
+        'todo360-armedanddangerous',
+        'xanadublood-armedanddangerous',
+      ],
+      shipActions: [
+        { difficulty: 'White', type: 'Focus', linked: { difficulty: 'Red', type: 'Boost' } },
+        { difficulty: 'White', type: 'Focus', linked: { difficulty: 'Red', type: 'Barrel Roll' } },
+        { difficulty: 'White', type: 'Evade', linked: { difficulty: 'Red', type: 'Barrel Roll' } },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'Red', type: 'Cloak' },
+      ],
+      standard: true,
+      extended: true,
+      epic: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_Rogue.png',

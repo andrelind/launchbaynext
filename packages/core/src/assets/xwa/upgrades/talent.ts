@@ -1221,6 +1221,126 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     cost: { value: 0 },
   },
+  {
+    name: 'Determination',
+    limited: 0,
+    xws: 'determination-evacuationofdqar',
+    sides: [
+      {
+        title: 'Determination',
+        type: 'Talent',
+        ability:
+          'While you perform a primary attack, if the defender is in your [bullseye], you may suffer 1 [hit] to add 1 [focus] result.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    name: 'Mandalorian Tactics',
+    limited: 0,
+    xws: 'mandaloriantactics-evacuationofdqar',
+    sides: [
+      {
+        title: 'Mandalorian Tactics',
+        type: 'Talent',
+        ability:
+          'While defending, if there is at least 1 enemy ship at range 0, you may reroll 1 of your blank results.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    name: 'Crime Lord',
+    limited: 1,
+    xws: 'crimelord-evacuationofdqar',
+    sides: [
+      {
+        title: 'Crime Lord',
+        type: 'Talent',
+        ability:
+          'After you defend, if the attacker is in your [front arc], you may spend 1 [charge]. If you do, the attacker gains 1 strain token.',
+        slots: ['Talent'],
+        charges: {
+          value: 2,
+          recovers: 1,
+        },
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    name: 'Persistant Tracker',
+    limited: 0,
+    xws: 'persistanttracker-armedanddangerous',
+    sides: [
+      {
+        title: 'Persistant Tracker',
+        type: 'Talent',
+        ability:
+          'During the System Phase, you may spend 3 [charges].\n\nDuring the Activation Phase, if this upgrade has 0 active [charges], you can perform actions and execute red maneuvers, even while stressed.',
+        slots: ['Talent'],
+        charges: {
+          value: 3,
+          recovers: 1,
+        },
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    name: 'For the Cause',
+    limited: 0,
+    xws: 'forthecause-evacuationofdqar',
+    sides: [
+      {
+        title: 'Persistant Tracker',
+        type: 'Talent',
+        ability:
+          'While you defend or perform an attack, you may spend 1 non-blank result to choose a friendly strained or depleted ship at range 1-2. That ship may remove 1 strain or deplete token.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    name: 'Escort Fighter',
+    limited: 0,
+    xws: 'escortfighter-evacuationofdqar',
+    sides: [
+      {
+        title: 'Escort Fighter',
+        type: 'Talent',
+        ability:
+          "While a friendly non-small ship defends, if you are in the attacker's firing arc, you may spend 1 [charge] and gain 1 strain token to add 1 [focus] result to the roll.",
+        charges: {
+          value: 1,
+          recovers: 1,
+        },
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
 ];
 
 export default t;

@@ -151,6 +151,24 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/captaincardinal.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captaincardinal.png',
     },
+    {
+      name: 'Petty Officer Thanisson',
+      caption: "Evacuation of D'Qar",
+      initiative: 1,
+      limited: 1,
+      cost: 6,
+      loadout: 0,
+      xws: 'pettyofficerthanisson-evacuationofdqar',
+      ability:
+        'During the Activation or Engagement Phase, after a ship in your [front arc] at range 0-2 gains 1 deplete or strain token, you may spend 1[charge]. If you do, that ship gains 1 stress token.',
+      slots: [],
+      standardLoadout: ['generalhux-evacuationofdqar', 'advancedsensors', 'interferencearray-evacuationofdqar'],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/pettyofficerthanisson-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/pettyofficerthanisson-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      epic: true,
+    },
   ],
 };
 

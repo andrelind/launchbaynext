@@ -61,8 +61,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/lulolampar.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/lulolampar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lulolampar.png',
     },
     {
       name: 'Tallissan Lintra',
@@ -82,8 +81,7 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/tallissanlintra.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tallissanlintra.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tallissanlintra.png',
     },
     {
       name: 'Zari Bangel',
@@ -92,17 +90,8 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'zaribangel',
-      ability:
-        'You do not skip your Perform Action step after you partially execute a maneuver.',
-      slots: [
-        'Talent',
-        'Talent',
-        'Missile',
-        'Tech',
-        'Tech',
-        'Modification',
-        'Modification',
-      ],
+      ability: 'You do not skip your Perform Action step after you partially execute a maneuver.',
+      slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Modification', 'Modification'],
       ffg: 438,
       standard: true,
       epic: true,
@@ -110,8 +99,7 @@ const t: ShipType = {
       loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zaribangel.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zaribangel.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zaribangel.png',
     },
     {
       name: 'Greer Sonnel',
@@ -120,8 +108,7 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'greersonnel',
-      ability:
-        'After you fully execute a maneuver, you may rotate your [Single Turret Arc].',
+      ability: 'After you fully execute a maneuver, you may rotate your [Single Turret Arc].',
       slots: ['Talent', 'Modification', 'Missile', 'Tech'],
       ffg: 437,
       standard: true,
@@ -130,8 +117,7 @@ const t: ShipType = {
       loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/greersonnel.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/greersonnel.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/greersonnel.png',
     },
     {
       name: 'Green Squadron Expert',
@@ -147,10 +133,8 @@ const t: ShipType = {
       keywords: ['A-wing'],
       loadout: 5,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/greensquadronexpert.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronexpert.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/greensquadronexpert.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/greensquadronexpert.png',
       caption: '',
     },
     {
@@ -167,10 +151,8 @@ const t: ShipType = {
       keywords: ['A-wing'],
       loadout: 12,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/bluesquadronrecruit.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronrecruit.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/bluesquadronrecruit.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronrecruit.png',
       caption: '',
     },
     {
@@ -179,8 +161,7 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'zizitlo',
-      ability:
-        'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
+      ability: 'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
       charges: { value: 1, recovers: 1 },
       slots: ['Talent', 'Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
@@ -191,8 +172,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zizitlo.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/zizitlo.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zizitlo.png',
     },
     {
       name: 'Ronith Blario',
@@ -211,8 +191,7 @@ const t: ShipType = {
       loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ronithblario.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/ronithblario.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ronithblario.png',
     },
     {
       xws: 'merlcobben',
@@ -231,8 +210,7 @@ const t: ShipType = {
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/merlcobben.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/merlcobben.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/merlcobben.png',
     },
     {
       xws: 'suralindajavos',
@@ -241,8 +219,7 @@ const t: ShipType = {
       cost: 3,
       initiative: 3,
       limited: 1,
-      ability:
-        'After you partially execute a maneuver, you may gain 1 strain token to rotate 90° or 180°.',
+      ability: 'After you partially execute a maneuver, you may gain 1 strain token to rotate 90° or 180°.',
       slots: ['Talent', 'Talent', 'Modification', 'Cannon', 'Tech'],
       standard: true,
       epic: true,
@@ -251,8 +228,7 @@ const t: ShipType = {
       loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/suralindajavos.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/suralindajavos.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/suralindajavos.png',
     },
     {
       xws: 'wrobietyce',
@@ -271,8 +247,7 @@ const t: ShipType = {
       loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wrobietyce.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wrobietyce.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wrobietyce.png',
     },
     {
       name: 'Seftin Vanik',
@@ -281,8 +256,7 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'seftinvanik',
-      ability:
-        'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',
+      ability: 'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Modification'],
       standard: true,
       epic: true,
@@ -291,8 +265,84 @@ const t: ShipType = {
       loadout: 2,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/seftinvanik.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/seftinvanik.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/seftinvanik.png',
+    },
+    {
+      name: 'Ronith Blario',
+      caption: "Evacuation of D'Qar",
+      initiative: 2,
+      limited: 1,
+      cost: 3,
+      loadout: 0,
+      xws: 'ronithblario-evacuationofdqar',
+      ability:
+        "While you defend or perform an attack, if the enemy ship is in another friendly ship's [single rotating arc], you may spend 1 focus token from that friendly ship to change 1 of your [focus] results to an [evade] or [hit] result.",
+      shipAbility: {
+        name: 'Refined Gyrostabilizers',
+        text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
+      },
+      slots: [],
+      standardLoadout: ['escortfighter-evacuationofdqar', 'heroic', 'starbirdslash'],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/ronithblario-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ronithblario-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      keywords: ['A-wing'],
+      epic: true,
+    },
+    {
+      name: 'Tallissan Lintra',
+      caption: "Evacuation of D'Qar",
+      initiative: 5,
+      limited: 1,
+      cost: 4,
+      loadout: 0,
+      xws: 'tallissanlintra-evacuationofdqar',
+      ability:
+        'While an enemy in your [bullseye arc] performs an attack, you may spend 1[charge]. If you do, the defender rolls 1 additional die.',
+      shipAbility: {
+        name: 'Refined Gyrostabilizers',
+        text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
+      },
+      slots: [],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/tallissanlintra-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tallissanlintra-evacuationofdqar.png',
+      charges: { value: 1, recovers: 1 },
+      shipActions: [
+        { difficulty: 'White', type: 'Focus', linked: { difficulty: 'Red', type: 'Coordinate' } },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Barrel Roll' },
+        { difficulty: 'White', type: 'Boost' },
+      ],
+      standardLoadout: ['heroic', 'pushthelimit-battleoverendor', 'xx23sthreadtracers'],
+      standard: true,
+      extended: true,
+      keywords: ['A-wing'],
+      epic: true,
+    },
+    {
+      name: 'Zizi Tlo',
+      caption: "Evacuation of D'Qar",
+      initiative: 5,
+      limited: 1,
+      cost: 4,
+      loadout: 0,
+      xws: 'zizitlo-evacuationofdqar',
+      ability: 'After you defend or perform an attack, you may spend 1[charge] to gain 1 focus or evade token.',
+      shipAbility: {
+        name: 'Refined Gyrostabilizers',
+        text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. After you perform an action, you may perform a red [Boost] or red [Rotate Arc] action.',
+      },
+      standardLoadout: ['forthecause-evacuationofdqar', 'heroic', 'precisionholotargeter-evacuationofdqar'],
+      slots: [],
+      charges: { value: 1, recovers: 1 },
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/zizitlo-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zizitlo-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      keywords: ['A-wing'],
+      epic: true,
     },
   ],
 };

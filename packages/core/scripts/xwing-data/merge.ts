@@ -2,6 +2,7 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import ora from 'ora';
 import prettier from 'prettier';
+import { manifest } from '../../src/assets/manifest.ts';
 // import assets from '../../src/assets';
 
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
@@ -229,7 +230,6 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   const progress = (i: number, increment: number) => `Updating from xwing-data2 ${((i / increment) * 100).toFixed(0)}%`;
 
   const spinner = ora('Updating from xwing-data2').start();
-  const manifest: any = await get(`/data/manifest.json`);
 
   let increment = 0;
   manifest.pilots.forEach((p: any) => (increment += p.ships.length));

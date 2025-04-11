@@ -13,10 +13,8 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 2, recovers: 0 },
         ffg: 286,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cloakingdevice.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/cloakingdevice.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/cloakingdevice.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/cloakingdevice.png',
       },
     ],
     cost: { value: 8 },
@@ -37,10 +35,8 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         ffg: 287,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/contrabandcybernetics.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/contrabandcybernetics.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/contrabandcybernetics.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/contrabandcybernetics.png',
       },
     ],
     cost: { value: 3 },
@@ -55,14 +51,11 @@ const t: UpgradeBase[] = [
       {
         title: "Deadman's Switch",
         type: 'Illicit',
-        ability:
-          'After you are destroyed, each other ship at range 0-1 suffers 1 [Hit] damage.',
+        ability: 'After you are destroyed, each other ship at range 0-1 suffers 1 [Hit] damage.',
         slots: ['Illicit'],
         ffg: 288,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/deadmansswitch.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/deadmansswitch.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/deadmansswitch.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/deadmansswitch.png',
       },
     ],
     cost: { value: 2 },
@@ -81,10 +74,8 @@ const t: UpgradeBase[] = [
           'Before you engage, you may gain 1 ion token and 1 disarm token. If you do, each ship at range 0 suffers 1 [Hit] damage.',
         slots: ['Illicit'],
         ffg: 289,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/feedbackarray.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/feedbackarray.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/feedbackarray.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/feedbackarray.png',
       },
     ],
     cost: { value: 4 },
@@ -103,10 +94,8 @@ const t: UpgradeBase[] = [
           'Before you would execute a maneuver, you may spend 1 shield. If you do, execute a white (0 [Stop]) instead of the maneuver you revealed, then gain 1 stress token.',
         slots: ['Illicit'],
         ffg: 290,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/inertialdampeners.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/inertialdampeners.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/inertialdampeners.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/inertialdampeners.png',
       },
     ],
     cost: { value: 8 },
@@ -121,8 +110,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Rigged Cargo Chute',
         type: 'Illicit',
-        ability:
-          'Action: Spend 1 [Charge]. Drop 1 loose cargo using the (1 [Straight]) template.',
+        ability: 'Action: Spend 1 [Charge]. Drop 1 loose cargo using the (1 [Straight]) template.',
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         device: {
@@ -131,10 +119,8 @@ const t: UpgradeBase[] = [
           effect: 'Loose cargo is a debris cloud.',
         },
         ffg: 291,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/riggedcargochute.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/riggedcargochute.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/riggedcargochute.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/riggedcargochute.png',
       },
     ],
     cost: { value: 3 },
@@ -154,10 +140,8 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         ffg: 650,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/coaxiumhyperfuel.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/coaxiumhyperfuel.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/coaxiumhyperfuel.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/coaxiumhyperfuel.png',
       },
     ],
     cost: { value: 4 },
@@ -178,10 +162,8 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 2, recovers: 0 },
         ffg: 753,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/quickreleaselocks.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/quickreleaselocks.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/quickreleaselocks.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/quickreleaselocks.png',
       },
     ],
     cost: { value: 5 },
@@ -201,10 +183,8 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         ffg: 754,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/saboteursmap.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/saboteursmap.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/saboteursmap.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/saboteursmap.png',
       },
     ],
     cost: { value: 3 },
@@ -224,10 +204,8 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         ffg: 755,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/scannerbaffler.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/scannerbaffler.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/scannerbaffler.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/scannerbaffler.png',
       },
     ],
     cost: { value: 8 },
@@ -250,10 +228,8 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         ffg: 877,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/falsetranspondercodes.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/falsetranspondercodes.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/falsetranspondercodes.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/falsetranspondercodes.png',
       },
     ],
     cost: { value: 5 },
@@ -272,8 +248,7 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 3, recovers: 0 },
         ffg: 930,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/babufrik.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/babufrik.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/babufrik.png',
       },
     ],
@@ -295,10 +270,8 @@ const t: UpgradeBase[] = [
         slots: ['Illicit'],
         charges: { value: 1, recovers: 0 },
         ffg: 931,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/overtunedmodulators.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/overtunedmodulators.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/overtunedmodulators.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/overtunedmodulators.png',
       },
     ],
     cost: { value: 3 },
@@ -316,8 +289,7 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         ffg: 931,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/trackingfob.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/trackingfob.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/trackingfob.png',
       },
     ],
@@ -332,8 +304,7 @@ const t: UpgradeBase[] = [
     limited: 0,
     sides: [
       {
-        ability:
-          'This attack can be performed at range 0.\n\nAttack: Spend 1 [Charge]',
+        ability: 'This attack can be performed at range 0.\n\nAttack: Spend 1 [Charge]',
         title: 'Hotshot Tail Blaster',
         charges: { value: 2, recovers: 0 },
         attack: {
@@ -346,10 +317,8 @@ const t: UpgradeBase[] = [
         type: 'Illicit',
         slots: ['Illicit'],
         ffg: -1,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hotshottailblaster.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/hotshottailblaster.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/hotshottailblaster.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/hotshottailblaster.png',
       },
     ],
     cost: { value: 2 },
@@ -375,6 +344,25 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    name: 'Kineso-Switch',
+    limited: 0,
+    xws: 'kinesoswitch-armedanddangerous',
+    sides: [
+      {
+        title: 'Kineso-Switch',
+        charges: { value: 2, recovers: 0 },
+        type: 'Illicit',
+        ability:
+          'After you perform a [slam] action, if you fully executed the maneuver, you may spend 1 [charge] to break all locks assigned to you.',
+        slots: ['Illicit'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
     standardLoadoutOnly: true,
   },
 ];

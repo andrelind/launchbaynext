@@ -174,6 +174,157 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/captainphasma.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainphasma.png',
     },
+    {
+      name: 'Lieutenant LeHuse',
+      caption: "Evacuation of D'Qar",
+      initiative: 5,
+      limited: 1,
+      cost: 4,
+      loadout: 0,
+      xws: 'lieutenantlehuse-evacuationofdqar',
+      ability:
+        'At the start of the Engagement Phase, you may acquire a lock on an object at range 1-3 that has a friendly lock. If you do, break a friendly lock on that object.',
+      shipAbility: {
+        name: 'Heavy Weapon Turret',
+        text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
+      },
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+        },
+        {
+          difficulty: 'White',
+          type: 'Evade',
+        },
+        {
+          difficulty: 'White',
+          type: 'Lock',
+        },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+        },
+        {
+          difficulty: 'White',
+          type: 'Reload',
+          linked: {
+            difficulty: 'White',
+            type: 'Lock',
+          },
+        },
+      ],
+      slots: [],
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'concussionmissiles',
+        'firstorderordnancetech-evacuationofdqar',
+      ],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/lieutenantlehuse-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      keywords: ['TIE'],
+      epic: true,
+    },
+    {
+      name: 'Theta 3',
+      caption: "Evacuation of D'Qar",
+      initiative: 4,
+      limited: 1,
+      cost: 4,
+      loadout: 0,
+      xws: 'theta3-evacuationofdqar',
+      ability:
+        'At the start of the engagement phase, if you have no green tokens, you may spend 1 [Charge] to gain an evade token.',
+      shipAbility: {
+        name: 'Heavy Weapon Turret',
+        text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
+      },
+      slots: [],
+      charges: {
+        value: 2,
+        recovers: 0,
+      },
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+        },
+        {
+          difficulty: 'White',
+          type: 'Evade',
+        },
+        {
+          difficulty: 'White',
+          type: 'Lock',
+        },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+        },
+        {
+          difficulty: 'White',
+          type: 'Reload',
+          linked: {
+            difficulty: 'White',
+            type: 'Lock',
+          },
+        },
+      ],
+      standardLoadout: ['seekermissiles-swz103', 'passivesensors', 'firstorderordnancetech-evacuationofdqar'],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta3-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theta3-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      keywords: ['TIE'],
+      epic: true,
+    },
+    {
+      name: 'Theta 4',
+      caption: "Evacuation of D'Qar",
+      initiative: 4,
+      limited: 1,
+      cost: 4,
+      loadout: 0,
+      xws: 'theta4-evacuationofdqar',
+      ability:
+        'While an enemy ship in your [single rotating arc] performs an attack you may spend 1 [charge]. If you do, spend 1 [charge] from your [missile] upgrade to choose two attack dice. The attacker must reroll those dice.',
+      shipAbility: {
+        name: 'Heavy Weapon Turret',
+        text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
+      },
+      slots: [],
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+        },
+        {
+          difficulty: 'White',
+          type: 'Evade',
+        },
+        {
+          difficulty: 'White',
+          type: 'Lock',
+        },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+        },
+      ],
+      standardLoadout: ['determination-evacuationofdqar', 'barragerockets', 'patternanalyzer'],
+      charges: {
+        value: 1,
+        recovers: 1,
+      },
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta4-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theta4-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      keywords: ['TIE'],
+      epic: true,
+    },
   ],
 };
 

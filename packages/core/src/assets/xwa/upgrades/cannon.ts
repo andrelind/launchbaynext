@@ -8,8 +8,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Heavy Laser Cannon',
         type: 'Cannon',
-        ability:
-          'Attack: After the Modify Attack Dice step, change all [Critical Hit] results to [Hit] results.',
+        ability: 'Attack: After the Modify Attack Dice step, change all [Critical Hit] results to [Hit] results.',
         slots: ['Cannon'],
         attack: {
           arc: 'Bullseye Arc',
@@ -18,10 +17,8 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: false,
         },
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/heavylasercannon.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/heavylasercannon.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/heavylasercannon.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/heavylasercannon.png',
       },
     ],
     cost: { value: 5 },
@@ -47,8 +44,7 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         image: 'https://infinitearenas.com/xw2/images/upgrades/ioncannon.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ioncannon.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/ioncannon.png',
       },
     ],
     cost: { value: 6 },
@@ -63,8 +59,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Jamming Beam',
         type: 'Cannon',
-        ability:
-          'Attack: If this attack hits, all [Hit]/[Critical Hit] results inflict jam tokens instead of damage.',
+        ability: 'Attack: If this attack hits, all [Hit]/[Critical Hit] results inflict jam tokens instead of damage.',
         slots: ['Cannon'],
         attack: {
           arc: 'Front Arc',
@@ -74,8 +69,7 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         image: 'https://infinitearenas.com/xw2/images/upgrades/jammingbeam.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/jammingbeam.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/jammingbeam.png',
       },
     ],
     cost: { value: 1 },
@@ -101,8 +95,7 @@ const t: UpgradeBase[] = [
           ordnance: false,
         },
         image: 'https://infinitearenas.com/xw2/images/upgrades/tractorbeam.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tractorbeam.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/tractorbeam.png',
       },
     ],
     cost: { value: 6 },
@@ -127,10 +120,8 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: false,
         },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/autoblasters.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/autoblasters.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/autoblasters.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/autoblasters.png',
       },
     ],
     cost: { value: 7 },
@@ -156,22 +147,15 @@ const t: UpgradeBase[] = [
           maxrange: 1,
           ordnance: true,
         },
-        grants: [
-          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
-        ],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/underslungblastercannon.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/underslungblastercannon.png',
+        grants: [{ action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 }],
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/underslungblastercannon.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/underslungblastercannon.png',
       },
     ],
     standard: true,
     extended: true,
     epic: true,
-    restrictions: [
-      { chassis: ['t70xwing', 't65xwing'] },
-      { factions: ['Resistance'] },
-    ],
+    restrictions: [{ chassis: ['t70xwing', 't65xwing'] }, { factions: ['Resistance'] }],
   },
   {
     xws: 'syncedlasercannons',
@@ -189,12 +173,9 @@ const t: UpgradeBase[] = [
           maxrange: 3,
           ordnance: false,
         },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/syncedlasercannons.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/syncedlasercannons.png',
-        ability:
-          'Attack: If you are calculating, the defender does not apply the range bonus.',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/syncedlasercannons.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/syncedlasercannons.png',
+        ability: 'Attack: If you are calculating, the defender does not apply the range bonus.',
       },
     ],
     standard: true,
@@ -206,12 +187,9 @@ const t: UpgradeBase[] = [
     xws: 'protoncannons',
     sides: [
       {
-        ability:
-          'Attack: Spend 2 [Charge]. Change 1 [Focus] or [Hit] result to a [Critical Hit] result.',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/protoncannons.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/protoncannons.png',
+        ability: 'Attack: Spend 2 [Charge]. Change 1 [Focus] or [Hit] result to a [Critical Hit] result.',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/protoncannons.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/protoncannons.png',
         charges: { value: 2, recovers: 1 },
         title: 'Proton Cannons',
         type: 'Cannon',
@@ -254,8 +232,7 @@ const t: UpgradeBase[] = [
     xws: 'precisiontunedcannons-battleoverendor',
     sides: [
       {
-        ability:
-          '<strong>Attack:</strong> If the defender is in your [Bullseye Arc], add 1 [Focus] result.',
+        ability: '<strong>Attack:</strong> If the defender is in your [Bullseye Arc], add 1 [Focus] result.',
         title: 'Precision-Tuned Cannons',
         type: 'Cannon',
         slots: ['Cannon'],
@@ -267,6 +244,31 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     cost: { value: 0 },
+  },
+  {
+    name: 'Flechette Cannons',
+    limited: 0,
+    xws: 'flechettecannons-armedanddangerous',
+    sides: [
+      {
+        ability:
+          'Attack: After this attack hits, if the defender is in your [bullseye], the defender gains 1 strain token.',
+        title: 'Flechette Cannons',
+        attack: {
+          arc: 'Front Arc',
+          value: 3,
+          minrange: 2,
+          maxrange: 3,
+          ordnance: false,
+        },
+        type: 'Cannon',
+        slots: ['Cannon', 'Cannon'],
+      },
+    ],
+    standardLoadoutOnly: true,
+    standard: true,
+    extended: true,
+    epic: true,
   },
 ];
 

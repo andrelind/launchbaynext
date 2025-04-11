@@ -15,6 +15,7 @@ import lancerclasspursuitcraft from './lancer-class-pursuit-craft';
 import m12lkimogilafighter from './m12-l-kimogila-fighter';
 import m3ainterceptor from './m3-a-interceptor';
 import modifiedtielnfighter from './modified-tie-ln-fighter';
+import nabooroyaln1starfighter from './naboo-royal-n-1-starfighter';
 import quadrijettransferspacetug from './quadrijet-transfer-spacetug';
 import rogueclassstarfighter from './rogue-class-starfighter';
 import scurrgh6bomber from './scurrg-h-6-bomber';
@@ -42,6 +43,7 @@ const ships: { [s: string]: ShipType } = {
   m12lkimogilafighter,
   m3ainterceptor,
   modifiedtielnfighter,
+  nabooroyaln1starfighter,
   quadrijettransferspacetug,
   scurrgh6bomber,
   starviperclassattackplatform,

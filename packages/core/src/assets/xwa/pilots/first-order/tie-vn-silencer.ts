@@ -174,6 +174,34 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/rush.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rush.png',
     },
+    {
+      name: 'Kylo Ren',
+      xws: 'kyloren-evacuationofdqar',
+      caption: "Evacuation of D'Qar",
+      initiative: 5,
+      limited: 1,
+      cost: 7,
+      loadout: 0,
+      ability:
+        'Before an enemy ship in your [Bullseye Arc] is dealt a facedown damage card, you may spend 1 [Force]. If you do, that damage card is dealt faceup instead.',
+      shipAbility: {
+        name: 'Autothrusters',
+        text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
+      },
+      standardLoadout: ['determination-evacuationofdqar', 'malice', 'protontorpedoes'],
+      slots: [],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/kyloren-evacuationofdqar.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren-evacuationofdqar.png',
+      standard: true,
+      extended: true,
+      keywords: ['Dark Side', 'TIE'],
+      force: {
+        value: 3,
+        recovers: 1,
+        side: ['dark'],
+      },
+      epic: true,
+    },
   ],
 };
 

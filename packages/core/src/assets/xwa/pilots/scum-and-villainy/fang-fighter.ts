@@ -201,6 +201,28 @@ const t: ShipType = {
       epic: true,
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
     },
+    {
+      name: 'Fenn Rau',
+      caption: 'Armed and Dangerous',
+      initiative: 6,
+      limited: 1,
+      cost: 6,
+      loadout: 0,
+      xws: 'fennrau-armedanddangerous',
+      ability: 'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/fennrau-armedanddangerous.png',
+      shipAbility: {
+        name: 'Concordia Faceoff',
+        text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
+      },
+      slots: [],
+      standardLoadout: ['fearless', 'adaptablepowersystems-armedanddangerous', 'beskarreinforcedplating'],
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-armedanddangerous.png',
+      standard: true,
+      extended: true,
+      keywords: ['Mandalorian'],
+      epic: true,
+    },
   ],
 };
 

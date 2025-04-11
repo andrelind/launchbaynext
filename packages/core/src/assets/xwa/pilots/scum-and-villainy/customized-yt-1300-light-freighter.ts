@@ -120,6 +120,40 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/landocalrissian.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian.png',
     },
+    {
+      name: 'Han Solo',
+      initiative: 6,
+      limited: 1,
+      cost: 6,
+      loadout: 0,
+      xws: 'hansolo-armedanddangerous',
+      ability:
+        'While you defend or perform a primary attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.',
+      shipAbility: {
+        name: 'Coaxium Injectors',
+        text: 'After you fully execute a speed 3 or 4 maneuver, you may spend 1 [charge] to perform a red [slam]  action, even while stressed. After you perform a [slam] action, you suffer 1 [crit] unless you expose 1 of your damage cards.',
+      },
+      slots: [],
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/hansolo-armedanddangerous.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-armedanddangerous.png',
+      standard: true,
+      extended: true,
+      keywords: ['Freighter', 'YT-1300'],
+      standardLoadout: [
+        'chewbacca-armedanddangerous',
+        'l337-armedanddangerous',
+        'tobiasbeckett-armedanddangerous',
+        'landosmillenniumfalcon-armedanddangerous',
+      ],
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'Red', type: 'Boost' },
+        { difficulty: 'White', type: 'Rotate Arc', linked: { difficulty: 'Red', type: 'Focus' } },
+      ],
+      epic: true,
+      caption: 'Armed and Dangerous',
+    },
   ],
 };
 
