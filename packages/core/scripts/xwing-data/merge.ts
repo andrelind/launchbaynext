@@ -4,7 +4,6 @@ import ora from 'ora';
 import prettier from 'prettier';
 // import assets from '../../src/assets';
 
-
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
 import { XWDPilot, XWDShip, XWDUpgrade } from './data2-types';
 import { asyncForEach, getFaction, getName } from './utils';
@@ -13,10 +12,8 @@ import { asyncForEach, getFaction, getName } from './utils';
 export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   const get = async (url: string) => {
     const result = await fetch(baseUrl + url, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }).then((r) => r.json());
+      headers: { 'Content-Type': 'application/json' },
+    }).then(r => r.json());
     return result;
   };
 
@@ -25,12 +22,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
     if (!ship) {
       // eslint-disable-next-line no-unused-vars
       const { pilots, ...rest } = shipData;
-      console.log(
-        '\n**** Ship not found ****',
-        shipData.name,
-        shipData.xws,
-        faction
-      );
+      console.log('\n**** Ship not found ****', shipData.name, shipData.xws, faction);
 
       ship = {
         ...rest,
@@ -50,7 +42,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
     ship.icon = shipData.icon;
 
     ship.pilots = pilots.map((pilot: XWDPilot) => {
-      let local = ship.pilots.find((p) => p.xws === pilot.xws)!;
+      let local = ship.pilots.find(p => p.xws === pilot.xws)!;
       if (!local) {
         local = {
           ...pilot,
@@ -86,80 +78,76 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       return local;
     });
 
-    const header =
-      'import { ShipType } from "../../../../types";\n\nconst t: ShipType = ';
-    const formatted = await prettier.format(
-      `${header}${JSON.stringify(ship)};\n\nexport default t;`,
-      {
-        trailingComma: 'all',
-        singleQuote: true,
-        parser: 'typescript',
-      }
-    );
+    const header = 'import { ShipType } from "../../../../types";\n\nconst t: ShipType = ';
+    const formatted = await prettier.format(`${header}${JSON.stringify(ship)};\n\nexport default t;`, {
+      trailingComma: 'all',
+      singleQuote: true,
+      parser: 'typescript',
+    });
 
     fs.writeFileSync(
       `../../src/assets/${path}/pilots/${getName(faction)}/${getName(shipData.name)}.ts`,
       formatted,
-      'utf8'
+      'utf8',
     );
   };
 
   const processUpgrade = (key: SlotKey, data: XWDUpgrade) => {
-    let upgrade = assets.upgrades[key].find((u) => u.xws === data.xws);
+    let upgrade = assets.upgrades[key].find(u => u.xws === data.xws);
     const { name, ...rest } = data;
 
     if (!upgrade) {
       upgrade = {
         ...rest,
         standard: true,
-        sides: rest.sides.map((s) => ({
+        sides: rest.sides.map(s => ({
           ...s,
           title: s.title,
           ability: s.ability,
           text: s.text,
           force: s.force ? { ...s.force, side: ['light', 'dark'] } : undefined,
           grants: s.grants
-            ? s.grants.map((g) => {
-              if (g.type === 'action') {
-                return {
-                  action: g.value,
-                  value: 1,
-                };
-              } else if (g.type === 'slot') {
-                return {
-                  slot: g.value,
-                  value: g.amount || 1,
-                };
-              } else if (g.type === 'stat') {
-                if (g.arc) {
+            ? s.grants.map(g => {
+                if (g.type === 'action') {
+                  return {
+                    action: g.value,
+                    value: 1,
+                  };
+                } else if (g.type === 'slot') {
+                  return {
+                    slot: g.value,
+                    value: g.amount || 1,
+                  };
+                } else if (g.type === 'stat') {
+                  if (g.arc) {
+                    return {
+                      stat: g.value,
+                      value: g.amount || 1,
+                      arc: g.arc,
+                    };
+                  }
                   return {
                     stat: g.value,
                     value: g.amount || 1,
-                    arc: g.arc,
+                  };
+                } else if (g.type === 'arc') {
+                  return {
+                    arc: g.value,
+                    value: 1,
+                  };
+                } else if (g.type === 'force') {
+                  return {
+                    side: g.value[0],
+                    value: g.amount || 1,
                   };
                 }
-                return {
-                  stat: g.value,
-                  value: g.amount || 1,
-                };
-              } else if (g.type === 'arc') {
-                return {
-                  arc: g.value,
-                  value: 1,
-                };
-              } else if (g.type === 'force') {
-                return {
-                  side: g.value[0],
-                  value: g.amount || 1,
-                };
-              }
-              return g;
-            })
+                return g;
+              })
             : undefined,
         })),
         epic: true,
         cost: rest.cost || { value: 0 },
-        restrictions: rest.restrictions?.map((r) => {
+        restrictions: rest.restrictions?.map(r => {
           const { action, factions, equipped } = r;
           const res: Restrictions = { action, factions, equipped };
 
@@ -238,8 +226,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
     }
   };
 
-  const progress = (i: number, increment: number) =>
-    `Updating from xwing-data2 ${((i / increment) * 100).toFixed(0)}%`;
+  const progress = (i: number, increment: number) => `Updating from xwing-data2 ${((i / increment) * 100).toFixed(0)}%`;
 
   const spinner = ora('Updating from xwing-data2').start();
   const manifest: any = await get(`/data/manifest.json`);
@@ -251,6 +238,8 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   let i = 0;
   await asyncForEach(manifest.pilots, async (data: any) => {
     await asyncForEach(data.ships, async (shipUrl: any) => {
+      console.log(`Processing ${data.name} - ${shipUrl}`);
+
       const ship = await get(`/${shipUrl}`);
       processShip(getFaction(data.faction), ship as XWDShip);
 
@@ -308,23 +297,16 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       processUpgrade(getName(key).replaceAll('-', '') as SlotKey, upgrade);
     });
 
-    const header =
-      'import { UpgradeBase } from "../../../types";\n\nconst t: UpgradeBase[] = ';
+    const header = 'import { UpgradeBase } from "../../../types";\n\nconst t: UpgradeBase[] = ';
     const formatted = await prettier.format(
-      `${header}${JSON.stringify(
-        assets.upgrades[getName(key).replaceAll('-', '') as SlotKey]
-      )};\n\nexport default t;`,
+      `${header}${JSON.stringify(assets.upgrades[getName(key).replaceAll('-', '') as SlotKey])};\n\nexport default t;`,
       {
         trailingComma: 'all',
         singleQuote: true,
         parser: 'typescript',
-      }
+      },
     );
-    fs.writeFileSync(
-      `../../src/assets/${path}/upgrades/${getName(key)}.ts`,
-      formatted,
-      'utf8'
-    );
+    fs.writeFileSync(`../../src/assets/${path}/upgrades/${getName(key)}.ts`, formatted, 'utf8');
 
     spinner.text = progress(i, increment);
     i++;
