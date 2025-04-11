@@ -115,12 +115,12 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   }
 
   return (
-    <View style={tw`flex`}>
+    <View style={tw`flex-1`}>
       {renderHeader()}
 
       <DraggableFlatList
         style={tw`h-full`}
-        contentContainerStyle={tw`px-2 py-2 `}
+        contentContainerStyle={tw`px-2 py-2 pb-20`}
         data={ships || []}
         keyExtractor={(s: TShip, i: number) => `${s.xws}_${i}`}
         renderItem={({ item, getIndex, drag }) => {
