@@ -118,7 +118,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darkcourier.png',
       caption: '',
-      keywords: [],
     },
     {
       name: '0-66',
@@ -148,7 +147,6 @@ const t: ShipType = {
       name: 'Count Dooku',
       xws: 'countdooku-siegeofcoruscant',
       cost: 6,
-      slots: [],
       caption: 'Siege of Coruscant',
       initiative: 5,
       limited: 1,

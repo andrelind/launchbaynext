@@ -62,7 +62,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/garvendreis.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis.png',
-      keywords: [],
     },
     {
       name: 'Ibtisam',
@@ -82,7 +81,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/ibtisam.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/ibtisam.png',
-      keywords: [],
     },
     {
       name: 'Norra Wexley',
@@ -109,7 +107,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/norrawexley.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/norrawexley.png',
-      keywords: [],
     },
     {
       name: 'Shara Bey',
@@ -136,7 +133,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/sharabey.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey.png',
-      keywords: [],
     },
   ],
 };

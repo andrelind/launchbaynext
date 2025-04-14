@@ -53,8 +53,10 @@ const t: ShipType = {
       loadout: 24,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/freightercaptain.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/freightercaptain.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/freightercaptain.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/freightercaptain.png',
       caption: '',
     },
     {
@@ -66,7 +68,16 @@ const t: ShipType = {
       xws: 'hansolo',
       ability:
         'While you defend or perform a primary attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.',
-      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title', 'Gunner'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Illicit',
+        'Modification',
+        'Title',
+        'Gunner',
+      ],
       ffg: 222,
       standard: true,
       epic: true,
@@ -74,7 +85,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image: 'https://infinitearenas.com/xw2/images/pilots/hansolo.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo.png',
     },
     {
       name: 'L3-37',
@@ -91,7 +103,15 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Boost' },
         { difficulty: 'White', type: 'Rotate Arc' },
       ],
-      slots: ['Missile', 'Crew', 'Crew', 'Gunner', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 224,
       standard: true,
       epic: true,
@@ -110,7 +130,16 @@ const t: ShipType = {
       xws: 'landocalrissian',
       ability:
         'After you roll dice, if you are not stressed, you may gain 1 stress token to reroll all of your blank results.',
-      slots: ['Talent', 'Missile', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title', 'Gunner'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Illicit',
+        'Illicit',
+        'Modification',
+        'Title',
+        'Gunner',
+      ],
       ffg: 223,
       standard: true,
       epic: true,
@@ -118,7 +147,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image: 'https://infinitearenas.com/xw2/images/pilots/landocalrissian.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian.png',
     },
     {
       name: 'Han Solo',
@@ -133,9 +163,10 @@ const t: ShipType = {
         name: 'Coaxium Injectors',
         text: 'After you fully execute a speed 3 or 4 maneuver, you may spend 1 [charge] to perform a red [slam]  action, even while stressed. After you perform a [slam] action, you suffer 1 [crit] unless you expose 1 of your damage cards.',
       },
-      slots: [],
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/hansolo-armedanddangerous.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-armedanddangerous.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/hansolo-armedanddangerous.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-armedanddangerous.png',
       standard: true,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -149,7 +180,11 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'Red', type: 'Boost' },
-        { difficulty: 'White', type: 'Rotate Arc', linked: { difficulty: 'Red', type: 'Focus' } },
+        {
+          difficulty: 'White',
+          type: 'Rotate Arc',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
       ],
       epic: true,
       caption: 'Armed and Dangerous',

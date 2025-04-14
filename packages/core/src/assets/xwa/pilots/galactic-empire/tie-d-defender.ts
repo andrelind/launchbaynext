@@ -235,8 +235,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       ability:
-        'After you perform a primary attack that hits, you may spend 1 [Charge] to perform a bonus [Cannon] attack',
-      slots: [],
+        'After you perform a primary attack that hits, you may spend 1 [Charge] to perform a bonus [Cannon] attack.',
       charges: { value: 2, recovers: 0 },
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
@@ -261,7 +260,6 @@ const t: ShipType = {
       ],
       standard: true,
       epic: true,
-      keywords: [],
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/captainyorr-battleoverendor.png',
@@ -278,7 +276,6 @@ const t: ShipType = {
       limited: 1,
       ability:
         'While you defend, if you are not shielded, you may change 1 of your blank results to a [Focus] result.',
-      slots: [],
       charges: { value: 2, recovers: 0 },
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
@@ -303,7 +300,6 @@ const t: ShipType = {
       ],
       standard: true,
       epic: true,
-      keywords: [],
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/coloneljendon-battleoverendor.png',

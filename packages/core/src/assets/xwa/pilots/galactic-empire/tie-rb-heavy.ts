@@ -76,7 +76,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 695,
-      text: 'The TIE/rb heavy, sometimes called the "brute," is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.',
+      text: 'The TIE/rb heavy, sometimes called the “brute”, is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.',
       keywords: ['TIE'],
       loadout: 17,
       extended: true,

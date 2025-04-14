@@ -54,8 +54,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       loadout: 5,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/biggsdarklighter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/biggsdarklighter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
     },
     {
       name: 'Blue Squadron Escort',
@@ -71,8 +73,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       loadout: 18,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/bluesquadronescort.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronescort.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/bluesquadronescort.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronescort.png',
       caption: '',
     },
     {
@@ -89,8 +93,10 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       keywords: ['Partisan', 'X-wing'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/cavernangelszealot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/cavernangelszealot.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/cavernangelszealot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/cavernangelszealot.png',
       caption: '',
     },
     {
@@ -100,7 +106,8 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'edriotwotubes',
-      ability: 'Before you activate, if you are focused, you may perform an action.',
+      ability:
+        'Before you activate, if you are focused, you may perform an action.',
       slots: ['Missile', 'Illicit', 'Configuration'],
       ffg: 9,
       standard: true,
@@ -109,7 +116,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Partisan', 'X-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/edriotwotubes.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/edriotwotubes.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/edriotwotubes.png',
     },
     {
       name: 'Garven Dreis',
@@ -120,15 +128,23 @@ const t: ShipType = {
       xws: 'garvendreis-t65xwing',
       ability:
         'After you spend a focus token, you may choose 1 friendly ship at range 1-3. That ship gains 1 focus token.',
-      slots: ['Talent', 'Torpedo', 'Astromech', 'Modification', 'Configuration'],
+      slots: [
+        'Talent',
+        'Torpedo',
+        'Astromech',
+        'Modification',
+        'Configuration',
+      ],
       ffg: 4,
       standard: true,
       epic: true,
       keywords: ['X-wing'],
       loadout: 6,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/garvendreis-t65xwing.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/garvendreis-t65xwing.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
     },
     {
       name: 'Jek Porkins',
@@ -147,7 +163,8 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jekporkins.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
     },
     {
       name: 'Kullbee Sperado',
@@ -166,7 +183,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Partisan', 'X-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/kullbeesperado.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kullbeesperado.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kullbeesperado.png',
     },
     {
       name: 'Leevan Tenza',
@@ -175,7 +193,8 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'leevantenza',
-      ability: 'After you perform a [Barrel Roll] or [Boost] action, you may perform a red [Evade] action.',
+      ability:
+        'After you perform a [Barrel Roll] or [Boost] action, you may perform a red [Evade] action.',
       slots: ['Talent', 'Missile', 'Astromech', 'Illicit', 'Configuration'],
       ffg: 8,
       standard: true,
@@ -184,7 +203,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Partisan', 'X-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/leevantenza.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/leevantenza.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/leevantenza.png',
     },
     {
       name: 'Luke Skywalker',
@@ -193,9 +213,17 @@ const t: ShipType = {
       limited: 1,
       cost: 5,
       xws: 'lukeskywalker',
-      ability: 'After you become the defender (before dice are rolled), you may recover 1 [Force].',
+      ability:
+        'After you become the defender (before dice are rolled), you may recover 1 [Force].',
       force: { value: 2, recovers: 1, side: ['light'] },
-      slots: ['Force Power', 'Force Power', 'Torpedo', 'Astromech', 'Modification', 'Configuration'],
+      slots: [
+        'Force Power',
+        'Force Power',
+        'Torpedo',
+        'Astromech',
+        'Modification',
+        'Configuration',
+      ],
       ffg: 2,
       standard: true,
       epic: true,
@@ -203,7 +231,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Light Side', 'X-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/lukeskywalker.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
     },
     {
       name: 'Red Squadron Veteran',
@@ -219,8 +248,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       loadout: 8,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/redsquadronveteran.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronveteran.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/redsquadronveteran.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronveteran.png',
       caption: '',
     },
     {
@@ -240,7 +271,8 @@ const t: ShipType = {
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/thanekyrell.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/thanekyrell.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/thanekyrell.png',
     },
     {
       name: 'Wedge Antilles',
@@ -250,15 +282,24 @@ const t: ShipType = {
       cost: 5,
       loadout: 11,
       xws: 'wedgeantilles',
-      ability: 'While you perform an attack, the defender rolls 1 fewer defense die.',
-      slots: ['Talent', 'Talent', 'Torpedo', 'Astromech', 'Modification', 'Configuration'],
+      ability:
+        'While you perform an attack, the defender rolls 1 fewer defense die.',
+      slots: [
+        'Talent',
+        'Talent',
+        'Torpedo',
+        'Astromech',
+        'Modification',
+        'Configuration',
+      ],
       ffg: 1,
       standard: true,
       epic: true,
       keywords: ['X-wing'],
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wedgeantilles.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
     },
     {
       name: 'Biggs Darklighter',
@@ -273,10 +314,16 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      standardLoadout: ['attackspeed-battleofyavin', 'selfless', 'protontorpedoes', 'r2f2-battleofyavin'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/biggsdarklighter-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
+      standardLoadout: [
+        'attackspeed-battleofyavin',
+        'selfless',
+        'protontorpedoes',
+        'r2f2-battleofyavin',
+      ],
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/biggsdarklighter-battleofyavin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/biggsdarklighter.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -297,9 +344,10 @@ const t: ShipType = {
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
       standardLoadout: ['advprotontorpedoes', 'r5k6-battleofyavin'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/garvendreis-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/garvendreis-battleofyavin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/garvendreis-t65xwing.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -319,10 +367,15 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      standardLoadout: ['advprotontorpedoes', 'r5d8-battleofyavin', 'unstablesublightengines-battleofyavin'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
+      standardLoadout: [
+        'advprotontorpedoes',
+        'r5d8-battleofyavin',
+        'unstablesublightengines-battleofyavin',
+      ],
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-battleofyavin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jekporkins.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -337,15 +390,22 @@ const t: ShipType = {
       cost: 6,
       xws: 'lukeskywalker-battleofyavin',
       force: { value: 2, recovers: 1, side: ['light'] },
-      ability: 'After you are declared as the defender during an attack, you may recover 1 [Force].',
+      ability:
+        'After you are declared as the defender during an attack, you may recover 1 [Force].',
       shipAbility: {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      standardLoadout: ['attackspeed-battleofyavin', 'instictiveaim', 'protontorpedoes', 'r2d2-battleofyavin'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
+      standardLoadout: [
+        'attackspeed-battleofyavin',
+        'instictiveaim',
+        'protontorpedoes',
+        'r2d2-battleofyavin',
+      ],
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-battleofyavin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lukeskywalker.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -365,10 +425,16 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      standardLoadout: ['attackspeed-battleofyavin', 'marksmanship', 'protontorpedoes', 'r2a3-battleofyavin'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
+      standardLoadout: [
+        'attackspeed-battleofyavin',
+        'marksmanship',
+        'protontorpedoes',
+        'r2a3-battleofyavin',
+      ],
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleofyavin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -386,8 +452,10 @@ const t: ShipType = {
       ability:
         'After you declare the defender of an attack, if you have a lock on the defender, a friendly ship may transfer their lock token from you to the defender.',
       slots: ['Talent', 'Missile', 'Astromech', 'Configuration'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/corranhorn-t65xwing.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn-t65xwing.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/corranhorn-t65xwing.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn-t65xwing.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -404,9 +472,16 @@ const t: ShipType = {
       ability:
         'After you perform an attack, you may spend 1 [Charge] to assign the defender 1 jam token. After you defend, you may spend 1 [Charge] to assign the attacker 1 jam token.',
       charges: { value: 1, recovers: 1 },
-      slots: ['Talent', 'Missile', 'Astromech', 'Modification', 'Configuration'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Astromech',
+        'Modification',
+        'Configuration',
+      ],
       image: 'https://infinitearenas.com/xw2/images/pilots/wesjanson.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wesjanson.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/wesjanson.png',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -419,11 +494,12 @@ const t: ShipType = {
       limited: 1,
       cost: 6,
       xws: 'lukeskywalker-swz106',
-      ability: 'After you become the defender (before dice are rolled), you may recover 1 [Force].',
+      ability:
+        'After you are declared as the defender during an attack, you may recover 1 [Force].',
       force: { value: 2, recovers: 1, side: ['light'] },
       standardLoadout: ['instinctiveaim', 'protontorpedoes', 'r2d2'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-swz106.png',
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/lukeskywalker-swz106.png',
       artwork: '',
       standard: true,
       extended: true,
@@ -441,14 +517,98 @@ const t: ShipType = {
       ability:
         'After you receive a stress token, you may roll 1 attack die to remove it. On a [Hit] result, suffer 1 [Hit] damage.',
       standardLoadout: ['predator', 'protontorpedoes', 'r5d8-battleofyavin'],
-      slots: [],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-swz106.png',
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/jekporkins-swz106.png',
       artwork: '',
       standard: true,
       extended: true,
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+    },
+    {
+      name: 'Wedge Antilles',
+      caption: 'Battle Over Endor',
+      ability: 'After you perform an attack that hits, gain 1 focus token.',
+      initiative: 6,
+      limited: 1,
+      cost: 6,
+      xws: 'wedgeantilles-battleoverendor',
+      standardLoadout: [
+        'itsatrap-battleoverendor',
+        'predator',
+        'advprotontorpedoes',
+        'r2a3-battleoverendor',
+      ],
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+          linked: { difficulty: 'Red', type: 'Boost' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Boost' },
+      ],
+      shipAbility: {
+        name: 'Locked S-Foils',
+        text: 'After you perform a [Boost] action, gain a deplete token.',
+      },
+      standard: true,
+      extended: true,
+      keywords: ['X-wing'],
+      epic: true,
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleoverendor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png',
+      loadout: 0,
+    },
+    {
+      name: 'Yendor',
+      caption: 'Battle Over Endor',
+      ability:
+        'While you perform a primary attack, you may gain a strain token to reroll 1 of your blank results.',
+      initiative: 5,
+      limited: 1,
+      cost: 5,
+      xws: 'yendor-battleoverendor',
+      standardLoadout: [
+        'itsatrap-battleoverendor',
+        'plasmatorpedoes',
+        'stabilizingastromech-battleoverendor',
+      ],
+      shipActions: [
+        {
+          difficulty: 'White',
+          type: 'Focus',
+          linked: { difficulty: 'Red', type: 'Boost' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Boost' },
+      ],
+      shipAbility: {
+        name: 'Locked S-Foils',
+        text: 'After you perform a [Boost] action, gain a deplete token.',
+      },
+      standard: true,
+      extended: true,
+      keywords: ['X-wing'],
+      epic: true,
+      loadout: 0,
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/yendor-battleoverendor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/yendor-battleoverendor.png',
     },
     {
       name: 'Kendy Idele',
@@ -463,7 +623,6 @@ const t: ShipType = {
         'ionmissiles',
         'chaffparticles-battleoverendor',
       ],
-      slots: [],
       shipActions: [
         {
           difficulty: 'White',
@@ -479,7 +638,7 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Boost' },
       ],
       ability:
-        'After you spend a green token, you may choose a friendly ship at range 1–3 and gain a strain token. If you do, that ship may perform a red [Focus] or red [Evade] action.',
+        'After you spend a green token, you may choose a friendly ship at range 1-3 and gain a strain token. If you do, that ship may perform a red [Focus] or red [Evade] action.',
       shipAbility: {
         name: 'Locked S-Foils',
         text: 'After you perform a [Boost] action, gain a deplete token.',
@@ -489,76 +648,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
-    },
-    {
-      name: 'Wedge Antilles',
-      caption: 'Battle Over Endor',
-      ability: 'After you perform an attack that hits, gain 1 focus token.',
-      initiative: 6,
-      limited: 1,
-      cost: 6,
-      xws: 'wedgeantilles-battleoverendor',
-      standardLoadout: ['itsatrap-battleoverendor', 'predator', 'advprotontorpedoes', 'r2a3-battleoverendor'],
-      slots: [],
-      shipActions: [
-        {
-          difficulty: 'White',
-          type: 'Focus',
-          linked: { difficulty: 'Red', type: 'Boost' },
-        },
-        { difficulty: 'White', type: 'Lock' },
-        {
-          difficulty: 'White',
-          type: 'Barrel Roll',
-          linked: { difficulty: 'Red', type: 'Focus' },
-        },
-        { difficulty: 'White', type: 'Boost' },
-      ],
-      shipAbility: {
-        name: 'Locked S-Foils',
-        text: 'After you perform a [Boost] action, gain a deplete token.',
-      },
-      standard: true,
-      extended: true,
-      keywords: ['X-wing'],
-      epic: true,
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/wedgeantilles-battleoverendor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png',
-      loadout: 0,
-    },
-    {
-      name: 'Yendor',
-      caption: 'Battle Over Endor',
-      ability: 'While you perform a primary attack, you may gain a strain token to reroll one of your blank results.',
-      initiative: 5,
-      limited: 1,
-      cost: 5,
-      xws: 'yendor-battleoverendor',
-      standardLoadout: ['itsatrap-battleoverendor', 'plasmatorpedoes', 'stabilizingastromech-battleoverendor'],
-      slots: [],
-      shipActions: [
-        {
-          difficulty: 'White',
-          type: 'Focus',
-          linked: { difficulty: 'Red', type: 'Boost' },
-        },
-        { difficulty: 'White', type: 'Lock' },
-        {
-          difficulty: 'White',
-          type: 'Barrel Roll',
-          linked: { difficulty: 'Red', type: 'Focus' },
-        },
-        { difficulty: 'White', type: 'Boost' },
-      ],
-      shipAbility: {
-        name: 'Locked S-Foils',
-        text: 'After you perform a [Boost] action, gain a deplete token.',
-      },
-      standard: true,
-      extended: true,
-      keywords: ['X-wing'],
-      epic: true,
-      loadout: 0,
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/kendyidele-battleoverendor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kendyidele-battleoverendor.png',
     },
   ],
 };

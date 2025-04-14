@@ -64,7 +64,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/generalgrievous.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/generalgrievous.png',
-      keywords: [],
     },
     {
       name: 'Wat Tambor',
@@ -90,7 +89,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/wattambor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wattambor.png',
-      keywords: [],
     },
     {
       name: 'Feethan Ottraw Autopilot',
@@ -144,7 +142,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/captainsear.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captainsear.png',
-      keywords: [],
     },
     {
       name: 'Skakoan Ace',
@@ -163,7 +160,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/skakoanace.png',
       caption: '',
-      keywords: [],
     },
   ],
   ffg: 58,

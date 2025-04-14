@@ -51,7 +51,7 @@ const t: ShipType = {
       limited: 0,
       cost: 6,
       xws: 'contractedscout',
-      text: 'Built for long-distance reconnaissance and plotting new hyperspace routes, the lightly armed JumpMaster 5000 is often extensively retrofitted with custom upgrades.',
+      text: 'Built for long-distance reconnaissance and plotting new standard routes, the lightly armed JumpMaster 5000 is often extensively retrofitted with custom upgrades.',
       slots: ['Cannon', 'Torpedo', 'Illicit', 'Crew', 'Gunner'],
       ffg: 217,
       standard: true,
@@ -59,9 +59,9 @@ const t: ShipType = {
       loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contractedscout.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/contractedscout.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/contractedscout.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Dengar',
@@ -73,7 +73,16 @@ const t: ShipType = {
       ability:
         'After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge] to perform a bonus attack against the attacker.',
       charges: { value: 1, recovers: 1 },
-      slots: ['Talent', 'Cannon', 'Torpedo', 'Crew', 'Gunner', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Talent',
+        'Cannon',
+        'Torpedo',
+        'Crew',
+        'Gunner',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 214,
       standard: true,
       epic: true,
@@ -81,7 +90,8 @@ const t: ShipType = {
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dengar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dengar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/dengar.png',
     },
     {
       name: 'Manaroo',
@@ -92,7 +102,16 @@ const t: ShipType = {
       xws: 'manaroo',
       ability:
         'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, transfer all green tokens assigned to you to that ship.',
-      slots: ['Talent', 'Cannon', 'Torpedo', 'Crew', 'Gunner', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Talent',
+        'Cannon',
+        'Torpedo',
+        'Crew',
+        'Gunner',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 215,
       standard: true,
       epic: true,
@@ -100,7 +119,8 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/manaroo.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/manaroo.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/manaroo.png',
     },
     {
       name: 'Tel Trevura',
@@ -112,15 +132,24 @@ const t: ShipType = {
       ability:
         'If you would be destroyed, you may spend 1 [Charge]. If you do, discard all of your damage cards, suffer 5 [Hit] damage, and place yourself in reserves instead. At the start of the next Planning Phase, place yourself within range 1 of your player edge.',
       charges: { value: 1, recovers: 0 },
-      slots: ['Talent', 'Cannon', 'Cannon', 'Torpedo', 'Crew', 'Gunner', 'Illicit', 'Modification'],
+      slots: [
+        'Talent',
+        'Cannon',
+        'Cannon',
+        'Torpedo',
+        'Crew',
+        'Gunner',
+        'Illicit',
+        'Modification',
+      ],
       ffg: 216,
       standard: true,
       epic: true,
       loadout: 21,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/teltrevura.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/teltrevura.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/teltrevura.png',
     },
     {
       name: 'Nom Lumb',
@@ -131,7 +160,15 @@ const t: ShipType = {
       xws: 'nomlumb',
       ability:
         'After you become the defender, if the attacker is not in your [Single Turret Arc], you must rotate your [Single Turret Arc] indicator to a standard arc the attacker is in.',
-      slots: ['Cannon', 'Cannon', 'Torpedo', 'Crew', 'Gunner', 'Illicit', 'Modification'],
+      slots: [
+        'Cannon',
+        'Cannon',
+        'Torpedo',
+        'Crew',
+        'Gunner',
+        'Illicit',
+        'Modification',
+      ],
       standard: true,
       epic: true,
       ffg: 637,
@@ -139,7 +176,8 @@ const t: ShipType = {
       loadout: 21,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nomlumb.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb.png',
     },
     {
       name: 'Dengar',
@@ -149,10 +187,11 @@ const t: ShipType = {
       loadout: 0,
       xws: 'dengar-armedanddangerous',
       ability:
-        'After you defend, if the attacker is in your [front arc], you may spend 1 [charge] to perform a bonus attack against the attacker.',
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/dengar-armedanddangerous.png',
-      slots: [],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dengar-armedanddangerous.png',
+        'After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge] to perform a bonus attack against the attacker.',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/dengar-armedanddangerous.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/dengar-armedanddangerous.png',
       standardLoadout: [
         'r2g8-armedanddangerous',
         'synchronizedhandling-armedanddangerous',

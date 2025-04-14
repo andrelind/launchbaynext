@@ -50,7 +50,7 @@ const t: ShipType = {
       cost: 4,
       xws: 'constablezuvio',
       ability:
-        'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
+        'If you would drop a device, you may launch it using a [1 [Straight]] template instead.',
       slots: ['Talent', 'Device', 'Device', 'Illicit', 'Modification', 'Tech'],
       ffg: 161,
       standard: false,
@@ -60,7 +60,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/constablezuvio.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/constablezuvio.png',
-      keywords: [],
     },
     {
       name: 'Jakku Gunrunner',
@@ -68,7 +67,7 @@ const t: ShipType = {
       limited: 0,
       cost: 3,
       xws: 'jakkugunrunner',
-      text: 'The Quadrijet transfer spacetug, commonly called a "Quadjumper," is nimble in space and atmosphere alike, making it popular among both smugglers and explorers.',
+      text: 'The Quadrijet transfer spacetug, commonly called a “Quadjumper,” is nimble in space and atmosphere alike, making it popular among both smugglers and explorers.',
       slots: ['Device', 'Illicit'],
       ffg: 164,
       standard: false,
@@ -79,7 +78,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/jakkugunrunner.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Sarco Plank',
@@ -119,7 +117,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/unkarplutt.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/unkarplutt.png',
-      keywords: [],
     },
   ],
 };

@@ -5,13 +5,15 @@ import { FactionKey, SlotKey, XWS } from '../types';
 import { getFaction } from './convert';
 import { slotKeys } from './enums';
 import { loadShip2 } from './loading';
-import { deserialize, serialize } from './serializer';
+import { deserialize, getFactionKey, serialize } from './serializer';
 
 const cleanText = (text?: string) => {
   return text?.replace(/ *\([^)]*\) */g, '');
 };
 
 const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
+  console.log('Validating pilot', pilot);
+
   if (!pilot.upgrades) {
     pilot.upgrades = {};
   }
@@ -53,7 +55,9 @@ const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
       // console.log(`Unknown key ${key}`);
       return undefined;
     }
-    if (assets[ruleset].upgrades[key] === undefined) {
+    console.log(`Validating ${key}`);
+
+    if (assets[ruleset]?.upgrades[key] === undefined) {
       // console.log(`Unknown key ${key}`);
       return undefined;
     }
@@ -62,9 +66,7 @@ const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
       return undefined;
     }
 
-    const list = upgrades[key];
-    for (let j = 0; j < list.length; j++) {
-      const item = list[j];
+    for (const item of upgrades[key]) {
       if (assets[ruleset].upgrades[key].filter(u => u.xws === item).length === 0) {
         console.log(`Invalid item ${item}`);
         return undefined;
@@ -110,7 +112,7 @@ const validateJSON = (data: any): any | undefined => {
     return undefined;
   }
 
-  const pilots = validatePilots(data.pilots, data.ruleset || 'amg');
+  const pilots = validatePilots(data.pilots, data.ruleset || 'xwa');
   if (!pilots) {
     console.log('Invalid list of pilots');
     return undefined;
@@ -138,9 +140,22 @@ export const canImportXws = (data: string): XWS => {
     }
     validatedJson.cost = validatedJson.points;
     delete validatedJson.points;
-    validatedJson.faction = getFaction(json.faction);
+    validatedJson.faction = getFactionKey(getFaction(json.faction));
     validatedJson.ships = validatedJson.ships || [];
     validatedJson.format = validatedJson.format || 'Extended';
+    validatedJson.ruleset = validatedJson.ruleset ? validatedJson.ruleset.toLowerCase() : 'xwa';
+    validatedJson.version = '2.5.0';
+    validatedJson.vendor = {
+      lbn: {
+        uid: uuid(),
+        wins: 0,
+        ties: 0,
+        losses: 0,
+        tags: [],
+        created: new Date(),
+      },
+    };
+    console.log('validatedJson', validatedJson);
 
     return json;
   } else {
@@ -310,7 +325,10 @@ export const xwsFromString = async (text: string): Promise<XWS | void> => {
         return xws;
       }
     } else {
-      const xws = validateJSON(JSON.parse(text));
+      const xws = canImportXws(text);
+      console.log('xws', xws);
+
+      // const xws = validateJSON(JSON.parse(text));
       if (xws) {
         return xws;
       }

@@ -48,7 +48,7 @@ const t: ShipType = {
       xws: 'midnight',
       ability:
         "While you defend or perform an attack, if you have a lock on the enemy ship, that ship's dice cannot be modified.",
-      slots: ['Talent', 'Talent', 'Sensor', 'Missile', 'Modification', 'Modification', 'Tech'],
+      slots: ['Talent', 'Talent', 'Modification', 'Modification', 'Tech'],
       ffg: 397,
       standard: true,
       epic: true,
@@ -56,7 +56,8 @@ const t: ShipType = {
       loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/midnight.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/midnight.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/midnight.png',
     },
     {
       name: 'Commander Malarus',
@@ -67,7 +68,7 @@ const t: ShipType = {
       xws: 'commandermalarus',
       ability:
         'At the start of the Engagement Phase, you may spend 1 [Charge] and gain 1 stress token. If you do, until the end of the round, while you defend or perform an attack, you may change all of your [Focus] results to [Evade] or [Hit] results.',
-      slots: ['Talent', 'Sensor', 'Talent', 'Missile', 'Modification', 'Tech'],
+      slots: ['Talent', 'Talent', 'Missile', 'Modification', 'Tech'],
       charges: { value: 2, recovers: 0 },
       ffg: 452,
       standard: true,
@@ -75,8 +76,10 @@ const t: ShipType = {
       loadout: 19,
       extended: true,
       keywords: ['TIE'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/commandermalarus.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/commandermalarus.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/commandermalarus.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/commandermalarus.png',
     },
     {
       name: '“Scorch”',
@@ -87,7 +90,7 @@ const t: ShipType = {
       xws: 'scorch',
       ability:
         'While you perform a primary attack, if you are not stressed, you may gain 1 stress token to roll 1 additional attack die.',
-      slots: ['Talent', 'Sensor', 'Talent', 'Modification', 'Tech', 'Missile'],
+      slots: ['Talent', 'Talent', 'Modification', 'Tech'],
       ffg: 398,
       standard: true,
       epic: true,
@@ -95,7 +98,8 @@ const t: ShipType = {
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/scorch.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/scorch.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/scorch.png',
     },
     {
       name: '“Static”',
@@ -106,7 +110,7 @@ const t: ShipType = {
       xws: 'static',
       ability:
         'While you perform a primary attack, you may spend your lock on the defender and a focus token to change all of your results to [Critical Hit] results.',
-      slots: ['Talent', 'Sensor', 'Talent', 'Modification', 'Tech'],
+      slots: ['Talent', 'Talent', 'Cannon', 'Modification', 'Tech'],
       ffg: 399,
       standard: true,
       epic: true,
@@ -114,7 +118,8 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/static.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/static.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/static.png',
     },
     {
       name: '“Longshot”',
@@ -123,8 +128,9 @@ const t: ShipType = {
       limited: 1,
       cost: 3,
       xws: 'longshot',
-      ability: 'While you perform a primary attack at attack range 3, roll 1 additional attack die.',
-      slots: ['Talent', 'Sensor', 'Modification', 'Tech', 'Tech'],
+      ability:
+        'While you perform a primary attack at attack range 3, roll 1 additional attack die.',
+      slots: ['Talent', 'Modification', 'Tech', 'Tech'],
       ffg: 400,
       standard: true,
       epic: true,
@@ -132,7 +138,8 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/longshot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/longshot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/longshot.png',
     },
     {
       name: 'Omega Squadron Ace',
@@ -141,15 +148,17 @@ const t: ShipType = {
       cost: 3,
       xws: 'omegasquadronace',
       text: 'Only pilots who have demonstrated both exceptional skill and unwavering dedication are rewarded with coveted positions in the First Order squadrons operating secretly against the New Republic during the Cold War.',
-      slots: ['Talent', 'Sensor', 'Modification', 'Modification', 'Tech'],
+      slots: ['Talent', 'Modification', 'Modification', 'Tech'],
       ffg: 403,
       standard: true,
       epic: true,
       keywords: ['TIE'],
       loadout: 10,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/omegasquadronace.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronace.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/omegasquadronace.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronace.png',
       caption: '',
     },
     {
@@ -161,7 +170,7 @@ const t: ShipType = {
       xws: 'muse',
       ability:
         'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
-      slots: ['Talent', 'Sensor', 'Modification', 'Tech'],
+      slots: ['Modification', 'Tech'],
       ffg: 401,
       standard: true,
       epic: true,
@@ -180,7 +189,7 @@ const t: ShipType = {
       xws: 'tn3465',
       ability:
         "While another friendly ship performs an attack, if you are at range 0-1 of the defender, you may suffer 1 [Critical Hit] damage to change 1 of the attacker's results to a [Critical Hit] result.",
-      slots: ['Talent', 'Sensor', 'Modification', 'Tech'],
+      slots: ['Modification', 'Tech'],
       ffg: 453,
       standard: true,
       epic: true,
@@ -188,7 +197,8 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/tn3465.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tn3465.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/tn3465.png',
     },
     {
       name: 'Zeta Squadron Pilot',
@@ -197,15 +207,17 @@ const t: ShipType = {
       cost: 3,
       xws: 'zetasquadronpilot',
       text: "Unhampered by a cumbersome galactic bureaucracy, technologies originally researched by the Empire's TIE Advanced program are now mass-produced on First Order starfighters. As a result, TIE/fo pilots enjoy higher survival rates than their predecessors in the Galactic Empire.",
-      slots: ['Sensor', 'Modification', 'Tech'],
+      slots: ['Modification', 'Tech'],
       ffg: 404,
       standard: true,
       epic: true,
       keywords: ['TIE'],
       loadout: 12,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/zetasquadronpilot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronpilot.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/zetasquadronpilot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronpilot.png',
       caption: '',
     },
     {
@@ -215,15 +227,17 @@ const t: ShipType = {
       cost: 3,
       xws: 'epsilonsquadroncadet',
       text: "Trained from childhood aboard Resurgent-class Star Destroyers in deep space, many First Order TIE pilots have never even set foot on a planet's surface.",
-      slots: ['Talent', 'Sensor', 'Tech', 'Modification'],
+      slots: ['Tech'],
       ffg: 405,
       standard: true,
       epic: true,
       keywords: ['TIE'],
       loadout: 13,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/epsilonsquadroncadet.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/epsilonsquadroncadet.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/epsilonsquadroncadet.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/epsilonsquadroncadet.png',
       caption: '',
     },
     {
@@ -235,7 +249,7 @@ const t: ShipType = {
       xws: 'lieutenantrivas',
       ability:
         'After a ship at range 1-2 gains a red or orange token, if you do not have that ship locked, you may acquire a lock on that ship.',
-      slots: ['Talent', 'Sensor', 'Tech', 'Modification'],
+      slots: ['Talent', 'Tech', 'Modification'],
       ffg: 454,
       standard: true,
       epic: true,
@@ -243,7 +257,8 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantrivas.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantrivas.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantrivas.png',
     },
     {
       name: '“Null”',
@@ -253,7 +268,7 @@ const t: ShipType = {
       cost: 3,
       xws: 'null',
       ability: 'While you are not damaged, treat your initiative value as 7.',
-      slots: ['Talent', 'Talent', 'Sensor', 'Tech', 'Tech', 'Modification'],
+      slots: ['Talent', 'Talent', 'Tech', 'Tech'],
       ffg: 402,
       standard: true,
       epic: true,
@@ -274,8 +289,9 @@ const t: ShipType = {
       ability:
         'After another friendly ship at range 0-2 is destroyed, you may perform a [Coordinate] action, even while stressed. While you coordinate, the ship you choose can perform an action only if that action is also on your action bar.',
       image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantgalek.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantgalek.png',
-      slots: ['Talent', 'Sensor', 'Tech', 'Tech', 'Missile', 'Modification'],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantgalek.png',
+      slots: ['Talent', 'Tech', 'Tech', 'Cannon', 'Modification'],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -293,7 +309,7 @@ const t: ShipType = {
         'While you perform a primary attack, if you are not strained, you may gain 1 strain token to roll 1 additional die.',
       image: 'https://infinitearenas.com/xw2/images/pilots/dt798.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dt798.png',
-      slots: ['Talent', 'Sensor', 'Tech', 'Modification'],
+      slots: ['Talent', 'Tech', 'Modification', 'Modification'],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -311,8 +327,9 @@ const t: ShipType = {
         'Setup: After placing forces, assign the Primed for Speed condition to yourself and up to 2 other friendly TIE/fo or TIE/sf Fighters that have no equipped [Modification] upgrades.',
       conditions: ['primedforspeed'],
       image: 'https://infinitearenas.com/xw2/images/pilots/lingaava.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lingaava.png',
-      slots: ['Talent', 'Talent', 'Sensor', 'Tech', 'Modification'],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lingaava.png',
+      slots: ['Talent', 'Talent', 'Tech', 'Modification'],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -326,15 +343,21 @@ const t: ShipType = {
       cost: 3,
       loadout: 0,
       xws: 'longshot-evacuationofdqar',
-      ability: 'While you perform a primary attack at attack range 3, roll 1 additional attack die.',
+      ability:
+        'While you perform a primary attack at attack range 3, roll 1 additional attack die.',
       shipAbility: {
         name: 'Merciless',
         text: 'While you perform an attack, you may choose another friendly ship at range 0-1 of the defender. If you do, that ship gains a strain token and you may reroll a blank result.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/longshot-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/longshot-evacuationofdqar.png',
-      slots: [],
-      standardLoadout: ['determination-evacuationofdqar', 'fanatical', 'experimentalscanners-evacuationofdqar'],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/longshot-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/longshot-evacuationofdqar.png',
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'fanatical',
+        'experimentalscanners-evacuationofdqar',
+      ],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -354,9 +377,10 @@ const t: ShipType = {
         name: 'Merciless',
         text: 'While you perform an attack, you may choose another friendly ship at range 0-1 of the defender. If you do, that ship gains a strain token and you may reroll a blank result.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/midnight-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/midnight-evacuationofdqar.png',
-      slots: [],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/midnight-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/midnight-evacuationofdqar.png',
       standardLoadout: [
         'determination-evacuationofdqar',
         'targetingsynchronizer',
@@ -375,35 +399,28 @@ const t: ShipType = {
       cost: 3,
       loadout: 0,
       xws: 'omega2-evacuationofdqar',
-      ability: 'Friendly TIE ships can acquire locks onto objects at range 0-3 of you, ignoring range restrictions.',
+      ability:
+        'Friendly TIE ships can acquire locks onto objects at range 0-3 of you, ignoring range restrictions.',
       shipAbility: {
         name: 'Merciless',
         text: 'While you perform an attack, you may choose another friendly ship at range 0-1 of the defender. If you do, that ship gains a strain token and you may reroll a blank result.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/omega2-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/omega2-evacuationofdqar.png',
-      slots: [],
-      standardLoadout: ['determination-evacuationofdqar', 'targetingrelay-evacuationofdqar'],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/omega2-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/omega2-evacuationofdqar.png',
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'targetingrelay-evacuationofdqar',
+      ],
       shipActions: [
-        {
-          difficulty: 'White',
-          type: 'Focus',
-        },
-        {
-          difficulty: 'White',
-          type: 'Evade',
-        },
-        {
-          difficulty: 'White',
-          type: 'Lock',
-        },
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
         {
           difficulty: 'White',
           type: 'Barrel Roll',
-          linked: {
-            difficulty: 'Red',
-            type: 'Evade',
-          },
+          linked: { difficulty: 'Red', type: 'Evade' },
         },
       ],
       standard: true,
@@ -425,10 +442,15 @@ const t: ShipType = {
         name: 'Merciless',
         text: 'While you perform an attack, you may choose another friendly ship at range 0-1 of the defender. If you do, that ship gains a strain token and you may reroll a blank result.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/scorch-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/scorch-evacuationofdqar.png',
-      slots: [],
-      standardLoadout: ['determination-evacuationofdqar', 'fanatical', 'threatsensors-evacuationofdqar'],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/scorch-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/scorch-evacuationofdqar.png',
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'fanatical',
+        'threatsensors-evacuationofdqar',
+      ],
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -443,15 +465,20 @@ const t: ShipType = {
       loadout: 0,
       xws: 'zeta5-evacuationofdqar',
       ability:
-        "While you perform an attack, if you are not shielded and the defender's initiative is higher than yours, add 1 [focus] result.",
+        "While you perform an attack, if you are not shielded and the defender's initiative is higher than yours, add 1 [Focus] result.",
       shipAbility: {
         name: 'Merciless',
         text: 'While you perform an attack, you may choose another friendly ship at range 0-1 of the defender. If you do, that ship gains a strain token and you may reroll a blank result.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/zeta5-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zeta5-evacuationofdqar.png',
-      slots: [],
-      standardLoadout: ['determination-evacuationofdqar', 'patternanalyzer', 'targetingmatrix-battleoverendor'],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/zeta5-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zeta5-evacuationofdqar.png',
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'patternanalyzer',
+        'targetingmatrix-battleoverendor',
+      ],
       standard: true,
       extended: true,
       keywords: ['TIE'],

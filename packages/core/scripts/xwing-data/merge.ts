@@ -2,7 +2,7 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import ora from 'ora';
 import prettier from 'prettier';
-import { manifest } from '../../src/assets/manifest.ts';
+//import { manifest } from '../../src/assets/manifest.ts';
 // import assets from '../../src/assets';
 
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
@@ -58,21 +58,21 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         };
       }
 
-      // if (pilot.caption) {
-      //   local.caption = pilot.caption;
-      // }
-      // if (pilot.text) {
-      //   local.text = pilot.text;
-      // }
-      // if (pilot.ability) {
-      //   local.ability = pilot.ability;
-      // }
+      if (pilot.caption) {
+        local.caption = pilot.caption;
+      }
+      if (pilot.text) {
+        local.text = pilot.text;
+      }
+      if (pilot.ability) {
+        local.ability = pilot.ability;
+      }
 
-      // local.initiative = pilot.initiative;
-      // local.limited = pilot.limited;
-      // local.cost = pilot.cost;
-      // local.keywords = pilot.keywords;
-      // local.slots = pilot.slots;
+      local.initiative = pilot.initiative;
+      local.limited = pilot.limited;
+      local.cost = pilot.cost;
+      local.keywords = pilot.keywords;
+      local.slots = pilot.slots;
       local.image = pilot.image;
       local.artwork = pilot.artwork;
 
@@ -86,11 +86,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       parser: 'typescript',
     });
 
-    fs.writeFileSync(
-      `../../src/assets/${path}/pilots/${getName(faction)}/${getName(shipData.name)}.ts`,
-      formatted,
-      'utf8',
-    );
+    fs.writeFileSync(`./src/assets/${path}/pilots/${getName(faction)}/${getName(shipData.name)}.ts`, formatted, 'utf8');
   };
 
   const processUpgrade = (key: SlotKey, data: XWDUpgrade) => {
@@ -230,6 +226,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   const progress = (i: number, increment: number) => `Updating from xwing-data2 ${((i / increment) * 100).toFixed(0)}%`;
 
   const spinner = ora('Updating from xwing-data2').start();
+  const manifest: any = await get('/data/manifest.json');
 
   let increment = 0;
   manifest.pilots.forEach((p: any) => (increment += p.ships.length));
@@ -238,7 +235,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   let i = 0;
   await asyncForEach(manifest.pilots, async (data: any) => {
     await asyncForEach(data.ships, async (shipUrl: any) => {
-      console.log(`Processing ${data.name} - ${shipUrl}`);
+      console.log(`Processing ${shipUrl}`);
 
       const ship = await get(`/${shipUrl}`);
       processShip(getFaction(data.faction), ship as XWDShip);
@@ -306,7 +303,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         parser: 'typescript',
       },
     );
-    fs.writeFileSync(`../../src/assets/${path}/upgrades/${getName(key)}.ts`, formatted, 'utf8');
+    fs.writeFileSync(`./src/assets/${path}/upgrades/${getName(key)}.ts`, formatted, 'utf8');
 
     spinner.text = progress(i, increment);
     i++;

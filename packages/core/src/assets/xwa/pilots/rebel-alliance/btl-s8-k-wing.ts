@@ -60,7 +60,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/esegetuketu.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/esegetuketu.png',
-      keywords: [],
     },
     {
       name: 'Miranda Doni',
@@ -88,7 +87,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/mirandadoni.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/mirandadoni.png',
-      keywords: [],
     },
     {
       name: 'Warden Squadron Pilot',
@@ -108,7 +106,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wardensquadronpilot.png',
       caption: '',
-      keywords: [],
     },
   ],
 };

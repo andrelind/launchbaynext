@@ -80,7 +80,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronscout.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Bodhi Rook',
@@ -100,7 +99,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/bodhirook.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bodhirook.png',
-      keywords: [],
     },
     {
       name: 'Cassian Andor',
@@ -120,7 +118,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/cassianandor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cassianandor.png',
-      keywords: [],
     },
     {
       name: 'Heff Tobber',
@@ -147,7 +144,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/hefftobber.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/hefftobber.png',
-      keywords: [],
     },
     {
       name: 'Magva Yarro',

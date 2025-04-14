@@ -5,7 +5,22 @@ const t: ShipType = {
   xws: 'alphaclassstarwing',
   ffg: 14,
   size: 'Small',
-  dial: ['1BW', '1FB', '1NW', '2TW', '2BB', '2FB', '2NB', '2YW', '3TW', '3BW', '3FW', '3NW', '3YW', '4FR'],
+  dial: [
+    '1BW',
+    '1FB',
+    '1NW',
+    '2TW',
+    '2BB',
+    '2FB',
+    '2NB',
+    '2YW',
+    '3TW',
+    '3BW',
+    '3FW',
+    '3NW',
+    '3YW',
+    '4FR',
+  ],
   faction: 'Galactic Empire',
   stats: [
     { arc: 'Front Arc', type: 'attack', value: 2 },
@@ -36,9 +51,10 @@ const t: ShipType = {
       epic: true,
       loadout: 9,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantkarsabi.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantkarsabi.png',
-      keywords: [],
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/lieutenantkarsabi.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantkarsabi.png',
     },
     {
       name: 'Major Vynder',
@@ -47,7 +63,8 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'majorvynder',
-      ability: 'While you defend, if you are disarmed, roll 1 additional defense die.',
+      ability:
+        'While you defend, if you are disarmed, roll 1 additional defense die.',
       slots: ['Talent', 'Sensor', 'Torpedo', 'Modification', 'Configuration'],
       ffg: 135,
       standard: false,
@@ -55,8 +72,8 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorvynder.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/majorvynder.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/majorvynder.png',
     },
     {
       name: 'Nu Squadron Pilot',
@@ -72,9 +89,9 @@ const t: ShipType = {
       loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nusquadronpilot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nusquadronpilot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/nusquadronpilot.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Rho Squadron Pilot',
@@ -89,10 +106,11 @@ const t: ShipType = {
       epic: true,
       loadout: 15,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/rhosquadronpilot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rhosquadronpilot.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/rhosquadronpilot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/rhosquadronpilot.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Lieutenant Karsabi',
@@ -101,7 +119,8 @@ const t: ShipType = {
       limited: 1,
       cost: 5,
       xws: 'lieutenantkarsabi-ssl',
-      ability: 'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
+      ability:
+        'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
       shipAbility: {
         name: 'Prioritized Weapons Systems',
         text: 'Before you engage, you may gain a strain token to remove a disarm token.',
@@ -109,12 +128,25 @@ const t: ShipType = {
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
-        { difficulty: 'White', type: 'SLAM', linked: { difficulty: 'Red', type: 'Lock' } },
-        { difficulty: 'White', type: 'SLAM', linked: { difficulty: 'Red', type: 'Reload' } },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Reload' },
+        },
         { difficulty: 'White', type: 'Reload' },
       ],
-      standardLoadout: ['protontorpedoes', 'saturationrockets-alphaclassstarwing', 'electronicbaffle'],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/lieutenantkarsabi-alphaclassstarwing.png',
+      standardLoadout: [
+        'protontorpedoes',
+        'saturationrockets-alphaclassstarwing',
+        'electronicbaffle',
+      ],
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/lieutenantkarsabi-alphaclassstarwing.png',
       artwork: '',
       standard: true,
       extended: true,
@@ -136,12 +168,25 @@ const t: ShipType = {
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
-        { difficulty: 'White', type: 'SLAM', linked: { difficulty: 'Red', type: 'Lock' } },
-        { difficulty: 'White', type: 'SLAM', linked: { difficulty: 'Red', type: 'Reload' } },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Reload' },
+        },
         { difficulty: 'White', type: 'Reload' },
       ],
-      standardLoadout: ['longrangescanners-alphaclassstarwing', 'ioncannon', 'heavyplasmamissiles-alphaclassstarwing'],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/majorvynder-alphaclassstarwing.png',
+      standardLoadout: [
+        'longrangescanners-alphaclassstarwing',
+        'ioncannon',
+        'heavyplasmamissiles-alphaclassstarwing',
+      ],
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/majorvynder-alphaclassstarwing.png',
       artwork: '',
       standard: true,
       extended: true,

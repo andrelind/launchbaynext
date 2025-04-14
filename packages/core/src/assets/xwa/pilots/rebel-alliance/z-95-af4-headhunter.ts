@@ -55,7 +55,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/airencracken.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/airencracken.png',
-      keywords: [],
     },
     {
       name: 'Bandit Squadron Pilot',
@@ -75,7 +74,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/banditsquadronpilot.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Lieutenant Blount',
@@ -96,7 +94,6 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/lieutenantblount.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantblount.png',
-      keywords: [],
     },
     {
       name: 'Tala Squadron Pilot',
@@ -116,7 +113,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/talasquadronpilot.png',
       caption: '',
-      keywords: [],
     },
   ],
 };

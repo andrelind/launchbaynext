@@ -4,7 +4,22 @@ const t: ShipType = {
   name: 'Gauntlet Fighter',
   xws: 'gauntletfighter',
   size: 'Large',
-  dial: ['0OR', '1BB', '1NB', '2TW', '2BB', '2FB', '2NB', '2YW', '3TR', '3BW', '3FW', '3NW', '3YR', '4FW'],
+  dial: [
+    '0OR',
+    '1BB',
+    '1NB',
+    '2TW',
+    '2BB',
+    '2FB',
+    '2NB',
+    '2YW',
+    '3TR',
+    '3BW',
+    '3FW',
+    '3NW',
+    '3YR',
+    '4FW',
+  ],
   faction: 'Rebel Alliance',
   stats: [
     { arc: 'Front Arc', type: 'attack', value: 3 },
@@ -23,7 +38,8 @@ const t: ShipType = {
     {
       xws: 'chopper-gauntletfighter',
       name: '“Chopper”',
-      ability: 'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
+      ability:
+        'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
       cost: 6,
       loadout: 15,
       initiative: 2,
@@ -31,11 +47,22 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
-      slots: ['Crew', 'Gunner', 'Device', 'Illicit', 'Modification', 'Modification', 'Configuration', 'Title'],
+      slots: [
+        'Crew',
+        'Gunner',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Modification',
+        'Configuration',
+        'Title',
+      ],
       caption: 'Spectre-3',
       keywords: ['Droid', 'Spectre'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/chopper-gauntletfighter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/chopper-gauntletfighter.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/chopper-gauntletfighter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/chopper-gauntletfighter.png',
     },
     {
       xws: 'ezrabridger-gauntletfighter',
@@ -64,8 +91,10 @@ const t: ShipType = {
       ],
       caption: 'Spectre-6',
       keywords: ['Light Side', 'Spectre'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/ezrabridger-gauntletfighter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger-gauntletfighter.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/ezrabridger-gauntletfighter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger-gauntletfighter.png',
     },
     {
       xws: 'mandalorianresistancepilot',
@@ -77,11 +106,21 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
-      slots: ['Talent', 'Crew', 'Gunner', 'Device', 'Illicit', 'Modification', 'Configuration'],
+      slots: [
+        'Talent',
+        'Crew',
+        'Gunner',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Configuration',
+      ],
       keywords: ['Mandalorian'],
       caption: 'Clan Loyalist',
-      image: 'https://infinitearenas.com/xw2/images/pilots/mandalorianresistancepilot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianresistancepilot.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/mandalorianresistancepilot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianresistancepilot.png',
     },
   ],
 };

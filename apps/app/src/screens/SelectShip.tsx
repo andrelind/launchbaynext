@@ -19,6 +19,8 @@ export const SelectShipScreen: FC<Props> = ({ route, navigation }) => {
   const xws = xwsStore(
     useCallback((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid), [uid])
   );
+  console.log('xws', xws);
+
   const shipList = xws && shipTypes(xws, true);
 
   useEffect(() => {

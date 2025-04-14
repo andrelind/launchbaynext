@@ -49,7 +49,7 @@ const t: ShipType = {
       limited: 0,
       cost: 3,
       xws: 'cartelspacer',
-      text: 'MandalMotors\' M3-A "Scyk" Interceptor is purchased in large quantities by the Hutt Cartel and the Car\'das smugglers due to its low cost and customizability.',
+      text: "MandalMotors' M3-A “Scyk” Interceptor is purchased in large quantities by the Hutt Cartel and the Car'das smugglers due to its low cost and customizability.",
       slots: ['Modification'],
       ffg: 190,
       standard: true,
@@ -60,7 +60,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cartelspacer.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Genesis Red',
@@ -80,7 +79,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/genesisred.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/genesisred.png',
-      keywords: [],
     },
     {
       name: 'Inaldra',
@@ -100,7 +98,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/inaldra.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/inaldra.png',
-      keywords: [],
     },
     {
       name: 'Laetin A’shera',
@@ -120,7 +117,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/laetinashera.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/laetinashera.png',
-      keywords: [],
     },
     {
       name: 'Quinn Jast',
@@ -160,7 +156,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/serissu.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/serissu.png',
-      keywords: [],
     },
     {
       name: 'Sunny Bounder',
@@ -180,7 +175,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/sunnybounder.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sunnybounder.png',
-      keywords: [],
     },
     {
       name: 'Tansarii Point Veteran',
@@ -200,7 +194,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/tansariipointveteran.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'G4R-G0R V/M',

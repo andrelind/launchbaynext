@@ -112,7 +112,6 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/landocalrissian-escapecraft.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-escapecraft.png',
-      keywords: [],
     },
     {
       name: 'Outer Rim Pioneer',
@@ -132,7 +131,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/outerrimpioneer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimpioneer.png',
-      keywords: [],
     },
   ],
 };

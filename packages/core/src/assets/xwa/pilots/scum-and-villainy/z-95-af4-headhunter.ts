@@ -54,7 +54,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/binayrepirate.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Black Sun Soldier',
@@ -73,7 +72,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunsoldier.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Kaa’to Leeachos',
@@ -113,7 +111,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/ndrusuhlak.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/ndrusuhlak.png',
-      keywords: [],
     },
     {
       name: 'Nashtah Pup',
@@ -133,7 +130,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/nashtahpup.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/nashtahpup.png',
-      keywords: [],
     },
     {
       name: 'Bossk',

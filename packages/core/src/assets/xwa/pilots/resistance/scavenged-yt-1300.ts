@@ -52,8 +52,10 @@ const t: ShipType = {
       loadout: 18,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/resistancesympathizer.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/resistancesympathizer.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/resistancesympathizer.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/resistancesympathizer.png',
       caption: '',
     },
     {
@@ -66,14 +68,27 @@ const t: ShipType = {
         'After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.',
       cost: 6,
       loadout: 16,
-      slots: ['Talent', 'Talent', 'Missile', 'Crew', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title', 'Gunner'],
+      slots: [
+        'Talent',
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Illicit',
+        'Illicit',
+        'Modification',
+        'Title',
+        'Gunner',
+      ],
       ffg: 429,
       standard: true,
       epic: true,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/chewbacca-scavengedyt1300.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/chewbacca-scavengedyt1300.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/chewbacca-scavengedyt1300.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/chewbacca-scavengedyt1300.png',
     },
     {
       name: 'Han Solo',
@@ -81,7 +96,8 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       xws: 'hansolo-scavengedyt1300',
-      ability: 'Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.',
+      ability:
+        'Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.',
       cost: 7,
       slots: [
         'Talent',
@@ -101,8 +117,10 @@ const t: ShipType = {
       loadout: 24,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/hansolo-scavengedyt1300.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-scavengedyt1300.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/hansolo-scavengedyt1300.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-scavengedyt1300.png',
     },
     {
       name: 'Rey',
@@ -114,7 +132,17 @@ const t: ShipType = {
         'While you defend or perform an attack, if the enemy ship is in your [Front Arc], you may spend 1 [Force] to change 1 of your blank results to an [Evade] or [Hit] result.',
       force: { value: 2, recovers: 1, side: ['light'] },
       cost: 8,
-      slots: ['Missile', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title', 'Gunner', 'Force Power', 'Force Power'],
+      slots: [
+        'Missile',
+        'Force Power',
+        'Crew',
+        'Crew',
+        'Illicit',
+        'Modification',
+        'Title',
+        'Gunner',
+        'Force Power',
+      ],
       ffg: 428,
       standard: true,
       epic: true,
@@ -132,12 +160,23 @@ const t: ShipType = {
       xws: 'poedameron-scavengedyt1300',
       ability:
         'Before you execute a maneuver, you may spend 1 [Charge]. If you do, ignore obstacles during that maneuver. After you fully execute a maneuver, you may spend 2 [Charge] to perform a white [Boost] or red [Barrel Roll] action. Then if you performed a red [Barrel Roll] action, expose 1 damage card, if able.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/poedameron-scavengedyt1300.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-scavengedyt1300.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/poedameron-scavengedyt1300.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-scavengedyt1300.png',
       charges: { value: 2, recovers: 1 },
       cost: 7,
       loadout: 21,
-      slots: ['Talent', 'Talent', 'Missile', 'Crew', 'Illicit', 'Modification', 'Title', 'Gunner'],
+      slots: [
+        'Talent',
+        'Talent',
+        'Missile',
+        'Crew',
+        'Illicit',
+        'Modification',
+        'Title',
+        'Gunner',
+      ],
       standard: true,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -151,12 +190,24 @@ const t: ShipType = {
       xws: 'landocalrissian-scavengedyt1300',
       ability:
         'After you fully execute a red maneuver or perform a red action, you may spend any number of [Charge] to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed.',
-      image: 'https://infinitearenas.com/xw2/images/pilots/landocalrissian-scavengedyt1300.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-scavengedyt1300.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/landocalrissian-scavengedyt1300.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-scavengedyt1300.png',
       charges: { value: 3, recovers: 1 },
       cost: 7,
       loadout: 20,
-      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Illicit', 'Illicit', 'Modification', 'Title', 'Gunner'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Illicit',
+        'Illicit',
+        'Modification',
+        'Title',
+        'Gunner',
+      ],
       standard: true,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],

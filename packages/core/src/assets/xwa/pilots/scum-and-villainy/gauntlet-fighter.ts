@@ -84,6 +84,28 @@ const t: ShipType = {
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/shadowcollectiveoperator.png',
       caption: '',
     },
+    {
+      xws: 'bokatankryze-armedanddangerous',
+      name: 'Bo-Katan Kryze',
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/bokatankryze-armedanddangerous.png',
+      charges: { value: 2, recovers: 0 },
+      cost: 6,
+      loadout: 0,
+      initiative: 4,
+      limited: 1,
+      standard: true,
+      extended: true,
+      epic: true,
+      standardLoadout: [
+        'mandaloriantactics-armedanddangerous',
+        'niteowlsentries-armedanddangerous',
+        'veterantailgunner',
+      ],
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bokatankryze-armedanddangerous.png',
+      keywords: ['Mandalorian'],
+      caption: 'Armed and Dangerous',
+      ability: 'While you perform an attack, if you are at range 0-1 of the defender, you may reroll 1 attack die.',
+    },
   ],
 };
 

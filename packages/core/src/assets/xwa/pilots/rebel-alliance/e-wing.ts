@@ -64,15 +64,23 @@ const t: ShipType = {
       xws: 'corranhorn',
       ability:
         'At initiative 0, you may perform a bonus primary attack against an enemy ship in your [Bullseye Arc]. If you do, at the start of the next Planning Phase, gain 1 disarm token.',
-      slots: ['Talent', 'Sensor', 'Sensor', 'Tech', 'Torpedo', 'Astromech', 'Modification'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Sensor',
+        'Tech',
+        'Torpedo',
+        'Astromech',
+        'Modification',
+      ],
       ffg: 50,
       standard: false,
       epic: true,
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/corranhorn.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/corranhorn.png',
     },
     {
       name: 'Gavin Darklighter',
@@ -83,15 +91,23 @@ const t: ShipType = {
       xws: 'gavindarklighter',
       ability:
         'While a friendly ship performs an attack, if the defender is in your [Front Arc], the attacker may change 1 [Hit] result to a [Critical Hit] result.',
-      slots: ['Talent', 'Sensor', 'Tech', 'Torpedo', 'Astromech', 'Modification'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Tech',
+        'Torpedo',
+        'Astromech',
+        'Modification',
+      ],
       ffg: 51,
       standard: false,
       epic: true,
       loadout: 10,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/gavindarklighter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gavindarklighter.png',
-      keywords: [],
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/gavindarklighter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/gavindarklighter.png',
     },
     {
       name: 'Knave Squadron Escort',
@@ -106,10 +122,11 @@ const t: ShipType = {
       epic: true,
       loadout: 22,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/knavesquadronescort.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/knavesquadronescort.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/knavesquadronescort.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/knavesquadronescort.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Rogue Squadron Escort',
@@ -118,16 +135,24 @@ const t: ShipType = {
       cost: 5,
       xws: 'roguesquadronescort',
       text: "The elite pilots of Rogue Squadron are among the Rebellion's very best.",
-      slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech', 'Modification', 'Tech'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Torpedo',
+        'Astromech',
+        'Modification',
+        'Tech',
+      ],
       ffg: 52,
       standard: false,
       epic: true,
       loadout: 14,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/roguesquadronescort.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/roguesquadronescort.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/roguesquadronescort.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/roguesquadronescort.png',
       caption: '',
-      keywords: [],
     },
   ],
 };

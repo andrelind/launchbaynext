@@ -140,8 +140,7 @@ const t: ShipType = {
       ],
       image:
         'https://infinitearenas.com/xw2/images/pilots/leebo-wisdomofages.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/upgrades/outrider.jpg',
+      artwork: '',
       keywords: ['Droid', 'Freighter'],
     },
     {
@@ -178,8 +177,7 @@ const t: ShipType = {
       ],
       image:
         'https://infinitearenas.com/xw2/images/pilots/dashrendar-freighterforhire.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/upgrades/outrider.jpg',
+      artwork: '',
       keywords: ['Freighter'],
     },
     {
@@ -195,7 +193,6 @@ const t: ShipType = {
         name: 'Sensor Blackout',
         text: 'While you perform a primary attack at range 0-1, you roll 1 fewer attack die.\n\nWhile you defend at range 1, you roll 1 fewer defense die.',
       },
-      slots: [],
       standard: true,
       extended: true,
       epic: true,
@@ -225,7 +222,6 @@ const t: ShipType = {
         name: 'Sensor Blackout',
         text: 'While you perform a primary attack at range 0-1, you roll 1 fewer attack die.\n\nWhile you defend at range 1, you roll 1 fewer defense die.',
       },
-      slots: [],
       standard: true,
       extended: true,
       epic: true,

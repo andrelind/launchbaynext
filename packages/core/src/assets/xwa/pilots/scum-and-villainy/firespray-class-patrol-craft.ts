@@ -47,8 +47,18 @@ const t: ShipType = {
       limited: 1,
       cost: 8,
       xws: 'bobafett',
-      ability: 'While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1.',
-      slots: ['Talent', 'Cannon', 'Missile', 'Device', 'Illicit', 'Modification', 'Modification', 'Title'],
+      ability:
+        'While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1.',
+      slots: [
+        'Talent',
+        'Cannon',
+        'Missile',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
       ffg: 149,
       standard: true,
       epic: true,
@@ -56,7 +66,8 @@ const t: ShipType = {
       loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/bobafett.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bobafett.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/bobafett.png',
     },
     {
       name: 'Bounty Hunter',
@@ -73,7 +84,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/bountyhunter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bountyhunter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/bountyhunter.png',
       caption: '',
     },
     {
@@ -84,16 +96,25 @@ const t: ShipType = {
       cost: 7,
       xws: 'emonazzameen',
       ability:
-        'If you would drop a device using a (1 [Straight]) template, you may use the (3 [Turn Left]), (3 [Straight]), or (3 [Turn Right]) template instead.',
-      slots: ['Talent', 'Cannon', 'Missile', 'Crew', 'Device', 'Illicit', 'Modification', 'Title'],
+        'If you would drop a device using a [1 [Straight]] template, you may use the [3 [Turn Left]], [3 [Straight]], or [3 [Turn Right]] template instead.',
+      slots: [
+        'Talent',
+        'Cannon',
+        'Missile',
+        'Crew',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 150,
       standard: true,
       epic: true,
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/emonazzameen.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/emonazzameen.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/emonazzameen.png',
     },
     {
       name: 'Kath Scarlet',
@@ -104,15 +125,24 @@ const t: ShipType = {
       xws: 'kathscarlet',
       ability:
         'While you perform a primary attack, if there is at least 1 friendly non-limited ship at range 0 of the defender, roll 1 additional attack die.',
-      slots: ['Talent', 'Cannon', 'Missile', 'Crew', 'Device', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Talent',
+        'Cannon',
+        'Missile',
+        'Crew',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 151,
       standard: true,
       epic: true,
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kathscarlet.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kathscarlet.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kathscarlet.png',
     },
     {
       name: 'Koshka Frost',
@@ -121,8 +151,18 @@ const t: ShipType = {
       limited: 1,
       cost: 7,
       xws: 'koshkafrost',
-      ability: 'While you defend or perform an attack, if the enemy ship is stressed, you may reroll 1 of your dice.',
-      slots: ['Talent', 'Cannon', 'Missile', 'Crew', 'Device', 'Illicit', 'Modification', 'Title'],
+      ability:
+        'While you defend or perform an attack, if the enemy ship is stressed, you may reroll 1 of your dice.',
+      slots: [
+        'Talent',
+        'Cannon',
+        'Missile',
+        'Crew',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 152,
       standard: true,
       epic: true,
@@ -130,7 +170,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/koshkafrost.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/koshkafrost.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/koshkafrost.png',
     },
     {
       name: 'Krassis Trelix',
@@ -141,15 +182,25 @@ const t: ShipType = {
       xws: 'krassistrelix',
       ability:
         'You can perform [Front Arc] special attacks from your [Rear Arc]. While you perform a special attack, you may reroll 1 attack die.',
-      slots: ['Talent', 'Cannon', 'Cannon', 'Missile', 'Crew', 'Device', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Talent',
+        'Cannon',
+        'Cannon',
+        'Missile',
+        'Crew',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       ffg: 153,
       standard: true,
       epic: true,
       loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/krassistrelix.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/krassistrelix.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/krassistrelix.png',
     },
     {
       name: 'Hondo Ohnaka',
@@ -162,12 +213,22 @@ const t: ShipType = {
       ability:
         'Action: Choose 2 non-huge ships at range 0-3 of you that are not friendly to each other. Each chosen ship may perform an action that is on your action bar, even while stressed, in the order of your choice. Then, gain 1 calculate token.',
       image: 'https://infinitearenas.com/xw2/images/pilots/hondoohnaka.png',
-      slots: ['Cannon', 'Cannon', 'Missile', 'Crew', 'Device', 'Illicit', 'Illicit', 'Modification', 'Title'],
+      slots: [
+        'Cannon',
+        'Cannon',
+        'Missile',
+        'Crew',
+        'Device',
+        'Illicit',
+        'Illicit',
+        'Modification',
+        'Title',
+      ],
       standard: true,
       extended: true,
       epic: true,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hondoohnaka.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/hondoohnaka.png',
     },
     {
       name: 'Boba Fett',
@@ -179,9 +240,10 @@ const t: ShipType = {
       xws: 'bobafett-armedanddangerous',
       ability:
         'After another friendly ship defends, if you have a lock on the attacker, you may perform a bonus attack against the attacker.',
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/bobafett-armedanddangerous.png',
-      slots: [],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bobafett-armedanddangerous.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/bobafett-armedanddangerous.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/bobafett-armedanddangerous.png',
       standard: true,
       extended: true,
       keywords: ['Bounty Hunter'],
@@ -194,7 +256,11 @@ const t: ShipType = {
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
-        { difficulty: 'White', type: 'Boost', linked: { difficulty: 'Red', type: 'Lock' } },
+        {
+          difficulty: 'White',
+          type: 'Boost',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
       ],
       epic: true,
     },

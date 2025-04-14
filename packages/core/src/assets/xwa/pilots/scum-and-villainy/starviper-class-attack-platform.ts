@@ -63,10 +63,11 @@ const t: ShipType = {
       epic: true,
       loadout: 12,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/blacksunassassin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunassassin.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/blacksunassassin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunassassin.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Black Sun Enforcer',
@@ -81,10 +82,11 @@ const t: ShipType = {
       epic: true,
       loadout: 7,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/blacksunenforcer.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunenforcer.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/blacksunenforcer.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunenforcer.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Dalan Oberos',
@@ -93,7 +95,8 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'dalanoberos-starviperclassattackplatform',
-      ability: 'After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90°.',
+      ability:
+        'After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90°.',
       slots: ['Talent', 'Tech', 'Torpedo', 'Modification'],
       ffg: 179,
       standard: false,
@@ -101,8 +104,10 @@ const t: ShipType = {
       loadout: 3,
       extended: true,
       keywords: ['Bounty Hunter'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/dalanoberos-starviperclassattackplatform.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/dalanoberos-starviperclassattackplatform.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png',
     },
     {
       name: 'Guri',
@@ -153,8 +158,8 @@ const t: ShipType = {
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/princexizor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor.png',
     },
     {
       name: 'Prince Xizor',
@@ -163,16 +168,22 @@ const t: ShipType = {
       cost: 5,
       loadout: 0,
       xws: 'princexizor-armedanddangerous',
-      ability: 'When you perform an attack against a strained ship, you may remove 1 stress token.',
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/princexizor-armedanddangerous.png',
+      ability:
+        'When you perform an attack against a strained ship, you may remove 1 stress token.',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/princexizor-armedanddangerous.png',
       shipAbility: {
         name: 'Adaptive Microthrusters',
         text: 'While you perform a barrel roll, you may spend 1 [charge] to use the [bank left] or [bank right] template instead of the [straight] template.',
       },
       charges: { value: 3, recovers: 0 },
-      slots: [],
-      standardLoadout: ['crimelord-armedanddangerous', 'mandalorianoptics', 'virago-armedanddangerous'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor-armedanddangerous.png',
+      standardLoadout: [
+        'crimelord-armedanddangerous',
+        'mandalorianoptics',
+        'virago-armedanddangerous',
+      ],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor-armedanddangerous.png',
       standard: true,
       extended: true,
       epic: true,

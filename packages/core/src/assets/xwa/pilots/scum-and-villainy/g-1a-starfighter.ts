@@ -77,7 +77,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/gandfindsman.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/gandfindsman.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/gandfindsman.png',
       caption: '',
     },
     {
@@ -97,7 +98,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/zuckuss.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zuckuss.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zuckuss.png',
     },
     {
       name: 'Zuckuss',
@@ -113,13 +115,21 @@ const t: ShipType = {
         name: 'Enduring Limitations',
         text: 'At the end of the Activation Phase, if you have 3 or more stress tokens, you must remove 1 stress token and suffer 1 [hit] damage.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/zuckuss-armedanddangerous.png',
-      slots: [],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/zuckuss-armedanddangerous.png',
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
-        { difficulty: 'White', type: 'Barrel Roll', linked: { difficulty: 'Red', type: 'Calculate' } },
-        { difficulty: 'White', type: 'Jam', linked: { difficulty: 'Red', type: 'Calculate' } },
+        {
+          difficulty: 'White',
+          type: 'Barrel Roll',
+          linked: { difficulty: 'Red', type: 'Calculate' },
+        },
+        {
+          difficulty: 'White',
+          type: 'Jam',
+          linked: { difficulty: 'Red', type: 'Calculate' },
+        },
       ],
       standardLoadout: [
         'persistanttracker-armedanddangerous',
@@ -127,7 +137,8 @@ const t: ShipType = {
         '4lom-armedanddangerous',
         'misthunter-armedanddangerous',
       ],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zuckuss-armedanddangerous.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zuckuss-armedanddangerous.png',
       standard: true,
       extended: true,
       keywords: ['Bounty Hunter'],

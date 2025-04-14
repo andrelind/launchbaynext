@@ -216,7 +216,6 @@ const t: ShipType = {
       },
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/dis347-siegeofcoruscant.png',
-      slots: [],
       standardLoadout: [
         'marksmanship',
         'afterburners',
@@ -245,7 +244,6 @@ const t: ShipType = {
       },
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/dist81-siegeofcoruscant.png',
-      slots: [],
       standardLoadout: [
         'outmaneuver',
         'afterburners',
@@ -274,7 +272,6 @@ const t: ShipType = {
       },
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/phlacarphoccprototype-siegeofcoruscant.png',
-      slots: [],
       standardLoadout: [
         'afterburners',
         'contingencyprotocol-siegeofcoruscant',

@@ -53,7 +53,15 @@ const t: ShipType = {
       limited: 1,
       ability:
         'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
-      slots: ['Missile', 'Missile', 'Crew', 'Device', 'Modification', 'Configuration', 'Tactical Relay'],
+      slots: [
+        'Missile',
+        'Missile',
+        'Crew',
+        'Device',
+        'Modification',
+        'Configuration',
+        'Tactical Relay',
+      ],
       standard: true,
       epic: true,
       ffg: 666,
@@ -61,7 +69,8 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dgs047.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dgs047.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/dgs047.png',
     },
     {
       xws: 'baktoiddrone',
@@ -78,7 +87,8 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/baktoiddrone.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/baktoiddrone.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/baktoiddrone.png',
       caption: '',
     },
     {
@@ -90,15 +100,25 @@ const t: ShipType = {
       limited: 2,
       ability:
         'While you perform a [Missile] or [Cannon] attack, you may remove 1 tractor token from the defender to reroll up to 2 attack dice.',
-      slots: ['Cannon', 'Cannon', 'Missile', 'Missile', 'Modification', 'Configuration', 'Tactical Relay'],
+      slots: [
+        'Cannon',
+        'Cannon',
+        'Missile',
+        'Missile',
+        'Modification',
+        'Configuration',
+        'Tactical Relay',
+      ],
       standard: true,
       epic: true,
       ffg: 668,
       keywords: ['Droid'],
       loadout: 12,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/geonosianprototype.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/geonosianprototype.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/geonosianprototype.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/geonosianprototype.png',
     },
     {
       xws: 'dgs286',
@@ -109,7 +129,13 @@ const t: ShipType = {
       limited: 1,
       ability:
         'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
-      slots: ['Missile', 'Missile', 'Modification', 'Configuration', 'Tactical Relay'],
+      slots: [
+        'Missile',
+        'Missile',
+        'Modification',
+        'Configuration',
+        'Tactical Relay',
+      ],
       standard: true,
       epic: true,
       ffg: 664,
@@ -117,7 +143,8 @@ const t: ShipType = {
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dgs286.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dgs286.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/dgs286.png',
     },
     {
       xws: 'onderonoppressor',
@@ -126,16 +153,26 @@ const t: ShipType = {
       cost: 4,
       initiative: 3,
       limited: 2,
-      ability: 'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
-      slots: ['Missile', 'Missile', 'Crew', 'Device', 'Modification', 'Configuration'],
+      ability:
+        'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
+      slots: [
+        'Missile',
+        'Missile',
+        'Crew',
+        'Device',
+        'Modification',
+        'Configuration',
+      ],
       standard: true,
       epic: true,
       ffg: 665,
       keywords: ['Droid'],
       loadout: 14,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/onderonoppressor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/onderonoppressor.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/onderonoppressor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/onderonoppressor.png',
     },
     {
       name: 'Separatist Predator',
@@ -151,8 +188,10 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 9,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/separatistpredator.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/separatistpredator.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/separatistpredator.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistpredator.png',
       caption: '',
     },
   ],

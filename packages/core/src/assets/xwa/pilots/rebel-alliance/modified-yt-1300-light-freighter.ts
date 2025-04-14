@@ -49,7 +49,17 @@ const t: ShipType = {
       ability:
         'Before you would be dealt a faceup damage card, you may spend 1 [Charge] to be dealt the card facedown instead.',
       charges: { value: 1, recovers: 1 },
-      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Modification', 'Modification', 'Title', 'Illicit', 'Gunner'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Modification',
+        'Title',
+        'Illicit',
+        'Gunner',
+      ],
       ffg: 71,
       standard: true,
       epic: true,
@@ -57,7 +67,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image: 'https://infinitearenas.com/xw2/images/pilots/chewbacca.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/chewbacca.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/chewbacca.png',
     },
     {
       name: 'Han Solo',
@@ -68,15 +79,27 @@ const t: ShipType = {
       xws: 'hansolo-modifiedyt1300lightfreighter',
       ability:
         'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
-      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Modification', 'Modification', 'Title', 'Illicit', 'Gunner'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Modification',
+        'Title',
+        'Illicit',
+        'Gunner',
+      ],
       ffg: 69,
       standard: true,
       epic: true,
       loadout: 25,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/hansolo-modifiedyt1300lightfreighter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-modifiedyt1300lightfreighter.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/hansolo-modifiedyt1300lightfreighter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-modifiedyt1300lightfreighter.png',
     },
     {
       name: 'Lando Calrissian',
@@ -87,15 +110,27 @@ const t: ShipType = {
       xws: 'landocalrissian-modifiedyt1300lightfreighter',
       ability:
         'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-3. That ship may perform an action.',
-      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Modification', 'Modification', 'Title', 'Illicit', 'Gunner'],
+      slots: [
+        'Talent',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Modification',
+        'Title',
+        'Illicit',
+        'Gunner',
+      ],
       ffg: 70,
       standard: true,
       epic: true,
       loadout: 15,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
     },
     {
       name: 'Outer Rim Smuggler',
@@ -111,8 +146,10 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
-      image: 'https://infinitearenas.com/xw2/images/pilots/outerrimsmuggler.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimsmuggler.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/outerrimsmuggler.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimsmuggler.png',
       caption: '',
     },
     {
@@ -124,7 +161,16 @@ const t: ShipType = {
       standard: true,
       epic: true,
       force: { value: 1, recovers: 1, side: ['light'] },
-      slots: ['Force Power', 'Missile', 'Crew', 'Crew', 'Gunner', 'Modification', 'Modification', 'Title'],
+      slots: [
+        'Force Power',
+        'Missile',
+        'Crew',
+        'Crew',
+        'Gunner',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
       ability:
         'After a friendly ship fully executes a red maneuver, if it is at range 0-3, you may spend 1 [Force]. If you do, that ship gains 1 focus token or recovers 1 [Force].',
       cost: 7,
@@ -133,7 +179,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Freighter', 'YT-1300', 'Light Side'],
       image: 'https://infinitearenas.com/xw2/images/pilots/leiaorgana.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/leiaorgana.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/leiaorgana.png',
     },
     {
       name: 'Han Solo',
@@ -143,8 +190,8 @@ const t: ShipType = {
       caption: 'Battle of Yavin',
       standard: true,
       epic: true,
-      slots: [],
-      ability: 'After performing an attack that hits, you may spend 1 [Charge] to perform a [Coordinate] action.',
+      ability:
+        'After performing an attack that hits, you may spend 1 [Charge] to perform a [Coordinate] action.',
       cost: 7,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
@@ -159,8 +206,10 @@ const t: ShipType = {
         'millenniumfalcon',
         'l337sprogramming-battleofyavin',
       ],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/hansolo-battleofyavin.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-battleofyavin.png',
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/hansolo-battleofyavin.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-battleofyavin.png',
       loadout: 0,
     },
     {
@@ -171,7 +220,6 @@ const t: ShipType = {
       caption: 'Battle Over Endor',
       standard: true,
       epic: true,
-      slots: [],
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
@@ -185,7 +233,7 @@ const t: ShipType = {
         },
       ],
       ability:
-        'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, choose an initiative from 1 to 6. You activate at that initiative this phase.',
+        'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, choose an initiative value from 1 to 6. You activate at that initiative this phase.',
       cost: 7,
       charges: { value: 2, recovers: 0 },
       extended: true,
@@ -201,8 +249,10 @@ const t: ShipType = {
         'airencracken-gunner',
         '',
       ],
-      image: 'https://infinitearenas.com/xw2/images/quickbuilds/landocalrissian-battleoverendor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-battleoverendor.png',
+      image:
+        'https://infinitearenas.com/xw2/images/quickbuilds/landocalrissian-battleoverendor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-battleoverendor.png',
       loadout: 0,
     },
   ],

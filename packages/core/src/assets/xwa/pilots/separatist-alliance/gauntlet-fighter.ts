@@ -98,7 +98,7 @@ const t: ShipType = {
       cost: 6,
       loadout: 15,
       initiative: 1,
-      limited: 1,
+      limited: 0,
       standard: true,
       extended: true,
       epic: true,

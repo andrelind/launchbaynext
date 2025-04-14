@@ -53,6 +53,7 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
   const [tempName, setTempName] = useState<string | undefined>();
 
   const showHardpointPicker =
+    !ship?.pilot?.standardLoadout &&
     ship?.ability?.slotOptions &&
     !ship?.ability?.slotOptions.find((sl) => ship?.upgrades?.[keyFromSlot(sl)]);
 

@@ -54,7 +54,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/kashyyykdefender.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Lowhhrick',
@@ -74,7 +73,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/lowhhrick.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/lowhhrick.png',
-      keywords: [],
     },
     {
       name: 'Wullffwarro',
@@ -94,7 +92,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/wullffwarro.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wullffwarro.png',
-      keywords: [],
     },
   ],
 };

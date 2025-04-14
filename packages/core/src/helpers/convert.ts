@@ -1,5 +1,5 @@
 import { Faction, FactionKey, Slot, SlotKey, Squadron, SquadronXWS } from '../types';
-import { allSlots, slotKeys } from './enums';
+import { allSlots, factions, slotKeys } from './enums';
 
 export const slotFromKey = (key: SlotKey): Slot => {
   const index = slotKeys.indexOf(key);
@@ -56,6 +56,11 @@ export const factionFromKey = (key: FactionKey) => {
 };
 
 export const getFaction = (faction: string): Faction => {
+  // If faction is a FactionKey, return it
+  if (factions.indexOf(faction as Faction) >= 0) {
+    return faction as Faction;
+  }
+
   switch (faction) {
     case 'rebel':
     case 'rebelalliance':
@@ -120,7 +125,6 @@ export const obstacleFromKey = (i: number | string) => {
   return obstacles[parseInt(`${i}`)];
 };
 
-
 export const xwsFromSquadron = (squadron: Squadron): SquadronXWS => {
   const s = Object.assign({}, squadron);
 
@@ -134,12 +138,12 @@ export const xwsFromSquadron = (squadron: Squadron): SquadronXWS => {
     format: s.format,
     version: s.version,
     // @ts-ignore
-    pilots: s.ships.map((ship) => {
+    pilots: s.ships.map(ship => {
       const upgrades: { [s: string]: string[] } = {};
-      slotKeys.forEach((key) => {
+      slotKeys.forEach(key => {
         const u = ship.upgrades && ship.upgrades[key];
         if (u) {
-          upgrades[key] = u.map((p) => p.xws);
+          upgrades[key] = u.map(p => p.xws);
         }
       });
 

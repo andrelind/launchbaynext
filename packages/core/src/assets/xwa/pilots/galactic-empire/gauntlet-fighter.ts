@@ -39,7 +39,7 @@ const t: ShipType = {
       xws: 'captainhark',
       name: 'Captain Hark',
       ability:
-        'After you reveal a (0 [Stop]) maneuver, if you are equipped with Swivel Wings (Down), you must execute a (1 [Left Bank]) or (1 [Right Bank]) sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
+        'After you reveal a [0 [Stationary]] maneuver, if you are equipped with Swivel Wings (Down), you must execute a [1 [Bank Left]] or [1 [Bank Right]] sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
       cost: 6,
       loadout: 14,
       initiative: 3,
@@ -66,7 +66,7 @@ const t: ShipType = {
       xws: 'garsaxon',
       name: 'Gar Saxon',
       ability:
-        "While a friendly unit at range 0-2 performs a primary attack, if the attacker is in the defender's [Rear Arc], you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die.",
+        "When a friendly unit at range 0-2 performs a primary attack, if the attacker is in the defender's [Rear Arc], you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die.",
       charges: { value: 2, recovers: 1 },
       cost: 7,
       loadout: 19,

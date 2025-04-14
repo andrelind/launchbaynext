@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 63,
+      cost: 10,
       xws: 'separatistprivateers',
       slots: [
         'Command',

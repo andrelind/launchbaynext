@@ -62,7 +62,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/colossusstationmechanic.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Jarek Yeager',
@@ -91,7 +90,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/jarekyeager.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/jarekyeager.png',
-      keywords: [],
     },
     {
       name: 'Kazuda Xiono',
@@ -119,7 +117,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/kazudaxiono.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/kazudaxiono.png',
-      keywords: [],
     },
     {
       name: 'R1-J5',

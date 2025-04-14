@@ -100,7 +100,7 @@ const t: ShipType = {
       limited: 0,
       cost: 3,
       xws: 'rebelscout',
-      text: 'Designed to look like a bird in flight by the Corellian Engineering Corporation, "hawk" series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',
+      text: 'Designed to look like a bird in flight by the Corellian Engineering Corporation, “hawk” series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',
       slots: ['Device', 'Modification'],
       ffg: 45,
       standard: true,

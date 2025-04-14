@@ -60,7 +60,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cartelexecutioner.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Dalan Oberos',

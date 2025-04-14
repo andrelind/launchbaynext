@@ -47,9 +47,8 @@ const t: ShipType = {
       extended: true,
       cost: 4,
       loadout: 0,
-      slots: [],
       ability:
-        'While you defend or perform an attack, if you are in the [front arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [focus] result.',
+        'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [Focus] result.',
       shipAbility: {
         name: 'Restored Speedster',
         text: 'While you have exactly 1 disarm token, you may perform primary attacks against enemy objects in your [Bullseye Arc]',
@@ -65,7 +64,11 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'White', type: 'Barrel Roll' },
         { difficulty: 'White', type: 'Boost' },
-        { difficulty: 'White', type: 'SLAM', linked: { difficulty: 'Red', type: 'Lock' } },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
       ],
       caption: 'Armed and Dangerous',
       keywords: ['Bounty Hunter'],

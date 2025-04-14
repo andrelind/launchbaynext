@@ -5,7 +5,20 @@ const t: ShipType = {
   xws: 'lambdaclasst4ashuttle',
   ffg: 26,
   size: 'Large',
-  dial: ['0OR', '1BB', '1FB', '1NB', '2TR', '2BW', '2FB', '2NW', '2YR', '3BR', '3FW', '3NR'],
+  dial: [
+    '0OR',
+    '1BB',
+    '1FB',
+    '1NB',
+    '2TR',
+    '2BW',
+    '2FB',
+    '2NW',
+    '2YR',
+    '3BR',
+    '3FW',
+    '3NR',
+  ],
   faction: 'Galactic Empire',
   stats: [
     { arc: 'Front Arc', type: 'attack', value: 3 },
@@ -38,8 +51,8 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainkagi.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainkagi.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/captainkagi.png',
     },
     {
       name: 'Colonel Jendon',
@@ -51,15 +64,23 @@ const t: ShipType = {
       ability:
         'At the start of the Activation Phase, you may spend 1 [Charge]. If you do, while friendly ships acquire locks this round, they must acquire locks beyond range 3 instead of at range 0-3.',
       charges: { value: 2, recovers: 0 },
-      slots: ['Sensor', 'Cannon', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Title',
+      ],
       ffg: 143,
       standard: false,
       epic: true,
       loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/coloneljendon.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon.png',
     },
     {
       name: 'Lieutenant Sai',
@@ -77,8 +98,8 @@ const t: ShipType = {
       loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantsai.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantsai.png',
-      keywords: [],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantsai.png',
     },
     {
       name: 'Omicron Group Pilot',
@@ -93,10 +114,11 @@ const t: ShipType = {
       epic: true,
       loadout: 24,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/omicrongrouppilot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/omicrongrouppilot.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/omicrongrouppilot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/omicrongrouppilot.png',
       caption: '',
-      keywords: [],
     },
   ],
 };

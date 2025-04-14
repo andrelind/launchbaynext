@@ -54,7 +54,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunace.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Captain Jostero',
@@ -74,7 +73,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/captainjostero.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captainjostero.png',
-      keywords: [],
     },
     {
       name: 'Cartel Marauder',
@@ -93,7 +91,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cartelmarauder.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Graz',
@@ -146,7 +143,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/talonbanecobra.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/talonbanecobra.png',
-      keywords: [],
     },
     {
       name: 'Viktor Hel',

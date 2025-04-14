@@ -49,7 +49,7 @@ const t: ShipType = {
       cost: 7,
       loadout: 25,
       ability:
-        'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of you blank results to a [Focus] result.',
+        'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [Focus] result.',
       slots: [
         'Talent',
         'Crew',
@@ -99,7 +99,7 @@ const t: ShipType = {
       cost: 5,
       loadout: 6,
       ability:
-        'While you perform an attack at attack range 1-2, you may spend 1 non-recurring [Charge] from 1 of your equipped [Illicit] upgrades to change 1 [Focus] result to a [Crit] result.',
+        'While you perform an attack at attack range 1-2, you may spend 1 non-recurring [Charge] from 1 of your equipped [Illicit] upgrades to change 1 [Focus] result to a [Critical Hit] result.',
       slots: ['Talent', 'Crew', 'Gunner', 'Illicit', 'Illicit', 'Modification'],
       standard: true,
       epic: true,
@@ -127,7 +127,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimenforcer.png',
       caption: '',
-      keywords: [],
+      text: 'Designed as a military craft, the ST-70 assault ship is a durable and versatile vessel. For someone travelling in the Outer Rim, this ship can be a transport, combat craft, and home all in one.',
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_ST-70.png',

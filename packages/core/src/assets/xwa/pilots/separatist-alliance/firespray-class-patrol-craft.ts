@@ -77,7 +77,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       ability:
-        'Setup: Lose 2 [Charge]. During the System Phase, you may assign 1 of your secret conditions to yourself facedown: "You Should Thank Me" or "You\'d Better Mean Business"',
+        "Setup: Lose 2 [Charge]. During the System Phase, you may assign 1 of your secret conditions to yourself facedown: “You Should Thank Me” or “You'd Better Mean Business”",
       slots: [
         'Talent',
         'Cannon',
@@ -145,7 +145,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/separatistracketeer.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Aurra Sing',

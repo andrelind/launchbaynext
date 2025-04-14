@@ -78,7 +78,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/rosetico.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/rosetico.png',
-      keywords: [],
     },
     {
       name: 'Vi Moradi',
@@ -99,7 +98,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/vimoradi.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/vimoradi.png',
-      keywords: [],
     },
     {
       name: 'Finn',
@@ -118,7 +116,6 @@ const t: ShipType = {
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/finn.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/finn.png',
-      keywords: [],
     },
   ],
   ffg: 65,

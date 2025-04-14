@@ -100,7 +100,7 @@ const t: ShipType = {
       limited: 0,
       cost: 3,
       xws: 'goldsquadronveteran',
-      text: 'Commanded by Jon "Dutch" Vander, Gold Squadron played an instrumental role in the Battles of Scarif and Yavin.',
+      text: 'Commanded by Jon “Dutch” Vander, Gold Squadron played an instrumental role in the Battles of Scarif and Yavin.',
       slots: ['Turret', 'Modification', 'Missile'],
       ffg: 17,
       standard: true,
@@ -203,7 +203,6 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      slots: [],
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
@@ -228,7 +227,6 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      slots: [],
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
@@ -257,7 +255,6 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      slots: [],
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
@@ -286,7 +283,6 @@ const t: ShipType = {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
       },
-      slots: [],
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
@@ -335,7 +331,6 @@ const t: ShipType = {
       ability:
         'After you perform the [Lock] action, you may choose 1 friendly ship at range 1-3. That ship may acquire a lock on the object you locked, ignoring range restrictions.',
       standardLoadout: ['ioncannonturret', 'protonbombs'],
-      slots: [],
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/dutchvander-swz106.png',
       artwork:
@@ -356,7 +351,6 @@ const t: ShipType = {
       ability:
         'While you perform an attack, you may reroll 1 attack die for each other friendly ship at range 0-1 of the defender.',
       standardLoadout: ['ioncannonturret', 'proximitymines'],
-      slots: [],
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/hortonsalm-swz106.png',
       artwork:

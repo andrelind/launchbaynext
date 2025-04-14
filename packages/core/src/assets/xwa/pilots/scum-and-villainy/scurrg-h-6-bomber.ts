@@ -65,7 +65,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/captainnym.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captainnym.png',
-      keywords: [],
     },
     {
       name: 'Lok Revenant',
@@ -84,7 +83,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/lokrevenant.png',
       caption: '',
-      keywords: [],
     },
     {
       name: 'Sol Sixxa',
@@ -94,7 +92,7 @@ const t: ShipType = {
       cost: 5,
       xws: 'solsixxa',
       ability:
-        'If you would drop a device using a (1 [Straight]) template, you may drop it using any other speed 1 template instead.',
+        'If you would drop a device using a [1 [Straight]] template, you may drop it using any other speed 1 template instead.',
       slots: [
         'Talent',
         'Turret',
@@ -112,7 +110,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/solsixxa.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/solsixxa.png',
-      keywords: [],
     },
   ],
 };

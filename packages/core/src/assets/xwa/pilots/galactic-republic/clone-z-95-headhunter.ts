@@ -104,7 +104,7 @@ const t: ShipType = {
       loadout: 8,
       xws: 'stub',
       ability:
-        'While you defend, if the speed of your revealed maneuver is even, roll 1 additional defense die. While you perform a primary attack, if the speed of your revealed maneuver is odd, roll 1 additional attack die.',
+        'While you defend, if the speed of your revealed maneuver is even, roll 1 additional defende die. While you perform a primary attack, if the speed of your revealed maneuver is odd, roll 1 additional attack die.',
       slots: ['Talent', 'Sensor', 'Modification'],
       standard: true,
       extended: true,
@@ -186,6 +186,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/reapersquadronscout.png',
       caption: '',
       keywords: ['Clone'],
+      text: "Despite the Clone Z-95's unglamorous reputation, Reaper Squadron has become legendary for their skill with this fighter in far-flung engagements, such as the skirmish over Castilon.",
     },
     {
       name: '“Slider”',
@@ -196,7 +197,7 @@ const t: ShipType = {
       loadout: 3,
       xws: 'slider',
       ability:
-        'When you reveal a (2 [Bank Left]) or (2 [Bank Right]) maneuver, you may spend 2 [Charge] to execute it as a sideslip.',
+        'When you reveal a [2 [Bank Left]] or [2 [Bank Right]] maneuver, you may spend 2 [Charge] to execute it as a sideslip.',
       charges: { value: 2, recovers: 1 },
       slots: ['Talent', 'Talent', 'Sensor', 'Modification', 'Modification'],
       standard: true,

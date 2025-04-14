@@ -448,6 +448,58 @@ const t: UpgradeBase[] = [
     epic: true,
     standardLoadoutOnly: true,
   },
+  {
+    limited: 1,
+    xws: 'saturationrockets-alphaclassstarwing',
+    sides: [
+      {
+        ability:
+          'Attack: Spend 2 [Charge]. If the defender is in your [Front Arc], you may spend 1 additional [Charge] to roll 1 additional attack die. After this attack, you may spend 1 [Charge] to perform this attack as a bonus attack against a different target at range 0-1 of the defender without paying the [Charge] cost.',
+        attack: {
+          arc: 'Full Front Arc',
+          maxrange: 2,
+          minrange: 1,
+          ordnance: true,
+          value: 3,
+        },
+        charges: { value: 4, recovers: 1 },
+        title: 'Saturation Rockets',
+        type: 'Missile',
+        slots: ['Missile'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'heavyplasmamissiles-alphaclassstarwing',
+    sides: [
+      {
+        ability:
+          'Attack ([Lock]): Spend 1 [Charge]. After this attack hits, the defender loses 1 shield.',
+        attack: {
+          arc: 'Front Arc',
+          maxrange: 3,
+          minrange: 1,
+          ordnance: true,
+          value: 3,
+        },
+        charges: { value: 2, recovers: 0 },
+        title: 'Heavy Plasma Missiles',
+        type: 'Missile',
+        slots: ['Missile'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
 ];
 
 export default t;

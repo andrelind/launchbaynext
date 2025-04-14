@@ -69,7 +69,8 @@ const t: ShipType = {
       limited: 1,
       cost: 5,
       xws: 'quickdraw',
-      ability: 'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
+      ability:
+        'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
       slots: ['Talent', 'Talent', 'Sensor', 'Modification', 'Gunner', 'Tech'],
       charges: { value: 1, recovers: 1 },
       ffg: 406,
@@ -79,7 +80,8 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/quickdraw.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/quickdraw.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/quickdraw.png',
     },
     {
       name: '“Backdraft”',
@@ -90,7 +92,7 @@ const t: ShipType = {
       xws: 'backdraft',
       ability:
         'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
-      slots: ['Talent', 'Sensor', 'Missile', 'Missile', 'Modification', 'Modification', 'Gunner', 'Tech'],
+      slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       ffg: 407,
       standard: true,
       epic: true,
@@ -98,7 +100,8 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/backdraft.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/backdraft.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/backdraft.png',
     },
     {
       name: 'Omega Squadron Expert',
@@ -107,15 +110,17 @@ const t: ShipType = {
       cost: 5,
       xws: 'omegasquadronexpert',
       text: 'The TIE/sf is a versatile starfighter that carries specialized armament and experimental systems for long-range operations by First Order Special Forces.',
-      slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech', 'Talent'],
+      slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       ffg: 408,
       standard: true,
       epic: true,
       keywords: ['TIE'],
       loadout: 13,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronexpert.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronexpert.png',
       caption: '',
     },
     {
@@ -132,8 +137,10 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 11,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/zetasquadronsurvivor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronsurvivor.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/zetasquadronsurvivor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronsurvivor.png',
       caption: '',
     },
     {
@@ -142,7 +149,15 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'lieutenantlehuse',
-      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Tech',
+        'Missile',
+        'Missile',
+        'Gunner',
+        'Modification',
+      ],
       ffg: 641,
       standard: true,
       epic: true,
@@ -152,8 +167,10 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 6,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse.png',
     },
     {
       name: 'Captain Phasma',
@@ -161,7 +178,15 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'captainphasma',
-      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification', 'Modification'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Tech',
+        'Missile',
+        'Gunner',
+        'Modification',
+        'Modification',
+      ],
       standard: true,
       epic: true,
       ffg: 642,
@@ -172,7 +197,8 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainphasma.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainphasma.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/captainphasma.png',
     },
     {
       name: 'Lieutenant LeHuse',
@@ -189,39 +215,25 @@ const t: ShipType = {
         text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
       },
       shipActions: [
-        {
-          difficulty: 'White',
-          type: 'Focus',
-        },
-        {
-          difficulty: 'White',
-          type: 'Evade',
-        },
-        {
-          difficulty: 'White',
-          type: 'Lock',
-        },
-        {
-          difficulty: 'White',
-          type: 'Barrel Roll',
-        },
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Barrel Roll' },
         {
           difficulty: 'White',
           type: 'Reload',
-          linked: {
-            difficulty: 'White',
-            type: 'Lock',
-          },
+          linked: { difficulty: 'White', type: 'Lock' },
         },
       ],
-      slots: [],
       standardLoadout: [
         'determination-evacuationofdqar',
         'concussionmissiles',
         'firstorderordnancetech-evacuationofdqar',
       ],
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/lieutenantlehuse-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/lieutenantlehuse-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse-evacuationofdqar.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -241,40 +253,27 @@ const t: ShipType = {
         name: 'Heavy Weapon Turret',
         text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
       },
-      slots: [],
-      charges: {
-        value: 2,
-        recovers: 0,
-      },
+      charges: { value: 2, recovers: 0 },
       shipActions: [
-        {
-          difficulty: 'White',
-          type: 'Focus',
-        },
-        {
-          difficulty: 'White',
-          type: 'Evade',
-        },
-        {
-          difficulty: 'White',
-          type: 'Lock',
-        },
-        {
-          difficulty: 'White',
-          type: 'Barrel Roll',
-        },
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Barrel Roll' },
         {
           difficulty: 'White',
           type: 'Reload',
-          linked: {
-            difficulty: 'White',
-            type: 'Lock',
-          },
+          linked: { difficulty: 'White', type: 'Lock' },
         },
       ],
-      standardLoadout: ['seekermissiles-swz103', 'passivesensors', 'firstorderordnancetech-evacuationofdqar'],
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta3-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theta3-evacuationofdqar.png',
+      standardLoadout: [
+        'seekermissiles-swz103',
+        'passivesensors',
+        'firstorderordnancetech-evacuationofdqar',
+      ],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta3-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/theta3-evacuationofdqar.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -289,37 +288,27 @@ const t: ShipType = {
       loadout: 0,
       xws: 'theta4-evacuationofdqar',
       ability:
-        'While an enemy ship in your [single rotating arc] performs an attack you may spend 1 [charge]. If you do, spend 1 [charge] from your [missile] upgrade to choose two attack dice. The attacker must reroll those dice.',
+        'While an enemy ship in your [Single Turret Arc] performs an attack you may spend 1 [Charge]. If you do, spend 1 [Charge] from your [Missile] upgrade to choose two attack dice. The attacker must reroll those dice.',
       shipAbility: {
         name: 'Heavy Weapon Turret',
         text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
       },
-      slots: [],
       shipActions: [
-        {
-          difficulty: 'White',
-          type: 'Focus',
-        },
-        {
-          difficulty: 'White',
-          type: 'Evade',
-        },
-        {
-          difficulty: 'White',
-          type: 'Lock',
-        },
-        {
-          difficulty: 'White',
-          type: 'Barrel Roll',
-        },
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Evade' },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'White', type: 'Barrel Roll' },
       ],
-      standardLoadout: ['determination-evacuationofdqar', 'barragerockets', 'patternanalyzer'],
-      charges: {
-        value: 1,
-        recovers: 1,
-      },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta4-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theta4-evacuationofdqar.png',
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'barragerockets',
+        'patternanalyzer',
+      ],
+      charges: { value: 1, recovers: 1 },
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta4-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/theta4-evacuationofdqar.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],

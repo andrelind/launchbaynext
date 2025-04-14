@@ -62,7 +62,6 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/agentterex.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/agentterex.png',
-      keywords: [],
     },
     {
       xws: 'commandermalarus-xiclasslightshuttle',
@@ -91,7 +90,6 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/commandermalarus-xiclasslightshuttle.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/commandermalarus-xiclasslightshuttle.png',
-      keywords: [],
     },
     {
       xws: 'firstordercourier',
@@ -111,7 +109,6 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/firstordercourier.png',
       caption: '',
-      keywords: [],
     },
     {
       xws: 'gideonhask-xiclasslightshuttle',
@@ -140,7 +137,6 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/gideonhask-xiclasslightshuttle.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask-xiclasslightshuttle.png',
-      keywords: [],
     },
     {
       name: 'Agent Tierny',
@@ -174,7 +170,6 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/agenttierny.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/agenttierny.png',
       epic: true,
-      keywords: [],
     },
   ],
   ffg: 73,

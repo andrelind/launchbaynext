@@ -64,7 +64,16 @@ const t: ShipType = {
       limited: 1,
       standard: true,
       cost: 6,
-      slots: ['Force Power', 'Force Power', 'Missile', 'Tech', 'Tech', 'Modification', 'Modification', 'Configuration'],
+      slots: [
+        'Force Power',
+        'Force Power',
+        'Talent',
+        'Missile',
+        'Tech',
+        'Tech',
+        'Modification',
+        'Configuration',
+      ],
       ability:
         'Before an enemy ship in your [Bullseye Arc] is dealt a facedown damage card, you may spend 1 [Force]. If you do, that damage card is dealt faceup instead.',
       ffg: 919,
@@ -74,8 +83,10 @@ const t: ShipType = {
       epic: true,
       loadout: 20,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
     },
     {
       name: '“Wrath”',
@@ -114,7 +125,8 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nightfall.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nightfall.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/nightfall.png',
     },
     {
       name: '“Whirlwind”',
@@ -134,7 +146,8 @@ const t: ShipType = {
       loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/whirlwind.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/whirlwind.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/whirlwind.png',
     },
     {
       name: '709th Legion Ace',
@@ -151,7 +164,8 @@ const t: ShipType = {
       loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/709thlegionace.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/709thlegionace.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/709thlegionace.png',
       caption: '',
     },
     {
@@ -162,14 +176,15 @@ const t: ShipType = {
       text: 'Also called Red Fury, the 709th Legion is charged by Supreme Leader Kylo Ren with rooting out dissenters at Black Spire Outpost.',
       standard: true,
       cost: 3,
-      slots: ['Talent', 'Tech', 'Tech'],
+      slots: ['Talent', 'Tech', 'Tech', 'Configuration'],
       ffg: 924,
       keywords: ['TIE'],
       epic: true,
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/redfuryzealot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/redfuryzealot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/redfuryzealot.png',
       caption: '',
     },
   ],

@@ -50,7 +50,7 @@ const t: ShipType = {
       cost: 4,
       xws: 'vizier',
       ability:
-        'After you fully execute a speed 1 maneuver using your Adaptive Ailerons ship ability, you may perform a [Coordinate] action. If you do, skip your Perform Action step.',
+        'After you move using your Controlled Ailerons ship ability, you may perform a [Coordinate] action. If you do, skip your Perform Action step.',
       slots: ['Crew', 'Crew', 'Modification'],
       ffg: 115,
       standard: true,
