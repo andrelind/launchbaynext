@@ -405,6 +405,25 @@ const t: UpgradeBase[] = [
     epic: true,
     standardLoadoutOnly: true,
   },
+  {
+    limited: 0,
+    xws: 'synchronizedhandling-armedanddangerous',
+    sides: [
+      {
+        title: 'Synchronized Handling',
+        type: 'Tech',
+        ability:
+          "Before you engage, you may spend 1 [Charge] to gain a [Calculate] token.\n\nAfter you fully execute a turn [[Turn Left]], bank [[Bank Left]] or [[Segnor's Loop Left]] maneuver, recover 1[Charge].",
+        charges: { value: 1, recovers: 0 },
+        slots: ['Tech'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
 ];
 
 export default t;

@@ -1458,6 +1458,62 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     cost: { value: 0 },
   },
+  {
+    limited: 0,
+    xws: 'mandaloriantactics-armedanddangerous',
+    sides: [
+      {
+        title: 'Mandalorian Tactics',
+        type: 'Talent',
+        ability:
+          'While defending, if there is at least 1 enemy ship at range 0, you may reroll 1 of your blank results.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'crimelord-armedanddangerous',
+    sides: [
+      {
+        title: 'Crime Lord',
+        type: 'Talent',
+        charges: { value: 2, recovers: 1 },
+        ability:
+          'After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge]. If you do, the attacker gains 1 strain token.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'persistenttracker-armedanddangerous',
+    sides: [
+      {
+        title: 'Persistent Tracker',
+        type: 'Talent',
+        charges: { value: 3, recovers: 1 },
+        ability:
+          'During the System Phase, you may spend 3 [Charge].\n\nDuring the Activation Phase, if this upgrade has 0 active [Charge], you can perform actions and execute red maneuvers, even while stressed.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
 ];
 
 export default t;
