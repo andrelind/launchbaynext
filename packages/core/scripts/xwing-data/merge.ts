@@ -235,7 +235,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   let i = 0;
   await asyncForEach(manifest.pilots, async (data: any) => {
     await asyncForEach(data.ships, async (shipUrl: any) => {
-      console.log(`Processing ${shipUrl}`);
+      // console.log(` Processing ${shipUrl}`);
 
       const ship = await get(`/${shipUrl}`);
       processShip(getFaction(data.faction), ship as XWDShip);

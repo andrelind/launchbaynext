@@ -271,7 +271,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
-      caption: 'Evacuation of D’Qar',
+      caption: "Evacuation of D'Qar",
     },
     {
       name: 'Vennie',
@@ -309,7 +309,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
-      caption: 'Evacuation of D’Qar',
+      caption: "Evacuation of D'Qar",
     },
   ],
 };
