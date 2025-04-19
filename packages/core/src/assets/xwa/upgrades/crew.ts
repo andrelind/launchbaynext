@@ -176,7 +176,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/bobafett.png',
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 7 },
     restrictions: [{ factions: ['Scum and Villainy'] }],
     standard: false,
     epic: true,
