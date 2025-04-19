@@ -78,7 +78,7 @@ const t: ShipType = {
         'Torpedo',
         'Missile',
         'Force Power',
-        'Talent',
+        'Force Power',
         'Tech',
         'Configuration',
       ],
