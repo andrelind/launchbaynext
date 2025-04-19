@@ -67,10 +67,10 @@ const t: ShipType = {
       slots: [
         'Force Power',
         'Force Power',
-        'Talent',
         'Missile',
         'Tech',
         'Tech',
+        'Modification',
         'Modification',
         'Configuration',
       ],
