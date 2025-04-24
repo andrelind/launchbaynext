@@ -241,7 +241,7 @@ const t: ShipType = {
       ],
       ability:
         'After you perform a [Boost] action, you may spend 1 [Charge] to remove 1 non-lock red or orange token.',
-      charges: { value: 2, recovers: 0 },
+      charges: { value: 3, recovers: 0 },
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/juljerjerrod.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/juljerjerrod.png',
