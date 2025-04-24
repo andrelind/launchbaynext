@@ -148,7 +148,7 @@ const t: ShipType = {
       cost: 4,
       xws: 'vagabond',
       ability:
-        'After you move using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
+        'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
       slots: ['Talent', 'Gunner', 'Device', 'Device', 'Modification'],
       standard: true,
       epic: true,

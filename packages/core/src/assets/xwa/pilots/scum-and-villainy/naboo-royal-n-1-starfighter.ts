@@ -73,6 +73,10 @@ const t: ShipType = {
       caption: 'Armed and Dangerous',
       keywords: ['Bounty Hunter'],
       epic: true,
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/themandalorian-armedanddangerous.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/themandalorian-armedanddangerous.png',
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Royal_Naboo_N-1_Starfighter.png',

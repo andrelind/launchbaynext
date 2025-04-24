@@ -144,6 +144,7 @@ const t: ShipType = {
         'While you perform an attack, if you are at range 0-1 of the defender, you may reroll 1 attack die.',
     },
   ],
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_GauntletFighter.png',
 };
 
 export default t;

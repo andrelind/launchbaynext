@@ -248,7 +248,7 @@ const t: ShipType = {
       loadout: 0,
       xws: 'theta3-evacuationofdqar',
       ability:
-        'At the start of the engagement phase, if you have no green tokens, you may spend 1 [Charge] to gain an evade token.',
+        'At the start of the Engagement Phase, if you have no green tokens, you may spend 1 [Charge] to gain an evade token.',
       shipAbility: {
         name: 'Heavy Weapon Turret',
         text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
@@ -288,7 +288,7 @@ const t: ShipType = {
       loadout: 0,
       xws: 'theta4-evacuationofdqar',
       ability:
-        'While an enemy ship in your [Single Turret Arc] performs an attack you may spend 1 [Charge]. If you do, spend 1 [Charge] from your [Missile] upgrade to choose two attack dice. The attacker must reroll those dice.',
+        'While an enemy ship in your [Single Turret Arc] performs an attack, you may spend 1 [Charge]. If you do, spend 1 [Charge] from your [Missile] upgrade to choose two attack dice. The attacker must reroll those dice.',
       shipAbility: {
         name: 'Heavy Weapon Turret',
         text: 'After you perform an action, you may perform a white [Rotate] action. You can only rotate your [single turret arc] arc to your [front arc] or [rear arc]. You must treat the [front arc] requirement of your equipped [missiles] upgrades as [rotating arc].',
