@@ -191,7 +191,7 @@ export const exportAsXws = (xws: XWS) => {
     name: xws.name,
     description: xws.description || '',
     faction: xws.faction,
-    ruleset: xws.ruleset || 'amg',
+    ruleset: xws.ruleset || 'xwa',
     points: xws.points,
     version: xws.version || '2.5.0',
     obstacles: xws.obstacles?.map(o => o.replace('obstacle-', '')),

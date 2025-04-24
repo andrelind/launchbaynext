@@ -34,7 +34,7 @@ export type SlotValue = {
 };
 
 export const pilotExists2 = (pilotXws: PilotXWS, xws: { faction: FactionKey; ruleset: RuleSet }) => {
-  const ship = assets[xws.ruleset || 'amg'].pilots[factionFromKey(xws.faction)][pilotXws.ship];
+  const ship = assets[xws.ruleset || 'xwa'].pilots[factionFromKey(xws.faction)][pilotXws.ship];
   if (ship === undefined) {
     return false;
   }
@@ -66,7 +66,7 @@ export const loadShip2 = (
   console.log(`Loading ship ${pilot.ship} for ${pilot.id} (${xws.faction})`);
 
   const shipType: ShipType = JSON.parse(
-    JSON.stringify(assets[xws.ruleset || 'amg'].pilots[getFaction(xws.faction)][pilot.ship]),
+    JSON.stringify(assets[xws.ruleset || 'xwa'].pilots[getFaction(xws.faction)][pilot.ship]),
   );
 
   const { pilots, ...rest } = shipType;
@@ -81,8 +81,8 @@ export const loadShip2 = (
     const upgrades = pilot.upgrades?.[key as SlotKey];
     if (upgrades) {
       ship.upgrades![key as SlotKey] = upgrades
-        .filter(x => upgradeExists(key as SlotKey, x, xws.ruleset || 'amg'))
-        .map(u => loadUpgrade2(u, key as SlotKey, ship, xws.ruleset || 'amg'));
+        .filter(x => upgradeExists(key as SlotKey, x, xws.ruleset || 'xwa'))
+        .map(u => loadUpgrade2(u, key as SlotKey, ship, xws.ruleset || 'xwa'));
     }
   });
   ship.pointsWithUpgrades = pointsForShip2(ship);
@@ -103,7 +103,7 @@ export const getStandardLoadout = (xws: { ruleset: RuleSet }, pilot?: Pilot) => 
     pilot.upgrades = [];
     pilot.standardLoadout.forEach((upgradeXws, index) => {
       slotKeys.forEach(slotKey => {
-        const u = assets[xws.ruleset || 'amg'].upgrades[slotKey].find(upgrade => upgrade.xws === upgradeXws);
+        const u = assets[xws.ruleset || 'xwa'].upgrades[slotKey].find(upgrade => upgrade.xws === upgradeXws);
         if (u) {
           pilot!.upgrades!.push({ ...u, finalCost: 0, available: 0 });
         }
@@ -164,7 +164,7 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
   if (cost.variable && cost.variable === 'agility') {
     const typedCost = cost as UpgradeCostAgility;
 
-    const fresh: ShipType = JSON.parse(JSON.stringify(assets[xws.ruleset || 'amg'].pilots[ship.faction][ship.xws]));
+    const fresh: ShipType = JSON.parse(JSON.stringify(assets[xws.ruleset || 'xwa'].pilots[ship.faction][ship.xws]));
     const agility = fresh.stats.find(s => s.type === 'agility');
     if (agility) {
       return typedCost.values[agility.value];
@@ -261,7 +261,7 @@ export const freeSlotsForShip2 = (ship: TShip, xws: { ruleset: RuleSet }) => {
     return {};
   }
   // Start with loading the ship
-  const shipType: ShipType = JSON.parse(JSON.stringify(assets[xws.ruleset || 'amg'].pilots[ship.faction][ship.xws]));
+  const shipType: ShipType = JSON.parse(JSON.stringify(assets[xws.ruleset || 'xwa'].pilots[ship.faction][ship.xws]));
   const pilot = shipType.pilots.find(p => p.xws === ship.pilot?.xws);
 
   // Get all available slots from ship
