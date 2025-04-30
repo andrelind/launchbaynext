@@ -49,7 +49,7 @@ const t: ShipType = {
     },
     {
       name: 'Sorc Tormo',
-      initiative: 0,
+      initiative: 8,
       cost: 8,
       loadout: 0,
       limited: 1,
@@ -62,7 +62,6 @@ const t: ShipType = {
       epic: true,
       engagement: 0,
       xws: 'sorctormo-epicsl',
-      slots: [],
       caption: "Nautolan's Revenge",
     },
   ],

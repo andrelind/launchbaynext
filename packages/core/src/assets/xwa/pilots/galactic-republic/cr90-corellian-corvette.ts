@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 0,
-      cost: 131,
+      cost: 14,
       xws: 'republicjudiciary',
       slots: [
         'Command',
@@ -67,6 +67,41 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/republicjudiciary.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/republicjudiciary.png',
+    },
+    {
+      name: 'Raymus Antilles',
+      caption: 'Tantive IV',
+      initiative: 8,
+      engagement: 0,
+      limited: 1,
+      cost: 12,
+      xws: 'raymusantilles-epicsl-galacticrepublic',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/raymusantilles-epicsl-galacticrepublic.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/raymusantilles-epicsl-galacticrepublic.png',
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        {
+          difficulty: 'White',
+          type: 'Reinforce',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'Red', type: 'Coordinate' },
+        { difficulty: 'White', type: 'Jam' },
+        { difficulty: 'White', type: 'Rotate Arc' },
+      ],
+      standard: true,
+      extended: true,
+      epic: true,
+      standardLoadout: [
+        'bornforthis-epicsl',
+        'bailorgana-epicsl',
+        'secretprovisions-epicsl',
+        'turbolaserbattery-epicsl',
+        'tantiveiv-epicsl-galacticrepublic',
+      ],
     },
   ],
   ffg: 78,

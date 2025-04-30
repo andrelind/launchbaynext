@@ -118,6 +118,24 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['Separatist Alliance'] }],
     extended: true,
   },
+  {
+    limited: 1,
+    xws: 'tx25-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'After a friendly ship at range 0-3 is destroyed, you may equip a Tactical Relay upgrade attached to that ship to this one.',
+        title: 'TX-25',
+        type: 'Tactical Relay',
+        slots: ['Tactical Relay'],
+      },
+    ],
+    cost: { value: 0 },
+  },
 ];
 
 export default t;

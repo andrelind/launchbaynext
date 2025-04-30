@@ -15,7 +15,10 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         ffg: 737,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/ioncannonbattery.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/ioncannonbattery.png',
       },
       {
         ability:
@@ -24,7 +27,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         ffg: 736,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/ioncannonbattery-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/ioncannonbattery-sideb.png',
       },
     ],
     cost: { value: 5 },
@@ -43,7 +49,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         ffg: 740,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/ordnancetubes.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/ordnancetubes.png',
       },
       {
         ability:
@@ -52,7 +61,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         ffg: 741,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/ordnancetubes-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/ordnancetubes-sideb.png',
       },
     ],
     cost: { value: 1 },
@@ -71,7 +83,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         ffg: 742,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/pointdefensebattery.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/pointdefensebattery.png',
       },
       {
         ability:
@@ -83,7 +98,10 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         ffg: 743,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/pointdefensebattery-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/pointdefensebattery-sideb.png',
       },
     ],
     cost: { value: 9 },
@@ -102,7 +120,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         ffg: 738,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/targetingbattery.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/targetingbattery.png',
       },
       {
         ability:
@@ -114,7 +135,10 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         ffg: 739,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/targetingbattery-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/targetingbattery-sideb.png',
       },
     ],
     cost: { value: 5 },
@@ -133,7 +157,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: ['Hardpoint'],
         ffg: 744,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/turbolaserbattery.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/turbolaserbattery.png',
       },
       {
         ability:
@@ -145,7 +172,10 @@ const t: UpgradeBase[] = [
           { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
         ],
         ffg: 745,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/turbolaserbattery-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/turbolaserbattery-sideb.png',
       },
     ],
     cost: { value: 10 },
@@ -165,7 +195,10 @@ const t: UpgradeBase[] = [
           'Setup: Equip this side faceup. Bonus Attack Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy]. Bonus Attack: Spend 1 [Energy].',
         slots: ['Hardpoint'],
         ffg: 933,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/tractortentacles.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/tractortentacles.png',
       },
       {
         ffg: 934,
@@ -173,7 +206,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: [],
         ability: 'Offline Action: Spend 1 [Energy] to repair this card.',
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/tractortentacles-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/tractortentacles-sideb.png',
       },
     ],
     standard: false,
@@ -196,7 +232,9 @@ const t: UpgradeBase[] = [
           'Setup: Equip this side faceup. You can perform this attack at range 0. Bonus Attack: Spend 1 [Energy]. If the attack range is 0, change all [Hit] results to [Critical Hit] results.',
         slots: ['Hardpoint', 'Cargo'],
         ffg: 935,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/drillbeak.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/drillbeak.png',
       },
       {
         ffg: 936,
@@ -204,7 +242,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: [],
         ability: 'Offline Action: Spend 1 [Energy] to repair this card.',
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/drillbeak-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/drillbeak-sideb.png',
       },
     ],
     standard: false,
@@ -227,7 +268,10 @@ const t: UpgradeBase[] = [
           'Setup: Equip this side faceup. At the start of the End Phase, you may spend 2 [Energy] to execute a white (2 [Straight]), (1 [Bank Left]), or (1 [Bank Right]) maneuver.',
         slots: ['Hardpoint', 'Cargo'],
         ffg: 937,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/enhancedpropulsion.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/enhancedpropulsion.png',
       },
       {
         ffg: 938,
@@ -235,7 +279,10 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: [],
         ability: 'Offline Action: Spend 1 [Energy] to repair this card.',
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/enhancedpropulsion-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/enhancedpropulsion-sideb.png',
       },
     ],
     standard: false,
@@ -258,7 +305,10 @@ const t: UpgradeBase[] = [
           'Setup: Equip this side faceup. Bonus Attack: Change 1 [Hit] result to a [Critical Hit] result. Bonus Attack: Spend 1 [Energy]. Change 1 [Hit] result to a [Critical Hit] result.',
         slots: ['Hardpoint', 'Cargo'],
         ffg: 939,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/protoncannonbattery.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/protoncannonbattery.png',
       },
       {
         ffg: 940,
@@ -266,12 +316,239 @@ const t: UpgradeBase[] = [
         type: 'Hardpoint',
         slots: [],
         ability: 'Offline Action: Spend 1 [Energy] to repair this card.',
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/protoncannonbattery-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/protoncannonbattery-sideb.png',
       },
     ],
     standard: false,
     epic: true,
     extended: false,
+  },
+  {
+    limited: 0,
+    xws: 'turbolaserbattery-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus Attack ([Lock]): Spend 3 [Energy]. If this attack hits, add 3 [Hit] results.',
+        title: 'Turbolaser Battery',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 3,
+          minrange: 3,
+          maxrange: 5,
+          ordnance: false,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'planetaryionbombardment-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Setup: Equip this side faceup. You can perform this attack at range 0. Bonus Attack: Spend 1 [Energy]. If the attack range is 0, change all [Hit] results to [Critical Hit] results.',
+        title: 'Planetary Ion Bombardment',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Full Front Arc',
+          value: 5,
+          minrange: 1,
+          maxrange: 3,
+          ordnance: true,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'twinmissilelauncher-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus attack: Spend 1 [Energy].<br>Bonus attack: Spend 1 [Energy].',
+        title: 'Twin Missile Launcher',
+        type: 'Hardpoint',
+        slots: ['Hardpoint', 'Missile'],
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 3,
+          minrange: 2,
+          maxrange: 3,
+          ordnance: true,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'heavylasercannonturret-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus attack: If the attack range is 3, roll 1 additional attack die.',
+        title: 'Heavy Laser Cannon Turret',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 3,
+          minrange: 2,
+          maxrange: 3,
+          ordnance: false,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'tractortentacles-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus Attack<br>Bonus Attack: Spend 1 [Energy].<br>Bonus Attack: Spend 1 [Energy].<br>Bonus Attack: Spend 1 [Energy].',
+        title: 'Tractor Tentacles',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Rear Arc',
+          value: 2,
+          minrange: 0,
+          maxrange: 2,
+          ordnance: true,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'drillbeak-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus Attack: If the attack range is 0, change all [Hit] results to [Critical Hit] results.',
+        title: 'Drill Beak',
+        type: 'Hardpoint',
+        slots: ['Hardpoint', 'Cargo'],
+        attack: {
+          arc: 'Rear Arc',
+          value: 3,
+          minrange: 0,
+          maxrange: 1,
+          ordnance: true,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'modifieddorsalturret-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability: 'Bonus Attack',
+        title: 'Modified Dorsal Turret',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 2,
+          minrange: 1,
+          maxrange: 3,
+          ordnance: false,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'ioncannonbattery-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus Attack: Spend 1 [Energy]. If this attack hits, the defender suffers 1 [Critical Hit] damage, and all [Hit]/[Critical Hit] results inflict ion tokens instead of damage.',
+        title: 'Ion Cannon Battery',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 4,
+          minrange: 2,
+          maxrange: 4,
+          ordnance: false,
+        },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'pointdefensebattery-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Bonus Attack: Spend 1 [Energy].<br>Bonus Attack: Spend 1 [Energy].<br>Bonus Attack: Spend 1 [Energy].<br>Bonus Attack: Spend 1 [Energy].',
+        title: 'Point-Defense Battery',
+        type: 'Hardpoint',
+        slots: ['Hardpoint'],
+        attack: {
+          arc: 'Double Turret Arc',
+          value: 2,
+          minrange: 1,
+          maxrange: 2,
+          ordnance: false,
+        },
+      },
+    ],
+    cost: { value: 0 },
   },
 ];
 

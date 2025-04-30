@@ -56,7 +56,7 @@ const t: ShipType = {
     },
     {
       name: 'Oraf Desyk',
-      initiative: 0,
+      initiative: 7,
       cost: 8,
       loadout: 0,
       limited: 1,
@@ -69,7 +69,6 @@ const t: ShipType = {
       epic: true,
       engagement: 0,
       xws: 'orafdesyk-epicsl',
-      slots: [],
       caption: 'Hosnian Lament',
     },
   ],

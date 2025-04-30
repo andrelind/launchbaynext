@@ -1514,6 +1514,42 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     cost: { value: 0 },
   },
+  {
+    limited: 0,
+    xws: 'fanatical-epicsl',
+    sides: [
+      {
+        title: 'Fanatical',
+        type: 'Talent',
+        ability:
+          'While you perform an attack, if you are not shielded, you may change 1 [Focus] result to a [Hit] result.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
+  {
+    limited: 0,
+    xws: 'bornforthis-epicsl',
+    sides: [
+      {
+        title: 'Born For This',
+        type: 'Talent',
+        ability:
+          'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    extended: true,
+    epic: true,
+    standardLoadoutOnly: true,
+    cost: { value: 0 },
+  },
 ];
 
 export default t;

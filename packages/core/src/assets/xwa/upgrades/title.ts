@@ -1557,6 +1557,241 @@ const t: UpgradeBase[] = [
     epic: true,
     standardLoadoutOnly: true,
   },
+  {
+    limited: 1,
+    xws: 'corvus-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Setup: Place this ship as if it were a standard ship with initiative 5.',
+        title: 'Corvus',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'bloodcrow-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While you defend or perform an attack, if the attack range is 1, you may spend 1 [Energy] to add 1 [Focus] result.',
+        title: 'Blood Crow',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'nautolansrevenge-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'After a tractored enemy ship in your [Rear Arc] suffers damage, you may spend 1 [Charge]. If you do, that ship suffers 1 additional [Hit] damage.',
+        title: "Nautolan's Revenge",
+        type: 'Title',
+        slots: ['Title'],
+        charges: { value: 1, recovers: 1 },
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'brokenhorn-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'If you are damaged, reduce the difficulty of your speed 3-5 maneuvers.',
+        title: 'Broken Horn',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'tantiveiv-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While you defend, if the attacker is in your [Rear Arc], you may roll 1 additional defense die.',
+        title: 'Tantive IV',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'tantiveiv-epicsl-resistance',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While a friendly ship at range 0-2 defends or performs an attack, if it has only blank results and has 2 or more results, you may suffer 1 [Hit] damage or spend 2 [Energy]. If you do, that ship may reroll all of its dice.',
+        title: 'Tantive IV',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'hosnianlament-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While a friendly ship at range 0-2 is defending, if it suffers 2 or more damage during the attack, you may spend 1 [Energy] to assign a strain token to the attacker.',
+        title: 'Hosnian Lament',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'precursor-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'At the end of the Engagement Phase, you may spend 1 [Shield] to recover 1 [Energy], or spend 1 [Energy] to recover 1 [Shield].',
+        title: 'Precursor',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'malefactor-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While you defend, friendly ships docked with you may suffer damage instead of you.',
+        title: 'Malefactor',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'tantiveiv-epicsl-galacticrepublic',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While you defend, if you have no green tokens, you may change 1 result to an [Evade] result.',
+        title: 'Tantive IV',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'spectreofnayr-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'After you perform an attack, if you have not targeted the defender in a previous attack this round and you are focused, you may recover 1 [Energy].',
+        title: 'Spectre of Nayr',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'trident-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'While you defend, if the attacker does not have any green tokens, you may add 1 [Evade] result.',
+        title: 'Trident',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
+  {
+    limited: 1,
+    xws: 'alpharevue-epicsl',
+    standard: true,
+    extended: false,
+    epic: true,
+    standardLoadoutOnly: true,
+    sides: [
+      {
+        ability:
+          'Before the Neutralize Results step, while a friendly Vulture-class Droid Fighter at range 0-2 is attacking a defender in its [Bullseye Arc], it may suffer 1 [Hit] damage to cancel 1 [Evade] result.',
+        title: 'Alpha Revue',
+        type: 'Title',
+        slots: ['Title'],
+      },
+    ],
+    cost: { value: 0 },
+  },
 ];
 
 export default t;

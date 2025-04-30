@@ -50,18 +50,19 @@ const t: ShipType = {
     },
     {
       name: 'Asajj Ventress',
-      initiative: 0,
+      initiative: 8,
       cost: 8,
       loadout: 0,
       limited: 1,
-      image: '',
-      artwork: '',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/asajjventress-epicsl.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/asajjventress-epicsl.png',
       standard: true,
       extended: true,
       epic: true,
       engagement: 0,
       xws: 'asajjventress-epicsl',
-      slots: [],
       caption: 'Trident',
     },
   ],

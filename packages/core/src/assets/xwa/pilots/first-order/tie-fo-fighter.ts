@@ -55,6 +55,7 @@ const t: ShipType = {
         'Modification',
         'Modification',
         'Tech',
+        'Missile',
       ],
       ffg: 397,
       standard: true,

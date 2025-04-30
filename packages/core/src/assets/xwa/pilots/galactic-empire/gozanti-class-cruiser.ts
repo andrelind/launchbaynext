@@ -66,18 +66,19 @@ const t: ShipType = {
     },
     {
       name: 'Rik Virgilio',
-      initiative: 0,
+      initiative: 7,
       cost: 8,
       loadout: 0,
       limited: 1,
-      artwork: '',
-      image: '',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/rikvirgilio-epicsl.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/rikvirgilio-epicsl.png',
       standard: true,
       extended: true,
       epic: true,
       engagement: 0,
       xws: 'rikvirgilio-epicsl',
-      slots: [],
       caption: 'Blood Crow',
     },
   ],

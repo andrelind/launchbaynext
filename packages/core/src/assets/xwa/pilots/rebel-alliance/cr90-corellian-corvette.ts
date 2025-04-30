@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 0,
-      cost: 134,
+      cost: 14,
       xws: 'alderaanianguard',
       slots: [
         'Command',
@@ -68,6 +68,40 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/alderaanianguard.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/alderaanianguard.png',
+    },
+    {
+      name: 'Raymus Antilles',
+      initiative: 8,
+      engagement: 0,
+      limited: 1,
+      cost: 12,
+      xws: 'raymusantilles-epicsl-rebelalliance',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/raymusantilles-epicsl-rebelalliance.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/raymusantilles-epicsl-rebelalliance.png',
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        {
+          difficulty: 'White',
+          type: 'Reinforce',
+          linked: { difficulty: 'Red', type: 'Focus' },
+        },
+        { difficulty: 'White', type: 'Lock' },
+        { difficulty: 'Red', type: 'Coordinate' },
+        { difficulty: 'White', type: 'Jam' },
+        { difficulty: 'White', type: 'Rotate Arc' },
+      ],
+      standard: true,
+      extended: true,
+      epic: true,
+      standardLoadout: [
+        'leiaorgana-epicsl',
+        'c3po-epicsl',
+        'r2d2-epicsl',
+        'turbolaserbattery-epicsl',
+        'tantiveiv-epicsl',
+      ],
     },
   ],
   ffg: 78,

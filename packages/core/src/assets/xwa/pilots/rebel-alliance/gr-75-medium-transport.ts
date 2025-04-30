@@ -55,18 +55,19 @@ const t: ShipType = {
     },
     {
       name: 'Trebor Zednem',
-      initiative: 0,
+      initiative: 7,
       cost: 8,
       loadout: 0,
       limited: 1,
-      artwork: '',
-      image: '',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/treborzednem-epicsl.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/treborzednem-epicsl.png',
       standard: true,
       extended: true,
       epic: true,
       engagement: 0,
       xws: 'treborzednem-epicsl',
-      slots: [],
       caption: 'Bright Hope',
     },
   ],
