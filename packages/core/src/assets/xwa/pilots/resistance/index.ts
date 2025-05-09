@@ -1,5 +1,6 @@
 import { ShipType } from '../../../../types';
 import btanr2ywing from './bta-nr2-y-wing';
+import cr90corelliancorvette from './cr90-corellian-corvette';
 import fireball from './fireball';
 import gr75mediumtransport from './gr-75-medium-transport';
 import mg100starfortress from './mg-100-starfortress';
@@ -19,6 +20,7 @@ const ships: { [s: string]: ShipType } = {
   t70xwing,
   fireball,
   btanr2ywing,
+  cr90corelliancorvette,
 };
 
 export default ships;

@@ -7,6 +7,7 @@ import delta7aethersprite from './delta-7-aethersprite';
 import delta7baethersprite from './delta-7b-aethersprite';
 import eta2actis from './eta-2-actis';
 import gauntletfighter from './gauntlet-fighter';
+import gozanticlasscruiser from './gozanti-class-cruiser';
 import laatigunship from './laat-i-gunship';
 import nabooroyaln1starfighter from './naboo-royal-n-1-starfighter';
 import nimbusclassvwing from './nimbus-class-v-wing';
@@ -27,6 +28,7 @@ const ships: { [s: string]: ShipType } = {
   nimbusclassvwing,
   syliureclasshyperspacering,
   clonez95headhunter,
+  gozanticlasscruiser,
 };
 
 export default ships;
