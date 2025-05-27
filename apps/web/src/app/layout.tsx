@@ -1,9 +1,6 @@
-'use client';
-
+import { CookiesProvider } from 'next-client-cookies/server';
 import { Inter } from 'next/font/google';
 import './globals.css';
-
-import NextAuthProvider from './context/NextAuthProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,8 +12,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* @ts-ignore */}
-        <NextAuthProvider>{children}</NextAuthProvider>
+        <CookiesProvider>
+          {children}
+        </CookiesProvider>
       </body>
     </html>
   );

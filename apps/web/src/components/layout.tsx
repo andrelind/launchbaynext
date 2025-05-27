@@ -12,7 +12,7 @@ import {
 import { factions } from 'lbn-core/src/helpers/enums';
 import { getFactionKey } from 'lbn-core/src/helpers/serializer';
 import type { XWS } from 'lbn-core/src/types';
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { useCookies } from 'next-client-cookies';
 import React, { type FC, useEffect, useState } from 'react';
 import { colorForFaction, colorForFactionKey } from '../helpers/colors';
 import { AboutComponent } from './about';
@@ -20,6 +20,7 @@ import { CollectionsPanel } from './collection-panel';
 import XwingFont from './fonts/xwing';
 import FormatComponent from './format';
 import { ImportComponent } from './import';
+import { LoginComponent } from './login';
 import { LogoComponent } from './logo';
 import { Modal } from './modal';
 import { SavePanel } from './save-panel';
@@ -46,8 +47,12 @@ export const Layout: FC<Props> = ({
   actions,
   children,
 }) => {
-  const { data: session } = useSession();
-  // console.log({ session });
+  // const { data: session } = useSession();
+
+  const cookies = useCookies()
+  const isLoggedIn = cookies.get('x-jwt') !== undefined;
+
+  console.log('isLoggedIn', isLoggedIn);
 
   const [showAbout, setShowAbout] = useState(false);
   const [showActions, setShowActions] = useState(false);
@@ -55,6 +60,7 @@ export const Layout: FC<Props> = ({
   const [showCollection, setShowCollection] = useState(false);
   const [showImport, setShowImport] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
   const [showPanel, setShowPanel] = useState(false);
   const [showTags, setShowTags] = useState(false);
   const [showSave, setShowSave] = useState(false);
@@ -162,7 +168,7 @@ export const Layout: FC<Props> = ({
                         </Transition>
                       </div>
 
-                      {session && (
+                      {isLoggedIn && (
                         <button
                           onClick={() => setShowPanel(!showPanel)}
                           type="button"
@@ -175,7 +181,7 @@ export const Layout: FC<Props> = ({
                           Squadrons
                         </button>
                       )}
-                      {session && (
+                      {isLoggedIn && (
                         <button
                           onClick={() => setShowCollection(!showCollection)}
                           type="button"
@@ -199,22 +205,24 @@ export const Layout: FC<Props> = ({
                   <div className="ml-1 relative">
                     <div>
                       <button
-                        onClick={() => setShowMenu(!showMenu)}
+                        onClick={() => {
+                          !isLoggedIn ? setShowLogin(true) : cookies.remove('x-jwt')
+                        }}
                         className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-300 hover:text-white"
                         id="user-menu"
                         aria-label="User menu"
                         aria-haspopup="true"
                       >
-                        {session && (
+                        {isLoggedIn && (
                           <CogIcon
                             className="ml-1 mr-1 h-6 w-6"
                             aria-hidden="true"
                           />
                         )}
-                        {!session && (
+                        {!isLoggedIn && (
                           <span
                             className={
-                              showMenu
+                              showLogin
                                 ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                             }
@@ -224,65 +232,6 @@ export const Layout: FC<Props> = ({
                         )}
                       </button>
                     </div>
-
-                    {showMenu && (
-                      <div
-                        className="fixed inset-0 z-10"
-                        aria-hidden="true"
-                        onClick={(e) => {
-                          // @ts-ignore
-                          if (e.target.id === 'background') {
-                            setShowMenu(!showMenu);
-                          }
-                        }}
-                      >
-                        <div id="background" className="absolute inset-0" />
-                      </div>
-                    )}
-
-                    <Transition
-                      show={showMenu}
-                      enter="transition ease-out duration-100"
-                      enterFrom="transform opacity-0 scale-95"
-                      enterTo="transform opacity-100 scale-100"
-                      leave="transition ease-in duration-75"
-                      leaveFrom="transform opacity-100 scale-100"
-                      leaveTo="transform opacity-0 scale-95"
-                      className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-10"
-                    >
-                      <div className="py-1 rounded-md bg-white shadow-xs">
-                        {session && (
-                          <div className="block px-4 py-2 text-sm text-gray-700 border-b border-gray-200">
-                            <div className="font-medium">
-                              {/* {session.user?.email} */}
-                            </div>
-                            <div className="text-xs">
-                              {/* @ts-ignore */}
-                              {session.user?.provider}
-                            </div>
-                          </div>
-                        )}
-                        {session && (
-                          <a
-                            onClick={() => signOut()}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
-                          >
-                            Logout
-                          </a>
-                        )}
-
-                        {!session &&
-                          providers.map((p) => (
-                            <a
-                              key={`${p.id}_desktop`}
-                              onClick={() => signIn(p.id)}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
-                            >
-                              {p.title}
-                            </a>
-                          ))}
-                      </div>
-                    </Transition>
                   </div>
                 </div>
 
@@ -380,7 +329,7 @@ export const Layout: FC<Props> = ({
                 >
                   About
                 </a>
-                {session && (
+                {isLoggedIn && (
                   <a
                     onClick={() => setShowPanel(!showPanel)}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -389,7 +338,7 @@ export const Layout: FC<Props> = ({
                     Squadrons
                   </a>
                 )}
-                {session && (
+                {isLoggedIn && (
                   <a
                     onClick={() => setShowCollection(!showCollection)}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -398,20 +347,25 @@ export const Layout: FC<Props> = ({
                     Collection
                   </a>
                 )}
-                {session && (
+                {isLoggedIn && (
                   <a
-                    onClick={() => signOut()}
+                    onClick={() => cookies.remove('x-jwt')}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                     role="menuitem"
                   >
                     Logout
                   </a>
                 )}
-                {!session &&
+                {!isLoggedIn &&
                   providers.map((p) => (
                     <a
                       key={`${p.id}_mobile`}
-                      onClick={() => signIn(p.id)}
+                      // onClick={() => signIn(p.id)}
+                      onClick={() => {
+                        console.log('Login with mobile', p.id);
+
+                        setShowLogin(true);
+                      }}
                       className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                       role="menuitem"
                     >
@@ -454,7 +408,7 @@ export const Layout: FC<Props> = ({
                 </div>
               </div>
               <div className="mt-4 flex md:mt-0 md:ml-4">
-                {session && (
+                {isLoggedIn && (
                   <button
                     type="button"
                     className="mr-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-lbn-500 hover:bg-lbn-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbn-400"
@@ -467,7 +421,7 @@ export const Layout: FC<Props> = ({
                     Save
                   </button>
                 )}
-                {session && (
+                {isLoggedIn && (
                   <span className="shadow-sm rounded-md relative mr-3">
                     <button
                       onClick={() => setShowTags(true)}
@@ -533,13 +487,13 @@ export const Layout: FC<Props> = ({
 
       <main className="-mt-32">
         <div className="max-w-7xl mx-auto pb-12 px-0 sm:px-6 lg:px-8">
-          {session && (
+          {isLoggedIn && (
             <SavedSquadronsPanel
               show={showPanel}
               onClose={() => setShowPanel(!showPanel)}
             />
           )}
-          {session && (
+          {isLoggedIn && (
             <CollectionsPanel
               show={showCollection}
               onClose={() => setShowCollection(!showCollection)}
@@ -548,6 +502,10 @@ export const Layout: FC<Props> = ({
           {children}
         </div>
       </main>
+
+      <Modal show={showLogin} onDismiss={() => setShowLogin(false)}>
+        <LoginComponent onClose={() => setShowLogin(false)} />
+      </Modal>
 
       <Modal show={showAbout} onDismiss={() => setShowAbout(false)}>
         <AboutComponent onClose={() => setShowAbout(false)} />

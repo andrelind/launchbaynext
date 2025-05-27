@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: { missingSuspenseWithCSRBailout: false, },
+  experimental: { missingSuspenseWithCSRBailout: false },
   env: {
     POSTGRES_PRISMA_URL: process.env.POSTGRES_PRISMA_URL,
     POSTGRES_URL_NON_POOLING: process.env.POSTGRES_URL_NON_POOLING,
@@ -17,14 +17,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'infinitearenas.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
     ],
   },
   transpilePackages: ['lbn-core'],
-  webpack: (config) => {
-       config.resolve.extensionAlias = {
-      ".js": [".ts", ".tsx", ".js", ".jsx"],
-      ".mjs": [".mts", ".mjs"],
-      ".cjs": [".cts", ".cjs"],
+  webpack: config => {
+    config.resolve.extensionAlias = {
+      '.js': ['.ts', '.tsx', '.js', '.jsx'],
+      '.mjs': ['.mts', '.mjs'],
+      '.cjs': ['.cts', '.cjs'],
     };
     return config;
   },
