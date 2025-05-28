@@ -171,6 +171,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/flightleaderubbel.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 970,
     },
   ],
   ffg: 72,

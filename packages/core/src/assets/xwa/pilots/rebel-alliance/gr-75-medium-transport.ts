@@ -69,6 +69,7 @@ const t: ShipType = {
       engagement: 0,
       xws: 'treborzednem-epicsl',
       caption: 'Bright Hope',
+      ffg: 1105,
     },
   ],
   ffg: 80,

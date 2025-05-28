@@ -176,7 +176,6 @@ const t: ShipType = {
       ability:
         'While a friendly non-small ship defends, if you are in the attack arc, you may gain 1 deplete and 1 strain token. If you do, the defender may change 1 result to an [Evade] result.',
       slots: ['Talent', 'Missile', 'Modification', 'Modification'],
-      ffg: 159,
       keywords: ['Mandalorian'],
       cost: 4,
       standard: true,
@@ -188,6 +187,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/mandalorianroyalguard.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianroyalguard.png',
+      ffg: 1056,
     },
     {
       name: 'Tor Phun',
@@ -211,6 +211,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
+      ffg: 1057,
     },
     {
       name: 'Fenn Rau',
@@ -239,6 +240,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 1109,
     },
   ],
 };

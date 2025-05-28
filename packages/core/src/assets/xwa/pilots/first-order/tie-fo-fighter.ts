@@ -304,6 +304,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 925,
     },
     {
       name: 'DT-798',
@@ -322,6 +323,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 926,
     },
     {
       name: 'Lin Gaava',
@@ -342,6 +344,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 927,
     },
     {
       name: '“Longshot”',
@@ -370,6 +373,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1139,
     },
     {
       name: '“Midnight”',
@@ -398,6 +402,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1140,
     },
     {
       name: 'Omega 2',
@@ -435,6 +440,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1141,
     },
     {
       name: '“Scorch”',
@@ -463,6 +469,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1142,
     },
     {
       name: 'Zeta 5',
@@ -491,6 +498,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1143,
     },
   ],
 };

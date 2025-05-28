@@ -273,6 +273,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/adonfox-battleoverendor.png',
       loadout: 0,
+      ffg: 1102,
     },
     {
       xws: 'ginamoonsong-battleoverendor',
@@ -323,6 +324,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/ginamoonsong-battleoverendor.png',
       loadout: 0,
+      ffg: 1010,
     },
     {
       xws: 'braylenstramm-battleoverendor',
@@ -373,6 +375,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/braylenstramm-battleoverendor.png',
       loadout: 0,
+      ffg: 1009,
     },
   ],
 };

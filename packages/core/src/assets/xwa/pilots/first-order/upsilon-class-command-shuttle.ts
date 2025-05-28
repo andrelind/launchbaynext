@@ -239,6 +239,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
+      ffg: 1148,
     },
   ],
 };

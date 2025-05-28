@@ -126,6 +126,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       caption: 'Survivor',
+      ffg: 1089,
     },
     {
       name: 'Separatist Racketeer',
@@ -173,6 +174,7 @@ const t: ShipType = {
       ],
       keywords: ['Dark Side', 'Bounty Hunter'],
       epic: true,
+      ffg: 1090,
     },
   ],
   ffg: 10,

@@ -64,6 +64,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/bokatankryze-separatist-alliance.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bokatankryze-separatist-alliance.png',
+      ffg: 1092,
     },
     {
       xws: 'previzsla',
@@ -91,6 +92,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/previzsla.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/previzsla.png',
+      ffg: 1093,
     },
     {
       xws: 'deathwatchwarrior',
@@ -117,6 +119,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/deathwatchwarrior.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/deathwatchwarrior.png',
+      ffg: 1094,
     },
   ],
 };

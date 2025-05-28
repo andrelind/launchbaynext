@@ -287,6 +287,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/keovenzee.png',
+      ffg: 1027,
     },
     {
       name: 'Tycho Celchu',
@@ -310,6 +311,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu.png',
+      ffg: 1028,
     },
     {
       name: 'Arvel Crynyd',
@@ -330,6 +332,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1029,
     },
     {
       name: 'Jake Farrell',
@@ -350,6 +353,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1030,
     },
     {
       name: 'Shara Bey',
@@ -370,6 +374,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/sharabey-swz106.png',
       epic: true,
       loadout: 0,
+      ffg: 1031,
     },
     {
       name: 'Arvel Crynyd',
@@ -398,6 +403,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/arvelcrynyd-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/arvelcrynyd-battleoverendor.png',
+      ffg: 1033,
     },
     {
       name: 'Tycho Celchu',
@@ -448,6 +454,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/tychocelchu-battleoverendor.png',
       loadout: 0,
+      ffg: 1034,
     },
     {
       name: 'Gemmer Sojan',
@@ -477,6 +484,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/gemmersojan-battleoverendor.png',
       epic: true,
       loadout: 0,
+      ffg: 1032,
     },
   ],
 };

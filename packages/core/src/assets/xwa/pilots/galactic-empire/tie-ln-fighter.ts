@@ -314,6 +314,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/isbjingoist.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/isbjingoist.png',
+      ffg: 948,
     },
     {
       name: 'Moff Gideon',
@@ -334,6 +335,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/moffgideon.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/moffgideon.png',
+      ffg: 949,
     },
     {
       name: '“Backstabber”',
@@ -355,6 +357,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/backstabber.png',
       loadout: 0,
+      ffg: 950,
     },
     {
       name: '“Dark Curse”',
@@ -374,6 +377,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darkcurse.png',
       loadout: 0,
+      ffg: 951,
     },
     {
       name: '“Mauler” Mithel',
@@ -394,6 +398,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/maulermithel.png',
       loadout: 0,
+      ffg: 952,
     },
     {
       name: '“Wampa”',
@@ -414,6 +419,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/wampa-battleofyavin.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wampa.png',
       loadout: 0,
+      ffg: 953,
     },
     {
       name: 'Magna Tolvan',
@@ -433,6 +439,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/magnatolvan.png',
+      ffg: 954,
     },
     {
       name: 'Yrica Quell',
@@ -452,6 +459,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/yricaquell.png',
+      ffg: 955,
     },
     {
       name: 'Iden Versio',
@@ -473,6 +481,7 @@ const t: ShipType = {
       loadout: 0,
       ability:
         'Before a friendly TIE/ln fighter at range 0-1 would suffer 1 or more damage, you may spend 1 [Charge]. If you do, prevent that damage.',
+      ffg: 956,
     },
     {
       name: '“Night Beast”',
@@ -493,6 +502,7 @@ const t: ShipType = {
       loadout: 0,
       ability:
         'After you fully execute a blue maneuver, you may perform a [Focus] action.',
+      ffg: 957,
     },
     {
       name: 'Valen Rudor',
@@ -513,6 +523,7 @@ const t: ShipType = {
       loadout: 0,
       ability:
         'After a friendly ship at range 0-1 defends (after damage is resolved, if any), you may perform an action.',
+      ffg: 958,
     },
     {
       name: 'Lieutenant Hebsly',
@@ -551,6 +562,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/lieutenanthebsly-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenanthebsly-battleoverendor.png',
+      ffg: 959,
     },
     {
       name: 'Scythe 6',
@@ -589,6 +601,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/scythe6-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/scythe6-battleoverendor.png',
+      ffg: 960,
     },
     {
       name: 'Major Mianda',
@@ -623,6 +636,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/majormianda-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/majormianda-battleoverendor.png',
+      ffg: 961,
     },
   ],
 };

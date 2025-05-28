@@ -91,6 +91,7 @@ const t: ShipType = {
         'twinmissilelauncher-epicsl',
         'precursor-epicsl',
       ],
+      ffg: 1138,
     },
   ],
   ffg: 79,

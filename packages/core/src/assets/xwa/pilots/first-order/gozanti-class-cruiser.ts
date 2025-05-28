@@ -95,6 +95,7 @@ const t: ShipType = {
         'ioncannonbattery-epicsl',
         'malefactor-epicsl',
       ],
+      ffg: 1137,
     },
   ],
   ffg: 81,

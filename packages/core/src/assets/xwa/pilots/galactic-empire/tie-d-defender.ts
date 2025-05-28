@@ -266,6 +266,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captainyorr-battleoverendor.png',
       loadout: 0,
+      ffg: 937,
     },
     {
       xws: 'coloneljendon-battleoverendor',
@@ -306,6 +307,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/coloneljendon-battleoverendor.png',
       loadout: 0,
+      ffg: 938,
     },
   ],
 };

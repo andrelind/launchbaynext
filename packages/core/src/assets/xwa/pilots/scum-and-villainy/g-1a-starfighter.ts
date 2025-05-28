@@ -143,6 +143,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 1111,
     },
   ],
 };

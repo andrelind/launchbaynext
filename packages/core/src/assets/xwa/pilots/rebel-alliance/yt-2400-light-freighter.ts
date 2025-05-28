@@ -142,6 +142,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/leebo-wisdomofages.png',
       artwork: '',
       keywords: ['Droid', 'Freighter'],
+      ffg: 1047,
     },
     {
       name: 'Dash Rendar',
@@ -179,6 +180,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/dashrendar-freighterforhire.png',
       artwork: '',
       keywords: ['Freighter'],
+      ffg: 1048,
     },
     {
       name: '“Leebo”',
@@ -208,6 +210,7 @@ const t: ShipType = {
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/leebo.png',
       loadout: 0,
       keywords: ['Droid', 'Freighter'],
+      ffg: 1049,
     },
     {
       name: 'Dash Rendar',
@@ -238,6 +241,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/dashrendar.png',
       loadout: 0,
       keywords: ['Droid', 'Freighter'],
+      ffg: 1050,
     },
   ],
 };

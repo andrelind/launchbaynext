@@ -170,6 +170,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/agenttierny.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/agenttierny.png',
       epic: true,
+      ffg: 928,
     },
   ],
   ffg: 73,

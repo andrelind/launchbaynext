@@ -67,6 +67,7 @@ const t: ShipType = {
         'pointdefensebattery-epicsl',
         'spectreofnayr-epicsl',
       ],
+      ffg: 1150,
     },
   ],
 };

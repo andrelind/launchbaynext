@@ -180,6 +180,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/gavynsykes.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/gavynsykes.png',
       epic: true,
+      ffg: 987,
     },
   ],
   ffg: 66,

@@ -248,6 +248,7 @@ const t: ShipType = {
       caption: 'Security Commander',
       keywords: ['TIE'],
       epic: true,
+      ffg: 929,
     },
   ],
   icon: '???',

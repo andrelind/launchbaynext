@@ -70,6 +70,7 @@ const t: ShipType = {
       engagement: 0,
       xws: 'orafdesyk-epicsl',
       caption: 'Hosnian Lament',
+      ffg: 1126,
     },
   ],
   ffg: 80,

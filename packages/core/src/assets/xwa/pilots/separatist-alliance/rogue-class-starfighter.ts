@@ -89,6 +89,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/cadbane-separatistalliance.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane-separatistalliance.png',
+      ffg: 1095,
     },
     {
       name: 'IG-101',
@@ -126,6 +127,7 @@ const t: ShipType = {
       epic: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ig101.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig101.png',
+      ffg: 1096,
     },
     {
       name: 'MagnaGuard Executioner',
@@ -164,6 +166,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/magnaguardexecutioner.png',
       caption: '',
+      ffg: 1097,
     },
     {
       name: 'MagnaGuard Protector',
@@ -203,6 +206,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/magnaguardprotector.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/magnaguardprotector.png',
+      ffg: 1098,
     },
     {
       name: 'IG-102',
@@ -240,6 +244,7 @@ const t: ShipType = {
       epic: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ig102.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig102.png',
+      ffg: 1099,
     },
     {
       name: 'IG-111',
@@ -277,6 +282,7 @@ const t: ShipType = {
       epic: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ig111.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/ig111.png',
+      ffg: 1100,
     },
     {
       name: 'Durge',
@@ -309,6 +315,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
+      ffg: 1101,
     },
   ],
   icon: '???',

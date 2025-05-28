@@ -65,6 +65,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/bokatankryze-galactic-republic.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bokatankryze-galactic-republic.png',
+      ffg: 985,
     },
     {
       xws: 'niteowlliberator',
@@ -91,6 +92,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/niteowlliberator.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/niteowlliberator.png',
+      ffg: 986,
     },
   ],
 };

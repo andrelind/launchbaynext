@@ -181,6 +181,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1052,
     },
     {
       name: 'Lando Calrissian',
@@ -212,6 +213,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1053,
     },
   ],
 };

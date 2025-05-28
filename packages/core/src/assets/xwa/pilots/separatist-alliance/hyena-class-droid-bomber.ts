@@ -211,6 +211,7 @@ const t: ShipType = {
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
+      ffg: 1076,
     },
     {
       name: 'DBS-404',
@@ -239,6 +240,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       loadout: 0,
+      ffg: 1077,
     },
     {
       name: 'Baktoid Prototype',
@@ -267,6 +269,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       loadout: 0,
+      ffg: 1078,
     },
   ],
   ffg: 64,

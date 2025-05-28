@@ -169,6 +169,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/takajamoreesa.png',
       epic: true,
+      ffg: 1051,
     },
     {
       name: 'Pammich Nerro Goode',
@@ -196,6 +197,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/pammichnerrogoode-evacuationofdqar.png',
       caption: "Evacuation of D'Qar",
       epic: true,
+      ffg: 1136,
     },
   ],
   ffg: 63,

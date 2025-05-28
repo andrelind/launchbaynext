@@ -188,6 +188,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       caption: 'Armed and Dangerous',
+      ffg: 1116,
     },
   ],
 };

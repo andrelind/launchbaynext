@@ -63,6 +63,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/chopper-gauntletfighter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/chopper-gauntletfighter.png',
+      ffg: 1022,
     },
     {
       xws: 'ezrabridger-gauntletfighter',
@@ -95,6 +96,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/ezrabridger-gauntletfighter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/ezrabridger-gauntletfighter.png',
+      ffg: 1023,
     },
     {
       xws: 'mandalorianresistancepilot',
@@ -121,6 +123,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/mandalorianresistancepilot.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianresistancepilot.png',
+      ffg: 1024,
     },
   ],
 };

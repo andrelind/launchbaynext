@@ -229,6 +229,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/hondoohnaka.png',
+      ffg: 1058,
     },
     {
       name: 'Boba Fett',
@@ -263,6 +264,7 @@ const t: ShipType = {
         },
       ],
       epic: true,
+      ffg: 1110,
     },
   ],
 };

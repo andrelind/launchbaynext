@@ -213,6 +213,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dextiree-battleofyavin.png',
       loadout: 0,
+      ffg: 1011,
     },
     {
       name: '“Dutch” Vander',
@@ -241,6 +242,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dutchvander.png',
       loadout: 0,
+      ffg: 1012,
     },
     {
       name: 'Hol Okand',
@@ -269,6 +271,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/holokand-battleofyavin.png',
       loadout: 0,
+      ffg: 1013,
     },
     {
       name: '“Pops” Krail',
@@ -293,6 +296,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/popskrail-battleofyavin.png',
       loadout: 0,
+      ffg: 1014,
     },
     {
       name: '“Pops” Krail',
@@ -320,6 +324,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/popskrail.png',
+      ffg: 1015,
     },
     {
       name: '“Dutch” Vander',
@@ -340,6 +345,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1016,
     },
     {
       name: 'Horton Salm',
@@ -360,6 +366,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1103,
     },
   ],
 };

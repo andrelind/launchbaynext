@@ -61,6 +61,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/captainhark.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/captainhark.png',
+      ffg: 930,
     },
     {
       xws: 'garsaxon',
@@ -89,6 +90,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/garsaxon.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/garsaxon.png',
+      ffg: 931,
     },
     {
       xws: 'imperialsupercommando',
@@ -116,6 +118,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/imperialsupercommando.png',
       caption: '',
+      ffg: 932,
     },
   ],
 };

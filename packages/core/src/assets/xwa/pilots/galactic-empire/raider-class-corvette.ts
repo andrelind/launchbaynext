@@ -73,6 +73,7 @@ const t: ShipType = {
       engagement: 0,
       xws: 'idenversio-epicsl',
       caption: 'Corvus',
+      ffg: 1122,
     },
   ],
   ffg: 79,

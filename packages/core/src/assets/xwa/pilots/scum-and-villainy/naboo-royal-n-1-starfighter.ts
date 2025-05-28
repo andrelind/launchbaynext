@@ -77,6 +77,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/themandalorian-armedanddangerous.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/themandalorian-armedanddangerous.png',
+      ffg: 1114,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Royal_Naboo_N-1_Starfighter.png',

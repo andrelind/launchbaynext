@@ -69,6 +69,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       keywords: ['Mandalorian'],
+      ffg: 1018,
     },
     {
       name: 'Bodica Venj',
@@ -88,6 +89,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/bodicavenj.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/bodicavenj.png',
+      ffg: 1019,
     },
     {
       name: 'Dirk Ullodin',
@@ -107,6 +109,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/dirkullodin.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/dirkullodin.png',
+      ffg: 1020,
     },
     {
       name: 'Clan Wren Volunteer',
@@ -127,6 +130,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/clanwrenvolunteer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/clanwrenvolunteer.png',
+      ffg: 1021,
     },
   ],
 };

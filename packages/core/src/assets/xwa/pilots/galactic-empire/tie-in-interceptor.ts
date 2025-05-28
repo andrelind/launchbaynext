@@ -267,6 +267,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-battleofyavin.png',
       epic: true,
       loadout: 0,
+      ffg: 939,
     },
     {
       xws: 'sigma4-battleofyavin',
@@ -292,6 +293,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma4.png',
       loadout: 0,
+      ffg: 940,
     },
     {
       xws: 'sigma5-battleofyavin',
@@ -317,6 +319,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma5.png',
       loadout: 0,
+      ffg: 941,
     },
     {
       xws: 'sigma6-battleofyavin',
@@ -342,6 +345,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma6.png',
       loadout: 0,
+      ffg: 942,
     },
     {
       xws: 'sigma7-battleofyavin',
@@ -367,6 +371,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sigma7.png',
       loadout: 0,
+      ffg: 943,
     },
     {
       name: 'Second Sister',
@@ -397,6 +402,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/secondsister.png',
+      ffg: 944,
     },
     {
       name: 'Sapphire 2',
@@ -426,6 +432,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 946,
     },
     {
       name: 'Soontir Fel',
@@ -456,6 +463,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/soontirfel-battleoverendor.png',
       loadout: 0,
+      ffg: 947,
     },
     {
       name: 'Maus Monare',
@@ -483,6 +491,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/mausmonare-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/mausmonare-battleoverendor.png',
+      ffg: 945,
     },
   ],
 };

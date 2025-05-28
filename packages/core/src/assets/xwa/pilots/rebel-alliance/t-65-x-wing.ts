@@ -329,6 +329,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1035,
     },
     {
       name: 'Garven Dreis',
@@ -353,6 +354,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1036,
     },
     {
       name: 'Jek Porkins',
@@ -381,6 +383,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1037,
     },
     {
       name: 'Luke Skywalker',
@@ -411,6 +414,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1038,
     },
     {
       name: 'Wedge Antilles',
@@ -440,6 +444,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1039,
     },
     {
       name: 'Corran Horn',
@@ -460,6 +465,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1040,
     },
     {
       name: 'Wes Janson',
@@ -486,6 +492,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1041,
     },
     {
       name: 'Luke Skywalker',
@@ -506,6 +513,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1042,
     },
     {
       name: 'Jek Porkins',
@@ -525,6 +533,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       loadout: 0,
+      ffg: 1043,
     },
     {
       name: 'Wedge Antilles',
@@ -567,6 +576,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-battleoverendor.png',
       loadout: 0,
+      ffg: 1045,
     },
     {
       name: 'Yendor',
@@ -609,6 +619,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/yendor-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/yendor-battleoverendor.png',
+      ffg: 1046,
     },
     {
       name: 'Kendy Idele',
@@ -652,6 +663,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/quickbuilds/kendyidele-battleoverendor.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/kendyidele-battleoverendor.png',
+      ffg: 1106,
     },
   ],
 };

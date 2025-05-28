@@ -41,12 +41,12 @@ const t: ShipType = {
       standard: false,
       extended: false,
       epic: true,
-      ffg: 949,
       text: 'Designed by the Colicoid Creation Nest and equipped with powerful tentacles and a massive drill to tear though the hull of even the toughest starships and fortifications, the Trident-class Assault Ship is a terrifying testament to the threat posed by the Separatist Alliance.',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/colicoiddestroyer.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/colicoiddestroyer.png',
+      ffg: 1091,
     },
     {
       name: 'Asajj Ventress',
@@ -64,6 +64,7 @@ const t: ShipType = {
       engagement: 0,
       xws: 'asajjventress-epicsl',
       caption: 'Trident',
+      ffg: 1149,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Trident.png',

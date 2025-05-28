@@ -228,6 +228,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       loadout: 0,
+      ffg: 1085,
     },
     {
       name: 'DIS-T81',
@@ -256,6 +257,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       loadout: 0,
+      ffg: 1086,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -284,6 +286,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       loadout: 0,
+      ffg: 1087,
     },
     {
       name: 'Volan Das',
@@ -322,6 +325,7 @@ const t: ShipType = {
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 1088,
     },
   ],
   ffg: 77,

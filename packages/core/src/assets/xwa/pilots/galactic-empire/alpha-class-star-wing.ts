@@ -151,6 +151,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
+      ffg: 1119,
     },
     {
       name: 'Major Vynder',
@@ -191,6 +192,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
+      ffg: 1120,
     },
   ],
 };

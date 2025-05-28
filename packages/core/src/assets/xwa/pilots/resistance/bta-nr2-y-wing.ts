@@ -68,6 +68,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/zoriibliss.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/zoriibliss.png',
+      ffg: 903,
     },
     {
       name: 'Teza Nasz',

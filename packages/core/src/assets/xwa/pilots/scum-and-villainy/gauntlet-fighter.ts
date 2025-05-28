@@ -64,6 +64,7 @@ const t: ShipType = {
       caption: 'Lord of the Shadow Collective',
       image: 'https://infinitearenas.com/xw2/images/pilots/maul.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/maul.png',
+      ffg: 1059,
     },
     {
       xws: 'rookkast',
@@ -91,6 +92,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/rookkast.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/rookkast.png',
+      ffg: 1060,
     },
     {
       xws: 'shadowcollectiveoperator',
@@ -117,6 +119,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/shadowcollectiveoperator.png',
       caption: '',
+      ffg: 1061,
     },
     {
       xws: 'bokatankryze-armedanddangerous',
@@ -142,6 +145,7 @@ const t: ShipType = {
       caption: 'Armed and Dangerous',
       ability:
         'While you perform an attack, if you are at range 0-1 of the defender, you may reroll 1 attack die.',
+      ffg: 1112,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_GauntletFighter.png',

@@ -193,7 +193,6 @@ const t: ShipType = {
       name: '“Odd Ball”',
       xws: 'oddball-siegeofcoruscant',
       cost: 5,
-      ffg: 523,
       caption: 'Siege of Coruscant',
       initiative: 5,
       limited: 1,
@@ -216,6 +215,7 @@ const t: ShipType = {
       ],
       standardLoadout: ['selfless', 'veterantailgunner', 'r4pastromech'],
       loadout: 0,
+      ffg: 971,
     },
     {
       name: '“Wolffe”',
@@ -241,6 +241,7 @@ const t: ShipType = {
         'q7astromech',
       ],
       loadout: 0,
+      ffg: 972,
     },
     {
       name: '“Jag”',
@@ -264,6 +265,7 @@ const t: ShipType = {
         'synchronizedconsole',
       ],
       loadout: 0,
+      ffg: 973,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Arc-170.png',

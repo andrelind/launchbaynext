@@ -285,6 +285,7 @@ const t: ShipType = {
       ],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 974,
     },
   ],
   ffg: 61,

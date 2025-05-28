@@ -80,6 +80,7 @@ const t: ShipType = {
       engagement: 0,
       xws: 'rikvirgilio-epicsl',
       caption: 'Blood Crow',
+      ffg: 1121,
     },
   ],
   ffg: 81,

@@ -321,6 +321,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 1129,
     },
     {
       name: 'Tallissan Lintra',
@@ -361,6 +362,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 1130,
     },
     {
       name: 'Zizi Tlo',
@@ -390,6 +392,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 1131,
     },
   ],
 };

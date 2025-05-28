@@ -226,6 +226,7 @@ const t: ShipType = {
         'ancillaryionweapons-siegeofcoruscant',
         'r2d2-republic',
       ],
+      ffg: 991,
     },
     {
       xws: 'obiwankenobi-siegeofcoruscant',
@@ -251,6 +252,7 @@ const t: ShipType = {
         'ancillaryionweapons-siegeofcoruscant',
         'r4p17-siegeofcoruscant',
       ],
+      ffg: 992,
     },
     {
       name: 'Shaak Ti',
@@ -277,6 +279,7 @@ const t: ShipType = {
         'ancillaryionweapons-siegeofcoruscant',
         'r4pastromech',
       ],
+      ffg: 993,
     },
     {
       name: 'Kit Fisto',
@@ -307,6 +310,7 @@ const t: ShipType = {
       ],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 994,
     },
   ],
   ffg: 76,

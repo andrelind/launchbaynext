@@ -1047,7 +1047,7 @@ const oldUpgrades = {
   '940': 'dt798',
 };
 
-type Manifest = {
+export type Manifest = {
   ships: { [s: string]: string };
   pilots: { [s: string]: string };
   upgrades: { [s: string]: string };

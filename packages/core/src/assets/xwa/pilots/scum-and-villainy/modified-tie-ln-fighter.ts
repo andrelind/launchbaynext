@@ -181,6 +181,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lapin.png',
+      ffg: 1062,
     },
   ],
 };

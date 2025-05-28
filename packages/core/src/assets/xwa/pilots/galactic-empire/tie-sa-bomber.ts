@@ -221,6 +221,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 962,
     },
     {
       name: 'Tomax Bren',
@@ -245,6 +246,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 963,
     },
     {
       name: '“Deathfire”',
@@ -270,6 +272,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 964,
     },
     {
       name: 'Captain Jonus',
@@ -292,6 +295,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 965,
     },
     {
       name: 'Tomax Bren',
@@ -316,6 +320,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 966,
     },
     {
       name: 'Major Rhymer',
@@ -344,6 +349,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       loadout: 0,
+      ffg: 967,
     },
     {
       name: 'Scimitar 1',
@@ -373,6 +379,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/scimitar1-battleoverendor.png',
       artwork: '',
+      ffg: 968,
     },
     {
       name: 'Scimitar 3',
@@ -402,6 +409,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/scimitar3-battleoverendor.png',
       artwork: '',
+      ffg: 969,
     },
   ],
 };

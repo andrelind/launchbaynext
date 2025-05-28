@@ -85,6 +85,7 @@ const t: ShipType = {
       engagement: 0,
       xws: 'cikatrovizago-epicsl',
       caption: 'Broken Horn',
+      ffg: 1107,
     },
   ],
   ffg: 82,

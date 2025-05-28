@@ -163,6 +163,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/countdooku.png',
       keywords: ['Dark Side', 'Sith'],
+      ffg: 1079,
     },
   ],
   ffg: 60,

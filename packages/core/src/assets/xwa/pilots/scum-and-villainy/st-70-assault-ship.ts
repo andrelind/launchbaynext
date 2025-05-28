@@ -66,6 +66,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/themandalorian.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/themandalorian.png',
+      ffg: 1063,
     },
     {
       xws: 'q90',
@@ -90,6 +91,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       image: 'https://infinitearenas.com/xw2/images/pilots/q90.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/q90.png',
+      ffg: 1064,
     },
     {
       xws: 'guildbountyhunter',
@@ -110,6 +112,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/guildbountyhunter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/guildbountyhunter.png',
+      ffg: 1065,
     },
     {
       xws: 'outerrimenforcer',
@@ -128,6 +131,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimenforcer.png',
       caption: '',
       text: 'Designed as a military craft, the ST-70 assault ship is a durable and versatile vessel. For someone travelling in the Outer Rim, this ship can be a transport, combat craft, and home all in one.',
+      ffg: 1066,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_ST-70.png',

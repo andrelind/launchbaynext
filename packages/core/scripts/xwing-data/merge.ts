@@ -2,13 +2,21 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import ora from 'ora';
 import prettier from 'prettier';
-//import { manifest } from '../../src/assets/manifest.ts';
+import { revManifest, manifest as theManifest } from '../../src/assets/manifest';
 // import assets from '../../src/assets';
 
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
 import { XWDPilot, XWDShip, XWDUpgrade } from './data2-types';
 import { asyncForEach, getFaction, getName } from './utils';
 // import { slotFromKey } from '../../src/helpers/convert';
+
+const getLatestPilotNumber = () => {
+  // Get largerst pilot number from manifest
+  const pilots = Object.keys(theManifest.pilots)
+    .flat()
+    .map(p => parseInt(p, 10));
+  return Math.max(...pilots, 0);
+};
 
 export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   const get = async (url: string) => {
@@ -17,6 +25,8 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
     }).then(r => r.json());
     return result;
   };
+
+  let pilotNumber = getLatestPilotNumber();
 
   const processShip = async (faction: Faction, shipData: XWDShip) => {
     let ship = assets.pilots[faction][shipData.xws];
@@ -75,6 +85,23 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.slots = pilot.slots;
       local.image = pilot.image;
       local.artwork = pilot.artwork;
+
+      if (!local.ffg) {
+        // Check manifest first
+        // @ts-expect-error
+        if (revManifest.pilots[local.xws]) {
+          // @ts-expect-error
+          local.ffg = parseInt(revManifest.pilots[local.xws]);
+        } else {
+          // If not found, assign a new pilot number
+          pilotNumber += 1;
+          local.ffg = pilotNumber;
+          // @ts-ignore
+          theManifest.pilots[pilotNumber.toString()] = local.xws;
+          // @ts-ignore
+          revManifest.pilots[local.xws] = pilotNumber.toString();
+        }
+      }
 
       return local;
     });
@@ -232,6 +259,8 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   manifest.pilots.forEach((p: any) => (increment += p.ships.length));
   increment += manifest.upgrades.length;
 
+  const pilotStart = getLatestPilotNumber();
+
   let i = 0;
   await asyncForEach(manifest.pilots, async (data: any) => {
     await asyncForEach(data.ships, async (shipUrl: any) => {
@@ -308,6 +337,42 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
     spinner.text = progress(i, increment);
     i++;
   });
+
+  console.log('\n\n**** Updating pilots and upgrades manifest ****\n', pilotStart);
+
+  // @ts-expect-error
+  theManifest.pilots = {};
+  // Loop all pilots and upgrades and update the manifest
+  Object.keys(assets.pilots).forEach(faction => {
+    Object.keys(assets.pilots[faction]).forEach(ship => {
+      assets.pilots[faction][ship].pilots.forEach((pilot: any) => {
+        // @ts-expect-error
+        if (!theManifest.pilots[pilot.xws]) {
+          // @ts-expect-error
+          theManifest.pilots[pilot.ffg] = pilot.xws;
+        }
+      });
+    });
+  });
+
+  // @ts-expect-error
+  revManifest.pilots = {};
+  // Create revManifest
+  Object.keys(theManifest.pilots).forEach(ffg => {
+    // @ts-expect-error
+    revManifest.pilots[theManifest.pilots[ffg]] = ffg;
+  });
+
+  // Write the manifest
+  const formattedManifest = await prettier.format(
+    `export const manifest = ${JSON.stringify(theManifest)};\n\nexport const revManifest = ${JSON.stringify(revManifest)}\n\n`,
+    {
+      trailingComma: 'all',
+      singleQuote: true,
+      parser: 'typescript',
+    },
+  );
+  fs.writeFileSync(`./src/assets/manifest.ts`, formattedManifest, 'utf8');
 
   spinner.succeed('Update from xwing-data2 complete!');
 };

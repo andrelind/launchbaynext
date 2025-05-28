@@ -73,6 +73,7 @@ const t: ShipType = {
         'turbolaserbattery-epicsl',
         'tantiveiv-epicsl-resistance',
       ],
+      ffg: 1125,
     },
   ],
 };

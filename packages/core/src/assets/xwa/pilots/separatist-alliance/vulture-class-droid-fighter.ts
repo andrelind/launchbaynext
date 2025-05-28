@@ -186,6 +186,7 @@ const t: ShipType = {
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
+      ffg: 1080,
     },
     {
       name: 'DFS-311',
@@ -210,6 +211,7 @@ const t: ShipType = {
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
+      ffg: 1081,
     },
     {
       name: 'Haor Chall Prototype',
@@ -234,6 +236,7 @@ const t: ShipType = {
         'contingencyprotocol-siegeofcoruscant',
         'strutlockoverride-siegeofcoruscant',
       ],
+      ffg: 1082,
     },
     {
       name: 'The Iron Assembler',
@@ -259,6 +262,7 @@ const t: ShipType = {
       slots: ['Missile', 'Modification', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 1083,
     },
     {
       name: 'Kelrodo-Ai Holdout',
@@ -291,6 +295,7 @@ const t: ShipType = {
       loadout: 14,
       slots: ['Talent', 'Missile', 'Modification'],
       epic: true,
+      ffg: 1084,
     },
   ],
   ffg: 59,

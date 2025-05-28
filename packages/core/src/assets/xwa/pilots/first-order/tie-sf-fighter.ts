@@ -238,6 +238,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1144,
     },
     {
       name: 'Theta 3',
@@ -278,6 +279,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1145,
     },
     {
       name: 'Theta 4',
@@ -313,6 +315,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1146,
     },
   ],
 };

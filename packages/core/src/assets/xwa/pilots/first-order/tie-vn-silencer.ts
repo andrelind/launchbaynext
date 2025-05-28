@@ -218,6 +218,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'TIE'],
       force: { value: 3, recovers: 1, side: ['dark'] },
       epic: true,
+      ffg: 1147,
     },
   ],
 };

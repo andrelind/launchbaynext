@@ -84,6 +84,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/cadbane.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cadbane.png',
+      ffg: 1069,
     },
     {
       name: 'Viktor Hel',
@@ -111,6 +112,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/viktorhel-rogueclassstarfighter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/viktorhel-rogueclassstarfighter.png',
+      ffg: 1070,
     },
     {
       name: 'Nom Lumb',
@@ -139,6 +141,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/nomlumb-rogueclassstarfighter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/nomlumb-rogueclassstarfighter.png',
+      ffg: 1071,
     },
     {
       name: 'Outer Rim Hunter',
@@ -156,6 +159,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimhunter.png',
       caption: '',
+      ffg: 1072,
     },
     {
       name: 'Durge',
@@ -185,6 +189,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/durge.png',
+      ffg: 1073,
     },
     {
       name: 'Cad Bane',
@@ -233,6 +238,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       epic: true,
+      ffg: 1115,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_Rogue.png',

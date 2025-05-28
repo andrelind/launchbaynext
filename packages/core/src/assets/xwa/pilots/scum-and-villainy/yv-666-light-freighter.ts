@@ -174,6 +174,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/doctoraphra.png',
+      ffg: 1067,
     },
     {
       name: 'Bossk',
@@ -202,6 +203,7 @@ const t: ShipType = {
         'houndstooth-armedanddangerous',
       ],
       epic: true,
+      ffg: 1118,
     },
   ],
 };

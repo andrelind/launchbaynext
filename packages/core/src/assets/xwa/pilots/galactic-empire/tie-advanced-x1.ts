@@ -202,6 +202,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader.png',
       loadout: 0,
+      ffg: 933,
     },
     {
       name: 'Juno Eclipse',
@@ -225,6 +226,7 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/junoeclipse.png',
+      ffg: 934,
     },
     {
       name: 'Darth Vader',
@@ -252,6 +254,7 @@ const t: ShipType = {
       loadout: 0,
       ability:
         'After you perform an action, you may spend 1 [Force] to perform an action.',
+      ffg: 935,
     },
     {
       name: 'Maarek Stele',
@@ -272,6 +275,7 @@ const t: ShipType = {
       loadout: 0,
       ability:
         'While you perform an attack, if the defender would be dealt a faceup damage card, instead draw 3 damage cards, choose 1, and discard the rest.',
+      ffg: 936,
     },
   ],
 };

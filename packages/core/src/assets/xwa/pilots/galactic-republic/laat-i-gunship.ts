@@ -185,6 +185,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 995,
     },
   ],
   ffg: 74,

@@ -451,6 +451,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/venisadoza.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1054,
     },
     {
       name: 'Zay Versio',
@@ -481,6 +482,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/zayversio.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1055,
     },
     {
       name: 'C’ai Threnalli',
@@ -524,6 +526,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1132,
     },
     {
       name: 'Jaycris Tubbs',
@@ -565,6 +568,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1133,
     },
     {
       name: 'Poe Dameron',
@@ -606,6 +610,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1134,
     },
     {
       name: 'Stomeroni Starck',
@@ -648,6 +653,7 @@ const t: ShipType = {
       extended: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1135,
     },
   ],
 };

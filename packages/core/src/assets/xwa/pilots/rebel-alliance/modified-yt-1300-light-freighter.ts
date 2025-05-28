@@ -211,6 +211,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/hansolo-battleofyavin.png',
       loadout: 0,
+      ffg: 1025,
     },
     {
       name: 'Lando Calrissian',
@@ -254,6 +255,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-battleoverendor.png',
       loadout: 0,
+      ffg: 1026,
     },
   ],
 };

@@ -71,6 +71,7 @@ const t: ShipType = {
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/leebo.png',
       loadout: 0,
       keywords: ['Droid', 'Freighter'],
+      ffg: 1074,
     },
     {
       name: 'Dash Rendar',
@@ -101,6 +102,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/dashrendar.png',
       loadout: 0,
       keywords: ['Droid', 'Freighter'],
+      ffg: 1075,
     },
   ],
 };

@@ -58,6 +58,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/killer.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/killer.png',
+      ffg: 998,
     },
     {
       name: '“Drift”',
@@ -76,6 +77,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       image: 'https://infinitearenas.com/xw2/images/pilots/drift.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/drift.png',
+      ffg: 999,
     },
     {
       name: '“Boost”',
@@ -94,6 +96,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       image: 'https://infinitearenas.com/xw2/images/pilots/boost.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/boost.png',
+      ffg: 1000,
     },
     {
       name: '“Stub”',
@@ -112,6 +115,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       image: 'https://infinitearenas.com/xw2/images/pilots/stub.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/stub.png',
+      ffg: 1001,
     },
     {
       name: '“Knack”',
@@ -130,6 +134,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/knack.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/knack.png',
       keywords: ['Clone'],
+      ffg: 1002,
     },
     {
       name: '“Hawk”',
@@ -150,6 +155,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/hawk-clonez95headhunter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/hawk-clonez95headhunter.png',
+      ffg: 1003,
     },
     {
       name: '7th Sky Corps Pilot',
@@ -168,6 +174,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/7thskycorpspilot.png',
       caption: '',
       keywords: ['Clone'],
+      ffg: 1004,
     },
     {
       name: 'Reaper Squadron Scout',
@@ -187,6 +194,7 @@ const t: ShipType = {
       caption: '',
       keywords: ['Clone'],
       text: "Despite the Clone Z-95's unglamorous reputation, Reaper Squadron has become legendary for their skill with this fighter in far-flung engagements, such as the skirmish over Castilon.",
+      ffg: 1005,
     },
     {
       name: '“Slider”',
@@ -207,6 +215,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/slider.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/slider.png',
+      ffg: 1006,
     },
     {
       name: '“Warthog”',
@@ -227,6 +236,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/warthog-clonez95headhunter.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/warthog-clonez95headhunter.png',
+      ffg: 1007,
     },
   ],
   icon: '???',

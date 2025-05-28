@@ -206,6 +206,7 @@ const t: ShipType = {
         { type: 'hull', value: 6 },
       ],
       standardLoadout: ['diamondboronmissiles', 'munitionsfailsafe'],
+      ffg: 988,
     },
     {
       name: '“Axe”',
@@ -234,6 +235,7 @@ const t: ShipType = {
         { type: 'hull', value: 6 },
       ],
       standardLoadout: ['deadeyeshot', 'barragerockets'],
+      ffg: 989,
     },
     {
       name: '“Slammer”',
@@ -254,6 +256,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/slammer.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 990,
     },
   ],
   ffg: 62,
