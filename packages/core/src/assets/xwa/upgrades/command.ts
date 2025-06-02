@@ -800,6 +800,34 @@ const t: UpgradeBase[] = [
       { factions: ['Separatist Alliance'] },
     ],
   },
+  {
+    limited: 1,
+    xws: 'sabinewren-command',
+    standard: true,
+    extended: false,
+    epic: true,
+    sides: [
+      {
+        ability:
+          "Setup: Before placing forces, assign the <span class='keyword'>Trials of the Darksaber</span> condition to yourself.<br>While you perform a [Coordinate] action, you may coordinate 1 additional friendly ship.",
+        title: 'Sabine Wren',
+        type: 'Command',
+        slots: ['Command', 'Crew'],
+        grants: [
+          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
+        ],
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/sabinewren-command.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/sabinewren-command.png',
+      },
+    ],
+    cost: { value: '5' },
+    restrictions: [
+      { factions: ['rebelalliance'] },
+      { baseSizes: ['Small', 'Medium', 'Large'] },
+    ],
+  },
 ];
 
 export default t;

@@ -188,7 +188,7 @@ const t: ShipType = {
       caption: '',
     },
   ],
-  icon: '???',
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_TIEWhisper.png',
 };
 
 export default t;

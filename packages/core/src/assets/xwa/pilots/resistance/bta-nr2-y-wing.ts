@@ -330,7 +330,7 @@ const t: ShipType = {
       caption: '',
     },
   ],
-  icon: '???',
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Y-wing-bta-nr2.png',
 };
 
 export default t;

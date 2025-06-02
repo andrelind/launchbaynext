@@ -95,6 +95,7 @@ const t: ShipType = {
       ffg: 986,
     },
   ],
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_GauntletFighter.png',
 };
 
 export default t;

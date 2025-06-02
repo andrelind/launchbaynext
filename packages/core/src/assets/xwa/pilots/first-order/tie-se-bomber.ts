@@ -251,7 +251,7 @@ const t: ShipType = {
       ffg: 929,
     },
   ],
-  icon: '???',
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_TIEseBomber.png',
 };
 
 export default t;

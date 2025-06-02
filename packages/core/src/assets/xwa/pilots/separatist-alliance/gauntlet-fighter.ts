@@ -122,6 +122,7 @@ const t: ShipType = {
       ffg: 1094,
     },
   ],
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_GauntletFighter.png',
 };
 
 export default t;

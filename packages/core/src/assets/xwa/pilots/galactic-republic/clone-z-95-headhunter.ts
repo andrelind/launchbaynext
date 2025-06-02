@@ -239,7 +239,7 @@ const t: ShipType = {
       ffg: 1007,
     },
   ],
-  icon: '???',
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_CloneZ95Headhunter.png',
 };
 
 export default t;

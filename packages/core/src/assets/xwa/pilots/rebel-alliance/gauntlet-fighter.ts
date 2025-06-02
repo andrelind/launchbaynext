@@ -126,6 +126,7 @@ const t: ShipType = {
       ffg: 1024,
     },
   ],
+  icon: 'https://infinitearenas.com/xw2/images/shipicons/rebel-alliance/I_GauntletFighter.png',
 };
 
 export default t;
