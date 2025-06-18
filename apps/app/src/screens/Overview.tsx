@@ -19,7 +19,6 @@ import { systemStore } from '../stores/system';
 import { blue } from '../theme';
 import { OverviewStackParams } from '../types/navigation';
 
-
 type Props = NativeStackScreenProps<OverviewStackParams, 'Overview'>;
 
 export const OverviewScreen: FC<Props> = ({ navigation }) => {
@@ -27,7 +26,17 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
 
   const { user } = systemStore((s) => ({ user: s.user }));
 
-  const { data, } = useSwr('stats', () => trpc.stats.overview.query());
+  const { data, } = useSwr('stats', async () => {
+    try {
+      // Fetch the overview stats from the TRPC endpoint
+      const res = await trpc.stats.overview.query()
+      console.log('Overview stats:', res);
+      return res;
+    } catch (error) {
+      console.error('Error fetching overview stats:', error);
+      return { xwa: 0, legacy: 0, amg: 0 }; // Return default values in case of error
+    }
+  });
   const total = (data?.xwa || 0) + (data?.legacy || 0) + (data?.amg || 0) || 1;
 
   useLayoutEffect(() => {
@@ -108,7 +117,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
 
           <View>
             <Text style={tw`text-white font-semibold text-center`}>Total # of lists {total}</Text>
-            <Text style={tw`text-white text-center mx-3`}>These figures are based on active lists for logged in users since June 2024</Text>
+            <Text style={tw`text-white text-center mx-3`}>These figures are based on new and updated lists for logged in users last 30 days</Text>
           </View>
         </View>
 
