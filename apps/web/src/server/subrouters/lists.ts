@@ -117,10 +117,12 @@ export const listRouter = router({
           .update(Lists)
           .set({
             Xws: xws,
+            // @ts-expect-error
             UpdatedUtc: new Date().toISOString(),
           })
           .where(eq(Lists.Id, list.Id));
       } else {
+        // @ts-expect-error
         await db.insert(Lists).values({
           Id: xws.vendor.lbn.uid,
           UserId: ctx.user.id,
