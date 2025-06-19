@@ -337,10 +337,10 @@ const shipMap: { [s: string]: string } = {
   yt2400lightfreighter: '\u006f',
   yv666lightfreighter: '\u0074',
   z95af4headhunter: '\u007a',
-  clonez95headhunter: '}',
-  rogueclassstarfighter: '|',
-  st70assaultship: "'",
-  gauntletfighter: '6',
+  clonez95headhunter: '¡',
+  rogueclassstarfighter: '~',
+  st70assaultship: '}',
+  gauntletfighter: '|',
 
   // Additional
   cr90corelliancorvette: '2',
