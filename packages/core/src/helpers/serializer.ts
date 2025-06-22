@@ -111,7 +111,7 @@ export const deserialize = (o: string, uid?: string): XWS => {
   // @ts-expect-error
   const fa = keyFromFaction(manifest.factions[faction]);
   const fo = parseInt(format, 10) === 1 ? 'Standard' : 'Extended';
-  const rs = ruleset === '0' ? 'amg' : ruleset === '1' ? 'xwa' : 'legacy';
+  const rs = parseInt(ruleset) === 0 ? 'amg' : parseInt(ruleset) === 1 ? 'xwa' : 'legacy';
 
   const getPilots = () => {
     if (Array.isArray(pilots[0]) || pilots.length === 0) {
@@ -222,7 +222,7 @@ export const exportAsXws = (xws: any) => {
     lbn: {
       builder: 'Launch Bay Next',
       builder_url: 'https://launchbaynext.app',
-      link: `https://launchbaynext.app/print?lbx=${link}`,
+      link: `https://launchbaynext.app/?lbx=${link}`,
     },
   };
 

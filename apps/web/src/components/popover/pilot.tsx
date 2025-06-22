@@ -5,7 +5,7 @@ import {
   pilotFormatWarning,
 } from 'lbn-core/src/helpers/unique';
 import type { FactionKey, Format, Pilot, ShipType } from 'lbn-core/src/types';
-import { type FC, useState } from 'react';
+import { type FC, useEffect, useState } from 'react';
 import { factionFromKey } from '../../helpers/convert';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
 import { pilotOptions } from '../../helpers/select';
@@ -48,6 +48,10 @@ export const PilotPopover: FC<Props> = ({
   const warning =
     selected &&
     limitedWarning(selected?.xws, selected?.limited, usedXws || [], false);
+
+  useEffect(() => {
+    setSelected(value);
+  }, [value]);
 
   return (
     <div className="relative">

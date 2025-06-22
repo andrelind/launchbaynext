@@ -27,6 +27,7 @@ export const SlimPilot: FC<Props> = ({
   hideAbilities,
   showImage,
 }) => {
+
   return (
     <li className="flex flex-col justify-between text-xs sm:text-sm">
       {showImage && pilot?.artwork && (

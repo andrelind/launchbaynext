@@ -33,6 +33,7 @@ type Props = {
   setTags: (t: string[]) => void;
   onChangeName: (name: string) => void;
   onChangeFormat: () => void;
+  onChangeRuleset: () => void;
   onPrint: () => void;
   actions?: { title: string; className?: string; onClick: () => void }[];
   children: React.ReactNode;
@@ -43,6 +44,7 @@ export const Layout: FC<Props> = ({
   setTags,
   onChangeName,
   onChangeFormat,
+  onChangeRuleset,
   onPrint,
   actions,
   children,
@@ -51,8 +53,6 @@ export const Layout: FC<Props> = ({
 
   const cookies = useCookies()
   const isLoggedIn = cookies.get('x-jwt') !== undefined;
-
-  console.log('isLoggedIn', isLoggedIn);
 
   const [showAbout, setShowAbout] = useState(false);
   const [showActions, setShowActions] = useState(false);
@@ -397,7 +397,12 @@ export const Layout: FC<Props> = ({
                   />
                 </h2>
 
-                <div className="flex text-sm sm:text-lg font-normal -mt-1 sm:-mt-2">
+                <div className="flex text-sm sm:text-lg font-normal items-center">
+                  <button
+                    onClick={onChangeRuleset}
+                    className="cursor-pointer uppercase mr-3 inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-lbn-500 hover:bg-lbn-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lbn-400">
+                    {xws.ruleset}
+                  </button>
                   <FormatComponent
                     format={xws.format}
                     onClick={onChangeFormat}

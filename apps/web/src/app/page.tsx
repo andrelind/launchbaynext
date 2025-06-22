@@ -3,8 +3,9 @@
 import { DocumentDuplicateIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
 import { exportAsTTS, exportAsText } from 'lbn-core/src/helpers/import+export';
-import { loadShip2, loadUpgrades2 } from 'lbn-core/src/helpers/loading';
+import { loadShip2, loadUpgrades2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
 import { deserialize, exportAsXws, serialize } from 'lbn-core/src/helpers/serializer';
+import { bumpPatch } from 'lbn-core/src/helpers/versioning';
 import type { FactionKey, Ship, ShipType, Slot, Upgrade, XWS } from 'lbn-core/src/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -40,8 +41,6 @@ export type DataItem = {
   slotOptions?: Slot[];
 };
 
-type Props = {};
-
 const MainPage = () => {
   const queryLbx = useSearchParams()?.get('lbx');
   const queryFaction = useSearchParams()?.get('faction');
@@ -54,7 +53,7 @@ const MainPage = () => {
       description: '',
       faction: (queryFaction as FactionKey) || 'rebelalliance',
       format: 'Standard',
-      ruleset: 'amg',
+      ruleset: 'xwa',
       pilots: [],
       points: 0,
       version: '2.0.0',
@@ -136,6 +135,20 @@ const MainPage = () => {
         setXws({ ...xws });
       }}
       onChangeFormat={() => setXws(toggleFormat(xws))}
+      onChangeRuleset={() => {
+        const squad: XWS = JSON.parse(JSON.stringify(xws));
+
+        squad.ruleset = xws.ruleset === 'xwa' ? 'amg' : xws.ruleset === 'legacy' ? 'xwa' : 'legacy';
+        squad.pilots.forEach((p) => {
+          const ship = loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: squad.ruleset });
+          p.points = ship.pointsWithUpgrades;
+        });
+        squad.points = pointsForSquadron2(squad);
+        squad.version = bumpPatch(squad.version || '2.0.0');
+
+        console.log('Set xws');
+        setXws({ ...squad });
+      }}
       onPrint={() =>
         xws && window.open(`/print?lbx=${serialize(xws)}`, '_blank')
       }
