@@ -1,4 +1,4 @@
-import { subMonths } from 'date-fns';
+import { format, subMonths } from 'date-fns';
 import { and, gt, isNull, sql } from 'drizzle-orm';
 import { db } from '../db';
 import { Lists } from '../drizzle/schema';
@@ -6,7 +6,7 @@ import { publicProcedure, router } from '../trpc';
 
 export const statsRouter = router({
   overview: publicProcedure.query(async ({ ctx }) => {
-    const since = subMonths(new Date(), 1);
+    const since = format(subMonths(new Date(), 1), 'yyyy-MM-dd');
 
     const xwa = await db
       .select({ count: sql<number>`COUNT(*)` })

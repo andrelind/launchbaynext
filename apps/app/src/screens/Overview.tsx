@@ -3,6 +3,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import * as Linking from 'expo-linking';
 import React, { FC, useLayoutEffect } from 'react';
 import {
+  RefreshControl,
   ScrollView,
   Text,
   TouchableOpacity,
@@ -26,7 +27,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
 
   const { user } = systemStore((s) => ({ user: s.user }));
 
-  const { data, } = useSwr('stats', async () => {
+  const { data, isValidating, mutate } = useSwr('stats', async () => {
     try {
       // Fetch the overview stats from the TRPC endpoint
       const res = await trpc.stats.overview.query()
@@ -70,7 +71,12 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
 
   return (
     <View style={tw`flex-1`}>
-      <ScrollView {...captureScroll} contentContainerStyle={tw`gap-y-10 py-4`}>
+      <ScrollView
+        {...captureScroll}
+        contentContainerStyle={tw`gap-y-10 py-4`}
+        refreshControl={<RefreshControl tintColor={tw.color('zinc-300')} refreshing={isValidating} onRefresh={() => {
+          mutate(); // Re-fetch the data when the user pulls to refresh
+        }} />}>
 
 
         {user && (
