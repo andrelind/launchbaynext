@@ -83,6 +83,6 @@ export const Lists = pgTable('Lists', {
     .references(() => Users.Id),
   Xws: jsonb('Xws').notNull(),
   CreatedUtc: timestamp('CreatedUtc', { mode: 'string' }).notNull(),
-  UpdatedUtc: timestamp('UpdatedUtc').notNull(),
+  UpdatedUtc: timestamp('UpdatedUtc', { mode: 'string' }).notNull(),
   DeletedUtc: timestamp('DeletedUtc', { mode: 'string' }),
 });

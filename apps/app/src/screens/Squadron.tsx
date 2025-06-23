@@ -116,8 +116,6 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
 
   return (
     <View style={tw`flex-1`}>
-      {renderHeader()}
-
       <DraggableFlatList
         style={tw`h-full`}
         contentContainerStyle={tw`px-2 py-2 pb-20`}
