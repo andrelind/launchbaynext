@@ -11,8 +11,6 @@ import { trpc } from '../helpers/trpc';
 import { systemStore } from '../stores/system';
 import { OverviewStackParams } from '../types/navigation';
 
-const CELL_COUNT = 6;
-
 type Props = NativeStackScreenProps<OverviewStackParams, 'Account'>;
 
 export const AccountScreen: FC<Props> = ({ navigation }) => {

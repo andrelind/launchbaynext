@@ -3,7 +3,8 @@ import superjson from 'superjson';
 import { type AppRouter } from '../../../web/src/server/index';
 import { systemStore } from '../stores/system';
 
-export const TRPC_URL = `${process.env.EXPO_PUBLIC_SERVER_URL || 'https://launchbaynext.app'}/api/trpc`;
+// export const TRPC_URL = `${process.env.EXPO_PUBLIC_SERVER_URL || 'https://launchbaynext.app'}/api/trpc`;
+export const TRPC_URL = 'https://launchbaynext.app/api/trpc';
 console.log(TRPC_URL);
 
 export const trpc = createTRPCProxyClient<AppRouter>({
