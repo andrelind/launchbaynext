@@ -69,7 +69,8 @@ const t: ShipType = {
       limited: 1,
       cost: 5,
       xws: 'quickdraw',
-      ability: 'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
+      ability:
+        'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
       slots: ['Talent', 'Talent', 'Sensor', 'Modification', 'Gunner', 'Tech'],
       charges: { value: 1, recovers: 1 },
       ffg: 406,
@@ -79,14 +80,15 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/quickdraw.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/quickdraw.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/quickdraw.png',
     },
     {
       name: '“Backdraft”',
       caption: 'Fiery Fanatic',
       initiative: 4,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'backdraft',
       ability:
         'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
@@ -98,13 +100,14 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/backdraft.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/backdraft.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/backdraft.png',
     },
     {
       name: 'Omega Squadron Expert',
       initiative: 3,
       limited: 0,
-      cost: 5,
+      cost: 4,
       xws: 'omegasquadronexpert',
       text: 'The TIE/sf is a versatile starfighter that carries specialized armament and experimental systems for long-range operations by First Order Special Forces.',
       slots: ['Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
@@ -114,8 +117,10 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 13,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronexpert.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/omegasquadronexpert.png',
       caption: '',
     },
     {
@@ -132,8 +137,10 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 11,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/zetasquadronsurvivor.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronsurvivor.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/zetasquadronsurvivor.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zetasquadronsurvivor.png',
       caption: '',
     },
     {
@@ -142,7 +149,15 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'lieutenantlehuse',
-      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Missile', 'Gunner', 'Modification'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Tech',
+        'Missile',
+        'Missile',
+        'Gunner',
+        'Modification',
+      ],
       ffg: 641,
       standard: true,
       epic: true,
@@ -152,8 +167,10 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 6,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse.png',
     },
     {
       name: 'Captain Phasma',
@@ -161,7 +178,15 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'captainphasma',
-      slots: ['Talent', 'Sensor', 'Tech', 'Missile', 'Gunner', 'Modification', 'Modification'],
+      slots: [
+        'Talent',
+        'Sensor',
+        'Tech',
+        'Missile',
+        'Gunner',
+        'Modification',
+        'Modification',
+      ],
       standard: true,
       epic: true,
       ffg: 642,
@@ -172,7 +197,8 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainphasma.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/captainphasma.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/captainphasma.png',
     },
     {
       name: 'Lieutenant LeHuse',
@@ -204,8 +230,10 @@ const t: ShipType = {
         'concussionmissiles',
         'firstorderordnancetech-evacuationofdqar',
       ],
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/lieutenantlehuse-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/lieutenantlehuse-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantlehuse-evacuationofdqar.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -238,9 +266,15 @@ const t: ShipType = {
           linked: { difficulty: 'White', type: 'Lock' },
         },
       ],
-      standardLoadout: ['seekermissiles-swz103', 'passivesensors', 'firstorderordnancetech-evacuationofdqar'],
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta3-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theta3-evacuationofdqar.png',
+      standardLoadout: [
+        'seekermissiles-swz103',
+        'passivesensors',
+        'firstorderordnancetech-evacuationofdqar',
+      ],
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta3-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/theta3-evacuationofdqar.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],
@@ -267,10 +301,16 @@ const t: ShipType = {
         { difficulty: 'White', type: 'Lock' },
         { difficulty: 'White', type: 'Barrel Roll' },
       ],
-      standardLoadout: ['determination-evacuationofdqar', 'barragerockets', 'patternanalyzer'],
+      standardLoadout: [
+        'determination-evacuationofdqar',
+        'barragerockets',
+        'patternanalyzer',
+      ],
       charges: { value: 1, recovers: 1 },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta4-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theta4-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/theta4-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/theta4-evacuationofdqar.png',
       standard: true,
       extended: true,
       keywords: ['TIE'],

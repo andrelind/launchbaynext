@@ -124,7 +124,7 @@ const t: ShipType = {
       xws: 'dgs286',
       name: 'DGS-286',
       caption: 'Ambush Protocols',
-      cost: 3,
+      cost: 4,
       initiative: 3,
       limited: 1,
       ability:

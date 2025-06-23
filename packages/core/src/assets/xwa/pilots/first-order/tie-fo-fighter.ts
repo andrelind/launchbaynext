@@ -447,7 +447,7 @@ const t: ShipType = {
       caption: "Evacuation of D'Qar",
       initiative: 4,
       limited: 1,
-      cost: 4,
+      cost: 3,
       loadout: 0,
       xws: 'scorch-evacuationofdqar',
       ability:

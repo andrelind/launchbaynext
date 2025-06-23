@@ -67,7 +67,7 @@ const t: ShipType = {
     {
       name: '“Jag”',
       xws: 'jag',
-      cost: 5,
+      cost: 4,
       slots: [
         'Torpedo',
         'Astromech',
@@ -246,7 +246,7 @@ const t: ShipType = {
     {
       name: '“Jag”',
       xws: 'jag-siegeofcoruscant',
-      cost: 4,
+      cost: 5,
       caption: 'Siege of Coruscant',
       initiative: 3,
       limited: 1,

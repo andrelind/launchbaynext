@@ -95,7 +95,7 @@ const t: ShipType = {
         'While you perform an attack at attack range 1, you must roll 1 additional die. After the attack hits, suffer 1 [Critical Hit] damage.',
       standard: true,
       epic: true,
-      cost: 3,
+      cost: 4,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
       ffg: 563,
       caption: 'Preservation Protocol Not Found',
@@ -218,7 +218,7 @@ const t: ShipType = {
       caption: 'Siege of Coruscant',
       initiative: 4,
       limited: 1,
-      cost: 4,
+      cost: 3,
       xws: 'dbs404-siegeofcoruscant',
       ability:
         'While you perform an attack at range 1, you must roll 1 additional die. After the attack hits, suffer 1 [Critical Hit] damage.',

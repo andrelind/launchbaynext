@@ -176,7 +176,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
-      cost: 6,
+      cost: 5,
       loadout: 12,
       slots: [
         'Force Power',

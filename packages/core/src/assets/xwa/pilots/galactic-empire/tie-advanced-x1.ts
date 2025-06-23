@@ -209,7 +209,7 @@ const t: ShipType = {
       caption: "Corulag's Finest",
       initiative: 5,
       limited: 1,
-      cost: 4,
+      cost: 5,
       loadout: 9,
       xws: 'junoeclipse',
       ability:

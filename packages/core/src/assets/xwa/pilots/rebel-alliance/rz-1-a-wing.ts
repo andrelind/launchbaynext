@@ -198,7 +198,7 @@ const t: ShipType = {
       xws: 'ahsokatano-rz1awing',
       name: 'Ahsoka Tano',
       caption: 'Fulcrum',
-      cost: 5,
+      cost: 4,
       initiative: 5,
       limited: 1,
       ability:

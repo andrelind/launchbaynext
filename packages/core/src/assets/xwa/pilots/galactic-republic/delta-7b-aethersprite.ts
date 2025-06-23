@@ -125,7 +125,7 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: false,
       epic: true,
-      cost: 6,
+      cost: 5,
       slots: ['Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       loadout: 6,
@@ -168,7 +168,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
-      cost: 7,
+      cost: 6,
       loadout: 15,
       slots: [
         'Force Power',

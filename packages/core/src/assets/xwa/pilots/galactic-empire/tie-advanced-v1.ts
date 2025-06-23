@@ -75,7 +75,7 @@ const t: ShipType = {
       caption: 'Master of the Inquisitorious',
       initiative: 5,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'grandinquisitor',
       ability:
         'While you defend at attack range 1, you may spend 1 [Force] to prevent the range 1 bonus. While you perform an attack against a defender at attack range 2-3, you may spend 1 [Force] to apply the range 1 bonus.',

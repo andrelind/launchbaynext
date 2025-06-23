@@ -137,7 +137,7 @@ const t: ShipType = {
       xws: 'starkillerbasepilot',
       initiative: 2,
       limited: 0,
-      cost: 7,
+      cost: 6,
       text: "The Upsilon-class command shuttle serves as a base of operations for many of the First Order's senior officers and agents. Its powerful sensors and communications equipment allow them to orchestrate the spread of terror across the galaxy.",
       slots: [
         'Sensor',

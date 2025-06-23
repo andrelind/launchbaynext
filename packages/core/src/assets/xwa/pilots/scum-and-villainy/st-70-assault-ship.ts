@@ -46,7 +46,7 @@ const t: ShipType = {
       caption: 'Din Djarin',
       initiative: 5,
       limited: 1,
-      cost: 7,
+      cost: 6,
       loadout: 25,
       ability:
         'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [Focus] result.',

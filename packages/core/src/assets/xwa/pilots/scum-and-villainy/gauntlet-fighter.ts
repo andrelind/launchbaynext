@@ -97,7 +97,7 @@ const t: ShipType = {
     {
       xws: 'shadowcollectiveoperator',
       name: 'Shadow Collective Operator',
-      cost: 7,
+      cost: 6,
       loadout: 20,
       initiative: 1,
       limited: 0,

@@ -71,7 +71,7 @@ const t: ShipType = {
       xws: 'jarekyeager',
       ability:
         'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
-      cost: 4,
+      cost: 3,
       slots: [
         'Talent',
         'Talent',

@@ -146,7 +146,7 @@ const t: ShipType = {
       initiative: 2,
       limited: 1,
       standard: true,
-      cost: 4,
+      cost: 3,
       slots: [
         'Tech',
         'Talent',

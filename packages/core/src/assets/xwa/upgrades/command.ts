@@ -12,8 +12,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         ffg: 724,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/admiralozzel.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/admiralozzel.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/admiralozzel.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/admiralozzel.png',
       },
     ],
     cost: { value: 6 },
@@ -33,14 +35,19 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 732,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/agentoftheempire.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/agentoftheempire.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/agentoftheempire.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/agentoftheempire.png',
       },
     ],
     cost: { value: 4 },
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['tieadvancedx1', 'tieadvancedv1'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['tieadvancedx1', 'tieadvancedv1'] },
+    ],
     extended: false,
   },
   {
@@ -54,14 +61,18 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         ffg: 725,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/azmorigan.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/azmorigan.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/azmorigan.png',
       },
     ],
     cost: { value: 4 },
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Scum and Villainy'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { baseSizes: ['Huge'] },
+    ],
     extended: false,
   },
   {
@@ -76,8 +87,10 @@ const t: UpgradeBase[] = [
         slots: ['Command', 'Crew'],
         charges: { value: 4, recovers: 0 },
         ffg: 726,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/captainneeda.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/captainneeda.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/captainneeda.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/captainneeda.png',
       },
     ],
     cost: { value: 8 },
@@ -98,8 +111,10 @@ const t: UpgradeBase[] = [
         slots: ['Command', 'Crew'],
         grants: [{ action: { type: 'Evade', difficulty: 'Red' }, value: 1 }],
         ffg: 728,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/carlistrieekan.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/carlistrieekan.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/carlistrieekan.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/carlistrieekan.png',
       },
     ],
     cost: { value: 4 },
@@ -119,14 +134,19 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 733,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/firstorderelite.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/firstorderelite.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/firstorderelite.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/firstorderelite.png',
       },
     ],
     cost: { value: 4 },
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['First Order'] }, { chassis: ['tiesffighter', 'tievnsilencer'] }],
+    restrictions: [
+      { factions: ['First Order'] },
+      { chassis: ['tiesffighter', 'tievnsilencer'] },
+    ],
     extended: false,
   },
   {
@@ -134,12 +154,14 @@ const t: UpgradeBase[] = [
     xws: 'jandodonna',
     sides: [
       {
-        ability: 'Friendly ships at range 0-3 can spend your focus and evade tokens.',
+        ability:
+          'Friendly ships at range 0-3 can spend your focus and evade tokens.',
         title: 'Jan Dodonna',
         type: 'Command',
         slots: ['Command', 'Crew'],
         ffg: 729,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/jandodonna.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/jandodonna.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/jandodonna.png',
       },
     ],
@@ -160,8 +182,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Crew'],
         ffg: 730,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/raymusantilles.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/raymusantilles.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/raymusantilles.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/raymusantilles.png',
       },
     ],
     cost: { value: 8 },
@@ -175,13 +199,16 @@ const t: UpgradeBase[] = [
     xws: 'stalwartcaptain',
     sides: [
       {
-        ability: 'After you are destroyed, you are not removed until the end of the End Phase.',
+        ability:
+          'After you are destroyed, you are not removed until the end of the End Phase.',
         title: 'Stalwart Captain',
         type: 'Command',
         slots: ['Command', 'Crew'],
         ffg: 731,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/stalwartcaptain.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/stalwartcaptain.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/stalwartcaptain.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/stalwartcaptain.png',
       },
     ],
     cost: { value: 6 },
@@ -202,8 +229,10 @@ const t: UpgradeBase[] = [
         slots: ['Command', 'Crew'],
         charges: { value: 3, recovers: 0 },
         ffg: 727,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/strategiccommander.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/strategiccommander.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/strategiccommander.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/strategiccommander.png',
       },
     ],
     cost: { value: 6 },
@@ -223,8 +252,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 734,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/veteranwingleader.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/veteranwingleader.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/veteranwingleader.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/veteranwingleader.png',
       },
     ],
     cost: { value: 2 },
@@ -244,8 +275,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 735,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/dreadnoughthunter.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/dreadnoughthunter.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/dreadnoughthunter.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/dreadnoughthunter.png',
       },
     ],
     cost: { value: 3 },
@@ -267,8 +300,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 835,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/jedicommander.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/jedicommander.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/jedicommander.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/jedicommander.png',
       },
       {
         ability:
@@ -277,12 +312,17 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 834,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/jedicommander-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/jedicommander-sideb.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/jedicommander-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/jedicommander-sideb.png',
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['Galactic Republic'] }, { chassis: ['delta7aethersprite', 'eta2actis'] }],
+    restrictions: [
+      { factions: ['Galactic Republic'] },
+      { chassis: ['delta7aethersprite', 'eta2actis'] },
+    ],
     extended: false,
   },
   {
@@ -297,7 +337,8 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 911,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowwing.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowwing.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/shadowwing.png',
       },
       {
@@ -307,13 +348,17 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 910,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowwing-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/shadowwing-sideb.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowwing-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/shadowwing-sideb.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ chassis: ['tielnfighter', 'tieininterceptor', 'tiesabomber'] }],
+    restrictions: [
+      { chassis: ['tielnfighter', 'tieininterceptor', 'tiesabomber'] },
+    ],
     extended: false,
   },
   {
@@ -328,7 +373,8 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 905,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/bounty.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/bounty.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/bounty.png',
       },
       {
@@ -337,8 +383,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 904,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/bounty-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/bounty-sideb.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/bounty-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/bounty-sideb.png',
       },
     ],
     standard: false,
@@ -361,7 +409,8 @@ const t: UpgradeBase[] = [
       {
         title: 'In It For Your Rebellion',
         type: 'Command',
-        ability: 'Non-Scum ships in your squad are treated as friendly instead of allied.',
+        ability:
+          'Non-Scum ships in your squad are treated as friendly instead of allied.',
         slots: ['Command'],
         ffg: 906,
       },
@@ -381,8 +430,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 909,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/phoenixsquadron.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/phoenixsquadron.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/phoenixsquadron.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/phoenixsquadron.png',
       },
       {
         ability:
@@ -391,8 +442,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 908,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/phoenixsquadron-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/phoenixsquadron-sideb.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/phoenixsquadron-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/phoenixsquadron-sideb.png',
       },
     ],
     standard: false,
@@ -412,8 +465,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 913,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/skystrikeacademyclass.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/skystrikeacademyclass.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/skystrikeacademyclass.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/skystrikeacademyclass.png',
       },
       {
         ability:
@@ -422,13 +477,18 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 912,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/skystrikeacademyclass-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/skystrikeacademyclass-sideb.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/skystrikeacademyclass-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/skystrikeacademyclass-sideb.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['tielnfighter', 'tieininterceptor'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['tielnfighter', 'tieininterceptor'] },
+    ],
     extended: false,
   },
   {
@@ -444,12 +504,17 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Title'],
         ffg: 903,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/b6bladewingprototype-command.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/b6bladewingprototype-command.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/b6bladewingprototype-command.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/b6bladewingprototype-command.png',
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['asf01bwing'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['asf01bwing'] },
+    ],
     epic: true,
     extended: false,
   },
@@ -518,13 +583,17 @@ const t: UpgradeBase[] = [
           'Setup: After placing forces, choose 1 friendly wing of ships with [Calculate] on their action bars and place that wing in reserve. During the End Phase, you may place that wing within your deployment area or beyond range 2 of any enemy ship. Then you may choose 1 enemy ship at range 0-1 of you; each ship in that wing acquires a lock on it.',
         slots: ['Command', 'Crew'],
         ffg: 930,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/martuuk.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/martuuk.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/martuuk.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { baseSizes: ['Huge'] },
+    ],
     extended: false,
   },
   {
@@ -539,13 +608,17 @@ const t: UpgradeBase[] = [
           'During the Engagement Phase, at initiative 5, you may spend 1 [Energy] to perform a bonus attack. After you perform an attack, if the defender was dealt 1 or more faceup damage cards, it gains 2 strain tokens.',
         slots: ['Command', 'Crew'],
         ffg: 931,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/rifftamson.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/rifftamson.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/rifftamson.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { baseSizes: ['Huge'] },
+    ],
     extended: false,
   },
   {
@@ -556,11 +629,14 @@ const t: UpgradeBase[] = [
       {
         title: 'Zealous Captain',
         type: 'Command',
-        ability: 'During the Engagement Phase, at initiative 4, you may spend 1 [Energy] to perform a bonus attack.',
+        ability:
+          'During the Engagement Phase, at initiative 4, you may spend 1 [Energy] to perform a bonus attack.',
         slots: ['Command', 'Crew'],
         ffg: 932,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/zealouscaptain.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/zealouscaptain.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/zealouscaptain.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/zealouscaptain.png',
       },
     ],
     standard: false,
@@ -580,21 +656,29 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command'],
         ffg: 907,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/initforthemoneyrebellion.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/initforthemoneyrebellion.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/initforthemoneyrebellion.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/initforthemoneyrebellion.png',
       },
       {
-        ability: 'Non-Scum ships in your squad are treated as friendly instead of allied.',
+        ability:
+          'Non-Scum ships in your squad are treated as friendly instead of allied.',
         title: 'In It For Your Rebellion',
         type: 'Command',
         slots: ['Command'],
         ffg: 906,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/initforthemoneyrebellion-sideb.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/initforthemoneyrebellion-sideb.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/initforthemoneyrebellion-sideb.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/initforthemoneyrebellion-sideb.png',
       },
     ],
     cost: { value: 1 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { 'non-limited': false }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { 'non-limited': false },
+    ],
     epic: true,
     extended: false,
     standarized: true,
@@ -610,8 +694,10 @@ const t: UpgradeBase[] = [
         type: 'Command',
         slots: ['Command', 'Configuration'],
         ffg: -1,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/combatboardingtube.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/combatboardingtube.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/combatboardingtube.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/combatboardingtube.png',
       },
     ],
     cost: { value: 0 },
@@ -644,12 +730,17 @@ const t: UpgradeBase[] = [
           },
           { value: 1 },
         ],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/asajjventresscommand.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/asajjventresscommand.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/asajjventresscommand.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/asajjventresscommand.png',
       },
     ],
     cost: { value: 6 },
-    restrictions: [{ factions: ['Separatist Alliance', 'Scum and Villainy'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance', 'Scum and Villainy'] },
+      { baseSizes: ['Huge'] },
+    ],
   },
   {
     limited: 1,
@@ -675,8 +766,10 @@ const t: UpgradeBase[] = [
             value: 1,
           },
         ],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/hondoohnakacommand.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/hondoohnakacommand.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/hondoohnakacommand.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/hondoohnakacommand.png',
       },
     ],
     cost: { value: 7 },
@@ -695,12 +788,17 @@ const t: UpgradeBase[] = [
         title: 'General Grievous',
         type: 'Command',
         slots: ['Command', 'Crew'],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/generalgrievouscommand.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/generalgrievouscommand.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/generalgrievouscommand.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/generalgrievouscommand.png',
       },
     ],
     cost: { value: 5 },
-    restrictions: [{ baseSizes: ['Huge'] }, { factions: ['Separatist Alliance'] }],
+    restrictions: [
+      { baseSizes: ['Huge'] },
+      { factions: ['Separatist Alliance'] },
+    ],
   },
   {
     limited: 1,
@@ -715,13 +813,20 @@ const t: UpgradeBase[] = [
         title: 'Sabine Wren',
         type: 'Command',
         slots: ['Command', 'Crew'],
-        grants: [{ action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 }],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/sabinewren-command.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/sabinewren-command.png',
+        grants: [
+          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
+        ],
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/sabinewren-command.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/sabinewren-command.png',
       },
     ],
     cost: { value: 5 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { baseSizes: ['Small', 'Medium', 'Large'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { baseSizes: ['Small', 'Medium', 'Large'] },
+    ],
   },
 ];
 

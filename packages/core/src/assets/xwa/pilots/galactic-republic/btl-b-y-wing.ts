@@ -209,7 +209,7 @@ const t: ShipType = {
         'Modification',
         'Gunner',
       ],
-      cost: 4,
+      cost: 3,
       ffg: 601,
       caption: 'Payload Specialist',
       keywords: ['Clone', 'Y-wing'],

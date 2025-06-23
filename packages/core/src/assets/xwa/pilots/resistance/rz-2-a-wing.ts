@@ -90,7 +90,7 @@ const t: ShipType = {
       caption: 'Aerial Exhibitionist',
       initiative: 3,
       limited: 1,
-      cost: 4,
+      cost: 3,
       xws: 'zaribangel',
       ability:
         'You do not skip your Perform Action step after you partially execute a maneuver.',
@@ -279,7 +279,7 @@ const t: ShipType = {
       caption: 'Skillful Wingmate',
       initiative: 5,
       limited: 1,
-      cost: 3,
+      cost: 4,
       xws: 'seftinvanik',
       ability:
         'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',

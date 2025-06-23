@@ -289,7 +289,7 @@ const t: ShipType = {
       caption: 'On His Own Time',
       initiative: 5,
       limited: 1,
-      cost: 4,
+      cost: 5,
       loadout: 6,
       charges: { value: 1, recovers: 0 },
       xws: 'durge-separatistalliance',

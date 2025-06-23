@@ -166,7 +166,7 @@ const t: ShipType = {
       caption: 'Gold Nine',
       initiative: 5,
       limited: 1,
-      cost: 5,
+      cost: 4,
       xws: 'norrawexley-btla4ywing',
       ability:
         'While you defend, if there is an enemy ship at range 0-1, add 1 [Evade] result to your dice results.',
