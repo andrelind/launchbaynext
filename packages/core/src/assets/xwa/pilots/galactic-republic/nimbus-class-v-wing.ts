@@ -112,7 +112,7 @@ const t: ShipType = {
       epic: true,
       ffg: 789,
       keywords: ['Clone'],
-      loadout: 3,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
       artwork:

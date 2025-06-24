@@ -91,7 +91,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Dark Side', 'TIE'],
-      loadout: 13,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/grandinquisitor.png',
       artwork:
@@ -138,7 +138,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Dark Side', 'TIE'],
-      loadout: 9,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/seventhsister.png',
       artwork:
@@ -165,7 +165,7 @@ const t: ShipType = {
       epic: true,
       ffg: 632,
       keywords: ['Dark Side', 'TIE'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/fifthbrother.png',
       artwork:

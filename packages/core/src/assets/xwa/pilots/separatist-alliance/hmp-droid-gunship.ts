@@ -140,7 +140,7 @@ const t: ShipType = {
       epic: true,
       ffg: 664,
       keywords: ['Droid'],
-      loadout: 6,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dgs286.png',
       artwork:

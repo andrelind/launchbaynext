@@ -46,12 +46,12 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/lawlesspirates.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/lawlesspirates.png',
       ffg: 1068,
+      loadout: 45,
     },
     {
       name: 'Sorc Tormo',
       initiative: 8,
       cost: 8,
-      loadout: 0,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sorctormo-epicsl.png',

@@ -52,7 +52,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 5,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/biggsdarklighter.png',
@@ -227,7 +227,7 @@ const t: ShipType = {
       ffg: 2,
       standard: true,
       epic: true,
-      loadout: 5,
+      loadout: 7,
       extended: true,
       keywords: ['Light Side', 'X-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/lukeskywalker.png',

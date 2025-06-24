@@ -107,7 +107,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 17,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zaribangel.png',
       artwork:
@@ -228,7 +228,7 @@ const t: ShipType = {
       epic: true,
       ffg: 704,
       keywords: ['A-wing'],
-      loadout: 6,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/merlcobben.png',
       artwork:
@@ -288,7 +288,7 @@ const t: ShipType = {
       epic: true,
       ffg: 701,
       keywords: ['A-wing'],
-      loadout: 2,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/seftinvanik.png',
       artwork:

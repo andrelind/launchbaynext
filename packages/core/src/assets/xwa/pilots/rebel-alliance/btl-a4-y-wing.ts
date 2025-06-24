@@ -88,7 +88,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 5,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/evaanverlaine.png',
       artwork:
@@ -183,7 +183,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 25,
+      loadout: 13,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/norrawexley-btla4ywing.png',
@@ -304,7 +304,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       cost: 3,
-      loadout: 4,
+      loadout: 6,
       xws: 'popskrail',
       ability:
         'After you fully execute a white maneuver, you may choose a friendly ship at range 0-1. If you do, it may perform a [Focus] action.',

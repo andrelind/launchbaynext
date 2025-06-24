@@ -81,6 +81,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.initiative = pilot.initiative;
       local.limited = pilot.limited;
       local.cost = pilot.cost;
+      local.loadout = pilot.loadout;
       local.keywords = pilot.keywords;
       local.slots = pilot.slots;
       local.image = pilot.image;

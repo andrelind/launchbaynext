@@ -42,7 +42,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a maneuver, you may gain 1 deplete token to choose an object in your [Front Arc] at range 1-2. If you do, another friendly ship may perform a [Lock] action to lock that object.',
       cost: 6,
-      loadout: 12,
+      loadout: 18,
       initiative: 4,
       limited: 1,
       standard: true,
@@ -71,7 +71,7 @@ const t: ShipType = {
       xws: 'niteowlliberator',
       name: 'Nite Owl Liberator',
       cost: 6,
-      loadout: 16,
+      loadout: 20,
       initiative: 2,
       limited: 1,
       standard: true,

@@ -63,12 +63,12 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimgarrison.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/outerrimgarrison.png',
+      loadout: 40,
     },
     {
       name: 'Rik Virgilio',
       initiative: 7,
       cost: 8,
-      loadout: 0,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/rikvirgilio-epicsl.png',

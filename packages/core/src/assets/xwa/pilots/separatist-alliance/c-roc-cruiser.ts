@@ -67,6 +67,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/separatistprivateers.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/separatistprivateers.png',
+      loadout: 30,
     },
   ],
   ffg: 82,

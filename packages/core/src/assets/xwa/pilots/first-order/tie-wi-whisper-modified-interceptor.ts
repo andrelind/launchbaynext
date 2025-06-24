@@ -81,7 +81,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Light Side', 'TIE'],
       force: { value: 3, recovers: 1, side: ['dark', 'light'] },
       epic: true,
-      loadout: 20,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
@@ -122,7 +122,7 @@ const t: ShipType = {
       caption: '709th Legion Veteran',
       ability:
         'After you fully execute a maneuver or perform a [Boost] action, each ship you moved through gains 2 jam tokens.',
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nightfall.png',
       artwork:
@@ -180,7 +180,7 @@ const t: ShipType = {
       ffg: 924,
       keywords: ['TIE'],
       epic: true,
-      loadout: 8,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/redfuryzealot.png',
       artwork:

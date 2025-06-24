@@ -92,7 +92,7 @@ const t: ShipType = {
       cost: 3,
       ffg: 605,
       caption: 'Hive Guard Captain',
-      loadout: 2,
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/berwerkret.png',
       artwork:

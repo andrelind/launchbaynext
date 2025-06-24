@@ -67,6 +67,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/republicjudiciary.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/republicjudiciary.png',
+      loadout: 40,
     },
     {
       name: 'Raymus Antilles',

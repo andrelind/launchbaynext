@@ -87,7 +87,7 @@ const t: ShipType = {
       epic: true,
       ffg: 625,
       keywords: ['TIE'],
-      loadout: 12,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/holo.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/holo.png',

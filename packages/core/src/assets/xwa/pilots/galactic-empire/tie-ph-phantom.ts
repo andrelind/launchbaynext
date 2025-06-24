@@ -146,6 +146,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       ffg: 1123,
+      loadout: 0,
     },
     {
       name: '“Echo”',
@@ -174,6 +175,7 @@ const t: ShipType = {
       extended: true,
       epic: true,
       ffg: 1124,
+      loadout: 0,
     },
   ],
 };

@@ -47,12 +47,12 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/pilots/colicoiddestroyer.png',
       ffg: 1091,
+      loadout: 45,
     },
     {
       name: 'Asajj Ventress',
       initiative: 8,
       cost: 8,
-      loadout: 0,
       limited: 1,
       image:
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/asajjventress-epicsl.png',

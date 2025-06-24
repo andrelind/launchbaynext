@@ -62,7 +62,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 4,
-      loadout: 13,
+      loadout: 11,
       xws: 'cadbane',
       slots: [
         'Talent',

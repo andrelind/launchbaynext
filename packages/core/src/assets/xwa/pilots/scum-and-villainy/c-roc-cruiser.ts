@@ -68,12 +68,12 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/syndicatesmugglers.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/syndicatesmugglers.png',
+      loadout: 30,
     },
     {
       name: 'Cikatro Vizago',
       initiative: 7,
       cost: 8,
-      loadout: 0,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cikatrovizago-epicsl.png',

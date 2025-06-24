@@ -112,7 +112,7 @@ const t: ShipType = {
       ffg: 163,
       standard: false,
       epic: true,
-      loadout: 6,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/unkarplutt.png',
       artwork:

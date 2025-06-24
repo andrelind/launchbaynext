@@ -69,7 +69,7 @@ const t: ShipType = {
       ffg: 75,
       standard: true,
       epic: true,
-      loadout: 12,
+      loadout: 14,
       extended: true,
       keywords: ['Droid', 'Freighter', 'Spectre'],
       image: 'https://infinitearenas.com/xw2/images/pilots/chopper.png',

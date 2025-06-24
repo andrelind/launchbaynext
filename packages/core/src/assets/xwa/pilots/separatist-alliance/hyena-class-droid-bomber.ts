@@ -100,7 +100,7 @@ const t: ShipType = {
       ffg: 563,
       caption: 'Preservation Protocol Not Found',
       keywords: ['Droid'],
-      loadout: 9,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dbs404.png',
       artwork:
@@ -171,7 +171,7 @@ const t: ShipType = {
       slots: ['Sensor', 'Tactical Relay', 'Modification', 'Configuration'],
       ffg: 564,
       keywords: ['Droid'],
-      loadout: 3,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dbs32c.png',
       artwork:

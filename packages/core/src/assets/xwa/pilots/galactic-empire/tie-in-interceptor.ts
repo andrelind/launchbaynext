@@ -195,7 +195,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 891,
-      loadout: 9,
+      loadout: 5,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/commandantgoran.png',

@@ -62,7 +62,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       cost: 4,
-      loadout: 13,
+      loadout: 11,
       xws: 'cadbane-separatistalliance',
       slots: [
         'Cannon',
@@ -174,7 +174,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 2,
       cost: 4,
-      loadout: 6,
+      loadout: 9,
       xws: 'magnaguardprotector',
       slots: ['Cannon', 'Cannon', 'Modification', 'Missile'],
       ability:
@@ -290,7 +290,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 5,
-      loadout: 6,
+      loadout: 16,
       charges: { value: 1, recovers: 0 },
       xws: 'durge-separatistalliance',
       slots: [

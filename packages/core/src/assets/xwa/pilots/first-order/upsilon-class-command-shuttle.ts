@@ -95,7 +95,7 @@ const t: ShipType = {
       ffg: 410,
       standard: false,
       epic: true,
-      loadout: 7,
+      loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorstridan.png',
       artwork:
@@ -151,7 +151,7 @@ const t: ShipType = {
       ffg: 413,
       standard: false,
       epic: true,
-      loadout: 22,
+      loadout: 17,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/starkillerbasepilot.png',

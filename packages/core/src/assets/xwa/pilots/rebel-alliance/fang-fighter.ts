@@ -84,7 +84,7 @@ const t: ShipType = {
       cost: 4,
       epic: true,
       standard: true,
-      loadout: 16,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/bodicavenj.png',
       artwork:

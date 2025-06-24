@@ -53,12 +53,12 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/newrepublicvolunteers.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/newrepublicvolunteers.png',
+      loadout: 25,
     },
     {
       name: 'Oraf Desyk',
       initiative: 7,
       cost: 8,
-      loadout: 0,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/orafdesyk-epicsl.png',

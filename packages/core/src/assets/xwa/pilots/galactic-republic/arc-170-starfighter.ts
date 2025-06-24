@@ -86,7 +86,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Clone'],
-      loadout: 18,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jag.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jag.png',
@@ -143,7 +143,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Clone'],
-      loadout: 4,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wolffe.png',
       artwork:

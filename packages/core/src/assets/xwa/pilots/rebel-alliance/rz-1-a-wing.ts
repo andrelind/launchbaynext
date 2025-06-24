@@ -76,7 +76,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 18,
+      loadout: 13,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/greensquadronpilot.png',
@@ -98,7 +98,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 8,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jakefarrell.png',
       artwork:
@@ -215,7 +215,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 881,
-      loadout: 16,
+      loadout: 5,
       extended: true,
       keywords: ['A-wing', 'Light Side'],
       artwork:
@@ -237,7 +237,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['A-wing'],
       ffg: 882,
-      loadout: 12,
+      loadout: 17,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',

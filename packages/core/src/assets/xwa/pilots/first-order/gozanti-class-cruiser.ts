@@ -62,6 +62,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/firstordersympathizers.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/firstordersympathizers.png',
+      loadout: 40,
     },
     {
       name: 'Cerra Fellian',

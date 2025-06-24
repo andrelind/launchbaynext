@@ -56,6 +56,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/firstordercollaborators.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/firstordercollaborators.png',
+      loadout: 50,
     },
     {
       name: 'Gideon Hask',

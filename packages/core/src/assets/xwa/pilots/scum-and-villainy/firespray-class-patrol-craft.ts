@@ -110,7 +110,7 @@ const t: ShipType = {
       ffg: 150,
       standard: true,
       epic: true,
-      loadout: 14,
+      loadout: 19,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/emonazzameen.png',
       artwork:

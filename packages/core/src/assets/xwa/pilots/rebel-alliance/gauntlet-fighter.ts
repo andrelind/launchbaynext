@@ -41,7 +41,7 @@ const t: ShipType = {
       ability:
         'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
       cost: 6,
-      loadout: 15,
+      loadout: 18,
       initiative: 2,
       limited: 1,
       standard: true,
@@ -69,7 +69,7 @@ const t: ShipType = {
       xws: 'ezrabridger-gauntletfighter',
       name: 'Ezra Bridger',
       cost: 6,
-      loadout: 10,
+      loadout: 15,
       initiative: 3,
       limited: 1,
       ability:

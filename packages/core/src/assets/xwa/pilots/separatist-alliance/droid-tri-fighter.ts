@@ -127,7 +127,7 @@ const t: ShipType = {
       epic: true,
       ffg: 797,
       keywords: ['Droid'],
-      loadout: 3,
+      loadout: 5,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/fearsomepredator.png',

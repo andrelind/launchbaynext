@@ -57,7 +57,7 @@ const t: ShipType = {
       epic: true,
       ability:
         'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
-      loadout: 6,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/agentterex.png',
       artwork:
@@ -68,7 +68,7 @@ const t: ShipType = {
       ffg: 656,
       name: 'Commander Malarus',
       cost: 4,
-      loadout: 8,
+      loadout: 14,
       limited: 1,
       initiative: 5,
       caption: 'Vindictive Taskmaster',

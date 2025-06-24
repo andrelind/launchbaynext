@@ -60,7 +60,7 @@ const t: ShipType = {
       cost: 5,
       ffg: 569,
       caption: 'Evacuation Escort',
-      loadout: 19,
+      loadout: 22,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/covanell.png',
       artwork:
@@ -154,7 +154,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 4,
-      loadout: 15,
+      loadout: 20,
       slots: [
         'Talent',
         'Tech',

@@ -51,7 +51,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 4,
-      loadout: 9,
+      loadout: 12,
       slots: ['Force Power', 'Sensor', 'Torpedo', 'Modification', 'Astromech'],
       force: { value: 1, recovers: 1, side: ['light'] },
       ffg: 558,

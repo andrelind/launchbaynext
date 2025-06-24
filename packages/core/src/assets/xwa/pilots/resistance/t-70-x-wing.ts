@@ -115,7 +115,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 13,
+      loadout: 7,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bluesquadronrookie.png',
@@ -150,7 +150,7 @@ const t: ShipType = {
       xws: 'blacksquadronace-t70xwing',
       text: "During the Cold War, Poe Dameron's Black Squadron conducted daring covert operations against the First Order in defiance of treaties ratified by the New Republic Senate.",
       cost: 5,
-      loadout: 2,
+      loadout: 15,
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration', 'Tech'],
       ffg: 451,
       standard: true,
@@ -184,7 +184,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 12,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/elloasty.png',
       artwork:
@@ -357,7 +357,7 @@ const t: ShipType = {
       name: 'Temmin Wexley',
       caption: 'Black Two',
       cost: 4,
-      loadout: 12,
+      loadout: 7,
       initiative: 4,
       limited: 1,
       ability:

@@ -52,12 +52,12 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/echobaseevacuees.png',
       image:
         'https://infinitearenas.com/xw2/images/pilots/echobaseevacuees.png',
+      loadout: 25,
     },
     {
       name: 'Trebor Zednem',
       initiative: 7,
       cost: 8,
-      loadout: 0,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/treborzednem-epicsl.png',

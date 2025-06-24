@@ -124,7 +124,7 @@ const t: ShipType = {
       ability:
         'After you perform an attack, if the defender was dealt a faceup damage card, the defender gains 1 strain token unless it chooses 1 non-recurring [Charge] from 1 of its equipped upgrades and loses that [Charge].',
       keywords: ['Y-wing'],
-      loadout: 5,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wilsateshlo.png',
       artwork:
@@ -151,7 +151,7 @@ const t: ShipType = {
       caption: 'Artistic Ace',
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 6,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/shasazaro.png',
       artwork:
@@ -179,7 +179,7 @@ const t: ShipType = {
       caption: 'Hero of Humbarine',
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 6,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/legafossang.png',
       artwork:
@@ -238,7 +238,7 @@ const t: ShipType = {
       ability:
         'Before you engage, you may choose 1 ship in your firing arc at range 0-1. If you do, transfer 1 green token from that ship to yourself.',
       keywords: ['Y-wing'],
-      loadout: 7,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/coruskapellim.png',
       artwork:
@@ -321,7 +321,7 @@ const t: ShipType = {
       ffg: 912,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/kijimispicerunner.png',

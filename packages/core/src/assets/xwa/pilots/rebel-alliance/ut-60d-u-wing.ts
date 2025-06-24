@@ -239,7 +239,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Droid'],
-      loadout: 4,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/k2so.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/k2so.png',

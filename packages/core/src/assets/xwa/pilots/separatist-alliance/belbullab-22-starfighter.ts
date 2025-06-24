@@ -59,7 +59,7 @@ const t: ShipType = {
       cost: 5,
       slots: ['Talent', 'Modification', 'Modification', 'Missile', 'Title'],
       ffg: 492,
-      loadout: 11,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/generalgrievous.png',
       artwork:

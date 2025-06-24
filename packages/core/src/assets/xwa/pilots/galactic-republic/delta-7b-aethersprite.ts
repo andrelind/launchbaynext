@@ -128,7 +128,7 @@ const t: ShipType = {
       cost: 5,
       slots: ['Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
-      loadout: 6,
+      loadout: 9,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/saeseetiin-delta7baethersprite.png',
@@ -169,7 +169,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       cost: 6,
-      loadout: 15,
+      loadout: 9,
       slots: [
         'Force Power',
         'Force Power',

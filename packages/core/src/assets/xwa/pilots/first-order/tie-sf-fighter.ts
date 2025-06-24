@@ -97,7 +97,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 15,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/backdraft.png',
       artwork:
@@ -115,7 +115,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 13,
+      loadout: 9,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/omegasquadronexpert.png',

@@ -179,7 +179,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['TIE'],
       ffg: 887,
-      loadout: 14,
+      loadout: 18,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/vultskerris.png',
@@ -200,7 +200,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       ffg: 886,
-      loadout: 5,
+      loadout: 8,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/darthvader-tieddefender.png',

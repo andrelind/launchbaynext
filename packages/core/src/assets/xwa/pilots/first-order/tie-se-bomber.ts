@@ -162,7 +162,7 @@ const t: ShipType = {
       caption: 'Hateful Harrier',
       keywords: ['TIE'],
       epic: true,
-      loadout: 16,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/grudge.png',
       artwork:

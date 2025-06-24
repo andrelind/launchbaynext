@@ -64,7 +64,7 @@ const t: ShipType = {
       ability:
         'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
       keywords: ['Clone'],
-      loadout: 10,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/hawk.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hawk.png',
@@ -92,7 +92,7 @@ const t: ShipType = {
       ability:
         'After a friendly small ship in your [Single Turret Arc] gains a deplete or strain token, if you have no tokens of that type, you may transfer that token to yourself.',
       keywords: ['Clone'],
-      loadout: 14,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/hound.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/hound.png',
@@ -159,7 +159,7 @@ const t: ShipType = {
       caption: 'CT-1127/549',
       initiative: 2,
       cost: 5,
-      loadout: 12,
+      loadout: 16,
       charges: { value: 2, recovers: 1 },
       slots: [
         'Talent',

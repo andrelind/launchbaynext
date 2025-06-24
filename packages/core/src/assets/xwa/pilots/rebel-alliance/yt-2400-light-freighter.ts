@@ -150,7 +150,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 7,
-      loadout: 12,
+      loadout: 20,
       xws: 'dashrendar-swz103-rebelalliance',
       ability:
         'During the Engagement Phase, you ignore the effects of obstacles that you are overlapping.',

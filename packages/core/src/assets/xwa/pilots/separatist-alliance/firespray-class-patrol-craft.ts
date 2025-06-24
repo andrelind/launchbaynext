@@ -62,7 +62,7 @@ const t: ShipType = {
       ],
       cost: 8,
       ffg: 800,
-      loadout: 21,
+      loadout: 25,
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/jangofett.png',
@@ -92,7 +92,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 801,
-      loadout: 17,
+      loadout: 20,
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/zamwesell.png',
@@ -109,7 +109,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 6,
-      loadout: 5,
+      loadout: 10,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bobafett-separatistalliance.png',
       artwork:

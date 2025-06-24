@@ -1,12 +1,4 @@
-import {
-  Action,
-  Faction,
-  Size,
-  Slot,
-  Stat,
-  Side as ForceSide,
-  Arc,
-} from '../../src/types';
+import { Action, Arc, Faction, Side as ForceSide, Size, Slot, Stat } from '../../src/types';
 
 export interface XWDStat {
   arc: string;
@@ -42,6 +34,7 @@ export interface XWDPilot {
   initiative: number;
   limited: number;
   cost: number;
+  loadout?: number;
   ability: string;
   shipAbility: XWDShipAbility;
   slots: Slot[];

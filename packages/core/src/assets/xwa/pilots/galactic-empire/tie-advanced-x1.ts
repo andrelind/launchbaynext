@@ -90,7 +90,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/maarekstele.png',
       artwork:
@@ -210,7 +210,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 5,
-      loadout: 9,
+      loadout: 18,
       xws: 'junoeclipse',
       ability:
         'After you perform an action, you may perform a red [Boost] action.',

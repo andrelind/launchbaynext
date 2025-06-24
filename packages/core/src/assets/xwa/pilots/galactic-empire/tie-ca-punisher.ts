@@ -92,7 +92,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['TIE'],
-      loadout: 20,
+      loadout: 26,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/redline.png',
       artwork:

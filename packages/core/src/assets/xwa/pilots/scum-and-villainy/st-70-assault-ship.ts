@@ -47,7 +47,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 6,
-      loadout: 25,
+      loadout: 18,
       ability:
         'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [Focus] result.',
       slots: [
@@ -99,7 +99,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 2,
       cost: 5,
-      loadout: 6,
+      loadout: 12,
       ability:
         'While you perform an attack at attack range 1-2, you may spend 1 non-recurring [Charge] from 1 of your equipped [Illicit] upgrades to change 1 [Focus] result to a [Critical Hit] result.',
       slots: ['Talent', 'Crew', 'Gunner', 'Illicit', 'Illicit', 'Modification'],

@@ -56,12 +56,12 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/outerrimpatrol.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/outerrimpatrol.png',
+      loadout: 50,
     },
     {
       name: 'Iden Versio',
       initiative: 8,
       cost: 13,
-      loadout: 0,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-epicsl.png',
