@@ -75,7 +75,7 @@ const t: ShipType = {
       xws: 'oddball-nimbusclassvwing',
       ffg: 788,
       name: '“Odd Ball”',
-      cost: 3,
+      cost: 4,
       limited: 1,
       initiative: 5,
       caption: 'CC-2237',
@@ -91,7 +91,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       keywords: ['Clone'],
-      loadout: 8,
+      loadout: 15,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',

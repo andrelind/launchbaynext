@@ -27,17 +27,17 @@ export const SimpleItem: FC<Props> = ({
   return (
     <>
       <TouchableOpacity
-        style={tw`flex-row justify-between p-3`}
+        style={tw`flex-row justify-between p-3 bg-white dark:bg-zinc-800 rounded-lg overflow-hidden`}
         onPress={onPress}
       >
         <View style={tw`flex-row items-center`}>
           {icon && <View style={tw`mr-2`}>{icon}</View>}
           <View>
-            <Text style={tw`${color ? `text-[${color}]` : 'text-white'}`}>
+            <Text style={tw`${color ? `text-[${color}]` : 'text-black dark:text-white'}`}>
               {text}
             </Text>
             {subtitle && (
-              <Text style={tw`text-sm`}>
+              <Text style={tw`text-sm text-zinc-500 dark:text-zinc-400`}>
                 {subtitle}
               </Text>
             )}

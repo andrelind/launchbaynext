@@ -43,7 +43,7 @@ export const CollectionScreen: FC<Props> = ({ navigation }) => {
                   <XWingFont
                     icons={[keyFromFaction(icon)]}
                     size={7}
-                    color={colorForFactionKey(keyFromFaction(icon))}
+                    color={colorForFactionKey(keyFromFaction(icon), !tw.prefixMatch('dark'))}
                   />
                 </View>
               )
@@ -59,6 +59,7 @@ export const CollectionScreen: FC<Props> = ({ navigation }) => {
           />
         );
       }}
+      ItemSeparatorComponent={() => <View style={tw`h-2`} />}
     />
   );
 };

@@ -88,7 +88,7 @@ export const SquadronComponent: FC<Props<XWS>> = ({
         <View style={tw`items-center w-10`}>
           <XWingFont
             icons={[item.faction]}
-            color={colorForFactionKey(item.faction)}
+            color={colorForFactionKey(item.faction, !tw.prefixMatch('dark'))}
             size={6}
           />
           <Text style={tw`text-xs dark:text-white`}>{item.ruleset}</Text>

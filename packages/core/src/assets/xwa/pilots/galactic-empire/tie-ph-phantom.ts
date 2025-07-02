@@ -78,8 +78,7 @@ const t: ShipType = {
       loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/whisper.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/whisper.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/whisper.png',
     },
     {
       name: 'Imdaar Test Pilot',
@@ -96,8 +95,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/imdaartestpilot.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/imdaartestpilot.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/imdaartestpilot.png',
       caption: '',
     },
     {
@@ -114,10 +112,8 @@ const t: ShipType = {
       keywords: ['TIE'],
       loadout: 3,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/sigmasquadronace.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/sigmasquadronace.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/sigmasquadronace.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sigmasquadronace.png',
       caption: '',
     },
     {
@@ -128,19 +124,13 @@ const t: ShipType = {
       cost: 6,
       charges: { value: 2, recovers: 0 },
       xws: 'whisper-ssl',
-      ability:
-        'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
+      ability: 'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
       shipAbility: {
         name: 'Stygium Array',
         text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
-      standardLoadout: [
-        'withoutatrace-tiephphantom',
-        'relaysystem-tiephphantom',
-        'stygiumreserve-tiephphantom',
-      ],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
+      standardLoadout: ['withoutatrace-tiephphantom', 'relaysystem-tiephphantom', 'stygiumreserve-tiephphantom'],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
       artwork: '',
       standard: true,
       extended: true,
@@ -153,7 +143,7 @@ const t: ShipType = {
       caption: 'Copycat',
       initiative: 4,
       limited: 1,
-      cost: 6,
+      cost: 5,
       charges: { value: 1, recovers: 1 },
       xws: 'echo-ssl',
       ability:
@@ -162,15 +152,9 @@ const t: ShipType = {
         name: 'Stygium Array',
         text: 'After you decloak, you may perform an [Evade] action. At the start of the End Phase, you may spend 1 evade token to gain 1 cloak token.',
       },
-      standardLoadout: [
-        'silenthunter-tiephphantom',
-        'stealthgambit-tiephphantom',
-        'manualailerons-tiephphantom',
-      ],
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/quickbuilds/echo-tiephphantom.png',
+      standardLoadout: ['silenthunter-tiephphantom', 'stealthgambit-tiephphantom', 'manualailerons-tiephphantom'],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
+      artwork: 'https://infinitearenas.com/xw2/images/quickbuilds/echo-tiephphantom.png',
       standard: true,
       extended: true,
       epic: true,
