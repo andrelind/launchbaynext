@@ -11,6 +11,7 @@ type Props = {
   color?: string;
   subtitle?: string;
   children?: ReactNode;
+  disableBackground?: boolean;
 };
 
 export const SimpleItem: FC<Props> = ({
@@ -21,13 +22,14 @@ export const SimpleItem: FC<Props> = ({
   color,
   subtitle,
   children,
+  disableBackground = false,
 }) => {
   const { tw } = useTailwind();
 
   return (
     <>
       <TouchableOpacity
-        style={tw`flex-row justify-between p-3 bg-white dark:bg-zinc-800 rounded-lg overflow-hidden`}
+        style={tw`flex-row justify-between p-3 ${!disableBackground ? 'bg-white dark:bg-zinc-800' : ''}  rounded-lg overflow-hidden`}
         onPress={onPress}
       >
         <View style={tw`flex-row items-center`}>

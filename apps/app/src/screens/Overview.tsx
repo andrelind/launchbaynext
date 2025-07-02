@@ -130,7 +130,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
         <View style={tw`px-2`}>
           <Text style={tw`text-white`}>Like the app?</Text>
           <Text style={tw`text-white`}>Please consider donating</Text>
-          <View style={tw`flex-row items-center justify-around`}>
+          <View style={tw`flex-row items-center justify-around pt-2`}>
             <SimpleItem
               text={'Patreon'}
               icon={<Feather name="star" size={20} color={tw.color('yellow-500')} />}
@@ -163,6 +163,7 @@ export const OverviewScreen: FC<Props> = ({ navigation }) => {
             text={'Privacy Policy'}
             color={blue}
             hideArrow
+            disableBackground
             onPress={async () => {
               if (
                 await Linking.canOpenURL('https://launchbaynext.app/privacy')

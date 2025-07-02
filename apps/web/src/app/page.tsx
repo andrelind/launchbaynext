@@ -2,9 +2,9 @@
 
 import { DocumentDuplicateIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
-import { exportAsTTS, exportAsText } from 'lbn-core/src/helpers/import+export';
+import { exportAsTTS, exportAsText, exportAsXws } from 'lbn-core/src/helpers/import+export';
 import { loadShip2, loadUpgrades2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
-import { deserialize, exportAsXws, serialize } from 'lbn-core/src/helpers/serializer';
+import { deserialize, serialize } from 'lbn-core/src/helpers/serializer';
 import { bumpPatch } from 'lbn-core/src/helpers/versioning';
 import type { FactionKey, Ship, ShipType, Slot, Upgrade, XWS } from 'lbn-core/src/types';
 import Image from 'next/image';
