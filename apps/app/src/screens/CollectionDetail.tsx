@@ -15,7 +15,7 @@ import {
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ShipFont } from '../components/fonts/ShipIcon';
 import { useTailwind } from '../helpers/tailwind';
-import { collectionStore } from '../stores/collection';
+import { useCollectionStore } from '../stores/collection';
 import { CollectionStackParams } from '../types/navigation';
 
 type Source = { xws: string; name: string; icons: string[] };
@@ -36,7 +36,7 @@ export const CollectionDetailScreen: FC<Props> = ({ route, navigation }) => {
     setPilots,
     upgrades,
     setUpgrades,
-  } = collectionStore();
+  } = useCollectionStore();
 
   // useNavigationSearchBarUpdate(v => {
   //   v.isFocused && setNeedle(v.text);

@@ -5,11 +5,13 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { defaultColors } from '../theme';
 import { SystemState } from './types';
 
-export const systemStore = create<SystemState>()(
+export const useSystemStore = create<SystemState>()(
   persist(
-    (set) => ({
+    set => ({
       token: undefined,
-      setToken: async (token) => {
+      setToken: async token => {
+        console.log('Setting token', token);
+
         if (!token) {
           return set({
             token: undefined,
@@ -29,10 +31,14 @@ export const systemStore = create<SystemState>()(
       },
 
       pushToken: undefined,
-      setPushToken: (pushToken) => set(() => ({ pushToken })),
+      setPushToken: pushToken => {
+        console.log('Saving push token', pushToken);
+        return set(() => ({ pushToken }));
+      },
 
       isLoggedIn: false,
       setIsLoggedIn: (isLoggedIn: boolean) => {
+        console.log('Setting isLoggedIn', isLoggedIn);
         if (isLoggedIn) {
           return set({ isLoggedIn });
         }
@@ -40,17 +46,26 @@ export const systemStore = create<SystemState>()(
       },
 
       user: undefined,
-      setUser: (user) => set(() => ({ user })),
+      setUser: user => {
+        console.log('Setting user', user);
+        return set(() => ({ user }));
+      },
 
       theme: defaultColors,
-      setTheme: (theme) => set(() => ({ theme })),
+      setTheme: theme => {
+        console.log('Setting theme', theme);
+        return set(() => ({ theme }));
+      },
 
       lastRead: 0,
-      setLastRead: (lastRead) => set(() => ({ lastRead })),
+      setLastRead: lastRead => {
+        console.log('Setting last read', lastRead);
+        return set(() => ({ lastRead }));
+      },
     }),
     {
       name: 'system',
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );

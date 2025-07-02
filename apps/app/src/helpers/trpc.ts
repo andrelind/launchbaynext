@@ -1,7 +1,7 @@
 import { createTRPCProxyClient, httpBatchLink, loggerLink } from '@trpc/client';
 import superjson from 'superjson';
 import { type AppRouter } from '../../../web/src/server/index';
-import { systemStore } from '../stores/system';
+import { useSystemStore } from '../stores/system';
 
 // export const TRPC_URL = `${process.env.EXPO_PUBLIC_SERVER_URL || 'https://launchbaynext.app'}/api/trpc`;
 export const TRPC_URL = 'https://launchbaynext.app/api/trpc';
@@ -16,7 +16,7 @@ export const trpc = createTRPCProxyClient<AppRouter>({
     httpBatchLink({
       url: TRPC_URL,
       async headers() {
-        const { token } = systemStore.getState();
+        const { token } = useSystemStore.getState();
         // if (token) {
         //   const decoded = jwtDecode(token);
         //   if (!decoded || (decoded.exp || 0) * 1000 < Date.now()) {

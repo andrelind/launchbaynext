@@ -16,7 +16,7 @@ import {
   View,
 } from 'react-native-ui-lib';
 import { loadShip2, TShip } from '../helpers/loading';
-import { xwsStore } from '../stores/xws';
+import { useXwsStore } from '../stores/xws';
 import { blue, darkgrey, red, yellow } from '../theme';
 
 type Props = {
@@ -29,7 +29,7 @@ export const CalculatorScreen: NavigationFunctionComponent<Props> = ({
   uid,
   componentId,
 }) => {
-  const xws = xwsStore(s => s.lists?.find(l => l.vendor.lbn.uid === uid));
+  const xws = useXwsStore(s => s.lists?.find(l => l.vendor.lbn.uid === uid));
   const ships =
     xws?.pilots.map(p => loadShip2(p, xws.faction, xws.format)) || [];
 

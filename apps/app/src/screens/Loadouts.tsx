@@ -6,8 +6,8 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { SimpleItem } from '../components/SimpleItem';
 import { SwipeComponent } from '../components/SwipeComponent';
 import { useTailwind } from '../helpers/tailwind';
-import { loadoutStore } from '../stores/loadout';
-import { xwsStore } from '../stores/xws';
+import { useLoadoutStore } from '../stores/loadout';
+import { useXwsStore } from '../stores/xws';
 import { ListStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<ListStackParams, 'SelectLoadout'>;
@@ -20,7 +20,7 @@ export const LoadoutsScreen: FC<Props> = ({ route, navigation }) => {
     return null;
   }
 
-  const data = loadoutStore((s) => s.loadouts)?.filter(
+  const data = useLoadoutStore((s) => s.loadouts)?.filter(
     (l) =>
       l.faction === faction && l.shipXws === shipXws && l.pilotXws === pilotXws
   );
@@ -56,14 +56,14 @@ export const LoadoutsScreen: FC<Props> = ({ route, navigation }) => {
         return (
           <SwipeComponent
             showFlip
-            onRightAction={() => loadoutStore.getState().removeLoadout(item.id)}
+            onRightAction={() => useLoadoutStore.getState().removeLoadout(item.id)}
           >
             <SimpleItem
               text={item.name}
               subtitle={upgrades}
               hideArrow
               onPress={() => {
-                xwsStore
+                useXwsStore
                   .getState()
                   .setUpgradesForPilot(uid, index, item.upgrades);
                 // Navigation.dismissModal(componentId);

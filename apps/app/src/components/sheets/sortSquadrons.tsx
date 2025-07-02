@@ -6,7 +6,7 @@ import ActionSheet, {
 } from 'react-native-actions-sheet';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useTailwind } from '../../helpers/tailwind';
-import { filterStore, SortingType } from '../../stores/filter';
+import { SortingType, useFilterStore } from '../../stores/filter';
 import './types';
 
 export const SortSquadronsSheetId = 'SortSquadronsSheet';
@@ -27,7 +27,7 @@ const SortSquadronsSheet = ({
 }: SheetProps<'SortSquadronsSheet'>) => {
     const { tw } = useTailwind();
 
-    const { sorting, setFirstSorting, setSecondSorting } = filterStore(
+    const { sorting, setFirstSorting, setSecondSorting } = useFilterStore(
         s => ({
             sorting: s.sorting,
             setFirstSorting: s.setFirstSorting,

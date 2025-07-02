@@ -9,14 +9,14 @@ import { addShip2, setUpgrade2 } from '../helpers/edit';
 
 import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
 import { sortXws } from '../helpers/misc';
-import { filterStore } from './filter';
+import { useFilterStore } from './filter';
 import { XWS, XWSState } from './types';
 
-export const xwsStore = create<XWSState>()(
+export const useXwsStore = create<XWSState>()(
   persist(
     (set, get) => ({
       lists: [],
-      setLists: (lists) => set({ lists }),
+      setLists: lists => set({ lists }),
 
       loaded: false,
       setLoaded: () => set({ loaded: true }),
@@ -43,29 +43,25 @@ export const xwsStore = create<XWSState>()(
             },
           },
         };
-        const { first, second } = filterStore.getState().sorting;
-        const lists = [...(get().lists || []), list].sort((a, b) =>
-          sortXws(a, b, first, second)
-        );
+        const { first, second } = useFilterStore.getState().sorting;
+        const lists = [...(get().lists || []), list].sort((a, b) => sortXws(a, b, first, second));
         set({ lists });
 
         saveListOnServer(list);
         return list;
       },
-      importSquadron: (list) => {
-        const { first, second } = filterStore.getState().sorting;
-        const lists = [...(get().lists || []), list].sort((a, b) =>
-          sortXws(a, b, first, second)
-        );
+      importSquadron: list => {
+        const { first, second } = useFilterStore.getState().sorting;
+        const lists = [...(get().lists || []), list].sort((a, b) => sortXws(a, b, first, second));
 
         set({ lists });
 
         saveListOnServer(list);
       },
-      copySquadron: (uid) => {
+      copySquadron: uid => {
         const lists = get().lists;
 
-        const list = lists?.find((l) => l.vendor.lbn.uid === uid);
+        const list = lists?.find(l => l.vendor.lbn.uid === uid);
         if (list) {
           const copy: XWS = JSON.parse(JSON.stringify(list));
           copy.version = '2.5.0';
@@ -75,33 +71,31 @@ export const xwsStore = create<XWSState>()(
             copy.pilots = [];
           }
 
-          const { first, second } = filterStore.getState().sorting;
+          const { first, second } = useFilterStore.getState().sorting;
           set({
-            lists: [...(lists || []), copy].sort((a, b) =>
-              sortXws(a, b, first, second)
-            ),
+            lists: [...(lists || []), copy].sort((a, b) => sortXws(a, b, first, second)),
           });
           saveListOnServer(copy);
 
           return copy;
         }
       },
-      removeSquadron: (uid) => {
+      removeSquadron: uid => {
         removeListOnServer(uid);
 
         const lists = get().lists;
-        const list = lists?.find((l) => l.vendor.lbn.uid === uid);
+        const list = lists?.find(l => l.vendor.lbn.uid === uid);
 
         if (!list) {
           return;
         }
 
-        const filtered = lists?.filter((l) => l.vendor.lbn.uid !== uid);
+        const filtered = lists?.filter(l => l.vendor.lbn.uid !== uid);
 
         const allTags = filtered
-          ?.map((xws) => xws?.vendor?.lbn?.tags)
+          ?.map(xws => xws?.vendor?.lbn?.tags)
           ?.reduce((a, c) => {
-            (c || []).forEach((tag) => {
+            (c || []).forEach(tag => {
               if (!a?.includes(tag)) {
                 a?.push(tag);
               }
@@ -112,7 +106,7 @@ export const xwsStore = create<XWSState>()(
         for (const tag of list?.vendor.lbn.tags) {
           if (!allTags?.includes(tag)) {
             console.log('FILTER RESET');
-            filterStore.getState().setTags([]);
+            useFilterStore.getState().setTags([]);
           }
         }
 
@@ -121,10 +115,10 @@ export const xwsStore = create<XWSState>()(
 
       addShip: (uid, shipXws, pilotXws, upgrades) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
         set({
           lists: lists
-            ?.map((l) => {
+            ?.map(l => {
               if (l.vendor.lbn.uid !== uid) {
                 return l;
               }
@@ -138,10 +132,10 @@ export const xwsStore = create<XWSState>()(
 
       copyShip: (xws, pilotIndex) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
         set({
           lists: lists
-            ?.map((l) => {
+            ?.map(l => {
               if (l.vendor.lbn.uid !== xws.vendor.lbn.uid) {
                 return l;
               }
@@ -165,10 +159,10 @@ export const xwsStore = create<XWSState>()(
 
       changePilot: (uid: string, pilotIndex: number, pilotXws: string) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
         set({
           lists: lists
-            ?.map((l) => {
+            ?.map(l => {
               if (l.vendor.lbn.uid !== uid) {
                 return l;
               }
@@ -177,13 +171,9 @@ export const xwsStore = create<XWSState>()(
               const pilot = edit.pilots[pilotIndex];
               pilot.id = pilotXws;
               const ship = loadShip2(pilot, l);
-              edit.pilots[pilotIndex].upgrades = cleanupUpgrades2(
-                pilot.upgrades,
-                ship,
-                l
-              );
+              edit.pilots[pilotIndex].upgrades = cleanupUpgrades2(pilot.upgrades, ship, l);
 
-              const pilots = edit.pilots.map((p) => {
+              const pilots = edit.pilots.map(p => {
                 const s = loadShip2(p, l);
                 const upgrades = cleanupUpgrades2(p.upgrades, s, l);
 
@@ -210,21 +200,15 @@ export const xwsStore = create<XWSState>()(
 
       setUpgrade: (xws, pilotIndex, key, slotIndex, upgrade) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
 
         set({
           lists: lists
-            ?.map((l) => {
+            ?.map(l => {
               if (l.vendor.lbn.uid !== xws.vendor.lbn.uid) {
                 return l;
               }
-              const list = setUpgrade2(
-                xws,
-                pilotIndex,
-                key,
-                slotIndex,
-                upgrade
-              );
+              const list = setUpgrade2(xws, pilotIndex, key, slotIndex, upgrade);
               saveListOnServer(list);
               return list;
             })
@@ -233,11 +217,11 @@ export const xwsStore = create<XWSState>()(
       },
       setUpgradesForPilot: (uid, pilotIndex, upgrades) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
 
         set({
           lists: lists
-            ?.map((l) => {
+            ?.map(l => {
               if (l.vendor.lbn.uid !== uid) {
                 return l;
               }
@@ -257,7 +241,7 @@ export const xwsStore = create<XWSState>()(
       setName: (uid, name) => {
         const lists = get().lists;
         set({
-          lists: lists?.map((l) => {
+          lists: lists?.map(l => {
             if (l.vendor.lbn.uid !== uid) {
               return l;
             }
@@ -275,7 +259,7 @@ export const xwsStore = create<XWSState>()(
       setFormat: (uid, format) => {
         const lists = get().lists;
         set({
-          lists: lists?.map((l) => {
+          lists: lists?.map(l => {
             if (l.vendor.lbn.uid !== uid) {
               return l;
             }
@@ -293,7 +277,7 @@ export const xwsStore = create<XWSState>()(
       setRuleset: (uid, ruleset) => {
         const lists = get().lists;
         set({
-          lists: lists?.map((l) => {
+          lists: lists?.map(l => {
             if (l.vendor.lbn.uid !== uid) {
               return l;
             }
@@ -311,11 +295,11 @@ export const xwsStore = create<XWSState>()(
       },
       setWins: (uid: string, wins: number) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
 
         set({
           lists: lists
-            ?.map((l) => {
+            ?.map(l => {
               if (l.vendor.lbn.uid !== uid) {
                 return l;
               }
@@ -333,10 +317,10 @@ export const xwsStore = create<XWSState>()(
       },
       setTies: (uid: string, ties: number) => {
         const lists = get().lists;
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
 
         const updated = lists
-          ?.map((l) => {
+          ?.map(l => {
             if (l.vendor.lbn.uid !== uid) {
               return l;
             }
@@ -353,7 +337,7 @@ export const xwsStore = create<XWSState>()(
 
         console.log(
           'updated',
-          updated?.map((l) => l.vendor.lbn)
+          updated?.map(l => l.vendor.lbn),
         );
 
         set({
@@ -361,10 +345,10 @@ export const xwsStore = create<XWSState>()(
         });
       },
       setLosses: (uid: string, losses: number) => {
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
         set({
           lists: get()
-            .lists?.map((l) => {
+            .lists?.map(l => {
               if (l.vendor.lbn.uid !== uid) {
                 return l;
               }
@@ -380,7 +364,7 @@ export const xwsStore = create<XWSState>()(
       },
       setObstacles: (uid: string, obstacles: string[]) => {
         set({
-          lists: get().lists?.map((l) => {
+          lists: get().lists?.map(l => {
             if (l.vendor.lbn.uid !== uid) {
               return l;
             }
@@ -395,7 +379,7 @@ export const xwsStore = create<XWSState>()(
       },
       setTags: (uid: string, tags: string[]) => {
         set({
-          lists: get().lists?.map((l) => {
+          lists: get().lists?.map(l => {
             if (l.vendor.lbn.uid !== uid) {
               return l;
             }
@@ -412,10 +396,10 @@ export const xwsStore = create<XWSState>()(
       },
 
       removeShip: (xws, pilotIndex) => {
-        const { first, second } = filterStore.getState().sorting;
+        const { first, second } = useFilterStore.getState().sorting;
         set({
           lists: get()
-            .lists?.map((l) => {
+            .lists?.map(l => {
               if (l.vendor.lbn.uid !== xws.vendor.lbn.uid) {
                 return l;
               }
@@ -437,10 +421,10 @@ export const xwsStore = create<XWSState>()(
     {
       name: 'xws',
       storage: createJSONStorage(() => AsyncStorage),
-      partialize: (state) => {
+      partialize: state => {
         const { loaded, ...rest } = state;
         return rest;
-      }
-    }
-  )
+      },
+    },
+  ),
 );

@@ -7,14 +7,14 @@ import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useAvailability } from '../helpers/collection';
 import { useTailwind } from '../helpers/tailwind';
-import { xwsStore } from '../stores/xws';
+import { useXwsStore } from '../stores/xws';
 import { ListStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<ListStackParams, 'MissingItems'>;
 
 export const MissingItemsScreen: FC<Props> = ({ route, navigation }) => {
   const { uid } = route.params;
-  const xws = xwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
+  const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
   const available = useAvailability(xws);
   const { tw } = useTailwind();
 

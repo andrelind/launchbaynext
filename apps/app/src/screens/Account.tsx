@@ -8,14 +8,14 @@ import {
 } from 'react-native';
 import { useTailwind } from '../helpers/tailwind';
 import { trpc } from '../helpers/trpc';
-import { systemStore } from '../stores/system';
+import { useSystemStore } from '../stores/system';
 import { OverviewStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<OverviewStackParams, 'Account'>;
 
 export const AccountScreen: FC<Props> = ({ navigation }) => {
     const { tw } = useTailwind();
-    const { user, setToken } = systemStore((s) => ({ user: s.user, setToken: s.setToken }));
+    const { user, setToken } = useSystemStore((s) => ({ user: s.user, setToken: s.setToken }));
 
     const [deleting, setDeleting] = useState(false);
 

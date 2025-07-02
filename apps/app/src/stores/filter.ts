@@ -4,14 +4,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
 export type FilterType = FactionKey | Format;
-export type SortingType =
-  | 'Alphabetically'
-  | 'Faction'
-  | 'Points'
-  | 'Wins'
-  | 'Created Date'
-  | 'Format'
-  | 'Custom';
+export type SortingType = 'Alphabetically' | 'Faction' | 'Points' | 'Wins' | 'Created Date' | 'Format' | 'Custom';
 export type SortDirectionType = 'Ascending' | 'Descending';
 
 export type FilterState = {
@@ -32,22 +25,22 @@ export type FilterState = {
   setSortDirection: (s: SortDirectionType) => void;
 };
 
-export const filterStore = create<FilterState>()(
+export const useFilterStore = create<FilterState>()(
   persist(
     (set, get) => ({
       filters: {},
-      setFilters: (filters) => set({ filters }),
+      setFilters: filters => set({ filters }),
 
       tags: [],
-      setTags: (tags) => set({ tags }),
+      setTags: tags => set({ tags }),
 
       sorting: {
         first: 'Faction',
         second: 'Alphabetically',
         direction: 'Ascending',
       },
-      setFirstSorting: (first) => {
-        set((s) => ({ ...s, sorting: { ...s.sorting, first } }));
+      setFirstSorting: first => {
+        set(s => ({ ...s, sorting: { ...s.sorting, first } }));
 
         // const { second } = get().sorting;
         // const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
@@ -59,8 +52,8 @@ export const filterStore = create<FilterState>()(
         // });
         // xwsStore.getState().setLists(lists);
       },
-      setSecondSorting: (second) => {
-        set((s) => ({ ...s, sorting: { ...s.sorting, second } }));
+      setSecondSorting: second => {
+        set(s => ({ ...s, sorting: { ...s.sorting, second } }));
 
         // const { first } = get().sorting;
         // const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
@@ -72,12 +65,11 @@ export const filterStore = create<FilterState>()(
         // });
         // xwsStore.getState().setLists(lists);
       },
-      setSortDirection: (direction) =>
-        set((s) => ({ ...s, sorting: { ...s.sorting, direction } })),
+      setSortDirection: direction => set(s => ({ ...s, sorting: { ...s.sorting, direction } })),
     }),
     {
       name: 'filter',
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );

@@ -4,7 +4,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import ActionSheet, { SheetProps } from 'react-native-actions-sheet';
 import Assets from '../../helpers/assets';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 
 export const SelectObstaclesSheetId = 'SelectObstaclesSheet';
 export type SelectObstaclesSheetProps = { uid: string };
@@ -32,8 +32,8 @@ const SelectObstaclesSheet: FC<SheetProps<'SelectObstaclesSheet'>> = ({
   const { tw } = useTailwind();
 
   const { uid } = payload!;
-  const xws = xwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
-  const setObstacles = xwsStore((s) => s.setObstacles);
+  const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
+  const setObstacles = useXwsStore((s) => s.setObstacles);
 
   return (
     <ActionSheet id={sheetId} useBottomSafeAreaPadding>

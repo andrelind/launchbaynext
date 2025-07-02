@@ -33,7 +33,7 @@ import {
 const OverviewStack = createNativeStackNavigator<OverviewStackParams>();
 const OverviewStackComponent = () => {
   return (
-    <OverviewStack.Navigator>
+    <OverviewStack.Navigator >
       <OverviewStack.Screen
         name="Overview"
         component={OverviewScreen}

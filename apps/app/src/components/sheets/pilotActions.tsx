@@ -11,9 +11,10 @@ import ActionSheet, {
   SheetManager,
   SheetProps,
 } from 'react-native-actions-sheet';
+import { useShallow } from 'zustand/react/shallow';
 import { smooth } from '../../helpers/animation';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 import './types';
 
 export const PilotActionSheetId = 'PilotActionSheet';
@@ -30,12 +31,12 @@ const PilotActionSheet = ({
   const { uid, pilotIndex } = payload!;
   const [index, setIndex] = useState(pilotIndex);
 
-  const { lists, setLists, copyShip, removeShip } = xwsStore((s) => ({
+  const { lists, setLists, copyShip, removeShip } = useXwsStore(useShallow((s) => ({
     lists: s.lists,
     setLists: s.setLists,
     copyShip: s.copyShip,
     removeShip: s.removeShip,
-  }));
+  })));
 
   const xws = lists?.find((l) => l.vendor.lbn.uid === uid);
   const ship = xws && loadShip2(xws?.pilots[index], xws);

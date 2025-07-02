@@ -12,8 +12,8 @@ import { PilotListItem } from '../components/PilotListItem';
 import { countForPilot2 } from '../helpers/collection';
 import { shipTypes } from '../helpers/select';
 import { useTailwind } from '../helpers/tailwind';
-import { collectionStore } from '../stores/collection';
-import { xwsStore } from '../stores/xws';
+import { useCollectionStore } from '../stores/collection';
+import { useXwsStore } from '../stores/xws';
 import { SelectStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<SelectStackParams, 'SelectPilot'>;
@@ -23,11 +23,11 @@ export const SelectPilotScreen: FC<Props> = ({ route, navigation }) => {
   const { uid, shipXws, pilotIndex } = route.params;
 
   const { tw } = useTailwind();
-  const collection = collectionStore();
-  const xws = xwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
+  const collection = useCollectionStore();
+  const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
   const shipList = xws && shipTypes(xws, true);
-  const addShip = xwsStore((s) => s.addShip);
-  const changePilot = xwsStore((s) => s.changePilot);
+  const addShip = useXwsStore((s) => s.addShip);
+  const changePilot = useXwsStore((s) => s.changePilot);
 
   useLayoutEffect(() => {
     navigation.setOptions({

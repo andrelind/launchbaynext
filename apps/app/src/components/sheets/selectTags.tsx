@@ -3,7 +3,7 @@ import { FC, useState } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import ActionSheet, { SheetProps } from 'react-native-actions-sheet';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 
 export const SelectTagsSheetId = 'SelectTagsSheet';
 export type SelectTagsSheetProps = { uid: string };
@@ -17,11 +17,11 @@ const SelectTagsSheet: FC<SheetProps<'SelectTagsSheet'>> = ({
   const { tw } = useTailwind();
 
   const { uid } = payload!;
-  const xws = xwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
+  const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
   const selected = xws?.vendor.lbn.tags || [];
-  const setTags = xwsStore((s) => s.setTags);
+  const setTags = useXwsStore((s) => s.setTags);
   const allTags =
-    xwsStore(s => s.lists)
+    useXwsStore(s => s.lists)
       ?.map(xws => xws.vendor.lbn.tags || [])
       .reduce((a, c) => {
         (c || []).forEach(tag => {

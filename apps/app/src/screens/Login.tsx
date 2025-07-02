@@ -16,9 +16,9 @@ import Toast from 'react-native-toast-message';
 import { syncWithServer } from '../helpers/api';
 import { useTailwind } from '../helpers/tailwind';
 import { trpc } from '../helpers/trpc';
-import { collectionStore } from '../stores/collection';
-import { systemStore } from '../stores/system';
-import { xwsStore } from '../stores/xws';
+import { useCollectionStore } from '../stores/collection';
+import { useSystemStore } from '../stores/system';
+import { useXwsStore } from '../stores/xws';
 import { OverviewStackParams } from '../types/navigation';
 
 const CELL_COUNT = 6;
@@ -27,7 +27,7 @@ type Props = NativeStackScreenProps<OverviewStackParams, 'Login'>;
 
 export const LoginScreen: FC<Props> = ({ navigation }) => {
     const { tw } = useTailwind();
-    const setToken = systemStore((s) => s.setToken);
+    const setToken = useSystemStore((s) => s.setToken);
 
     const [busy, setBusy] = useState(false);
 
@@ -71,7 +71,7 @@ export const LoginScreen: FC<Props> = ({ navigation }) => {
                 setToken(token);
                 navigation.pop();
                 setTimeout(() => {
-                    syncWithServer(xwsStore.getState(), collectionStore.getState());
+                    syncWithServer(useXwsStore.getState(), useCollectionStore.getState());
                 }, 100);
             } catch (e: any) {
                 console.error(e.message);
@@ -198,7 +198,7 @@ export const LoginScreen: FC<Props> = ({ navigation }) => {
                             setToken(token);
                             navigation.pop();
                             setTimeout(() => {
-                                syncWithServer(xwsStore.getState(), collectionStore.getState());
+                                syncWithServer(useXwsStore.getState(), useCollectionStore.getState());
                             }, 100);
                         } catch (e: any) {
                             console.error(e);

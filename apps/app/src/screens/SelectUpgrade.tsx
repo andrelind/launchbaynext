@@ -10,8 +10,8 @@ import { UpgradeComponent } from '../components/Upgrade';
 import { countForUpgrade2 } from '../helpers/collection';
 import { upgradesForSlot2 } from '../helpers/select';
 import { useTailwind } from '../helpers/tailwind';
-import { collectionStore } from '../stores/collection';
-import { xwsStore } from '../stores/xws';
+import { useCollectionStore } from '../stores/collection';
+import { useXwsStore } from '../stores/xws';
 import { SelectStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<SelectStackParams, 'SelectUpgrade'>;
@@ -20,16 +20,16 @@ export const SelectUpgradeScreen: FC<Props> = ({ route, navigation }) => {
   const { uid, slot, faction, index, slotIndex } = route.params;
 
   const { tw } = useTailwind();
-  const xws = xwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
+  const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
   const ships = xws?.pilots.map((p) => loadShip2(p, xws));
   const pilot = xws?.pilots[index];
   const ship = pilot && loadShip2(pilot, xws);
 
-  const setUpgrade = xwsStore((s) => s.setUpgrade);
+  const setUpgrade = useXwsStore((s) => s.setUpgrade);
 
   const [flipped, setFlipped] = useState<number[]>([]);
   const [hide, setHide] = useState(false);
-  const collection = collectionStore();
+  const collection = useCollectionStore();
 
   const upgrades =
     xws &&

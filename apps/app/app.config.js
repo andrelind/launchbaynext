@@ -27,6 +27,7 @@ export default {
     android: {
       versionCode: 53,
       package: IS_DEV ? 'com.launchbaynext.dev' : 'com.launchbaynext',
+      edgeToEdgeEnabled: true,
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
         backgroundColor: '#09090b',
@@ -42,6 +43,7 @@ export default {
       'expo-apple-authentication',
       'expo-font',
       'expo-asset',
+      'expo-web-browser',
     ],
     extra: {
       eas: {

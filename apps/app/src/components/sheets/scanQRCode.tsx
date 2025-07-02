@@ -5,7 +5,7 @@ import ActionSheet, {
     SheetProps
 } from 'react-native-actions-sheet';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 import './types';
 
 export const ScanQRCodeSheetId = 'ScanQRCodeSheet';
@@ -17,7 +17,7 @@ const ScanQRCodeSheet = ({
     payload
 }: SheetProps<'ScanQRCodeSheet'>) => {
     const { tw } = useTailwind();
-    const addSquadron = xwsStore((s) => s.addSquadron);
+    const addSquadron = useXwsStore((s) => s.addSquadron);
 
     const [permission, requestPermission] = useCameraPermissions();
     return (

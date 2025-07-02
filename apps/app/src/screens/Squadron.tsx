@@ -10,12 +10,13 @@ import {
 import { SheetManager } from 'react-native-actions-sheet';
 import DraggableFlatList from 'react-native-draggable-flatlist';
 import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
+import { useShallow } from 'zustand/react/shallow';
 import { PilotListItem } from '../components/PilotListItem';
 import { ExportSquadronSheetId } from '../components/sheets/exportSquadron';
 import { SwipeComponent } from '../components/SwipeComponent';
 import { useAvailability } from '../helpers/collection';
 import { useTailwind } from '../helpers/tailwind';
-import { xwsStore } from '../stores/xws';
+import { useXwsStore } from '../stores/xws';
 import { red } from '../theme';
 import { ListStackParams } from '../types/navigation';
 
@@ -29,13 +30,13 @@ export const SquadronScreen: FC<Props> = ({ route, navigation }) => {
   const { tw } = useTailwind();
 
   const { xws, lists, setLists, copyShip, removeShip } =
-    xwsStore((s) => ({
+    useXwsStore(useShallow((s) => ({
       xws: s.lists?.find((l) => l.vendor.lbn.uid === uid),
       lists: s.lists,
       setLists: s.setLists,
       copyShip: s.copyShip,
       removeShip: s.removeShip,
-    }));
+    })));
 
   // @ts-ignore
   const ships: EShip[] | undefined = xws?.pilots

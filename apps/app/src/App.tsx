@@ -14,8 +14,8 @@ import { RootStackComponent } from './Navigation';
 import './components/sheets';
 import { syncWithServer } from './helpers/api';
 import { useTailwind } from './helpers/tailwind';
-import { collectionStore } from './stores/collection';
-import { xwsStore } from './stores/xws';
+import { useCollectionStore } from './stores/collection';
+import { useXwsStore } from './stores/xws';
 import { green, orange, red, yellow } from './theme';
 
 const runUpdates = async () => {
@@ -39,15 +39,15 @@ const runUpdates = async () => {
   }
 
   await syncWithServer(
-    xwsStore.getState(),
-    collectionStore.getState()
+    useXwsStore.getState(),
+    useCollectionStore.getState()
   );
 };
 
-xwsStore.subscribe(state => {
+useXwsStore.subscribe(state => {
   if (!state.loaded) {
     // Reload all lists at startup to clean and recount points
-    const lists = xwsStore.getState().lists?.map(l => {
+    const lists = useXwsStore.getState().lists?.map(l => {
       if (!l.ruleset) {
         l.ruleset = 'amg';
       }
@@ -85,9 +85,9 @@ xwsStore.subscribe(state => {
         },
       };
     });
-    xwsStore.getState().setLoaded();
+    useXwsStore.getState().setLoaded();
     if (lists) {
-      xwsStore.getState().setLists(lists);
+      useXwsStore.getState().setLists(lists);
     }
 
     setTimeout(runUpdates, 500);

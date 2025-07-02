@@ -7,7 +7,7 @@ import Animated, { FadeInUp } from 'react-native-reanimated';
 import { ShipFont } from '../components/fonts/ShipIcon';
 import { shipTypes } from '../helpers/select';
 import { useTailwind } from '../helpers/tailwind';
-import { xwsStore } from '../stores/xws';
+import { useXwsStore } from '../stores/xws';
 import { SelectStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<SelectStackParams, 'SelectShip'>;
@@ -16,7 +16,7 @@ export const SelectShipScreen: FC<Props> = ({ route, navigation }) => {
   const { uid, shipXws, pilotIndex } = route.params;
 
   const { tw } = useTailwind();
-  const xws = xwsStore(
+  const xws = useXwsStore(
     useCallback((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid), [uid])
   );
   console.log('xws', xws);

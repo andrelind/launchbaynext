@@ -1,6 +1,6 @@
 import { Feather } from '@expo/vector-icons';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import React, { FC, useEffect, useLayoutEffect, useState } from 'react';
+import React, { FC, useLayoutEffect, useState } from 'react';
 import {
   SafeAreaView,
   Text,
@@ -13,32 +13,23 @@ import SquadronComponent from '../components/Squadron';
 import { move } from '../helpers/misc';
 import { pilotName } from '../helpers/names';
 import { useTailwind } from '../helpers/tailwind';
-import { FilterState, filterStore } from '../stores/filter';
-import { XWS, XWSState } from '../stores/types';
-import { xwsStore } from '../stores/xws';
+import { XWS } from '../stores/types';
+import { useXwsStore } from '../stores/xws';
+import { RenderItem } from '../types/draggable-flatlist';
 import { ListStackParams } from '../types/navigation';
 
+
 type Props = NativeStackScreenProps<ListStackParams, 'Squadrons'>;
-
-const xwsSel = (s: XWSState) => ({
-  lists: s.lists,
-  setLists: s.setLists,
-  addSquadron: s.addSquadron,
-});
-
-const filterSel = (s: FilterState) => ({
-  filters: s.filters,
-  tags: s.tags,
-  setFirstSorting: s.setFirstSorting,
-  setSecondSorting: s.setSecondSorting,
-});
 
 export const SquadronsScreen: FC<Props> = ({ navigation }) => {
   const { tw } = useTailwind();
 
-  const { lists, setLists } = xwsStore(xwsSel);
-  const { filters, tags, setFirstSorting, setSecondSorting } =
-    filterStore(filterSel);
+  const lists = useXwsStore(s => s.lists);
+  const setLists = useXwsStore(s => s.setLists);
+  // const filters = useFilterStore(s => s.filters);
+  // const tags = useFilterStore(s => s.tags);
+  // const setFirstSorting = useFilterStore(s => s.setFirstSorting);
+  // const setSecondSorting = useFilterStore(s => s.setSecondSorting);
 
   const [stateLists, setStateLists] = useState(lists);
   const [needle, setNeedle] = useState<string>('');
@@ -75,7 +66,7 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
     });
   }, [navigation]);
 
-  useEffect(() => setStateLists(lists), [lists]);
+  // useEffect(() => setStateLists(lists), [lists]);
 
   const filtered = lists
     ?.filter(
@@ -85,25 +76,36 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
           pilotName(pilot, list)?.toLowerCase().includes(needle)
         ).length > 0
     )
-    .filter((list) => {
-      if (Object.keys(filters).length === 0) {
-        return true;
-      }
-      return filters[list.faction] || filters[list.format];
-    })
-    .filter((list) => {
-      if (tags.length === 0) {
-        return true;
-      }
-      if (
-        tags.length > 0 &&
-        tags.filter((tag) => (list.vendor.lbn.tags || []).includes(tag))
-          .length === 0
-      ) {
-        return false;
-      }
-      return true;
-    });
+  // .filter((list) => {
+  //   if (Object.keys(filters).length === 0) {
+  //     return true;
+  //   }
+  //   return filters[list.faction] || filters[list.format];
+  // })
+  // .filter((list) => {
+  //   if (tags.length === 0) {
+  //     return true;
+  //   }
+  //   if (
+  //     tags.length > 0 &&
+  //     tags.filter((tag) => (list.vendor.lbn.tags || []).includes(tag))
+  //       .length === 0
+  //   ) {
+  //     return false;
+  //   }
+  //   return true;
+  // });
+
+  const renderItem: RenderItem<XWS> = ({ item, drag }) => (
+    <SquadronComponent
+      key={item.vendor.lbn.uid}
+      item={item}
+      onPress={() => {
+        navigation.navigate('Squadron', { uid: item.vendor.lbn.uid });
+      }}
+      drag={drag}
+    />
+  );
 
   return (
     <SafeAreaView style={tw`flex-1`}>
@@ -115,8 +117,8 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
         onDragBegin={() => { }}
         onDragEnd={({ from, to }: any) => {
           if (from !== to) {
-            setFirstSorting('Custom');
-            setSecondSorting('Custom');
+            // setFirstSorting('Custom');
+            // setSecondSorting('Custom');
           }
 
           if (filtered && stateLists) {
@@ -132,16 +134,7 @@ export const SquadronsScreen: FC<Props> = ({ navigation }) => {
             <Text style={tw`text-zinc-500 text-lg`}>No squadrons found</Text>
           </View>
         )}
-        renderItem={({ item, drag }) => (
-          <SquadronComponent
-            key={item.vendor.lbn.uid}
-            item={item}
-            onPress={() => {
-              navigation.navigate('Squadron', { uid: item.vendor.lbn.uid });
-            }}
-            drag={drag}
-          />
-        )}
+        renderItem={renderItem}
       />
 
       <TouchableOpacity

@@ -29,8 +29,8 @@ import ShipStats from '../components/ShipStats';
 import { SwipeComponent } from '../components/SwipeComponent';
 import { UpgradeComponent } from '../components/Upgrade';
 import { useTailwind } from '../helpers/tailwind';
-import { loadoutStore } from '../stores/loadout';
-import { xwsStore } from '../stores/xws';
+import { useLoadoutStore } from '../stores/loadout';
+import { useXwsStore } from '../stores/xws';
 import { ListStackParams } from '../types/navigation';
 
 type Props = NativeStackScreenProps<ListStackParams, 'Pilot'>;
@@ -39,14 +39,14 @@ export const PilotScreen: FC<Props> = ({ route, navigation }) => {
   const { uid, pilotIndex, factionKey } = route.params;
 
   const { tw } = useTailwind();
-  const xws = xwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
+  const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
   const pilot = xws?.pilots[pilotIndex];
 
   const ship = pilot && loadShip2(pilot, xws);
   const upgrades = loadUpgrades2(ship, xws?.format);
-  const setUpgrade = xwsStore((s) => s.setUpgrade);
+  const setUpgrade = useXwsStore((s) => s.setUpgrade);
 
-  const addLoadout = loadoutStore((s) => s.addLoadout);
+  const addLoadout = useLoadoutStore((s) => s.addLoadout);
 
   const [flipped, setFlipped] = useState<number[]>([]);
   const [showRename, setShowRename] = useState(false);

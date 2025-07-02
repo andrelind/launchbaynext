@@ -8,9 +8,10 @@ import ActionSheet, {
     SheetProps
 } from 'react-native-actions-sheet';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useShallow } from 'zustand/react/shallow';
 import { useTailwind } from '../../helpers/tailwind';
-import { filterStore } from '../../stores/filter';
-import { xwsStore } from '../../stores/xws';
+import { useFilterStore } from '../../stores/filter';
+import { useXwsStore } from '../../stores/xws';
 import { XWingFont } from '../fonts/XWingIcon';
 import './types';
 
@@ -23,16 +24,16 @@ const FilterSquadronsSheet = ({
 }: SheetProps<'FilterSquadronsSheet'>) => {
     const { tw } = useTailwind();
 
-    const { filters, setFilters, tags, setTags } = filterStore(
-        s => ({
+    const { filters, setFilters, tags, setTags } = useFilterStore(
+        useShallow(s => ({
             filters: s.filters,
             setFilters: s.setFilters,
             tags: s.tags,
             setTags: s.setTags,
-        }),
+        })),
     );
 
-    const allTags = xwsStore(s => s.lists)
+    const allTags = useXwsStore(s => s.lists)
         ?.map(xws => xws?.vendor?.lbn?.tags)
         ?.reduce((a, c) => {
             (c || []).forEach(tag => {

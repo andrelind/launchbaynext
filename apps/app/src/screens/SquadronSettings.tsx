@@ -17,7 +17,7 @@ import {
 import Assets from '../helpers/assets';
 import { colorForFormat } from '../helpers/colors';
 import { useTailwind } from '../helpers/tailwind';
-import { xwsStore } from '../stores/xws';
+import { useXwsStore } from '../stores/xws';
 import { blue, orange } from '../theme';
 import { SelectStackParams } from '../types/navigation';
 
@@ -29,15 +29,14 @@ export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
 
     const { tw } = useTailwind();
 
-    const { xws, setRuleset, setName, setWins, setTies, setLosses, setTags } =
-        xwsStore((s) => ({
+    const { xws, setRuleset, setName, setWins, setTies, setLosses } =
+        useXwsStore((s) => ({
             xws: s.lists?.find((l) => l.vendor.lbn.uid === uid),
             setRuleset: s.setRuleset,
             setName: s.setName,
             setWins: s.setWins,
             setTies: s.setTies,
             setLosses: s.setLosses,
-            setTags: s.setTags,
         }));
 
     const [showRename, setShowRename] = useState(false);

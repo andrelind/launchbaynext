@@ -16,7 +16,7 @@ import { useTailwind } from '../helpers/tailwind';
 import { trpc } from '../helpers/trpc';
 import { captureScroll } from '../helpers/ui';
 import { notifications } from '../notifications';
-import { systemStore } from '../stores/system';
+import { useSystemStore } from '../stores/system';
 import { blue } from '../theme';
 import { OverviewStackParams } from '../types/navigation';
 
@@ -25,7 +25,7 @@ type Props = NativeStackScreenProps<OverviewStackParams, 'Overview'>;
 export const OverviewScreen: FC<Props> = ({ navigation }) => {
   const { tw } = useTailwind();
 
-  const { user } = systemStore((s) => ({ user: s.user }));
+  const user = useSystemStore((s) => s.user);
 
   const { data, isValidating, mutate } = useSwr('stats', async () => {
     try {
