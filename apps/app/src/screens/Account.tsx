@@ -6,6 +6,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
+import { useShallow } from 'zustand/react/shallow';
 import { useTailwind } from '../helpers/tailwind';
 import { trpc } from '../helpers/trpc';
 import { useSystemStore } from '../stores/system';
@@ -15,7 +16,7 @@ type Props = NativeStackScreenProps<OverviewStackParams, 'Account'>;
 
 export const AccountScreen: FC<Props> = ({ navigation }) => {
     const { tw } = useTailwind();
-    const { user, setToken } = useSystemStore((s) => ({ user: s.user, setToken: s.setToken }));
+    const { user, setToken } = useSystemStore(useShallow((s) => ({ user: s.user, setToken: s.setToken })));
 
     const [deleting, setDeleting] = useState(false);
 

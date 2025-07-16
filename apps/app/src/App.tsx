@@ -16,7 +16,7 @@ import { syncWithServer } from './helpers/api';
 import { useTailwind } from './helpers/tailwind';
 import { useCollectionStore } from './stores/collection';
 import { useXwsStore } from './stores/xws';
-import { green, orange, red, yellow } from './theme';
+import { green, orange, red } from './theme';
 
 const runUpdates = async () => {
   try {
@@ -24,7 +24,7 @@ const runUpdates = async () => {
     if (update.isAvailable) {
       Toast.show({
         type: 'info',
-        text1: 'Updating system...',
+        text1: 'Updating content...',
         text2: 'This can take a few seconds, please wait',
       });
       await Updates.fetchUpdateAsync();
@@ -99,7 +99,7 @@ const toastConfig = {
     <BaseToast {...props} style={{ ...props.style, borderLeftColor: green }} />
   ),
   info: (props: any) => (
-    <BaseToast {...props} style={{ ...props.style, borderLeftColor: yellow }} />
+    <BaseToast {...props} style={{ ...props.style, borderLeftColor: orange }} />
   ),
   error: (props: any) => (
     <ErrorToast {...props} style={{ ...props.style, borderLeftColor: red }} />

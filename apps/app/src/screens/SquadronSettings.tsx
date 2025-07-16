@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
 import Dialog from 'react-native-dialog';
+import { useShallow } from 'zustand/react/shallow';
 import {
     SelectFormatSheetId
 } from '../components/sheets/selectFormat';
@@ -22,6 +23,7 @@ import { blue, orange } from '../theme';
 import { SelectStackParams } from '../types/navigation';
 
 
+
 type Props = NativeStackScreenProps<SelectStackParams, 'SquadronSettings'>;
 
 export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
@@ -30,14 +32,14 @@ export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
     const { tw } = useTailwind();
 
     const { xws, setRuleset, setName, setWins, setTies, setLosses } =
-        useXwsStore((s) => ({
+        useXwsStore(useShallow((s) => ({
             xws: s.lists?.find((l) => l.vendor.lbn.uid === uid),
             setRuleset: s.setRuleset,
             setName: s.setName,
             setWins: s.setWins,
             setTies: s.setTies,
             setLosses: s.setLosses,
-        }));
+        })));
 
     const [showRename, setShowRename] = useState(false);
     const [tempName, setTempName] = useState<string | undefined>(
@@ -73,8 +75,6 @@ export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
 
     return (
         <View style={tw`flex flex-1`}>
-
-
             <View style={tw`px-2 gap-y-6 py-3`}>
                 <View style={tw`flex-row justify-between items-center`}>
                     <Text style={tw`font-bold text-sm text-white`}>Name</Text>
@@ -127,7 +127,10 @@ export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
                         title={xws?.format || 'Extended'}
                         color={colorForFormat(xws?.format || 'Extended')}
                         onPress={() => {
-                            SheetManager.show<'SelectFormatSheet'>(SelectFormatSheetId, { payload: { uid } });
+                            navigation.pop();
+                            setTimeout(() => {
+                                SheetManager.show<'SelectFormatSheet'>(SelectFormatSheetId, { payload: { uid } });
+                            }, 700);
                         }}
                     />
                 </View>
@@ -138,7 +141,10 @@ export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
                             title="Edit"
                             color={tw.color('primary-500')}
                             onPress={() => {
-                                SheetManager.show('SelectObstaclesSheet', { payload: { uid } });
+                                navigation.pop();
+                                setTimeout(() => {
+                                    SheetManager.show('SelectObstaclesSheet', { payload: { uid } });
+                                }, 700);
                             }}
                         />
                     </View>
@@ -159,7 +165,10 @@ export const SquadronSettingsScreen: FC<Props> = ({ route, navigation }) => {
                         title="Edit"
                         color={tw.color('primary-500')}
                         onPress={() => {
-                            SheetManager.show('SelectTagsSheet', { payload: { uid } });
+                            navigation.pop();
+                            setTimeout(() => {
+                                SheetManager.show('SelectTagsSheet', { payload: { uid } });
+                            }, 700);
                         }}
                     />
                 </View>

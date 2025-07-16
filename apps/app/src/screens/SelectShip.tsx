@@ -1,9 +1,10 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { FlashList } from '@shopify/flash-list';
-import React, { FC, useCallback, useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import Animated, { FadeInUp } from 'react-native-reanimated';
 
+import { useShallow } from 'zustand/react/shallow';
 import { ShipFont } from '../components/fonts/ShipIcon';
 import { shipTypes } from '../helpers/select';
 import { useTailwind } from '../helpers/tailwind';
@@ -17,7 +18,7 @@ export const SelectShipScreen: FC<Props> = ({ route, navigation }) => {
 
   const { tw } = useTailwind();
   const xws = useXwsStore(
-    useCallback((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid), [uid])
+    useShallow((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid))
   );
   console.log('xws', xws);
 
