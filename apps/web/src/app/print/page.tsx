@@ -1,7 +1,8 @@
 'use client';
 
+import { exportAsXws } from 'lbn-core/src/helpers/import+export';
 import { loadShip2, type TShip } from 'lbn-core/src/helpers/loading';
-import { deserialize, exportAsXws } from 'lbn-core/src/helpers/serializer';
+import { deserialize, } from 'lbn-core/src/helpers/serializer';
 import { type SlotKey } from 'lbn-core/src/types';
 import { type NextPage } from 'next';
 import { useSearchParams } from 'next/navigation';

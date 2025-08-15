@@ -2,6 +2,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FactionKey, Format } from 'lbn-core/src/types';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
+import { compare } from '../helpers/misc';
+import { xwsStore } from './xws';
 
 export type FilterType = FactionKey | Format;
 export type SortingType = 'Alphabetically' | 'Faction' | 'Points' | 'Wins' | 'Created Date' | 'Format' | 'Custom';
@@ -42,28 +44,28 @@ export const useFilterStore = create<FilterState>()(
       setFirstSorting: first => {
         set(s => ({ ...s, sorting: { ...s.sorting, first } }));
 
-        // const { second } = get().sorting;
-        // const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
-        //   const c = compare(a, b, first);
-        //   if (c === 0) {
-        //     return compare(a, b, second);
-        //   }
-        //   return c;
-        // });
-        // xwsStore.getState().setLists(lists);
+        const { second } = get().sorting;
+        const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
+          const c = compare(a, b, first);
+          if (c === 0) {
+            return compare(a, b, second);
+          }
+          return c;
+        });
+        xwsStore.getState().setLists(lists);
       },
       setSecondSorting: second => {
         set(s => ({ ...s, sorting: { ...s.sorting, second } }));
 
-        // const { first } = get().sorting;
-        // const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
-        //   const c = compare(a, b, first);
-        //   if (c === 0) {
-        //     return compare(a, b, second);
-        //   }
-        //   return c;
-        // });
-        // xwsStore.getState().setLists(lists);
+        const { first } = get().sorting;
+        const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
+          const c = compare(a, b, first);
+          if (c === 0) {
+            return compare(a, b, second);
+          }
+          return c;
+        });
+        xwsStore.getState().setLists(lists);
       },
       setSortDirection: direction => set(s => ({ ...s, sorting: { ...s.sorting, direction } })),
     }),

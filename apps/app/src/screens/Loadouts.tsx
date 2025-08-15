@@ -66,6 +66,7 @@ export const LoadoutsScreen: FC<Props> = ({ route, navigation }) => {
                 useXwsStore
                   .getState()
                   .setUpgradesForPilot(uid, index, item.upgrades);
+                navigation.pop();
                 // Navigation.dismissModal(componentId);
               }}
             />
