@@ -43,7 +43,7 @@ const t: ShipType = {
   ],
   ability: {
     name: 'Twin Ion Engines',
-    text: 'Ignore the \"TIE\" ship restriction on upgrade cards.',
+    text: 'Ignore the "TIE" ship restriction on upgrade cards.',
   },
   pilots: [
     {
@@ -56,47 +56,32 @@ const t: ShipType = {
         'During the System Phase, you may choose an object that you have locked at range 1-3. Another friendly ship at range 1-3 may acquire a lock on that object.',
       standard: true,
       epic: true,
-      slots: [
-        'Talent',
-        'Missile',
-        'Astromech',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Talent', 'Missile', 'Astromech', 'Modification', 'Configuration'],
       cost: 3,
       ffg: 791,
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wilhufftarkin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wilhufftarkin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wilhufftarkin.png',
     },
     {
       xws: 'oddball-nimbusclassvwing',
       ffg: 788,
       name: '“Odd Ball”',
-      cost: 4,
+      cost: 3,
       limited: 1,
       initiative: 5,
       caption: 'CC-2237',
-      slots: [
-        'Talent',
-        'Torpedo',
-        'Astromech',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Talent', 'Torpedo', 'Astromech', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       keywords: ['Clone'],
-      loadout: 15,
+      loadout: 8,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-nimbusclassvwing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-nimbusclassvwing.png',
     },
     {
       name: '“Contrail”',
@@ -115,8 +100,7 @@ const t: ShipType = {
       loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
     },
     {
       name: '“Klick”',
@@ -151,10 +135,8 @@ const t: ShipType = {
       keywords: ['Clone'],
       loadout: 4,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowsquadronescort.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronescort.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/shadowsquadronescort.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronescort.png',
       caption: '',
     },
     {
@@ -170,10 +152,8 @@ const t: ShipType = {
       ffg: 793,
       loadout: 5,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/loyalistvolunteer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/loyalistvolunteer.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/loyalistvolunteer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/loyalistvolunteer.png',
       caption: '',
     },
     {
@@ -190,8 +170,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
       shipAbility: {
         name: 'Born for This',
@@ -220,20 +199,13 @@ const t: ShipType = {
       keywords: ['Clone'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/contrail-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/contrail-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
       shipAbility: {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      standardLoadout: [
-        'ionlimiteroverride',
-        'preciseastromech-battleofyavin',
-        'ionbombs',
-        'alpha3bbesh',
-      ],
+      standardLoadout: ['ionlimiteroverride', 'preciseastromech-battleofyavin', 'ionbombs', 'alpha3bbesh'],
       ffg: 997,
     },
   ],
