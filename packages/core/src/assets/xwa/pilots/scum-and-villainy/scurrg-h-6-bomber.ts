@@ -92,7 +92,7 @@ const t: ShipType = {
       cost: 5,
       xws: 'solsixxa',
       ability:
-        'If you would drop a device using a [1 [Straight]] template, you may drop it using any other speed 1 template instead.',
+        'If you would drop a device using a [1 [Straight]) template, you may drop it using any other speed 1 template instead.',
       slots: [
         'Talent',
         'Turret',

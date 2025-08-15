@@ -729,7 +729,7 @@ const t: UpgradeBase[] = [
     sides: [
       {
         ability:
-          'While you boost or barrel roll, if your equipped [Configuration] upgrade has the "(Closed)" side faceup, you can move through and overlap obstacles. After you boost or barrel roll through an obstacle, if you are not at range 0 of it, gain 1 evade token.',
+          'While you boost or barrel roll, if your equipped [Configuration] upgrade has the \"(Closed)\" side faceup, you can move through and overlap obstacles. After you boost or barrel roll through an obstacle, if you are not at range 0 of it, gain 1 evade token.',
         title: 'Backwards Tailslide',
         type: 'Talent',
         slots: ['Talent'],

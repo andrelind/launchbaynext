@@ -43,7 +43,7 @@ const t: ShipType = {
   ],
   ability: {
     name: 'Twin Ion Engines',
-    text: 'Ignore the "TIE" ship restriction on upgrade cards.',
+    text: 'Ignore the \"TIE\" ship restriction on upgrade cards.',
   },
   pilots: [
     {
@@ -108,11 +108,11 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
-      cost: 4,
+      cost: 3,
       epic: true,
       ffg: 789,
       keywords: ['Clone'],
-      loadout: 15,
+      loadout: 3,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
       artwork:

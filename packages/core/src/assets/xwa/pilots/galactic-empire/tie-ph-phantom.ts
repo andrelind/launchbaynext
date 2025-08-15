@@ -51,7 +51,7 @@ const t: ShipType = {
       cost: 4,
       xws: 'echo',
       ability:
-        'While you decloak, you must use the [2 [Bank Left]] or [2 [Bank Right]] template instead of the [2 [Straight]] template.',
+        'While you decloak, you must use the [2 [Bank Left]) or [2 [Bank Right]) template instead of the [2 [Straight]) template.',
       slots: ['Talent', 'Talent', 'Sensor', 'Modification', 'Gunner'],
       ffg: 132,
       standard: false,
@@ -141,7 +141,8 @@ const t: ShipType = {
       ],
       image:
         'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
-      artwork: '',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/whisper-tiephphantom.png',
       standard: true,
       extended: true,
       epic: true,
@@ -168,9 +169,9 @@ const t: ShipType = {
         'manualailerons-tiephphantom',
       ],
       image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/whisper-tiephphantom.png',
-      artwork:
         'https://infinitearenas.com/xw2/images/quickbuilds/echo-tiephphantom.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/echo-tiephphantom.png',
       standard: true,
       extended: true,
       epic: true,

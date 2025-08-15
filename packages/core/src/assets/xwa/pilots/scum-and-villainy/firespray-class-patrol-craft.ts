@@ -96,7 +96,7 @@ const t: ShipType = {
       cost: 7,
       xws: 'emonazzameen',
       ability:
-        'If you would drop a device using a [1 [Straight]] template, you may use the [3 [Turn Left]], [3 [Straight]], or [3 [Turn Right]] template instead.',
+        'If you would drop a device using a [1 [Straight]) template, you may use the [3 [Turn Left]), [3 [Straight]), or [3 [Turn Right]) template instead.',
       slots: [
         'Talent',
         'Cannon',

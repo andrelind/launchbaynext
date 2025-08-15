@@ -72,10 +72,10 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         local.caption = pilot.caption;
       }
       if (pilot.text) {
-        local.text = pilot.text;
+        local.text = pilot.text.replaceAll('[[', '([').replaceAll(']]', '])');
       }
       if (pilot.ability) {
-        local.ability = pilot.ability;
+        local.ability = pilot.ability.replaceAll('[[', '([').replaceAll(']]', '])');
       }
 
       local.initiative = pilot.initiative;
@@ -128,8 +128,8 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         sides: rest.sides.map(s => ({
           ...s,
           title: s.title,
-          ability: s.ability,
-          text: s.text,
+          ability: s.ability.replaceAll('[[', '([').replaceAll(']]', '])'),
+          text: s.text.replaceAll('[[', '([').replaceAll(']]', '])'),
           force: s.force ? { ...s.force, side: ['light', 'dark'] } : undefined,
           grants: s.grants
             ? s.grants.map(g => {

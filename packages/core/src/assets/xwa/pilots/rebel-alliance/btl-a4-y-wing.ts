@@ -183,7 +183,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Y-wing'],
-      loadout: 13,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/norrawexley-btla4ywing.png',

@@ -189,7 +189,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       ability:
-        'After a friendly ship at range 0-3 with a lower initiative than yours partially executes a maneuver, it may perform a red [Focus] action.',
+        'At the start of the Engagement Phase, choose a friendly ship at range 0-3 with a lower initiative than yours. The chosen ship gains 1 evade token and removes 1 non-stress red token.',
       slots: ['Talent', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
@@ -209,7 +209,7 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       ability:
-        'While you barrel roll, you must use the [[Bank Left] or [Bank Right]] template instead of the [[Straight]] template.',
+        'While you barrel roll, you must use the ([Bank Left] or [Bank Right]) template instead of the ([Straight]) template.',
       slots: ['Talent', 'Modification', 'Configuration'],
       standard: true,
       epic: true,
