@@ -72,10 +72,34 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         local.caption = pilot.caption;
       }
       if (pilot.text) {
-        local.text = pilot.text;
+        local.text = pilot.text
+          .replaceAll('[[', '([')
+          .replaceAll(']]', '])')
+          .replaceAll('[0', '(0')
+          .replaceAll('[1', '(1')
+          .replaceAll('[2', '(2')
+          .replaceAll('[3', '(3')
+          .replaceAll('[4', '(4')
+          .replaceAll('[5', '(5')
+          .replaceAll('[6', '(6')
+          .replaceAll('[7', '(7')
+          .replaceAll('[8', '(8')
+          .replaceAll('[9', '(9');
       }
       if (pilot.ability) {
-        local.ability = pilot.ability;
+        local.ability = pilot.ability
+          .replaceAll('[[', '([')
+          .replaceAll(']]', '])')
+          .replaceAll('[0', '(0')
+          .replaceAll('[1', '(1')
+          .replaceAll('[2', '(2')
+          .replaceAll('[3', '(3')
+          .replaceAll('[4', '(4')
+          .replaceAll('[5', '(5')
+          .replaceAll('[6', '(6')
+          .replaceAll('[7', '(7')
+          .replaceAll('[8', '(8')
+          .replaceAll('[9', '(9');
       }
 
       local.initiative = pilot.initiative;
@@ -128,7 +152,19 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         sides: rest.sides.map(s => ({
           ...s,
           title: s.title,
-          ability: s.ability,
+          ability: s.ability
+            .replaceAll('[[', '([')
+            .replaceAll(']]', '])')
+            .replaceAll('[0', '(0')
+            .replaceAll('[1', '(1')
+            .replaceAll('[2', '(2')
+            .replaceAll('[3', '(3')
+            .replaceAll('[4', '(4')
+            .replaceAll('[5', '(5')
+            .replaceAll('[6', '(6')
+            .replaceAll('[7', '(7')
+            .replaceAll('[8', '(8')
+            .replaceAll('[9', '(9'),
           text: s.text,
           force: s.force ? { ...s.force, side: ['light', 'dark'] } : undefined,
           grants: s.grants

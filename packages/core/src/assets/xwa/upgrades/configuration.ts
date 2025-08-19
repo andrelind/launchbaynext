@@ -397,7 +397,7 @@ const t: UpgradeBase[] = [
       {
         ability:
           'While you perform a primary attack, you may spend your lock on the defender to change 1 of your blank or [Focus] results to a [Hit] result. Add [Device] slot.',
-        title: 'Alpha-3B "Besh"',
+        title: 'Alpha-3B \"Besh\"',
         grants: [{ slot: 'Device', value: 1 }],
         type: 'Configuration',
         slots: ['Configuration'],
@@ -569,7 +569,7 @@ const t: UpgradeBase[] = [
       {
         ability:
           'While you perform a primary attack, before rolling attack dice, you may spend 2 [Charge]. If you do, your [Critical Hit] results inflict ion tokens instead of damage.',
-        title: 'Alpha-3E "Esk"',
+        title: 'Alpha-3E \"Esk\"',
         type: 'Configuration',
         slots: ['Configuration'],
         charges: { value: 2, recovers: 1 },

@@ -6,7 +6,7 @@ const t: UpgradeBase[] = [
     xws: 'chopper-crew',
     sides: [
       {
-        title: '"Chopper"',
+        title: '\"Chopper\"',
         type: 'Crew',
         ability:
           'During the Perform Action step, you may perform 1 action, even while stressed. After you perform an action while stressed, suffer 1 [Hit] damage unless you expose 1 of your damage cards.',
@@ -29,7 +29,7 @@ const t: UpgradeBase[] = [
     xws: 'zeborrelios',
     sides: [
       {
-        title: '"Zeb" Orrelios',
+        title: '\"Zeb\" Orrelios',
         type: 'Crew',
         ability:
           'While you perform an attack at attack range 0, you may spend focus tokens for their default effect to modify results. While defending at attack range 0, the attacker may spend focus tokens for their default effect to modify results.',
@@ -518,7 +518,7 @@ const t: UpgradeBase[] = [
     xws: 'gnkgonkdroid',
     sides: [
       {
-        title: 'GNK "Gonk" Droid',
+        title: 'GNK \"Gonk\" Droid',
         type: 'Crew',
         ability:
           'Setup: Lose 1 [Charge]. Action: Recover 1 [Charge]. Action: Spend 1 [Charge] to recover 1 shield.',
@@ -949,7 +949,7 @@ const t: UpgradeBase[] = [
         title: 'Maul',
         type: 'Crew',
         ability:
-          'After you suffer damage, you may gain 1 stress token to recover 1 [Force]. You can equip "Dark Side" upgrades.',
+          'After you suffer damage, you may gain 1 stress token to recover 1 [Force]. You can equip \"Dark Side\" upgrades.',
         slots: ['Crew'],
         force: { value: 1, recovers: 1, side: ['dark'] },
         grants: [{ value: 1 }],
@@ -1950,7 +1950,7 @@ const t: UpgradeBase[] = [
     sides: [
       {
         ffg: 679,
-        title: '"Fives"',
+        title: '\"Fives\"',
         type: 'Crew',
         slots: ['Crew'],
         ability:
@@ -2959,7 +2959,7 @@ const t: UpgradeBase[] = [
     xws: 'leebo',
     sides: [
       {
-        title: '"Leebo"',
+        title: '\"Leebo\"',
         type: 'Crew',
         ability:
           'After you repair a damage card, you may perform an action from your action bar.',

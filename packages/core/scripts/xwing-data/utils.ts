@@ -52,12 +52,7 @@ export const stripAllTags = (text: string) => {
   return text.replace(/\<[^\>]+\>/gi, '');
 };
 
-export const setTranslation = (
-  object: any,
-  prop: string,
-  value: string,
-  language: string
-) => {
+export const setTranslation = (object: any, prop: string, value: string, language: string) => {
   const intlProp = `${prop}_i18n`;
   if (object[intlProp]) {
     delete object[intlProp];
@@ -106,7 +101,7 @@ export const asyncForEach = async (array: Array<any>, callback: Function) => {
 
 export function timeout(ms: number) {
   // $FlowFixMe
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 declare global {
@@ -118,8 +113,13 @@ declare global {
 }
 // @ts-ignore
 String.prototype.replaceAll = function (search: string, replacement: string) {
-  const target = this;
-  return target.replace(new RegExp(search, 'g'), replacement);
+  let target = this;
+
+  while (target?.indexOf(search) >= 0) {
+    target = target.replace(search, replacement);
+  }
+
+  return target;
 };
 
 String.prototype.trimName = function () {
@@ -144,8 +144,7 @@ export const shallowCompare = (obj1: any, obj2: any) => {
   return JSON.stringify(obj1) === JSON.stringify(obj2);
 };
 
-export const getName = (f: string) =>
-  f.toLowerCase().replaceAll(' ', '-').replaceAll('/', '-');
+export const getName = (f: string) => f.toLowerCase().replaceAll(' ', '-').replaceAll('/', '-');
 
 export const getFaction = (faction: string) => {
   switch (faction) {
@@ -192,11 +191,7 @@ export const getLocalData = (file: string) => {
 };
 
 const clean = (code: string) =>
-  code
-    .replace('max', 'Math.max')
-    .replace('{', '')
-    .replace('}', '')
-    .replace('statistics:1', 'agility');
+  code.replace('max', 'Math.max').replace('{', '').replace('}', '').replace('statistics:1', 'agility');
 
 const getCode = (code: string) => `
 ({ initiative, agility, ship_size }: any) => {

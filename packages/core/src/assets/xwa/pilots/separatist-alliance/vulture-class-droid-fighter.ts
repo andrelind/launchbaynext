@@ -220,7 +220,7 @@ const t: ShipType = {
       initiative: 1,
       xws: 'haorchallprototype-siegeofcoruscant',
       ability:
-        'After an enemy ship in your [Bullseye Arc] at range 0-2 declares a scenario feature or another friendly ship as the defender, you may perform a [Calculate] or [Lock] action.',
+        'After an enemy ship in your [Bullseye Arc] declares a scenario feature or another friendly ship as the defender, you may perform a [Calculate] or [Lock] action.',
       standard: true,
       epic: true,
       cost: 2,
