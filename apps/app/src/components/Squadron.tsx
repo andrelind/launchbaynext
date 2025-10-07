@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { Alert, Platform, Text, View } from 'react-native';
 import { useShallow } from 'zustand/react/shallow';
 
@@ -28,10 +28,9 @@ interface Props<XWS> {
 export const SquadronComponent: FC<Props<XWS>> = ({
   item,
   drag,
-
   onPress,
 }) => {
-  console.log('Render squadron', item.vendor.lbn.uid, item.name,);
+  // console.log('Render squadron', item.vendor.lbn.uid, item.name,);
   const { tw } = useTailwind();
 
   const { copySquadron, removeSquadron } = useXwsStore(useShallow(selector));
@@ -128,12 +127,4 @@ export const SquadronComponent: FC<Props<XWS>> = ({
   );
 };
 
-// export default SquadronComponent;
-
-export default memo(
-  SquadronComponent,
-  (a, b) =>
-    a.item.version === b.item.version &&
-    a.item.vendor.lbn.uid === b.item.vendor.lbn.uid &&
-    a.isActive === b.isActive
-);
+export default SquadronComponent;

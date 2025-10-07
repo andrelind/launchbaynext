@@ -275,8 +275,12 @@ export const upgradesForSlot2 = (
   return data;
 };
 
-export const shipTypes = (xws: XWS, showUnavailable: boolean, needle?: string): ShipType[] => {
+export const useShipTypes = (xws?: XWS, showUnavailable?: boolean, needle?: string): ShipType[] => {
   const collection = useCollectionStore();
+
+  if (!xws) {
+    return [];
+  }
 
   return Object.keys(assets[xws.ruleset].pilots[factionFromKey(xws.faction)])
     .map(key => assets[xws.ruleset].pilots[factionFromKey(xws.faction)][key])

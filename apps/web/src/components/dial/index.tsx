@@ -1,4 +1,4 @@
-import { memo, type FC } from 'react';
+import { type FC } from 'react';
 import Row from './row';
 
 type Props = {
@@ -18,4 +18,4 @@ export const DialComponent: FC<Props> = ({ dial }: Props) => {
   return <div>{data}</div>;
 };
 
-export default memo(DialComponent);
+export default DialComponent

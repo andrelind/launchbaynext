@@ -42,7 +42,7 @@ export const PilotListItem: FC<Props> = ({ pilot, ship, count, slim, ruleset }) 
               style={tw`flex flex-row items-center justify-between bg-transparent`}
             >
               <View style={tw`flex flex-row items-center gap-x-2`}>
-                {!slim && <ShipStats initiative={pilot?.initiative || 0} />}
+                <ShipStats initiative={pilot?.initiative || 0} />
                 <View>
                   <Text style={tw`font-bold text-white`}>
                     {pilot &&

@@ -5,8 +5,7 @@ import { bumpMinor, bumpPatch } from 'lbn-core/src/helpers/versioning';
 import { SlotKey, Squadron, Upgrade } from 'lbn-core/src/types';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import { removeTournamentOnServer, saveTournamentOnServer } from '../helpers/api';
-import { useSystemStore } from './system';
+// import { removeTournamentOnServer, saveTournamentOnServer } from '../helpers/api';
 import { GameResponse, TournamentResponse, TournamentState, XWS } from './types';
 
 export const tournamentStore = create<TournamentState>()(
@@ -19,7 +18,7 @@ export const tournamentStore = create<TournamentState>()(
         const tournaments = [...(get().tournaments || []), tournament];
         set({ tournaments });
 
-        saveTournamentOnServer(useSystemStore.getState(), tournament);
+        // saveTournamentOnServer(useSystemStore.getState(), tournament);
       },
       updateTournament: (tournament: TournamentResponse) => {
         const tournaments = [...(get().tournaments || []), tournament];
@@ -33,14 +32,14 @@ export const tournamentStore = create<TournamentState>()(
           tournament.version = bumpMinor(tournament.version);
 
           set({ tournaments });
-          saveTournamentOnServer(useSystemStore.getState(), tournament);
+          // saveTournamentOnServer(useSystemStore.getState(), tournament);
         }
       },
       removeTournament: (id: string) => {
         const tournaments = [...(get().tournaments || []).filter(t => t.id !== id)];
         set({ tournaments });
 
-        removeTournamentOnServer(useSystemStore.getState(), id);
+        // removeTournamentOnServer(useSystemStore.getState(), id);
       },
 
       addGame: (tournamentId: string, game: GameResponse) => {
@@ -55,7 +54,7 @@ export const tournamentStore = create<TournamentState>()(
         all.splice(all.indexOf(tournament), 1, { ...tournament });
 
         set({ tournaments: [...all] });
-        saveTournamentOnServer(useSystemStore.getState(), tournament);
+        // saveTournamentOnServer(useSystemStore.getState(), tournament);
       },
 
       updateGame: (tournamentId: string, game: GameResponse, updateOnServer: boolean) => {
@@ -74,7 +73,7 @@ export const tournamentStore = create<TournamentState>()(
           set({ tournaments: [...all] });
 
           if (updateOnServer) {
-            saveTournamentOnServer(useSystemStore.getState(), tournament);
+            // saveTournamentOnServer(useSystemStore.getState(), tournament);
           }
         }
       },
@@ -93,7 +92,7 @@ export const tournamentStore = create<TournamentState>()(
 
           all.splice(all.indexOf(tournament), 1, { ...tournament });
           set({ tournaments: [...all] });
-          saveTournamentOnServer(useSystemStore.getState(), tournament);
+          // saveTournamentOnServer(useSystemStore.getState(), tournament);
         }
       },
     }),
@@ -115,6 +114,7 @@ const xwsFromSquadron = (x?: Squadron): XWS | undefined => {
     faction: getFactionKey(x.faction),
     format: x.format,
     points: x.cost,
+    ruleset: x.ruleset || 'xwa',
     version: x.version || '2.5.0',
     pilots: x.ships.map(p => {
       const upgrades: { [s: string]: string[] } = {};
@@ -138,7 +138,7 @@ const xwsFromSquadron = (x?: Squadron): XWS | undefined => {
         ties: x.ties || 0,
         losses: x.losses || 0,
         tags: x.tags || [],
-        created: x.created ? parseJSON(x.created).toDateString() : new Date().toDateString(),
+        created: x.created ? parseJSON(x.created) : new Date(),
       },
     },
   };

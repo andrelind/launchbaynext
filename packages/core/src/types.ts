@@ -1,4 +1,4 @@
-import { RuleSet } from ".";
+import { RuleSet } from '.';
 
 export type Action = {
   difficulty: Difficulty;
@@ -258,22 +258,18 @@ export type Stat = {
   recovers?: number;
 };
 
-export type StatType =
-  | 'agility'
-  | 'attack'
-  | 'hull'
-  | 'shields'
-  | 'energy'
-  | 'charges';
+export type StatType = 'agility' | 'attack' | 'hull' | 'shields' | 'energy' | 'charges';
 
 export type Squadron = {
   uid: string;
   name: string;
   cost: number;
   faction: Faction;
+  ruleset?: RuleSet;
   format: Format;
   favourite: boolean;
   wins: number;
+  ties: number;
   losses: number;
   tags?: string[];
   created: Date;

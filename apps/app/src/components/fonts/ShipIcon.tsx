@@ -1,6 +1,6 @@
 import { shipIcons } from 'lbn-core/src/helpers/icon';
 import { FC } from 'react';
-import { Text, TextStyle } from 'react-native';
+import { Platform, Text, TextStyle } from 'react-native';
 
 import { useTailwind } from '../../helpers/tailwind';
 
@@ -20,7 +20,7 @@ export const ShipFont: FC<Props> = ({ icons, color, size, style: inStyle }) => {
     <Text
       style={[
         style,
-        { fontFamily: 'xwing-miniatures-ships' },
+        { fontFamily: Platform.OS === 'ios' ? 'x-wing-ships' : 'xwing-miniatures-ships' },
         inStyle
       ]}
     >

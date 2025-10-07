@@ -165,6 +165,7 @@ export const UpgradeComponent: FC<Props> = ({
     <View style={tw`flex-row`}>
       {showImage && (
         <TouchableOpacity
+          style={tw`w-20 rounded-l-lg overflow-hidden`}
           activeOpacity={showImage ? 0.7 : 1}
           onPress={() => onImagePress?.(upgradeCardUri(upgradeSide))}
         >
@@ -267,7 +268,7 @@ export const UpgradeComponent: FC<Props> = ({
                     {attack.value}
                   </Text>
                 </Text>
-                <Text style={tw`font-semibold text-sm`}>
+                <Text style={tw`font-semibold text-sm text-black dark:text-white`}>
                   {attack.minrange !== attack.maxrange &&
                     `${attack.minrange}-${attack.maxrange}`}
                   {attack.minrange === attack.maxrange && `${attack.minrange}`}

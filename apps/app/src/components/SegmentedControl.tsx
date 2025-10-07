@@ -1,20 +1,37 @@
-import { FC } from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Host, Picker } from '@expo/ui/swift-ui';
+import { FC, useState } from 'react';
+import { Platform, Text, TouchableOpacity, View } from 'react-native';
 import { useTailwind } from '../helpers/tailwind';
 
 type Props = {
     segments: string[];
-    selectedSegment: number;
     onChange?: (index: number) => void;
 };
 
 export const SegmentedControl: FC<Props> = ({
     segments,
-    selectedSegment,
     onChange,
 }) => {
     const { tw } = useTailwind();
+    const [selectedSegment, setSelectedSegment] = useState(0);
 
+    if (Platform.OS === 'ios') {
+        return (
+            <Host matchContents>
+                <Picker
+                    // label='Rule Set'
+                    variant='segmented'
+                    options={segments}
+                    selectedIndex={selectedSegment}
+                    // color='blue'
+                    onOptionSelected={(e) => {
+                        setSelectedSegment(e.nativeEvent.index);
+                        onChange?.(e.nativeEvent.index);
+                    }}
+                />
+            </Host>
+        )
+    }
     return (
         <View style={tw`flex-row gap-x-1 bg-white dark:bg-zinc-800 rounded-lg p-1`}>
             {segments.map((segment, index) => (

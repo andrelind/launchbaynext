@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { bumpMinor } from 'lbn-core/src/helpers/versioning';
+import 'react-native-get-random-values';
 import { v4 as uuid } from 'uuid';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
@@ -422,6 +423,8 @@ export const useXwsStore = create<XWSState>()(
       name: 'xws',
       storage: createJSONStorage(() => AsyncStorage),
       partialize: state => {
+        console.log('persist xws', state.lists?.length);
+
         const { loaded, ...rest } = state;
         return rest;
       },

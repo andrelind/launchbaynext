@@ -1,9 +1,10 @@
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { RuleSet } from 'lbn-core/src';
-import { Button, SafeAreaView, Text } from 'react-native';
+import { Button, Text } from 'react-native';
 import ActionSheet, {
     SheetProps
 } from 'react-native-actions-sheet';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTailwind } from '../../helpers/tailwind';
 import { useXwsStore } from '../../stores/xws';
 import './types';

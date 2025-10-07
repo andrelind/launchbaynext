@@ -63,7 +63,7 @@ export const loadShip2 = (
     ruleset: RuleSet;
   },
 ) => {
-  console.log(`Loading ship ${pilot.ship} for ${pilot.id} (${xws.faction}) ${xws.ruleset}`);
+  // console.log(`Loading ship ${pilot.ship} for ${pilot.id} (${xws.faction}) ${xws.ruleset}`);
 
   const shipType: ShipType = JSON.parse(
     JSON.stringify(assets[xws.ruleset || 'xwa'].pilots[getFaction(xws.faction)][pilot.ship]),

@@ -4,7 +4,8 @@ export default {
   expo: {
     name: IS_DEV ? 'LBN (dev)' : 'Launch Bay Next',
     slug: 'lbn',
-    version: '4.0.1',
+    scheme: 'lbn',
+    version: '4.1.0',
     runtimeVersion: { policy: 'appVersion' },
     orientation: 'portrait',
     icon: './assets/icon.png',
@@ -25,7 +26,7 @@ export default {
       },
     },
     android: {
-      versionCode: 53,
+      versionCode: 54,
       package: IS_DEV ? 'com.launchbaynext.dev' : 'com.launchbaynext',
       edgeToEdgeEnabled: true,
       adaptiveIcon: {
@@ -36,19 +37,24 @@ export default {
     },
     web: {
       favicon: './assets/favicon.png',
+      bundler: 'metro',
     },
     updates: { url: 'https://u.expo.dev/ef07a76c-686b-488d-a99c-41839da38ffc' },
     plugins: [
       ['expo-camera', { cameraPermission: 'Allow $(PRODUCT_NAME) to access your camera' }],
-      'expo-apple-authentication',
-      'expo-font',
+      ['expo-font', { fonts: ['./assets/fonts/'] }],
       'expo-asset',
       'expo-web-browser',
+      'expo-router',
+      ['expo-drawable-assets', './assets/drawables'],
     ],
     extra: {
       eas: {
         projectId: 'ef07a76c-686b-488d-a99c-41839da38ffc',
       },
+    },
+    experiments: {
+      reactCompiler: true,
     },
   },
 };

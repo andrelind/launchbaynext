@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FactionKey, SlotKey } from 'lbn-core/src/types';
+import 'react-native-get-random-values';
 import { v4 as uuid } from 'uuid';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
