@@ -65,6 +65,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 181,
     },
     {
       name: 'Black Sun Enforcer',
@@ -85,6 +86,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 182,
     },
     {
       name: 'Dalan Oberos',
@@ -108,6 +110,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 179,
     },
     {
       name: 'Guri',
@@ -145,6 +148,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 178,
     },
     {
       name: 'Prince Xizor',
@@ -167,6 +171,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 180,
     },
   ],
 };

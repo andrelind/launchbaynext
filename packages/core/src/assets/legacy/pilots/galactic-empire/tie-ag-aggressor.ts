@@ -66,6 +66,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 128,
     },
     {
       name: 'Lieutenant Kestal',
@@ -93,6 +94,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 127,
     },
     {
       name: 'Onyx Squadron Scout',
@@ -118,6 +120,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 129,
     },
     {
       name: 'Sienar Specialist',
@@ -142,6 +145,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 130,
     },
   ],
 };

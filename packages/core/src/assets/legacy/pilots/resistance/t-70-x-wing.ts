@@ -68,6 +68,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 418,
     },
     {
       name: 'Poe Dameron',
@@ -99,6 +100,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/poedameron-swz68.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 697,
     },
     {
       name: 'Blue Squadron Rookie',
@@ -120,6 +122,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 426,
     },
     {
       name: 'Red Squadron Expert',
@@ -148,6 +151,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 425,
     },
     {
       name: 'Black Squadron Ace',
@@ -176,6 +180,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 451,
     },
     {
       name: 'Ello Asty',
@@ -185,7 +190,7 @@ const t: ShipType = {
       xws: 'elloasty',
       cost: 53,
       ability:
-        'After you reveal a red Tallon Roll [[Tallon Roll Left] or [Tallon Roll Right]] maneuver, if you have 2 or fewer stress tokens, treat that maneuver as white.',
+        'After you reveal a red Tallon Roll ([Tallon Roll Left] or [Tallon Roll Right]) maneuver, if you have 2 or fewer stress tokens, treat that maneuver as white.',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
@@ -206,6 +211,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 419,
     },
     {
       name: 'Joph Seastriker',
@@ -235,6 +241,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 424,
     },
     {
       name: 'Kare Kun',
@@ -244,7 +251,7 @@ const t: ShipType = {
       xws: 'karekun',
       cost: 47,
       ability:
-        'While you boost, you may use the [1 [Turn Left]] or [1 [Turn Right]] template instead.',
+        'While you boost, you may use the [1 [Turn Left]) or [1 [Turn Right]) template instead.',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',
@@ -265,6 +272,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 421,
     },
     {
       name: 'Lieutenant Bastian',
@@ -288,6 +296,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 449,
     },
     {
       name: 'Nien Nunb',
@@ -318,6 +327,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 420,
     },
     {
       name: 'Jaycris Tubbs',
@@ -325,7 +335,7 @@ const t: ShipType = {
       initiative: 1,
       limited: 1,
       xws: 'jaycristubbs',
-      cost: 45,
+      cost: 44,
       ability:
         'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
       shipAbility: {
@@ -341,6 +351,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 450,
     },
     {
       name: 'Jessika Pava',
@@ -365,6 +376,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 423,
     },
     {
       name: 'Temmin Wexley',
@@ -395,6 +407,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 422,
     },
     {
       name: 'Temmin Wexley',
@@ -425,6 +438,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/temminwexley-swz68.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 698,
     },
     {
       name: 'C’ai Threnalli',
@@ -455,6 +469,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caithrenalli.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 699,
     },
     {
       name: 'Nimi Chireen',
@@ -478,6 +493,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nimichireen.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 700,
     },
     {
       name: 'Venisa Doza',
@@ -485,7 +501,7 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       xws: 'venisadoza',
-      cost: 46,
+      cost: 48,
       ability:
         'While you perform a [Torpedo] or [Missile] attack, you may treat the [Front Arc] requirement as [Rear Arc] for that attack. If you do, treat the range requirement as 1-2.',
       shipAbility: {
@@ -508,6 +524,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/venisadoza.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1054,
     },
     {
       name: 'Zay Versio',
@@ -538,6 +555,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zayversio.png',
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1055,
     },
   ],
 };

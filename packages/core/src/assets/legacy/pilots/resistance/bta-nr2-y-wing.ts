@@ -68,6 +68,7 @@ const t: ShipType = {
       caption: 'Corsair of Kijimi',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 903,
     },
     {
       name: 'Teza Nasz',
@@ -100,6 +101,7 @@ const t: ShipType = {
       caption: 'Old Soldier',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 904,
     },
     {
       name: 'Wilsa Teshlo',
@@ -112,7 +114,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 32,
+      cost: 31,
       slots: [
         'Tech',
         'Turret',
@@ -131,6 +133,7 @@ const t: ShipType = {
       caption: 'Veiled Sorority Privateer',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 905,
     },
     {
       name: 'Shasa Zaro',
@@ -162,6 +165,7 @@ const t: ShipType = {
       caption: 'Artistic Ace',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 906,
     },
     {
       name: 'Lega Fossang',
@@ -194,6 +198,7 @@ const t: ShipType = {
       caption: 'Hero of Humbarine',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 907,
     },
     {
       name: 'Aftab Ackbar',
@@ -226,6 +231,7 @@ const t: ShipType = {
       caption: '“Junior”',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 908,
     },
     {
       name: 'Corus Kapellim',
@@ -257,6 +263,7 @@ const t: ShipType = {
       caption: '“Gentleman Flyer”',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 909,
     },
     {
       name: 'C’ai Threnalli',
@@ -289,6 +296,7 @@ const t: ShipType = {
       caption: 'Tenacious Survivor',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 910,
     },
     {
       name: 'New Republic Patrol',
@@ -319,6 +327,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/newrepublicpatrol.png',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 911,
     },
     {
       name: 'Kijimi Spice Runner',
@@ -348,6 +357,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kijimispicerunner.png',
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 912,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Y-wing-bta-nr2.png',

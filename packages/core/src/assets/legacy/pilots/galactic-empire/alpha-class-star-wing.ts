@@ -60,13 +60,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 136,
     },
     {
       name: 'Major Vynder',
       caption: 'Pragmatic Survivor',
       initiative: 4,
       limited: 1,
-      cost: 39,
+      cost: 38,
       xws: 'majorvynder',
       ability:
         'While you defend, if you are disarmed, roll 1 additional defense die.',
@@ -85,6 +86,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 135,
     },
     {
       name: 'Nu Squadron Pilot',
@@ -101,6 +103,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 138,
     },
     {
       name: 'Rho Squadron Pilot',
@@ -124,6 +127,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 137,
     },
   ],
 };

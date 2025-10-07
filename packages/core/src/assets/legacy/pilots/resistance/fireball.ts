@@ -66,6 +66,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/colossusstationmechanic.png',
       epic: true,
+      ffg: 623,
     },
     {
       name: 'Jarek Yeager',
@@ -87,7 +88,7 @@ const t: ShipType = {
         'Modification',
         'Title',
       ],
-      cost: 30,
+      cost: 28,
       ability:
         'While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed; if you are critically damaged, you can execute red advanced maneuvers even while stressed.',
       caption: 'Too Old for This',
@@ -96,6 +97,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jarekyeager.png',
       epic: true,
+      ffg: 620,
     },
     {
       name: 'Kazuda Xiono',
@@ -120,12 +122,13 @@ const t: ShipType = {
       ],
       ability:
         "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
-      cost: 38,
+      cost: 37,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kazudaxiono.png',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kazudaxiono.png',
       epic: true,
+      ffg: 621,
     },
     {
       name: 'R1-J5',
@@ -162,6 +165,7 @@ const t: ShipType = {
       ],
       keywords: ['Droid'],
       epic: true,
+      ffg: 622,
     },
   ],
 };

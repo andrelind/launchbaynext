@@ -65,6 +65,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Dark Side'],
       epic: true,
+      ffg: 219,
     },
     {
       name: 'Ketsu Onyo',
@@ -84,6 +85,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       epic: true,
+      ffg: 218,
     },
     {
       name: 'Sabine Wren',
@@ -103,12 +105,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       epic: true,
+      ffg: 220,
     },
     {
       name: 'Shadowport Hunter',
       initiative: 2,
       limited: 0,
-      cost: 52,
+      cost: 51,
       xws: 'shadowporthunter',
       text: 'Crime syndicates augment the lethal skills of their loyal contractors with the best technology available, like the fast and formidable Lancer-class pursuit craft.',
       image:
@@ -120,6 +123,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 221,
     },
   ],
 };

@@ -74,6 +74,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 78,
     },
     {
       name: 'Dash Rendar',
@@ -104,6 +105,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 77,
     },
     {
       name: 'Wild Space Fringer',
@@ -125,6 +127,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 79,
     },
   ],
 };

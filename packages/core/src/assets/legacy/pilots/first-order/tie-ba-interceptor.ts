@@ -47,7 +47,7 @@ const t: ShipType = {
       caption: 'Red Baron',
       initiative: 6,
       limited: 1,
-      cost: 55,
+      cost: 54,
       xws: 'majorvonreg',
       ability:
         'During the System Phase, you may choose 1 enemy ship in your [Bullseye Arc]. That ship gains 1 deplete or strain token of your choice.',
@@ -64,6 +64,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvonreg.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 624,
     },
     {
       name: '“Holo”',
@@ -87,6 +88,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/holo.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 625,
     },
     {
       name: '“Ember”',
@@ -110,6 +112,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ember.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 626,
     },
     {
       name: 'First Order Provocateur',
@@ -131,6 +134,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstorderprovocateur.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 627,
     },
   ],
 };

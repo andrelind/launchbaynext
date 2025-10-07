@@ -57,6 +57,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 190,
     },
     {
       name: 'Genesis Red',
@@ -79,6 +80,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 184,
     },
     {
       name: 'Inaldra',
@@ -101,6 +103,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 187,
     },
     {
       name: 'Laetin A’shera',
@@ -123,6 +126,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 185,
     },
     {
       name: 'Quinn Jast',
@@ -146,6 +150,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 186,
     },
     {
       name: 'Serissu',
@@ -168,6 +173,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 183,
     },
     {
       name: 'Sunny Bounder',
@@ -190,6 +196,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 188,
     },
     {
       name: 'Tansarii Point Veteran',
@@ -210,6 +217,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 189,
     },
     {
       name: 'G4R-G0R V/M',
@@ -239,6 +247,7 @@ const t: ShipType = {
       ],
       keywords: ['Droid'],
       epic: true,
+      ffg: 636,
     },
   ],
 };

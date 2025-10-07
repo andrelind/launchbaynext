@@ -60,6 +60,7 @@ const t: ShipType = {
       caption: 'Full of Surprises',
       keywords: ['Droid'],
       epic: true,
+      ffg: 573,
     },
     {
       name: 'Rose Tico',
@@ -78,6 +79,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rosetico.png',
       epic: true,
+      ffg: 574,
     },
     {
       name: 'Vi Moradi',
@@ -97,6 +99,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vimoradi.png',
       epic: true,
+      ffg: 576,
     },
     {
       name: 'Finn',
@@ -115,6 +118,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/finn.png',
       epic: true,
+      ffg: 575,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Resistance_Transport_Cockpit_Pod.png',

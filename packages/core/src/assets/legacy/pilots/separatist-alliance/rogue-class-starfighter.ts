@@ -77,13 +77,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1101,
     },
     {
       name: 'Cad Bane',
       caption: 'Needs No Introduction',
       initiative: 4,
       limited: 1,
-      cost: 44,
+      cost: 42,
       xws: 'cadbane-separatistalliance',
       slots: ['Talent', 'Cannon', 'Cannon', 'Illicit', 'Modification', 'Title'],
       ability:
@@ -101,6 +102,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1095,
     },
     {
       name: 'IG-101',
@@ -143,6 +145,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1096,
     },
     {
       name: 'MagnaGuard Executioner',
@@ -183,13 +186,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1097,
     },
     {
       name: 'MagnaGuard Protector',
       caption: 'Implacable Escort',
       initiative: 4,
       limited: 2,
-      cost: 40,
+      cost: 39,
       xws: 'magnaguardprotector',
       slots: ['Talent', 'Cannon', 'Cannon', 'Modification', 'Title'],
       ability:
@@ -225,6 +229,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1098,
     },
     {
       name: 'IG-102',
@@ -267,13 +272,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1099,
     },
     {
       name: 'IG-111',
       caption: 'One Eye',
       initiative: 1,
       limited: 1,
-      cost: 38,
+      cost: 37,
       xws: 'ig111',
       slots: ['Talent', 'Cannon', 'Cannon', 'Modification', 'Title'],
       ability:
@@ -309,6 +315,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1100,
     },
   ],
 };

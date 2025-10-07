@@ -61,6 +61,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 415,
     },
     {
       name: 'Kylo Ren',
@@ -86,6 +87,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
+      ffg: 414,
     },
     {
       name: 'First Order Test Pilot',
@@ -107,6 +109,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 416,
     },
     {
       name: '“Recoil”',
@@ -130,6 +133,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 455,
     },
     {
       name: '“Avenger”',
@@ -153,6 +157,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 456,
     },
     {
       name: 'Sienar-Jaemus Engineer',
@@ -174,6 +179,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 417,
     },
     {
       name: '“Rush”',
@@ -196,6 +202,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rush.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 643,
     },
   ],
 };

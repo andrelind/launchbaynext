@@ -44,7 +44,7 @@ const t: ShipType = {
       cost: 53,
       xws: 'captainhark',
       ability:
-        'After you reveal a [0 [Stationary]] maneuver, if you are equipped with Swivel Wings (Down), you must execute a [1 [Bank Left]] or [1 [Bank Right]] sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
+        'After you reveal a [0 [Stationary]) maneuver, if you are equipped with Swivel Wings (Down), you must execute a [1 [Bank Left]) or [1 [Bank Right]) sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
       standard: true,
       wildspace: true,
       epic: true,
@@ -62,6 +62,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainhark.png',
       keywords: ['Mandalorian'],
+      ffg: 930,
     },
     {
       name: 'Gar Saxon',
@@ -90,6 +91,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garsaxon.png',
       keywords: ['Mandalorian'],
+      ffg: 931,
     },
     {
       name: 'Imperial Super Commando',
@@ -115,6 +117,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/imperialsupercommando.png',
       keywords: ['Mandalorian'],
+      ffg: 932,
     },
   ],
 };

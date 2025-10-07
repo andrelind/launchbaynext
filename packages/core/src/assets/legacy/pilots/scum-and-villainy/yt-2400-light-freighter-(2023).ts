@@ -66,6 +66,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1075,
     },
     {
       name: 'Dash Rendar',
@@ -97,6 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1154,
     },
     {
       name: '“Leebo”',
@@ -134,6 +136,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1074,
     },
     {
       name: '“Leebo”',
@@ -142,14 +145,7 @@ const t: ShipType = {
       limited: 1,
       cost: 69,
       xws: 'leebo-swz103-lsl-scumandvillainy',
-      slots: [
-        'Talent',
-        'Missile',
-        'Illicit',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Crew', 'Missile', 'Illicit', 'Modification', 'Title'],
       ability:
         'At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3.',
       shipActions: [
@@ -174,6 +170,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1155,
     },
   ],
 };

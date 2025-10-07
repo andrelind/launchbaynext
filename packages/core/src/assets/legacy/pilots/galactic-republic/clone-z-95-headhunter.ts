@@ -59,13 +59,14 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 998,
     },
     {
       name: '“Drift”',
       caption: 'CT-1020',
       initiative: 3,
       limited: 1,
-      cost: 31,
+      cost: 30,
       xws: 'drift',
       ability:
         'While a friendly ship at range 0-1 performs an attack, if you have exactly 1 non-lock red token or exactly 1 orange token, that ship may reroll 1 attack die.',
@@ -82,6 +83,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 999,
     },
     {
       name: '“Boost”',
@@ -105,13 +107,14 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1000,
     },
     {
       name: '“Stub”',
       caption: 'Scrappy Flier',
       initiative: 3,
       limited: 1,
-      cost: 31,
+      cost: 30,
       xws: 'stub',
       ability:
         'While you defend, if the speed of your revealed maneuver is even, roll 1 additional defende die. While you perform a primary attack, if the speed of your revealed maneuver is odd, roll 1 additional attack die.',
@@ -128,6 +131,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1001,
     },
     {
       name: '“Knack”',
@@ -151,6 +155,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1002,
     },
     {
       name: '“Hawk”',
@@ -174,6 +179,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1003,
     },
     {
       name: '7th Sky Corps Pilot',
@@ -195,6 +201,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1004,
     },
     {
       name: 'Reaper Squadron Scout',
@@ -216,16 +223,17 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1005,
     },
     {
       name: '“Slider”',
       caption: 'Evasive Aviator',
       initiative: 4,
       limited: 1,
-      cost: 27,
+      cost: 26,
       xws: 'slider',
       ability:
-        'When you reveal a [2 [Bank Left]] or [2 [Bank Right]] maneuver, you may spend 2 [Charge] to execute it as a sideslip.',
+        'When you reveal a [2 [Bank Left]) or [2 [Bank Right]) maneuver, you may spend 2 [Charge] to execute it as a sideslip.',
       charges: { value: 2, recovers: 1 },
       shipAbility: {
         name: 'Versatile Frame',
@@ -240,6 +248,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1006,
     },
     {
       name: '“Warthog”',
@@ -263,6 +272,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Clone'],
+      ffg: 1007,
     },
   ],
 };

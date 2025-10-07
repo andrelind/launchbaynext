@@ -66,13 +66,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
+      ffg: 93,
     },
     {
       name: 'Maarek Stele',
       caption: 'Servant of the Empire',
       initiative: 5,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'maarekstele',
       ability:
         'While you perform an attack, if the defender would be dealt a faceup damage card, instead draw 3 damage cards, choose 1, and discard the rest.',
@@ -89,6 +90,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 94,
     },
     {
       name: 'Storm Squadron Ace',
@@ -110,6 +112,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 97,
     },
     {
       name: 'Tempest Squadron Pilot',
@@ -131,13 +134,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 98,
     },
     {
       name: 'Ved Foslo',
       caption: 'Ambitious Engineer',
       initiative: 4,
       limited: 1,
-      cost: 42,
+      cost: 41,
       xws: 'vedfoslo',
       ability:
         'While you execute a maneuver, you may execute a maneuver of the same bearing and difficulty of a speed 1 higher or lower instead.',
@@ -154,6 +158,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 95,
     },
     {
       name: 'Zertik Strom',
@@ -177,6 +182,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 96,
     },
     {
       name: 'Darth Vader',
@@ -194,7 +200,6 @@ const t: ShipType = {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
-      slots: [],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -208,6 +213,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
+      ffg: 933,
     },
     {
       name: 'Darth Vader',
@@ -238,6 +244,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
+      ffg: 1176,
     },
     {
       name: 'Juno Eclipse',
@@ -261,6 +268,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 934,
     },
     {
       name: 'Darth Vader',
@@ -278,7 +286,6 @@ const t: ShipType = {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
       },
-      slots: [],
       stats: [
         { arc: 'Front Arc', type: 'attack', value: 2 },
         { type: 'agility', value: 3 },
@@ -292,6 +299,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
+      ffg: 935,
     },
     {
       name: 'Maarek Stele',
@@ -305,7 +313,6 @@ const t: ShipType = {
         'While you perform an attack, if the defender would be dealt a faceup damage card, instead draw 3 damage cards, choose 1, and discard the rest.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maarekstele-swz105.png',
-      slots: [],
       shipAbility: {
         name: 'Advanced Targeting Computer',
         text: 'While you perform a primary attack against a defender you have locked, roll 1 additional attack die and change 1 [Hit] result to a [Critical Hit] result.',
@@ -316,6 +323,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 936,
     },
   ],
 };

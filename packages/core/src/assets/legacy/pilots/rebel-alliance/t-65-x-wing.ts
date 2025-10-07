@@ -56,6 +56,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 7,
     },
     {
       name: 'Blue Squadron Escort',
@@ -73,6 +74,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 11,
     },
     {
       name: 'Cavern Angels Zealot',
@@ -96,6 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
+      ffg: 12,
     },
     {
       name: 'Edrio Two Tubes',
@@ -121,6 +124,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
+      ffg: 9,
     },
     {
       name: 'Garven Dreis',
@@ -146,6 +150,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 4,
     },
     {
       name: 'Jek Porkins',
@@ -171,6 +176,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 5,
     },
     {
       name: 'Kullbee Sperado',
@@ -197,6 +203,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
+      ffg: 6,
     },
     {
       name: 'Leevan Tenza',
@@ -223,13 +230,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
+      ffg: 8,
     },
     {
       name: 'Luke Skywalker',
       caption: 'Red Five',
       initiative: 5,
       limited: 1,
-      cost: 60,
+      cost: 59,
       xws: 'lukeskywalker',
       ability:
         'After you become the defender (before dice are rolled), you may recover 1 [Force].',
@@ -249,6 +257,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Light Side', 'X-wing'],
       epic: true,
+      ffg: 2,
     },
     {
       name: 'Red Squadron Veteran',
@@ -272,6 +281,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 10,
     },
     {
       name: 'Thane Kyrell',
@@ -297,6 +307,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 3,
     },
     {
       name: 'Wedge Antilles',
@@ -322,6 +333,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1,
     },
     {
       name: 'Biggs Darklighter',
@@ -350,6 +362,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1035,
     },
     {
       name: 'Biggs Darklighter',
@@ -373,6 +386,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1164,
     },
     {
       name: 'Garven Dreis',
@@ -396,6 +410,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1036,
     },
     {
       name: 'Garven Dreis',
@@ -419,6 +434,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1165,
     },
     {
       name: 'Jek Porkins',
@@ -446,6 +462,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1037,
     },
     {
       name: 'Jek Porkins',
@@ -469,6 +486,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1166,
     },
     {
       name: 'Luke Skywalker',
@@ -498,13 +516,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1038,
     },
     {
       name: 'Luke Skywalker',
       caption: 'Battle of Yavin',
       initiative: 5,
       limited: 1,
-      cost: 61,
+      cost: 60,
       xws: 'lukeskywalker-battleofyavin-lsl',
       ability:
         'After you are declared as the defender during an attack, you may recover 1 [Force].',
@@ -528,6 +547,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1167,
     },
     {
       name: 'Wedge Antilles',
@@ -556,6 +576,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1039,
     },
     {
       name: 'Wedge Antilles',
@@ -579,6 +600,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1168,
     },
     {
       name: 'Corran Horn',
@@ -604,6 +626,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1040,
     },
     {
       name: 'Wes Janson',
@@ -630,6 +653,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1041,
     },
     {
       name: 'Luke Skywalker',
@@ -650,6 +674,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1042,
     },
     {
       name: 'Jek Porkins',
@@ -669,6 +694,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1043,
     },
     {
       name: 'Wedge Antilles',
@@ -716,6 +742,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1045,
     },
     {
       name: 'Wedge Antilles',
@@ -758,6 +785,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1169,
     },
     {
       name: 'Yendor',
@@ -799,6 +827,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1046,
     },
     {
       name: 'Yendor',
@@ -836,6 +865,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1170,
     },
     {
       name: 'Kendy Idele',
@@ -878,6 +908,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1106,
     },
     {
       name: 'Kendy Idele',
@@ -915,6 +946,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['X-wing'],
       epic: true,
+      ffg: 1171,
     },
   ],
 };

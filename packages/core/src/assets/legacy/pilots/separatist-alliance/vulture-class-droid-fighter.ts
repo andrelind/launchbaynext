@@ -61,6 +61,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tradefederationdrone.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 498,
     },
     {
       name: 'Precise Hunter',
@@ -84,6 +85,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/precisehunter.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 500,
     },
     {
       name: 'Haor Chall Prototype',
@@ -107,6 +109,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 502,
     },
     {
       name: 'DFS-081',
@@ -130,6 +133,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 499,
     },
     {
       name: 'Separatist Drone',
@@ -151,6 +155,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistdrone.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 497,
     },
     {
       name: 'DFS-311',
@@ -174,6 +179,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 501,
     },
     {
       name: 'DFS-081',
@@ -202,6 +208,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1080,
     },
     {
       name: 'DFS-081',
@@ -226,6 +233,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1200,
     },
     {
       name: 'DFS-311',
@@ -253,6 +261,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1081,
     },
     {
       name: 'DFS-311',
@@ -276,12 +285,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1201,
     },
     {
       name: 'Haor Chall Prototype',
       caption: 'Siege of Coruscant',
       initiative: 1,
-      limited: 1,
+      limited: 2,
       cost: 25,
       xws: 'haorchallprototype-siegeofcoruscant',
       ability:
@@ -303,12 +313,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1082,
     },
     {
       name: 'Haor Chall Prototype',
       caption: 'Siege of Coruscant',
       initiative: 1,
-      limited: 1,
+      limited: 2,
       cost: 22,
       xws: 'haorchallprototype-siegeofcoruscant-lsl',
       ability:
@@ -326,6 +337,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1202,
     },
     {
       name: 'The Iron Assembler',
@@ -350,6 +362,7 @@ const t: ShipType = {
       slots: ['Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 1083,
     },
     {
       name: 'Kelrodo-Ai Holdout',
@@ -381,6 +394,7 @@ const t: ShipType = {
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       epic: true,
+      ffg: 1084,
     },
   ],
 };

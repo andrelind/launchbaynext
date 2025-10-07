@@ -61,6 +61,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 434,
     },
     {
       name: 'Cat',
@@ -88,6 +89,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 433,
     },
     {
       name: 'Vennie',
@@ -115,6 +117,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 448,
     },
     {
       name: 'Ben Teene',
@@ -143,6 +146,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 432,
     },
     {
       name: 'Edon Kappehl',
@@ -170,6 +174,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 447,
     },
     {
       name: 'Finch Dallow',
@@ -197,6 +202,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 431,
     },
     {
       name: 'Paige Tico',
@@ -226,6 +232,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/paigetico.png',
       epic: true,
+      ffg: 640,
     },
   ],
 };

@@ -62,6 +62,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 430,
     },
     {
       name: 'Chewbacca',
@@ -90,6 +91,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 429,
     },
     {
       name: 'Han Solo',
@@ -103,7 +105,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/hansolo-scavengedyt1300.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-scavengedyt1300.png',
-      cost: 62,
+      cost: 60,
       slots: [
         'Talent',
         'Missile',
@@ -118,6 +120,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 427,
     },
     {
       name: 'Rey',
@@ -132,7 +135,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rey.png',
       force: { value: 2, recovers: 1, side: ['light'] },
-      cost: 70,
+      cost: 71,
       slots: [
         'Missile',
         'Crew',
@@ -147,6 +150,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'Light Side', 'YT-1300'],
       epic: true,
+      ffg: 428,
     },
     {
       name: 'Poe Dameron',
@@ -176,6 +180,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1052,
     },
     {
       name: 'Lando Calrissian',
@@ -190,7 +195,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-scavengedyt1300.png',
       charges: { value: 3, recovers: 1 },
-      cost: 70,
+      cost: 71,
       slots: [
         'Talent',
         'Missile',
@@ -205,6 +210,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1053,
     },
   ],
 };

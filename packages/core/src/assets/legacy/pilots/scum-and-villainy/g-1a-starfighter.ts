@@ -69,12 +69,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
+      ffg: 201,
     },
     {
       name: 'Gand Findsman',
       initiative: 1,
       limited: 0,
-      cost: 41,
+      cost: 39,
       xws: 'gandfindsman',
       text: 'The legendary Findsmen of Gand worship the enshrouding mists of their home planet, using signs, augurs, and mystical rituals to track their quarry.',
       image:
@@ -86,13 +87,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 203,
     },
     {
       name: 'Zuckuss',
       caption: 'Meditative Gand',
       initiative: 3,
       limited: 1,
-      cost: 43,
+      cost: 42,
       xws: 'zuckuss',
       ability:
         'While you perform a primary attack, you may roll 1 additional attack die. If you do, the defender rolls 1 additional defense die.',
@@ -113,6 +115,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 202,
     },
   ],
 };

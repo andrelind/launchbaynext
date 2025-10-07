@@ -69,6 +69,7 @@ const t: ShipType = {
         'Team',
         'Cargo',
       ],
+      ffg: 708,
     },
   ],
 };

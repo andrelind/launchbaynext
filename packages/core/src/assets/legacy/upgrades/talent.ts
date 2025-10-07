@@ -65,10 +65,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    restrictions: [
-      { baseSizes: ['Small'] },
-      { action: { type: 'Boost', difficulty: 'White' } },
-    ],
+    restrictions: [{ baseSizes: ['Small'] }, { action: { type: 'Boost', difficulty: 'White' } }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -133,9 +130,7 @@ const t: UpgradeBase[] = [
         text: 'While heavy fighters can often be coaxed into a barrel roll, seasoned pilots know how to do it without putting undue stress on their craft or leaving themselves open to attack.',
         slots: ['Talent'],
         actions: [{ type: 'Barrel Roll', difficulty: 'White' }],
-        grants: [
-          { action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/experthandling.png',
         artwork:
@@ -228,8 +223,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Intimidation',
         type: 'Talent',
-        ability:
-          'While an enemy ship at range 0 defends, it rolls 1 fewer defense die.',
+        ability: 'While an enemy ship at range 0 defends, it rolls 1 fewer defense die.',
         slots: ['Talent'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/intimidation.png',
@@ -438,9 +432,7 @@ const t: UpgradeBase[] = [
           'While you coordinate, the ship you choose can perform an action only if that action is also on your action bar.',
         slots: ['Talent'],
         actions: [{ type: 'Coordinate', difficulty: 'Red' }],
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/squadleader.png',
         artwork:
@@ -488,8 +480,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Trick Shot',
         type: 'Talent',
-        ability:
-          'While you perform an attack that is obstructed by an obstacle, roll 1 additional attack die.',
+        ability: 'While you perform an attack that is obstructed by an obstacle, roll 1 additional attack die.',
         slots: ['Talent'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trickshot.png',
@@ -544,10 +535,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [
-      { factions: ['Galactic Republic'] },
-      { 'non-limited': true },
-    ],
+    restrictions: [{ factions: ['Galactic Republic'] }, { 'non-limited': true }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -621,8 +609,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/graviticdeflection.png',
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/graviticdeflection.png',
-        ability:
-          'While you defend, you may reroll 1 defense die for each tractored ship in the attack arc.',
+        ability: 'While you defend, you may reroll 1 defense die for each tractored ship in the attack arc.',
         slots: ['Talent'],
         type: 'Talent',
       },
@@ -1054,8 +1041,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Efficient Processing',
         type: 'Talent',
-        ability:
-          'After you perform a [Calculate] action, gain one calculate token.',
+        ability: 'After you perform a [Calculate] action, gain one calculate token.',
         slots: ['Talent'],
       },
     ],
@@ -1135,6 +1121,91 @@ const t: UpgradeBase[] = [
     wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'noescape-rsl',
+    sides: [
+      {
+        ability:
+          'While you perform a primary attack, if there are more friendly ships than enemy ships at range 0-1 of the defender, you may reroll 1 of your blank results.',
+        title: 'No Escape',
+        type: 'Talent',
+        slots: ['Talent'],
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/noescape-rsl.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/noescape-rsl.png',
+      },
+    ],
+    cost: { value: 1 },
+    restrictions: [{ factions: ['Galactic Empire'] }, {}],
+    standard: true,
+    wildspace: true,
+    epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'silenthunter-rsl',
+    sides: [
+      {
+        ability: 'After you decloak, you may acquire a lock on an enemy ship in your [Bullseye Arc].',
+        title: 'Silent Hunter',
+        type: 'Talent',
+        slots: ['Talent'],
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/silenthunter-rsl.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/silenthunter-rsl.png',
+      },
+    ],
+    cost: { value: 2 },
+    standard: true,
+    wildspace: true,
+    epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'partinggift-rsl',
+    sides: [
+      {
+        ability:
+          'After you are destroyed, you may drop 1 bomb. If you do, you must place it in the play area touching you instead.',
+        title: 'Parting Gift',
+        type: 'Talent',
+        slots: ['Talent'],
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/partinggift-rsl.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/partinggift-rsl.png',
+      },
+    ],
+    cost: { value: 1 },
+    standard: true,
+    wildspace: true,
+    epic: true,
+  },
+  {
+    limited: 3,
+    xws: 'formedup-rsl',
+    sides: [
+      {
+        ability:
+          'At the end of the End Phase, if there are at least 2 other friendly TIE/ln Fighters at range 0-1 or another friendly ship with the Formed Up upgrade at range 0-1, you may remove 1 non-lock red token.',
+        title: 'Formed Up',
+        type: 'Talent',
+        slots: ['Talent'],
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/formedup-rsl.png',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/formedup-rsl.png',
+      },
+    ],
+    cost: { value: 1 },
+    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['tielnfighter'] }],
+    standard: true,
+    wildspace: true,
+    epic: true,
   },
 ];
 

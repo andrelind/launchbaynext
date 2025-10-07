@@ -373,6 +373,51 @@ const t: UpgradeBase[] = [
     wildspace: true,
     epic: true,
   },
+  {
+    limited: 0,
+    xws: 'chaffparticles-rsl',
+    sides: [
+      {
+        title: 'Chaff Particles',
+        type: 'Illicit',
+        ability:
+          'While you defend, at the end of the Neutralize Results step, you may spend 1 [Charge] and 1 [Focus] or [Evade] result to remove 1 red or orange token.',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chaffparticles-rsl.png',
+        slots: ['Illicit'],
+        charges: { value: 1, recovers: 0 },
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chaffparticles-rsl.png',
+      },
+    ],
+    cost: { value: 3 },
+    restrictions: [{ baseSizes: ['Small'] }],
+    standard: true,
+    wildspace: true,
+    epic: true,
+  },
+  {
+    limited: 0,
+    xws: 'fuelinjectionoverride-rsl',
+    sides: [
+      {
+        title: 'Fuel Injection Override',
+        type: 'Illicit',
+        ability:
+          'Before you activate, you may spend 1 [Charge] and gain 1 strain token. If you do, until the end of the round, while you move, you must use a template of 1 speed higher if able.',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/fuelinjectionoverride-rsl.png',
+        slots: ['Illicit'],
+        charges: { value: 1, recovers: 0 },
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/fuelinjectionoverride-rsl.png',
+      },
+    ],
+    cost: { value: 2 },
+    standard: true,
+    wildspace: true,
+    epic: true,
+  },
 ];
 
 export default t;

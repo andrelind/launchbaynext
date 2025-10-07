@@ -64,6 +64,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1092,
     },
     {
       name: 'Pre Vizsla',
@@ -93,6 +94,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1093,
     },
     {
       name: 'Death Watch Warrior',
@@ -120,6 +122,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1094,
     },
   ],
 };

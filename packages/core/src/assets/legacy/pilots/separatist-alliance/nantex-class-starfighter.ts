@@ -57,6 +57,7 @@ const t: ShipType = {
       cost: 33,
       slots: ['Talent'],
       epic: true,
+      ffg: 609,
     },
     {
       name: 'Sun Fac',
@@ -76,9 +77,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sunfac.png',
       ability:
         'While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.',
-      cost: 41,
+      cost: 43,
       slots: ['Talent', 'Talent'],
       epic: true,
+      ffg: 604,
     },
     {
       name: 'Berwer Kret',
@@ -101,6 +103,7 @@ const t: ShipType = {
       cost: 36,
       slots: ['Talent', 'Talent'],
       epic: true,
+      ffg: 605,
     },
     {
       name: 'Chertek',
@@ -123,6 +126,7 @@ const t: ShipType = {
       cost: 36,
       slots: ['Talent', 'Talent'],
       epic: true,
+      ffg: 606,
     },
     {
       name: 'Gorgol',
@@ -145,6 +149,7 @@ const t: ShipType = {
       wildspace: true,
       slots: ['Talent', 'Modification'],
       epic: true,
+      ffg: 607,
     },
     {
       name: 'Petranaki Arena Ace',
@@ -165,6 +170,7 @@ const t: ShipType = {
       wildspace: true,
       slots: ['Talent', 'Talent'],
       epic: true,
+      ffg: 608,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Nantex_Class_Starfighter.png',

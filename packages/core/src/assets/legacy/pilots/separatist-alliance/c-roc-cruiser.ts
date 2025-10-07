@@ -68,6 +68,7 @@ const t: ShipType = {
         'Device',
         'Configuration',
       ],
+      ffg: 714,
     },
   ],
 };

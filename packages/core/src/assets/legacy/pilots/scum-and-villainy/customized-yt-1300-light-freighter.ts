@@ -63,13 +63,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 225,
     },
     {
       name: 'Han Solo',
       caption: 'The Corellian Kid',
       initiative: 6,
       limited: 1,
-      cost: 49,
+      cost: 47,
       xws: 'hansolo',
       ability:
         'While you defend or perform a primary attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.',
@@ -91,6 +92,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 222,
     },
     {
       name: 'L3-37',
@@ -124,6 +126,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter', 'YT-1300'],
       epic: true,
+      ffg: 224,
     },
     {
       name: 'Lando Calrissian',
@@ -152,6 +155,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 223,
     },
   ],
 };

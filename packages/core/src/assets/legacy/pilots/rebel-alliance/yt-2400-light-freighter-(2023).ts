@@ -69,6 +69,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 1048,
     },
     {
       name: 'Dash Rendar',
@@ -100,6 +101,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1152,
     },
     {
       name: 'Dash Rendar',
@@ -128,6 +130,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1050,
     },
     {
       name: '“Leebo”',
@@ -168,6 +171,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1047,
     },
     {
       name: '“Leebo”',
@@ -192,14 +196,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      slots: [
-        'Talent',
-        'Missile',
-        'Illicit',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Crew', 'Missile', 'Illicit', 'Modification', 'Title'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo-swz103-lsl-rebelalliance.png',
       image:
@@ -208,6 +205,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1153,
     },
     {
       name: '“Leebo”',
@@ -245,6 +243,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      ffg: 1049,
     },
   ],
 };

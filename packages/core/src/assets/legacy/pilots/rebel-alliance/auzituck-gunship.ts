@@ -51,6 +51,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 33,
     },
     {
       name: 'Lowhhrick',
@@ -69,6 +70,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 32,
     },
     {
       name: 'Wullffwarro',
@@ -87,6 +89,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 31,
     },
   ],
 };

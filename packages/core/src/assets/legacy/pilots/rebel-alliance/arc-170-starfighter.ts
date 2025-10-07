@@ -61,13 +61,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 66,
     },
     {
       name: 'Ibtisam',
       caption: 'Survivor of Endor',
       initiative: 3,
       limited: 1,
-      cost: 45,
+      cost: 43,
       xws: 'ibtisam',
       ability:
         'After you fully execute a maneuver, if you are stressed, you may roll 1 attack die. On a [Hit] or [Critical Hit] result, remove 1 stress token.',
@@ -86,6 +87,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 68,
     },
     {
       name: 'Norra Wexley',
@@ -111,6 +113,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 65,
     },
     {
       name: 'Shara Bey',
@@ -136,6 +139,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 67,
     },
   ],
 };

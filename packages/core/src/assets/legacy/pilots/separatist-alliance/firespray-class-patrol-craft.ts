@@ -67,6 +67,7 @@ const t: ShipType = {
       ],
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 800,
     },
     {
       name: 'Zam Wesell',
@@ -97,6 +98,7 @@ const t: ShipType = {
       ],
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 801,
     },
     {
       name: 'Boba Fett',
@@ -124,6 +126,7 @@ const t: ShipType = {
       ],
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 1089,
     },
     {
       name: 'Separatist Racketeer',
@@ -148,6 +151,7 @@ const t: ShipType = {
         'Title',
       ],
       epic: true,
+      ffg: 803,
     },
     {
       name: 'Aurra Sing',
@@ -160,7 +164,7 @@ const t: ShipType = {
       ability:
         'Before you engage, you may spend 1 [Force] to choose 2 enemy ships at range 0-1. Transfer any number of orange and red tokens between those two ships.',
       force: { value: 1, recovers: 1, side: ['dark'] },
-      cost: 77,
+      cost: 75,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/aurrasing.png',
       image:
@@ -177,6 +181,7 @@ const t: ShipType = {
       ],
       keywords: ['Dark Side', 'Bounty Hunter'],
       epic: true,
+      ffg: 1090,
     },
   ],
 };

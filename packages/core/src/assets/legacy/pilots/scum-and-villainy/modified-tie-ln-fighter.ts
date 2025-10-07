@@ -57,13 +57,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 442,
     },
     {
       name: 'Captain Seevor',
       caption: 'Noisy Nuisance',
       initiative: 3,
       limited: 1,
-      cost: 31,
+      cost: 28,
       xws: 'captainseevor',
       ability:
         "While you defend or perform an attack, before attack dice are rolled, if you are not in the enemy ship's [Bullseye Arc], you may spend 1 [Charge]. If you do, the enemy ship gains 1 jam token.",
@@ -81,6 +82,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 443,
     },
     {
       name: 'Foreman Proach',
@@ -104,6 +106,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 441,
     },
     {
       name: 'Mining Guild Surveyor',
@@ -125,6 +128,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 445,
     },
     {
       name: 'Overseer Yushyn',
@@ -149,6 +153,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 444,
     },
     {
       name: 'Mining Guild Sentry',
@@ -170,6 +175,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 446,
     },
     {
       name: 'Lapin',
@@ -193,6 +199,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1062,
     },
   ],
 };

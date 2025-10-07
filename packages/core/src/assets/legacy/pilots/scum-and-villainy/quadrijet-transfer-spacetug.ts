@@ -46,7 +46,7 @@ const t: ShipType = {
       cost: 30,
       xws: 'constablezuvio',
       ability:
-        'If you would drop a device, you may launch it using a [1 [Straight]] template instead.',
+        'If you would drop a device, you may launch it using a [1 [Straight]) template instead.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/constablezuvio.png',
       shipAbility: {
@@ -59,6 +59,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 161,
     },
     {
       name: 'Jakku Gunrunner',
@@ -79,6 +80,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 164,
     },
     {
       name: 'Sarco Plank',
@@ -95,13 +97,14 @@ const t: ShipType = {
         name: 'Spacetug Tractor Array',
         text: 'Action: Choose a ship in your [Front Arc] at range 1. That ship gains 1 tractor token, or 2 tractor tokens if it is in your [Bullseye Arc] at range 1.',
       },
-      slots: ['Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
+      slots: ['Talent', 'Crew', 'Device', 'Illicit', 'Modification', 'Tech'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sarcoplank.png',
       standard: true,
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 162,
     },
     {
       name: 'Unkar Plutt',
@@ -124,6 +127,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 163,
     },
   ],
 };

@@ -129,7 +129,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
           ...s,
           title: s.title,
           ability: s.ability.replaceAll('[[', '([').replaceAll(']]', '])'),
-          text: s.text.replaceAll('[[', '([').replaceAll(']]', '])'),
+          text: s.text?.replaceAll('[[', '([').replaceAll(']]', '])'),
           force: s.force ? { ...s.force, side: ['light', 'dark'] } : undefined,
           grants: s.grants
             ? s.grants.map(g => {

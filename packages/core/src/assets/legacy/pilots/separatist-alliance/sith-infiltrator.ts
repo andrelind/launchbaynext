@@ -69,6 +69,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthmaul.png',
       keywords: ['Dark Side', 'Sith'],
       epic: true,
+      ffg: 503,
     },
     {
       name: 'Count Dooku',
@@ -99,6 +100,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdooku.png',
       keywords: ['Dark Side', 'Sith'],
       epic: true,
+      ffg: 504,
     },
     {
       name: 'Dark Courier',
@@ -124,6 +126,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darkcourier.png',
       epic: true,
+      ffg: 506,
     },
     {
       name: '0-66',
@@ -158,6 +161,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 505,
     },
     {
       name: 'Count Dooku',
@@ -185,6 +189,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith'],
       epic: true,
+      ffg: 1079,
     },
     {
       name: 'Count Dooku',
@@ -222,6 +227,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith'],
       epic: true,
+      ffg: 1203,
     },
   ],
 };

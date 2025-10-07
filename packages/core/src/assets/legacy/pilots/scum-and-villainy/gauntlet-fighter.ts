@@ -64,6 +64,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maul.png',
       keywords: ['Dark Side'],
+      ffg: 1059,
     },
     {
       name: 'Rook Kast',
@@ -92,6 +93,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rookkast.png',
       keywords: ['Mandalorian'],
+      ffg: 1060,
     },
     {
       name: 'Shadow Collective Operator',
@@ -117,6 +119,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowcollectiveoperator.png',
       keywords: ['Mandalorian'],
+      ffg: 1061,
     },
   ],
 };

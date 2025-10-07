@@ -57,7 +57,7 @@ const t: ShipType = {
         'During the System Phase, you may choose an object that you have locked at range 1-3. Another friendly ship at range 1-3 may acquire a lock on that object.',
       standard: true,
       wildspace: true,
-      cost: 30,
+      cost: 29,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wilhufftarkin.png',
       artwork:
@@ -65,6 +65,7 @@ const t: ShipType = {
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['TIE'],
       epic: true,
+      ffg: 791,
     },
     {
       name: '“Odd Ball”',
@@ -80,7 +81,7 @@ const t: ShipType = {
       wildspace: true,
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
-      cost: 31,
+      cost: 30,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball-nimbusclassvwing.png',
       artwork:
@@ -88,6 +89,7 @@ const t: ShipType = {
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 788,
     },
     {
       name: '“Contrail”',
@@ -103,7 +105,7 @@ const t: ShipType = {
       wildspace: true,
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
-      cost: 32,
+      cost: 31,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/contrail.png',
       artwork:
@@ -111,6 +113,7 @@ const t: ShipType = {
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 789,
     },
     {
       name: '“Klick”',
@@ -127,7 +130,7 @@ const t: ShipType = {
       charges: { value: 1, recovers: 1 },
       ability:
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
-      cost: 31,
+      cost: 30,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/klick.png',
       artwork:
@@ -135,6 +138,7 @@ const t: ShipType = {
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 790,
     },
     {
       name: 'Shadow Squadron Escort',
@@ -156,6 +160,7 @@ const t: ShipType = {
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 792,
     },
     {
       name: 'Loyalist Volunteer',
@@ -177,6 +182,7 @@ const t: ShipType = {
       slots: ['Astromech', 'Modification', 'Configuration'],
       keywords: ['TIE'],
       epic: true,
+      ffg: 793,
     },
     {
       name: '“Klick”',
@@ -207,6 +213,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 996,
     },
     {
       name: '“Klick”',
@@ -217,7 +224,7 @@ const t: ShipType = {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      cost: 37,
+      cost: 36,
       xws: 'klick-siegeofcoruscant-lsl',
       ability:
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
@@ -237,6 +244,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 1218,
     },
     {
       name: '“Contrail”',
@@ -265,6 +273,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 997,
     },
     {
       name: '“Contrail”',
@@ -275,7 +284,7 @@ const t: ShipType = {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      cost: 33,
+      cost: 32,
       xws: 'contrail-siegeofcoruscant-lsl',
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
@@ -288,6 +297,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
+      ffg: 1219,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Nimbus-class_V-wing.png',

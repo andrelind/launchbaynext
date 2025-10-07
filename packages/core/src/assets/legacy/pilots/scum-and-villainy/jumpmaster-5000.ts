@@ -68,6 +68,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 217,
     },
     {
       name: 'Dengar',
@@ -97,6 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 214,
     },
     {
       name: 'Manaroo',
@@ -125,6 +127,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 215,
     },
     {
       name: 'Tel Trevura',
@@ -153,6 +156,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 216,
     },
     {
       name: 'Nom Lumb',
@@ -180,6 +184,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nomlumb.png',
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 637,
     },
   ],
 };

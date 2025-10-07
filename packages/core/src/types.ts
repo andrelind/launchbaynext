@@ -329,7 +329,7 @@ export type UpgradeCostInitiative = {
 };
 export type UpgradeCostSize = {
   variable: 'size';
-  values: { Small: number; Medium: number; Large: number; Huge: number };
+  values: { Small: number; Medium: number; Large: number; Huge?: number };
 };
 
 export type UpgradeCost =

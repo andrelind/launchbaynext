@@ -123,8 +123,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Hate',
         type: 'Force Power',
-        ability:
-          'After you suffer 1 or more damage, recover that many [Force].',
+        ability: 'After you suffer 1 or more damage, recover that many [Force].',
         slots: ['Force Power'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/hate.png',
@@ -173,9 +172,7 @@ const t: UpgradeBase[] = [
         slots: ['Force Power'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/battlemeditation.png',
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 }],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/battlemeditation.png',
       },
@@ -374,6 +371,28 @@ const t: UpgradeBase[] = [
     wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'roilinganger-rsl',
+    sides: [
+      {
+        title: 'Roiling Anger',
+        type: 'Force Power',
+        ability:
+          'At the start of the Engagement Phase, if you are in the [Front Arc] of an enemy ship, you may gain 1 strain token to recover 1 [Force].',
+        slots: ['Force Power'],
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/roilinganger-rsl.png',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/roilinganger-rsl.png',
+      },
+    ],
+    cost: { value: 3 },
+    restrictions: [{ sides: ['dark'] }],
+    standard: true,
+    wildspace: true,
+    epic: true,
   },
 ];
 

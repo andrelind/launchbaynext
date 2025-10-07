@@ -65,6 +65,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 209,
     },
     {
       name: 'Dalan Oberos',
@@ -97,6 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 208,
     },
     {
       name: 'Torani Kulda',
@@ -128,6 +130,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 207,
     },
   ],
 };

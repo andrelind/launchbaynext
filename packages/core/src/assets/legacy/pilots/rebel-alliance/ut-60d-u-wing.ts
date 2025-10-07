@@ -59,6 +59,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan'],
       epic: true,
+      ffg: 58,
     },
     {
       name: 'Blue Squadron Scout',
@@ -75,13 +76,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 60,
     },
     {
       name: 'Bodhi Rook',
       caption: 'Imperial Defector',
       initiative: 4,
       limited: 1,
-      cost: 47,
+      cost: 48,
       xws: 'bodhirook',
       ability:
         'Friendly ships can acquire locks onto objects at range 0-3 of any friendly ship.',
@@ -100,6 +102,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 54,
     },
     {
       name: 'Cassian Andor',
@@ -125,13 +128,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 56,
     },
     {
       name: 'Heff Tobber',
       caption: 'Blue Eight',
       initiative: 2,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'hefftobber',
       ability:
         'After an enemy ship executes a maneuver, if it is at range 0, you may perform an action.',
@@ -150,13 +154,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 59,
     },
     {
       name: 'Magva Yarro',
       caption: 'Cavern Angels Spotter',
       initiative: 3,
       limited: 1,
-      cost: 48,
+      cost: 46,
       xws: 'magvayarro',
       ability:
         'While a friendly ship at range 0-2 defends, the attacker cannot reroll more than 1 attack die.',
@@ -177,6 +182,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan'],
       epic: true,
+      ffg: 57,
     },
     {
       name: 'Partisan Renegade',
@@ -201,13 +207,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan'],
       epic: true,
+      ffg: 61,
     },
     {
       name: 'Saw Gerrera',
       caption: 'Obsessive Outlaw',
       initiative: 4,
       limited: 1,
-      cost: 52,
+      cost: 50,
       xws: 'sawgerrera',
       ability:
         'While a damaged friendly ship at range 0-3 performs an attack, it may reroll 1 attack die.',
@@ -228,6 +235,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Partisan'],
       epic: true,
+      ffg: 55,
     },
     {
       name: 'K-2SO',
@@ -258,6 +266,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/k2so.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 629,
     },
   ],
 };

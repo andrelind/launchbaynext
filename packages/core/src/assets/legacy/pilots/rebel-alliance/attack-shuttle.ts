@@ -64,6 +64,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Spectre'],
       epic: true,
+      ffg: 37,
     },
     {
       name: 'Ezra Bridger',
@@ -88,6 +89,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Light Side', 'Spectre'],
       epic: true,
+      ffg: 36,
     },
     {
       name: 'Hera Syndulla',
@@ -111,6 +113,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Spectre'],
       epic: true,
+      ffg: 34,
     },
     {
       name: 'Sabine Wren',
@@ -134,6 +137,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian', 'Spectre'],
       epic: true,
+      ffg: 35,
     },
   ],
 };

@@ -54,7 +54,7 @@ const t: ShipType = {
         name: 'Intuitive Controls',
         text: 'During the System Phase, you may perform a purple [Barrel Roll] or purple [Boost] action.',
       },
-      cost: 52,
+      cost: 51,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker-eta2actis.png',
       artwork:
@@ -62,6 +62,7 @@ const t: ShipType = {
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       epic: true,
+      ffg: 781,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -78,7 +79,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       ability:
         'After you or a friendly Anakin Skywalker ship at range 0-3 executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship gains 1 focus token.',
-      cost: 49,
+      cost: 48,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/obiwankenobi-eta2actis.png',
       artwork:
@@ -86,6 +87,7 @@ const t: ShipType = {
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 782,
     },
     {
       name: 'Aayla Secura',
@@ -102,7 +104,7 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
         'While an enemy ship in your [Front Arc] at range 0-1 performs an attack, the defender may change 1 blank result to a [Focus] result.',
-      cost: 48,
+      cost: 47,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/aaylasecura.png',
       artwork:
@@ -110,6 +112,7 @@ const t: ShipType = {
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 783,
     },
     {
       name: 'Shaak Ti',
@@ -134,6 +137,7 @@ const t: ShipType = {
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 784,
     },
     {
       name: 'Jedi General',
@@ -153,9 +157,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jedigeneral.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jedigeneral.png',
-      slots: ['Force Power', 'Astromech', 'Modification'],
+      slots: ['Force Power', 'Cannon', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 786,
     },
     {
       name: 'Yoda',
@@ -172,7 +177,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       ability:
         'After another friendly ship at range 0-3 spends 1 or more [Force], you may spend 1 [Force]. If you do, that ship recovers 1 [Force].',
-      cost: 44,
+      cost: 43,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/yoda.png',
       artwork:
@@ -180,6 +185,7 @@ const t: ShipType = {
       slots: ['Force Power', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 785,
     },
     {
       name: 'Anakin Skywalker',
@@ -208,6 +214,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       epic: true,
+      ffg: 991,
     },
     {
       name: 'Anakin Skywalker',
@@ -218,7 +225,7 @@ const t: ShipType = {
         name: 'Intuitive Controls',
         text: 'During the System Phase, you may perform a purple [Barrel Roll] or purple [Boost] action.',
       },
-      cost: 52,
+      cost: 51,
       xws: 'anakinskywalker-siegeofcoruscant-lsl',
       ability:
         'After you or a friendly Obi-Wan Kenobi ship at range 0-3 fully executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship may perform a [Barrel Roll] action.',
@@ -232,6 +239,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       epic: true,
+      ffg: 1215,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -260,6 +268,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 992,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -270,7 +279,7 @@ const t: ShipType = {
         name: 'Intuitive Controls',
         text: 'During the System Phase, you may perform a purple [Barrel Roll] or purple [Boost] action.',
       },
-      cost: 48,
+      cost: 47,
       xws: 'obiwankenobi-siegeofcoruscant-lsl',
       ability:
         'After you or a friendly Anakin Skywalker at range 0-3 fully executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship may perform a [Boost] action.',
@@ -284,6 +293,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 1216,
     },
     {
       name: 'Shaak Ti',
@@ -313,6 +323,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 993,
     },
     {
       name: 'Shaak Ti',
@@ -337,6 +348,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 1217,
     },
     {
       name: 'Kit Fisto',
@@ -353,7 +365,7 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
         "While another friendly ship defends, if the attacker is in its [Bullseye Arc], you may spend 1 [Force] to change 1 of the defender's blank results to a [Focus] result.",
-      cost: 42,
+      cost: 41,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kitfisto.png',
       image:
@@ -361,6 +373,7 @@ const t: ShipType = {
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 994,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Eta-2_Actis.png',

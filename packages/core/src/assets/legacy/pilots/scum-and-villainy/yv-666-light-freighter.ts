@@ -64,6 +64,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Freighter'],
       epic: true,
+      ffg: 210,
     },
     {
       name: 'Latts Razzi',
@@ -93,6 +94,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Freighter'],
       epic: true,
+      ffg: 212,
     },
     {
       name: 'Moralo Eval',
@@ -123,6 +125,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 211,
     },
     {
       name: 'Trandoshan Slaver',
@@ -149,6 +152,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 213,
     },
     {
       name: 'Doctor Aphra',
@@ -179,6 +183,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 1067,
     },
   ],
 };

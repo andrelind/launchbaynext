@@ -47,7 +47,7 @@ const t: ShipType = {
       caption: 'Din Djarin',
       initiative: 5,
       limited: 1,
-      cost: 50,
+      cost: 49,
       xws: 'themandalorian',
       slots: [
         'Talent',
@@ -69,13 +69,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1063,
     },
     {
       name: 'Q9-0',
       caption: 'Zero',
       initiative: 5,
       limited: 1,
-      cost: 51,
+      cost: 50,
       xws: 'q90',
       slots: [
         'Talent',
@@ -103,13 +104,14 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1064,
     },
     {
       name: 'Guild Bounty Hunter',
       caption: 'Blaster for Hire',
       initiative: 3,
       limited: 2,
-      cost: 47,
+      cost: 46,
       xws: 'guildbountyhunter',
       slots: [
         'Crew',
@@ -130,12 +132,13 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1065,
     },
     {
       name: 'Outer Rim Enforcer',
       initiative: 2,
       limited: 0,
-      cost: 46,
+      cost: 45,
       xws: 'outerrimenforcer',
       slots: [
         'Crew',
@@ -154,6 +157,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1066,
     },
   ],
 };

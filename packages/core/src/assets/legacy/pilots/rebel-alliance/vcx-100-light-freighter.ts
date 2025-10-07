@@ -74,6 +74,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter', 'Spectre'],
       epic: true,
+      ffg: 75,
     },
     {
       name: 'Hera Syndulla',
@@ -107,6 +108,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'Spectre'],
       epic: true,
+      ffg: 73,
     },
     {
       name: 'Kanan Jarrus',
@@ -141,6 +143,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'Jedi', 'Light Side', 'Spectre'],
       epic: true,
+      ffg: 74,
     },
     {
       name: 'Lothal Rebel',
@@ -171,6 +174,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 76,
     },
     {
       name: 'Alexsandr Kallus',
@@ -204,6 +208,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/alexsandrkallus.png',
       keywords: ['Freighter', 'Spectre'],
       epic: true,
+      ffg: 631,
     },
   ],
 };
