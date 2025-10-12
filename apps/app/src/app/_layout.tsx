@@ -193,7 +193,7 @@ export default function RootLayout() {
 
             <Stack.Screen name="sheets/image" options={{
               presentation: 'containedTransparentModal',
-              animation: 'flip',
+              animation: 'fade_from_bottom',
               animationDuration: 150,
               sheetAllowedDetents: [0.75],
               sheetGrabberVisible: true,

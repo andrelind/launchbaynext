@@ -49,7 +49,7 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'constablezuvio',
-      ability: 'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
+      ability: 'If you would drop a device, you may launch it using a [1 [Straight]) template instead.',
       slots: ['Talent', 'Device', 'Device', 'Illicit', 'Modification', 'Tech'],
       ffg: 161,
       standard: false,

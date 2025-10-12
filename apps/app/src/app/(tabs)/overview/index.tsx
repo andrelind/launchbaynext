@@ -7,6 +7,7 @@ import { useSystemStore } from '@/src/stores/system';
 import { blue } from '@/src/theme';
 import { Button, Host, HStack, Spacer } from '@expo/ui/swift-ui';
 import { Feather } from '@expo/vector-icons';
+import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Linking from 'expo-linking';
 import { useRouter } from 'expo-router';
 import React from 'react';
@@ -112,7 +113,7 @@ export default function OverviewScreen() {
           <Text style={tw`text-white`}>Like the app?</Text>
           <Text style={tw`text-white`}>Please consider donating</Text>
 
-          {Platform.OS === 'ios' ? (
+          {isLiquidGlassAvailable() ? (
             <Host style={tw`flex-1 mt-6`}>
               <HStack >
                 <Spacer />

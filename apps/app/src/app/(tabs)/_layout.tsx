@@ -28,7 +28,7 @@ export default function HomeLayout() {
             </NativeTabs.Trigger>
             <NativeTabs.Trigger name="database" role='search'>
                 <Label>Database</Label>
-                <Icon sf={'cloud.fog.fill'} drawable='search' />
+                <Icon sf={'magnifyingglass'} drawable='search' />
             </NativeTabs.Trigger>
         </NativeTabs>
     );
