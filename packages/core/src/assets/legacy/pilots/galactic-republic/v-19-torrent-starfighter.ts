@@ -60,6 +60,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kickback.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 517,
     },
     {
       name: '“Odd Ball”',
@@ -79,6 +80,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 516,
     },
     {
       name: '“Swoop”',
@@ -92,12 +94,13 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/swoop.png',
       standard: true,
       wildspace: true,
-      cost: 27,
+      cost: 26,
       slots: ['Missile', 'Modification'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/swoop.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 519,
     },
     {
       name: '“Axe”',
@@ -117,6 +120,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/axe.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 518,
     },
     {
       name: '“Tucker”',
@@ -130,12 +134,13 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tucker.png',
       standard: true,
       wildspace: true,
-      cost: 26,
+      cost: 25,
       slots: ['Missile', 'Modification'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tucker.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 520,
     },
     {
       name: 'Blue Squadron Protector',
@@ -153,6 +158,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronprotector.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 521,
     },
     {
       name: 'Gold Squadron Trooper',
@@ -170,6 +176,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goldsquadrontrooper.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 522,
     },
     {
       name: '“Kickback”',
@@ -198,6 +205,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 988,
     },
     {
       name: '“Kickback”',
@@ -208,7 +216,7 @@ const t: ShipType = {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      cost: 33,
+      cost: 32,
       xws: 'kickback-siegeofcoruscant-lsl',
       ability:
         'After you perform a [Barrel Roll] action, you may perform a red [Lock] action. If you do, before you perfrom the [Lock] action, you may gain 1 strain to treat it as white.',
@@ -226,6 +234,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 1213,
     },
     {
       name: '“Axe”',
@@ -254,6 +263,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 989,
     },
     {
       name: '“Axe”',
@@ -264,7 +274,7 @@ const t: ShipType = {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      cost: 31,
+      cost: 30,
       xws: 'axe-siegeofcoruscant-lsl',
       ability:
         'After you perform an attack, you may choose another friendly ship with the Born for This ability at range 0-2 in your [Left Arc] or [Right Arc]. The chosen ship gains a lock on the defender.',
@@ -282,6 +292,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 1214,
     },
     {
       name: '“Slammer”',
@@ -302,6 +313,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/slammer.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 990,
     },
   ],
 };

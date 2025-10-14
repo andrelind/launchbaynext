@@ -63,13 +63,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 123,
     },
     {
       name: 'Countess Ryad',
       caption: 'Cutthroat Politico',
       initiative: 4,
       limited: 1,
-      cost: 76,
+      cost: 75,
       xws: 'countessryad',
       ability:
         'While you would execute a [Straight] maneuver, you may increase the difficulty of the maneuver. If you do, execute it as a [Koiogran Turn] maneuver instead.',
@@ -86,6 +87,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 124,
     },
     {
       name: 'Delta Squadron Pilot',
@@ -107,6 +109,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 126,
     },
     {
       name: 'Onyx Squadron Ace',
@@ -128,13 +131,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 125,
     },
     {
       name: 'Rexler Brath',
       caption: 'Onyx Leader',
       initiative: 5,
       limited: 1,
-      cost: 78,
+      cost: 77,
       xws: 'rexlerbrath',
       ability:
         "After you perform an attack that hits, if you are evading, expose 1 of the defender's damage cards.",
@@ -151,6 +155,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 122,
     },
     {
       name: 'Vult Skerris',
@@ -175,13 +180,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 887,
     },
     {
       name: 'Darth Vader',
       caption: 'Dark Lord of the Sith',
       initiative: 6,
       limited: 1,
-      cost: 116,
+      cost: 115,
       xws: 'darthvader-tieddefender',
       ability:
         'You cannot spend [Force] except while attacking. While you perform an attack, you may spend 1 [Force] to change 1 blank result to a [Hit] result.',
@@ -199,13 +205,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
+      ffg: 886,
     },
     {
       name: 'Captain Dobbs',
       caption: 'Reliable Replacement',
       initiative: 3,
       limited: 1,
-      cost: 71,
+      cost: 70,
       xws: 'captaindobbs',
       ability:
         'While another friendly ship at range 0-1 defends, before the Neutralize Results step, if you are in the attack arc and are not ionized, you may gain 1 ion token to cancel 1 [Hit] result.',
@@ -222,6 +229,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 888,
     },
     {
       name: 'Captain Yorr',
@@ -239,7 +247,6 @@ const t: ShipType = {
         name: 'Chiss Engineering',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform a [Lock] action. While attacking, if you are not stressed, you may spend 1 [Shield] to apply the range 1 bonus.',
       },
-      slots: [],
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         {
@@ -262,6 +269,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 937,
     },
     {
       name: 'Captain Yorr',
@@ -296,6 +304,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1185,
     },
     {
       name: 'Colonel Jendon',
@@ -312,7 +321,6 @@ const t: ShipType = {
         name: 'Chiss Engineering',
         text: 'After you fully execute a speed 3-5 maneuver, you may perform a [Lock] action. While attacking, if you are not stressed, you may spend 1 [Shield] to apply the range 1 bonus.',
       },
-      slots: [],
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         {
@@ -335,6 +343,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 938,
     },
     {
       name: 'Colonel Jendon',
@@ -368,6 +377,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1186,
     },
   ],
 };

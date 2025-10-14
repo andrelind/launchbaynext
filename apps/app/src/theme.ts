@@ -1,5 +1,3 @@
-import { Platform, StyleSheet } from 'react-native';
-
 export const black = '#242A2E';
 export const red = '#FF3069';
 export const green = '#4BBD5E';

@@ -54,6 +54,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 27,
     },
     {
       name: 'Bandit Squadron Pilot',
@@ -70,6 +71,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 30,
     },
     {
       name: 'Lieutenant Blount',
@@ -88,6 +90,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 28,
     },
     {
       name: 'Tala Squadron Pilot',
@@ -104,6 +107,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 29,
     },
   ],
 };

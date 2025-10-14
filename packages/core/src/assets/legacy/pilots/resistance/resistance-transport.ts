@@ -65,6 +65,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/covanell.png',
       caption: 'Evacuation Escort',
       epic: true,
+      ffg: 569,
     },
     {
       name: 'Pammich Nerro Goode',
@@ -93,6 +94,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/pammichnerrogoode.png',
       epic: true,
+      ffg: 570,
     },
     {
       name: 'Nodin Chavdri',
@@ -121,6 +123,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nodinchavdri.png',
       caption: 'Insubordinate Insurgent',
       epic: true,
+      ffg: 571,
     },
     {
       name: 'Logistics Division Pilot',
@@ -146,6 +149,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/logisticsdivisionpilot.png',
       epic: true,
+      ffg: 572,
     },
     {
       name: 'Taka Jamoreesa',
@@ -173,6 +177,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/takajamoreesa.png',
       epic: true,
+      ffg: 1051,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Resistance_Transport.png',

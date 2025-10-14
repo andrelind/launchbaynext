@@ -1,5 +1,5 @@
 import { parseJSON } from 'date-fns';
-import { systemStore } from '../stores/system';
+import { useSystemStore } from '../stores/system';
 import { CollectionState, XWS, XWSState } from '../stores/types';
 import { smooth } from './animation';
 import { trpc } from './trpc';
@@ -16,7 +16,7 @@ export interface CollectionResponse extends CollectionRequest {
 }
 
 export const syncWithServer = async (xwsState: XWSState, collectionState: CollectionState) => {
-  const { token } = systemStore.getState();
+  const { token } = useSystemStore.getState();
   if (!token) {
     return;
   }
@@ -74,7 +74,7 @@ export const syncWithServer = async (xwsState: XWSState, collectionState: Collec
 };
 
 export const saveListOnServer = async (xws: XWS) => {
-  const token = systemStore.getState().token;
+  const token = useSystemStore.getState().token;
   if (!token) {
     return;
   }
@@ -98,7 +98,7 @@ export const saveListOnServer = async (xws: XWS) => {
 };
 
 export const removeListOnServer = async (id: string) => {
-  const token = systemStore.getState().token;
+  const token = useSystemStore.getState().token;
   if (!token) {
     return;
   }
@@ -111,7 +111,7 @@ export const removeListOnServer = async (id: string) => {
 };
 
 export const saveCollectionOnServer = async (req: CollectionRequest) => {
-  const token = systemStore.getState().token;
+  const token = useSystemStore.getState().token;
   if (!token) {
     return;
   }

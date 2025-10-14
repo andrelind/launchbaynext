@@ -71,6 +71,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 110,
     },
     {
       name: 'Captain Jonus',
@@ -103,6 +104,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 108,
     },
     {
       name: 'Gamma Squadron Ace',
@@ -133,6 +135,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 111,
     },
     {
       name: 'Major Rhymer',
@@ -165,6 +168,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 109,
     },
     {
       name: 'Scimitar Squadron Pilot',
@@ -194,6 +198,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 112,
     },
     {
       name: 'Tomax Bren',
@@ -226,6 +231,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 107,
     },
     {
       name: 'Captain Jonus',
@@ -249,6 +255,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 962,
     },
     {
       name: 'Tomax Bren',
@@ -272,6 +279,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 963,
     },
     {
       name: '“Deathfire”',
@@ -296,6 +304,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 964,
     },
     {
       name: '“Deathfire”',
@@ -328,6 +337,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1194,
     },
     {
       name: 'Captain Jonus',
@@ -350,6 +360,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 965,
     },
     {
       name: 'Captain Jonus',
@@ -381,6 +392,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1195,
     },
     {
       name: 'Tomax Bren',
@@ -405,13 +417,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 966,
     },
     {
       name: 'Tomax Bren',
       caption: 'Scimitar Veteran',
       initiative: 5,
       limited: 1,
-      cost: 37,
+      cost: 38,
       xws: 'tomaxbren-swz98-lsl',
       ability:
         'After you perform a [Barrel Roll] action, you may spend 2 [Charge]. If you do, gain a focus token.',
@@ -438,6 +451,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1196,
     },
     {
       name: 'Major Rhymer',
@@ -465,6 +479,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 967,
     },
     {
       name: 'Major Rhymer',
@@ -497,6 +512,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1197,
     },
     {
       name: 'Scimitar 1',
@@ -526,6 +542,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 968,
     },
     {
       name: 'Scimitar 1',
@@ -559,6 +576,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1198,
     },
     {
       name: 'Scimitar 3',
@@ -588,6 +606,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 969,
     },
     {
       name: 'Scimitar 3',
@@ -621,6 +640,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1199,
     },
   ],
 };

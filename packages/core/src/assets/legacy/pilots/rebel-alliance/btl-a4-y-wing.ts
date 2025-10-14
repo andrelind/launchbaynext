@@ -63,6 +63,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 14,
     },
     {
       name: 'Evaan Verlaine',
@@ -90,6 +91,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 16,
     },
     {
       name: 'Gold Squadron Veteran',
@@ -115,6 +117,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 17,
     },
     {
       name: 'Gray Squadron Bomber',
@@ -139,6 +142,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 18,
     },
     {
       name: 'Horton Salm',
@@ -166,6 +170,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 15,
     },
     {
       name: 'Norra Wexley',
@@ -193,6 +198,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 13,
     },
     {
       name: 'Dex Tiree',
@@ -216,6 +222,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1011,
     },
     {
       name: 'Dex Tiree',
@@ -246,6 +253,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1155,
     },
     {
       name: '“Dutch” Vander',
@@ -273,6 +281,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1012,
     },
     {
       name: '“Dutch” Vander',
@@ -303,6 +312,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1156,
     },
     {
       name: 'Hol Okand',
@@ -312,7 +322,7 @@ const t: ShipType = {
       cost: 49,
       xws: 'holokand-battleofyavin',
       ability:
-        'During the System Phasse, if there are no enemy ships at range 1-2, you may recover 1 [Charge] on any upgrade.',
+        'During the System Phase, if there are no enemy ships at range 1-2, you may recover 1 [Charge] on any upgrade.',
       shipAbility: {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
@@ -330,6 +340,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1013,
     },
     {
       name: 'Hol Okand',
@@ -339,7 +350,7 @@ const t: ShipType = {
       cost: 34,
       xws: 'holokand-battleofyavin-lsl',
       ability:
-        'During the System Phasse, if there are no enemy ships at range 1-2, you may recover 1 [Charge] on any upgrade.',
+        'During the System Phase, if there are no enemy ships at range 1-2, you may recover 1 [Charge] on any upgrade.',
       shipAbility: {
         name: 'Hope',
         text: 'After another friendly ship at range 0-3 is destroyed, you may perform a [Focus] or [Boost] action.',
@@ -360,6 +371,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1157,
     },
     {
       name: '“Pops” Krail',
@@ -383,6 +395,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1014,
     },
     {
       name: '“Pops” Krail',
@@ -413,6 +426,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1158,
     },
     {
       name: '“Pops” Krail',
@@ -439,6 +453,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1015,
     },
     {
       name: '“Dutch” Vander',
@@ -458,6 +473,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1016,
     },
     {
       name: 'Horton Salm',
@@ -477,6 +493,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 1103,
     },
   ],
 };

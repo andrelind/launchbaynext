@@ -67,6 +67,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing'],
       epic: true,
+      ffg: 25,
     },
     {
       name: 'Blue Squadron Pilot',
@@ -92,6 +93,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing'],
       epic: true,
+      ffg: 26,
     },
     {
       name: 'Braylen Stramm',
@@ -120,6 +122,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing'],
       epic: true,
+      ffg: 23,
     },
     {
       name: 'Ten Numb',
@@ -148,6 +151,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing'],
       epic: true,
+      ffg: 24,
     },
     {
       name: 'Gina Moonsong',
@@ -176,6 +180,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing'],
       epic: true,
+      ffg: 628,
     },
     {
       name: 'Hera Syndulla',
@@ -204,6 +209,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing', 'Spectre'],
       epic: true,
+      ffg: 878,
     },
     {
       name: 'Netrem Pollard',
@@ -232,6 +238,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['B-wing'],
       epic: true,
+      ffg: 879,
     },
     {
       name: 'Adon Fox',
@@ -275,6 +282,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 1102,
     },
     {
       name: 'Adon Fox',
@@ -321,6 +329,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1152,
     },
     {
       name: 'Gina Moonsong',
@@ -370,6 +379,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 1010,
     },
     {
       name: 'Gina Moonsong',
@@ -422,6 +432,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1153,
     },
     {
       name: 'Braylen Stramm',
@@ -471,6 +482,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 1009,
     },
     {
       name: 'Braylen Stramm',
@@ -523,6 +535,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1154,
     },
   ],
 };

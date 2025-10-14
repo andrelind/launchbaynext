@@ -47,7 +47,7 @@ const t: ShipType = {
       cost: 51,
       xws: 'echo',
       ability:
-        'While you decloak, you must use the [2 [Bank Left]] or [2 [Bank Right]] template instead of the [2 [Straight]] template.',
+        'While you decloak, you must use the [2 [Bank Left]) or [2 [Bank Right]) template instead of the [2 [Straight]) template.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo.png',
       shipAbility: {
@@ -61,13 +61,14 @@ const t: ShipType = {
       epic: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png',
+      ffg: 132,
     },
     {
       name: '“Whisper”',
       caption: 'Soft-Spoken Slayer',
       initiative: 5,
       limited: 1,
-      cost: 61,
+      cost: 60,
       xws: 'whisper',
       ability: 'After you perform an attack that hits, gain 1 evade token.',
       image:
@@ -83,6 +84,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 131,
     },
     {
       name: 'Imdaar Test Pilot',
@@ -104,6 +106,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 134,
     },
     {
       name: 'Sigma Squadron Ace',
@@ -125,6 +128,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 133,
     },
   ],
 };

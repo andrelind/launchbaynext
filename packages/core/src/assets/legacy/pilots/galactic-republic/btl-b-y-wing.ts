@@ -64,6 +64,7 @@ const t: ShipType = {
       ],
       keywords: ['Clone', 'Y-wing'],
       epic: true,
+      ffg: 602,
     },
     {
       name: 'Anakin Skywalker',
@@ -96,12 +97,13 @@ const t: ShipType = {
       ],
       keywords: ['Jedi', 'Light Side', 'Y-wing'],
       epic: true,
+      ffg: 596,
     },
     {
       name: 'R2-D2',
       xws: 'r2d2',
       caption: 'Bucket of Bolts',
-      cost: 31,
+      cost: 30,
       limited: 1,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/r2d2.png',
@@ -133,6 +135,7 @@ const t: ShipType = {
       initiative: 2,
       keywords: ['Droid', 'Y-wing'],
       epic: true,
+      ffg: 600,
     },
     {
       name: '“Odd Ball”',
@@ -164,6 +167,7 @@ const t: ShipType = {
       ],
       keywords: ['Clone', 'Y-wing'],
       epic: true,
+      ffg: 597,
     },
     {
       name: '“Matchstick”',
@@ -195,6 +199,7 @@ const t: ShipType = {
       ],
       keywords: ['Clone', 'Y-wing'],
       epic: true,
+      ffg: 598,
     },
     {
       name: '“Broadside”',
@@ -226,6 +231,7 @@ const t: ShipType = {
       ],
       keywords: ['Clone', 'Y-wing'],
       epic: true,
+      ffg: 599,
     },
     {
       name: '“Goji”',
@@ -256,6 +262,7 @@ const t: ShipType = {
       ],
       keywords: ['Clone', 'Y-wing'],
       epic: true,
+      ffg: 601,
     },
     {
       name: 'Red Squadron Bomber',
@@ -284,6 +291,7 @@ const t: ShipType = {
       ],
       keywords: ['Clone', 'Y-wing'],
       epic: true,
+      ffg: 603,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_BTL-B_Ywing.png',

@@ -68,6 +68,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 140,
     },
     {
       name: '“Redline”',
@@ -96,6 +97,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 139,
     },
     {
       name: 'Cutlass Squadron Pilot',
@@ -122,6 +124,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 141,
     },
   ],
 };

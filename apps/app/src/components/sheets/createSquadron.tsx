@@ -12,7 +12,7 @@ import ActionSheet, {
 import Toast from 'react-native-toast-message';
 import { colorForFactionKey } from '../../helpers/colors';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 import { XWingFont } from '../fonts/XWingIcon';
 import './types';
 
@@ -24,7 +24,7 @@ const CreateSquadronSheet = ({
   payload
 }: SheetProps<'CreateSquadronSheet'>) => {
   const { tw } = useTailwind();
-  const addSquadron = xwsStore((s) => s.addSquadron);
+  const addSquadron = useXwsStore((s) => s.addSquadron);
 
   const onPress = async (f: FactionKey) => {
     Alert.alert('Ruleset', 'Select the ruleset for the new squadron',
@@ -60,7 +60,7 @@ const CreateSquadronSheet = ({
 
   return (
     <ActionSheet id={sheetId} useBottomSafeAreaPadding>
-      <View style={tw`flex-row`}>
+      <View style={tw`flex-row `}>
         <TouchableOpacity
           style={tw`px-3 py-3 flex-1 items-center`}
           onPress={async () => {

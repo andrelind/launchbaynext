@@ -68,13 +68,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 155,
     },
     {
       name: 'Joy Rekkoff',
       caption: 'Skull Squadron Ace',
       initiative: 4,
       limited: 1,
-      cost: 46,
+      cost: 45,
       xws: 'joyrekkoff',
       ability:
         'While you perform an attack, you may spend 1 [Charge] from an equipped [Torpedo] upgrade. If you do, the defender rolls 1 fewer defense die.',
@@ -91,13 +92,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 157,
     },
     {
       name: 'Kad Solus',
       caption: 'Skilled Commando',
       initiative: 4,
       limited: 1,
-      cost: 48,
+      cost: 46,
       xws: 'kadsolus',
       ability: 'After you fully execute a red maneuver, gain 2 focus tokens.',
       image:
@@ -113,6 +115,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 158,
     },
     {
       name: 'Old Teroch',
@@ -136,12 +139,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 156,
     },
     {
       name: 'Skull Squadron Pilot',
       initiative: 4,
       limited: 0,
-      cost: 46,
+      cost: 44,
       xws: 'skullsquadronpilot',
       text: "The aces of Skull Squadron favor an aggressive approach, using their craft's pivot wing technology to achieve unmatched agility in the pursuit of their quarry.",
       image:
@@ -157,6 +161,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 159,
     },
     {
       name: 'Zealous Recruit',
@@ -178,12 +183,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 160,
     },
     {
       name: 'Mandalorian Royal Guard',
       initiative: 4,
       limited: 2,
-      cost: 48,
+      cost: 45,
       xws: 'mandalorianroyalguard',
       ability:
         'While a friendly non-small ship defends, if you are in the attack arc, you may gain 1 deplete and 1 strain token. If you do, the defender may change 1 result to an [Evade] result.',
@@ -201,6 +207,7 @@ const t: ShipType = {
       keywords: ['Mandalorian'],
       caption: 'Selfless Protector',
       epic: true,
+      ffg: 1056,
     },
     {
       name: 'Tor Phun',
@@ -224,6 +231,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
+      ffg: 1057,
     },
   ],
 };

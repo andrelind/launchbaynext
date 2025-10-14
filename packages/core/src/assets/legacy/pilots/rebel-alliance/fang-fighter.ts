@@ -68,6 +68,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
+      ffg: 1018,
     },
     {
       name: 'Bodica Venj',
@@ -91,6 +92,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
+      ffg: 1019,
     },
     {
       name: 'Dirk Ullodin',
@@ -114,6 +116,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
+      ffg: 1020,
     },
     {
       name: 'Clan Wren Volunteer',
@@ -137,6 +140,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
+      ffg: 1021,
     },
   ],
 };

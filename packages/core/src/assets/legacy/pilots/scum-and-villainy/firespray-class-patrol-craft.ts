@@ -67,6 +67,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 149,
     },
     {
       name: 'Bounty Hunter',
@@ -92,6 +93,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 154,
     },
     {
       name: 'Emon Azzameen',
@@ -101,7 +103,7 @@ const t: ShipType = {
       cost: 69,
       xws: 'emonazzameen',
       ability:
-        'If you would drop a device using a [1 [Straight]] template, you may use the [3 [Turn Left]], [3 [Straight]], or [3 [Turn Right]] template instead.',
+        'If you would drop a device using a [1 [Straight]) template, you may use the [3 [Turn Left]), [3 [Straight]), or [3 [Turn Right]) template instead.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/emonazzameen.png',
       slots: [
@@ -119,6 +121,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 150,
     },
     {
       name: 'Kath Scarlet',
@@ -146,6 +149,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 151,
     },
     {
       name: 'Koshka Frost',
@@ -174,6 +178,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 152,
     },
     {
       name: 'Krassis Trelix',
@@ -201,6 +206,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 153,
     },
     {
       name: 'Hondo Ohnaka',
@@ -227,6 +233,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1058,
     },
   ],
 };

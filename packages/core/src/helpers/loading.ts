@@ -63,7 +63,7 @@ export const loadShip2 = (
     ruleset: RuleSet;
   },
 ) => {
-  console.log(`Loading ship ${pilot.ship} for ${pilot.id} (${xws.faction}) ${xws.ruleset}`);
+  // console.log(`Loading ship ${pilot.ship} for ${pilot.id} (${xws.faction}) ${xws.ruleset}`);
 
   const shipType: ShipType = JSON.parse(
     JSON.stringify(assets[xws.ruleset || 'xwa'].pilots[getFaction(xws.faction)][pilot.ship]),
@@ -174,7 +174,7 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
     return typedCost.values[ship.pilot.initiative];
   } else if (cost.variable && cost.variable === 'size') {
     const typedCost = cost as UpgradeCostSize;
-    return typedCost.values[ship.size];
+    return typedCost.values[ship.size] || 0;
   } else if (cost.variable && cost.variable === 'faction') {
     const typedCost = cost as UpgradeCostFaction;
     return typedCost.values[ship.faction];

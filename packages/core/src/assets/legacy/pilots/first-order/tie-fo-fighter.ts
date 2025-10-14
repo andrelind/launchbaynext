@@ -57,6 +57,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 397,
     },
     {
       name: 'Commander Malarus',
@@ -77,6 +78,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 452,
     },
     {
       name: '“Scorch”',
@@ -96,6 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 398,
     },
     {
       name: '“Static”',
@@ -115,6 +118,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 399,
     },
     {
       name: '“Longshot”',
@@ -134,6 +138,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 400,
     },
     {
       name: 'Omega Squadron Ace',
@@ -151,13 +156,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 403,
     },
     {
       name: '“Muse”',
       caption: 'Epsilon Leader',
       initiative: 2,
       limited: 1,
-      cost: 30,
+      cost: 29,
       xws: 'muse',
       ability:
         'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.',
@@ -170,6 +176,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 401,
     },
     {
       name: 'TN-3465',
@@ -189,6 +196,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 453,
     },
     {
       name: 'Zeta Squadron Pilot',
@@ -206,6 +214,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 404,
     },
     {
       name: 'Epsilon Squadron Cadet',
@@ -223,6 +232,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 405,
     },
     {
       name: 'Lieutenant Rivas',
@@ -242,6 +252,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 454,
     },
     {
       name: '“Null”',
@@ -260,6 +271,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 402,
     },
     {
       name: 'Lieutenant Galek',
@@ -279,6 +291,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 925,
     },
     {
       name: 'DT-798',
@@ -298,13 +311,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 926,
     },
     {
       name: 'Lin Gaava',
       caption: 'Impetuous Mechanic',
       initiative: 3,
       limited: 1,
-      cost: 33,
+      cost: 32,
       xws: 'lingaava',
       ability:
         'Setup: After placing forces, assign the Primed for Speed condition to yourself and up to 2 other friendly TIE/fo or TIE/sf Fighters that have no equipped [Modification] upgrades.',
@@ -318,6 +332,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 927,
     },
   ],
 };

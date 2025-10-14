@@ -59,6 +59,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 195,
     },
     {
       name: 'Captain Jostero',
@@ -77,6 +78,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 194,
     },
     {
       name: 'Cartel Marauder',
@@ -93,6 +95,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 196,
     },
     {
       name: 'Graz',
@@ -119,6 +122,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 192,
     },
     {
       name: 'Talonbane Cobra',
@@ -144,6 +148,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 191,
     },
     {
       name: 'Viktor Hel',
@@ -170,6 +175,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 193,
     },
   ],
 };

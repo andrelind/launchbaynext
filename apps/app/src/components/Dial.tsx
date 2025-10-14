@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { View } from 'react-native';
 
 import { useTailwind } from '../helpers/tailwind';
@@ -129,4 +129,4 @@ const Dial = ({ dial }: DialProps) => {
   );
 };
 
-export default memo(Dial);
+export default Dial

@@ -63,6 +63,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 985,
     },
     {
       name: 'Nite Owl Liberator',
@@ -90,6 +91,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 986,
     },
   ],
 };

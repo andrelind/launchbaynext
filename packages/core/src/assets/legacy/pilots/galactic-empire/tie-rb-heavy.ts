@@ -69,6 +69,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/caridaacademycadet.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 696,
     },
     {
       name: 'Onyx Squadron Sentry',
@@ -97,11 +98,12 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronsentry.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 695,
     },
     {
       name: '“Rampage”',
       caption: 'Implacable Pursuer',
-      cost: 37,
+      cost: 36,
       initiative: 4,
       limited: 1,
       slots: [
@@ -127,11 +129,12 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rampage.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 693,
     },
     {
       name: 'Lyttan Dree',
       caption: 'Onyx 2',
-      cost: 37,
+      cost: 36,
       initiative: 3,
       limited: 1,
       slots: [
@@ -156,11 +159,12 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lyttandree.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 694,
     },
     {
       name: 'Flight Leader Ubbel',
       caption: 'Onyx Leader',
-      cost: 42,
+      cost: 43,
       initiative: 5,
       limited: 1,
       slots: [
@@ -186,6 +190,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/flightleaderubbel.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 970,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-empire/I_TIE_Brute.png',

@@ -69,6 +69,7 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 794,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -92,6 +93,7 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 796,
     },
     {
       name: 'Fearsome Predator',
@@ -116,6 +118,7 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 797,
     },
     {
       name: 'DIS-347',
@@ -139,6 +142,7 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 795,
     },
     {
       name: 'Separatist Interceptor',
@@ -160,6 +164,7 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 798,
     },
     {
       name: 'Colicoid Interceptor',
@@ -181,6 +186,7 @@ const t: ShipType = {
       slots: ['Sensor', 'Missile', 'Modification', 'Configuration'],
       keywords: ['Droid'],
       epic: true,
+      ffg: 799,
     },
     {
       name: 'DIS-347',
@@ -208,6 +214,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1085,
     },
     {
       name: 'DIS-347',
@@ -231,6 +238,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1207,
     },
     {
       name: 'DIS-T81',
@@ -258,6 +266,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1086,
     },
     {
       name: 'DIS-T81',
@@ -281,6 +290,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1208,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -308,6 +318,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1087,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -331,6 +342,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1209,
     },
     {
       name: 'Volan Das',
@@ -376,6 +388,7 @@ const t: ShipType = {
       ],
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 1088,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Droid_Tri-Fighter.png',

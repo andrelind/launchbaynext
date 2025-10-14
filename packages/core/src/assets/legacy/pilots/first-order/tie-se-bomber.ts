@@ -79,6 +79,7 @@ const t: ShipType = {
       caption: 'Ordnance Expert',
       keywords: ['TIE'],
       epic: true,
+      ffg: 913,
     },
     {
       name: '“Scorch”',
@@ -91,7 +92,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 34,
+      cost: 33,
       slots: [
         'Talent',
         'Tech',
@@ -111,6 +112,7 @@ const t: ShipType = {
       caption: 'Jad Bean',
       keywords: ['TIE'],
       epic: true,
+      ffg: 914,
     },
     {
       name: '“Dread”',
@@ -143,6 +145,7 @@ const t: ShipType = {
       caption: 'Devotee of Devastation',
       keywords: ['TIE'],
       epic: true,
+      ffg: 915,
     },
     {
       name: '“Grudge”',
@@ -174,6 +177,7 @@ const t: ShipType = {
       caption: 'Hateful Harrier',
       keywords: ['TIE'],
       epic: true,
+      ffg: 916,
     },
     {
       name: 'First Order Cadet',
@@ -204,6 +208,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordercadet.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 917,
     },
     {
       name: 'Sienar-Jaemus Test Pilot',
@@ -233,6 +238,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sienarjaemustestpilot.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 918,
     },
     {
       name: 'Jul Jerjerrod',
@@ -266,6 +272,7 @@ const t: ShipType = {
       caption: 'Security Commander',
       keywords: ['TIE'],
       epic: true,
+      ffg: 929,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_TIEseBomber.png',

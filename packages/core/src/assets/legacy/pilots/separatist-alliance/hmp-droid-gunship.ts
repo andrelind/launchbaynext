@@ -71,6 +71,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 666,
     },
     {
       name: 'Baktoid Drone',
@@ -100,6 +101,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 669,
     },
     {
       name: 'Geonosian Prototype',
@@ -131,6 +133,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 668,
     },
     {
       name: 'DGS-286',
@@ -162,6 +165,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 664,
     },
     {
       name: 'Onderon Oppressor',
@@ -193,6 +197,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 665,
     },
     {
       name: 'Separatist Predator',
@@ -222,6 +227,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistpredator.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 667,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_HMP_Droid_Gunship.png',

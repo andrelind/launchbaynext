@@ -62,6 +62,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 435,
     },
     {
       name: 'Tallissan Lintra',
@@ -86,6 +87,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 436,
     },
     {
       name: 'Zari Bangel',
@@ -109,6 +111,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 438,
     },
     {
       name: 'Greer Sonnel',
@@ -132,6 +135,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 437,
     },
     {
       name: 'Green Squadron Expert',
@@ -153,6 +157,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 439,
     },
     {
       name: 'Blue Squadron Recruit',
@@ -174,6 +179,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 440,
     },
     {
       name: 'Zizi Tlo',
@@ -198,6 +204,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 638,
     },
     {
       name: 'Ronith Blario',
@@ -221,6 +228,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['A-wing'],
       epic: true,
+      ffg: 639,
     },
     {
       name: 'Merl Cobben',
@@ -244,6 +252,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/merlcobben.png',
       keywords: ['A-wing'],
       epic: true,
+      ffg: 704,
     },
     {
       name: 'Suralinda Javos',
@@ -267,6 +276,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/suralindajavos.png',
       keywords: ['A-wing'],
       epic: true,
+      ffg: 703,
     },
     {
       name: 'Wrobie Tyce',
@@ -290,6 +300,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wrobietyce.png',
       keywords: ['A-wing'],
       epic: true,
+      ffg: 702,
     },
     {
       name: 'Seftin Vanik',
@@ -313,6 +324,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seftinvanik.png',
       keywords: ['A-wing'],
       epic: true,
+      ffg: 701,
     },
   ],
 };

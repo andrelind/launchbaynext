@@ -1,12 +1,13 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { Alert, Platform, Text, View } from 'react-native';
+import { useShallow } from 'zustand/react/shallow';
 
 import { smooth } from '../helpers/animation';
 import { colorForFactionKey } from '../helpers/colors';
 import { pilotName } from '../helpers/names';
 import { useTailwind } from '../helpers/tailwind';
 import { XWS, XWSState } from '../stores/types';
-import { xwsStore } from '../stores/xws';
+import { useXwsStore } from '../stores/xws';
 import { SwipeComponent } from './SwipeComponent';
 import { ShipFont } from './fonts/ShipIcon';
 import { XWingFont } from './fonts/XWingIcon';
@@ -27,12 +28,12 @@ interface Props<XWS> {
 export const SquadronComponent: FC<Props<XWS>> = ({
   item,
   drag,
-  isActive,
   onPress,
 }) => {
-  console.log('Render squadron', item.vendor.lbn.uid, item.name,);
+  // console.log('Render squadron', item.vendor.lbn.uid, item.name,);
   const { tw } = useTailwind();
-  const { copySquadron, removeSquadron } = xwsStore(selector);
+
+  const { copySquadron, removeSquadron } = useXwsStore(useShallow(selector));
 
   if (!item) return null;
 
@@ -126,11 +127,4 @@ export const SquadronComponent: FC<Props<XWS>> = ({
   );
 };
 
-
-export default memo(
-  SquadronComponent,
-  (a, b) =>
-    a.item.version === b.item.version &&
-    a.item.vendor.lbn.uid === b.item.vendor.lbn.uid &&
-    a.isActive === b.isActive
-);
+export default SquadronComponent;

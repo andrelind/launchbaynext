@@ -2,20 +2,15 @@ import assets from 'lbn-core/src';
 
 import { bumpMinor, bumpPatch } from 'lbn-core/src/helpers/versioning';
 import { SlotKey, Upgrade, UpgradeXWS } from 'lbn-core/src/types';
-import { collectionStore } from '../stores/collection';
+import { useCollectionStore } from '../stores/collection';
 
 import { PilotXWS, XWS } from '../stores/types';
 
 import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
 import { upgradesForSlot2 } from './select';
 
-export const addShip2 = (
-  list: XWS,
-  shipXws: string,
-  pilotXws: string,
-  upgrades?: UpgradeXWS
-) => {
-  const collection = collectionStore.getState();
+export const addShip2 = (list: XWS, shipXws: string, pilotXws: string, upgrades?: UpgradeXWS) => {
+  const collection = useCollectionStore.getState();
 
   const edit: XWS = JSON.parse(JSON.stringify(list));
   const pilot: PilotXWS = {
@@ -27,21 +22,11 @@ export const addShip2 = (
 
   const ship = loadShip2(pilot, list);
   // Check for free configurations
-  const configs = upgradesForSlot2(
-    ship,
-    'Configuration',
-    list.format,
-    list.ruleset,
-    [],
-    true,
-    collection
-  ).filter((u) => u.finalCost === 0);
+  const configs = upgradesForSlot2(ship, 'Configuration', list.format, list.ruleset, [], true, collection).filter(
+    u => u.finalCost === 0,
+  );
 
-  const blacklist = [
-    'vectoredcannonsrz1',
-    'tiedefenderelite',
-    'sensitivecontrols',
-  ];
+  const blacklist = ['vectoredcannonsrz1', 'tiedefenderelite', 'sensitivecontrols'];
 
   if (
     configs.length === 1 &&
@@ -54,26 +39,19 @@ export const addShip2 = (
 
   // Check for "standarized" upgrades equipped to other
   // ships with the same shipXws
-  edit.pilots.forEach((p) => {
+  edit.pilots.forEach(p => {
     if (p.ship === shipXws) {
       // Loop upgrades
       p.upgrades &&
-        Object.keys(p.upgrades).forEach((k) => {
+        Object.keys(p.upgrades).forEach(k => {
           const key = k as SlotKey;
           const ups = p.upgrades![key];
           if (ups) {
-            ups.forEach((uXws) => {
+            ups.forEach(uXws => {
               const upgrade: Upgrade = JSON.parse(
-                JSON.stringify(
-                  assets.ruleset[list.ruleset].upgrades[key].find(
-                    (u) => u.xws === uXws
-                  )
-                )
+                JSON.stringify(assets.ruleset[list.ruleset].upgrades[key].find(u => u.xws === uXws)),
               );
-              if (
-                upgrade?.standarized &&
-                !pilot.upgrades?.[key]?.find((x) => x === uXws)
-              ) {
+              if (upgrade?.standarized && !pilot.upgrades?.[key]?.find(x => x === uXws)) {
                 if (!pilot.upgrades![key]) {
                   pilot.upgrades![key] = [];
                 }
@@ -93,13 +71,7 @@ export const addShip2 = (
   return edit;
 };
 
-export const setUpgrade2 = (
-  xws: XWS,
-  pilotIndex: number,
-  key: SlotKey,
-  slotIndex: number,
-  u?: Upgrade
-) => {
+export const setUpgrade2 = (xws: XWS, pilotIndex: number, key: SlotKey, slotIndex: number, u?: Upgrade) => {
   const squad: XWS = JSON.parse(JSON.stringify(xws));
 
   const pilot = squad.pilots[pilotIndex];
@@ -117,22 +89,13 @@ export const setUpgrade2 = (
       // Load upgrade, check for "standarized"
       try {
         const upgrade: Upgrade = JSON.parse(
-          JSON.stringify(
-            assets.ruleset[xws.ruleset].upgrades[key].find(
-              (up) => up.xws === removed?.[0]
-            )
-          )
+          JSON.stringify(assets.ruleset[xws.ruleset].upgrades[key].find(up => up.xws === removed?.[0])),
         );
         if (upgrade?.standarized) {
-          squad.pilots = squad.pilots.map((p) => {
-            if (
-              p.ship === pilot.ship &&
-              p.upgrades?.[key]?.find((x) => x === upgrade.xws)
-            ) {
+          squad.pilots = squad.pilots.map(p => {
+            if (p.ship === pilot.ship && p.upgrades?.[key]?.find(x => x === upgrade.xws)) {
               // Found it, remove it
-              p.upgrades[key] = p.upgrades[key]?.filter(
-                (x) => x !== upgrade.xws
-              );
+              p.upgrades[key] = p.upgrades[key]?.filter(x => x !== upgrade.xws);
             }
             return p;
           });
@@ -158,10 +121,10 @@ export const setUpgrade2 = (
     // Handle standarized
     if (u.standarized) {
       // Look up all other and add it to them too
-      squad.pilots = squad.pilots.map((p) => {
+      squad.pilots = squad.pilots.map(p => {
         if (p.ship === pilot.ship) {
           if (p.upgrades?.[key]) {
-            if (p.upgrades?.[key]?.find((x) => x === u.xws)) {
+            if (p.upgrades?.[key]?.find(x => x === u.xws)) {
               // Found it, no need to add
             } else {
               p.upgrades[key]?.push(u.xws);

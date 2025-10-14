@@ -424,6 +424,35 @@ const t: UpgradeBase[] = [
     epic: true,
     standardLoadoutOnly: true,
   },
+  {
+    limited: 2,
+    xws: 'seekermissiles-rsl',
+    sides: [
+      {
+        title: 'Seeker Missiles',
+        type: 'Missile',
+        ability:
+          'Attack ([Lock]): Spend 1 [Charge]. After this attack misses, if 1 or more [Hit]/[Critical Hit] results were neutralized, the defender gains 1 strain token.',
+        slots: ['Missile'],
+        charges: { value: 2, recovers: 0 },
+        attack: {
+          arc: 'Front Arc',
+          value: 3,
+          minrange: 2,
+          maxrange: 3,
+          ordnance: true,
+        },
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/seekermissiles-rsl.png',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/seekermissiles-rsl.png',
+      },
+    ],
+    cost: { value: 5 },
+    standard: true,
+    wildspace: true,
+    epic: true,
+  },
 ];
 
 export default t;

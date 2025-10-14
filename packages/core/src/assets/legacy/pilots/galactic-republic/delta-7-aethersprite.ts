@@ -62,6 +62,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jediknight.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 515,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -86,6 +87,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obiwankenobi.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 511,
     },
     {
       name: 'Plo Koon',
@@ -110,6 +112,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/plokoon.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 513,
     },
     {
       name: 'Saesee Tiin',
@@ -134,6 +137,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/saeseetiin.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 514,
     },
     {
       name: 'Mace Windu',
@@ -157,6 +161,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/macewindu.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 512,
     },
     {
       name: 'Anakin Skywalker',
@@ -181,6 +186,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 507,
     },
     {
       name: 'Ahsoka Tano',
@@ -205,6 +211,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ahsokatano.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 510,
     },
     {
       name: 'Barriss Offee',
@@ -229,6 +236,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/barrissoffee.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 509,
     },
     {
       name: 'Luminara Unduli',
@@ -253,6 +261,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/luminaraunduli.png',
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 508,
     },
     {
       name: 'Adi Gallia',
@@ -277,6 +286,7 @@ const t: ShipType = {
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
+      ffg: 974,
     },
   ],
 };

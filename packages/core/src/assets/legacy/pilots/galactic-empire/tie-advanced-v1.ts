@@ -66,6 +66,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 101,
     },
     {
       name: 'Grand Inquisitor',
@@ -86,6 +87,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
+      ffg: 99,
     },
     {
       name: 'Inquisitor',
@@ -104,6 +106,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
+      ffg: 102,
     },
     {
       name: 'Seventh Sister',
@@ -124,6 +127,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
+      ffg: 100,
     },
     {
       name: 'Fifth Brother',
@@ -144,6 +148,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
+      ffg: 632,
     },
   ],
 };

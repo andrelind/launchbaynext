@@ -67,6 +67,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 71,
     },
     {
       name: 'Han Solo',
@@ -95,6 +96,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 69,
     },
     {
       name: 'Lando Calrissian',
@@ -123,6 +125,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 70,
     },
     {
       name: 'Outer Rim Smuggler',
@@ -148,6 +151,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 72,
     },
     {
       name: 'Leia Organa',
@@ -177,6 +181,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300', 'Light Side'],
       epic: true,
+      ffg: 630,
     },
     {
       name: 'Han Solo',
@@ -205,6 +210,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1025,
     },
     {
       name: 'Han Solo',
@@ -237,6 +243,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1159,
     },
     {
       name: 'Lando Calrissian',
@@ -279,6 +286,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1026,
     },
     {
       name: 'Lando Calrissian',
@@ -324,6 +332,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
+      ffg: 1160,
     },
   ],
 };

@@ -31,6 +31,7 @@ const t: ShipType = {
       standard: false,
       wildspace: false,
       epic: true,
+      ffg: 787,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Syliure-class_Hyperspace_Ring.png',

@@ -253,7 +253,7 @@ const t: UpgradeBase[] = [
         title: 'Moldy Crow',
         type: 'Title',
         ability:
-          'Gain a [Front Arc] primary weapon with a value of "3." During the End Phase, do not remove up to 2 focus tokens.',
+          'Gain a [Front Arc] primary weapon with a value of \"3.\" During the End Phase, do not remove up to 2 focus tokens.',
         slots: ['Title'],
         grants: [{ stat: 'attack', value: 3, arc: 'Front Arc' }],
         ffg: 328,

@@ -54,6 +54,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 81,
     },
     {
       name: '“Mauler” Mithel',
@@ -73,6 +74,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 80,
     },
     {
       name: '“Night Beast”',
@@ -92,6 +94,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 88,
     },
     {
       name: '“Scourge” Skutu',
@@ -111,6 +114,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 82,
     },
     {
       name: '“Wampa”',
@@ -131,6 +135,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 89,
     },
     {
       name: 'Academy Pilot',
@@ -148,6 +153,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 92,
     },
     {
       name: 'Black Squadron Ace',
@@ -165,6 +171,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 90,
     },
     {
       name: 'Del Meeko',
@@ -184,6 +191,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 85,
     },
     {
       name: 'Gideon Hask',
@@ -203,6 +211,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 84,
     },
     {
       name: 'Iden Versio',
@@ -223,6 +232,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 83,
     },
     {
       name: 'Obsidian Squadron Pilot',
@@ -240,6 +250,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 91,
     },
     {
       name: 'Seyn Marana',
@@ -259,6 +270,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 86,
     },
     {
       name: 'Valen Rudor',
@@ -278,6 +290,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 87,
     },
     {
       name: 'ISB Jingoist',
@@ -297,6 +310,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 948,
     },
     {
       name: 'Moff Gideon',
@@ -317,6 +331,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 949,
     },
     {
       name: '“Backstabber”',
@@ -341,6 +356,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 950,
     },
     {
       name: '“Backstabber”',
@@ -365,6 +381,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1187,
     },
     {
       name: '“Dark Curse”',
@@ -388,6 +405,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 951,
     },
     {
       name: '“Dark Curse”',
@@ -411,6 +429,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1188,
     },
     {
       name: '“Mauler” Mithel',
@@ -435,13 +454,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 952,
     },
     {
       name: '“Mauler” Mithel',
       caption: 'Battle of Yavin',
       initiative: 5,
       limited: 1,
-      cost: 32,
+      cost: 36,
       xws: 'maulermithel-battleofyavin-lsl',
       ability:
         'While you perform a primary attack, if a friendly Darth Vader or “Backstabber” is in your [Left Arc] or [Right Arc] at range 0-1, roll 1 additional attack die.',
@@ -459,6 +479,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1189,
     },
     {
       name: '“Wampa”',
@@ -484,13 +505,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 953,
     },
     {
       name: '“Wampa”',
       caption: 'Battle of Yavin',
       initiative: 1,
       limited: 1,
-      cost: 30,
+      cost: 31,
       xws: 'wampa-battleofyavin-lsl',
       ability:
         'While you perform an attack, you may spend 1 [Charge] to roll 1 additional attack die. After defending, lose 1 [Charge].',
@@ -509,6 +531,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 1190,
     },
     {
       name: 'Magna Tolvan',
@@ -528,6 +551,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 954,
     },
     {
       name: 'Yrica Quell',
@@ -547,6 +571,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 955,
     },
     {
       name: 'Iden Versio',
@@ -567,6 +592,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 956,
     },
     {
       name: '“Night Beast”',
@@ -586,6 +612,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 957,
     },
     {
       name: 'Valen Rudor',
@@ -605,6 +632,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 958,
     },
     {
       name: 'Lieutenant Hebsly',
@@ -647,6 +675,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 959,
     },
     {
       name: 'Lieutenant Hebsly',
@@ -685,6 +714,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1191,
     },
     {
       name: 'Scythe 6',
@@ -727,6 +757,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 960,
     },
     {
       name: 'Scythe 6',
@@ -764,6 +795,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1192,
     },
     {
       name: 'Major Mianda',
@@ -803,6 +835,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 961,
     },
     {
       name: 'Major Mianda',
@@ -842,6 +875,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1193,
     },
   ],
 };

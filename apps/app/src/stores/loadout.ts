@@ -1,6 +1,8 @@
+import 'react-native-get-random-values';
+import { v4 as uuid } from 'uuid';
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FactionKey, SlotKey } from 'lbn-core/src/types';
-import { v4 as uuid } from 'uuid';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 
@@ -22,16 +24,16 @@ export type LoadoutState = {
     faction: FactionKey,
     shipXws: string,
     pilotXws: string,
-    upgrades: { [key in SlotKey]?: string[] }
+    upgrades: { [key in SlotKey]?: string[] },
   ) => void;
   removeLoadout: (uid: string) => void;
 };
 
-export const loadoutStore = create<LoadoutState>()(
+export const useLoadoutStore = create<LoadoutState>()(
   persist(
     (set, get) => ({
       loadouts: [],
-      setLoadouts: (loadouts) => set({ loadouts }),
+      setLoadouts: loadouts => set({ loadouts }),
 
       addLoadout: (name, faction, shipXws, pilotXws, upgrades) => {
         const loadouts = get().loadouts || [];
@@ -48,20 +50,20 @@ export const loadoutStore = create<LoadoutState>()(
 
         set({ loadouts: [...loadouts, loadout] });
       },
-      removeLoadout: (id) => {
+      removeLoadout: id => {
         // removeListOnServer(uid);
         const loadouts = get().loadouts;
-        const list = loadouts?.find((l) => l.id === id);
+        const list = loadouts?.find(l => l.id === id);
         if (!list) {
           return;
         }
-        const filtered = loadouts?.filter((l) => l.id !== id);
+        const filtered = loadouts?.filter(l => l.id !== id);
         return set({ loadouts: filtered });
       },
     }),
     {
       name: 'loadout',
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );

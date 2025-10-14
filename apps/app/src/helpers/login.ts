@@ -1,10 +1,7 @@
 import { appleAuth } from '@invertase/react-native-apple-authentication';
-import {
-  GoogleSignin,
-  statusCodes,
-} from '@react-native-google-signin/google-signin';
+import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
 import { AccessToken, LoginResult } from 'react-native-fbsdk-next';
-import { systemStore } from '../stores/system';
+import { useSystemStore } from '../stores/system';
 import { syncWithServer } from './api';
 import { trpc } from './trpc';
 
@@ -14,9 +11,7 @@ export const loginWithApple = async () => {
     requestedScopes: [appleAuth.Scope.EMAIL, appleAuth.Scope.FULL_NAME],
   });
 
-  const credentialState = await appleAuth.getCredentialStateForUser(
-    response.user,
-  );
+  const credentialState = await appleAuth.getCredentialStateForUser(response.user);
 
   if (credentialState !== appleAuth.State.AUTHORIZED) {
     return false;
@@ -26,13 +21,11 @@ export const loginWithApple = async () => {
     const accessToken = await trpc.auth.mutate({
       provider: 'Apple',
       providerId: response.user,
-      name: response.fullName
-        ? `${response.fullName.givenName} ${response.fullName.familyName}`
-        : '',
+      name: response.fullName ? `${response.fullName.givenName} ${response.fullName.familyName}` : '',
       email: response.email || '',
     });
 
-    systemStore.getState().setToken(accessToken);
+    useSystemStore.getState().setToken(accessToken);
     await syncWithServer();
     return true;
   } catch (error) {
@@ -60,7 +53,7 @@ export const loginWithFacebook = async (error: any, result: LoginResult) => {
       email: '',
       access_token: fbToken?.accessToken,
     });
-    systemStore.getState().setToken(accessToken);
+    useSystemStore.getState().setToken(accessToken);
     await syncWithServer();
     return true;
   } catch (e) {
@@ -73,8 +66,7 @@ export const loginWithGoogle = async () => {
   try {
     await GoogleSignin.hasPlayServices();
     GoogleSignin.configure({
-      webClientId:
-        '611550568776-14t4152db2519sk2kkn31s040q06uodv.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
+      webClientId: '611550568776-14t4152db2519sk2kkn31s040q06uodv.apps.googleusercontent.com', // client ID of type WEB for your server (needed to verify user ID and offline access)
       offlineAccess: false,
     });
 
@@ -89,7 +81,7 @@ export const loginWithGoogle = async () => {
       });
       console.log('Google accessToken', accessToken);
 
-      systemStore.getState().setToken(accessToken);
+      useSystemStore.getState().setToken(accessToken);
       await syncWithServer();
       return true;
     }
@@ -98,9 +90,7 @@ export const loginWithGoogle = async () => {
       console.log('Google SIGN_IN_CANCELLED');
     } else if ((error as any).code === statusCodes.IN_PROGRESS) {
       console.log('Google IN_PROGRESS');
-    } else if (
-      (error as any).code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE
-    ) {
+    } else if ((error as any).code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
       console.log('Google PLAY_SERVICES_NOT_AVAILABLE');
     } else {
       console.log('Google ', error);

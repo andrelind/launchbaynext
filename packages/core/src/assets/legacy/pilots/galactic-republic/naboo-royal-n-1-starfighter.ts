@@ -61,6 +61,7 @@ const t: ShipType = {
       caption: 'Hero of Naboo',
       keywords: ['Light Side'],
       epic: true,
+      ffg: 558,
     },
     {
       name: 'Ric Olié',
@@ -83,6 +84,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ricolie.png',
       epic: true,
+      ffg: 557,
     },
     {
       name: 'Padmé Amidala',
@@ -105,6 +107,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padmeamidala.png',
       epic: true,
+      ffg: 559,
     },
     {
       name: 'Dineé Ellberger',
@@ -118,7 +121,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 31,
+      cost: 30,
       slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
@@ -127,6 +130,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dineeellberger.png',
       epic: true,
+      ffg: 560,
     },
     {
       name: 'Bravo Flight Officer',
@@ -147,6 +151,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bravoflightofficer.png',
       epic: true,
+      ffg: 562,
     },
     {
       name: 'Naboo Handmaiden',
@@ -170,6 +175,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/naboohandmaiden.png',
       epic: true,
+      ffg: 561,
     },
     {
       name: 'Gavyn Sykes',
@@ -192,6 +198,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gavynsykes.png',
       epic: true,
+      ffg: 987,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Royal_Naboo_N-1_Starfighter.png',

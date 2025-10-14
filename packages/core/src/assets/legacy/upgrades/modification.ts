@@ -83,8 +83,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Electronic Baffle',
         type: 'Modification',
-        ability:
-          'During the End Phase, you may suffer 1 [Hit] damage to remove 1 red token.',
+        ability: 'During the End Phase, you may suffer 1 [Hit] damage to remove 1 red token.',
         slots: ['Modification'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/electronicbaffle.png',
@@ -243,8 +242,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Tactical Scrambler',
         type: 'Modification',
-        ability:
-          "While you obstruct an enemy ship's attack, the defender rolls 1 additional defense die.",
+        ability: "While you obstruct an enemy ship's attack, the defender rolls 1 additional defense die.",
         slots: ['Modification'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tacticalscrambler.png',
@@ -266,8 +264,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Impervium Plating',
         type: 'Modification',
-        ability:
-          'Before you would be dealt a faceup Ship damage card, you may spend 1 [Charge] to discard it instead.',
+        ability: 'Before you would be dealt a faceup Ship damage card, you may spend 1 [Charge] to discard it instead.',
         charges: { value: 2, recovers: 0 },
         slots: ['Modification'],
         image:
@@ -299,10 +296,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/synchronizedconsole.png',
       },
     ],
-    restrictions: [
-      { factions: ['Galactic Republic'] },
-      { action: { type: 'Lock', difficulty: 'White' } },
-    ],
+    restrictions: [{ factions: ['Galactic Republic'] }, { action: { type: 'Lock', difficulty: 'White' } }],
     cost: { value: 1 },
     standard: true,
     wildspace: true,
@@ -340,8 +334,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Delayed Fuses',
         type: 'Modification',
-        ability:
-          'After you drop, launch, or place a bomb or mine, you may place 1 fuse marker on that device.',
+        ability: 'After you drop, launch, or place a bomb or mine, you may place 1 fuse marker on that device.',
         slots: ['Modification'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/delayedfuses.png',
@@ -421,12 +414,7 @@ const t: UpgradeBase[] = [
     ],
     restrictions: [
       {
-        chassis: [
-          'vultureclassdroidfighter',
-          'hyenaclassdroidbomber',
-          'droidtrifighter',
-          'rogueclassstarfighter',
-        ],
+        chassis: ['vultureclassdroidfighter', 'hyenaclassdroidbomber', 'droidtrifighter', 'rogueclassstarfighter'],
       },
       { action: { type: 'Calculate' } },
     ],
@@ -484,10 +472,7 @@ const t: UpgradeBase[] = [
       variable: 'initiative',
       values: { '0': 1, '1': 1, '2': 1, '3': 1, '4': 1, '5': 2, '6': 2 },
     },
-    restrictions: [
-      { keywords: ['TIE'] },
-      { stat: { type: 'agility', value: 3 } },
-    ],
+    restrictions: [{ keywords: ['TIE'] }, { stat: { type: 'agility', value: 3 } }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -586,10 +571,7 @@ const t: UpgradeBase[] = [
         grants: [{ action: { type: 'SLAM', difficulty: 'White' }, value: 1 }],
       },
     ],
-    restrictions: [
-      { factions: ['Scum and Villainy'] },
-      { baseSizes: ['Small', 'Medium'] },
-    ],
+    restrictions: [{ factions: ['Scum and Villainy'] }, { baseSizes: ['Small', 'Medium'] }],
     cost: { value: 4 },
     standard: true,
     wildspace: true,
@@ -673,8 +655,7 @@ const t: UpgradeBase[] = [
     xws: 'automatedloaders-swz98',
     sides: [
       {
-        ability:
-          'After you perform a primary attack, you may spend 1 [Charge] to perform a [Reload] action.',
+        ability: 'After you perform a primary attack, you may spend 1 [Charge] to perform a [Reload] action.',
         title: 'Automated Loaders',
         type: 'Modification',
         slots: ['Modification'],
@@ -685,6 +666,28 @@ const t: UpgradeBase[] = [
     wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'contingencyprotocol-rsl',
+    sides: [
+      {
+        title: 'Contingency Protocol',
+        type: 'Modification',
+        ability:
+          'After you are destroyed, you may choose a friendly ship with the Contingency Protocol upgrade at range 0-3. If you do, it may perform an action, even while stressed',
+        slots: ['Modification'],
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/contingencyprotocol-rsl.png',
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/contingencyprotocol-rsl.png',
+      },
+    ],
+    cost: { variable: 'size', values: { Small: 1, Medium: 2, Large: 2 } },
+    restrictions: [{ factions: ['Separatist Alliance'] }, { equipped: ['Tactical Relay'] }, {}],
+    standard: true,
+    wildspace: true,
+    epic: true,
   },
 ];
 

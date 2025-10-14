@@ -4,7 +4,7 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 import { saveCollectionOnServer } from '../helpers/api';
 import { CollectionState } from './types';
 
-export const collectionStore = create<CollectionState>()(
+export const useCollectionStore = create<CollectionState>()(
   persist(
     (set, get) => ({
       expansions: {},
@@ -70,6 +70,6 @@ export const collectionStore = create<CollectionState>()(
     {
       name: 'collection',
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );

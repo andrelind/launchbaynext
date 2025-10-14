@@ -65,9 +65,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 5 },
-    restrictions: [
-      { factions: ['Scum and Villainy'], character: ['Darth Vader'] },
-    ],
+    restrictions: [{ factions: ['Scum and Villainy'], character: ['Darth Vader'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -200,9 +198,7 @@ const t: UpgradeBase[] = [
           'Before rolling defense dice, you may spend 1 calculate token to guess aloud a number 1 or higher. If you do and you roll exactly that many [Evade] results, add 1 [Evade] result. After you perform the [Calculate] action, gain 1 calculate token.',
         slots: ['Crew'],
         actions: [{ type: 'Calculate', difficulty: 'White' }],
-        grants: [
-          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/c3po.png',
         artwork:
@@ -223,8 +219,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Cad Bane',
         type: 'Crew',
-        ability:
-          'After you drop or launch a device, you may perform a red [Boost] action.',
+        ability: 'After you drop or launch a device, you may perform a red [Boost] action.',
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/cadbane.png',
         slots: ['Crew'],
@@ -292,8 +287,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Chewbacca',
         type: 'Crew',
-        ability:
-          'At the start of the Engagement Phase, you may spend 2 [Charge] to repair 1 faceup damage card.',
+        ability: 'At the start of the Engagement Phase, you may spend 2 [Charge] to repair 1 faceup damage card.',
         slots: ['Crew'],
         charges: { value: 2, recovers: 1 },
         image:
@@ -316,8 +310,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Chewbacca',
         type: 'Crew',
-        ability:
-          'At the start of the End Phase, you may spend 1 focus token to repair 1 of your faceup damage cards.',
+        ability: 'At the start of the End Phase, you may spend 1 focus token to repair 1 of your faceup damage cards.',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chewbacca-crew.png',
@@ -349,10 +342,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['Galactic Empire'] },
-      { action: { type: 'Coordinate' } },
-    ],
+    restrictions: [{ factions: ['Galactic Empire'] }, { action: { type: 'Coordinate' } }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -412,8 +402,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Death Troopers',
         type: 'Crew',
-        ability:
-          'During the Activation Phase, enemy ships at range 0-1 cannot remove stress tokens.',
+        ability: 'During the Activation Phase, enemy ships at range 0-1 cannot remove stress tokens.',
         slots: ['Crew', 'Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/deathtroopers.png',
@@ -435,8 +424,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Director Krennic',
         type: 'Crew',
-        ability:
-          'Setup: Before placing forces, assign the Optimized Prototype condition to another friendly ship.',
+        ability: 'Setup: Before placing forces, assign the Optimized Prototype condition to another friendly ship.',
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/directorkrennic.png',
         conditions: ['optimizedprototype'],
@@ -530,8 +518,7 @@ const t: UpgradeBase[] = [
       {
         title: 'GNK “Gonk” Droid',
         type: 'Crew',
-        ability:
-          'Setup: Lose 1 [Charge]. Action: Recover 1 [Charge]. Action: Spend 1 [Charge] to recover 1 shield.',
+        ability: 'Setup: Lose 1 [Charge]. Action: Recover 1 [Charge]. Action: Spend 1 [Charge] to recover 1 shield.',
         slots: ['Crew'],
         charges: { value: 1, recovers: 0 },
         image:
@@ -588,10 +575,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['Galactic Empire'] },
-      { action: { type: 'Lock' } },
-    ],
+    restrictions: [{ factions: ['Galactic Empire'] }, { action: { type: 'Lock' } }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -633,9 +617,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig88d.png',
         slots: ['Crew'],
         actions: [{ type: 'Calculate', difficulty: 'White' }],
-        grants: [
-          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ig88d.png',
       },
@@ -654,8 +636,7 @@ const t: UpgradeBase[] = [
       {
         title: 'ISB Slicer',
         type: 'Crew',
-        ability:
-          'During the End Phase, enemy ships at range 1-2 cannot remove jam tokens.',
+        ability: 'During the End Phase, enemy ships at range 1-2 cannot remove jam tokens.',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/isbslicer.png',
@@ -677,8 +658,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Informant',
         type: 'Crew',
-        ability:
-          'Setup: After placing forces, choose 1 enemy ship and assign the Listening Device condition to it.',
+        ability: 'Setup: After placing forces, choose 1 enemy ship and assign the Listening Device condition to it.',
         conditions: ['listeningdevice'],
         slots: ['Crew'],
         image:
@@ -724,8 +704,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Jyn Erso',
         type: 'Crew',
-        ability:
-          'If a friendly ship at range 0-3 would gain a focus token, it may gain 1 evade token instead.',
+        ability: 'If a friendly ship at range 0-3 would gain a focus token, it may gain 1 evade token instead.',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/jynerso.png',
@@ -853,8 +832,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Lando Calrissian',
         type: 'Crew',
-        ability:
-          'After you roll dice, you may spend 1 green token to reroll up to 2 of your results.',
+        ability: 'After you roll dice, you may spend 1 green token to reroll up to 2 of your results.',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/landocalrissian-crew.png',
@@ -946,8 +924,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Magva Yarro',
         type: 'Crew',
-        ability:
-          'After you defend, if the attack hit, you may acquire a lock on the attacker.',
+        ability: 'After you defend, if the attack hit, you may acquire a lock on the attacker.',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/magvayarro.png',
@@ -981,9 +958,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 11 },
-    restrictions: [
-      { factions: ['Scum and Villainy'], character: ['Ezra Bridger'] },
-    ],
+    restrictions: [{ factions: ['Scum and Villainy'], character: ['Ezra Bridger'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -996,8 +971,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Minister Tua',
         type: 'Crew',
-        ability:
-          'At the start of the Engagement Phase, if you are damaged, you may perform a red [Reinforce] action.',
+        ability: 'At the start of the Engagement Phase, if you are damaged, you may perform a red [Reinforce] action.',
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ministertua.png',
         slots: ['Crew'],
@@ -1030,10 +1004,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 7 },
-    restrictions: [
-      { factions: ['Galactic Empire'] },
-      { action: { type: 'Coordinate' } },
-    ],
+    restrictions: [{ factions: ['Galactic Empire'] }, { action: { type: 'Coordinate' } }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -1046,8 +1017,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Nien Nunb',
         type: 'Crew',
-        ability:
-          'Decrease the difficulty of your bank maneuvers ([Bank Left] and [Bank Right]).',
+        ability: 'Decrease the difficulty of your bank maneuvers ([Bank Left] and [Bank Right]).',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/niennunb.png',
@@ -1135,8 +1105,7 @@ const t: UpgradeBase[] = [
       {
         title: "Qi'ra",
         type: 'Crew',
-        ability:
-          'While you move and perform attacks, you ignore obstacles that you are locking.',
+        ability: 'While you move and perform attacks, you ignore obstacles that you are locking.',
         slots: ['Crew'],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/qira.png',
@@ -1313,9 +1282,7 @@ const t: UpgradeBase[] = [
         text: 'In the chaos of a starfighter battle, a single order can mean the difference between a victory and a massacre.',
         slots: ['Crew'],
         actions: [{ type: 'Coordinate', difficulty: 'White' }],
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'White' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/tacticalofficer.png',
         artwork:
@@ -1359,8 +1326,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Unkar Plutt',
         type: 'Crew',
-        ability:
-          'After you partially execute a maneuver, you may suffer 1 [Hit] damage to perform 1 white action.',
+        ability: 'After you partially execute a maneuver, you may suffer 1 [Hit] damage to perform 1 white action.',
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/unkarplutt.png',
         slots: ['Crew'],
@@ -1508,9 +1474,7 @@ const t: UpgradeBase[] = [
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chancellorpalpatine.png',
         force: { value: 1, recovers: 1, side: ['dark'] },
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 }],
         slots: ['Crew'],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chancellorpalpatine-sideb.png',
@@ -1523,9 +1487,7 @@ const t: UpgradeBase[] = [
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/chancellorpalpatine-sideb.png',
         force: { value: 1, recovers: 1, side: ['dark'] },
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 }],
         slots: ['Crew'],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/chancellorpalpatine.png',
@@ -1621,9 +1583,7 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew'],
         charges: { value: 5, recovers: 1 },
-        grants: [
-          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/ga97.png',
         image:
@@ -1665,8 +1625,7 @@ const t: UpgradeBase[] = [
     xws: 'korrsella',
     sides: [
       {
-        ability:
-          'After you fully execute a blue maneuver, remove all of your stress tokens.',
+        ability: 'After you fully execute a blue maneuver, remove all of your stress tokens.',
         title: 'Korr Sella',
         type: 'Crew',
         slots: ['Crew'],
@@ -1717,9 +1676,7 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew', 'Crew'],
         force: { value: 1, recovers: 1, side: ['light'] },
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 }],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/leiaorgana-resistance.png',
         image:
@@ -1743,9 +1700,7 @@ const t: UpgradeBase[] = [
         title: 'PZ-4CO',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/pz4co.png',
         image:
@@ -1773,9 +1728,7 @@ const t: UpgradeBase[] = [
           'While you defend, if you are calculating, you may reroll 1 defense die. After you perform a [Calculate] action, gain 1 calculate token.',
         slots: ['Crew'],
         type: 'Crew',
-        grants: [
-          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
       },
     ],
     cost: { value: 7 },
@@ -1888,9 +1841,7 @@ const t: UpgradeBase[] = [
         title: 'Plo Koon',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Reinforce', difficulty: 'Purple' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Reinforce', difficulty: 'Purple' }, value: 1 }],
         artwork:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/plokoon.png',
         image:
@@ -1977,9 +1928,7 @@ const t: UpgradeBase[] = [
         ability:
           'After another friendly ship at range 0-2 fully executes a purple maneuver or performs a purple action, you may spend 1 [Force]. If you do, that ship recovers 1 [Force].',
         force: { value: 2, recovers: 1, side: ['light'] },
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 }],
       },
     ],
     cost: { value: 11 },
@@ -2223,9 +2172,7 @@ const t: UpgradeBase[] = [
         title: 'Protectorate Gleb',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/protectorategleb.png',
         artwork:
@@ -2233,9 +2180,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 6 },
-    restrictions: [
-      { factions: ['Scum and Villainy', 'Galactic Empire', 'First Order'] },
-    ],
+    restrictions: [{ factions: ['Scum and Villainy', 'Galactic Empire', 'First Order'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -2246,14 +2191,11 @@ const t: UpgradeBase[] = [
     xws: 'themandalorian',
     sides: [
       {
-        ability:
-          'During the End Phase, if you did not defend this round, recover 1 non-recurring [Force], if able.',
+        ability: 'During the End Phase, if you did not defend this round, recover 1 non-recurring [Force], if able.',
         title: 'The Mandalorian',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Reinforce', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Reinforce', difficulty: 'White' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/themandalorian.png',
         artwork:
@@ -2285,9 +2227,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 6 },
-    restrictions: [
-      { factions: ['Galactic Empire', 'Rebel Alliance', 'Scum and Villainy'] },
-    ],
+    restrictions: [{ factions: ['Galactic Empire', 'Rebel Alliance', 'Scum and Villainy'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -2306,9 +2246,7 @@ const t: UpgradeBase[] = [
         title: 'IG-11',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ig11.png',
         artwork:
@@ -2340,9 +2278,7 @@ const t: UpgradeBase[] = [
         title: 'Greef Karga',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/greefkarga.png',
         artwork:
@@ -2396,10 +2332,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 3 },
-    restrictions: [
-      { factions: ['Scum and Villainy'] },
-      { baseSizes: ['Medium', 'Large'] },
-    ],
+    restrictions: [{ factions: ['Scum and Villainy'] }, { baseSizes: ['Medium', 'Large'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -2492,8 +2425,7 @@ const t: UpgradeBase[] = [
     xws: 'bokatankryze',
     sides: [
       {
-        ability:
-          'While you perform an attack, if you are at range 0-1 of the defender, you may reroll 1 attack die.',
+        ability: 'While you perform an attack, if you are at range 0-1 of the defender, you may reroll 1 attack die.',
         title: 'Bo-Katan Kryze',
         type: 'Crew',
         slots: ['Crew'],
@@ -2684,9 +2616,7 @@ const t: UpgradeBase[] = [
         title: 'Pre Vizsla',
         type: 'Crew',
         slots: ['Crew'],
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'White' }, value: 1 }],
         image:
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/previzsla.png',
         artwork:
@@ -2836,8 +2766,7 @@ const t: UpgradeBase[] = [
         device: {
           name: 'Clan Wren Commandos',
           type: 'Remote',
-          image:
-            'https://infinitearenas.com/xw2/images/remotes/clanwrencommandos.png',
+          image: 'https://infinitearenas.com/xw2/images/remotes/clanwrencommandos.png',
           effect:
             'After an enemy ship overlaps you, it gains 1 strain token. Activation Phase: At the start of this phase, you may relocate forward using a [1 [Turn Left]], [2 [Straight]] or [1 [Turn Right]] template. Engagement Phase: You cannot attack if there are enemy ships at range 0. To perform an attack, you must spend 1 [Charge]. While you perform an attack, you may change 1 [Focus] result to a [Hit] result.',
           initiative: 2,
@@ -2861,10 +2790,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 10 },
-    restrictions: [
-      { factions: ['Rebel Alliance'] },
-      { baseSizes: ['Medium', 'Large', 'Huge'] },
-    ],
+    restrictions: [{ factions: ['Rebel Alliance'] }, { baseSizes: ['Medium', 'Large', 'Huge'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -2884,8 +2810,7 @@ const t: UpgradeBase[] = [
         device: {
           name: 'Imperial Super Commandos',
           type: 'Remote',
-          image:
-            'https://infinitearenas.com/xw2/images/remotes/imperialsupercommandos.png',
+          image: 'https://infinitearenas.com/xw2/images/remotes/imperialsupercommandos.png',
           effect:
             'After an enemy ship overlaps you, it gains 1 strain token. Activation Phase: At the start of this phase, you may relocate forward using a [1 [Turn Left]], [2 [Straight]] or [1 [Turn Right]] template. Engagement Phase: You cannot attack if there are enemy ships at range 0. To perform an attack, you must spend 1 [Charge]. While you perform an attack, you may change 1 [Focus] result to a [Hit] result.',
           initiative: 2,
@@ -2909,10 +2834,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 10 },
-    restrictions: [
-      { factions: ['Galactic Empire'] },
-      { baseSizes: ['Medium', 'Large', 'Huge'] },
-    ],
+    restrictions: [{ factions: ['Galactic Empire'] }, { baseSizes: ['Medium', 'Large', 'Huge'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -2932,8 +2854,7 @@ const t: UpgradeBase[] = [
         device: {
           name: 'Mandalorian Super Commandos',
           type: 'Remote',
-          image:
-            'https://infinitearenas.com/xw2/images/remotes/mandaloriansupercommandos.png',
+          image: 'https://infinitearenas.com/xw2/images/remotes/mandaloriansupercommandos.png',
           effect:
             'After an enemy ship overlaps you, it gains 1 strain token. Activation Phase: At the start of this phase, you may relocate forward using a [1 [Turn Left]], [2 [Straight]] or [1 [Turn Right]] template. Engagement Phase: You cannot attack if there are enemy ships at range 0. To perform an attack, you must spend 1 [Charge]. While you perform an attack, you may change 1 [Focus] result to a [Hit] result.',
           initiative: 2,
@@ -2957,10 +2878,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 10 },
-    restrictions: [
-      { factions: ['Scum and Villainy'] },
-      { baseSizes: ['Medium', 'Large', 'Huge'] },
-    ],
+    restrictions: [{ factions: ['Scum and Villainy'] }, { baseSizes: ['Medium', 'Large', 'Huge'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -2980,8 +2898,7 @@ const t: UpgradeBase[] = [
         device: {
           name: 'Nite Owl Commandos',
           type: 'Remote',
-          image:
-            'https://infinitearenas.com/xw2/images/remotes/niteowlcommandos.png',
+          image: 'https://infinitearenas.com/xw2/images/remotes/niteowlcommandos.png',
           effect:
             'After an enemy ship overlaps you, it gains 1 strain token. Activation Phase: At the start of this phase, you may relocate forward using a [1 [Turn Left]], [2 [Straight]] or [1 [Turn Right]] template. Engagement Phase: You cannot attack if there are enemy ships at range 0. To perform an attack, you must spend 1 [Charge]. While you perform an attack, you may change 1 [Focus] result to a [Hit] result.',
           initiative: 2,
@@ -3005,10 +2922,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 10 },
-    restrictions: [
-      { factions: ['Galactic Republic'] },
-      { baseSizes: ['Medium', 'Large', 'Huge'] },
-    ],
+    restrictions: [{ factions: ['Galactic Republic'] }, { baseSizes: ['Medium', 'Large', 'Huge'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -3028,8 +2942,7 @@ const t: UpgradeBase[] = [
         device: {
           name: 'Death Watch Commandos',
           type: 'Remote',
-          image:
-            'https://infinitearenas.com/xw2/images/remotes/deathwatchcommandos.png',
+          image: 'https://infinitearenas.com/xw2/images/remotes/deathwatchcommandos.png',
           effect:
             'After an enemy ship overlaps you, it gains 1 strain token. Activation Phase: At the start of this phase, you may relocate forward using a [1 [Turn Left]], [2 [Straight]] or [1 [Turn Right]] template. Engagement Phase: You cannot attack if there are enemy ships at range 0. To perform an attack, you must spend 1 [Charge]. While you perform an attack, you may change 1 [Focus] result to a [Hit] result.',
           initiative: 2,
@@ -3053,10 +2966,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 10 },
-    restrictions: [
-      { factions: ['Separatist Alliance'] },
-      { baseSizes: ['Medium', 'Large', 'Huge'] },
-    ],
+    restrictions: [{ factions: ['Separatist Alliance'] }, { baseSizes: ['Medium', 'Large', 'Huge'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -3069,8 +2979,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Chewbacca',
         type: 'Crew',
-        ability:
-          'After you perform an [Evade] action, you may gain 1 focus token.',
+        ability: 'After you perform an [Evade] action, you may gain 1 focus token.',
         slots: ['Crew'],
       },
     ],
@@ -3106,14 +3015,34 @@ const t: UpgradeBase[] = [
         title: '“Leebo”',
         type: 'Crew',
         slots: ['Crew'],
-        ability:
-          'After you repair a damage card, you may perform an action from your action bar.',
+        ability: 'After you repair a damage card, you may perform an action from your action bar.',
       },
     ],
     standard: false,
     wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+  },
+  {
+    limited: 1,
+    xws: 'leebo-rsl',
+    sides: [
+      {
+        title: 'Leebo',
+        type: 'Crew',
+        ability: 'After you repair a damage card, you may perform an action on your action bar.',
+        image:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/leebo-rsl.png',
+        slots: ['Crew'],
+        artwork:
+          'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/leebo-rsl.png',
+      },
+    ],
+    cost: { value: 1 },
+    restrictions: [{ factions: ['Scum and Villainy', 'Rebel Alliance'] }],
+    standard: true,
+    wildspace: true,
+    epic: true,
   },
 ];
 

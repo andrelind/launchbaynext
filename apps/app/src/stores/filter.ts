@@ -3,17 +3,10 @@ import { FactionKey, Format } from 'lbn-core/src/types';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { compare } from '../helpers/misc';
-import { xwsStore } from './xws';
+import { useXwsStore } from './xws';
 
 export type FilterType = FactionKey | Format;
-export type SortingType =
-  | 'Alphabetically'
-  | 'Faction'
-  | 'Points'
-  | 'Wins'
-  | 'Created Date'
-  | 'Format'
-  | 'Custom';
+export type SortingType = 'Alphabetically' | 'Faction' | 'Points' | 'Wins' | 'Created Date' | 'Format' | 'Custom';
 export type SortDirectionType = 'Ascending' | 'Descending';
 
 export type FilterState = {
@@ -34,52 +27,55 @@ export type FilterState = {
   setSortDirection: (s: SortDirectionType) => void;
 };
 
-export const filterStore = create<FilterState>()(
+export const useFilterStore = create<FilterState>()(
   persist(
     (set, get) => ({
       filters: {},
-      setFilters: (filters) => set({ filters }),
+      setFilters: filters => set({ filters }),
 
       tags: [],
-      setTags: (tags) => set({ tags }),
+      setTags: tags => set({ tags }),
 
       sorting: {
         first: 'Faction',
         second: 'Alphabetically',
         direction: 'Ascending',
       },
-      setFirstSorting: (first) => {
-        set((s) => ({ ...s, sorting: { ...s.sorting, first } }));
+      setFirstSorting: first => {
+        set(s => ({ ...s, sorting: { ...s.sorting, first } }));
 
         const { second } = get().sorting;
-        const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
+        const lists = [...(useXwsStore.getState().lists || [])].sort((a, b) => {
           const c = compare(a, b, first);
           if (c === 0) {
             return compare(a, b, second);
           }
           return c;
         });
-        xwsStore.getState().setLists(lists);
+        useXwsStore.getState().setLists(lists);
       },
-      setSecondSorting: (second) => {
-        set((s) => ({ ...s, sorting: { ...s.sorting, second } }));
+      setSecondSorting: second => {
+        set(s => ({ ...s, sorting: { ...s.sorting, second } }));
 
         const { first } = get().sorting;
-        const lists = [...(xwsStore.getState().lists || [])].sort((a, b) => {
+        const lists = [...(useXwsStore.getState().lists || [])].sort((a, b) => {
           const c = compare(a, b, first);
           if (c === 0) {
             return compare(a, b, second);
           }
           return c;
         });
-        xwsStore.getState().setLists(lists);
+        useXwsStore.getState().setLists(lists);
       },
-      setSortDirection: (direction) =>
-        set((s) => ({ ...s, sorting: { ...s.sorting, direction } })),
+      setSortDirection: direction => set(s => ({ ...s, sorting: { ...s.sorting, direction } })),
     }),
     {
       name: 'filter',
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+      partialize: state => {
+        const { filters, tags, ...rest } = state;
+        return rest;
+      },
+    },
+  ),
 );

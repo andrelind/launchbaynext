@@ -56,7 +56,7 @@ const t: ShipType = {
       caption: 'Tenacious Investigator',
       initiative: 5,
       limited: 1,
-      cost: 60,
+      cost: 59,
       xws: 'corranhorn',
       ability:
         'At initiative 0, you may perform a bonus primary attack against an enemy ship in your [Bullseye Arc]. If you do, at the start of the next Planning Phase, gain 1 disarm token.',
@@ -79,6 +79,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 50,
     },
     {
       name: 'Gavin Darklighter',
@@ -108,6 +109,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 51,
     },
     {
       name: 'Knave Squadron Escort',
@@ -128,6 +130,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 53,
     },
     {
       name: 'Rogue Squadron Escort',
@@ -155,6 +158,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 52,
     },
   ],
 };

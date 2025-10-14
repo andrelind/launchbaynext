@@ -833,7 +833,7 @@ const t: UpgradeBase[] = [
         title: 'Starboard Thrusters',
         type: 'Modification',
         ability:
-          "After you reveal a turn [[LeftTurn]] or Segnor's Loop [[sloop left]] maneuver,  you may spend 1 [Charge]. If you do, decrease the difficulty of that maneuver. After you execute a white Segnor's Loop [[sloop left]], gain 1 strain token.",
+          "After you reveal a turn ([LeftTurn]) or Segnor's Loop ([sloop left]) maneuver,  you may spend 1 [Charge]. If you do, decrease the difficulty of that maneuver. After you execute a white Segnor's Loop ([sloop left]), gain 1 strain token.",
         slots: ['Modification'],
         charges: { value: 2, recovers: 0 },
       },
@@ -889,7 +889,7 @@ const t: UpgradeBase[] = [
         type: 'Modification',
         charges: { value: 2, recovers: 0 },
         ability:
-          'When you decloak, you may spend 1 [Charge] to use the [2 [Bank Left]] or [2 [Bank Right]] template instead of the [2 [Straight]] template.',
+          'When you decloak, you may spend 1 [Charge] to use the [2 [Bank Left]) or [2 [Bank Right]) template instead of the [2 [Straight]) template.',
         slots: ['Modification'],
       },
     ],

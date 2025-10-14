@@ -6,7 +6,7 @@ import ActionSheet, {
 } from 'react-native-actions-sheet';
 import { colorForFormat } from '../../helpers/colors';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 import './types';
 
 export const SelectFormatSheetId = 'SelectFormatSheet';
@@ -20,7 +20,7 @@ const SelectFormatSheet = ({
   const { tw } = useTailwind();
 
   const { uid } = payload!;
-  const setFormat = xwsStore((s) => s.setFormat);
+  const setFormat = useXwsStore((s) => s.setFormat);
 
   return (
     <ActionSheet id={sheetId} useBottomSafeAreaPadding>

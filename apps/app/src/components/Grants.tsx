@@ -12,7 +12,7 @@ type Props = {
   grants: Grant[];
 };
 
-const colorForType = (type?: string) => {
+const colorForType = (type: string, lightContent: boolean) => {
   switch (type) {
     case 'attack':
       return red;
@@ -25,7 +25,7 @@ const colorForType = (type?: string) => {
     case 'energy':
       return pink;
     default:
-      return black;
+      return lightContent ? black : 'white';
   }
 };
 
@@ -38,6 +38,7 @@ const mod = (grant: Grant) => {
 
 const GrantsComponent = ({ grants }: Props) => {
   const { tw } = useTailwind();
+  const lightContent = tw.prefixMatch('light');
 
   return (
     <View style={tw`items-center`}>
@@ -54,11 +55,11 @@ const GrantsComponent = ({ grants }: Props) => {
               <XWingFont
                 icons={[grant.stat]}
                 size={5}
-                color={colorForType(grant.stat)}
+                color={colorForType(grant.stat, lightContent)}
               />
 
               <Text
-                style={tw`font-semibold text-[${colorForType(grant.stat)}]`}
+                style={tw`font-semibold text-[${colorForType(grant.stat, tw.prefixMatch('light'))}]`}
               >
                 {grant.value}
               </Text>
@@ -69,11 +70,11 @@ const GrantsComponent = ({ grants }: Props) => {
               <XWingFont
                 icons={[grant.stat]}
                 size={5}
-                color={colorForType(grant.stat)}
+                color={colorForType(grant.stat, lightContent)}
               />
 
               <Text
-                style={tw`font-semibold text-[${colorForType(grant.stat)}]`}
+                style={tw`font-semibold text-[${colorForType(grant.stat, tw.prefixMatch('light'))}]`}
               >
                 {mod(grant)}
               </Text>

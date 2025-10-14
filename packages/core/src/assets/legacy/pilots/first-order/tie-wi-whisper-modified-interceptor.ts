@@ -64,7 +64,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 62,
+      cost: 61,
       slots: [
         'Force Power',
         'Talent',
@@ -83,6 +83,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Light Side', 'TIE'],
       force: { value: 3, recovers: 1, side: ['dark', 'light'] },
       epic: true,
+      ffg: 919,
     },
     {
       name: '“Wrath”',
@@ -95,7 +96,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 49,
+      cost: 48,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
         'After you perform a [Bullseye Arc] attack, if you have 1 or more non-lock red or orange tokens, you may perform a bonus attack against a different target.',
@@ -106,6 +107,7 @@ const t: ShipType = {
       caption: 'Herald of Destruction',
       keywords: ['TIE'],
       epic: true,
+      ffg: 920,
     },
     {
       name: '“Nightfall”',
@@ -118,7 +120,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 46,
+      cost: 45,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
         'After you fully execute a maneuver or perform a [Boost] action, each ship you moved through gains 2 jam tokens.',
@@ -129,6 +131,7 @@ const t: ShipType = {
       caption: '709th Legion Veteran',
       keywords: ['TIE'],
       epic: true,
+      ffg: 921,
     },
     {
       name: '“Whirlwind”',
@@ -141,7 +144,7 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 46,
+      cost: 45,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
         'Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its [Front Arc].',
@@ -152,6 +155,7 @@ const t: ShipType = {
       caption: 'Reap What You Sow',
       keywords: ['TIE'],
       epic: true,
+      ffg: 922,
     },
     {
       name: '709th Legion Ace',
@@ -173,6 +177,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/709thlegionace.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 923,
     },
     {
       name: 'Red Fury Zealot',
@@ -194,6 +199,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/redfuryzealot.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 924,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_TIEWhisper.png',

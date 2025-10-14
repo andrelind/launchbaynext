@@ -65,6 +65,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 146,
     },
     {
       name: 'Patrol Leader',
@@ -90,6 +91,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 148,
     },
     {
       name: 'Rear Admiral Chiraneau',
@@ -118,6 +120,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 147,
     },
     {
       name: 'Morna Kee',
@@ -141,12 +144,13 @@ const t: ShipType = {
       charges: { value: 3, recovers: 0 },
       ability:
         'During the End Phase, you may spend 1 [Charge] to flip 1 of your reinforce tokens to your other full arc instead of removing it.',
-      cost: 70,
+      cost: 69,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mornakee.png',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mornakee.png',
       epic: true,
+      ffg: 634,
     },
   ],
 };

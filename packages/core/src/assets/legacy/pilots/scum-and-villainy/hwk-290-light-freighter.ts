@@ -73,6 +73,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 174,
     },
     {
       name: 'Palob Godalhi',
@@ -100,6 +101,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 175,
     },
     {
       name: 'Spice Runner',
@@ -124,6 +126,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 177,
     },
     {
       name: 'Torkil Mux',
@@ -150,6 +153,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 176,
     },
     {
       name: 'Gamut Key',
@@ -178,6 +182,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gamutkey.png',
       epic: true,
+      ffg: 896,
     },
     {
       name: 'Kanan Jarrus',
@@ -206,6 +211,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kananjarrus-hwk290lightfreighter.png',
       epic: true,
+      ffg: 897,
     },
     {
       name: 'Tápusk',
@@ -233,6 +239,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tapusk.png',
       keywords: ['Freighter'],
       epic: true,
+      ffg: 895,
     },
   ],
 };

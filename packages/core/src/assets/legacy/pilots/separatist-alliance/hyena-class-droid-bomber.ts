@@ -62,6 +62,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/technounionbomber.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 568,
     },
     {
       name: 'Bombardment Drone',
@@ -85,6 +86,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bombardmentdrone.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 565,
     },
     {
       name: 'DBS-404',
@@ -108,6 +110,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 563,
     },
     {
       name: 'Baktoid Prototype',
@@ -125,12 +128,13 @@ const t: ShipType = {
       },
       standard: true,
       wildspace: true,
-      cost: 26,
+      cost: 25,
       slots: ['Sensor', 'Missile', 'Missile', 'Modification', 'Configuration'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 566,
     },
     {
       name: 'Separatist Bomber',
@@ -152,6 +156,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/separatistbomber.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 567,
     },
     {
       name: 'DBS-32C',
@@ -185,6 +190,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 564,
     },
     {
       name: 'DBS-32C',
@@ -223,6 +229,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1076,
     },
     {
       name: 'DBS-32C',
@@ -257,6 +264,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1204,
     },
     {
       name: 'DBS-404',
@@ -284,6 +292,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1077,
     },
     {
       name: 'DBS-404',
@@ -307,6 +316,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1205,
     },
     {
       name: 'Baktoid Prototype',
@@ -334,13 +344,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1078,
     },
     {
       name: 'Baktoid Prototype',
       caption: 'Siege of Coruscant',
       initiative: 1,
       limited: 2,
-      cost: 26,
+      cost: 25,
       xws: 'baktoidprototype-siegeofcoruscant-lsl',
       ability:
         'While you perform a special attack, if a friendly ship with the Networked Calculations ship ability has a lock on the defender, you may ignore the [Focus], [Calculate], or [Lock] requirement of that attack.',
@@ -357,6 +368,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 1206,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Hyena.png',

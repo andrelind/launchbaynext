@@ -41,7 +41,7 @@ const t: ShipType = {
       caption: 'Devious Provocateur',
       xws: 'agentterex',
       initiative: 3,
-      cost: 35,
+      cost: 34,
       slots: [
         'Talent',
         'Crew',
@@ -63,6 +63,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 658,
     },
     {
       name: 'Commander Malarus',
@@ -81,6 +82,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 656,
     },
     {
       name: 'First Order Courier',
@@ -97,6 +99,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 659,
     },
     {
       name: 'Gideon Hask',
@@ -115,6 +118,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask-xiclasslightshuttle.png',
       epic: true,
+      ffg: 657,
     },
     {
       name: 'Agent Tierny',
@@ -134,6 +138,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/agenttierny.png',
       epic: true,
+      ffg: 928,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_Xi-class_Shuttle.png',

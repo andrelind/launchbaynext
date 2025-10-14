@@ -1,11 +1,12 @@
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { RuleSet } from 'lbn-core/src';
-import { Button, SafeAreaView, Text } from 'react-native';
+import { Button, Text } from 'react-native';
 import ActionSheet, {
     SheetProps
 } from 'react-native-actions-sheet';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTailwind } from '../../helpers/tailwind';
-import { xwsStore } from '../../stores/xws';
+import { useXwsStore } from '../../stores/xws';
 import './types';
 
 export const ScanQRCodeSheetId = 'ScanQRCodeSheet';
@@ -17,7 +18,7 @@ const ScanQRCodeSheet = ({
     payload
 }: SheetProps<'ScanQRCodeSheet'>) => {
     const { tw } = useTailwind();
-    const addSquadron = xwsStore((s) => s.addSquadron);
+    const addSquadron = useXwsStore((s) => s.addSquadron);
 
     const [permission, requestPermission] = useCameraPermissions();
     return (

@@ -61,6 +61,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chopper-gauntletfighter.png',
       keywords: ['Droid', 'Spectre'],
+      ffg: 1022,
     },
     {
       name: 'Ezra Bridger',
@@ -89,6 +90,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ezrabridger-gauntletfighter.png',
       keywords: ['Light Side', 'Spectre'],
+      ffg: 1023,
     },
     {
       name: 'Mandalorian Resistance Pilot',
@@ -115,6 +117,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mandalorianresistancepilot.png',
       keywords: ['Mandalorian'],
+      ffg: 1024,
     },
   ],
 };

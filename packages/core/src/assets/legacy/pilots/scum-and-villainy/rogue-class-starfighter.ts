@@ -76,6 +76,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1073,
     },
     {
       name: 'Cad Bane',
@@ -100,6 +101,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1069,
     },
     {
       name: 'Viktor Hel',
@@ -123,6 +125,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1070,
     },
     {
       name: 'Nom Lumb',
@@ -146,6 +149,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1071,
     },
     {
       name: 'Outer Rim Hunter',
@@ -167,6 +171,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 1072,
     },
   ],
 };

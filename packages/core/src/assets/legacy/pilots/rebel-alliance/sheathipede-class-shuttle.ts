@@ -42,7 +42,7 @@ const t: ShipType = {
       caption: 'Spectre-4',
       initiative: 2,
       limited: 1,
-      cost: 33,
+      cost: 30,
       xws: 'zeborrelios-sheathipedeclassshuttle',
       ability:
         'While you defend, [Critical Hit] results are neutralized before [Hit] results.',
@@ -59,13 +59,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Spectre'],
       epic: true,
+      ffg: 40,
     },
     {
       name: 'AP-5',
       caption: 'Escaped Analyst Droid',
       initiative: 1,
       limited: 1,
-      cost: 32,
+      cost: 31,
       xws: 'ap5',
       ability:
         'While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.',
@@ -86,13 +87,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Spectre'],
       epic: true,
+      ffg: 41,
     },
     {
       name: 'Ezra Bridger',
       caption: 'Spectre-6',
       initiative: 3,
       limited: 1,
-      cost: 39,
+      cost: 37,
       xws: 'ezrabridger-sheathipedeclassshuttle',
       ability:
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade]/[Hit] results.',
@@ -110,13 +112,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Light Side', 'Spectre'],
       epic: true,
+      ffg: 39,
     },
     {
       name: 'Fenn Rau',
       caption: 'Reluctant Rebel',
       initiative: 6,
       limited: 1,
-      cost: 46,
+      cost: 45,
       xws: 'fennrau-sheathipedeclassshuttle',
       ability:
         'Before an enemy ship in your firing arc engages, if you are not stressed, you may gain 1 stress token. If you do, that ship cannot spend tokens to modify dice while it performs an attack during this phase.',
@@ -133,6 +136,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Mandalorian', 'Spectre'],
       epic: true,
+      ffg: 38,
     },
   ],
 };

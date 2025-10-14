@@ -63,7 +63,7 @@ const t: ShipType = {
       caption: 'Defiant Duelist',
       initiative: 6,
       limited: 1,
-      cost: 43,
+      cost: 42,
       xws: 'quickdraw',
       ability:
         'After you lose a shield, you may spend 1 [Charge]. If you do, you may perform a bonus primary attack.',
@@ -81,13 +81,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 406,
     },
     {
       name: '“Backdraft”',
       caption: 'Fiery Fanatic',
       initiative: 4,
       limited: 1,
-      cost: 37,
+      cost: 36,
       xws: 'backdraft',
       ability:
         'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
@@ -104,6 +105,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 407,
     },
     {
       name: 'Omega Squadron Expert',
@@ -125,6 +127,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 408,
     },
     {
       name: 'Zeta Squadron Survivor',
@@ -146,6 +149,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 409,
     },
     {
       name: 'Lieutenant LeHuse',
@@ -169,6 +173,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantlehuse.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 641,
     },
     {
       name: 'Captain Phasma',
@@ -192,6 +197,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainphasma.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 642,
     },
   ],
 };

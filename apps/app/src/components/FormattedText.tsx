@@ -1,5 +1,5 @@
 import textHelper from 'lbn-core/src/helpers/text';
-import React, { FC, memo } from 'react';
+import React, { FC } from 'react';
 import { TextProps as RNTextProps, Text } from 'react-native';
 import { useTailwind } from '../helpers/tailwind';
 import { XWingFont } from './fonts/XWingIcon';
@@ -53,4 +53,4 @@ const FormattedText: FC<Props> = ({ text, ...rest }) => {
   );
 };
 
-export default memo<Props>(FormattedText);
+export default FormattedText

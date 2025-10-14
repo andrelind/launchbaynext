@@ -71,6 +71,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 42,
     },
     {
       name: 'Kyle Katarn',
@@ -97,6 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 43,
     },
     {
       name: 'Rebel Scout',
@@ -114,6 +116,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 45,
     },
     {
       name: 'Roark Garnet',
@@ -140,6 +143,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      ffg: 44,
     },
   ],
 };

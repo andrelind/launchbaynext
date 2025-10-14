@@ -41,7 +41,7 @@ const t: ShipType = {
       caption: 'Death Defier',
       initiative: 4,
       limited: 1,
-      cost: 40,
+      cost: 39,
       xws: 'countdown',
       ability:
         'While you defend, after the Neutralize Results step, if you are not stressed, you may suffer 1 [Hit] damage and gain 1 stress token. If you do, cancel all dice results.',
@@ -58,13 +58,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 118,
     },
     {
       name: '“Duchess”',
       caption: 'Urbane Ace',
       initiative: 5,
       limited: 1,
-      cost: 44,
+      cost: 43,
       xws: 'duchess',
       ability:
         'You may choose not to use your Adaptive Ailerons. You may use your Adaptive Ailerons even while stressed.',
@@ -81,13 +82,14 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 117,
     },
     {
       name: '“Pure Sabacc”',
       caption: 'Confident Gambler',
       initiative: 4,
       limited: 1,
-      cost: 42,
+      cost: 41,
       xws: 'puresabacc',
       ability:
         'While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.',
@@ -104,6 +106,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 119,
     },
     {
       name: 'Black Squadron Scout',
@@ -125,12 +128,13 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 120,
     },
     {
       name: 'Planetary Sentinel',
       initiative: 1,
       limited: 0,
-      cost: 31,
+      cost: 32,
       xws: 'planetarysentinel',
       text: 'To protect its many military installations, the Empire requires a swift and vigilant defense force.',
       image:
@@ -146,6 +150,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 121,
     },
     {
       name: '“Vagabond”',
@@ -169,6 +174,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vagabond.png',
       keywords: ['TIE'],
       epic: true,
+      ffg: 633,
     },
   ],
 };

@@ -52,6 +52,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 173,
     },
     {
       name: 'Black Sun Soldier',
@@ -68,6 +69,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 172,
     },
     {
       name: "Kaa'to Leeachos",
@@ -87,6 +89,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 170,
     },
     {
       name: 'N’dru Suhlak',
@@ -105,6 +108,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 169,
     },
     {
       name: 'Nashtah Pup',
@@ -127,6 +131,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 171,
     },
     {
       name: 'Bossk',
@@ -150,6 +155,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bossk-z95af4headhunter.png',
       keywords: ['Bounty Hunter'],
       epic: true,
+      ffg: 635,
     },
   ],
 };

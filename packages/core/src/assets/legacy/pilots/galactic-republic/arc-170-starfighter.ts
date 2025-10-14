@@ -55,6 +55,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sinker.png',
       keywords: ['Clone'],
       epic: true,
+      ffg: 526,
     },
     {
       name: '“Jag”',
@@ -74,6 +75,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 525,
     },
     {
       name: '“Odd Ball”',
@@ -100,6 +102,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 523,
     },
     {
       name: '“Wolffe”',
@@ -127,6 +130,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 524,
     },
     {
       name: '104th Battalion Pilot',
@@ -144,6 +148,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 528,
     },
     {
       name: 'Squad Seven Veteran',
@@ -168,6 +173,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 527,
     },
     {
       name: '“Odd Ball”',
@@ -198,6 +204,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 971,
     },
     {
       name: '“Odd Ball”',
@@ -208,7 +215,7 @@ const t: ShipType = {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      cost: 51,
+      cost: 50,
       xws: 'oddball-siegeofcoruscant-lsl',
       ability:
         'After you fully execute a red maneuver or perform a red action, you camy choose a friendly ship at range 0-3 and an enemy at range 0-1. The chosen frendly ship gains a lock on the enemy ship.',
@@ -228,6 +235,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 1210,
     },
     {
       name: '“Wolffe”',
@@ -256,6 +264,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 972,
     },
     {
       name: '“Wolffe”',
@@ -287,6 +296,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 1211,
     },
     {
       name: '“Jag”',
@@ -314,6 +324,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 973,
     },
     {
       name: '“Jag”',
@@ -337,6 +348,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Clone'],
       epic: true,
+      ffg: 1212,
     },
   ],
 };

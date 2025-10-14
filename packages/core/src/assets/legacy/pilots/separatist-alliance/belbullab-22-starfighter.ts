@@ -65,6 +65,7 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/generalgrievous.png',
       epic: true,
+      ffg: 492,
     },
     {
       name: 'Wat Tambor',
@@ -78,11 +79,12 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wattambor.png',
       standard: true,
       wildspace: true,
-      cost: 40,
+      cost: 39,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wattambor.png',
       epic: true,
+      ffg: 493,
     },
     {
       name: 'Feethan Ottraw Autopilot',
@@ -108,12 +110,13 @@ const t: ShipType = {
       ],
       standard: true,
       wildspace: true,
-      cost: 35,
+      cost: 34,
       slots: ['Modification', 'Title', 'Tactical Relay'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/feethanottrawautopilot.png',
       keywords: ['Droid'],
       epic: true,
+      ffg: 496,
     },
     {
       name: 'Captain Sear',
@@ -132,11 +135,12 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsear.png',
       epic: true,
+      ffg: 494,
     },
     {
       name: 'Skakoan Ace',
       xws: 'skakoanace',
-      cost: 38,
+      cost: 37,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       initiative: 3,
       limited: 0,
@@ -148,6 +152,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 495,
     },
   ],
 };

@@ -60,6 +60,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 115,
     },
     {
       name: 'Captain Feroph',
@@ -83,6 +84,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 114,
     },
     {
       name: 'Major Vermeil',
@@ -106,6 +108,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 113,
     },
     {
       name: 'Scarif Base Pilot',
@@ -127,6 +130,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['TIE'],
       epic: true,
+      ffg: 116,
     },
   ],
 };

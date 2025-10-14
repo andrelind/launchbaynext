@@ -70,6 +70,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
+      ffg: 197,
     },
     {
       name: 'IG-88B',
@@ -102,6 +103,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
+      ffg: 198,
     },
     {
       name: 'IG-88C',
@@ -134,6 +136,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
+      ffg: 199,
     },
     {
       name: 'IG-88D',
@@ -166,6 +169,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
+      ffg: 200,
     },
   ],
 };

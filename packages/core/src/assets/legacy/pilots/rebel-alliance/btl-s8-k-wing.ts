@@ -60,6 +60,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 63,
     },
     {
       name: 'Miranda Doni',
@@ -87,6 +88,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 62,
     },
     {
       name: 'Warden Squadron Pilot',
@@ -112,6 +114,7 @@ const t: ShipType = {
       standard: false,
       wildspace: true,
       epic: true,
+      ffg: 64,
     },
   ],
 };

@@ -61,6 +61,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 229,
     },
     {
       name: 'L3-37',
@@ -89,6 +90,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid'],
       epic: true,
+      ffg: 228,
     },
     {
       name: 'Lando Calrissian',
@@ -111,6 +113,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 226,
     },
     {
       name: 'Outer Rim Pioneer',
@@ -133,6 +136,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 227,
     },
   ],
 };

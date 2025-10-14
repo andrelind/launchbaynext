@@ -3053,7 +3053,7 @@ const t: UpgradeBase[] = [
     sides: [
       {
         ability:
-          "While you defend, you may spend 1 [charge]. If you do, the attacker must reroll all attack dice.\n\nIf this [charge] is inactive, decrease the difficulty of your bank [[left bank] and [right bank]] maneuvers.\n\nThis upgrade's [charge] cannot be recovered.",
+          "While you defend, you may spend 1 [Charge]. If you do, the attacker must reroll all attack dice.\n\nIf this [Charge] is inactive, decrease the difficulty of your bank ([left bank] and [right bank]) maneuvers.\n\nThis upgrade's [charge] cannot be recovered.",
         title: 'L3-37',
         type: 'Crew',
         slots: ['Crew'],

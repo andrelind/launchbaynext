@@ -52,6 +52,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 142,
     },
     {
       name: 'Colonel Jendon',
@@ -71,6 +72,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 143,
     },
     {
       name: 'Lieutenant Sai',
@@ -89,6 +91,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 144,
     },
     {
       name: 'Omicron Group Pilot',
@@ -105,6 +108,7 @@ const t: ShipType = {
       standard: true,
       wildspace: true,
       epic: true,
+      ffg: 145,
     },
   ],
 };

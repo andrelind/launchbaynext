@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from 'react';
 
 type Props = ImageProps & {
   uri: { uri?: string; backupUri?: string };
+  children?: React.ReactNode;
 };
 
 export const ImageComponent: FC<Props> = ({ uri, ...props }) => {

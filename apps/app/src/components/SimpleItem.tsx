@@ -29,7 +29,7 @@ export const SimpleItem: FC<Props> = ({
   return (
     <>
       <TouchableOpacity
-        style={tw`flex-row justify-between p-3 ${!disableBackground ? 'bg-white dark:bg-zinc-800' : ''}  rounded-lg overflow-hidden`}
+        style={tw`flex-row items-center justify-between p-3 ${!disableBackground ? 'bg-white dark:bg-zinc-800' : ''} rounded-lg overflow-hidden`}
         onPress={onPress}
       >
         <View style={tw`flex-row items-center`}>
@@ -46,7 +46,7 @@ export const SimpleItem: FC<Props> = ({
           </View>
         </View>
         {!hideArrow && (
-          <Feather name="chevron-right" size={20} color={'white'} />
+          <Feather name="chevron-right" size={20} color={tw.prefixMatch('light') ? 'black' : 'white'} />
         )}
       </TouchableOpacity>
       {children}

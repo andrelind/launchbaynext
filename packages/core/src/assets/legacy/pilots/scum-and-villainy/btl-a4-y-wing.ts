@@ -61,6 +61,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 168,
     },
     {
       name: 'Drea Renthal',
@@ -89,6 +90,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 166,
     },
     {
       name: 'Hired Gun',
@@ -115,6 +117,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 167,
     },
     {
       name: 'Kavil',
@@ -143,6 +146,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
+      ffg: 165,
     },
     {
       name: 'Leema Kai',
@@ -170,6 +174,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leemakai.png',
       epic: true,
+      ffg: 898,
     },
     {
       name: 'Arliz Hadrassian',
@@ -197,6 +202,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arlizhadrassian.png',
       epic: true,
+      ffg: 899,
     },
     {
       name: 'Amaxine Warrior',
@@ -222,6 +228,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/amaxinewarrior.png',
       epic: true,
+      ffg: 901,
     },
     {
       name: 'Padric',
@@ -249,6 +256,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padric.png',
       epic: true,
+      ffg: 900,
     },
     {
       name: 'Jinata Security Officer',
@@ -266,6 +274,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jinatasecurityofficer.png',
       epic: true,
+      ffg: 902,
     },
   ],
 };

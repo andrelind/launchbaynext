@@ -1,5 +1,5 @@
+import { XWS } from 'lbn-core/src/types';
 import { SortingType } from '../stores/filter';
-import { XWS } from '../stores/xws';
 
 export const move = (arr: any[], old_index: number, new_index: number) => {
   while (old_index < 0) {
@@ -61,12 +61,7 @@ export const compare = (a: XWS, b: XWS, sorting: SortingType): number => {
   return 0;
 };
 
-export const sortXws = (
-  a: XWS,
-  b: XWS,
-  first: SortingType,
-  second: SortingType,
-) => {
+export const sortXws = (a: XWS, b: XWS, first: SortingType, second: SortingType) => {
   const c = compare(a, b, first);
   if (c === 0) {
     return compare(a, b, second);
