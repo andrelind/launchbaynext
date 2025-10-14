@@ -174,7 +174,7 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
     return typedCost.values[ship.pilot.initiative];
   } else if (cost.variable && cost.variable === 'size') {
     const typedCost = cost as UpgradeCostSize;
-    return typedCost.values[ship.size];
+    return typedCost.values[ship.size] || 0;
   } else if (cost.variable && cost.variable === 'faction') {
     const typedCost = cost as UpgradeCostFaction;
     return typedCost.values[ship.faction];
