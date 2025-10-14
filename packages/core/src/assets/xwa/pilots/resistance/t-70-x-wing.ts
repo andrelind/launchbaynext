@@ -216,7 +216,7 @@ const t: ShipType = {
       limited: 1,
       xws: 'karekun',
       ability:
-        'While you boost, you may use the [1 [Turn Left]) or [1 [Turn Right]) template instead.',
+        'While you boost, you may use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
       cost: 4,
       loadout: 5,
       slots: [

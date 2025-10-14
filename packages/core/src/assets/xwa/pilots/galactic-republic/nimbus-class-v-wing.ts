@@ -43,7 +43,7 @@ const t: ShipType = {
   ],
   ability: {
     name: 'Twin Ion Engines',
-    text: 'Ignore the "TIE" ship restriction on upgrade cards.',
+    text: 'Ignore the \"TIE\" ship restriction on upgrade cards.',
   },
   pilots: [
     {

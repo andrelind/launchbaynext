@@ -39,7 +39,7 @@ const t: ShipType = {
       xws: 'captainhark',
       name: 'Captain Hark',
       ability:
-        'After you reveal a [0 [Stationary]) maneuver, if you are equipped with Swivel Wings (Down), you must execute a [1 [Bank Left]) or [1 [Bank Right]) sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
+        'After you reveal a (0 [Stationary]) maneuver, if you are equipped with Swivel Wings (Down), you must execute a (1 [Bank Left]) or (1 [Bank Right]) sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
       cost: 6,
       loadout: 20,
       initiative: 3,

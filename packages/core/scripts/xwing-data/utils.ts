@@ -114,9 +114,11 @@ declare global {
 // @ts-ignore
 String.prototype.replaceAll = function (search: string, replacement: string) {
   let target = this;
-  while (target.indexOf(search) >= 0) {
+
+  while (target?.indexOf(search) >= 0) {
     target = target.replace(search, replacement);
   }
+
   return target;
 };
 

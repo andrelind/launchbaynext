@@ -49,7 +49,8 @@ const t: ShipType = {
       limited: 1,
       cost: 4,
       xws: 'constablezuvio',
-      ability: 'If you would drop a device, you may launch it using a [1 [Straight]) template instead.',
+      ability:
+        'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
       slots: ['Talent', 'Device', 'Device', 'Illicit', 'Modification', 'Tech'],
       ffg: 161,
       standard: false,
@@ -57,7 +58,8 @@ const t: ShipType = {
       loadout: 23,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/constablezuvio.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/constablezuvio.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/constablezuvio.png',
     },
     {
       name: 'Jakku Gunrunner',
@@ -73,7 +75,8 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jakkugunrunner.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jakkugunrunner.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jakkugunrunner.png',
       caption: '',
     },
     {
@@ -93,7 +96,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/sarcoplank.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/sarcoplank.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/sarcoplank.png',
     },
     {
       name: 'Unkar Plutt',
@@ -111,7 +115,8 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/unkarplutt.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/unkarplutt.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/unkarplutt.png',
     },
   ],
 };
