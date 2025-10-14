@@ -1,3 +1,4 @@
+import 'react-native-get-random-values';
 
 import { green, orange, red } from '@/src/theme';
 import { DarkTheme, ThemeProvider } from '@react-navigation/native';
@@ -13,7 +14,6 @@ import { useEffect } from 'react';
 import { AppState } from 'react-native';
 import { SheetProvider } from 'react-native-actions-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import 'react-native-reanimated';
 import Toast, { BaseToast, ErrorToast } from 'react-native-toast-message';
 import '../components/sheets';
 import { syncWithServer } from '../helpers/api';

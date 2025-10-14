@@ -1,14 +1,13 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { bumpMinor } from 'lbn-core/src/helpers/versioning';
 import 'react-native-get-random-values';
 import { v4 as uuid } from 'uuid';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
+import { bumpMinor } from 'lbn-core/src/helpers/versioning';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-
 import { removeListOnServer, saveListOnServer } from '../helpers/api';
 import { addShip2, setUpgrade2 } from '../helpers/edit';
-
-import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
 import { sortXws } from '../helpers/misc';
 import { useFilterStore } from './filter';
 import { XWS, XWSState } from './types';

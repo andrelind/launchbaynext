@@ -1,3 +1,6 @@
+import 'react-native-get-random-values';
+import { v4 as uuid } from 'uuid';
+
 import { PilotListItem } from '@/src/components/PilotListItem';
 import { SegmentedControl } from '@/src/components/SegmentedControl';
 import { UpgradeComponent } from '@/src/components/Upgrade';
@@ -14,9 +17,7 @@ import { getFactionKey } from 'lbn-core/src/helpers/serializer';
 import { ShipType, UpgradeBase } from 'lbn-core/src/types';
 import React, { useCallback, useState } from 'react';
 import { Platform, Text, View } from 'react-native';
-import 'react-native-get-random-values';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { v4 as uuid } from 'uuid';
 
 type Data = { ship?: ShipType; pilot?: TShip; upgrade?: UpgradeBase };
 
