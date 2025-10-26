@@ -110,6 +110,7 @@ export type Pilot = {
   standard: boolean;
   extended?: boolean;
   epic: boolean;
+  restricted?: number;
   wildspace?: boolean;
   limitWarning?: boolean;
   ffg?: number;
