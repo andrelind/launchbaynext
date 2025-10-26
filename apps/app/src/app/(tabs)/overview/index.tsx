@@ -5,9 +5,8 @@ import { trpc } from '@/src/helpers/trpc';
 import { notificationLinks } from '@/src/notifications';
 import { useSystemStore } from '@/src/stores/system';
 import { blue } from '@/src/theme';
-import { Button, Host, HStack, Spacer } from '@expo/ui/swift-ui';
+import { Button, Host } from '@expo/ui/swift-ui';
 import { Feather } from '@expo/vector-icons';
-import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import * as Linking from 'expo-linking';
 import { useRouter } from 'expo-router';
 import React from 'react';
@@ -131,11 +130,13 @@ André`}</Text>
           <Text style={tw`text-white`}>Like the app?</Text>
           <Text style={tw`text-white`}>Please consider donating</Text>
 
-          {isLiquidGlassAvailable() ? (
+          {/* {isLiquidGlassAvailable() ? (
             <Host style={tw`flex-1 mt-6`}>
               <HStack >
                 <Spacer />
                 <Button systemImage='star' variant='glass' onPress={async () => {
+                  console.log('Patreon pressed');
+
                   if (
                     await Linking.canOpenURL('https://www.patreon.com/andrelind')
                   ) {
@@ -157,7 +158,8 @@ André`}</Text>
                 <Spacer />
               </HStack>
             </Host>
-          ) : (<View style={tw`flex-row items-center justify-around pt-2`}><SimpleItem
+          ) : ( */}
+          <View style={tw`flex-row items-center justify-around pt-2`}><SimpleItem
             text={'Patreon'}
             icon={<Feather name="star" size={20} color={tw.color('yellow-500')} />}
             hideArrow
@@ -181,7 +183,8 @@ André`}</Text>
                 }
               }}
             />
-          </View>)}
+          </View>
+          {/* )} */}
 
 
         </View>
