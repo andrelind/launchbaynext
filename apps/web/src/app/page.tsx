@@ -52,7 +52,7 @@ const MainPage = () => {
       name: 'New Squadron',
       description: '',
       faction: (queryFaction as FactionKey) || 'rebelalliance',
-      format: 'Standard',
+      format: 'Extended',
       ruleset: 'xwa',
       pilots: [],
       points: 0,
