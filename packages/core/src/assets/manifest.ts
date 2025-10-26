@@ -89,6 +89,7 @@ export const manifest = {
     '92': 'st70assaultship',
     '93': 'tridentclassassaultship',
     '94': 'rogueclassstarfighter',
+    '95': 'btanr2wywing',
   },
   pilots: {
     '1': 'wedgeantilles',

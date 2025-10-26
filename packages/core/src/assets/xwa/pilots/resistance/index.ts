@@ -1,4 +1,5 @@
 import { ShipType } from '../../../../types';
+import btanr2wywing from './bta-nr2-w-y-wing';
 import btanr2ywing from './bta-nr2-y-wing';
 import cr90corelliancorvette from './cr90-corellian-corvette';
 import fireball from './fireball';
@@ -20,6 +21,7 @@ const ships: { [s: string]: ShipType } = {
   t70xwing,
   fireball,
   btanr2ywing,
+  btanr2wywing,
   cr90corelliancorvette,
 };
 
