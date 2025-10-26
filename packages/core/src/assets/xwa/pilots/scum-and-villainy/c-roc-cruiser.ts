@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 10,
+      cost: 24,
       xws: 'syndicatesmugglers',
       slots: [
         'Command',
@@ -55,7 +55,7 @@ const t: ShipType = {
         'Crew',
         'Team',
         'Cargo',
-        'Device',
+        'Payload',
         'Illicit',
         'Title',
         'Configuration',
@@ -73,7 +73,7 @@ const t: ShipType = {
     {
       name: 'Cikatro Vizago',
       initiative: 7,
-      cost: 8,
+      cost: 20,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cikatrovizago-epicsl.png',
@@ -86,6 +86,8 @@ const t: ShipType = {
       xws: 'cikatrovizago-epicsl',
       caption: 'Broken Horn',
       ffg: 1107,
+      loadout: 0,
+      slots: [],
     },
   ],
   ffg: 82,

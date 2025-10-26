@@ -56,13 +56,13 @@ const t: ShipType = {
       xws: 'fennrau-fangfighter',
       initiative: 6,
       limited: 1,
-      cost: 5,
-      loadout: 8,
+      cost: 13,
+      loadout: 10,
       ability:
         'Before a friendly ship at range 1-2 engages, if there is an enemy ship in its [Front Arc] at range 1, that friendly ship may remove 1 non-lock red token.',
       image:
         'https://infinitearenas.com/xw2/images/pilots/fennrau-rebel-fang.png',
-      slots: ['Talent', 'Talent', 'Torpedo', 'Modification', 'Modification'],
+      slots: ['Talent', 'Modification', 'Modification', 'Torpedo', 'Talent'],
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-rebel-fang.png',
       standard: true,
@@ -79,12 +79,12 @@ const t: ShipType = {
       xws: 'bodicavenj',
       ability:
         'After another friendly ship defends, if you are not depleted, you may perform a bonus primary attack against the attacker. If you do, after performing that attack, gain 1 deplete token.',
-      slots: ['Talent', 'Talent', 'Torpedo', 'Modification', 'Modification'],
+      slots: ['Talent', 'Modification', 'Modification', 'Torpedo', 'Talent'],
       keywords: ['Mandalorian'],
-      cost: 4,
+      cost: 12,
       epic: true,
       standard: true,
-      loadout: 5,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/bodicavenj.png',
       artwork:
@@ -99,12 +99,12 @@ const t: ShipType = {
       xws: 'dirkullodin',
       ability:
         'After you fully execute a red maneuver or perform a red action, you may acquire a lock on an enemy ship in your [Front Arc] at range 1.',
-      slots: ['Torpedo', 'Modification', 'Modification'],
+      slots: ['Talent', 'Modification', 'Modification', 'Torpedo'],
       keywords: ['Mandalorian'],
-      cost: 4,
+      cost: 11,
       epic: true,
       standard: true,
-      loadout: 9,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dirkullodin.png',
       artwork:
@@ -119,12 +119,12 @@ const t: ShipType = {
       xws: 'clanwrenvolunteer',
       ability:
         'While you perform an attack at range 1, if the speed of your revealed maneuver matches that of a friendly ship at range 1, you may reroll 1 attack die.',
-      slots: ['Talent', 'Torpedo', 'Modification', 'Modification'],
+      slots: ['Talent', 'Modification', 'Modification', 'Torpedo'],
       keywords: ['Mandalorian'],
-      cost: 4,
+      cost: 10,
       epic: true,
       standard: true,
-      loadout: 12,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/clanwrenvolunteer.png',

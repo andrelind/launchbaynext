@@ -31,7 +31,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 10,
+      cost: 23,
       xws: 'echobaseevacuees',
       slots: [
         'Command',
@@ -57,7 +57,7 @@ const t: ShipType = {
     {
       name: 'Trebor Zednem',
       initiative: 7,
-      cost: 8,
+      cost: 19,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/treborzednem-epicsl.png',
@@ -70,6 +70,8 @@ const t: ShipType = {
       xws: 'treborzednem-epicsl',
       caption: 'Bright Hope',
       ffg: 1105,
+      loadout: 0,
+      slots: [],
     },
   ],
   ffg: 80,

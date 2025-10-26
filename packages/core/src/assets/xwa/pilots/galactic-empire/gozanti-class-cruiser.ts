@@ -42,7 +42,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 11,
+      cost: 26,
       xws: 'outerrimgarrison',
       slots: [
         'Command',
@@ -68,7 +68,7 @@ const t: ShipType = {
     {
       name: 'Rik Virgilio',
       initiative: 7,
-      cost: 8,
+      cost: 20,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/rikvirgilio-epicsl.png',
@@ -81,6 +81,8 @@ const t: ShipType = {
       xws: 'rikvirgilio-epicsl',
       caption: 'Blood Crow',
       ffg: 1121,
+      loadout: 0,
+      slots: [],
     },
   ],
   ffg: 81,

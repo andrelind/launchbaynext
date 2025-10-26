@@ -2,7 +2,7 @@
 import { SimpleItem } from '@/src/components/SimpleItem';
 import { useTailwind } from '@/src/helpers/tailwind';
 import { trpc } from '@/src/helpers/trpc';
-import { notifications } from '@/src/notifications';
+import { notificationLinks } from '@/src/notifications';
 import { useSystemStore } from '@/src/stores/system';
 import { blue } from '@/src/theme';
 import { Button, Host, HStack, Spacer } from '@expo/ui/swift-ui';
@@ -40,7 +40,6 @@ export default function OverviewScreen() {
   });
   const total = (data?.xwa || 0) + (data?.legacy || 0) + (data?.amg || 0) || 1;
 
-
   return (
     <>
       <ScrollView
@@ -69,7 +68,6 @@ export default function OverviewScreen() {
           <TouchableOpacity
             style={tw`mx-2 py-3 justify-center items-center bg-orange-500 rounded-lg`}
             onPress={() => {
-              // navigation.navigate('Login');
               router.push('/overview/login');
             }}
           >
@@ -78,13 +76,30 @@ export default function OverviewScreen() {
         )}
 
         <View style={tw`px-2 gap-y-2`}>
-          {notifications.sort((a, b) => b.id - a.id).map((n) => (
-            <View key={n.id} style={tw`px-2 py-3 gap-y-1 bg-white dark:bg-zinc-800 rounded-md`}>
-              <Text style={tw`text-zinc-900 dark:text-white font-semibold`}>{n.title}</Text>
-              <Text style={tw`text-zinc-900 dark:text-white`}>{n.body}</Text>
-            </View>
+          <View style={tw`px-2 py-3 gap-y-1 bg-zinc-800 rounded-md`}>
+            <Text style={tw`text-white font-semibold`}>Shiny new XWA points! 🎉</Text>
+            <Text style={tw`text-white`}>{`The latest XWA points have been included in the app and this is a major one!
+Here are the relevant documents for your reference`}</Text>
 
-          ))}
+            <View style={tw`flex-col gap-y-2 py-2`}>
+              {notificationLinks.links.map((link, index) => (
+                <View key={index} style={tw`bg-zinc-700 rounded-md`}>
+                  <SimpleItem
+                    disableBackground
+                    key={index}
+                    text={link.text}
+                    onPress={async () => {
+                      if (await Linking.canOpenURL(link.url)) {
+                        Linking.openURL(link.url);
+                      }
+                    }}
+                  />
+                </View>
+              ))}
+            </View>
+            <Text style={tw`text-white`}>{`Best Regards, 
+André`}</Text>
+          </View>
         </View>
 
         <View style={tw`gap-y-2`}>
@@ -92,20 +107,23 @@ export default function OverviewScreen() {
             <View style={tw`flex-col items-center`}>
               <Text style={tw`text-white font-bold`}>XWA</Text>
               <Text style={tw`text-orange-500 text-2xl font-bold`}>{Math.round(((data?.xwa || 0) / total) * 100)}%</Text>
+              {/* <Text style={tw`text-white`}>{data?.xwa || 0}</Text> */}
             </View>
             <View style={tw`flex-col items-center`}>
               <Text style={tw`text-white font-bold`}>2.0 Legacy</Text>
               <Text style={tw`text-orange-500 text-2xl font-bold`}>{Math.round(((data?.legacy || 0) / total) * 100)}%</Text>
+              {/* <Text style={tw`text-white`}>{data?.legacy || 0}</Text> */}
             </View>
             <View style={tw`flex-col items-center`}>
               <Text style={tw`text-white font-bold`}>AMG</Text>
               <Text style={tw`text-orange-500 text-2xl font-bold`}>{Math.round(((data?.amg || 0) / total) * 100)}%</Text>
+              {/* <Text style={tw`text-white`}>{data?.amg || 0}</Text> */}
             </View>
           </View>
 
           <View>
             <Text style={tw`text-white font-semibold text-center`}>Total # of lists {total}</Text>
-            <Text style={tw`text-white text-center mx-3`}>These figures are based on new and updated lists for logged in users last 30 days</Text>
+            <Text style={tw`text-white text-center mx-3 text-xs`}>These figures are based on new and updated lists for logged in users last 30 days</Text>
           </View>
         </View>
 

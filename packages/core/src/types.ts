@@ -307,6 +307,7 @@ export type UpgradeBase = {
   standarized?: boolean;
   keywords?: string[];
   standardLoadoutOnly?: boolean;
+  restricted?: number;
 };
 
 export type Upgrade = UpgradeBase & {

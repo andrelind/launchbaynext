@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 10,
+      cost: 24,
       xws: 'separatistprivateers',
       slots: [
         'Command',
@@ -56,7 +56,7 @@ const t: ShipType = {
         'Tactical Relay',
         'Team',
         'Cargo',
-        'Device',
+        'Payload',
         'Configuration',
       ],
       standard: false,

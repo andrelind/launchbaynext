@@ -41,7 +41,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 1,
-      cost: 8,
+      cost: 20,
       xws: 'wezsynat-epicsl',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wezsynat-epicsl.png',
@@ -68,6 +68,8 @@ const t: ShipType = {
         'spectreofnayr-epicsl',
       ],
       ffg: 1150,
+      loadout: 0,
+      slots: [],
     },
   ],
 };

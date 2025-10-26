@@ -20,14 +20,14 @@ const t: ShipType = {
     {
       xws: 'transgalmegcontrollink',
       name: 'TransGalMeg Control Link',
-      cost: 2,
+      cost: 1,
       initiative: 0,
       limited: 0,
       slots: ['Hyperdrive'],
       standard: false,
       epic: true,
       ffg: 787,
-      loadout: 0,
+      loadout: 5,
       extended: false,
       image:
         'https://infinitearenas.com/xw2/images/pilots/transgalmegcontrollink.png',

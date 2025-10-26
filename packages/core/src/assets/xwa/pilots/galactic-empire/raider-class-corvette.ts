@@ -34,7 +34,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 0,
-      cost: 15,
+      cost: 39,
       xws: 'outerrimpatrol',
       slots: [
         'Command',
@@ -61,7 +61,7 @@ const t: ShipType = {
     {
       name: 'Iden Versio',
       initiative: 8,
-      cost: 13,
+      cost: 33,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-epicsl.png',
@@ -74,6 +74,8 @@ const t: ShipType = {
       xws: 'idenversio-epicsl',
       caption: 'Corvus',
       ffg: 1122,
+      loadout: 0,
+      slots: [],
     },
   ],
   ffg: 79,

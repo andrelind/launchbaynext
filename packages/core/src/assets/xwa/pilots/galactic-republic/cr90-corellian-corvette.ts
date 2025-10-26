@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 0,
-      cost: 14,
+      cost: 36,
       xws: 'republicjudiciary',
       slots: [
         'Command',
@@ -75,7 +75,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 1,
-      cost: 12,
+      cost: 35,
       xws: 'raymusantilles-epicsl-galacticrepublic',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/raymusantilles-epicsl-galacticrepublic.png',
@@ -104,6 +104,8 @@ const t: ShipType = {
         'tantiveiv-epicsl-galacticrepublic',
       ],
       ffg: 1151,
+      loadout: 0,
+      slots: [],
     },
   ],
   ffg: 78,

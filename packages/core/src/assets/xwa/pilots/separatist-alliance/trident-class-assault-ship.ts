@@ -23,7 +23,7 @@ const t: ShipType = {
     {
       xws: 'colicoiddestroyer',
       name: 'Colicoid Destroyer',
-      cost: 11,
+      cost: 26,
       initiative: 8,
       limited: 0,
       slots: [
@@ -52,7 +52,7 @@ const t: ShipType = {
     {
       name: 'Asajj Ventress',
       initiative: 8,
-      cost: 8,
+      cost: 19,
       limited: 1,
       image:
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/asajjventress-epicsl.png',
@@ -65,6 +65,8 @@ const t: ShipType = {
       xws: 'asajjventress-epicsl',
       caption: 'Trident',
       ffg: 1149,
+      loadout: 0,
+      slots: [],
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Trident.png',

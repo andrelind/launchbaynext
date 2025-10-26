@@ -45,7 +45,7 @@ const t: ShipType = {
       xws: 'themandalorian-armedanddangerous',
       standard: true,
       extended: true,
-      cost: 4,
+      cost: 11,
       loadout: 0,
       ability:
         'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [Focus] result.',
@@ -78,6 +78,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/themandalorian-armedanddangerous.png',
       ffg: 1114,
+      slots: [],
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Royal_Naboo_N-1_Starfighter.png',

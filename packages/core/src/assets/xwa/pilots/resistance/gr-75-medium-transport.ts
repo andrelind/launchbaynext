@@ -31,7 +31,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 10,
+      cost: 23,
       xws: 'newrepublicvolunteers',
       slots: [
         'Command',
@@ -58,7 +58,7 @@ const t: ShipType = {
     {
       name: 'Oraf Desyk',
       initiative: 7,
-      cost: 8,
+      cost: 18,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/orafdesyk-epicsl.png',
@@ -71,6 +71,8 @@ const t: ShipType = {
       xws: 'orafdesyk-epicsl',
       caption: 'Hosnian Lament',
       ffg: 1126,
+      loadout: 0,
+      slots: [],
     },
   ],
   ffg: 80,

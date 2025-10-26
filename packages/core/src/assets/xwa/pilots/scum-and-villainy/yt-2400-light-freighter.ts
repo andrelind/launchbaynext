@@ -48,7 +48,7 @@ const t: ShipType = {
       caption: "He Thinks He's Funny",
       initiative: 3,
       limited: 1,
-      cost: 6,
+      cost: 16,
       xws: 'leebo-swz103-sl-scumandvillainy',
       ability:
         'At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3.',
@@ -72,13 +72,14 @@ const t: ShipType = {
       loadout: 0,
       keywords: ['Droid', 'Freighter'],
       ffg: 1074,
+      slots: [],
     },
     {
       name: 'Dash Rendar',
       caption: 'In it for Himself',
       initiative: 5,
       limited: 1,
-      cost: 7,
+      cost: 17,
       xws: 'dashrendar-swz103-sl-scumandvillainy',
       ability:
         'After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1.',
@@ -103,6 +104,7 @@ const t: ShipType = {
       loadout: 0,
       keywords: ['Droid', 'Freighter'],
       ffg: 1075,
+      slots: [],
     },
   ],
 };

@@ -16,12 +16,16 @@ const t: UpgradeBase[] = [
           { action: { type: 'Reload', difficulty: 'White' }, value: 1 },
         ],
         ffg: 371,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/andrasta.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/andrasta.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/andrasta.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['firesprayclasspatrolcraft'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['firesprayclasspatrolcraft'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -40,7 +44,8 @@ const t: UpgradeBase[] = [
         actions: [{ type: 'SLAM', difficulty: 'White' }],
         ffg: 484,
         grants: [{ action: { type: 'SLAM', difficulty: 'White' }, value: 1 }],
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/blackone.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/blackone.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/blackone.png',
       },
     ],
@@ -57,15 +62,20 @@ const t: UpgradeBase[] = [
       {
         title: 'Dauntless',
         type: 'Title',
-        ability: 'After you partially execute a maneuver, you may perform 1 white action, treating that action as red.',
+        ability:
+          'After you partially execute a maneuver, you may perform 1 white action, treating that action as red.',
         slots: ['Title'],
         ffg: 349,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/dauntless.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/dauntless.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/dauntless.png',
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['vt49decimator'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['vt49decimator'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -81,12 +91,16 @@ const t: UpgradeBase[] = [
           'You can dock 1 attack shuttle or Sheathipede-class shuttle. Your docked ships can deploy only from your rear guides.',
         slots: ['Title'],
         ffg: 326,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/ghost.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/ghost.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/ghost.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['vcx100lightfreighter'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['vcx100lightfreighter'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -106,12 +120,16 @@ const t: UpgradeBase[] = [
           { slot: 'Crew', value: -1 },
         ],
         ffg: 372,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/havoc.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/havoc.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/havoc.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['scurrgh6bomber'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['scurrgh6bomber'] },
+    ],
     standard: false,
     epic: true,
     extended: true,
@@ -126,12 +144,16 @@ const t: UpgradeBase[] = [
         ability: '1 Z-95-AF4 headhunter can dock with you.',
         slots: ['Title'],
         ffg: 373,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/houndstooth.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/houndstooth.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/houndstooth.png',
       },
     ],
     cost: { value: 6 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['yv666lightfreighter'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['yv666lightfreighter'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -143,15 +165,20 @@ const t: UpgradeBase[] = [
       {
         title: 'IG-2000',
         type: 'Title',
-        ability: 'You have the pilot ability of each other friendly ship with the IG-2000 upgrade.',
+        ability:
+          'You have the pilot ability of each other friendly ship with the IG-2000 upgrade.',
         slots: ['Title'],
         ffg: 374,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/ig2000.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/ig2000.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/ig2000.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['aggressorassaultfighter'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['aggressorassaultfighter'] },
+    ],
     standard: false,
     epic: true,
     extended: true,
@@ -167,12 +194,17 @@ const t: UpgradeBase[] = [
           '1 Escape Craft may dock with you. While you have an Escape Craft docked, you may treat its shields as if they were on your ship card. While you perform a primary attack against a stressed ship, roll 1 additional attack die.',
         slots: ['Title'],
         ffg: 390,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/landosmillenniumfalcon.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/landosmillenniumfalcon.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/landosmillenniumfalcon.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/landosmillenniumfalcon.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['customizedyt1300lightfreighter'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['customizedyt1300lightfreighter'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -184,16 +216,21 @@ const t: UpgradeBase[] = [
       {
         title: 'Marauder',
         type: 'Title',
-        ability: 'While you perform a primary [Rear Arc] attack, you may reroll 1 attack die. Add [Gunner] slot.',
+        ability:
+          'While you perform a primary [Rear Arc] attack, you may reroll 1 attack die. Add [Gunner] slot.',
         slots: ['Title'],
         grants: [{ slot: 'Gunner', value: 1 }],
         ffg: 375,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/marauder.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/marauder.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/marauder.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['firesprayclasspatrolcraft'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['firesprayclasspatrolcraft'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -205,17 +242,23 @@ const t: UpgradeBase[] = [
       {
         title: 'Millennium Falcon',
         type: 'Title',
-        ability: 'While you defend, if you are evading, you may reroll 1 defense die.',
+        ability:
+          'While you defend, if you are evading, you may reroll 1 defense die.',
         slots: ['Title'],
         actions: [{ type: 'Evade', difficulty: 'White' }],
         grants: [{ action: { type: 'Evade', difficulty: 'White' }, value: 1 }],
         ffg: 327,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/millenniumfalcon.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/millenniumfalcon.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/millenniumfalcon.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/millenniumfalcon.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['modifiedyt1300lightfreighter'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['modifiedyt1300lightfreighter'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -235,12 +278,16 @@ const t: UpgradeBase[] = [
           { action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 },
         ],
         ffg: 376,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/misthunter.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/misthunter.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/misthunter.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['g1astarfighter'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['g1astarfighter'] },
+    ],
     standard: false,
     epic: true,
     extended: true,
@@ -257,12 +304,16 @@ const t: UpgradeBase[] = [
         slots: ['Title'],
         grants: [{ stat: 'attack', value: 3, arc: 'Front Arc' }],
         ffg: 328,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/moldycrow.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/moldycrow.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/moldycrow.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Rebel Alliance', 'Scum and Villainy'] }, { chassis: ['hwk290lightfreighter'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance', 'Scum and Villainy'] },
+      { chassis: ['hwk290lightfreighter'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -278,12 +329,16 @@ const t: UpgradeBase[] = [
           "While you perform a primary attack at range 3, roll 1 additional attack die. \n\nWhile you perform an attack that is obstructed by an obstacle, you may change one of the defender's [Evade] results to a [Focus] result.",
         slots: ['Title'],
         ffg: 329,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/outrider.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/outrider.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/outrider.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['yt2400lightfreighter'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['yt2400lightfreighter'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -298,12 +353,16 @@ const t: UpgradeBase[] = [
         ability: 'You can dock at range 0-1.',
         slots: ['Title'],
         ffg: 330,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/phantom.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/phantom.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/phantom.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['attackshuttle', 'sheathipedeclassshuttle'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['attackshuttle', 'sheathipedeclassshuttle'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -323,12 +382,17 @@ const t: UpgradeBase[] = [
           { slot: 'Astromech', value: 1 },
         ],
         ffg: 377,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/punishingone.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/punishingone.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/punishingone.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/punishingone.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['jumpmaster5000'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['jumpmaster5000'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -344,12 +408,16 @@ const t: UpgradeBase[] = [
           'After you perform a [Coordinate] action, you may choose an enemy ship at range 0-3 of the ship you coordinated. If you do, acquire a lock on that enemy ship, ignoring range restrictions.',
         slots: ['Title'],
         ffg: 391,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/st321.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/st321.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/st321.png',
       },
     ],
     cost: { value: 3 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['lambdaclasst4ashuttle'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['lambdaclasst4ashuttle'] },
+    ],
     standard: false,
     epic: true,
     extended: true,
@@ -365,12 +433,17 @@ const t: UpgradeBase[] = [
           'After you perform an attack that hits, if the defender is in your [Single Turret Arc] and your [Front Arc], the defender gains 1 tractor token.',
         slots: ['Title'],
         ffg: 378,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowcaster.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/shadowcaster.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/shadowcaster.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/shadowcaster.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['lancerclasspursuitcraft'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['lancerclasspursuitcraft'] },
+    ],
     standard: false,
     epic: true,
     extended: true,
@@ -387,12 +460,16 @@ const t: UpgradeBase[] = [
         slots: ['Title'],
         grants: [{ slot: 'Torpedo', value: 1 }],
         ffg: 379,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/slavei.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/slavei.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/slavei.png',
       },
     ],
     cost: { value: 10 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['firesprayclasspatrolcraft'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['firesprayclasspatrolcraft'] },
+    ],
     standard: true,
     extended: true,
     epic: true,
@@ -413,7 +490,8 @@ const t: UpgradeBase[] = [
           { stat: 'shields', value: 1 },
         ],
         ffg: 380,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/virago.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/virago.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/virago.png',
       },
     ],
@@ -434,12 +512,17 @@ const t: UpgradeBase[] = [
           "If you have 2 or fewer stress tokens, you can execute red Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuvers and perform [Boost] and [Rotate Arc] actions even while stressed.",
         slots: ['Title'],
         ffg: 485,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/reysmillenniumfalcon.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/reysmillenniumfalcon.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/reysmillenniumfalcon.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/reysmillenniumfalcon.png',
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ factions: ['Resistance'] }, { chassis: ['scavengedyt1300'] }],
+    restrictions: [
+      { factions: ['Resistance'] },
+      { chassis: ['scavengedyt1300'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -451,15 +534,20 @@ const t: UpgradeBase[] = [
       {
         title: 'Soulless One',
         type: 'Title',
-        ability: 'While you defend, if the attacker is outside your firing arc, you may reroll 1 defense die.',
+        ability:
+          'While you defend, if the attacker is outside your firing arc, you may reroll 1 defense die.',
         slots: ['Title'],
         grants: [{ stat: 'hull', value: 2 }],
         ffg: 533,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/soullessone.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/soullessone.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/soullessone.png',
       },
     ],
-    restrictions: [{ factions: ['Separatist Alliance'] }, { chassis: ['belbullab22starfighter'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { chassis: ['belbullab22starfighter'] },
+    ],
     standard: true,
     epic: true,
     cost: { value: 9 },
@@ -480,11 +568,15 @@ const t: UpgradeBase[] = [
           { action: { type: 'Jam', difficulty: 'White' }, value: 1 },
         ],
         ffg: 542,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/scimitar.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/scimitar.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/scimitar.png',
       },
     ],
-    restrictions: [{ factions: ['Separatist Alliance'] }, { chassis: ['sithinfiltrator'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { chassis: ['sithinfiltrator'] },
+    ],
     standard: true,
     epic: true,
     cost: { value: 0 },
@@ -506,14 +598,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 769,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/assailer.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/assailer.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/assailer.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 5 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['raiderclasscorvette'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['raiderclasscorvette'] },
+    ],
     extended: false,
   },
   {
@@ -521,7 +617,8 @@ const t: UpgradeBase[] = [
     xws: 'bloodcrow',
     sides: [
       {
-        ability: 'Add [Gunner] slot. While you perform an attack at attack range 1-2, you may add 1 [Focus] result.',
+        ability:
+          'Add [Gunner] slot. While you perform an attack at attack range 1-2, you may add 1 [Focus] result.',
         title: 'Blood Crow',
         grants: [
           { slot: 'Gunner', value: 1 },
@@ -531,14 +628,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 773,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/bloodcrow.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/bloodcrow.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/bloodcrow.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 8 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['gozanticlasscruiser'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['gozanticlasscruiser'] },
+    ],
     extended: false,
   },
   {
@@ -552,14 +653,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 766,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/brighthope.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/brighthope.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/brighthope.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 5 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['gr75mediumtransport'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['gr75mediumtransport'] },
+    ],
     extended: false,
   },
   {
@@ -593,14 +698,19 @@ const t: UpgradeBase[] = [
           },
         ],
         ffg: 761,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/dodonnaspride.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/dodonnaspride.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/dodonnaspride.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/dodonnaspride.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 4 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['cr90corelliancorvette'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['cr90corelliancorvette'] },
+    ],
     extended: false,
   },
   {
@@ -619,14 +729,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 771,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/impetuous.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/impetuous.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/impetuous.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 4 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['raiderclasscorvette'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['raiderclasscorvette'] },
+    ],
     extended: false,
   },
   {
@@ -641,14 +755,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 772,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/instigator.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/instigator.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/instigator.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 6 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['raiderclasscorvette'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['raiderclasscorvette'] },
+    ],
     extended: false,
   },
   {
@@ -656,20 +774,27 @@ const t: UpgradeBase[] = [
     xws: 'corvus',
     sides: [
       {
-        ability: 'You can dock up to 2 small ships. After you perform a [Calculate] action, gain 1 calculate token.',
+        ability:
+          'You can dock up to 2 small ships. After you perform a [Calculate] action, gain 1 calculate token.',
         title: 'Corvus',
         type: 'Title',
         slots: ['Title'],
-        grants: [{ action: { type: 'Calculate', difficulty: 'White' }, value: 1 }],
+        grants: [
+          { action: { type: 'Calculate', difficulty: 'White' }, value: 1 },
+        ],
         ffg: 770,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/corvus.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/corvus.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/corvus.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 3 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['raiderclasscorvette'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['raiderclasscorvette'] },
+    ],
     extended: false,
   },
   {
@@ -689,14 +814,19 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 779,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/insatiableworrt.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/insatiableworrt.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/insatiableworrt.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/insatiableworrt.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 7 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['croccruiser'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['croccruiser'] },
+    ],
     extended: false,
   },
   {
@@ -711,14 +841,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 763,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/liberator.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/liberator.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/liberator.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 5 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['cr90corelliancorvette'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['cr90corelliancorvette'] },
+    ],
     extended: false,
   },
   {
@@ -736,14 +870,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 767,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/luminous.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/luminous.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/luminous.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 12 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['gr75mediumtransport'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['gr75mediumtransport'] },
+    ],
     extended: false,
   },
   {
@@ -751,7 +889,8 @@ const t: UpgradeBase[] = [
     xws: 'merchantone',
     sides: [
       {
-        ability: 'Add [Turret], [Team], and [Cargo] slots. Bonus Attack: Perform a [Turret] attack.',
+        ability:
+          'Add [Turret], [Team], and [Cargo] slots. Bonus Attack: Perform a [Turret] attack.',
         title: 'Merchant One',
         type: 'Title',
         slots: ['Title'],
@@ -761,14 +900,18 @@ const t: UpgradeBase[] = [
           { slot: 'Cargo', value: 1 },
         ],
         ffg: 778,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/merchantone.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/merchantone.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/merchantone.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 8 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['croccruiser'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['croccruiser'] },
+    ],
     extended: false,
   },
   {
@@ -786,14 +929,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 777,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/brokenhorn.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/brokenhorn.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/brokenhorn.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 4 },
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['croccruiser'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['croccruiser'] },
+    ],
     extended: false,
   },
   {
@@ -801,7 +948,8 @@ const t: UpgradeBase[] = [
     xws: 'quantumstorm',
     sides: [
       {
-        ability: 'Add [Team] and [Cargo] slots. After you fully execute a white maneuver, recover 1 [Energy].',
+        ability:
+          'Add [Team] and [Cargo] slots. After you fully execute a white maneuver, recover 1 [Energy].',
         title: 'Quantum Storm',
         grants: [
           { slot: 'Team', value: 1 },
@@ -811,14 +959,19 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 768,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/quantumstorm.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/quantumstorm.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/quantumstorm.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/quantumstorm.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 3 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['gr75mediumtransport'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['gr75mediumtransport'] },
+    ],
     extended: false,
   },
   {
@@ -833,14 +986,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 775,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/suppressor.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/suppressor.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/suppressor.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 6 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['gozanticlasscruiser'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['gozanticlasscruiser'] },
+    ],
     extended: false,
   },
   {
@@ -854,14 +1011,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 762,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/jainaslight.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/jainaslight.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/jainaslight.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 4 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['cr90corelliancorvette'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['cr90corelliancorvette'] },
+    ],
     extended: false,
   },
   {
@@ -879,14 +1040,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 764,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/tantiveiv.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/tantiveiv.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/tantiveiv.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 5 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['cr90corelliancorvette'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['cr90corelliancorvette'] },
+    ],
     extended: false,
   },
   {
@@ -905,14 +1070,19 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 765,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/thunderstrike.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/thunderstrike.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/thunderstrike.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/thunderstrike.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 4 },
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['cr90corelliancorvette'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['cr90corelliancorvette'] },
+    ],
     extended: false,
   },
   {
@@ -930,14 +1100,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 776,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/vector.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/vector.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/vector.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 7 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['gozanticlasscruiser'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['gozanticlasscruiser'] },
+    ],
     extended: false,
   },
   {
@@ -951,14 +1125,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 774,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/requiem.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/requiem.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/requiem.png',
       },
     ],
     standard: false,
     epic: true,
     cost: { value: 7 },
-    restrictions: [{ factions: ['Galactic Empire'] }, { chassis: ['gozanticlasscruiser'] }],
+    restrictions: [
+      { factions: ['Galactic Empire'] },
+      { chassis: ['gozanticlasscruiser'] },
+    ],
     extended: false,
   },
   {
@@ -972,8 +1150,10 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 655,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/kazsfireball.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/kazsfireball.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/kazsfireball.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/kazsfireball.png',
       },
     ],
     standard: true,
@@ -997,8 +1177,10 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: 869,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/slavei-swz82.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/slavei-swz82.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/slavei-swz82.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/slavei-swz82.png',
       },
     ],
     restrictions: [
@@ -1019,13 +1201,18 @@ const t: UpgradeBase[] = [
         slots: ['Title'],
         grants: [{ slot: 'Gunner', value: 1 }],
         ffg: 923,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/b6bladewingprototype.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/b6bladewingprototype.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/b6bladewingprototype.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/b6bladewingprototype.png',
       },
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Rebel Alliance'] }, { chassis: ['asf01bwing'] }],
+    restrictions: [
+      { factions: ['Rebel Alliance'] },
+      { chassis: ['asf01bwing'] },
+    ],
     extended: true,
   },
   {
@@ -1040,7 +1227,8 @@ const t: UpgradeBase[] = [
           'While you perform a Drill Beak attack at attack range 1, if the defender is tractored, treat it as being at range 0 instead.',
         slots: ['Title'],
         ffg: 946,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/grappler.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/grappler.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/grappler.png',
       },
     ],
@@ -1057,16 +1245,22 @@ const t: UpgradeBase[] = [
       {
         title: "Nautolan's Revenge",
         type: 'Title',
-        ability: 'Before you engage, you may spend up to 2 calculate tokens. If you do, recover that many [Energy].',
+        ability:
+          'Before you engage, you may spend up to 2 calculate tokens. If you do, recover that many [Energy].',
         slots: ['Title'],
         ffg: 945,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/nautolansrevenge.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/nautolansrevenge.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/nautolansrevenge.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/nautolansrevenge.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Scum and Villainy'] }, { chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
     extended: false,
   },
   {
@@ -1081,13 +1275,18 @@ const t: UpgradeBase[] = [
           'After you perform an attack, you may perform a red [Evade] action. While you defend, if you are evading, you may roll 1 additional defense die.',
         slots: ['Title'],
         ffg: 947,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/neimoidiangrasp.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/neimoidiangrasp.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/neimoidiangrasp.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/neimoidiangrasp.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }, { chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
     extended: false,
   },
   {
@@ -1102,13 +1301,17 @@ const t: UpgradeBase[] = [
           'After you overlap a ship or a ship overlaps you, if it is not tractored, you may spend 1 [Energy]. If you do, it gains 3 tractor tokens.',
         slots: ['Title'],
         ffg: 948,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/trident.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/trident.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/trident.png',
       },
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }, { chassis: ['tridentclassassaultship'] }],
+    restrictions: [
+      { factions: ['Separatist Alliance'] },
+      { chassis: ['tridentclassassaultship'] },
+    ],
     extended: false,
   },
   {
@@ -1125,14 +1328,19 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title', 'Modification'],
         ffg: -1,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/nightbrother.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/nightbrother.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/nightbrother.png',
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/nightbrother.png',
       },
     ],
     standarized: true,
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Scum and Villainy', 'Rebel Alliance'] }, { chassis: ['gauntletfighter'] }],
+    restrictions: [
+      { factions: ['Scum and Villainy', 'Rebel Alliance'] },
+      { chassis: ['gauntletfighter'] },
+    ],
     extended: true,
   },
   {
@@ -1149,14 +1357,18 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title', 'Modification'],
         ffg: -1,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/gauntlet.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/gauntlet.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/gauntlet.png',
       },
     ],
     standarized: true,
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Galactic Republic', 'Separatist Alliance'] }, { chassis: ['gauntletfighter'] }],
+    restrictions: [
+      { factions: ['Galactic Republic', 'Separatist Alliance'] },
+      { chassis: ['gauntletfighter'] },
+    ],
     extended: true,
   },
   {
@@ -1181,7 +1393,8 @@ const t: UpgradeBase[] = [
         type: 'Title',
         slots: ['Title'],
         ffg: -1,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/razorcrest.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/razorcrest.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/razorcrest.png',
       },
     ],
@@ -1205,7 +1418,8 @@ const t: UpgradeBase[] = [
           { action: { type: 'Cloak', difficulty: 'Red' }, value: 1 },
         ],
         ffg: -1,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/xanadublood.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/xanadublood.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/xanadublood.png',
       },
     ],
@@ -1296,7 +1510,8 @@ const t: UpgradeBase[] = [
       {
         title: 'Virago',
         type: 'Title',
-        ability: 'During the System Phase you may perform a red [roll] or red [boost] action.',
+        ability:
+          'During the System Phase you may perform a red [roll] or red [boost] action.',
         slots: ['Title'],
       },
     ],
@@ -1351,7 +1566,8 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     sides: [
       {
-        ability: 'Setup: Place this ship as if it were a standard ship with initiative 5.',
+        ability:
+          'Setup: Place this ship as if it were a standard ship with initiative 5.',
         title: 'Corvus',
         type: 'Title',
         slots: ['Title'],
@@ -1405,7 +1621,8 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     sides: [
       {
-        ability: 'If you are damaged, reduce the difficulty of your speed 3-5 maneuvers.',
+        ability:
+          'If you are damaged, reduce the difficulty of your speed 3-5 maneuvers.',
         title: 'Broken Horn',
         type: 'Title',
         slots: ['Title'],
@@ -1422,7 +1639,8 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     sides: [
       {
-        ability: 'While you defend, if the attacker is in your [Rear Arc], you may roll 1 additional defense die.',
+        ability:
+          'While you defend, if the attacker is in your [Rear Arc], you may roll 1 additional defense die.',
         title: 'Tantive IV',
         type: 'Title',
         slots: ['Title'],
@@ -1493,7 +1711,8 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     sides: [
       {
-        ability: 'While you defend, friendly ships docked with you may suffer damage instead of you.',
+        ability:
+          'While you defend, friendly ships docked with you may suffer damage instead of you.',
         title: 'Malefactor',
         type: 'Title',
         slots: ['Title'],
@@ -1510,7 +1729,8 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     sides: [
       {
-        ability: 'While you defend, if you have no green tokens, you may change 1 result to an [Evade] result.',
+        ability:
+          'While you defend, if you have no green tokens, you may change 1 result to an [Evade] result.',
         title: 'Tantive IV',
         type: 'Title',
         slots: ['Title'],
@@ -1545,7 +1765,8 @@ const t: UpgradeBase[] = [
     standardLoadoutOnly: true,
     sides: [
       {
-        ability: 'While you defend, if the attacker does not have any green tokens, you may add 1 [Evade] result.',
+        ability:
+          'While you defend, if the attacker does not have any green tokens, you may add 1 [Evade] result.',
         title: 'Trident',
         type: 'Title',
         slots: ['Title'],

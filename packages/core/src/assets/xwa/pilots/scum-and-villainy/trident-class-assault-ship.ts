@@ -23,7 +23,7 @@ const t: ShipType = {
     {
       xws: 'lawlesspirates',
       name: 'Lawless Pirates',
-      cost: 11,
+      cost: 26,
       limited: 0,
       initiative: 8,
       slots: [
@@ -51,7 +51,7 @@ const t: ShipType = {
     {
       name: 'Sorc Tormo',
       initiative: 8,
-      cost: 8,
+      cost: 19,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sorctormo-epicsl.png',
@@ -64,6 +64,8 @@ const t: ShipType = {
       xws: 'sorctormo-epicsl',
       caption: "Nautolan's Revenge",
       ffg: 1117,
+      loadout: 0,
+      slots: [],
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/scum-and-villainy/I_Trident.png',

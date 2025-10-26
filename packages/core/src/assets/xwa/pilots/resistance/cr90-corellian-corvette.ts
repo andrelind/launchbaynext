@@ -45,7 +45,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 1,
-      cost: 12,
+      cost: 32,
       xws: 'leiaorgana-epicsl',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/leiaorgana-epicsl.png',
@@ -74,6 +74,8 @@ const t: ShipType = {
         'tantiveiv-epicsl-resistance',
       ],
       ffg: 1125,
+      loadout: 0,
+      slots: [],
     },
   ],
 };
