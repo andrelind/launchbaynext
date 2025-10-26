@@ -1,8 +1,8 @@
 import { ShipType } from '../../../../types';
 
 const t: ShipType = {
-  name: 'BTA-NR2 Y-Wing',
-  xws: 'btanr2ywing',
+  name: 'BTA-NR2 Y-Wing Wartime',
+  xws: 'btanr2wywing',
   size: 'Small',
   dial: ['1BB', '1FB', '1NB', '2TW', '2BW', '2FB', '2NW', '2YW', '3TR', '3BW', '3FB', '3NW', '3YR', '4FR', '5KR'],
   dialCodes: ['NR2'],
