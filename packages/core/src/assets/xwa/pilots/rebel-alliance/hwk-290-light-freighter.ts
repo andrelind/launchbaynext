@@ -55,7 +55,7 @@ const t: ShipType = {
       xws: 'janors',
       ability:
         'While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may gain 1 stress token. If you do, that ship may roll 1 additional attack die.',
-      slots: ['Talent', 'Crew', 'Modification', 'Payload', 'Title'],
+      slots: ['Talent', 'Crew', 'Modification', 'Device', 'Title'],
       ffg: 42,
       standard: true,
       epic: true,
@@ -75,7 +75,7 @@ const t: ShipType = {
       xws: 'kylekatarn',
       ability:
         'At the start of the Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.',
-      slots: ['Talent', 'Crew', 'Modification', 'Payload', 'Title'],
+      slots: ['Talent', 'Crew', 'Modification', 'Device', 'Title'],
       ffg: 43,
       standard: true,
       epic: true,
@@ -93,7 +93,7 @@ const t: ShipType = {
       cost: 7,
       xws: 'rebelscout',
       text: 'Designed to look like a bird in flight by the Corellian Engineering Corporation, “hawk” series ships are exemplary transport craft. Swift and rugged, the HWK-290 is often employed by Rebel agents as a mobile base of operations.',
-      slots: ['Crew', 'Modification', 'Payload', 'Payload'],
+      slots: ['Crew', 'Modification', 'Device', 'Device'],
       ffg: 45,
       standard: true,
       epic: true,
@@ -114,7 +114,7 @@ const t: ShipType = {
       xws: 'roarkgarnet',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, it engages at initiative 7 instead of its standard initiative value this phase.',
-      slots: ['Talent', 'Crew', 'Modification', 'Payload', 'Title'],
+      slots: ['Talent', 'Crew', 'Modification', 'Device', 'Title'],
       ffg: 44,
       standard: true,
       epic: true,

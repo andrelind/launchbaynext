@@ -49,7 +49,7 @@ const t: ShipType = {
       xws: 'countdown',
       ability:
         'While you defend, after the Neutralize Results step, if you are not stressed, you may suffer 1 [Hit] damage and gain 1 stress token. If you do, cancel all dice results.',
-      slots: ['Gunner', 'Payload'],
+      slots: ['Gunner', 'Device'],
       ffg: 118,
       standard: true,
       epic: true,
@@ -69,7 +69,7 @@ const t: ShipType = {
       xws: 'duchess',
       ability:
         'You may choose not to use your Adaptive Ailerons. You may use your Adaptive Ailerons even while stressed.',
-      slots: ['Gunner', 'Modification', 'Payload', 'Talent', 'Modification'],
+      slots: ['Gunner', 'Modification', 'Device', 'Talent', 'Modification'],
       ffg: 117,
       standard: true,
       epic: true,
@@ -89,7 +89,7 @@ const t: ShipType = {
       xws: 'puresabacc',
       ability:
         'While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.',
-      slots: ['Gunner', 'Modification', 'Payload', 'Talent'],
+      slots: ['Gunner', 'Modification', 'Device', 'Talent'],
       ffg: 119,
       standard: true,
       epic: true,
@@ -107,7 +107,7 @@ const t: ShipType = {
       cost: 9,
       xws: 'blacksquadronscout',
       text: 'These heavily armed atmospheric craft employ their specialized moveable wings to gain additional speed and maneuverability.',
-      slots: ['Gunner', 'Modification', 'Payload', 'Talent'],
+      slots: ['Gunner', 'Modification', 'Device', 'Talent'],
       ffg: 120,
       standard: true,
       epic: true,
@@ -127,7 +127,7 @@ const t: ShipType = {
       cost: 8,
       xws: 'planetarysentinel',
       text: 'To protect its many military installations, the Empire requires a swift and vigilant defense force.',
-      slots: ['Gunner', 'Modification', 'Payload'],
+      slots: ['Gunner', 'Modification', 'Device'],
       ffg: 121,
       standard: true,
       epic: true,
@@ -149,7 +149,7 @@ const t: ShipType = {
       xws: 'vagabond',
       ability:
         'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
-      slots: ['Gunner', 'Modification', 'Payload'],
+      slots: ['Gunner', 'Modification', 'Device'],
       standard: true,
       epic: true,
       ffg: 633,

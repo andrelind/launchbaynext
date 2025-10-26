@@ -51,7 +51,7 @@ const t: ShipType = {
       xws: 'constablezuvio',
       ability:
         'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
-      slots: ['Crew', 'Illicit', 'Modification', 'Talent', 'Payload'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Talent', 'Device'],
       ffg: 161,
       standard: false,
       epic: true,

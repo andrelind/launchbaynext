@@ -49,7 +49,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -73,7 +73,7 @@ const t: ShipType = {
       xws: 'evaanverlaine',
       ability:
         'At the start of the Engagement Phase, you may spend 1 focus token to choose a friendly ship at range 0-1. If you do, that ship rolls 1 additional defense die while defending until the end of the round.',
-      slots: ['Astromech', 'Modification', 'Payload', 'Torpedo', 'Turret'],
+      slots: ['Astromech', 'Modification', 'Device', 'Torpedo', 'Turret'],
       ffg: 16,
       standard: true,
       epic: true,
@@ -94,7 +94,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -118,7 +118,7 @@ const t: ShipType = {
       cost: 7,
       xws: 'graysquadronbomber',
       text: 'Long after the Y-wing was phased out by the Galactic Empire, its durability, dependability, and heavy armament help it remain a staple in the Rebel fleet.',
-      slots: ['Astromech', 'Modification', 'Payload', 'Torpedo', 'Turret'],
+      slots: ['Astromech', 'Modification', 'Device', 'Torpedo', 'Turret'],
       ffg: 18,
       standard: true,
       epic: true,
@@ -143,7 +143,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -170,7 +170,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -309,7 +309,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a white maneuver, you may choose a friendly ship at range 0-1. If you do, it may perform a [Focus] action.',
       image: 'https://infinitearenas.com/xw2/images/pilots/popskrail.png',
-      slots: ['Astromech', 'Modification', 'Payload', 'Torpedo', 'Turret'],
+      slots: ['Astromech', 'Modification', 'Device', 'Torpedo', 'Turret'],
       standard: true,
       extended: true,
       keywords: ['Y-wing'],

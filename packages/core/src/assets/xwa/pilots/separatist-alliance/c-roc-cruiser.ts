@@ -56,7 +56,7 @@ const t: ShipType = {
         'Tactical Relay',
         'Team',
         'Cargo',
-        'Payload',
+        'Device',
         'Configuration',
       ],
       standard: false,

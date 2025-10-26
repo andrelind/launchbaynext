@@ -56,7 +56,7 @@ const t: ShipType = {
       ability:
         'After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 3 [Charge]. If you do, that ship gains 2 additional ion tokens.',
       charges: { value: 3, recovers: 1 },
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload', 'Talent', 'Title'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device', 'Talent', 'Title'],
       ffg: 174,
       standard: true,
       epic: true,
@@ -76,7 +76,7 @@ const t: ShipType = {
       xws: 'palobgodalhi',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your firing arc at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.',
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload', 'Talent', 'Title'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device', 'Talent', 'Title'],
       ffg: 175,
       standard: true,
       epic: true,
@@ -94,7 +94,7 @@ const t: ShipType = {
       cost: 7,
       xws: 'spicerunner',
       text: 'Though its cargo space is limited compared to other light freighters, the small, swift HWK-290 is a favorite choice of smugglers who specialize in discreetly transporting precious goods.',
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device'],
       ffg: 177,
       standard: true,
       epic: true,
@@ -115,7 +115,7 @@ const t: ShipType = {
       xws: 'torkilmux',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in your firing arc. If you do, that ship engages at initiative 0 instead of its normal initiative value this round.',
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device'],
       ffg: 176,
       standard: true,
       epic: true,
@@ -133,7 +133,7 @@ const t: ShipType = {
       cost: 8,
       initiative: 3,
       limited: 1,
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload', 'Talent'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device', 'Talent'],
       standard: true,
       epic: true,
       ability:
@@ -156,7 +156,7 @@ const t: ShipType = {
       ability:
         'While you or a ship in your [Single Turret Arc] defends, you may spend 1 [Force]. If you do, the attacker rolls 1 fewer attack die.',
       force: { value: 1, recovers: 1, side: ['light'] },
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload', 'Force Power'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device', 'Force Power'],
       standard: true,
       epic: true,
       keywords: ['Jedi', 'Light Side', 'Freighter'],
@@ -177,7 +177,7 @@ const t: ShipType = {
       limited: 1,
       ability:
         'During the End Phase, before an enemy ship in your [Single Turret Arc] recovers 1 recurring [Charge] or [Force], you may spend 2 [Charge]. If you do, that ship does not recover that [Charge] or [Force].',
-      slots: ['Crew', 'Illicit', 'Modification', 'Payload', 'Talent'],
+      slots: ['Crew', 'Illicit', 'Modification', 'Device', 'Talent'],
       standard: true,
       epic: true,
       ffg: 895,

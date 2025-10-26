@@ -158,7 +158,7 @@ const t: ShipType = {
       loadout: 10,
       extended: true,
       artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/cienaree.png',
+        'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask-tieinterceptor.png',
     },
     {
       xws: 'vultskerris-tieininterceptor',

@@ -47,7 +47,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Turret',
         'Illicit',
         'Missile',
@@ -75,7 +75,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Turret',
         'Talent',
         'Illicit',
@@ -101,7 +101,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Turret',
         'Illicit',
         'Missile',
@@ -129,7 +129,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Turret',
         'Talent',
         'Illicit',
@@ -156,7 +156,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -183,7 +183,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -207,7 +207,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -236,7 +236,7 @@ const t: ShipType = {
       slots: [
         'Astromech',
         'Modification',
-        'Payload',
+        'Device',
         'Torpedo',
         'Turret',
         'Talent',
@@ -257,7 +257,7 @@ const t: ShipType = {
       cost: 8,
       initiative: 2,
       limited: 0,
-      slots: ['Astromech', 'Modification', 'Payload', 'Torpedo', 'Turret'],
+      slots: ['Astromech', 'Modification', 'Device', 'Torpedo', 'Turret'],
       standard: true,
       epic: true,
       keywords: ['Y-wing'],

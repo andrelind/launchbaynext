@@ -55,7 +55,7 @@ const t: ShipType = {
         'Crew',
         'Team',
         'Cargo',
-        'Payload',
+        'Device',
         'Illicit',
         'Title',
         'Configuration',

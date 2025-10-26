@@ -107,7 +107,8 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.cost = pilot.cost;
       local.loadout = pilot.loadout;
       local.keywords = pilot.keywords;
-      local.slots = pilot.slots;
+      // @ts-ignore
+      local.slots = pilot.slots?.map(s => (s === 'Payload' ? 'Device' : s));
       local.image = pilot.image;
       local.artwork = pilot.artwork;
 
