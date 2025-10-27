@@ -9,6 +9,7 @@ const shipMap: { [s: string]: string } = {
   btla4ywing: '\u0079',
   btlbywing: '\u003a',
   btanr2ywing: '\u0083',
+  btanr2wywing: '\u0083',
   btls8kwing: '\u006b',
   cr90corvette: '\u0032',
   croccruiser: '\u0035',
