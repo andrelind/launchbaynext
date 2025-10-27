@@ -129,7 +129,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [{}],
+    restrictions: [{ sides: ['dark'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -253,7 +253,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
-    restrictions: [{}],
+    restrictions: [{ sides: ['light'] }],
   },
   {
     limited: 0,
@@ -297,7 +297,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     epic: true,
-    restrictions: [{}],
+    restrictions: [{ sides: ['light'] }],
     extended: true,
   },
   {
@@ -319,7 +319,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     epic: true,
-    restrictions: [{}],
+    restrictions: [{ sides: ['dark'] }],
     extended: true,
   },
   {

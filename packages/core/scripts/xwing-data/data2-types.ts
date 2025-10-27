@@ -138,6 +138,14 @@ export interface XWSRestriction {
   equipped: Slot[];
   shipAbility: string[];
   standardized?: boolean;
+  force_side?: ForceSide[];
+  names?: string[];
+  keywords?: string[];
+
+  shields?: string[];
+  energy?: string[];
+  initiative?: string[];
+  agility?: number[];
 }
 
 export interface XWDUpgrade {

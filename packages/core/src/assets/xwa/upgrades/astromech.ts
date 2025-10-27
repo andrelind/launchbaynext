@@ -661,7 +661,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { action: { type: 'Rotate Arc' }, factions: ['resistance'] },
+      { factions: ['resistance'], action: { type: 'Rotate Arc' } },
     ],
     standard: true,
     epic: true,

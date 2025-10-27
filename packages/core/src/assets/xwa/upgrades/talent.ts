@@ -518,7 +518,7 @@ const t: UpgradeBase[] = [
       },
     ],
     epic: true,
-    restrictions: [{ factions: ['galacticrepublic'] }, {}],
+    restrictions: [{ factions: ['galacticrepublic'] }, { keywords: ['Clone'] }],
     cost: { value: 2 },
     standard: true,
     extended: true,
@@ -674,7 +674,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{}],
+    restrictions: [{ keywords: ['TIE'] }],
     extended: true,
   },
   {
@@ -720,7 +720,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{}],
+    restrictions: [{ keywords: ['A-wing'] }],
     extended: true,
   },
   {
@@ -743,7 +743,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{}, { equipped: ['Configuration'] }],
+    restrictions: [{ keywords: ['X-wing'] }, { equipped: ['Configuration'] }],
     extended: true,
   },
   {
@@ -788,7 +788,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{}],
+    restrictions: [{ keywords: ['Y-wing'] }],
     extended: true,
   },
   {
@@ -876,7 +876,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [{}, { action: { type: 'Reload' } }],
+    restrictions: [{ keywords: ['TIE'] }, { action: { type: 'Reload' } }],
     standard: true,
     epic: true,
     extended: true,
@@ -902,7 +902,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     cost: { value: 1 },
-    restrictions: [{}],
+    restrictions: [{ keywords: ['Mandalorian'] }],
     extended: true,
   },
   {

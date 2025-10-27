@@ -323,7 +323,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 3 },
-    restrictions: [{}],
+    restrictions: [{ keywords: ['Bounty Hunter'] }],
     standard: true,
     epic: true,
     extended: true,

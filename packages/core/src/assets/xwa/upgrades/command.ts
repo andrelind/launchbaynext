@@ -581,7 +581,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [{ factions: ['scumandvillainy'] }, {}, {}],
+    restrictions: [{ factions: ['scumandvillainy'] }, { 'non-limited': false }],
     epic: true,
     extended: false,
     standarized: true,

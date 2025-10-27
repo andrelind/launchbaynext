@@ -61,7 +61,7 @@ export default function PilotScreen() {
 
     return (
         <ScrollView
-            contentContainerStyle={tw`mt-2 gap-y-2 android:pb-24 ios:pb-2`}
+            contentContainerStyle={tw`mt-2 gap-y-2 android:pb-30 ios:pb-2`}
             showsVerticalScrollIndicator={false}
         >
             <Animated.View entering={FadeInUp} style={tw`flex-1 mx-2`}>

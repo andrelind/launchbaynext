@@ -63,7 +63,9 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['scumandvillainy'] }],
+    restrictions: [
+      { factions: ['scumandvillainy'], character: ['Darth Vader'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -958,7 +960,9 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 12 },
-    restrictions: [{ factions: ['scumandvillainy'] }],
+    restrictions: [
+      { factions: ['scumandvillainy'], character: ['Ezra Bridger'] },
+    ],
     standard: true,
     epic: true,
     extended: true,
@@ -2345,7 +2349,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['rebelalliance'] }],
+    restrictions: [{ factions: ['rebelalliance'], character: ['Gar Saxon'] }],
     extended: true,
   },
   {

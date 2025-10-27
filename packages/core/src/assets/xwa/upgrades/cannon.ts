@@ -169,7 +169,7 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    restrictions: [{ factions: ['resistance'] }, {}],
+    restrictions: [{ factions: ['resistance'] }, { keywords: ['X-wing'] }],
   },
   {
     xws: 'syncedlasercannons',

@@ -280,17 +280,39 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       }));
       upgrade.cost = rest.cost ?? undefined;
       upgrade.restrictions = rest.restrictions
-        ?.filter(r => Object.keys(r).length > 0)
+        ?.filter(r => (r.standardized !== undefined ? false : true))
         ?.map(r => {
-          const { action, factions, equipped } = r;
-          const res: Restrictions = { action, factions, equipped };
+          const { ships, sizes, force_side, names, shields, energy, initiative, agility, ...rest } = r;
+          const res: Restrictions = { ...rest };
 
-          if (r.sizes) {
-            res.baseSizes = r.sizes as Size[];
+          if (sizes) {
+            res.baseSizes = sizes as Size[];
           }
-          if (r.ships) {
-            res.chassis = r.ships;
+          if (ships) {
+            res.chassis = ships;
           }
+          if (force_side) {
+            res.sides = force_side;
+          }
+          if (names) {
+            res.character = names;
+          }
+          if (shields) {
+            res.stat = { type: 'shields', value: parseInt(shields[0], 10) };
+          }
+          if (energy) {
+            res.stat = { type: 'energy', value: parseInt(energy[0], 10) };
+          }
+          if (agility) {
+            res.stat = { type: 'agility', value: agility[0] };
+          }
+
+          if (initiative) {
+            if (initiative[0].includes('OR LOWER')) {
+              res.initiative = { max: parseInt(initiative[0], 10) };
+            }
+          }
+
           return res;
         });
       upgrade.restricted = rest.restricted && rest.restricted > 0 ? rest.restricted : undefined;

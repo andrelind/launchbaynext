@@ -182,7 +182,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: false,
-    restrictions: [{}],
+    restrictions: [{ stat: { type: 'energy', value: 5 } }],
   },
   {
     xws: 'tractortentacles',

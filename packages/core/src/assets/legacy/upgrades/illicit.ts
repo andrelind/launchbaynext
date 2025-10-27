@@ -336,7 +336,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/trackingfob.png',
       },
     ],
-    restrictions: [{}],
+    restrictions: [{ keywords: ['Bounty Hunter'] }],
     cost: { value: 3 },
     standard: true,
     wildspace: true,

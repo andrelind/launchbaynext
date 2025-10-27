@@ -204,7 +204,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{}],
+    restrictions: [{ initiative: { max: 3 } }],
     extended: true,
   },
   {

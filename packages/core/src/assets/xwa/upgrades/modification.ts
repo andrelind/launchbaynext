@@ -369,7 +369,10 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ baseSizes: ['Small', 'Medium'] }, {}],
+    restrictions: [
+      { baseSizes: ['Small', 'Medium'] },
+      { stat: { type: 'shields', value: 1 } },
+    ],
     cost: { value: 1 },
     extended: true,
   },
@@ -438,7 +441,7 @@ const t: UpgradeBase[] = [
       },
     ],
     standarized: true,
-    restrictions: [{}, {}],
+    restrictions: [{ shipAbility: ['Networked Calculations'] }],
     cost: { value: 1 },
     extended: true,
   },
@@ -487,7 +490,7 @@ const t: UpgradeBase[] = [
       },
     ],
     extended: true,
-    restrictions: [{}],
+    restrictions: [{ keywords: ['Mandalorian'] }],
   },
   {
     limited: 0,
@@ -511,7 +514,7 @@ const t: UpgradeBase[] = [
       },
     ],
     extended: true,
-    restrictions: [{}],
+    restrictions: [{ keywords: ['Mandalorian'] }],
   },
   {
     limited: 0,

@@ -604,7 +604,7 @@ const t: UpgradeBase[] = [
     standarized: true,
     standard: true,
     epic: true,
-    restrictions: [{}, {}],
+    restrictions: [{ shipAbility: ['Autothrusters'] }],
     extended: true,
   },
   {
@@ -631,7 +631,6 @@ const t: UpgradeBase[] = [
     restrictions: [
       { factions: ['galacticempire'] },
       { chassis: ['tieddefender'] },
-      {},
     ],
     extended: true,
   },
@@ -665,7 +664,7 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    restrictions: [{}, {}],
+    restrictions: [{ shipAbility: ['Vectored Thrusters'] }],
   },
   {
     limited: 0,
@@ -692,7 +691,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ chassis: ['btanr2ywing'] }, {}],
+    restrictions: [{ chassis: ['btanr2ywing'] }],
     standarized: true,
     standard: true,
     epic: true,

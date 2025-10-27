@@ -50,7 +50,6 @@ export default function SelectPilotScreen() {
 
     return (
         <LegendList
-
             data={data as Pilot[]}
             keyExtractor={(item) => item.xws}
             recycleItems
