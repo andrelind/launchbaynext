@@ -394,12 +394,7 @@ const t: UpgradeBase[] = [
       },
     ],
     standarized: true,
-    restrictions: [
-      {
-        chassis: ['vultureclassdroidfighter', 'hyenaclassdroidbomber', 'droidtrifighter', 'rogueclassstarfighter'],
-      },
-      { action: { type: 'Calculate' } },
-    ],
+    restrictions: [{ shipAbility: ['Networked Calculations'] }],
     cost: { value: 1 },
     extended: true,
   },

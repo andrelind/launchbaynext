@@ -554,7 +554,7 @@ const t: UpgradeBase[] = [
     standarized: true,
     standard: true,
     epic: true,
-    restrictions: [{ chassis: ['tieininterceptor', 'tievnsilencer'] }],
+    restrictions: [{ shipAbility: ['Autothrusters'] }],
     extended: true,
   },
   {

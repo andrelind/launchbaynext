@@ -278,7 +278,7 @@ export const UpgradeComponent: FC<Props> = ({
             {grants && <Grants grants={grants} />}
           </View>
           {showRestrictions && upgrade.restrictions && (
-            <Text style={tw`mx-2 flex-row items-center`}>{restrictions()}</Text>
+            <Text style={tw`mx-2 flex-row items-center text-zinc-900 dark:text-zinc-100`}>{restrictions()}</Text>
           )}
         </View>
       </View>

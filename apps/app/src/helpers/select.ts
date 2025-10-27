@@ -212,6 +212,14 @@ export const upgradesForSlot2 = (
               });
             }
           });
+        } else if (res.shipAbility) {
+          if (ship.pilot?.shipAbility?.name === res.shipAbility?.[0]) {
+            found = true;
+          } else if (ship.ability?.name === res.shipAbility?.[0]) {
+            found = true;
+          }
+        } else if (res.solitary) {
+          found = true;
         }
 
         if (res.character) {
