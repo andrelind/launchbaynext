@@ -50,11 +50,12 @@ export default function SelectPilotScreen() {
 
     return (
         <LegendList
+
             data={data as Pilot[]}
             keyExtractor={(item) => item.xws}
             recycleItems
             ItemSeparatorComponent={() => <View style={tw`h-2`} />}
-            contentContainerStyle={tw`p-2`}
+            contentContainerStyle={tw`p-2 android:pb-24 ios:pb-10`}
             numColumns={columns}
             renderItem={({ item, index }) => {
                 const count = countForPilot2(collection, item.xws, xws);
