@@ -12,8 +12,7 @@ const t: UpgradeBase[] = [
           'After you fail an action, if you have no green tokens, you may perform a [Focus] action. If you do, you cannot perform additional actions this round.',
         slots: ['Talent'],
         ffg: 381,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/composure.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/composure.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/composure.png',
       },
     ],
@@ -35,8 +34,7 @@ const t: UpgradeBase[] = [
         slots: ['Talent'],
         charges: { value: 1, recovers: 0 },
         ffg: 230,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/crackshot.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/crackshot.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/crackshot.png',
       },
     ],
@@ -56,16 +54,12 @@ const t: UpgradeBase[] = [
           'While you perform a white [Boost] action, you may treat it as red to use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
         slots: ['Talent'],
         ffg: 231,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/daredevil.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/daredevil.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/daredevil.png',
       },
     ],
     cost: { value: 5 },
-    restrictions: [
-      { baseSizes: ['Small'] },
-      { action: { type: 'Boost', difficulty: 'White' } },
-    ],
+    restrictions: [{ baseSizes: ['Small'] }, { action: { type: 'Boost', difficulty: 'White' } }],
     standard: true,
     epic: true,
     extended: true,
@@ -83,10 +77,8 @@ const t: UpgradeBase[] = [
         actions: [{ type: 'Evade', difficulty: 'Red' }],
         grants: [{ action: { type: 'Evade', difficulty: 'Red' }, value: 1 }],
         ffg: 232,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/debrisgambit.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/debrisgambit.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/debrisgambit.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/debrisgambit.png',
       },
     ],
     cost: { value: 4 },
@@ -107,8 +99,7 @@ const t: UpgradeBase[] = [
         slots: ['Talent'],
         charges: { value: 1, recovers: 0 },
         ffg: 233,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/elusive.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/elusive.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/elusive.png',
       },
     ],
@@ -128,14 +119,10 @@ const t: UpgradeBase[] = [
         text: 'While heavy fighters can often be coaxed into a barrel roll, seasoned pilots know how to do it without putting undue stress on their craft or leaving themselves open to attack.',
         slots: ['Talent'],
         actions: [{ type: 'Barrel Roll', difficulty: 'White' }],
-        grants: [
-          { action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Barrel Roll', difficulty: 'White' }, value: 1 }],
         ffg: 234,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/experthandling.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/experthandling.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/experthandling.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/experthandling.png',
       },
     ],
     cost: { value: 2 },
@@ -155,13 +142,12 @@ const t: UpgradeBase[] = [
           'While you perform a primary attack, if you are not shielded, you may change 1 [Focus] result to a [Hit] result.',
         slots: ['Talent'],
         ffg: 459,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/fanatical.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/fanatical.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/fanatical.png',
       },
     ],
     cost: { value: 2 },
-    restrictions: [{ factions: ['First Order'] }],
+    restrictions: [{ factions: ['firstorder'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -177,13 +163,12 @@ const t: UpgradeBase[] = [
           "While you perform a [Front Arc] primary attack, if the attack range is 1 and you are in the defender's [Front Arc], you may change 1 of your results to a [Hit] result.",
         slots: ['Talent'],
         ffg: 235,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/fearless.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/fearless.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/fearless.png',
       },
     ],
     cost: { value: 3 },
-    restrictions: [{ factions: ['Scum and Villainy'] }],
+    restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -199,13 +184,12 @@ const t: UpgradeBase[] = [
           'While you defend or perform an attack, if you have only blank results and have 2 or more results, you may reroll any number of your dice.',
         slots: ['Talent'],
         ffg: 471,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/heroic.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/heroic.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/heroic.png',
       },
     ],
     cost: { value: 2 },
-    restrictions: [{ factions: ['Resistance'] }],
+    restrictions: [{ factions: ['resistance'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -217,14 +201,11 @@ const t: UpgradeBase[] = [
       {
         title: 'Intimidation',
         type: 'Talent',
-        ability:
-          'While an enemy ship at range 0 defends, it rolls 1 fewer defense die.',
+        ability: 'While an enemy ship at range 0 defends, it rolls 1 fewer defense die.',
         slots: ['Talent'],
         ffg: 236,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/intimidation.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/intimidation.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/intimidation.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/intimidation.png',
       },
     ],
     cost: { value: 3 },
@@ -243,8 +224,7 @@ const t: UpgradeBase[] = [
           "While you perform an attack, if you are evading, you may change 1 of the defender's [Evade] results to a [Focus] result.",
         slots: ['Talent'],
         ffg: 237,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/juke.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/juke.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/juke.png',
       },
     ],
@@ -266,8 +246,7 @@ const t: UpgradeBase[] = [
         slots: ['Talent'],
         charges: { value: 1, recovers: 1 },
         ffg: 238,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/lonewolf.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/lonewolf.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/lonewolf.png',
       },
     ],
@@ -287,10 +266,8 @@ const t: UpgradeBase[] = [
           'While you perform an attack, if the defender is in your [Bullseye Arc], you may change 1 [Hit] result to a [Critical Hit] result.',
         slots: ['Talent'],
         ffg: 239,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/marksmanship.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/marksmanship.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/marksmanship.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/marksmanship.png',
       },
     ],
     cost: { value: 1 },
@@ -309,8 +286,7 @@ const t: UpgradeBase[] = [
           "While you perform a [Front Arc] attack, if you are not in the defender's firing arc, the defender rolls 1 fewer defense die.",
         slots: ['Talent'],
         ffg: 240,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/outmaneuver.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/outmaneuver.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/outmaneuver.png',
       },
     ],
@@ -330,8 +306,7 @@ const t: UpgradeBase[] = [
           'While you perform a primary attack, if the defender is in your [Bullseye Arc], you may reroll 1 attack die.',
         slots: ['Talent'],
         ffg: 241,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/predator.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/predator.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/predator.png',
       },
     ],
@@ -351,13 +326,12 @@ const t: UpgradeBase[] = [
           'While you perform an attack, you may choose another friendly ship at range 0-1 of the defender. If you do, that ship suffers 1 [Hit] damage and you may change 1 of your die results to a [Hit] result.',
         slots: ['Talent'],
         ffg: 242,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ruthless.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/ruthless.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/ruthless.png',
       },
     ],
     cost: { value: 1 },
-    restrictions: [{ factions: ['Galactic Empire'] }],
+    restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -373,10 +347,8 @@ const t: UpgradeBase[] = [
           'While you perform a [Torpedo] or [Missile] attack, you may spend 1 [Charge] from that upgrade. If you do, choose two defense dice. The defender must reroll those dice.',
         slots: ['Talent'],
         ffg: 243,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/saturationsalvo.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/saturationsalvo.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/saturationsalvo.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/saturationsalvo.png',
       },
     ],
     cost: { value: 2 },
@@ -396,13 +368,12 @@ const t: UpgradeBase[] = [
           'While another friendly ship at range 0-1 defends, before the Neutralize Results step, if you are in the attack arc, you may suffer 1 [Critical Hit] damage to cancel 1 [Critical Hit] result.',
         slots: ['Talent'],
         ffg: 244,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/selfless.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/selfless.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/selfless.png',
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['Rebel Alliance'] }],
+    restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -418,12 +389,9 @@ const t: UpgradeBase[] = [
           'While you coordinate, the ship you choose can perform an action only if that action is also on your action bar.',
         slots: ['Talent'],
         actions: [{ type: 'Coordinate', difficulty: 'Red' }],
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 },
-        ],
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Red' }, value: 1 }],
         ffg: 245,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/squadleader.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/squadleader.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/squadleader.png',
       },
     ],
@@ -443,10 +411,8 @@ const t: UpgradeBase[] = [
           'At the start of the Engagement Phase, you may choose 1 friendly ship at range 1. If you do, that ship treats its initiative as equal to yours until the end of the round.',
         slots: ['Talent'],
         ffg: 246,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/swarmtactics.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/swarmtactics.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/swarmtactics.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/swarmtactics.png',
       },
     ],
     cost: { value: 5 },
@@ -461,12 +427,10 @@ const t: UpgradeBase[] = [
       {
         title: 'Trick Shot',
         type: 'Talent',
-        ability:
-          'While you perform an attack that is obstructed by an obstacle, roll 1 additional attack die.',
+        ability: 'While you perform an attack that is obstructed by an obstacle, roll 1 additional attack die.',
         slots: ['Talent'],
         ffg: 247,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/trickshot.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/trickshot.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/trickshot.png',
       },
     ],
@@ -487,14 +451,13 @@ const t: UpgradeBase[] = [
         slots: ['Talent'],
         charges: { value: 1, recovers: 0 },
         ffg: 529,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/treacherous.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/treacherous.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/treacherous.png',
       },
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [{ factions: ['separatistalliance'] }],
     cost: { value: 3 },
     extended: true,
   },
@@ -509,16 +472,12 @@ const t: UpgradeBase[] = [
           'While another friendly ship in your [Left Arc] or [Right Arc] at range 0-2 defends, if it is limited or has the Dedicated upgrade and you are not strained, you may gain 1 strain token. If you do, the defender rerolls 1 of their blank results.',
         slots: ['Talent'],
         ffg: 544,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/dedicated.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/dedicated.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/dedicated.png',
       },
     ],
     epic: true,
-    restrictions: [
-      { factions: ['Galactic Republic'] },
-      { keywords: ['Clone'] },
-    ],
+    restrictions: [{ factions: ['galacticrepublic'] }, { keywords: ['Clone'] }],
     cost: { value: 3 },
     standard: true,
     extended: true,
@@ -534,8 +493,7 @@ const t: UpgradeBase[] = [
         ability:
           'At the end of the Activation Phase, if you are tractored, you may choose 1 ship in your [Single Turret Arc] arc at range 0-1. Transfer 1 tractor token to it.',
         ffg: 610,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ensnare.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/ensnare.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/ensnare.png',
       },
     ],
@@ -552,14 +510,11 @@ const t: UpgradeBase[] = [
       {
         ffg: 611,
         title: 'Gravitic Deflection',
-        ability:
-          'While you defend, you may reroll 1 defense die for each tractored ship in the attack arc.',
+        ability: 'While you defend, you may reroll 1 defense die for each tractored ship in the attack arc.',
         slots: ['Talent'],
         type: 'Talent',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/graviticdeflection.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/graviticdeflection.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/graviticdeflection.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/graviticdeflection.png',
       },
     ],
     standard: true,
@@ -588,8 +543,7 @@ const t: UpgradeBase[] = [
           maxrange: 2,
           ordnance: true,
         },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/snapshot.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/snapshot.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/snapshot.png',
       },
     ],
@@ -607,10 +561,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 653,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/proudtradition.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/proudtradition.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/proudtradition.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/proudtradition.png',
       },
       {
         ability: 'Treat your [Focus] actions as red.',
@@ -618,16 +570,14 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 652,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/proudtradition-sideb.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/proudtradition-sideb.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/proudtradition-sideb.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/proudtradition-sideb.png',
       },
     ],
     standard: true,
     epic: true,
     cost: { value: 2 },
-    restrictions: [{ factions: ['First Order'] }],
+    restrictions: [{ factions: ['firstorder'] }],
     extended: true,
   },
   {
@@ -642,8 +592,7 @@ const t: UpgradeBase[] = [
         slots: ['Talent'],
         ability:
           'While you perform a primary attack, if the defender is in your [Bullseye Arc], you may spend 1 [Hit] result or change 1 [Critical Hit] result to a [Hit] result. If you do, the defender exposes 1 of its damage cards.',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/deadeyeshot.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/deadeyeshot.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/deadeyeshot.png',
       },
     ],
@@ -664,10 +613,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 717,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/ionlimiteroverride.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/ionlimiteroverride.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/ionlimiteroverride.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/ionlimiteroverride.png',
       },
     ],
     standard: true,
@@ -687,10 +634,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 846,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/margsablclosure.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/margsablclosure.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/margsablclosure.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/margsablclosure.png',
       },
     ],
     standard: true,
@@ -710,10 +655,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 716,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/starbirdslash.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/starbirdslash.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/starbirdslash.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/starbirdslash.png',
       },
     ],
     standard: true,
@@ -733,10 +676,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 715,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/backwardstailslide.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/backwardstailslide.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/backwardstailslide.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/backwardstailslide.png',
       },
     ],
     standard: true,
@@ -756,14 +697,13 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 914,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/cutthroat.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/cutthroat.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/cutthroat.png',
       },
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Scum and Villainy'] }],
+    restrictions: [{ factions: ['scumandvillainy'] }],
     extended: true,
   },
   {
@@ -778,10 +718,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 918,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/tierfonbellyrun.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/tierfonbellyrun.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/tierfonbellyrun.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/tierfonbellyrun.png',
       },
     ],
     standard: true,
@@ -801,14 +739,13 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 915,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/disciplined.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/disciplined.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/disciplined.png',
       },
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Galactic Empire'] }],
+    restrictions: [{ factions: ['galacticempire'] }],
     extended: true,
   },
   {
@@ -823,14 +760,13 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 916,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hopeful.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/hopeful.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/hopeful.png',
       },
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Rebel Alliance'] }],
+    restrictions: [{ factions: ['rebelalliance'] }],
     extended: true,
   },
   {
@@ -845,10 +781,8 @@ const t: UpgradeBase[] = [
         type: 'Talent',
         slots: ['Talent'],
         ffg: 917,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/interloperturn.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/interloperturn.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/interloperturn.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/interloperturn.png',
       },
     ],
     standard: false,
@@ -867,10 +801,8 @@ const t: UpgradeBase[] = [
           'After a ship executes a maneuver, if it is at range 0-1 of a friendly device, you may acquire a lock on that ship, ignoring range restrictions.',
         slots: ['Talent'],
         ffg: 938,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/feedbackping.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/feedbackping.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/feedbackping.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/feedbackping.png',
       },
     ],
     cost: { value: 1 },
@@ -891,10 +823,8 @@ const t: UpgradeBase[] = [
         charges: { value: 1, recovers: 0 },
         slots: ['Talent'],
         ffg: -1,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/clantraining.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/clantraining.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/clantraining.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/clantraining.png',
       },
     ],
     standard: true,
@@ -914,8 +844,7 @@ const t: UpgradeBase[] = [
           "While you defend, if you are not in the attacker's [Bullseye Arc], [Critical Hit] results are neutralized before [Hit] results. \n\nAfter you suffer [Critical Hit] damage, you may perform a [Calculate] or [Focus] action on your action bar, even while stressed, treating that action as red.",
         slots: ['Talent'],
         ffg: -1,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/enduring.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/enduring.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/enduring.png',
       },
     ],
@@ -936,8 +865,7 @@ const t: UpgradeBase[] = [
         charges: { value: 2, recovers: 1 },
         slots: ['Talent'],
         ffg: -1,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/notorious.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/notorious.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/notorious.png',
       },
     ],
@@ -1008,8 +936,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Efficient Processing',
         type: 'Talent',
-        ability:
-          'After you perform a [Calculate] action, gain 1 calculate token.',
+        ability: 'After you perform a [Calculate] action, gain 1 calculate token.',
         slots: ['Talent'],
       },
     ],
@@ -1098,8 +1025,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Efficient Processing',
         type: 'Talent',
-        ability:
-          'After you perform a [Calculate] action, gain one calculate token.',
+        ability: 'After you perform a [Calculate] action, gain one calculate token.',
         slots: ['Talent'],
       },
     ],
@@ -1245,8 +1171,7 @@ const t: UpgradeBase[] = [
       {
         title: 'Collected',
         type: 'Talent',
-        ability:
-          'After you perform a primary attack, you may spend 1 focus token to gain 2 evade tokens.',
+        ability: 'After you perform a primary attack, you may spend 1 focus token to gain 2 evade tokens.',
         slots: ['Talent'],
       },
     ],

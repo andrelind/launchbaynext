@@ -604,7 +604,7 @@ const t: UpgradeBase[] = [
     standarized: true,
     standard: true,
     epic: true,
-    restrictions: [{ chassis: ['tieininterceptor', 'tievnsilencer'] }],
+    restrictions: [{}, {}],
     extended: true,
   },
   {
@@ -629,8 +629,9 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['tieddefender'] },
+      {},
     ],
     extended: true,
   },
@@ -664,7 +665,7 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    restrictions: [{ chassis: ['rz1awing'] }],
+    restrictions: [{}, {}],
   },
   {
     limited: 0,
@@ -691,7 +692,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 0 },
-    restrictions: [{ chassis: ['btanr2ywing'] }],
+    restrictions: [{ chassis: ['btanr2ywing'] }, {}],
     standarized: true,
     standard: true,
     epic: true,
@@ -799,7 +800,6 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -818,7 +818,6 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    cost: { value: 0 },
   },
 ];
 

@@ -177,6 +177,34 @@ const t: ShipType = {
       epic: true,
       ffg: 193,
     },
+    {
+      name: 'Black Sun Bodyguard',
+      caption: 'Vaksai Pilot',
+      initiative: 4,
+      limited: 2,
+      cost: 42,
+      xws: 'blacksunbodyguard-wat1',
+      ability:
+        'Setup: Lose 2 [Charge]. After you suffer damage, recover 1 [Charge]. Before you engage, you may spend 2 [Charge] to recover 1 [Charge] on 1 of your equipped upgrades.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/blacksunbodyguard-wat1.png',
+      charges: { value: 2, recovers: 0 },
+      slots: [
+        'Talent',
+        'Missile',
+        'Illicit',
+        'Illicit',
+        'Modification',
+        'Modification',
+      ],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunbodyguard-wat1.png',
+      standard: true,
+      wildspace: true,
+      epic: true,
+      extended: true,
+      ffg: 1169,
+    },
   ],
 };
 

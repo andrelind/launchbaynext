@@ -8,6 +8,7 @@ import device from './device';
 import forcepower from './force-power';
 import gunner from './gunner';
 import hardpoint from './hardpoint';
+import hyperdrive from './hyperdrive';
 import illicit from './illicit';
 import missile from './missile';
 import modification from './modification';
@@ -19,7 +20,6 @@ import tech from './tech';
 import title from './title';
 import torpedo from './torpedo';
 import turret from './turret';
-import hyperdrive from './hyperdrive';
 
 export default {
   astromech,

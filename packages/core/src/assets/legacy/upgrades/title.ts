@@ -24,7 +24,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
@@ -52,7 +52,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['Resistance'] }, { chassis: ['t70xwing'] }],
+    restrictions: [{ factions: ['resistance'] }, { chassis: ['t70xwing'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -76,7 +76,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['vt49decimator'] },
     ],
     standard: true,
@@ -102,7 +102,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['vcx100lightfreighter'] },
     ],
     standard: true,
@@ -132,7 +132,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['scurrgh6bomber'] },
     ],
     standard: true,
@@ -157,7 +157,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['yv666lightfreighter'] },
     ],
     standard: true,
@@ -183,7 +183,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['aggressorassaultfighter'] },
     ],
     standard: true,
@@ -209,7 +209,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['customizedyt1300lightfreighter'] },
     ],
     standard: true,
@@ -236,7 +236,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
@@ -264,7 +264,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['modifiedyt1300lightfreighter'] },
     ],
     standard: true,
@@ -294,7 +294,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['g1astarfighter'] },
     ],
     standard: true,
@@ -321,7 +321,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 16 },
     restrictions: [
-      { factions: ['Rebel Alliance', 'Scum and Villainy'] },
+      { factions: ['rebelalliance', 'scumandvillainy'] },
       { chassis: ['hwk290lightfreighter'] },
     ],
     standard: true,
@@ -347,7 +347,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 9 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['yt2400lightfreighter'] },
     ],
     standard: true,
@@ -373,7 +373,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [
-      { factions: ['Rebel Alliance', 'Scum and Villainy'] },
+      { factions: ['rebelalliance', 'scumandvillainy'] },
       { chassis: ['yt2400lightfreighter2023'] },
     ],
     standard: true,
@@ -398,7 +398,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['attackshuttle', 'sheathipedeclassshuttle'] },
     ],
     standard: true,
@@ -428,7 +428,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['jumpmaster5000'] },
     ],
     standard: true,
@@ -454,7 +454,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['lambdaclasst4ashuttle'] },
     ],
     standard: true,
@@ -480,7 +480,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['lancerclasspursuitcraft'] },
     ],
     standard: true,
@@ -507,7 +507,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
@@ -559,9 +559,9 @@ const t: UpgradeBase[] = [
         slots: ['Title'],
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 2 },
     restrictions: [
-      { factions: ['Resistance'] },
+      { factions: ['resistance'] },
       { chassis: ['scavengedyt1300'] },
     ],
     standard: true,
@@ -588,7 +588,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [
-      { factions: ['Separatist Alliance'] },
+      { factions: ['separatistalliance'] },
       { chassis: ['belbullab22starfighter'] },
     ],
     standard: true,
@@ -618,7 +618,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Separatist Alliance'] },
+      { factions: ['separatistalliance'] },
       { chassis: ['sithinfiltrator'] },
     ],
     standard: true,
@@ -649,7 +649,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
@@ -680,7 +680,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
@@ -705,7 +705,7 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['gr75mediumtransport'] },
     ],
     cost: { value: 5 },
@@ -736,7 +736,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['croccruiser'] },
     ],
     standard: false,
@@ -765,7 +765,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
@@ -811,7 +811,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
@@ -842,7 +842,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
@@ -874,7 +874,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['croccruiser'] },
     ],
     standard: false,
@@ -901,7 +901,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
@@ -931,7 +931,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
@@ -955,8 +955,8 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/kazsfireball.png',
       },
     ],
-    cost: { value: 1 },
-    restrictions: [{ factions: ['Resistance'] }, { chassis: ['fireball'] }],
+    cost: { value: 0 },
+    restrictions: [{ factions: ['resistance'] }, { chassis: ['fireball'] }],
     standard: true,
     wildspace: true,
     epic: true,
@@ -981,7 +981,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
@@ -1011,7 +1011,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 12 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['gr75mediumtransport'] },
     ],
     standard: false,
@@ -1044,7 +1044,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['croccruiser'] },
     ],
     standard: false,
@@ -1075,7 +1075,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['gr75mediumtransport'] },
     ],
     standard: false,
@@ -1101,7 +1101,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
@@ -1132,7 +1132,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
@@ -1159,7 +1159,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
@@ -1190,7 +1190,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
@@ -1220,7 +1220,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
@@ -1247,7 +1247,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Scum and Villainy', 'Separatist Alliance'] },
+      { factions: ['scumandvillainy', 'separatistalliance'] },
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
@@ -1273,7 +1273,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [
-      { factions: ['Rebel Alliance'] },
+      { factions: ['rebelalliance'] },
       { chassis: ['asf01bwing'] },
     ],
     standard: true,
@@ -1304,7 +1304,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
@@ -1358,7 +1358,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     restrictions: [
-      { factions: ['Separatist Alliance'] },
+      { factions: ['separatistalliance'] },
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
@@ -1385,7 +1385,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     restrictions: [
-      { factions: ['Separatist Alliance'] },
+      { factions: ['separatistalliance'] },
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
@@ -1413,7 +1413,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Scum and Villainy', 'Rebel Alliance'] },
+      { factions: ['scumandvillainy', 'rebelalliance'] },
       { chassis: ['gauntletfighter'] },
     ],
     standard: true,
@@ -1441,7 +1441,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [
-      { factions: ['Galactic Republic', 'Separatist Alliance'] },
+      { factions: ['galacticrepublic', 'separatistalliance'] },
       { chassis: ['gauntletfighter'] },
     ],
     standard: true,
@@ -1475,7 +1475,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/razorcrest.png',
       },
     ],
-    cost: { value: 5 },
+    cost: { value: 4 },
     restrictions: [{ chassis: ['st70assaultship'] }],
     standard: true,
     wildspace: true,

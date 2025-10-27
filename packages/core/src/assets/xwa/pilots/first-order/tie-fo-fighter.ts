@@ -253,6 +253,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/epsilonsquadroncadet.png',
       caption: '',
+      restricted: 4,
     },
     {
       name: 'Lieutenant Rivas',

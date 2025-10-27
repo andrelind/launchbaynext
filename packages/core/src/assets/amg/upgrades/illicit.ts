@@ -274,7 +274,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/babufrik.png',
       },
     ],
-    restrictions: [{ factions: ['Scum and Villainy', 'Resistance'] }],
+    restrictions: [{ factions: ['scumandvillainy', 'resistance'] }],
     cost: { value: 5 },
     epic: true,
     extended: true,

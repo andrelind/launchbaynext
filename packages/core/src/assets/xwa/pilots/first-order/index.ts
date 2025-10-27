@@ -7,7 +7,7 @@ import tiesebomber from './tie-se-bomber';
 import tiesffighter from './tie-sf-fighter';
 import tievnsilencer from './tie-vn-silencer';
 import tiewiwhispermodifiedinterceptor from './tie-wi-whisper-modified-interceptor';
-import upsilonclassshuttle from './upsilon-class-shuttle';
+import upsilonclassshuttle from './upsilon-class-command-shuttle';
 import xiclasslightshuttle from './xi-class-light-shuttle';
 
 const ships: { [s: string]: ShipType } = {

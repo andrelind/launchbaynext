@@ -103,7 +103,7 @@ const t: ShipType = {
       cost: 69,
       xws: 'emonazzameen',
       ability:
-        'If you would drop a device using a [1 [Straight]) template, you may use the [3 [Turn Left]), [3 [Straight]), or [3 [Turn Right]) template instead.',
+        'If you would drop a device using a (1 [Straight]) template, you may use the (3 [Turn Left]), (3 [Straight]), or (3 [Turn Right]) template instead.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/emonazzameen.png',
       slots: [

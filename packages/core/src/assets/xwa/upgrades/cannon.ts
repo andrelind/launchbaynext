@@ -105,7 +105,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/tractorbeam.png',
       },
     ],
-    cost: { value: 6 },
+    cost: { value: 4 },
     standard: true,
     epic: true,
     extended: true,
@@ -137,6 +137,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    restricted: 2,
   },
   {
     xws: 'underslungblastercannon',
@@ -168,15 +169,12 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    restrictions: [
-      { chassis: ['t70xwing', 't65xwing'] },
-      { factions: ['Resistance'] },
-    ],
+    restrictions: [{ factions: ['resistance'] }, {}],
   },
   {
     xws: 'syncedlasercannons',
     limited: 0,
-    cost: { value: 6 },
+    cost: { value: 8 },
     sides: [
       {
         title: 'Synced Laser Cannons',
@@ -247,7 +245,6 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -266,7 +263,6 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
-    cost: { value: 0 },
   },
   {
     name: 'Flechette Cannons',

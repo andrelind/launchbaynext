@@ -65,7 +65,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chewbacca.png',
       standard: true,
       wildspace: true,
-      keywords: ['Freighter', 'YT-1300'],
+      keywords: ['Freighter', 'YT-1300', 'Wookiee'],
       epic: true,
       ffg: 71,
     },

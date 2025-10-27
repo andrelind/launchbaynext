@@ -182,6 +182,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: false,
+    restrictions: [{}],
   },
   {
     xws: 'tractortentacles',
@@ -214,10 +215,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [
-      { baseSizes: ['Huge'] },
-      { chassis: ['tridentclassassaultship'] },
-    ],
+    restrictions: [{ chassis: ['tridentclassassaultship'] }],
     extended: false,
   },
   {
@@ -250,10 +248,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [
-      { baseSizes: ['Huge'] },
-      { chassis: ['tridentclassassaultship'] },
-    ],
+    restrictions: [{ chassis: ['tridentclassassaultship'] }],
     extended: false,
   },
   {
@@ -287,10 +282,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [
-      { baseSizes: ['Huge'] },
-      { chassis: ['tridentclassassaultship'] },
-    ],
+    restrictions: [{ chassis: ['tridentclassassaultship'] }],
     extended: false,
   },
   {
@@ -325,6 +317,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: false,
+    restrictions: [{ baseSizes: ['Huge'] }],
   },
   {
     limited: 0,
@@ -349,7 +342,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -374,7 +366,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -399,7 +390,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -424,7 +414,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -449,7 +438,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -474,7 +462,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -498,7 +485,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -523,7 +509,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -548,7 +533,6 @@ const t: UpgradeBase[] = [
         },
       },
     ],
-    cost: { value: 0 },
   },
 ];
 

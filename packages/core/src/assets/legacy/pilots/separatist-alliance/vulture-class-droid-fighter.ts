@@ -396,6 +396,48 @@ const t: ShipType = {
       epic: true,
       ffg: 1084,
     },
+    {
+      name: '00M Uplink Prototype',
+      xws: '00muplinkprototype-wat1',
+      initiative: 1,
+      limited: 1,
+      caption: 'Second-in-Command',
+      ability:
+        'While a friendly ship at range 0-1 resolves Networked Calculations, it may treat friendly ships at range 0-1 of you as being at range 1.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/00muplinkprototype-wat1.png',
+      standard: true,
+      wildspace: true,
+      cost: 23,
+      slots: ['Missile', 'Modification', 'Configuration'],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/00muplinkprototype-wat1.png',
+      keywords: ['Droid'],
+      epic: true,
+      extended: true,
+      ffg: 1181,
+    },
+    {
+      name: 'DFS-420',
+      xws: 'dfs420-wat1',
+      initiative: 4,
+      limited: 1,
+      caption: 'Marcan Deployer',
+      ability:
+        'You can perform primary attacks at range 0. After you execute a red maneuver or perform a red action, if there is an enemy ship at range 0-1, you may remove 1 stress token.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs420-wat1.png',
+      standard: true,
+      wildspace: true,
+      cost: 25,
+      slots: ['Talent', 'Missile', 'Modification', 'Configuration'],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs420-wat1.png',
+      keywords: ['Droid'],
+      epic: true,
+      extended: true,
+      ffg: 1182,
+    },
   ],
 };
 

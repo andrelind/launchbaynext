@@ -101,7 +101,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
-      ffg: 1152,
+      ffg: null,
     },
     {
       name: 'Dash Rendar',
@@ -205,7 +205,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
-      ffg: 1153,
+      ffg: null,
     },
     {
       name: '“Leebo”',

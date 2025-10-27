@@ -157,6 +157,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/104thbattalionpilot.png',
       caption: '',
+      restricted: 2,
     },
     {
       name: 'Squad Seven Veteran',

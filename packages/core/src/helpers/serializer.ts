@@ -39,7 +39,7 @@ export const getFactionKey = (faction: Faction) => {
 };
 
 export const serialize = (o?: XWS) => {
-  console.log('serialize', o);
+  // console.log('serialize', o);
 
   if (!o) {
     return;

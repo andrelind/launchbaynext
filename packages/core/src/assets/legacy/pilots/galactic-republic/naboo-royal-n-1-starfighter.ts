@@ -200,6 +200,46 @@ const t: ShipType = {
       epic: true,
       ffg: 987,
     },
+    {
+      name: 'Rhys Dallows',
+      xws: 'rhysdallows-wat1',
+      initiative: 6,
+      limited: 1,
+      caption: 'Echo Five',
+      standard: true,
+      wildspace: true,
+      cost: 45,
+      slots: ['Talent', 'Illicit', 'Sensor', 'Torpedo', 'Astromech'],
+      ability:
+        'Before you or a friendly Essara Till at range 0-3 would gain a green token, that ship may perform a [Barrel Roll] action instead.',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rhysdallows-wat1.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rhysdallows-wat1.png',
+      epic: true,
+      extended: true,
+      ffg: 1185,
+    },
+    {
+      name: 'Essara Till',
+      xws: 'essaratill-wat1',
+      initiative: 4,
+      limited: 1,
+      caption: 'Bravo Seven',
+      standard: true,
+      wildspace: true,
+      cost: 37,
+      slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
+      ability:
+        'Before you or a friendly Rhys Dallows at range 0-3 would gain a green token, that ship may perform a [Lock] action instead.',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/essaratill-wat1.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/essaratill-wat1.png',
+      epic: true,
+      extended: true,
+      ffg: 1186,
+    },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Royal_Naboo_N-1_Starfighter.png',
 };

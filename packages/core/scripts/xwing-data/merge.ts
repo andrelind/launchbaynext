@@ -53,6 +53,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
     ship.icon = shipData.icon;
 
     ship.pilots = pilots.map((pilot: XWDPilot) => {
+      // @ts-expect-error
       let local = ship.pilots.find(p => p.xws === pilot.xws)!;
       if (!local) {
         local = {
@@ -111,6 +112,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.slots = pilot.slots?.map(s => (s === 'Payload' ? 'Device' : s));
       local.image = pilot.image;
       local.artwork = pilot.artwork;
+      local.restricted = pilot.restricted && pilot.restricted > 0 ? pilot.restricted : undefined;
 
       if (!local.ffg) {
         // Check manifest first
@@ -143,6 +145,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
   };
 
   const processUpgrade = (key: SlotKey, data: XWDUpgrade) => {
+    // @ts-expect-error
     let upgrade = assets.upgrades[key].find(u => u.xws === data.xws);
     const { name, ...rest } = data;
 
@@ -208,19 +211,22 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
             : undefined,
         })),
         epic: true,
-        cost: rest.cost || { value: 0 },
-        restrictions: rest.restrictions?.map(r => {
-          const { action, factions, equipped } = r;
-          const res: Restrictions = { action, factions, equipped };
+        cost: rest.cost ?? undefined,
+        restrictions: rest.restrictions
+          ?.filter(r => Object.keys(r).length > 0)
+          ?.map(r => {
+            const { action, factions, equipped } = r;
+            const res: Restrictions = { action, factions, equipped };
 
-          if (r.sizes) {
-            res.baseSizes = r.sizes as Size[];
-          }
-          if (r.ships) {
-            res.chassis = r.ships;
-          }
-          return res;
-        }),
+            if (r.sizes) {
+              res.baseSizes = r.sizes as Size[];
+            }
+            if (r.ships) {
+              res.chassis = r.ships;
+            }
+            return res;
+          }),
+        restricted: rest.restricted && rest.restricted > 0 ? rest.restricted : undefined,
       };
       assets.upgrades[key].push(upgrade);
     } else if (upgrade) {
@@ -272,19 +278,22 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
         //     })
         //   : undefined,
       }));
-      // upgrade.cost = rest.cost || { value: 0 };
-      // upgrade.restrictions = rest.restrictions?.map((r) => {
-      //   const { action, factions, equipped } = r;
-      //   const res: Restrictions = { action, factions, equipped };
+      upgrade.cost = rest.cost ?? undefined;
+      upgrade.restrictions = rest.restrictions
+        ?.filter(r => Object.keys(r).length > 0)
+        ?.map(r => {
+          const { action, factions, equipped } = r;
+          const res: Restrictions = { action, factions, equipped };
 
-      //   if (r.sizes) {
-      //     res.baseSizes = r.sizes as Size[];
-      //   }
-      //   if (r.ships) {
-      //     res.chassis = r.ships;
-      //   }
-      //   return res;
-      // });
+          if (r.sizes) {
+            res.baseSizes = r.sizes as Size[];
+          }
+          if (r.ships) {
+            res.chassis = r.ships;
+          }
+          return res;
+        });
+      upgrade.restricted = rest.restricted && rest.restricted > 0 ? rest.restricted : undefined;
     }
   };
 

@@ -46,7 +46,7 @@ const t: ShipType = {
       cost: 30,
       xws: 'constablezuvio',
       ability:
-        'If you would drop a device, you may launch it using a [1 [Straight]) template instead.',
+        'If you would drop a device, you may launch it using a (1 [Straight]) template instead.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/constablezuvio.png',
       shipAbility: {

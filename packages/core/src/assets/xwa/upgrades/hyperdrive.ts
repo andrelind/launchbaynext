@@ -4,7 +4,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'syliure31hyperdrive',
     limited: 0,
-    cost: { value: 0 },
+    cost: { value: 3 },
     sides: [
       {
         title: 'Syliure-31 Hyperdrive',
@@ -21,6 +21,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
+    restrictions: [{ chassis: ['syliureclasshyperspacering'] }],
   },
 ];
 

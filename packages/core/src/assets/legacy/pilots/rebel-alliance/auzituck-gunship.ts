@@ -52,6 +52,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       ffg: 33,
+      keywords: ['Wookiee'],
     },
     {
       name: 'Lowhhrick',
@@ -71,6 +72,7 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       ffg: 32,
+      keywords: ['Wookiee'],
     },
     {
       name: 'Wullffwarro',
@@ -90,6 +92,29 @@ const t: ShipType = {
       wildspace: true,
       epic: true,
       ffg: 31,
+      keywords: ['Wookiee'],
+    },
+    {
+      name: 'Tarfful',
+      caption: 'Leader of Kachirho',
+      initiative: 5,
+      limited: 1,
+      cost: 59,
+      xws: 'tarfful-wat1',
+      ability:
+        'Setup: After placing forces, assign the Liberated condition to another friendly Wookiee or non-limited ship. After a friendly ship with the Liberated condition defends, you may acquire a lock on the attacker, ignoring range restrictions.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tarfful-wat1.png',
+      conditions: ['liberated-wat1'],
+      slots: ['Talent', 'Crew', 'Crew', 'Modification'],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tarfful-wat1.png',
+      standard: true,
+      wildspace: true,
+      keywords: ['Wookiee'],
+      epic: true,
+      extended: true,
+      ffg: 1163,
     },
   ],
 };

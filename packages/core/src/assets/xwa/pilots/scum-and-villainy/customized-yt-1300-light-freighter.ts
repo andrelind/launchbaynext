@@ -65,6 +65,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/freightercaptain.png',
       caption: '',
+      restricted: 1,
     },
     {
       name: 'Han Solo',

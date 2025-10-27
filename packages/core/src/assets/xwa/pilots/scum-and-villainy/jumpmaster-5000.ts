@@ -62,6 +62,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/contractedscout.png',
       caption: '',
+      restricted: 2,
     },
     {
       name: 'Dengar',

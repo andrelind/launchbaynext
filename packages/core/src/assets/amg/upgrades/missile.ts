@@ -206,7 +206,7 @@ const t: UpgradeBase[] = [
     ],
     restrictions: [
       { action: { type: 'Calculate', difficulty: 'White' } },
-      { factions: ['Separatist Alliance'] },
+      { factions: ['separatistalliance'] },
     ],
     cost: { value: 4 },
     standard: true,
@@ -238,7 +238,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
     epic: true,
     extended: true,

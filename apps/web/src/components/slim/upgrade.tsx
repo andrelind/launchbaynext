@@ -1,3 +1,4 @@
+import { factionFromKey } from '@web/helpers/convert';
 import type { Slot, Upgrade } from 'lbn-core/src/types';
 import { type FC } from 'react';
 import { colorForFaction } from '../../helpers/colors';
@@ -33,7 +34,7 @@ export const SlimUpgrade: FC<Props> = ({
               key={f}
               icon={f}
               className="mr-1"
-              color={colorForFaction(f)}
+              color={colorForFaction(factionFromKey(f))}
             />
           ))}
         {upgradeSide?.slots.map((s, i) => (

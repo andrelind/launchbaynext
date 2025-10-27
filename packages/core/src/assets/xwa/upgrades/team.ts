@@ -159,6 +159,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: false,
+    restrictions: [{ factions: ['scumandvillainy'] }],
   },
   {
     limited: 0,
@@ -243,7 +244,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [{ factions: ['separatistalliance'] }],
     extended: false,
   },
   {
@@ -288,7 +289,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: false,
-    restrictions: [{ factions: ['Scum and Villainy'] }],
+    restrictions: [{ factions: ['scumandvillainy'] }],
   },
   {
     limited: 1,
@@ -306,7 +307,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 1,
@@ -324,7 +324,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
 ];
 

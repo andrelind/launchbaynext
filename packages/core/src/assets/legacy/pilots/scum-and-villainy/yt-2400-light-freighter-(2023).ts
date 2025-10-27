@@ -98,7 +98,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
-      ffg: 1154,
+      ffg: null,
     },
     {
       name: '“Leebo”',
@@ -170,7 +170,7 @@ const t: ShipType = {
       wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
-      ffg: 1155,
+      ffg: null,
     },
   ],
 };

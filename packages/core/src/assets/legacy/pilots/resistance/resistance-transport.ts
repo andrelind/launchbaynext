@@ -179,6 +179,36 @@ const t: ShipType = {
       epic: true,
       ffg: 1051,
     },
+    {
+      name: 'Jannah',
+      xws: 'jannah-wat1',
+      initiative: 5,
+      limited: 1,
+      caption: 'Orbak Rider',
+      standard: true,
+      wildspace: true,
+      cost: 42,
+      slots: [
+        'Talent',
+        'Tech',
+        'Cannon',
+        'Cannon',
+        'Torpedo',
+        'Crew',
+        'Crew',
+        'Astromech',
+        'Modification',
+      ],
+      ability:
+        'After you perform an action added to your action bar by a [Crew] upgrade, you may perform a [Reinforce] action.',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jannah-wat1.png',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jannah-wat1.png',
+      epic: true,
+      extended: true,
+      ffg: 1175,
+    },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Resistance_Transport.png',
 };

@@ -131,7 +131,7 @@ export type Restrictions = {
   character?: string[];
   chassis?: string[];
   equipped?: Slot[];
-  factions?: Faction[];
+  factions?: FactionKey[];
   sides?: Side[];
   keywords?: string[];
   solitary?: boolean;
@@ -319,7 +319,7 @@ export type Upgrade = UpgradeBase & {
 export type UpgradeCostValue = { value: number };
 export type UpgradeCostFaction = {
   variable: 'faction';
-  values: { [f in Faction]: number };
+  values: { [f in FactionKey]: number };
 };
 export type UpgradeCostAgility = {
   variable: 'agility';

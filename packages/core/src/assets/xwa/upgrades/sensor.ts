@@ -89,6 +89,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: true,
+    restricted: 2,
   },
   {
     limited: 0,
@@ -126,7 +127,6 @@ const t: UpgradeBase[] = [
         charges: { value: 1, recovers: 1 },
       },
     ],
-    cost: { value: 0 },
     standard: true,
     epic: true,
     extended: true,
@@ -167,7 +167,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -185,7 +184,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
 ];
 

@@ -26,7 +26,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/advprotontorpedoes.png',
       },
     ],
-    cost: { value: 9 },
+    cost: { value: 7 },
     standard: true,
     epic: true,
     extended: true,
@@ -90,6 +90,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    restricted: 3,
   },
   {
     limited: 0,
@@ -173,6 +174,7 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
+    restricted: 2,
   },
 ];
 

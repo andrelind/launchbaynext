@@ -241,6 +241,35 @@ const t: ShipType = {
       epic: true,
       ffg: 895,
     },
+    {
+      name: 'Janus Kasmir',
+      caption: 'Kalleran Scoundrel',
+      initiative: 4,
+      limited: 1,
+      cost: 34,
+      xws: 'januskasmir-wat1',
+      ability:
+        'At the start of the Engagement Phase, you may spend 1 green token to perform a [Jam] action, even while stressed.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/januskasmir-wat1.png',
+      slots: [
+        'Talent',
+        'Crew',
+        'Device',
+        'Illicit',
+        'Modification',
+        'Modification',
+        'Title',
+      ],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/januskasmir-wat1.png',
+      standard: true,
+      wildspace: true,
+      keywords: ['Freighter'],
+      epic: true,
+      extended: true,
+      ffg: 1168,
+    },
   ],
 };
 

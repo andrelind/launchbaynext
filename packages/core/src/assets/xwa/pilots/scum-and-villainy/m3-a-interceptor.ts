@@ -60,6 +60,7 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cartelspacer.png',
       caption: '',
+      restricted: 3,
     },
     {
       name: 'Genesis Red',

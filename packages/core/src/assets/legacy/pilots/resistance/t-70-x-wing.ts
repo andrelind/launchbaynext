@@ -251,7 +251,7 @@ const t: ShipType = {
       xws: 'karekun',
       cost: 47,
       ability:
-        'While you boost, you may use the [1 [Turn Left]) or [1 [Turn Right]) template instead.',
+        'While you boost, you may use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
       shipAbility: {
         name: 'Weapon Hardpoint',
         text: 'You can equip 1 [Cannon], [Torpedo], or [Missile] upgrade.',

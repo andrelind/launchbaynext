@@ -199,6 +199,27 @@ const t: ShipType = {
       epic: true,
       ffg: 642,
     },
+    {
+      name: '“Strife”',
+      caption: 'Committed Combatant',
+      initiative: 3,
+      limited: 1,
+      cost: 34,
+      xws: 'strife-wat1',
+      ability:
+        'After an enemy ship in your [Single Turret Arc] defends, if you are not strained, you may gain 1 strain token to acquire a lock on that ship.',
+      slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/strife-wat1.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/strife-wat1.png',
+      standard: true,
+      wildspace: true,
+      keywords: ['TIE'],
+      epic: true,
+      extended: true,
+      ffg: 1179,
+    },
   ],
 };
 

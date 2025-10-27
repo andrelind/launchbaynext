@@ -293,7 +293,7 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [
-      { factions: ['Galactic Republic'] },
+      { factions: ['galacticrepublic'] },
       { action: { type: 'Lock' } },
     ],
     standard: true,
@@ -554,7 +554,7 @@ const t: UpgradeBase[] = [
     ],
     extended: true,
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { baseSizes: ['Small', 'Medium'] },
     ],
   },

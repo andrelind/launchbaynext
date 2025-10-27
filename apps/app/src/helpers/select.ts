@@ -1,5 +1,5 @@
 import { RuleSet, assets } from 'lbn-core/src';
-import { factionFromKey, keyFromSlot } from 'lbn-core/src/helpers/convert';
+import { factionFromKey, keyFromFaction, keyFromSlot } from 'lbn-core/src/helpers/convert';
 import { allSlots, slotKeys } from 'lbn-core/src/helpers/enums';
 import { TShip, freeSlotsForShip2, pointsForUpgrade2 } from 'lbn-core/src/helpers/loading';
 import {
@@ -124,7 +124,7 @@ export const upgradesForSlot2 = (
         const res = u.restrictions[j];
         let found = false;
 
-        if (res.factions?.includes(ship.faction)) {
+        if (res.factions?.includes(keyFromFaction(ship.faction))) {
           found = true;
         } else if (res.baseSizes?.includes(ship.size)) {
           found = true;

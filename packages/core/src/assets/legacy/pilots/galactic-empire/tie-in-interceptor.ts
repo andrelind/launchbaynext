@@ -787,6 +787,27 @@ const t: ShipType = {
       epic: true,
       ffg: 1184,
     },
+    {
+      name: 'Carnor Jax',
+      caption: "Emperor's Revenge",
+      initiative: 5,
+      limited: 1,
+      cost: 49,
+      xws: 'carnorjax-wat1',
+      ability:
+        'At the start of the Engagement Phase, you may choose 1 ship in your [Front Arc] at range 0-1 . If you do so, that ship gains 1 jam token.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/carnorjax-wat1.png',
+      slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/carnorjax-wat1.png',
+      standard: true,
+      wildspace: true,
+      keywords: ['TIE'],
+      epic: true,
+      extended: true,
+      ffg: 1173,
+    },
   ],
 };
 

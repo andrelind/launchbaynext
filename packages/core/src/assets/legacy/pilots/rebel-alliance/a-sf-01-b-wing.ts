@@ -537,6 +537,36 @@ const t: ShipType = {
       epic: true,
       ffg: 1154,
     },
+    {
+      name: 'Nera Dantels',
+      caption: 'Blue Dagger',
+      initiative: 3,
+      limited: 1,
+      cost: 44,
+      xws: 'neradantels-wat1',
+      ability:
+        'Gain a [Single Turret Arc] indicator. You must treat the [Front Arc] requirement of your equipped [Torpedo] upgrades as [Single Turret Arc]. After you gain a stress token, you may rotate your [Single Turret Arc] indicator.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/neradantels-wat1.png',
+      slots: [
+        'Talent',
+        'Sensor',
+        'Cannon',
+        'Cannon',
+        'Torpedo',
+        'Modification',
+        'Title',
+        'Configuration',
+      ],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/neradantels-wat1.png',
+      standard: true,
+      wildspace: true,
+      keywords: ['B-wing'],
+      epic: true,
+      extended: true,
+      ffg: 1162,
+    },
   ],
 };
 

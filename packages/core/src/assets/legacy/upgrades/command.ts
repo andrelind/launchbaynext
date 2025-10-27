@@ -185,8 +185,7 @@ const t: UpgradeBase[] = [
     xws: 'jandodonna',
     sides: [
       {
-        ability:
-          'Friendly ships at range 0-3 can spend your focus and evade tokens.',
+        ability: 'Friendly ships at range 0-3 can spend your focus and evade tokens.',
         title: 'Jan Dodonna',
         type: 'Command',
         slots: ['Command', 'Crew'],
@@ -229,8 +228,7 @@ const t: UpgradeBase[] = [
     xws: 'stalwartcaptain',
     sides: [
       {
-        ability:
-          'After you are destroyed, you are not removed until the end of the End Phase.',
+        ability: 'After you are destroyed, you are not removed until the end of the End Phase.',
         title: 'Stalwart Captain',
         type: 'Command',
         slots: ['Command', 'Crew'],
@@ -299,10 +297,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['Galactic Republic'] },
-      { chassis: ['delta7aethersprite', 'eta2actis'] },
-    ],
+    restrictions: [{ factions: ['galacticrepublic'] }, { chassis: ['delta7aethersprite', 'eta2actis'] }],
     standard: false,
     wildspace: false,
     epic: true,
@@ -325,10 +320,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['Rebel Alliance'] },
-      { chassis: ['asf01bwing'] },
-    ],
+    restrictions: [{ factions: ['rebelalliance'] }, { chassis: ['asf01bwing'] }],
     standard: false,
     wildspace: false,
     epic: true,
@@ -481,8 +473,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney.png',
       },
       {
-        ability:
-          'Non-Scum ships in your squad are treated as friendly instead of allied.',
+        ability: 'Non-Scum ships in your squad are treated as friendly instead of allied.',
         title: 'In It For Your Rebellion',
         type: 'Command',
         slots: ['Command'],
@@ -493,10 +484,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [
-      { factions: ['Scum and Villainy'] },
-      { 'non-limited': false },
-    ],
+    restrictions: [{ factions: ['scumandvillainy'] }, {}, {}],
     standarized: true,
     standard: false,
     wildspace: false,
@@ -520,10 +508,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['Separatist Alliance'] },
-      { baseSizes: ['Huge'] },
-    ],
+    restrictions: [{ factions: ['separatistalliance'] }, { baseSizes: ['Huge'] }],
     standard: false,
     wildspace: false,
     epic: true,
@@ -546,10 +531,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 6 },
-    restrictions: [
-      { factions: ['Separatist Alliance'] },
-      { baseSizes: ['Huge'] },
-    ],
+    restrictions: [{ factions: ['separatistalliance'] }, { baseSizes: ['Huge'] }],
     standard: false,
     wildspace: false,
     epic: true,
@@ -583,10 +565,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 8 },
-    restrictions: [
-      { factions: ['Separatist Alliance', 'Scum and Villainy'] },
-      { baseSizes: ['Huge'] },
-    ],
+    restrictions: [{ factions: ['separatistalliance', 'scumandvillainy'] }, { baseSizes: ['Huge'] }],
     standard: false,
     wildspace: false,
     epic: true,
@@ -666,10 +645,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 5 },
-    restrictions: [
-      { baseSizes: ['Huge'] },
-      { factions: ['Separatist Alliance'] },
-    ],
+    restrictions: [{ baseSizes: ['Huge'] }, { factions: ['separatistalliance'] }],
     standard: false,
     wildspace: false,
     epic: true,

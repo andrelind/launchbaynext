@@ -236,7 +236,7 @@ const t: UpgradeBase[] = [
     ],
     standard: false,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [{ factions: ['separatistalliance'] }],
   },
   {
     xws: 'tractortechnicians',

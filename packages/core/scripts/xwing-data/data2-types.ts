@@ -1,4 +1,4 @@
-import { Action, Arc, Faction, Side as ForceSide, Size, Slot, Stat } from '../../src/types';
+import { Action, Arc, Faction, FactionKey, Side as ForceSide, Size, Slot, Stat } from '../../src/types';
 
 export interface XWDStat {
   arc: string;
@@ -40,6 +40,7 @@ export interface XWDPilot {
   slots: Slot[];
   image: string;
   artwork: string;
+  restricted?: number;
   ffg: number;
   hyperspace: boolean;
   keywords: string[];
@@ -133,7 +134,7 @@ export interface XWSRestriction {
   sizes: string[];
   action: Action;
   ships: string[];
-  factions: Faction[];
+  factions: FactionKey[];
   equipped: Slot[];
   shipAbility: string[];
   standardized?: boolean;
@@ -147,4 +148,5 @@ export interface XWDUpgrade {
   cost: Cost;
   restrictions: XWSRestriction[];
   hyperspace: boolean;
+  restricted?: number;
 }

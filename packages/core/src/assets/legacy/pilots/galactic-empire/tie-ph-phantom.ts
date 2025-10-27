@@ -47,7 +47,7 @@ const t: ShipType = {
       cost: 51,
       xws: 'echo',
       ability:
-        'While you decloak, you must use the [2 [Bank Left]) or [2 [Bank Right]) template instead of the [2 [Straight]) template.',
+        'While you decloak, you must use the (2 [Bank Left]) or (2 [Bank Right]) template instead of the (2 [Straight]) template.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo.png',
       shipAbility: {
@@ -129,6 +129,28 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 133,
+    },
+    {
+      name: 'Captain Saxton',
+      caption: 'Unpredictable Menace',
+      initiative: 4,
+      limited: 1,
+      cost: 43,
+      xws: 'captainsaxton-wat1',
+      ability:
+        'While a friendly ship at range 0-2 decloaks, you may spend 2 [Charge]. If you do, that ship may use a template of speed 1 higher or lower.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainsaxton-wat1.png',
+      charges: { value: 2, recovers: 1 },
+      slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsaxton-wat1.png',
+      standard: true,
+      wildspace: true,
+      keywords: ['TIE'],
+      epic: true,
+      extended: true,
+      ffg: 1174,
     },
   ],
 };

@@ -628,7 +628,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     restrictions: [
-      { factions: ['Galactic Empire'] },
+      { factions: ['galacticempire'] },
       { chassis: ['tieddefender'] },
     ],
     extended: true,

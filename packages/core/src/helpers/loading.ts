@@ -1,5 +1,5 @@
 import { RuleSet, assets } from '..';
-import { factionFromKey, getFaction, keyFromSlot } from '../helpers/convert';
+import { factionFromKey, getFaction, keyFromFaction, keyFromSlot } from '../helpers/convert';
 import { allSlots, slotKeys } from '../helpers/enums';
 import {
   FactionKey,
@@ -177,7 +177,7 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
     return typedCost.values[ship.size] || 0;
   } else if (cost.variable && cost.variable === 'faction') {
     const typedCost = cost as UpgradeCostFaction;
-    return typedCost.values[ship.faction];
+    return typedCost.values[keyFromFaction(ship.faction)];
   }
   return 0;
 };

@@ -43,7 +43,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 3 },
-    restrictions: [{ action: { type: 'SLAM', difficulty: 'White' } }],
+    restrictions: [{ action: { type: 'SLAM' } }],
     standard: true,
     epic: true,
     extended: true,
@@ -227,7 +227,6 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: true,
-    restrictions: [{ baseSizes: ['Medium', 'Large'] }],
   },
   {
     limited: 0,
@@ -294,12 +293,12 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [
-      { factions: ['Galactic Republic'] },
+      { factions: ['galacticrepublic'] },
       { action: { type: 'Lock', difficulty: 'White' } },
     ],
     standard: true,
     epic: true,
-    cost: { value: 1 },
+    cost: { value: 2 },
     extended: true,
   },
   {
@@ -370,10 +369,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [
-      { baseSizes: ['Small', 'Medium'] },
-      { stat: { type: 'shields', value: 1 } },
-    ],
+    restrictions: [{ baseSizes: ['Small', 'Medium'] }, {}],
     cost: { value: 1 },
     extended: true,
   },
@@ -442,18 +438,8 @@ const t: UpgradeBase[] = [
       },
     ],
     standarized: true,
-    restrictions: [
-      {
-        chassis: [
-          'vultureclassdroidfighter',
-          'hyenaclassdroidbomber',
-          'droidtrifighter',
-          'rogueclassstarfighter',
-        ],
-      },
-      { action: { type: 'Calculate' } },
-    ],
-    cost: { value: 2 },
+    restrictions: [{}, {}],
+    cost: { value: 1 },
     extended: true,
   },
   {
@@ -477,10 +463,6 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [
-      { keywords: ['TIE'] },
-      { stat: { type: 'agility', value: 3 } },
-    ],
     extended: true,
   },
   {
@@ -505,7 +487,7 @@ const t: UpgradeBase[] = [
       },
     ],
     extended: true,
-    restrictions: [{ keywords: ['Mandalorian'] }],
+    restrictions: [{}],
   },
   {
     limited: 0,
@@ -529,14 +511,14 @@ const t: UpgradeBase[] = [
       },
     ],
     extended: true,
-    restrictions: [{ keywords: ['Mandalorian'] }],
+    restrictions: [{}],
   },
   {
     limited: 0,
     xws: 'burnoutthrusters',
     standard: true,
     epic: true,
-    cost: { value: 6 },
+    cost: { value: 5 },
     sides: [
       {
         ability:
@@ -555,7 +537,7 @@ const t: UpgradeBase[] = [
     ],
     extended: true,
     restrictions: [
-      { factions: ['Scum and Villainy'] },
+      { factions: ['scumandvillainy'] },
       { baseSizes: ['Small', 'Medium'] },
     ],
   },
@@ -601,7 +583,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -619,7 +600,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -637,7 +617,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -655,7 +634,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -674,7 +652,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -692,7 +669,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -711,7 +687,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -729,7 +704,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -747,7 +721,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -766,7 +739,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -785,7 +757,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     name: 'Advanced Warning Systmes',
@@ -878,7 +849,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -897,7 +867,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
 ];
 

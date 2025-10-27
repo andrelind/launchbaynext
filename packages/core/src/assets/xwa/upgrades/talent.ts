@@ -161,7 +161,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    restrictions: [{ factions: ['First Order'] }],
+    restrictions: [{ factions: ['firstorder'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -183,7 +183,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 3 },
-    restrictions: [{ factions: ['Scum and Villainy'] }],
+    restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -205,7 +205,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    restrictions: [{ factions: ['Resistance'] }],
+    restrictions: [{ factions: ['resistance'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -231,7 +231,7 @@ const t: UpgradeBase[] = [
     standard: false,
     epic: true,
     extended: true,
-    restrictions: [{ baseSizes: ['Small', 'Medium'] }],
+    restricted: 1,
   },
   {
     limited: 0,
@@ -254,6 +254,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    restricted: 2,
   },
   {
     limited: 1,
@@ -357,8 +358,8 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/ruthless.png',
       },
     ],
-    cost: { value: 1 },
-    restrictions: [{ factions: ['Galactic Empire'] }],
+    cost: { value: 2 },
+    restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -380,7 +381,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/saturationsalvo.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 6 },
     restrictions: [{ action: { type: 'Reload' } }],
     standard: true,
     epic: true,
@@ -402,8 +403,8 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/selfless.png',
       },
     ],
-    cost: { value: 4 },
-    restrictions: [{ factions: ['Rebel Alliance'] }],
+    cost: { value: 3 },
+    restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
     epic: true,
     extended: true,
@@ -428,7 +429,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/squadleader.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 5 },
     standard: true,
     epic: true,
     extended: true,
@@ -454,6 +455,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    restricted: 3,
   },
   {
     limited: 0,
@@ -471,7 +473,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/trickshot.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 5 },
     standard: true,
     epic: true,
     extended: true,
@@ -495,7 +497,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Separatist Alliance'] }],
+    restrictions: [{ factions: ['separatistalliance'] }],
     cost: { value: 4 },
     extended: true,
   },
@@ -516,11 +518,8 @@ const t: UpgradeBase[] = [
       },
     ],
     epic: true,
-    restrictions: [
-      { factions: ['Galactic Republic'] },
-      { keywords: ['Clone'] },
-    ],
-    cost: { value: 5 },
+    restrictions: [{ factions: ['galacticrepublic'] }, {}],
+    cost: { value: 2 },
     standard: true,
     extended: true,
   },
@@ -545,6 +544,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['nantexclassstarfighter'] }],
     cost: { value: 10 },
     extended: true,
+    restricted: 2,
   },
   {
     xws: 'graviticdeflection',
@@ -596,6 +596,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     extended: true,
+    restricted: 3,
   },
   {
     limited: 0,
@@ -628,7 +629,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     cost: { value: 2 },
-    restrictions: [{ factions: ['First Order'] }],
+    restrictions: [{ factions: ['firstorder'] }],
     extended: true,
   },
   {
@@ -673,7 +674,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ keywords: ['TIE'] }],
+    restrictions: [{}],
     extended: true,
   },
   {
@@ -719,7 +720,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ keywords: ['A-wing'] }],
+    restrictions: [{}],
     extended: true,
   },
   {
@@ -742,7 +743,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ keywords: ['X-wing'] }, { equipped: ['Configuration'] }],
+    restrictions: [{}, { equipped: ['Configuration'] }],
     extended: true,
   },
   {
@@ -764,7 +765,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Scum and Villainy'] }],
+    restrictions: [{ factions: ['scumandvillainy'] }],
     extended: true,
   },
   {
@@ -787,7 +788,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ keywords: ['Y-wing'] }],
+    restrictions: [{}],
     extended: true,
   },
   {
@@ -809,7 +810,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Galactic Empire'] }],
+    restrictions: [{ factions: ['galacticempire'] }],
     extended: true,
   },
   {
@@ -831,7 +832,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    restrictions: [{ factions: ['Rebel Alliance'] }],
+    restrictions: [{ factions: ['rebelalliance'] }],
     extended: true,
   },
   {
@@ -875,7 +876,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    restrictions: [{ action: { type: 'Reload' } }, { keywords: ['TIE'] }],
+    restrictions: [{}, { action: { type: 'Reload' } }],
     standard: true,
     epic: true,
     extended: true,
@@ -901,7 +902,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     cost: { value: 1 },
-    restrictions: [{ keywords: ['Mandalorian'] }],
+    restrictions: [{}],
     extended: true,
   },
   {
@@ -922,7 +923,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    cost: { value: 4 },
+    cost: { value: 3 },
     extended: true,
   },
   {
@@ -964,7 +965,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -982,7 +982,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1000,7 +999,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1054,7 +1052,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1072,7 +1069,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1090,7 +1086,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1108,7 +1103,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1126,7 +1120,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1145,7 +1138,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1163,7 +1155,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1182,7 +1173,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1201,7 +1191,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1219,7 +1208,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1237,7 +1225,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1255,7 +1242,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1273,7 +1259,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1291,7 +1276,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     name: 'Determination',
@@ -1420,7 +1404,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1438,7 +1421,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1456,7 +1438,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1474,7 +1455,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 1,
@@ -1493,7 +1473,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1512,7 +1491,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1530,7 +1508,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -1548,7 +1525,6 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
-    cost: { value: 0 },
   },
 ];
 

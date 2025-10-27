@@ -99,7 +99,7 @@ const t: ShipType = {
       cost: 44,
       xws: 'solsixxa',
       ability:
-        'If you would drop a device using a [1 [Straight]) template, you may drop it using any other speed 1 template instead.',
+        'If you would drop a device using a (1 [Straight]) template, you may drop it using any other speed 1 template instead.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/solsixxa.png',
       slots: [

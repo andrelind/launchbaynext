@@ -90,7 +90,7 @@ const t: UpgradeBase[] = [
     ],
     cost: {
       variable: 'size',
-      values: { Small: 7, Medium: 6, Large: 5, Huge: 4 },
+      values: { Small: 5, Medium: 4, Large: 3, Huge: 3 },
     },
     standard: true,
     wildspace: true,

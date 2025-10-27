@@ -100,7 +100,6 @@ const t: UpgradeBase[] = [
         slots: ['Cargo'],
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -119,7 +118,6 @@ const t: UpgradeBase[] = [
         charges: { value: 3, recovers: 0 },
       },
     ],
-    cost: { value: 0 },
   },
   {
     limited: 0,
@@ -138,7 +136,6 @@ const t: UpgradeBase[] = [
         charges: { value: 1, recovers: 1 },
       },
     ],
-    cost: { value: 0 },
   },
 ];
 

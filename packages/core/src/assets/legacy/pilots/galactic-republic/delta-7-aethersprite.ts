@@ -288,6 +288,28 @@ const t: ShipType = {
       epic: true,
       ffg: 974,
     },
+    {
+      name: 'Depa Billaba',
+      caption: 'Hazard Three',
+      initiative: 3,
+      limited: 1,
+      xws: 'depabillaba-wat1',
+      ability:
+        'While a friendly ship in your [Full Front Arc] defends or performs an attack, if that ship has more inactive [Force] than active [Force], it may spend your [Force] as if that ship has them.',
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/depabillaba-wat1.png',
+      force: { value: 2, recovers: 1, side: ['light'] },
+      standard: true,
+      wildspace: true,
+      cost: 38,
+      slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/depabillaba-wat1.png',
+      keywords: ['Jedi', 'Light Side'],
+      epic: true,
+      extended: true,
+      ffg: 1184,
+    },
   ],
 };
 
