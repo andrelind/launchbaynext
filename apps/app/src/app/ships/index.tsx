@@ -32,6 +32,7 @@ export default function SelectShipScreen() {
 
     return (
         <LegendList
+            contentContainerStyle={tw`py-2 px-2 android:pb-24 ios:pb-10`}
             data={data}
             estimatedItemSize={56}
             recycleItems
