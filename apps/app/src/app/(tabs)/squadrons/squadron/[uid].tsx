@@ -50,6 +50,44 @@ export default function SquadronScreen() {
         available.ships?.filter((a) => a.count < 0)?.length > 0 ||
         available.upgrades?.filter((a) => a.count < 0)?.length > 0;
 
+    // Check for restricted pilots and upgrades and sum them up on xws
+    const restricted = ships?.reduce((acc, ship) => {
+        if (ship.pilot?.limited && ship.pilot.limited > 0) {
+            if (!acc[ship.pilot?.name!]) {
+                acc[ship.pilot?.name!] = { count: 0, max: ship.pilot.limited! };
+            }
+            acc[ship.pilot?.name!].count += 1;
+        }
+
+        if ((ship.pilot?.restricted || 0) > 0) {
+            if (!acc[ship.pilot?.name!]) {
+                acc[ship.pilot?.name!] = { count: 0, max: ship.pilot!.restricted! };
+            }
+            acc[ship.pilot?.name!].count += 1;
+        }
+
+        if (ship.pilot?.upgrades) {
+            Object.values(ship.pilot.upgrades).forEach((upgrade) => {
+                if (upgrade.limited && upgrade.limited > 0) {
+                    if (!acc[upgrade.sides[0].title]) {
+                        acc[upgrade.sides[0].title] = { count: 0, max: upgrade.limited };
+                    }
+                    acc[upgrade.sides[0].title].count += 1;
+                }
+
+                if (upgrade.restricted && (upgrade.restricted > 0)) {
+                    if (!acc[upgrade.sides[0].title]) {
+                        acc[upgrade.sides[0].title] = { count: 0, max: upgrade.restricted };
+                    }
+                    acc[upgrade.sides[0].title].count += 1;
+                }
+            });
+        }
+        return acc;
+    }, {} as { [key: string]: { count: number, max: number } });
+    const restrictedItems = Object.entries(restricted || {}).filter(([_, v]) => v.count > v.max).map(([k, v]) => ({ name: k, count: v.count, max: v.max }));
+
+
     if (!xws) {
         return <View />;
     }
@@ -74,6 +112,27 @@ export default function SquadronScreen() {
                             Not all items are available in the collection
                         </Text>
                     </TouchableOpacity>
+                </Animated.View>
+            )}
+            {restrictedItems.length > 0 && (
+                <Animated.View
+                    entering={FadeIn}
+                    layout={Layout.springify()}
+                    exiting={FadeOut}
+                >
+                    {restrictedItems.map((info) => (
+                        <View
+                            key={info.name}
+                            style={tw`flex-row items-center justify-center p-2 gap-x-2`}
+                        >
+                            <Feather name="alert-octagon" size={24} color={red} />
+
+                            <Text style={tw`text-white`}>
+                                {`Restricted limit exceeded for ${info.name} (${info.count}/${info.max})`}
+                            </Text>
+                        </View>
+                    ))}
+
                 </Animated.View>
             )}
         </View>
