@@ -204,6 +204,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 8 },
+    restrictions: [{ baseSizes: ['Medium', 'Large'] }],
     standard: false,
     epic: true,
     extended: true,
@@ -417,6 +418,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
+    restrictions: [{ keywords: ['TIE'] }, { stat: { type: 'agility', value: 3 } }],
     extended: true,
   },
   {
