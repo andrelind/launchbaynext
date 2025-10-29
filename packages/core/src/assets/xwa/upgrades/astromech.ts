@@ -12,8 +12,7 @@ const t: UpgradeBase[] = [
           'Action: Spend 1 non-recurring [Charge] from another equipped upgrade to recover 1 shield. Action: Spend 2 shields to recover 1 non-recurring [Charge] on an equipped upgrade.',
         slots: ['Astromech'],
         image: 'https://infinitearenas.com/xw2/images/upgrades/chopper.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/chopper.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/chopper.png',
       },
     ],
     cost: { value: 2 },
@@ -33,8 +32,7 @@ const t: UpgradeBase[] = [
           'After you fully execute a maneuver, if you have not dropped or launched a device this round, you may drop 1 bomb.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/genius.png',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/genius.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/genius.png',
       },
     ],
     cost: { value: 0 },
@@ -50,13 +48,11 @@ const t: UpgradeBase[] = [
       {
         title: 'R2 Astromech',
         type: 'Astromech',
-        ability:
-          'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
+        ability: 'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
         image: 'https://infinitearenas.com/xw2/images/upgrades/r2astromech.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2astromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2astromech.png',
       },
     ],
     cost: { value: 7 },
@@ -71,13 +67,11 @@ const t: UpgradeBase[] = [
       {
         title: 'R2-D2',
         type: 'Astromech',
-        ability:
-          'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
+        ability: 'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r2d2.png',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2.png',
       },
     ],
     cost: { value: 6 },
@@ -97,8 +91,7 @@ const t: UpgradeBase[] = [
           'You can maintain up to 2 locks. Each lock must be on a different object. After you perform a [Lock] action, you may acquire a lock.',
         slots: ['Astromech'],
         image: 'https://infinitearenas.com/xw2/images/upgrades/r3astromech.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r3astromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r3astromech.png',
       },
     ],
     cost: { value: 3 },
@@ -117,8 +110,7 @@ const t: UpgradeBase[] = [
           'Decrease the difficulty of your speed 1-2 basic maneuvers ([Turn Left], [Bank Left], [Straight], [Bank Right], [Turn Right]).',
         slots: ['Astromech'],
         image: 'https://infinitearenas.com/xw2/images/upgrades/r4astromech.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4astromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r4astromech.png',
       },
     ],
     cost: { value: 2 },
@@ -134,13 +126,11 @@ const t: UpgradeBase[] = [
       {
         title: 'R5 Astromech',
         type: 'Astromech',
-        ability:
-          'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
+        ability: 'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
         image: 'https://infinitearenas.com/xw2/images/upgrades/r5astromech.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5astromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r5astromech.png',
       },
     ],
     cost: { value: 6 },
@@ -155,13 +145,11 @@ const t: UpgradeBase[] = [
       {
         title: 'R5-D8',
         type: 'Astromech',
-        ability:
-          'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
+        ability: 'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
         image: 'https://infinitearenas.com/xw2/images/upgrades/r5d8.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5d8.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r5d8.png',
       },
     ],
     cost: { value: 7 },
@@ -182,8 +170,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/r5p8.png',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5p8.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r5p8.png',
       },
     ],
     cost: { value: 4 },
@@ -202,8 +189,7 @@ const t: UpgradeBase[] = [
         ability: 'You can perform attacks against friendly ships.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r5tk.png',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5tk.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r5tk.png',
       },
     ],
     cost: { value: 0 },
@@ -224,8 +210,7 @@ const t: UpgradeBase[] = [
           'Before you activate or engage, you may spend 1 [Charge] to ignore obstacles until the end of this phase.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r5x3.png',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r5x3.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r5x3.png',
       },
     ],
     cost: { value: 4 },
@@ -241,11 +226,9 @@ const t: UpgradeBase[] = [
       {
         title: 'R2-HA',
         type: 'Astromech',
-        ability:
-          'While you defend, you may spend your lock on the attacker to reroll any number of your defense dice.',
+        ability: 'While you defend, you may spend your lock on the attacker to reroll any number of your defense dice.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r2ha.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2ha.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2ha.png',
         slots: ['Astromech'],
       },
     ],
@@ -262,11 +245,9 @@ const t: UpgradeBase[] = [
       {
         title: 'BB-8',
         type: 'Astromech',
-        ability:
-          'During the System Phase, you may spend 1 [Charge] to perform a [Barrel Roll] or [Boost] action.',
+        ability: 'During the System Phase, you may spend 1 [Charge] to perform a [Barrel Roll] or [Boost] action.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/bb8.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bb8.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/bb8.png',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -284,11 +265,9 @@ const t: UpgradeBase[] = [
       {
         title: 'BB Astromech',
         type: 'Astromech',
-        ability:
-          'During the System Phase, you may spend 1 [Charge] to perform a [Barrel Roll] action.',
+        ability: 'During the System Phase, you may spend 1 [Charge] to perform a [Barrel Roll] action.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/bbastromech.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/bbastromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/bbastromech.png',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -309,8 +288,7 @@ const t: UpgradeBase[] = [
         ability:
           'While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/m9g8.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/m9g8.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/m9g8.png',
         slots: ['Astromech'],
       },
     ],
@@ -331,10 +309,8 @@ const t: UpgradeBase[] = [
           'Before you execute a basic maneuver, you may spend 1 [Charge]. If you do, while you execute that maneuver, reduce its difficulty.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/r4pastromech.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4pastromech.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/r4pastromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r4pastromech.png',
       },
     ],
     restrictions: [{ factions: ['galacticrepublic'] }],
@@ -355,8 +331,7 @@ const t: UpgradeBase[] = [
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
         image: 'https://infinitearenas.com/xw2/images/upgrades/r4p17.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4p17.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r4p17.png',
       },
     ],
     restrictions: [{ factions: ['galacticrepublic'] }],
@@ -376,8 +351,7 @@ const t: UpgradeBase[] = [
           'After you fully execute a red maneuver, if there is an enemy ship in your [Bullseye Arc], gain 1 calculate token.',
         slots: ['Astromech'],
         image: 'https://infinitearenas.com/xw2/images/upgrades/r4p44.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4p44.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r4p44.png',
       },
     ],
     restrictions: [{ factions: ['galacticrepublic'] }],
@@ -397,8 +371,7 @@ const t: UpgradeBase[] = [
           'While you perform an attack, you may spend 1 evade token to change 1 [Focus] result to a [Hit] result.',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r2c4.png',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2c4.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2c4.png',
       },
     ],
     restrictions: [{ factions: ['galacticrepublic'] }],
@@ -417,8 +390,7 @@ const t: UpgradeBase[] = [
         title: 'R2-A6',
         type: 'Astromech',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2a6.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2a6.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r2a6.png',
       },
     ],
@@ -434,8 +406,7 @@ const t: UpgradeBase[] = [
     sides: [
       {
         title: 'C1-10P',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c110p.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/c110p.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/c110p.png',
         ability:
           'Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 [Charge] to perform a red [Evade] action, even while stressed. During the End Phase, if this card has 0 active [Charge], flip it.',
@@ -445,11 +416,9 @@ const t: UpgradeBase[] = [
       },
       {
         title: 'C1-10P (Erratic)',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/c110p-sideb.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/c110p-sideb.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/c110p-sideb.png',
-        ability:
-          'After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token.',
+        ability: 'After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token.',
         slots: ['Astromech'],
         type: 'Astromech',
       },
@@ -471,8 +440,7 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r1j5.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r1j5.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r1j5.png',
       },
     ],
@@ -494,10 +462,8 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-republic.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/r2d2-republic.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-republic.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/r2d2-republic.png',
       },
     ],
     restrictions: [{ factions: ['galacticrepublic'] }],
@@ -517,10 +483,8 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         charges: { value: 4, recovers: 0 },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-resistance.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/r2d2-resistance.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2-resistance.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/r2d2-resistance.png',
       },
     ],
     restrictions: [{ factions: ['resistance'] }],
@@ -539,8 +503,7 @@ const t: UpgradeBase[] = [
         title: 'R6-D8',
         type: 'Astromech',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r6d8.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r6d8.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r6d8.png',
       },
     ],
@@ -556,13 +519,11 @@ const t: UpgradeBase[] = [
     epic: true,
     sides: [
       {
-        ability:
-          'While you barrel roll or boost, you can move through and overlap obstacles.',
+        ability: 'While you barrel roll or boost, you can move through and overlap obstacles.',
         title: 'Q7 Astromech',
         type: 'Astromech',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/q7astromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/q7astromech.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/q7astromech.png',
       },
     ],
@@ -583,8 +544,7 @@ const t: UpgradeBase[] = [
         type: 'Astromech',
         slots: ['Astromech'],
         charges: { value: 3, recovers: 0 },
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r7a7.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r7a7.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r7a7.png',
       },
     ],
@@ -603,8 +563,7 @@ const t: UpgradeBase[] = [
         title: 'R4-B11',
         type: 'Astromech',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/r4b11.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r4b11.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/r4b11.png',
       },
     ],
@@ -624,10 +583,8 @@ const t: UpgradeBase[] = [
         title: 'Watchful Astromech',
         type: 'Astromech',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/watchfulastromech.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/watchfulastromech.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/watchfulastromech.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/watchfulastromech.png',
       },
     ],
     cost: { value: 2 },
@@ -644,8 +601,7 @@ const t: UpgradeBase[] = [
         title: 'L4E-R5',
         type: 'Astromech',
         slots: ['Astromech'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/l4er5.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/l4er5.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/l4er5.png',
         grants: [
           {
@@ -660,9 +616,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['resistance'], action: { type: 'Rotate Arc' } },
-    ],
+    restrictions: [{ factions: ['resistance'] }, { action: { type: 'Rotate Arc' } }],
     standard: true,
     epic: true,
     extended: true,
@@ -674,8 +628,7 @@ const t: UpgradeBase[] = [
       {
         title: 'R2-A3',
         type: 'Astromech',
-        ability:
-          'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
+        ability: 'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -692,8 +645,7 @@ const t: UpgradeBase[] = [
       {
         title: 'R2-D2',
         type: 'Astromech',
-        ability:
-          'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
+        ability: 'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -710,8 +662,7 @@ const t: UpgradeBase[] = [
       {
         title: 'R2-F2',
         type: 'Astromech',
-        ability:
-          'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
+        ability: 'After you reveal your dial, you may spend 1 [Charge] and gain 1 disarm token to recover 1 shield.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -728,8 +679,7 @@ const t: UpgradeBase[] = [
       {
         title: 'R5-D8',
         type: 'Astromech',
-        ability:
-          'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
+        ability: 'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -746,8 +696,7 @@ const t: UpgradeBase[] = [
       {
         title: 'R5-K6',
         type: 'Astromech',
-        ability:
-          'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
+        ability: 'Action: Spend 1 [Charge] to repair 1 facedown damage card. Action: Repair 1 faceup Ship damage card.',
         slots: ['Astromech'],
         charges: { value: 2, recovers: 0 },
       },
@@ -762,8 +711,7 @@ const t: UpgradeBase[] = [
     xws: 'preciseastromech-battleofyavin',
     sides: [
       {
-        ability:
-          'After you perform an action, you may spend 1 [Charge] to perform a red [Lock] action.',
+        ability: 'After you perform an action, you may spend 1 [Charge] to perform a red [Lock] action.',
         title: 'Precise Astromech',
         type: 'Astromech',
         slots: ['Astromech'],
@@ -780,8 +728,7 @@ const t: UpgradeBase[] = [
     xws: 'targetingastromech-battleofyavin',
     sides: [
       {
-        ability:
-          'After you perform a [Lock] action, you may perform a red [Rotate Arc] action.',
+        ability: 'After you perform a [Lock] action, you may perform a red [Rotate Arc] action.',
         title: 'Targeting Astromech',
         type: 'Astromech',
         slots: ['Astromech'],
@@ -815,8 +762,7 @@ const t: UpgradeBase[] = [
     xws: 'r2a3-battleoverendor',
     sides: [
       {
-        ability:
-          'After you perform an action, you may spend 1 [Charge] to acquire a lock.',
+        ability: 'After you perform an action, you may spend 1 [Charge] to acquire a lock.',
         title: 'R2-A3',
         type: 'Astromech',
         slots: ['Astromech'],
