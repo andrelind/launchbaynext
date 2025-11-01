@@ -59,8 +59,8 @@ const CreateSquadronSheet = ({
   }
 
   return (
-    <ActionSheet id={sheetId} useBottomSafeAreaPadding>
-      <View style={tw`flex-row `}>
+    <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
+      <View style={tw`flex-row`}>
         <TouchableOpacity
           style={tw`px-3 py-3 flex-1 items-center`}
           onPress={async () => {

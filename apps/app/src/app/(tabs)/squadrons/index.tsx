@@ -64,7 +64,7 @@ export default function SquadronsScreen() {
         <>
             <LegendList
                 style={tw`bg-zinc-950 flex-1`}
-                contentContainerStyle={tw`py-2 px-2 android:pb-24`}
+                contentContainerStyle={tw`py-2 px-2 android:pb-30`}
                 showsVerticalScrollIndicator={false}
                 data={filtered || []}
                 keyExtractor={(l: XWS) => l.vendor.lbn.uid}

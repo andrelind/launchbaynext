@@ -36,7 +36,7 @@ const SelectObstaclesSheet: FC<SheetProps<'SelectObstaclesSheet'>> = ({
   const setObstacles = useXwsStore((s) => s.setObstacles);
 
   return (
-    <ActionSheet id={sheetId} useBottomSafeAreaPadding>
+    <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
       <View style={tw`flex m-2`}>
         {list.map((o) => (
           <View key={o.t}>

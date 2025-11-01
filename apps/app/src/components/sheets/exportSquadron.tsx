@@ -32,7 +32,7 @@ const ExportSquadronSheet = ({
     const printUrl = `https://launchbaynext.app/print?lbx=${lbx}`;
 
     return (
-        <ActionSheet id={sheetId} useBottomSafeAreaPadding>
+        <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
             <View style={tw`p-2 gap-y-2`}>
                 <Text style={tw`text-lg font-semibold`}>Export Squadron</Text>
 

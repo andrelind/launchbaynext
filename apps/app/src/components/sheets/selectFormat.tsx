@@ -23,7 +23,7 @@ const SelectFormatSheet = ({
   const setFormat = useXwsStore((s) => s.setFormat);
 
   return (
-    <ActionSheet id={sheetId} useBottomSafeAreaPadding>
+    <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
       <View style={tw`flex items-center`}>
         {formats.map((f) => (
           <TouchableOpacity

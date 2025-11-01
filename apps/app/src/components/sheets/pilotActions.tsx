@@ -56,7 +56,7 @@ const PilotActionSheet = ({
   };
 
   return (
-    <ActionSheet id={sheetId} useBottomSafeAreaPadding>
+    <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
       <View style={tw`gap-y-3 m-3`}>
         <View style={tw`flex flex-row items-start justify-between`}>
           <TouchableOpacity

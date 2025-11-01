@@ -35,7 +35,7 @@ const SelectTagsSheet: FC<SheetProps<'SelectTagsSheet'>> = ({
   const [inputValue, setInputValue] = useState<string>();
 
   return (
-    <ActionSheet id={sheetId} useBottomSafeAreaPadding>
+    <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
       <View style={tw`flex m-2 gap-y-2`}>
         {selected.length > 0 && (
           <>

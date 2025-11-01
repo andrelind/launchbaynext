@@ -38,7 +38,7 @@ const SortSquadronsSheet = ({
     );
 
     return (
-        <ActionSheet id={sheetId} useBottomSafeAreaPadding>
+        <ActionSheet id={sheetId} useBottomSafeAreaPadding containerStyle={tw`android:pb-24`}>
             <View>
                 <View style={tw`flex-row`}>
                     <View style={tw`p-3 gap-y-3`}>
