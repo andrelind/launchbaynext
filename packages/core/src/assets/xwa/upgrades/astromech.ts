@@ -74,7 +74,7 @@ const t: UpgradeBase[] = [
         artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r2d2.png',
       },
     ],
-    cost: { value: 6 },
+    cost: { value: 8 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
     extended: true,
