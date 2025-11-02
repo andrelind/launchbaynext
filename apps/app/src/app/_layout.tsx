@@ -205,7 +205,7 @@ export default function RootLayout() {
 
             <Stack.Screen name="sheets/createSquadron" options={{
               presentation: 'formSheet',
-              sheetAllowedDetents: [0.45],
+              sheetAllowedDetents: [0.5],
               sheetGrabberVisible: true,
               contentStyle: {
                 backgroundColor: isLiquidGlassAvailable() ? "transparent" : "white",

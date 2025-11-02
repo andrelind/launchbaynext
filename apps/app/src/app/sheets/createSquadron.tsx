@@ -64,9 +64,9 @@ export default function CreateSquadronSheet() {
 
     return (
         <>
-            <View style={tw`flex-row `}>
+            <View style={tw`flex-row`}>
                 <TouchableOpacity
-                    style={tw`px-3 py-3 flex-1 items-center`}
+                    style={tw`px-3 py-5 flex-1 items-center`}
                     onPress={async () => {
                         const clipboard = await Clipboard.getStringAsync();
                         if (clipboard.length > 0) {
@@ -97,19 +97,8 @@ export default function CreateSquadronSheet() {
                         }
                     }}
                 >
-                    <Text style={tw`text-black`}>Import from clipboard</Text>
+                    <Text style={tw`text-zinc-500`}>Import from clipboard</Text>
                 </TouchableOpacity>
-                {/* <TouchableOpacity
-          style={tw`px-3 py-3 flex-1 items-center`}
-          onPress={async () => {
-            await SheetManager.hide(sheetId);
-            setTimeout(() => {
-              SheetManager.show('ScanQRCodeSheet', { payload });
-            }, 300);
-          }}
-        >
-          <Text style={{ color: 'black' }}>Import from QR</Text>
-        </TouchableOpacity> */}
                 <View />
             </View>
             <View style={tw`pt-2 border-t mx-3 border-gray-300 flex-row`}>
@@ -126,7 +115,7 @@ export default function CreateSquadronSheet() {
                                 color={colorForFactionKey(f, true)}
                             />
 
-                            <Text>{factionFromKey(f)}</Text>
+                            <Text style={tw`text-sm text-zinc-500`}>{factionFromKey(f)}</Text>
                         </TouchableOpacity>
                     ))}
                 </View>
@@ -143,7 +132,7 @@ export default function CreateSquadronSheet() {
                                 color={colorForFactionKey(f, true)}
                             />
 
-                            <Text>{factionFromKey(f)}</Text>
+                            <Text style={tw`text-sm text-zinc-500`}>{factionFromKey(f)}</Text>
                         </TouchableOpacity>
                     ))}
                 </View>
