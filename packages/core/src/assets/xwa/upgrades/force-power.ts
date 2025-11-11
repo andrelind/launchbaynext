@@ -11,10 +11,8 @@ const t: UpgradeBase[] = [
         ability:
           'At the start of the Engagement Phase, you may spend 1 [Force]. If you do, engage at initiative 7 instead of your standard initiative value this phase.',
         slots: ['Force Power'],
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/heightenedperception.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/heightenedperception.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/heightenedperception.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/heightenedperception.png',
         ffg: 248,
       },
     ],
@@ -33,10 +31,8 @@ const t: UpgradeBase[] = [
         ability:
           'While you perform a special attack, you may spend 1 [Force] to ignore the [Focus] or [Lock] requirement.',
         slots: ['Force Power'],
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/instinctiveaim.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/instinctiveaim.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/instinctiveaim.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/instinctiveaim.png',
         ffg: 249,
       },
     ],
@@ -56,8 +52,7 @@ const t: UpgradeBase[] = [
           'During the System Phase, you may choose 1 ship at range 0-1 and look at its dial. If you spend 1 [Force], you may choose a ship at range 0-3 instead.',
         slots: ['Force Power'],
         image: 'https://infinitearenas.com/xw2/images/upgrades/sense.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/sense.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/sense.png',
         ffg: 250,
       },
     ],
@@ -77,10 +72,8 @@ const t: UpgradeBase[] = [
         ability:
           'Before you activate, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, suffer 1 [Hit] damage.',
         slots: ['Force Power'],
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/supernaturalreflexes.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/supernaturalreflexes.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/supernaturalreflexes.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/supernaturalreflexes.png',
         ffg: 251,
       },
     ],
@@ -100,11 +93,9 @@ const t: UpgradeBase[] = [
         ability:
           "While you defend, if you are not in the attacker's [Bullseye Arc], you may spend 1 [Force] to change 2 of your [Focus] results to [Evade] results.",
         slots: ['Force Power'],
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/brilliantevasion.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/brilliantevasion.png',
         ffg: 536,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/brilliantevasion.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/brilliantevasion.png',
       },
     ],
     cost: { value: 2 },
@@ -119,12 +110,10 @@ const t: UpgradeBase[] = [
       {
         title: 'Hate',
         type: 'Force Power',
-        ability:
-          'After you suffer 1 or more damage, recover that many [Force].',
+        ability: 'After you suffer 1 or more damage, recover that many [Force].',
         slots: ['Force Power'],
         image: 'https://infinitearenas.com/xw2/images/upgrades/hate.png',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/hate.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/hate.png',
         ffg: 489,
       },
     ],
@@ -144,10 +133,8 @@ const t: UpgradeBase[] = [
         ability:
           'After you declare an attack, if the defender is in your [Bullseye Arc], you may spend 1 [Force]. If you do, during the Roll Defense Dice step, the defender cannot roll more defense dice than the number of your [Hit]/[Critical Hit] results.',
         slots: ['Force Power'],
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/predictiveshot.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/predictiveshot.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/predictiveshot.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/predictiveshot.png',
         ffg: 490,
       },
     ],
@@ -166,14 +153,10 @@ const t: UpgradeBase[] = [
         ability:
           'You cannot coordinate limited ships. While you perform a purple [Coordinate] action, you may coordinate 1 additional friendly non-limited ship of the same type. Both ships must perform the same action.',
         slots: ['Force Power'],
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/battlemeditation.png',
-        grants: [
-          { action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 },
-        ],
+        image: 'https://infinitearenas.com/xw2/images/upgrades/battlemeditation.png',
+        grants: [{ action: { type: 'Coordinate', difficulty: 'Purple' }, value: 1 }],
         ffg: 545,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/battlemeditation.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/battlemeditation.png',
       },
     ],
     cost: { value: 6 },
@@ -181,6 +164,7 @@ const t: UpgradeBase[] = [
     standard: true,
     epic: true,
     extended: true,
+    restricted: 3,
   },
   {
     xws: 'foresight',
@@ -189,8 +173,7 @@ const t: UpgradeBase[] = [
       {
         ffg: 613,
         title: 'Foresight',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/foresight.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/foresight.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/foresight.png',
         ability:
           'After an enemy ship executes a maneuver, you may spend 1 [Force] to perform this attack against it as a bonus attack. Attack: You may change 1 [Focus] result to a [Hit] result; your dice cannot be modified otherwise.',
@@ -217,10 +200,8 @@ const t: UpgradeBase[] = [
       {
         ffg: 614,
         title: 'Precognitive Reflexes',
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/precognitivereflexes.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/precognitivereflexes.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/precognitivereflexes.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/precognitivereflexes.png',
         ability:
           'After you reveal your dial, you may spend 1 [Force] to perform a [Barrel Roll] or [Boost] action. Then, if you performed an action you do not have on your action bar, gain 1 strain token. If you do, you cannot perform another action during your activation.',
         slots: ['Force Power'],
@@ -245,8 +226,7 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         ffg: 849,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/patience.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/patience.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/patience.png',
       },
     ],
@@ -268,10 +248,8 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         ffg: 848,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/extrememaneuvers.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/extrememaneuvers.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/extrememaneuvers.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/extrememaneuvers.png',
       },
     ],
     cost: { value: 3 },
@@ -290,8 +268,7 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         ffg: 934,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/compassion.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/compassion.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/compassion.png',
       },
     ],
@@ -312,8 +289,7 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         ffg: 935,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/malice.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/malice.png',
         image: 'https://infinitearenas.com/xw2/images/upgrades/malice.png',
       },
     ],
@@ -334,10 +310,8 @@ const t: UpgradeBase[] = [
         type: 'Force Power',
         slots: ['Force Power'],
         ffg: 936,
-        artwork:
-          'https://infinitearenas.com/xw2/images/artwork/upgrades/shatteringshot.png',
-        image:
-          'https://infinitearenas.com/xw2/images/upgrades/shatteringshot.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/shatteringshot.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/shatteringshot.png',
       },
     ],
     cost: { value: 3 },

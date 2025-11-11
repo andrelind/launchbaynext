@@ -9,6 +9,7 @@ import { Button, Host } from '@expo/ui/swift-ui';
 import { Feather } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { useRouter } from 'expo-router';
+import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {
   Platform,
@@ -88,9 +89,7 @@ Here are the relevant documents for your reference`}</Text>
                     key={index}
                     text={link.text}
                     onPress={async () => {
-                      if (await Linking.canOpenURL(link.url)) {
-                        Linking.openURL(link.url);
-                      }
+                      WebBrowser.openBrowserAsync(link.url);
                     }}
                   />
                 </View>
