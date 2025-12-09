@@ -115,8 +115,9 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.restricted = pilot.restricted && pilot.restricted > 0 ? pilot.restricted : undefined;
 
       local.standard = pilot.standard !== false;
-      local.extended = pilot.extended !== false;
+      local.extended = pilot.wildspace !== undefined ? pilot.wildspace : pilot.extended !== false;
       local.epic = pilot.epic !== false;
+      delete local['wildspace'];
 
       if (!local.ffg) {
         // Check manifest first
@@ -323,7 +324,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       upgrade.standard = rest.standard !== false;
       upgrade.extended = rest.wildspace !== undefined ? rest.wildspace : rest.extended !== false;
       upgrade.epic = rest.epic !== false;
-      upgrade['wildspace'] = null;
+      delete upgrade['wildspace'];
     }
   };
 

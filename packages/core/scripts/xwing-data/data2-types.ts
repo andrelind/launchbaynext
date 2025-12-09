@@ -50,6 +50,7 @@ export interface XWDPilot {
   standard?: boolean;
   extended?: boolean;
   epic?: boolean;
+  wildspace?: boolean;
 }
 
 export interface XWDShip {
