@@ -251,6 +251,7 @@ export default function CollectionDetailScreen() {
                                     exp[xws] = nv;
                                 }
                                 set(exp, true);
+                                get[xws] = exp[xws];
                             }}
                         >
                             <Octicons name="dash" size={30} style={tw`text-black dark:text-white`} />
@@ -267,6 +268,7 @@ export default function CollectionDetailScreen() {
                                     exp[xws] = nv;
                                 }
                                 set(exp, true);
+                                get[xws] = exp[xws];
                             }}
                         >
                             <Octicons name="plus" size={30} style={tw`text-black dark:text-white`} />

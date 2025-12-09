@@ -114,6 +114,10 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.artwork = pilot.artwork;
       local.restricted = pilot.restricted && pilot.restricted > 0 ? pilot.restricted : undefined;
 
+      local.standard = pilot.standard !== false;
+      local.extended = pilot.extended !== false;
+      local.epic = pilot.epic !== false;
+
       if (!local.ffg) {
         // Check manifest first
         // @ts-expect-error
@@ -316,6 +320,10 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
           return res;
         });
       upgrade.restricted = rest.restricted && rest.restricted > 0 ? rest.restricted : undefined;
+      upgrade.standard = rest.standard !== false;
+      upgrade.extended = rest.wildspace !== undefined ? rest.wildspace : rest.extended !== false;
+      upgrade.epic = rest.epic !== false;
+      upgrade['wildspace'] = null;
     }
   };
 

@@ -47,6 +47,9 @@ export interface XWDPilot {
   force: XWDForce;
   conditions: string[];
   text: string;
+  standard?: boolean;
+  extended?: boolean;
+  epic?: boolean;
 }
 
 export interface XWDShip {
@@ -157,4 +160,8 @@ export interface XWDUpgrade {
   restrictions: XWSRestriction[];
   hyperspace: boolean;
   restricted?: number;
+  standard?: boolean;
+  extended?: boolean;
+  epic?: boolean;
+  wildspace?: boolean;
 }
