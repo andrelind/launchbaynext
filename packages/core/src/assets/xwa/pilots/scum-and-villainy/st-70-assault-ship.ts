@@ -47,7 +47,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 16,
-      loadout: 16,
+      loadout: 18,
       ability:
         'While you defend or perform an attack, if you are in the [Front Arc] at range 1-2 of 2 or more enemy ships, you may change 1 of your blank results to a [Focus] result.',
       slots: [

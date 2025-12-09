@@ -80,7 +80,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
-      cost: 13,
+      cost: 12,
       slots: [
         'Force Power',
         'Configuration',
@@ -91,7 +91,7 @@ const t: ShipType = {
       ],
       ffg: 511,
       keywords: ['Jedi', 'Light Side'],
-      loadout: 10,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/obiwankenobi.png',
       artwork:

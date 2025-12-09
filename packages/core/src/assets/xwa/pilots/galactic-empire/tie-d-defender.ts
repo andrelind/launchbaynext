@@ -206,7 +206,7 @@ const t: ShipType = {
       xws: 'darthvader-tieddefender',
       name: 'Darth Vader',
       caption: 'Dark Lord of the Sith',
-      cost: 21,
+      cost: 22,
       initiative: 6,
       limited: 1,
       ability:

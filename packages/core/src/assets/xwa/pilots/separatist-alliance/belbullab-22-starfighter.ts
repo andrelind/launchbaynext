@@ -56,7 +56,7 @@ const t: ShipType = {
         "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
       standard: true,
       epic: true,
-      cost: 12,
+      cost: 13,
       slots: ['Modification', 'Modification', 'Talent', 'Title'],
       ffg: 492,
       loadout: 20,

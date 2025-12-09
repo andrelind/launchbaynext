@@ -80,7 +80,7 @@ const t: ShipType = {
       caption: 'Bravo Leader',
       standard: true,
       epic: true,
-      cost: 10,
+      cost: 11,
       slots: [
         'Talent',
         'Astromech',
@@ -90,7 +90,7 @@ const t: ShipType = {
         'Talent',
       ],
       ffg: 557,
-      loadout: 12,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ricolie.png',
       artwork:
@@ -106,10 +106,10 @@ const t: ShipType = {
       epic: true,
       ability:
         'While an enemy ship in your [Front Arc] defends or performs an attack, that ship can modify only 1 [Focus] result (other results can still be modified).',
-      cost: 11,
+      cost: 10,
       slots: ['Talent', 'Astromech', 'Modification', 'Torpedo', 'Sensor'],
       ffg: 559,
-      loadout: 15,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/padmeamidala.png',
       artwork:

@@ -164,7 +164,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/bobafett.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 7 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: false,
     epic: true,
@@ -2042,7 +2042,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'thechild',
     limited: 1,
-    cost: { value: 7 },
+    cost: { value: 9 },
     sides: [
       {
         ability:
@@ -2489,8 +2489,8 @@ const t: UpgradeBase[] = [
         type: 'Crew',
         slots: ['Crew', 'Crew'],
         ffg: -1,
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/maul-doublecrew.png',
-        image: 'https://infinitearenas.com/xw2/images/upgrades/maul-doublecrew.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/maul-crew.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/maul-crew.png',
       },
     ],
     restrictions: [{ factions: ['scumandvillainy'] }],

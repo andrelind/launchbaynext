@@ -600,7 +600,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/stomeronistarck-evacuationofdqar.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/stomeronistarck-evacuationofdqar.png',
-      cost: 13,
+      cost: 14,
       loadout: 0,
       shipActions: [
         {

@@ -120,7 +120,7 @@ const t: ShipType = {
       epic: true,
       ffg: 790,
       keywords: ['Clone'],
-      loadout: 14,
+      loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/klick.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
