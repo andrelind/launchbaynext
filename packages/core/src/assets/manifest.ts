@@ -807,6 +807,7 @@ export const manifest = {
     '1159': 'caithrenalli-wartime',
     '1160': 'newrepublicpatrol-wartime',
     '1161': 'kijimispicerunner-wartime',
+    undefined: 'kijimispicerunner-wartime',
   },
   upgrades: {
     '230': 'crackshot',
@@ -2180,7 +2181,7 @@ export const revManifest = {
     'coruskapellim-wartime': '1158',
     'caithrenalli-wartime': '1159',
     'newrepublicpatrol-wartime': '1160',
-    'kijimispicerunner-wartime': '1161',
+    'kijimispicerunner-wartime': 'undefined',
   },
   upgrades: {
     chopper: '323',

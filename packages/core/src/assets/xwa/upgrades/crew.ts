@@ -2105,7 +2105,7 @@ const t: UpgradeBase[] = [
   {
     xws: 'ursawren',
     limited: 1,
-    cost: { value: 3 },
+    cost: { value: 8 },
     sides: [
       {
         ability:

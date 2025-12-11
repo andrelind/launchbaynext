@@ -114,10 +114,12 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       local.artwork = pilot.artwork;
       local.restricted = pilot.restricted && pilot.restricted > 0 ? pilot.restricted : undefined;
 
-      local.standard = pilot.standard !== false;
-      local.extended = pilot.wildspace !== undefined ? pilot.wildspace : pilot.extended !== false;
-      local.epic = pilot.epic !== false;
-      delete local['wildspace'];
+      if (path === 'legacy') {
+        local.standard = pilot.standard !== false;
+        local.extended = pilot.wildspace !== undefined ? pilot.wildspace : pilot.extended !== false;
+        local.epic = pilot.epic !== false;
+        delete local['wildspace'];
+      }
 
       if (!local.ffg) {
         // Check manifest first
@@ -321,10 +323,13 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
           return res;
         });
       upgrade.restricted = rest.restricted && rest.restricted > 0 ? rest.restricted : undefined;
-      upgrade.standard = rest.standard !== false;
-      upgrade.extended = rest.wildspace !== undefined ? rest.wildspace : rest.extended !== false;
-      upgrade.epic = rest.epic !== false;
-      delete upgrade['wildspace'];
+
+      if (path === 'legacy') {
+        upgrade.standard = rest.standard !== false;
+        upgrade.extended = rest.wildspace !== undefined ? rest.wildspace : rest.extended !== false;
+        upgrade.epic = rest.epic !== false;
+        delete upgrade['wildspace'];
+      }
     }
   };
 
