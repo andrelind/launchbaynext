@@ -50,7 +50,6 @@ const t: ShipType = {
       },
       text: "The GR-75 medium transport acquitted itself well at battles such as the evacuation of Hoth, where several of these ships were pivotal to the Rebel forces' escape.",
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 1,
       xws: 'echobaseevacuees',
@@ -66,6 +65,7 @@ const t: ShipType = {
         'Title',
       ],
       ffg: 709,
+      extended: false,
     },
   ],
 };

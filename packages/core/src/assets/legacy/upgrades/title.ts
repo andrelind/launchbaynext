@@ -28,8 +28,8 @@ const t: UpgradeBase[] = [
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Black One',
@@ -54,8 +54,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['resistance'] }, { chassis: ['t70xwing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Dauntless',
@@ -80,8 +80,8 @@ const t: UpgradeBase[] = [
       { chassis: ['vt49decimator'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ghost',
@@ -106,8 +106,8 @@ const t: UpgradeBase[] = [
       { chassis: ['vcx100lightfreighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Havoc',
@@ -136,8 +136,8 @@ const t: UpgradeBase[] = [
       { chassis: ['scurrgh6bomber'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Hound's Tooth",
@@ -161,8 +161,8 @@ const t: UpgradeBase[] = [
       { chassis: ['yv666lightfreighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'IG-2000',
@@ -187,8 +187,8 @@ const t: UpgradeBase[] = [
       { chassis: ['aggressorassaultfighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Lando's Millennium Falcon",
@@ -213,8 +213,8 @@ const t: UpgradeBase[] = [
       { chassis: ['customizedyt1300lightfreighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Marauder',
@@ -240,8 +240,8 @@ const t: UpgradeBase[] = [
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Millennium Falcon',
@@ -268,8 +268,8 @@ const t: UpgradeBase[] = [
       { chassis: ['modifiedyt1300lightfreighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Mist Hunter',
@@ -298,8 +298,8 @@ const t: UpgradeBase[] = [
       { chassis: ['g1astarfighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Moldy Crow',
@@ -325,8 +325,8 @@ const t: UpgradeBase[] = [
       { chassis: ['hwk290lightfreighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Outrider',
@@ -351,8 +351,8 @@ const t: UpgradeBase[] = [
       { chassis: ['yt2400lightfreighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Outrider (2023)',
@@ -377,8 +377,8 @@ const t: UpgradeBase[] = [
       { chassis: ['yt2400lightfreighter2023'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Phantom',
@@ -402,8 +402,8 @@ const t: UpgradeBase[] = [
       { chassis: ['attackshuttle', 'sheathipedeclassshuttle'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Punishing One',
@@ -432,8 +432,8 @@ const t: UpgradeBase[] = [
       { chassis: ['jumpmaster5000'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'ST-321',
@@ -458,8 +458,8 @@ const t: UpgradeBase[] = [
       { chassis: ['lambdaclasst4ashuttle'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Shadow Caster',
@@ -484,8 +484,8 @@ const t: UpgradeBase[] = [
       { chassis: ['lancerclasspursuitcraft'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Slave I',
@@ -511,8 +511,8 @@ const t: UpgradeBase[] = [
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Virago',
@@ -539,8 +539,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ chassis: ['starviperclassattackplatform'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Rey's Millennium Falcon",
@@ -565,8 +565,8 @@ const t: UpgradeBase[] = [
       { chassis: ['scavengedyt1300'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Soulless One',
@@ -592,8 +592,8 @@ const t: UpgradeBase[] = [
       { chassis: ['belbullab22starfighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Scimitar',
@@ -622,8 +622,8 @@ const t: UpgradeBase[] = [
       { chassis: ['sithinfiltrator'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Assailer',
@@ -653,8 +653,8 @@ const t: UpgradeBase[] = [
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Blood Crow',
@@ -684,8 +684,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Bright Hope',
@@ -710,8 +710,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Broken Horn',
@@ -740,8 +740,8 @@ const t: UpgradeBase[] = [
       { chassis: ['croccruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Corvus',
@@ -769,8 +769,8 @@ const t: UpgradeBase[] = [
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: "Dodonna's Pride",
@@ -815,8 +815,8 @@ const t: UpgradeBase[] = [
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Impetuous',
@@ -846,8 +846,8 @@ const t: UpgradeBase[] = [
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Insatiable Worrt',
@@ -878,8 +878,8 @@ const t: UpgradeBase[] = [
       { chassis: ['croccruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Instigator',
@@ -905,8 +905,8 @@ const t: UpgradeBase[] = [
       { chassis: ['raiderclasscorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: "Jaina's Light",
@@ -935,8 +935,8 @@ const t: UpgradeBase[] = [
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: "Kaz's Fireball",
@@ -958,8 +958,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ factions: ['resistance'] }, { chassis: ['fireball'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Liberator',
@@ -985,8 +985,8 @@ const t: UpgradeBase[] = [
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Luminous',
@@ -1015,8 +1015,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gr75mediumtransport'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Merchant One',
@@ -1048,8 +1048,8 @@ const t: UpgradeBase[] = [
       { chassis: ['croccruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Quantum Storm',
@@ -1079,8 +1079,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gr75mediumtransport'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Requiem',
@@ -1105,8 +1105,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Suppressor',
@@ -1136,8 +1136,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Tantive IV',
@@ -1163,8 +1163,8 @@ const t: UpgradeBase[] = [
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Thunderstrike',
@@ -1194,8 +1194,8 @@ const t: UpgradeBase[] = [
       { chassis: ['cr90corelliancorvette'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Vector',
@@ -1224,8 +1224,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gozanticlasscruiser'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Slave I',
@@ -1251,8 +1251,8 @@ const t: UpgradeBase[] = [
       { chassis: ['firesprayclasspatrolcraft'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'B6 Blade Wing Prototype',
@@ -1277,8 +1277,8 @@ const t: UpgradeBase[] = [
       { chassis: ['asf01bwing'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Nautolan's Revenge",
@@ -1308,8 +1308,8 @@ const t: UpgradeBase[] = [
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Grappler',
@@ -1335,8 +1335,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ chassis: ['tridentclassassaultship'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Neimoidian Grasp',
@@ -1362,8 +1362,8 @@ const t: UpgradeBase[] = [
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Trident',
@@ -1389,8 +1389,8 @@ const t: UpgradeBase[] = [
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Nightbrother',
@@ -1417,8 +1417,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gauntletfighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Gauntlet',
@@ -1445,8 +1445,8 @@ const t: UpgradeBase[] = [
       { chassis: ['gauntletfighter'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Razor Crest',
@@ -1478,8 +1478,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ chassis: ['st70assaultship'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Xanadu Blood',
@@ -1505,8 +1505,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ chassis: ['rogueclassstarfighter'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
 ];
 

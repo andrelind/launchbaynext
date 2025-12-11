@@ -56,10 +56,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios-sheathipedeclassshuttle.png',
       standard: true,
-      wildspace: true,
       keywords: ['Spectre'],
       epic: true,
       ffg: 40,
+      extended: true,
     },
     {
       name: 'AP-5',
@@ -84,10 +84,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ap5.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Spectre'],
       epic: true,
       ffg: 41,
+      extended: true,
     },
     {
       name: 'Ezra Bridger',
@@ -109,10 +109,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-sheathipedeclassshuttle.png',
       standard: true,
-      wildspace: true,
       keywords: ['Light Side', 'Spectre'],
       epic: true,
       ffg: 39,
+      extended: true,
     },
     {
       name: 'Fenn Rau',
@@ -133,10 +133,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau-sheathipedeclassshuttle.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian', 'Spectre'],
       epic: true,
       ffg: 38,
+      extended: true,
     },
   ],
 };

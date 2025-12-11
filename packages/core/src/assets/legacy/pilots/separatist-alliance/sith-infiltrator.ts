@@ -52,7 +52,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthmaul.png',
       standard: true,
-      wildspace: true,
       cost: 62,
       slots: [
         'Cannon',
@@ -70,6 +69,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Sith'],
       epic: true,
       ffg: 503,
+      extended: true,
     },
     {
       name: 'Count Dooku',
@@ -83,7 +83,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/countdooku.png',
       standard: true,
-      wildspace: true,
       cost: 60,
       slots: [
         'Cannon',
@@ -101,6 +100,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Sith'],
       epic: true,
       ffg: 504,
+      extended: true,
     },
     {
       name: 'Dark Courier',
@@ -111,7 +111,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darkcourier.png',
       standard: true,
-      wildspace: true,
       cost: 45,
       slots: [
         'Cannon',
@@ -127,6 +126,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darkcourier.png',
       epic: true,
       ffg: 506,
+      extended: true,
     },
     {
       name: '0-66',
@@ -158,10 +158,10 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Barrel Roll' },
       ],
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 505,
+      extended: true,
     },
     {
       name: 'Count Dooku',
@@ -186,10 +186,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdooku-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith'],
       epic: true,
       ffg: 1079,
+      extended: true,
     },
     {
       name: 'Count Dooku',
@@ -224,10 +224,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdooku-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith'],
       epic: true,
       ffg: 1203,
+      extended: true,
     },
   ],
 };

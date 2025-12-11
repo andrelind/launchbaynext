@@ -68,10 +68,10 @@ const t: ShipType = {
       ability:
         'After you perform an attack, if the defender is in your [Front Arc], you may acquire a lock on it. Then, if the defender is in your [Bullseye Arc], it gains 1 strain token.',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 666,
+      extended: true,
     },
     {
       name: 'Baktoid Drone',
@@ -98,10 +98,10 @@ const t: ShipType = {
       },
       text: 'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 669,
+      extended: true,
     },
     {
       name: 'Geonosian Prototype',
@@ -130,10 +130,10 @@ const t: ShipType = {
       ability:
         'While you perform a [Missile] or [Cannon] attack, you may remove 1 tractor token from the defender to reroll up to 2 attack dice.',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 668,
+      extended: true,
     },
     {
       name: 'DGS-286',
@@ -162,10 +162,10 @@ const t: ShipType = {
       ability:
         'Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 664,
+      extended: true,
     },
     {
       name: 'Onderon Oppressor',
@@ -194,10 +194,10 @@ const t: ShipType = {
       ability:
         'After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 665,
+      extended: true,
     },
     {
       name: 'Separatist Predator',
@@ -210,7 +210,6 @@ const t: ShipType = {
         text: 'You cannot spend your locks to reroll attack dice. While you perform an attack, you may reroll a number of attack dice up to the number of friendly locks on the defender.',
       },
       standard: true,
-      wildspace: true,
       cost: 38,
       slots: [
         'Missile',
@@ -228,6 +227,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 667,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_HMP_Droid_Gunship.png',

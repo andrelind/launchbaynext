@@ -58,10 +58,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/autopilotdrone.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 229,
+      extended: true,
     },
     {
       name: 'L3-37',
@@ -87,10 +87,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/l337-escapecraft.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 228,
+      extended: true,
     },
     {
       name: 'Lando Calrissian',
@@ -111,9 +111,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-escapecraft.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 226,
+      extended: true,
     },
     {
       name: 'Outer Rim Pioneer',
@@ -134,9 +134,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimpioneer.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 227,
+      extended: true,
     },
   ],
 };

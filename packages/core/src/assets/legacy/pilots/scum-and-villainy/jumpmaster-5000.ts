@@ -66,16 +66,16 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contractedscout.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 217,
+      extended: true,
     },
     {
       name: 'Dengar',
       caption: 'Vengeful Corellian',
       initiative: 6,
       limited: 1,
-      cost: 54,
+      cost: 53,
       xws: 'dengar',
       ability:
         'After you defend, if the attacker is in your [Front Arc], you may spend 1 [Charge] to perform a bonus attack against the attacker.',
@@ -95,17 +95,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dengar.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 214,
+      extended: true,
     },
     {
       name: 'Manaroo',
       caption: 'Graceful Aruzan',
       initiative: 3,
       limited: 1,
-      cost: 45,
+      cost: 43,
       xws: 'manaroo',
       ability:
         'At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, transfer all green tokens assigned to you to that ship.',
@@ -124,10 +124,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/manaroo.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 215,
+      extended: true,
     },
     {
       name: 'Tel Trevura',
@@ -154,9 +154,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/teltrevura.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 216,
+      extended: true,
     },
     {
       name: 'Nom Lumb',
@@ -165,7 +165,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'On the Run',
       standard: true,
-      wildspace: true,
       slots: [
         'Cannon',
         'Torpedo',
@@ -177,7 +176,7 @@ const t: ShipType = {
       ],
       ability:
         'After you become the defender, if the attacker is not in your [Single Turret Arc], you must rotate your [Single Turret Arc] indicator to a standard arc the attacker is in.',
-      cost: 39,
+      cost: 37,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nomlumb.png',
       image:
@@ -185,6 +184,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 637,
+      extended: true,
     },
   ],
 };

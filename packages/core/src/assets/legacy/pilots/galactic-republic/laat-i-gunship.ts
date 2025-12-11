@@ -67,10 +67,10 @@ const t: ShipType = {
       ability:
         'At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a [Barrel Roll] or [Boost] action.',
       standard: true,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 660,
+      extended: true,
     },
     {
       name: '“Hound”',
@@ -102,10 +102,10 @@ const t: ShipType = {
       ability:
         'After a friendly small ship in your [Single Turret Arc] gains a deplete or strain token, if you have no tokens of that type, you may transfer that token to yourself.',
       standard: true,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 662,
+      extended: true,
     },
     {
       name: '“Warthog”',
@@ -136,10 +136,10 @@ const t: ShipType = {
       ability:
         'After you or a friendly non-limited ship at range 0-2 are destroyed during the Engagement Phase, that ship is not removed until the end of that phase.',
       standard: true,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 661,
+      extended: true,
     },
     {
       name: '212th Battalion Pilot',
@@ -148,7 +148,6 @@ const t: ShipType = {
       xws: '212thbattalionpilot',
       text: 'Capable of functioning in space assaults and atmospheric battles alike, the LAAT/i gunship transports Republic troops to battlefronts on planets besieged by the Separatists.',
       standard: true,
-      wildspace: true,
       cost: 45,
       charges: { value: 2, recovers: 1 },
       slots: [
@@ -172,6 +171,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 663,
+      extended: true,
     },
     {
       name: '“Sicko”',
@@ -203,10 +203,10 @@ const t: ShipType = {
         'After you execute a basic maneuver, you may assign the Sickening Maneuver condition to yourself.',
       conditions: ['sickeningmaneuver'],
       standard: true,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 995,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_LAAT_Republic_Gunship.png',

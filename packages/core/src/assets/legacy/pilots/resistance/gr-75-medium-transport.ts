@@ -50,7 +50,6 @@ const t: ShipType = {
       },
       text: 'In use since the Galactic Civil War, groups within the New Republic still utilize the GR-75 medium transport for supply and aid missions.',
       standard: false,
-      wildspace: false,
       epic: true,
       ability:
         'In use since the Galactic Civil War, groups within the New Republic still utilize the GR-75 medium transport for supply and aid missions.',
@@ -67,6 +66,7 @@ const t: ShipType = {
         'Cargo',
       ],
       ffg: 710,
+      extended: false,
     },
   ],
 };

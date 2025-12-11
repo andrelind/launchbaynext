@@ -52,7 +52,6 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       cost: 26,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
       text: 'Baktoid Armor Workshop developed the Hyena as a strike craft compatible with Trade Federation Vulture swarm tactics.',
@@ -63,6 +62,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 568,
+      extended: true,
     },
     {
       name: 'Bombardment Drone',
@@ -79,7 +79,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bombardmentdrone.png',
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: ['Sensor', 'Device', 'Device', 'Modification', 'Configuration'],
       artwork:
@@ -87,6 +86,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 565,
+      extended: true,
     },
     {
       name: 'DBS-404',
@@ -99,7 +99,6 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
       ability:
@@ -111,6 +110,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 563,
+      extended: true,
     },
     {
       name: 'Baktoid Prototype',
@@ -127,7 +127,6 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       cost: 25,
       slots: ['Sensor', 'Missile', 'Missile', 'Modification', 'Configuration'],
       artwork:
@@ -135,6 +134,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 566,
+      extended: true,
     },
     {
       name: 'Separatist Bomber',
@@ -149,7 +149,6 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       cost: 28,
       slots: ['Torpedo', 'Missile', 'Device', 'Modification', 'Configuration'],
       artwork:
@@ -157,6 +156,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 567,
+      extended: true,
     },
     {
       name: 'DBS-32C',
@@ -183,7 +183,6 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Jam' },
       ],
       standard: true,
-      wildspace: true,
       cost: 37,
       slots: ['Sensor', 'Tactical Relay', 'Modification', 'Configuration'],
       artwork:
@@ -191,6 +190,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 564,
+      extended: true,
     },
     {
       name: 'DBS-32C',
@@ -226,10 +226,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1076,
+      extended: true,
     },
     {
       name: 'DBS-32C',
@@ -261,10 +261,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs32c-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1204,
+      extended: true,
     },
     {
       name: 'DBS-404',
@@ -289,10 +289,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1077,
+      extended: true,
     },
     {
       name: 'DBS-404',
@@ -313,10 +313,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dbs404-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1205,
+      extended: true,
     },
     {
       name: 'Baktoid Prototype',
@@ -341,10 +341,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1078,
+      extended: true,
     },
     {
       name: 'Baktoid Prototype',
@@ -365,10 +365,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baktoidprototype-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1206,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Hyena.png',

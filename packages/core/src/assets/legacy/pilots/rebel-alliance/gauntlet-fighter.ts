@@ -46,7 +46,6 @@ const t: ShipType = {
       ability:
         'At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.',
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Crew',
@@ -62,6 +61,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/chopper-gauntletfighter.png',
       keywords: ['Droid', 'Spectre'],
       ffg: 1022,
+      extended: true,
     },
     {
       name: 'Ezra Bridger',
@@ -74,7 +74,6 @@ const t: ShipType = {
         'While you defend or perform an attack, if you are stressed, you may spend 1 [Force] to change up to 2 of your [Focus] results to [Evade] or [Hit] results.',
       force: { side: ['light'], value: 1, recovers: 1 },
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Force Power',
@@ -91,6 +90,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ezrabridger-gauntletfighter.png',
       keywords: ['Light Side', 'Spectre'],
       ffg: 1023,
+      extended: true,
     },
     {
       name: 'Mandalorian Resistance Pilot',
@@ -101,7 +101,6 @@ const t: ShipType = {
       xws: 'mandalorianresistancepilot',
       text: "Some Mandalorian warriors, such as those of Clan Kryze, remain unbowed and continue to fight the collaborationist rule of Clan Saxon and its Imperial masters. The Gauntlet Fighter's mix of firepower and speed makes it an ideal transport for their raids.",
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Talent',
@@ -118,6 +117,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mandalorianresistancepilot.png',
       keywords: ['Mandalorian'],
       ffg: 1024,
+      extended: true,
     },
   ],
 };

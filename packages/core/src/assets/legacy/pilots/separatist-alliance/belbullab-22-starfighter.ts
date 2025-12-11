@@ -59,13 +59,13 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/generalgrievous.png',
       standard: true,
-      wildspace: true,
       cost: 44,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/generalgrievous.png',
       epic: true,
       ffg: 492,
+      extended: true,
     },
     {
       name: 'Wat Tambor',
@@ -78,13 +78,13 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wattambor.png',
       standard: true,
-      wildspace: true,
       cost: 39,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wattambor.png',
       epic: true,
       ffg: 493,
+      extended: true,
     },
     {
       name: 'Feethan Ottraw Autopilot',
@@ -109,7 +109,6 @@ const t: ShipType = {
         },
       ],
       standard: true,
-      wildspace: true,
       cost: 34,
       slots: ['Modification', 'Title', 'Tactical Relay'],
       artwork:
@@ -117,6 +116,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 496,
+      extended: true,
     },
     {
       name: 'Captain Sear',
@@ -129,13 +129,13 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captainsear.png',
       standard: true,
-      wildspace: true,
       cost: 44,
       slots: ['Modification', 'Title', 'Tactical Relay'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsear.png',
       epic: true,
       ffg: 494,
+      extended: true,
     },
     {
       name: 'Skakoan Ace',
@@ -150,9 +150,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/skakoanace.png',
       text: 'With its powerful engines, devastating triple laser cannons, and high customizability, the Belbullab-22 is the chosen craft of several elite Separatist Alliance pilots, including the infamous General Grievous.',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 495,
+      extended: true,
     },
     {
       name: 'Hallio Bas',
@@ -165,9 +165,8 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/halliobas-wat1.png',
-      standard: true,
-      wildspace: true,
-      cost: 39,
+      standard: false,
+      cost: 43,
       slots: ['Talent', 'Modification', 'Title', 'Tactical Relay'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/halliobas-wat1.png',

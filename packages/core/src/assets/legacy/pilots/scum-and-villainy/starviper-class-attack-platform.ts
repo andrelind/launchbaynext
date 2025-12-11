@@ -63,9 +63,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunassassin.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 181,
+      extended: true,
     },
     {
       name: 'Black Sun Enforcer',
@@ -84,9 +84,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunenforcer.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 182,
+      extended: true,
     },
     {
       name: 'Dalan Oberos',
@@ -107,10 +107,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos-starviperclassattackplatform.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 179,
+      extended: true,
     },
     {
       name: 'Guri',
@@ -145,10 +145,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/guri.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 178,
+      extended: true,
     },
     {
       name: 'Prince Xizor',
@@ -169,9 +169,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/princexizor.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 180,
+      extended: true,
     },
   ],
 };

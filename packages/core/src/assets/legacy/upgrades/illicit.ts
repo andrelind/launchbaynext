@@ -22,8 +22,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Contraband Cybernetics',
@@ -45,8 +45,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Deadman's Switch",
@@ -67,8 +67,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Feedback Array',
@@ -89,8 +89,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Inertial Dampeners',
@@ -124,8 +124,8 @@ const t: UpgradeBase[] = [
       },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Rigged Cargo Chute',
@@ -153,8 +153,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ baseSizes: ['Medium', 'Large'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Coaxium Hyperfuel',
@@ -175,8 +175,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Quick-Release Locks',
@@ -199,8 +199,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: "Saboteur's Map",
@@ -222,8 +222,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Scanner Baffler',
@@ -245,8 +245,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'False Transponder Codes',
@@ -268,8 +268,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Babu Frik',
@@ -290,10 +290,10 @@ const t: UpgradeBase[] = [
       },
     ],
     restrictions: [{ factions: ['scumandvillainy', 'resistance'] }],
-    cost: { value: 7 },
+    cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Overtuned Modulators',
@@ -315,8 +315,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tracking Fob',
@@ -339,8 +339,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ keywords: ['Bounty Hunter'] }],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hotshot Tail Blaster',
@@ -370,8 +370,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ baseSizes: ['Medium', 'Large'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     limited: 0,
@@ -392,9 +392,9 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [{ baseSizes: ['Small'] }],
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
   {
     limited: 0,
@@ -414,9 +414,9 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
 ];
 

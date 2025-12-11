@@ -63,10 +63,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
       ffg: 93,
+      extended: true,
     },
     {
       name: 'Maarek Stele',
@@ -87,10 +87,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maarekstele.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 94,
+      extended: true,
     },
     {
       name: 'Storm Squadron Ace',
@@ -109,10 +109,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stormsquadronace.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 97,
+      extended: true,
     },
     {
       name: 'Tempest Squadron Pilot',
@@ -131,10 +131,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tempestsquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 98,
+      extended: true,
     },
     {
       name: 'Ved Foslo',
@@ -155,10 +155,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vedfoslo.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 95,
+      extended: true,
     },
     {
       name: 'Zertik Strom',
@@ -179,10 +179,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zertikstrom.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 96,
+      extended: true,
     },
     {
       name: 'Darth Vader',
@@ -210,10 +210,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
       ffg: 933,
+      extended: true,
     },
     {
       name: 'Darth Vader',
@@ -241,10 +241,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
       ffg: 1176,
+      extended: true,
     },
     {
       name: 'Juno Eclipse',
@@ -265,17 +265,17 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Sensor', 'Missile', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 934,
+      extended: true,
     },
     {
       name: 'Darth Vader',
       caption: 'Black Leader',
       initiative: 6,
       limited: 1,
-      cost: 6,
+      cost: 75,
       xws: 'darthvader-swz105',
       ability:
         'After you perform an action, you may spend 1 [Force] to perform an action.',
@@ -296,17 +296,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/darthvader-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
       ffg: 935,
+      extended: true,
     },
     {
       name: 'Maarek Stele',
       caption: 'Servant of the Empire',
       initiative: 5,
       limited: 1,
-      cost: 5,
+      cost: 53,
       standardLoadout: ['elusive', 'outmaneuver', 'afterburners'],
       xws: 'maarekstele-swz105',
       ability:
@@ -320,10 +320,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maarekstele-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 936,
+      extended: true,
     },
   ],
 };

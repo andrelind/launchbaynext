@@ -42,7 +42,6 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       standard: true,
-      wildspace: true,
       cost: 23,
       slots: ['Talent', 'Tech', 'Crew', 'Modification'],
       ability:
@@ -61,6 +60,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 573,
+      extended: true,
     },
     {
       name: 'Rose Tico',
@@ -69,7 +69,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Earnest Engineer',
       standard: true,
-      wildspace: true,
       cost: 26,
       slots: ['Talent', 'Tech', 'Crew', 'Modification'],
       ability:
@@ -80,6 +79,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rosetico.png',
       epic: true,
       ffg: 574,
+      extended: true,
     },
     {
       name: 'Vi Moradi',
@@ -88,7 +88,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Starling',
       standard: true,
-      wildspace: true,
       cost: 24,
       slots: ['Tech', 'Crew', 'Modification'],
       ability:
@@ -100,6 +99,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vimoradi.png',
       epic: true,
       ffg: 576,
+      extended: true,
     },
     {
       name: 'Finn',
@@ -108,7 +108,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Big Deal',
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: ['Talent', 'Tech', 'Crew', 'Modification'],
       ability:
@@ -119,6 +118,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/finn.png',
       epic: true,
       ffg: 575,
+      extended: true,
     },
     {
       name: 'DJ',
@@ -126,9 +126,8 @@ const t: ShipType = {
       initiative: 2,
       limited: 1,
       caption: "Don't Join",
-      standard: true,
-      wildspace: true,
-      cost: 26,
+      standard: false,
+      cost: 25,
       slots: ['Illicit', 'Tech', 'Crew', 'Modification'],
       ability:
         'At the start of the Engagement Phase, you may spend 1 green token to perform a [Jam] action, even while stressed.',

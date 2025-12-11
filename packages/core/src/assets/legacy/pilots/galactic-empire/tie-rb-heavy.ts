@@ -60,7 +60,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Cannon] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       text: 'At Carida Academy, Imperial Navy cadets are taught to be ruthless and loyal, prioritizing victory over the lives of their comrades.',
       limited: 0,
       image:
@@ -70,6 +69,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 696,
+      extended: true,
     },
     {
       name: 'Onyx Squadron Sentry',
@@ -89,7 +89,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Cannon] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       text: 'The TIE/rb heavy, sometimes called the “brute”, is designed for operational flexibility. Its heavy armor and capacity to house an integrated MGK-300 droid co-pilot make it an excellent patrol craft.',
       limited: 0,
       image:
@@ -99,6 +98,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 695,
+      extended: true,
     },
     {
       name: '“Rampage”',
@@ -122,7 +122,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Cannon] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rampage.png',
       artwork:
@@ -130,6 +129,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 693,
+      extended: true,
     },
     {
       name: 'Lyttan Dree',
@@ -152,7 +152,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Cannon] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lyttandree.png',
       artwork:
@@ -160,6 +159,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 694,
+      extended: true,
     },
     {
       name: 'Flight Leader Ubbel',
@@ -183,7 +183,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Cannon] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/flightleaderubbel.png',
       artwork:
@@ -191,6 +190,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 970,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-empire/I_TIE_Brute.png',

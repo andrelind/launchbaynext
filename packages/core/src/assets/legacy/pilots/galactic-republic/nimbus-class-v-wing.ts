@@ -56,7 +56,6 @@ const t: ShipType = {
       ability:
         'During the System Phase, you may choose an object that you have locked at range 1-3. Another friendly ship at range 1-3 may acquire a lock on that object.',
       standard: true,
-      wildspace: true,
       cost: 29,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wilhufftarkin.png',
@@ -66,6 +65,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 791,
+      extended: true,
     },
     {
       name: '“Odd Ball”',
@@ -78,7 +78,6 @@ const t: ShipType = {
       },
       caption: 'CC-2237',
       standard: true,
-      wildspace: true,
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       cost: 30,
@@ -90,6 +89,7 @@ const t: ShipType = {
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 788,
+      extended: true,
     },
     {
       name: '“Contrail”',
@@ -102,7 +102,6 @@ const t: ShipType = {
       },
       caption: 'CT-4981',
       standard: true,
-      wildspace: true,
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       cost: 31,
@@ -114,6 +113,7 @@ const t: ShipType = {
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 789,
+      extended: true,
     },
     {
       name: '“Klick”',
@@ -126,7 +126,6 @@ const t: ShipType = {
       },
       caption: 'GC-1000',
       standard: true,
-      wildspace: true,
       charges: { value: 1, recovers: 1 },
       ability:
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
@@ -139,6 +138,7 @@ const t: ShipType = {
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 790,
+      extended: true,
     },
     {
       name: 'Shadow Squadron Escort',
@@ -151,7 +151,6 @@ const t: ShipType = {
       },
       text: "In the waning months of the Clone Wars, elite clone formations carry out missions critical to the future of the Republic; such as the protection of Supreme Chancellor Palpatine's personal shuttle.",
       standard: true,
-      wildspace: true,
       cost: 28,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/shadowsquadronescort.png',
@@ -161,6 +160,7 @@ const t: ShipType = {
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 792,
+      extended: true,
     },
     {
       name: 'Loyalist Volunteer',
@@ -173,7 +173,6 @@ const t: ShipType = {
       },
       text: 'The Kuat Systems Engineering Alpha-3 Nimbus-class V-wing is the vessel of choice for clone and non-clone starfighter pilots alike. The techniques pioneered to mass-produce its precision ion engines will later be crucial in the development of the TIE series by Sienar Fleet Systems.',
       standard: true,
-      wildspace: true,
       cost: 26,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/loyalistvolunteer.png',
@@ -183,6 +182,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 793,
+      extended: true,
     },
     {
       name: '“Klick”',
@@ -210,10 +210,10 @@ const t: ShipType = {
         { type: 'shields', value: 3 },
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 996,
+      extended: true,
     },
     {
       name: '“Klick”',
@@ -241,10 +241,10 @@ const t: ShipType = {
         { type: 'shields', value: 3 },
       ],
       standard: true,
-      wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 1218,
+      extended: true,
     },
     {
       name: '“Contrail”',
@@ -270,10 +270,10 @@ const t: ShipType = {
         'alpha3bbesh',
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 997,
+      extended: true,
     },
     {
       name: '“Contrail”',
@@ -294,10 +294,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/contrail-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Astromech', 'Modification', 'Configuration'],
       standard: true,
-      wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 1219,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Nimbus-class_V-wing.png',

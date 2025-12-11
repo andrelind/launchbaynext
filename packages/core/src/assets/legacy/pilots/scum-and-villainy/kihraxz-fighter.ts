@@ -57,9 +57,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunace.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 195,
+      extended: true,
     },
     {
       name: 'Captain Jostero',
@@ -76,9 +76,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjostero.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 194,
+      extended: true,
     },
     {
       name: 'Cartel Marauder',
@@ -93,9 +93,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelmarauder.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 196,
+      extended: true,
     },
     {
       name: 'Graz',
@@ -119,10 +119,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/graz.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 192,
+      extended: true,
     },
     {
       name: 'Talonbane Cobra',
@@ -146,9 +146,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/talonbanecobra.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 191,
+      extended: true,
     },
     {
       name: 'Viktor Hel',
@@ -172,17 +172,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/viktorhel.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 193,
+      extended: true,
     },
     {
       name: 'Black Sun Bodyguard',
       caption: 'Vaksai Pilot',
       initiative: 4,
       limited: 2,
-      cost: 42,
+      cost: 40,
       xws: 'blacksunbodyguard-wat1',
       ability:
         'Setup: Lose 2 [Charge]. After you suffer damage, recover 1 [Charge]. Before you engage, you may spend 2 [Charge] to recover 1 [Charge] on 1 of your equipped upgrades.',
@@ -199,8 +199,7 @@ const t: ShipType = {
       ],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunbodyguard-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       epic: true,
       extended: true,
       ffg: 1169,

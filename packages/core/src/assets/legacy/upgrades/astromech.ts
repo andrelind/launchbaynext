@@ -21,8 +21,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: '“Genius”',
@@ -44,8 +44,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2 Astromech',
@@ -67,8 +67,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { variable: 'agility', values: { '0': 2, '1': 2, '2': 4, '3': 8 } },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-D2',
@@ -91,8 +91,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 7, '3': 11 } },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R3 Astromech',
@@ -113,8 +113,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R4 Astromech',
@@ -136,8 +136,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ baseSizes: ['Small'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R5 Astromech',
@@ -159,8 +159,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { variable: 'agility', values: { '0': 1, '1': 2, '2': 3, '3': 4 } },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R5-D8',
@@ -183,8 +183,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 4, '3': 6 } },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R5-P8',
@@ -207,8 +207,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R5-TK',
@@ -229,8 +229,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R5-X3',
@@ -253,8 +253,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-HA',
@@ -276,8 +276,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'BB-8',
@@ -313,8 +313,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'BB Astromech',
@@ -350,8 +350,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'M9-G8',
@@ -373,8 +373,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-C4',
@@ -396,8 +396,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R4-P Astromech',
@@ -420,8 +420,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R4-P17',
@@ -444,8 +444,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R4-P44',
@@ -467,8 +467,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-A6',
@@ -490,8 +490,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'C1-10P',
@@ -525,8 +525,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R1-J5',
@@ -549,8 +549,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Q7 Astromech',
@@ -574,8 +574,8 @@ const t: UpgradeBase[] = [
       values: { '0': 2, '1': 2, '2': 2, '3': 2, '4': 3, '5': 3, '6': 3 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-D2',
@@ -598,8 +598,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'agility', values: { '0': 2, '1': 4, '2': 6, '3': 8 } },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-D2',
@@ -622,8 +622,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R6-D8',
@@ -645,8 +645,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R7-A7',
@@ -669,8 +669,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'agility', values: { '0': 3, '1': 3, '2': 3, '3': 5 } },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R4-B11',
@@ -692,8 +692,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Watchful Astromech',
@@ -714,8 +714,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'L4E-R5',
@@ -749,8 +749,8 @@ const t: UpgradeBase[] = [
       { factions: ['resistance'], action: { type: 'Rotate Arc' } },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-A3',
@@ -767,9 +767,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'R2-D2',
@@ -786,9 +786,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'R2-F2',
@@ -805,9 +805,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'R5-D8',
@@ -824,9 +824,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'R5-K6',
@@ -843,9 +843,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Precise Astromech',
@@ -862,9 +862,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Targeting Astromech',
@@ -880,9 +880,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'R4-P17',
@@ -899,9 +899,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
 ];
 

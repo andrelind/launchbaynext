@@ -53,7 +53,6 @@ const t: ShipType = {
       },
       text: 'Vessels like the C-ROC Cruiser allow criminal operations across the Outer Rim to move massive amounts of illicit materials, or project power that can bully small colonies into compliance.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 1,
       xws: 'syndicatesmugglers',
@@ -70,6 +69,7 @@ const t: ShipType = {
         'Configuration',
       ],
       ffg: 713,
+      extended: false,
     },
   ],
 };

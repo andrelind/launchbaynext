@@ -60,10 +60,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/colonelvessery.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 123,
+      extended: true,
     },
     {
       name: 'Countess Ryad',
@@ -84,10 +84,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countessryad.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 124,
+      extended: true,
     },
     {
       name: 'Delta Squadron Pilot',
@@ -106,10 +106,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deltasquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 126,
+      extended: true,
     },
     {
       name: 'Onyx Squadron Ace',
@@ -128,10 +128,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/onyxsquadronace.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 125,
+      extended: true,
     },
     {
       name: 'Rexler Brath',
@@ -152,10 +152,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rexlerbrath.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 122,
+      extended: true,
     },
     {
       name: 'Vult Skerris',
@@ -177,10 +177,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vultskerris.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 887,
+      extended: true,
     },
     {
       name: 'Darth Vader',
@@ -202,10 +202,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/darthvader-tieddefender.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       epic: true,
       ffg: 886,
+      extended: true,
     },
     {
       name: 'Captain Dobbs',
@@ -226,10 +226,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captaindobbs.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 888,
+      extended: true,
     },
     {
       name: 'Captain Yorr',
@@ -267,9 +267,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 937,
+      extended: true,
     },
     {
       name: 'Captain Yorr',
@@ -302,9 +302,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1185,
+      extended: true,
     },
     {
       name: 'Colonel Jendon',
@@ -341,9 +341,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 938,
+      extended: true,
     },
     {
       name: 'Colonel Jendon',
@@ -375,9 +375,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1186,
+      extended: true,
     },
   ],
 };

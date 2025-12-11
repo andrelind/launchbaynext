@@ -64,10 +64,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bladesquadronveteran.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing'],
       epic: true,
       ffg: 25,
+      extended: true,
     },
     {
       name: 'Blue Squadron Pilot',
@@ -90,10 +90,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing'],
       epic: true,
       ffg: 26,
+      extended: true,
     },
     {
       name: 'Braylen Stramm',
@@ -119,10 +119,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/braylenstramm.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing'],
       epic: true,
       ffg: 23,
+      extended: true,
     },
     {
       name: 'Ten Numb',
@@ -148,10 +148,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tennumb.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing'],
       epic: true,
       ffg: 24,
+      extended: true,
     },
     {
       name: 'Gina Moonsong',
@@ -177,10 +177,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing'],
       epic: true,
       ffg: 628,
+      extended: true,
     },
     {
       name: 'Hera Syndulla',
@@ -206,10 +206,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-asf01bwing.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing', 'Spectre'],
       epic: true,
       ffg: 878,
+      extended: true,
     },
     {
       name: 'Netrem Pollard',
@@ -235,10 +235,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/netrempollard.png',
       standard: true,
-      wildspace: true,
       keywords: ['B-wing'],
       epic: true,
       ffg: 879,
+      extended: true,
     },
     {
       name: 'Adon Fox',
@@ -280,9 +280,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 1102,
+      extended: true,
     },
     {
       name: 'Adon Fox',
@@ -327,9 +327,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/adonfox-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1152,
+      extended: true,
     },
     {
       name: 'Gina Moonsong',
@@ -377,9 +377,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 1010,
+      extended: true,
     },
     {
       name: 'Gina Moonsong',
@@ -430,9 +430,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ginamoonsong-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1153,
+      extended: true,
     },
     {
       name: 'Braylen Stramm',
@@ -480,9 +480,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 1009,
+      extended: true,
     },
     {
       name: 'Braylen Stramm',
@@ -533,16 +533,16 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/braylenstramm-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1154,
+      extended: true,
     },
     {
       name: 'Nera Dantels',
       caption: 'Blue Dagger',
       initiative: 3,
       limited: 1,
-      cost: 44,
+      cost: 45,
       xws: 'neradantels-wat1',
       ability:
         'Gain a [Single Turret Arc] indicator. You must treat the [Front Arc] requirement of your equipped [Torpedo] upgrades as [Single Turret Arc]. After you gain a stress token, you may rotate your [Single Turret Arc] indicator.',
@@ -560,8 +560,7 @@ const t: ShipType = {
       ],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/neradantels-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['B-wing'],
       epic: true,
       extended: true,

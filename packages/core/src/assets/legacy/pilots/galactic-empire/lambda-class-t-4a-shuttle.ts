@@ -50,9 +50,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainkagi.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 142,
+      extended: true,
     },
     {
       name: 'Colonel Jendon',
@@ -70,9 +70,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/coloneljendon.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 143,
+      extended: true,
     },
     {
       name: 'Lieutenant Sai',
@@ -89,9 +89,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantsai.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 144,
+      extended: true,
     },
     {
       name: 'Omicron Group Pilot',
@@ -106,9 +106,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/omicrongrouppilot.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 145,
+      extended: true,
     },
     {
       name: 'Captain Yorr',
@@ -125,8 +125,7 @@ const t: ShipType = {
       slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Modification', 'Title'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainyorr-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       epic: true,
       extended: true,
       ffg: 1172,

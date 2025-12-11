@@ -53,7 +53,6 @@ const t: ShipType = {
       },
       text: "The Raider-class corvette is one of the Empire's smallest warships, often used for reconnaissance missions, surgical strikes, or suppressing enemy starfighters with its powerful ordnance.",
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 0,
       xws: 'outerrimpatrol',
@@ -71,6 +70,7 @@ const t: ShipType = {
         'Title',
       ],
       ffg: 707,
+      extended: false,
     },
   ],
 };

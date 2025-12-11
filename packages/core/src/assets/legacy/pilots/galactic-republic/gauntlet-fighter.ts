@@ -61,9 +61,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bokatankryze.png',
       keywords: ['Mandalorian'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 985,
+      extended: true,
     },
     {
       name: 'Nite Owl Liberator',
@@ -89,9 +89,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/niteowlliberator.png',
       keywords: ['Mandalorian'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 986,
+      extended: true,
     },
   ],
 };

@@ -71,10 +71,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
       ffg: 78,
+      extended: true,
     },
     {
       name: 'Dash Rendar',
@@ -102,10 +102,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 77,
+      extended: true,
     },
     {
       name: 'Wild Space Fringer',
@@ -124,10 +124,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wildspacefringer.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 79,
+      extended: true,
     },
   ],
 };

@@ -50,9 +50,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/binayrepirate.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 173,
+      extended: true,
     },
     {
       name: 'Black Sun Soldier',
@@ -67,9 +67,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksunsoldier.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 172,
+      extended: true,
     },
     {
       name: "Kaa'to Leeachos",
@@ -86,10 +86,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kaatoleeachos.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 170,
+      extended: true,
     },
     {
       name: 'N’dru Suhlak',
@@ -106,9 +106,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ndrusuhlak.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 169,
+      extended: true,
     },
     {
       name: 'Nashtah Pup',
@@ -129,9 +129,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nashtahpup.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 171,
+      extended: true,
     },
     {
       name: 'Bossk',
@@ -147,7 +147,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Missile', 'Illicit', 'Modification'],
       standard: true,
-      wildspace: true,
       cost: 25,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bossk-z95af4headhunter.png',
@@ -156,6 +155,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 635,
+      extended: true,
     },
   ],
 };

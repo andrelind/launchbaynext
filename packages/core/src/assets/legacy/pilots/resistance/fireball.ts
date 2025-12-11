@@ -58,7 +58,6 @@ const t: ShipType = {
         'Title',
       ],
       standard: true,
-      wildspace: true,
       cost: 26,
       text: 'Some ambitious and talented pilots begin their racing careers as ground crew, working around the clock to keep cobbled-together ships in the sky on far-flung worlds like Castilon.',
       artwork:
@@ -67,6 +66,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/colossusstationmechanic.png',
       epic: true,
       ffg: 623,
+      extended: true,
     },
     {
       name: 'Jarek Yeager',
@@ -78,7 +78,6 @@ const t: ShipType = {
         text: 'Setup: You are dealt 1 facedown damage card. After you perform a [SLAM] action, you may expose 1 damage card to remove 1 disarm token.',
       },
       standard: true,
-      wildspace: true,
       slots: [
         'Talent',
         'Missile',
@@ -98,6 +97,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jarekyeager.png',
       epic: true,
       ffg: 620,
+      extended: true,
     },
     {
       name: 'Kazuda Xiono',
@@ -110,7 +110,6 @@ const t: ShipType = {
       },
       caption: 'Best Pilot in the Galaxy',
       standard: true,
-      wildspace: true,
       slots: [
         'Talent',
         'Missile',
@@ -129,6 +128,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kazudaxiono.png',
       epic: true,
       ffg: 621,
+      extended: true,
     },
     {
       name: 'R1-J5',
@@ -141,7 +141,6 @@ const t: ShipType = {
       },
       caption: 'Bucket',
       standard: true,
-      wildspace: true,
       slots: [
         'Missile',
         'Crew',
@@ -166,14 +165,14 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 622,
+      extended: true,
     },
     {
       name: 'Torra Doza',
       xws: 'torradoza-wat1',
       initiative: 3,
       limited: 1,
-      standard: true,
-      wildspace: true,
+      standard: false,
       slots: [
         'Talent',
         'Missile',

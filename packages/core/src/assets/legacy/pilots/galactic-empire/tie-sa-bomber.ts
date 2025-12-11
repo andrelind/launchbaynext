@@ -68,10 +68,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathfire.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 110,
+      extended: true,
     },
     {
       name: 'Captain Jonus',
@@ -101,10 +101,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 108,
+      extended: true,
     },
     {
       name: 'Gamma Squadron Ace',
@@ -132,10 +132,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gammasquadronace.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 111,
+      extended: true,
     },
     {
       name: 'Major Rhymer',
@@ -165,10 +165,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorrhymer.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 109,
+      extended: true,
     },
     {
       name: 'Scimitar Squadron Pilot',
@@ -195,10 +195,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitarsquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 112,
+      extended: true,
     },
     {
       name: 'Tomax Bren',
@@ -228,10 +228,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 107,
+      extended: true,
     },
     {
       name: 'Captain Jonus',
@@ -252,10 +252,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 962,
+      extended: true,
     },
     {
       name: 'Tomax Bren',
@@ -276,10 +276,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 963,
+      extended: true,
     },
     {
       name: '“Deathfire”',
@@ -301,10 +301,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathfire-swz98.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 964,
+      extended: true,
     },
     {
       name: '“Deathfire”',
@@ -334,10 +334,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathfire-swz98-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1194,
+      extended: true,
     },
     {
       name: 'Captain Jonus',
@@ -357,10 +357,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus-swz98.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 965,
+      extended: true,
     },
     {
       name: 'Captain Jonus',
@@ -389,10 +389,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainjonus-swz98-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1195,
+      extended: true,
     },
     {
       name: 'Tomax Bren',
@@ -414,10 +414,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren-swz98.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 966,
+      extended: true,
     },
     {
       name: 'Tomax Bren',
@@ -448,10 +448,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tomaxbren-swz98-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1196,
+      extended: true,
     },
     {
       name: 'Major Rhymer',
@@ -476,10 +476,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorrhymer-swz98.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 967,
+      extended: true,
     },
     {
       name: 'Major Rhymer',
@@ -509,10 +509,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorrhymer-swz98-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1197,
+      extended: true,
     },
     {
       name: 'Scimitar 1',
@@ -539,10 +539,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar1-battleoverendor.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 968,
+      extended: true,
     },
     {
       name: 'Scimitar 1',
@@ -573,10 +573,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar1-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1198,
+      extended: true,
     },
     {
       name: 'Scimitar 3',
@@ -603,10 +603,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar3-battleoverendor.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 969,
+      extended: true,
     },
     {
       name: 'Scimitar 3',
@@ -637,10 +637,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scimitar3-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1199,
+      extended: true,
     },
   ],
 };

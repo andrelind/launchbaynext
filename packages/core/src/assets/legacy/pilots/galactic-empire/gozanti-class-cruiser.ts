@@ -50,7 +50,6 @@ const t: ShipType = {
       },
       text: 'Capable of carrying TIE fighters and operating independently for long periods of time, the Gozanti-class cruiser is a common sight in the skies of downtrodden worlds across the Outer Rim.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 1,
       xws: 'outerrimgarrison',
@@ -66,6 +65,7 @@ const t: ShipType = {
         'Title',
       ],
       ffg: 711,
+      extended: false,
     },
   ],
 };

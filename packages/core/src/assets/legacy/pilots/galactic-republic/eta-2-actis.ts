@@ -49,7 +49,6 @@ const t: ShipType = {
         'After you or a friendly Obi-Wan Kenobi ship at range 0-3 executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship removes 1 red token of your choice.',
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       shipAbility: {
         name: 'Intuitive Controls',
         text: 'During the System Phase, you may perform a purple [Barrel Roll] or purple [Boost] action.',
@@ -63,6 +62,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       epic: true,
       ffg: 781,
+      extended: true,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -75,7 +75,6 @@ const t: ShipType = {
       },
       caption: 'Guardian of Democracy',
       standard: true,
-      wildspace: true,
       force: { value: 3, recovers: 1, side: ['light'] },
       ability:
         'After you or a friendly Anakin Skywalker ship at range 0-3 executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship gains 1 focus token.',
@@ -88,6 +87,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 782,
+      extended: true,
     },
     {
       name: 'Aayla Secura',
@@ -100,7 +100,6 @@ const t: ShipType = {
       },
       caption: 'Confident Warrior',
       standard: true,
-      wildspace: true,
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
         'While an enemy ship in your [Front Arc] at range 0-1 performs an attack, the defender may change 1 blank result to a [Focus] result.',
@@ -113,6 +112,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 783,
+      extended: true,
     },
     {
       name: 'Shaak Ti',
@@ -125,7 +125,6 @@ const t: ShipType = {
       },
       caption: 'Compassionate Mentor',
       standard: true,
-      wildspace: true,
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
         'At the start of the End Phase, you may spend any number of [Force] to choose that many friendly ships at range 0-2. Each chosen ship does not remove 1 focus or evade token during this End Phase.',
@@ -138,6 +137,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 784,
+      extended: true,
     },
     {
       name: 'Jedi General',
@@ -150,7 +150,6 @@ const t: ShipType = {
       },
       text: 'As the Clone Wars take their toll on the ranks of the Jedi Order, those that remain must assume even greater responsibilities in the Grand Army of the Republic.',
       standard: true,
-      wildspace: true,
       force: { value: 2, recovers: 1, side: ['light'] },
       cost: 41,
       image:
@@ -161,6 +160,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 786,
+      extended: true,
     },
     {
       name: 'Yoda',
@@ -173,7 +173,6 @@ const t: ShipType = {
       },
       caption: 'Grand Master',
       standard: true,
-      wildspace: true,
       force: { value: 3, recovers: 1, side: ['light'] },
       ability:
         'After another friendly ship at range 0-3 spends 1 or more [Force], you may spend 1 [Force]. If you do, that ship recovers 1 [Force].',
@@ -186,6 +185,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 785,
+      extended: true,
     },
     {
       name: 'Anakin Skywalker',
@@ -211,10 +211,10 @@ const t: ShipType = {
         'r2d2-republic',
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       epic: true,
       ffg: 991,
+      extended: true,
     },
     {
       name: 'Anakin Skywalker',
@@ -236,10 +236,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       epic: true,
       ffg: 1215,
+      extended: true,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -265,10 +265,10 @@ const t: ShipType = {
         'r4p17-siegeofcoruscant',
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 992,
+      extended: true,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -290,10 +290,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obiwankenobi-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 1216,
+      extended: true,
     },
     {
       name: 'Shaak Ti',
@@ -320,10 +320,10 @@ const t: ShipType = {
         'r4pastromech',
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 993,
+      extended: true,
     },
     {
       name: 'Shaak Ti',
@@ -345,10 +345,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shaakti-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Force Power', 'Astromech', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 1217,
+      extended: true,
     },
     {
       name: 'Kit Fisto',
@@ -361,7 +361,6 @@ const t: ShipType = {
       },
       caption: 'Enthusiastic Exemplar',
       standard: true,
-      wildspace: true,
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
         "While another friendly ship defends, if the attacker is in its [Bullseye Arc], you may spend 1 [Force] to change 1 of the defender's blank results to a [Focus] result.",
@@ -374,6 +373,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 994,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_Eta-2_Actis.png',

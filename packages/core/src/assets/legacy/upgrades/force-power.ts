@@ -20,8 +20,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Instinctive Aim',
@@ -42,8 +42,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Sense',
@@ -64,8 +64,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Supernatural Reflexes',
@@ -90,8 +90,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ baseSizes: ['Small'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Brilliant Evasion',
@@ -112,8 +112,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hate',
@@ -135,8 +135,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ sides: ['dark'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Predictive Shot',
@@ -157,8 +157,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Battle Meditation',
@@ -186,8 +186,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Foresight',
@@ -215,8 +215,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Precognitive Reflexes',
@@ -241,8 +241,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ baseSizes: ['Small'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Extreme Maneuvers',
@@ -263,8 +263,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Compassion',
@@ -286,8 +286,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ sides: ['light'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Malice',
@@ -309,8 +309,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ sides: ['dark'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Shattering Shot',
@@ -329,10 +329,10 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/shatteringshot.png',
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Patience',
@@ -354,8 +354,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ sides: ['light'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Roiling Anger',
@@ -371,9 +371,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     limited: 0,
@@ -393,9 +393,9 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     restrictions: [{ sides: ['dark'] }],
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
 ];
 

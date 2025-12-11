@@ -54,7 +54,6 @@ const t: ShipType = {
       },
       text: 'A craft used since before the Clone Wars, the CR90 corvette is favored by the Royal House of Alderaan for its versatility.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 0,
       xws: 'alderaanianguard',
@@ -71,6 +70,7 @@ const t: ShipType = {
         'Title',
       ],
       ffg: 706,
+      extended: false,
     },
   ],
 };

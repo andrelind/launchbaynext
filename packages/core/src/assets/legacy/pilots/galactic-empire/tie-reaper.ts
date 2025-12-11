@@ -57,10 +57,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vizier.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 115,
+      extended: true,
     },
     {
       name: 'Captain Feroph',
@@ -81,10 +81,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainferoph.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 114,
+      extended: true,
     },
     {
       name: 'Major Vermeil',
@@ -105,10 +105,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvermeil.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 113,
+      extended: true,
     },
     {
       name: 'Scarif Base Pilot',
@@ -127,10 +127,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scarifbasepilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 116,
+      extended: true,
     },
   ],
 };

@@ -27,8 +27,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ion Cannon',
@@ -56,8 +56,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Jamming Beam',
@@ -85,8 +85,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tractor Beam',
@@ -114,8 +114,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Autoblasters',
@@ -143,8 +143,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Synced Laser Cannons',
@@ -172,8 +172,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Proton Cannons',
@@ -202,8 +202,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Underslung Blaster Cannon',
@@ -234,8 +234,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ancillary Ion Weapons',
@@ -252,9 +252,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
 ];
 

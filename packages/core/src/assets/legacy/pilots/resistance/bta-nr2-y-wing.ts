@@ -46,7 +46,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 38,
       slots: [
         'Talent',
@@ -69,6 +68,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 903,
+      extended: true,
     },
     {
       name: 'Teza Nasz',
@@ -80,7 +80,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 35,
       slots: [
         'Talent',
@@ -102,6 +101,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 904,
+      extended: true,
     },
     {
       name: 'Wilsa Teshlo',
@@ -113,7 +113,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Tech',
@@ -134,6 +133,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 905,
+      extended: true,
     },
     {
       name: 'Shasa Zaro',
@@ -145,7 +145,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 32,
       slots: [
         'Tech',
@@ -166,6 +165,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 906,
+      extended: true,
     },
     {
       name: 'Lega Fossang',
@@ -177,7 +177,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Talent',
@@ -199,6 +198,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 907,
+      extended: true,
     },
     {
       name: 'Aftab Ackbar',
@@ -210,7 +210,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 32,
       slots: [
         'Talent',
@@ -232,6 +231,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 908,
+      extended: true,
     },
     {
       name: 'Corus Kapellim',
@@ -243,7 +243,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Tech',
@@ -264,6 +263,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 909,
+      extended: true,
     },
     {
       name: 'C’ai Threnalli',
@@ -275,7 +275,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Talent',
@@ -297,6 +296,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 910,
+      extended: true,
     },
     {
       name: 'New Republic Patrol',
@@ -308,7 +308,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 30,
       slots: [
         'Talent',
@@ -328,6 +327,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 911,
+      extended: true,
     },
     {
       name: 'Kijimi Spice Runner',
@@ -339,7 +339,6 @@ const t: ShipType = {
         text: 'After you perform an action added to your action bar by a [Talent], [Illicit], or [Modification] upgrade, you may perform a [Calculate] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 29,
       slots: [
         'Tech',
@@ -358,6 +357,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       ffg: 912,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Y-wing-bta-nr2.png',

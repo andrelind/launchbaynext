@@ -55,7 +55,6 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jediknight.png',
       force: { value: 1, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       cost: 35,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       artwork:
@@ -63,6 +62,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 515,
+      extended: true,
     },
     {
       name: 'Obi-Wan Kenobi',
@@ -80,7 +80,6 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/obiwankenobi.png',
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       cost: 48,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       artwork:
@@ -88,6 +87,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 511,
+      extended: true,
     },
     {
       name: 'Plo Koon',
@@ -105,7 +105,6 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/plokoon.png',
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       cost: 45,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       artwork:
@@ -113,6 +112,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 513,
+      extended: true,
     },
     {
       name: 'Saesee Tiin',
@@ -130,7 +130,6 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/saeseetiin.png',
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: false,
-      wildspace: true,
       cost: 39,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       artwork:
@@ -138,6 +137,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 514,
+      extended: true,
     },
     {
       name: 'Mace Windu',
@@ -154,7 +154,6 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/macewindu.png',
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       cost: 42,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       artwork:
@@ -162,6 +161,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 512,
+      extended: true,
     },
     {
       name: 'Anakin Skywalker',
@@ -177,7 +177,6 @@ const t: ShipType = {
       },
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/anakinskywalker.png',
       cost: 55,
@@ -187,6 +186,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 507,
+      extended: true,
     },
     {
       name: 'Ahsoka Tano',
@@ -202,7 +202,6 @@ const t: ShipType = {
       },
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahsokatano.png',
       cost: 38,
@@ -212,6 +211,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 510,
+      extended: true,
     },
     {
       name: 'Barriss Offee',
@@ -227,7 +227,6 @@ const t: ShipType = {
       },
       force: { value: 1, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/barrissoffee.png',
       cost: 35,
@@ -237,6 +236,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 509,
+      extended: true,
     },
     {
       name: 'Luminara Unduli',
@@ -252,7 +252,6 @@ const t: ShipType = {
       },
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/luminaraunduli.png',
       cost: 39,
@@ -262,6 +261,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 508,
+      extended: true,
     },
     {
       name: 'Adi Gallia',
@@ -277,7 +277,6 @@ const t: ShipType = {
       },
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/adigallia.png',
       image:
@@ -287,6 +286,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 974,
+      extended: true,
     },
     {
       name: 'Depa Billaba',
@@ -299,8 +299,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/depabillaba-wat1.png',
       force: { value: 2, recovers: 1, side: ['light'] },
-      standard: true,
-      wildspace: true,
+      standard: false,
       cost: 38,
       slots: ['Astromech', 'Modification', 'Force Power', 'Configuration'],
       artwork:

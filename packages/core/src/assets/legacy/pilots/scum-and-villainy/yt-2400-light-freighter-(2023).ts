@@ -63,9 +63,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-sl-scumandvillainy.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: 1075,
     },
     {
@@ -95,9 +95,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-lsl-scumandvillainy.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: null,
     },
     {
@@ -133,9 +133,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-sl-scumandvillainy.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: 1074,
     },
     {
@@ -167,9 +167,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-lsl-scumandvillainy.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: null,
     },
   ],

@@ -24,8 +24,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['separatistalliance'] }, { solitary: true }],
     cost: { value: 10 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'TV-94',
@@ -47,8 +47,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['separatistalliance'] }, { solitary: true }],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'K2-B4',
@@ -70,8 +70,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['separatistalliance'] }, { solitary: true }],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'TA-175',
@@ -93,8 +93,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['separatistalliance'] }, { solitary: true }],
     cost: { value: 11 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Kalani',
@@ -119,8 +119,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
 ];
 

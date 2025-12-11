@@ -77,9 +77,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/corranhorn.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 50,
+      extended: true,
     },
     {
       name: 'Gavin Darklighter',
@@ -107,9 +107,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gavindarklighter.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 51,
+      extended: true,
     },
     {
       name: 'Knave Squadron Escort',
@@ -128,9 +128,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/knavesquadronescort.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 53,
+      extended: true,
     },
     {
       name: 'Rogue Squadron Escort',
@@ -156,9 +156,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/roguesquadronescort.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 52,
+      extended: true,
     },
   ],
 };

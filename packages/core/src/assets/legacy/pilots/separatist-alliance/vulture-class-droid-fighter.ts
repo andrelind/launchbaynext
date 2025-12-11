@@ -54,7 +54,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tradefederationdrone.png',
       standard: true,
-      wildspace: true,
       cost: 21,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -62,6 +61,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 498,
+      extended: true,
     },
     {
       name: 'Precise Hunter',
@@ -78,7 +78,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/precisehunter.png',
       standard: true,
-      wildspace: true,
       cost: 23,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -86,6 +85,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 500,
+      extended: true,
     },
     {
       name: 'Haor Chall Prototype',
@@ -102,7 +102,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/haorchallprototype.png',
       standard: true,
-      wildspace: true,
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -110,6 +109,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 502,
+      extended: true,
     },
     {
       name: 'DFS-081',
@@ -126,7 +126,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs081.png',
       standard: true,
-      wildspace: true,
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -134,6 +133,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 499,
+      extended: true,
     },
     {
       name: 'Separatist Drone',
@@ -148,7 +148,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistdrone.png',
       standard: true,
-      wildspace: true,
       cost: 22,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -156,6 +155,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 497,
+      extended: true,
     },
     {
       name: 'DFS-311',
@@ -172,7 +172,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs311.png',
       standard: true,
-      wildspace: true,
       cost: 23,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -180,6 +179,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 501,
+      extended: true,
     },
     {
       name: 'DFS-081',
@@ -205,10 +205,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1080,
+      extended: true,
     },
     {
       name: 'DFS-081',
@@ -230,10 +230,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs081-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1200,
+      extended: true,
     },
     {
       name: 'DFS-311',
@@ -258,10 +258,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1081,
+      extended: true,
     },
     {
       name: 'DFS-311',
@@ -282,10 +282,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs311-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1201,
+      extended: true,
     },
     {
       name: 'Haor Chall Prototype',
@@ -310,10 +310,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1082,
+      extended: true,
     },
     {
       name: 'Haor Chall Prototype',
@@ -334,10 +334,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/haorchallprototype-siegeofcoruscant-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1202,
+      extended: true,
     },
     {
       name: 'The Iron Assembler',
@@ -352,7 +352,6 @@ const t: ShipType = {
       ability:
         'After a friendly ship at range 0-1 skips its execute maneuver step, you may spend 1 [Charge]. If you do, if there is an asteroid or debris cloud at range 0 of it, that ship may repair 1 damage.',
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/theironassembler.png',
       artwork:
@@ -363,6 +362,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 1083,
+      extended: true,
     },
     {
       name: 'Kelrodo-Ai Holdout',
@@ -386,7 +386,6 @@ const t: ShipType = {
       ability:
         'After you are destroyed, you may transfer each of your locks and green tokens to another friendly Kelrodo-Ai Holdout at range 0-3.',
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kelrodoaiholdout.png',
       artwork:
@@ -395,6 +394,7 @@ const t: ShipType = {
       slots: ['Missile', 'Modification', 'Configuration'],
       epic: true,
       ffg: 1084,
+      extended: true,
     },
     {
       name: '00M Uplink Prototype',
@@ -406,8 +406,7 @@ const t: ShipType = {
         'While a friendly ship at range 0-1 resolves Networked Calculations, it may treat friendly ships at range 0-1 of you as being at range 1.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/00muplinkprototype-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       cost: 23,
       slots: ['Missile', 'Modification', 'Configuration'],
       artwork:
@@ -427,9 +426,8 @@ const t: ShipType = {
         'You can perform primary attacks at range 0. After you execute a red maneuver or perform a red action, if there is an enemy ship at range 0-1, you may remove 1 stress token.',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dfs420-wat1.png',
-      standard: true,
-      wildspace: true,
-      cost: 25,
+      standard: false,
+      cost: 24,
       slots: ['Talent', 'Missile', 'Modification', 'Configuration'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dfs420-wat1.png',

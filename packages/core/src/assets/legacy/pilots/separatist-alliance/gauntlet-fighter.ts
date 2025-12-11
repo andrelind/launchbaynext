@@ -62,9 +62,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bokatankryze-separatistalliance.png',
       keywords: ['Mandalorian'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1092,
+      extended: true,
     },
     {
       name: 'Pre Vizsla',
@@ -92,9 +92,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/previzsla.png',
       keywords: ['Mandalorian'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1093,
+      extended: true,
     },
     {
       name: 'Death Watch Warrior',
@@ -120,9 +120,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathwatchwarrior.png',
       keywords: ['Mandalorian'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1094,
+      extended: true,
     },
   ],
 };

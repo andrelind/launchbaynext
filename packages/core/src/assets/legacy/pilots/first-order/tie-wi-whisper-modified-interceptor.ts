@@ -63,7 +63,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       cost: 61,
       slots: [
         'Force Power',
@@ -84,6 +83,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['dark', 'light'] },
       epic: true,
       ffg: 919,
+      extended: true,
     },
     {
       name: '“Wrath”',
@@ -95,7 +95,6 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
       cost: 48,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
@@ -108,6 +107,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 920,
+      extended: true,
     },
     {
       name: '“Nightfall”',
@@ -119,8 +119,7 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
-      cost: 45,
+      cost: 44,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
         'After you fully execute a maneuver or perform a [Boost] action, each ship you moved through gains 2 jam tokens.',
@@ -132,6 +131,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 921,
+      extended: true,
     },
     {
       name: '“Whirlwind”',
@@ -143,8 +143,7 @@ const t: ShipType = {
         text: 'You can rotate your [Single Turret Arc] indicator only to your [Front Arc] or [Rear Arc]. You must treat the [Front Arc] requirement of your equipped [Missile] upgrades as [Single Turret Arc].',
       },
       standard: true,
-      wildspace: true,
-      cost: 45,
+      cost: 43,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       ability:
         'Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its [Front Arc].',
@@ -156,6 +155,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 922,
+      extended: true,
     },
     {
       name: '709th Legion Ace',
@@ -168,8 +168,7 @@ const t: ShipType = {
       },
       text: "Commanded by Supreme Leader Kylo Ren, the 709th Legion fights without mercy or remorse to crush the Resistance and bring the galaxy under the First Order's dominion.",
       standard: true,
-      wildspace: true,
-      cost: 44,
+      cost: 43,
       slots: ['Talent', 'Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/709thlegionace.png',
@@ -178,6 +177,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 923,
+      extended: true,
     },
     {
       name: 'Red Fury Zealot',
@@ -190,7 +190,6 @@ const t: ShipType = {
       },
       text: 'Also called Red Fury, the 709th Legion is charged by Supreme Leader Kylo Ren with rooting out dissenters at Black Spire Outpost.',
       standard: true,
-      wildspace: true,
       cost: 41,
       slots: ['Talent', 'Missile', 'Tech', 'Tech', 'Configuration'],
       artwork:
@@ -200,6 +199,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 924,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_TIEWhisper.png',

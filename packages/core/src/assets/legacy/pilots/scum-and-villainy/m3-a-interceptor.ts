@@ -55,9 +55,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelspacer.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 190,
+      extended: true,
     },
     {
       name: 'Genesis Red',
@@ -78,9 +78,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/genesisred.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 184,
+      extended: true,
     },
     {
       name: 'Inaldra',
@@ -101,9 +101,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/inaldra.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 187,
+      extended: true,
     },
     {
       name: 'Laetin A’shera',
@@ -124,9 +124,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/laetinashera.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 185,
+      extended: true,
     },
     {
       name: 'Quinn Jast',
@@ -147,10 +147,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/quinnjast.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 186,
+      extended: true,
     },
     {
       name: 'Serissu',
@@ -171,9 +171,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/serissu.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 183,
+      extended: true,
     },
     {
       name: 'Sunny Bounder',
@@ -194,9 +194,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunnybounder.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 188,
+      extended: true,
     },
     {
       name: 'Tansarii Point Veteran',
@@ -215,9 +215,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tansariipointveteran.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 189,
+      extended: true,
     },
     {
       name: 'G4R-G0R V/M',
@@ -230,7 +230,6 @@ const t: ShipType = {
       },
       caption: 'Tilted Droid',
       standard: true,
-      wildspace: true,
       slots: ['Modification'],
       ability:
         'After you defend, each other ship at range 0 suffers 1 [Critical Hit] damage.',
@@ -248,6 +247,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 636,
+      extended: true,
     },
   ],
 };

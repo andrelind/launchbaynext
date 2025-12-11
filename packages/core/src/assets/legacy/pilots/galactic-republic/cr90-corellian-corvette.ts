@@ -54,7 +54,6 @@ const t: ShipType = {
       },
       text: 'The Galactic Republic uses small, swift warships such as the CR90 corvette to respond rapidly to Separatist incursions across the galaxy.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 0,
       xws: 'republicjudiciary',
@@ -70,6 +69,7 @@ const t: ShipType = {
         'Cargo',
       ],
       ffg: 705,
+      extended: false,
     },
   ],
 };

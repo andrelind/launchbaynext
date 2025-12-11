@@ -50,7 +50,6 @@ const t: ShipType = {
       },
       text: "The First Order's swift rise to power rests upon ruthless innovation. However, sympathizers often repurpose Imperial designs, like the venerable Gozanti-class cruiser, in surveillance and patrol operations.",
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 1,
       xws: 'firstordersympathizers',
@@ -65,6 +64,7 @@ const t: ShipType = {
         'Cargo',
       ],
       ffg: 712,
+      extended: false,
     },
   ],
 };

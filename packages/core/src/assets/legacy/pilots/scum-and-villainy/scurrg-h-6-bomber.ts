@@ -62,9 +62,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainnym.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 204,
+      extended: true,
     },
     {
       name: 'Lok Revenant',
@@ -87,9 +87,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lokrevenant.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 206,
+      extended: true,
     },
     {
       name: 'Sol Sixxa',
@@ -115,9 +115,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/solsixxa.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 205,
+      extended: true,
     },
   ],
 };

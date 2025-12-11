@@ -66,9 +66,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-rebelalliance.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
+      extended: true,
       ffg: 1048,
     },
     {
@@ -98,9 +98,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-lsl-rebelalliance.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: null,
     },
     {
@@ -127,9 +127,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dashrendar-swz103-sl-rebelalliance.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: 1050,
     },
     {
@@ -168,9 +168,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-rebelalliance.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: 1047,
     },
     {
@@ -202,9 +202,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-lsl-rebelalliance.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: null,
     },
     {
@@ -240,9 +240,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leebo-swz103-sl-rebelalliance.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid', 'Freighter'],
       epic: true,
+      extended: true,
       ffg: 1049,
     },
   ],

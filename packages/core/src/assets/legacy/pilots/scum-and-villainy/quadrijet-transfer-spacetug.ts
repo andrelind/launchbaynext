@@ -57,9 +57,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/constablezuvio.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 161,
+      extended: true,
     },
     {
       name: 'Jakku Gunrunner',
@@ -78,9 +78,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakkugunrunner.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 164,
+      extended: true,
     },
     {
       name: 'Sarco Plank',
@@ -101,10 +101,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sarcoplank.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 162,
+      extended: true,
     },
     {
       name: 'Unkar Plutt',
@@ -125,9 +125,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/unkarplutt.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 163,
+      extended: true,
     },
   ],
 };

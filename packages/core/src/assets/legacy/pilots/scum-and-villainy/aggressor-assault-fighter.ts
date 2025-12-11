@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'Aggressive Automaton',
       initiative: 4,
       limited: 1,
-      cost: 64,
+      cost: 60,
       xws: 'ig88a',
       ability:
         'At the start of the Engagement Phase, you may choose 1 friendly ship with [Calculate] on its action bar at range 1-3. If you do, transfer 1 of your calculate tokens to it.',
@@ -67,17 +67,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88a.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
       ffg: 197,
+      extended: true,
     },
     {
       name: 'IG-88B',
       caption: 'Brutal Battledroid',
       initiative: 4,
       limited: 1,
-      cost: 61,
+      cost: 60,
       xws: 'ig88b',
       ability:
         'After you perform an attack that misses, you may perform a bonus [Cannon] attack.',
@@ -100,17 +100,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88b.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
       ffg: 198,
+      extended: true,
     },
     {
       name: 'IG-88C',
       caption: 'Conniving Contraption',
       initiative: 4,
       limited: 1,
-      cost: 62,
+      cost: 60,
       xws: 'ig88c',
       ability:
         'After you perform a [Boost] action, you may perform an [Evade] action.',
@@ -133,17 +133,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88c.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
       ffg: 199,
+      extended: true,
     },
     {
       name: 'IG-88D',
       caption: 'Deadly Device',
       initiative: 4,
       limited: 1,
-      cost: 61,
+      cost: 60,
       xws: 'ig88d',
       ability:
         "While you execute a Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuver, you may use another template of the same speed instead: either the turn ([Turn Left] or [Turn Right]) of the same direction or the straight ([Straight]) template.",
@@ -166,10 +166,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ig88d.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
       ffg: 200,
+      extended: true,
     },
   ],
 };

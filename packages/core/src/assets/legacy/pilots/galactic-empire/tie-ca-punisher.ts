@@ -65,10 +65,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/deathrain.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 140,
+      extended: true,
     },
     {
       name: '“Redline”',
@@ -94,10 +94,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redline.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 139,
+      extended: true,
     },
     {
       name: 'Cutlass Squadron Pilot',
@@ -121,10 +121,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cutlasssquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 141,
+      extended: true,
     },
   ],
 };

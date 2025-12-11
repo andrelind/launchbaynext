@@ -49,10 +49,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kashyyykdefender.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 33,
       keywords: ['Wookiee'],
+      extended: true,
     },
     {
       name: 'Lowhhrick',
@@ -69,10 +69,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lowhhrick.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 32,
       keywords: ['Wookiee'],
+      extended: true,
     },
     {
       name: 'Wullffwarro',
@@ -89,10 +89,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wullffwarro.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 31,
       keywords: ['Wookiee'],
+      extended: true,
     },
     {
       name: 'Tarfful',
@@ -109,8 +109,7 @@ const t: ShipType = {
       slots: ['Talent', 'Crew', 'Crew', 'Modification'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tarfful-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['Wookiee'],
       epic: true,
       extended: true,

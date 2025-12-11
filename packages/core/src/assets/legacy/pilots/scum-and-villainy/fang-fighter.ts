@@ -65,10 +65,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 155,
+      extended: true,
     },
     {
       name: 'Joy Rekkoff',
@@ -89,10 +89,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/joyrekkoff.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 157,
+      extended: true,
     },
     {
       name: 'Kad Solus',
@@ -112,10 +112,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kadsolus.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 158,
+      extended: true,
     },
     {
       name: 'Old Teroch',
@@ -136,10 +136,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oldteroch.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 156,
+      extended: true,
     },
     {
       name: 'Skull Squadron Pilot',
@@ -158,10 +158,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/skullsquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 159,
+      extended: true,
     },
     {
       name: 'Zealous Recruit',
@@ -180,10 +180,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zealousrecruit.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 160,
+      extended: true,
     },
     {
       name: 'Mandalorian Royal Guard',
@@ -203,11 +203,11 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mandalorianroyalguard.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       caption: 'Selfless Protector',
       epic: true,
       ffg: 1056,
+      extended: true,
     },
     {
       name: 'Tor Phun',
@@ -228,10 +228,10 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Torpedo', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian'],
       epic: true,
       ffg: 1057,
+      extended: true,
     },
   ],
 };

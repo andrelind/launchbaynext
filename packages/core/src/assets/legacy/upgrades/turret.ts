@@ -30,8 +30,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ion Cannon Turret',
@@ -63,8 +63,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
 ];
 

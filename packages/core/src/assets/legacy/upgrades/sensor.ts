@@ -23,8 +23,8 @@ const t: UpgradeBase[] = [
       values: { Small: 13, Medium: 11, Large: 9, Huge: 0 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Collision Detector',
@@ -46,8 +46,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Fire-Control System',
@@ -68,8 +68,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Trajectory Simulator',
@@ -93,8 +93,8 @@ const t: UpgradeBase[] = [
       values: { Small: 5, Medium: 4, Large: 3, Huge: 3 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Passive Sensors',
@@ -129,8 +129,43 @@ const t: UpgradeBase[] = [
       },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
+  },
+  {
+    limited: 0,
+    xws: 'longrangescanners-alphaclassstarwing',
+    sides: [
+      {
+        title: 'Long-Range Scanners',
+        type: 'Sensor',
+        charges: { value: 2, recovers: 0 },
+        ability:
+          'Before you perform a [Lock] action, you may spend 1 [Charge]. If you do, you may acquire a lock on an object at any range during that action.',
+        slots: ['Sensor'],
+      },
+    ],
+    standard: true,
+    wildspace: false,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'relaysystem-tiephphantom',
+    sides: [
+      {
+        title: 'Relay System',
+        type: 'Sensor',
+        ability:
+          'After a friendly ship at range 0-2 performs a [Lock] action, you may acquire a lock on the same object. After you perform an attack that hits, you may spend a lock you have on the defender. If you do, another friendly ship at range 0-1 may acquire a lock on the defender.',
+        slots: ['Sensor'],
+      },
+    ],
+    standard: true,
+    wildspace: false,
+    epic: true,
+    standardLoadoutOnly: true,
   },
 ];
 

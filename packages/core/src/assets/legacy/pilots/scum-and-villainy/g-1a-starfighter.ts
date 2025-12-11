@@ -66,10 +66,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/4lom.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Droid'],
       epic: true,
       ffg: 201,
+      extended: true,
     },
     {
       name: 'Gand Findsman',
@@ -84,10 +84,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gandfindsman.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 203,
+      extended: true,
     },
     {
       name: 'Zuckuss',
@@ -112,10 +112,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zuckuss.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 202,
+      extended: true,
     },
   ],
 };

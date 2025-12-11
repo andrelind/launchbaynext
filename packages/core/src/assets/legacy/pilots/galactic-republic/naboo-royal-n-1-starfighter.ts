@@ -44,8 +44,7 @@ const t: ShipType = {
       limited: 1,
       xws: 'anakinskywalker-nabooroyaln1starfighter',
       standard: true,
-      wildspace: true,
-      cost: 41,
+      cost: 40,
       slots: ['Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         'Before you reveal your maneuver, you may spend 1 [Force] to barrel roll (this is not an action).',
@@ -62,6 +61,7 @@ const t: ShipType = {
       keywords: ['Light Side'],
       epic: true,
       ffg: 558,
+      extended: true,
     },
     {
       name: 'Ric Olié',
@@ -74,8 +74,7 @@ const t: ShipType = {
       },
       caption: 'Bravo Leader',
       standard: true,
-      wildspace: true,
-      cost: 44,
+      cost: 43,
       slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
@@ -85,6 +84,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ricolie.png',
       epic: true,
       ffg: 557,
+      extended: true,
     },
     {
       name: 'Padmé Amidala',
@@ -97,7 +97,6 @@ const t: ShipType = {
       },
       caption: 'Aggressive Negotiator',
       standard: true,
-      wildspace: true,
       cost: 35,
       slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
@@ -108,6 +107,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padmeamidala.png',
       epic: true,
       ffg: 559,
+      extended: true,
     },
     {
       name: 'Dineé Ellberger',
@@ -120,8 +120,7 @@ const t: ShipType = {
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       standard: true,
-      wildspace: true,
-      cost: 30,
+      cost: 29,
       slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
@@ -131,6 +130,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dineeellberger.png',
       epic: true,
       ffg: 560,
+      extended: true,
     },
     {
       name: 'Bravo Flight Officer',
@@ -143,7 +143,6 @@ const t: ShipType = {
       },
       text: 'The volunteer pilots of the Royal Naboo Security Force are dedicated to protecting the people and ideals of their homeworld, and trust their Queen to send them into battle only when all other options have failed.',
       standard: true,
-      wildspace: true,
       cost: 28,
       slots: ['Sensor', 'Torpedo', 'Astromech'],
       artwork:
@@ -152,6 +151,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bravoflightofficer.png',
       epic: true,
       ffg: 562,
+      extended: true,
     },
     {
       name: 'Naboo Handmaiden',
@@ -164,7 +164,6 @@ const t: ShipType = {
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       standard: true,
-      wildspace: true,
       conditions: ['decoyed'],
       ability:
         'Setup: After placing forces, assign the Decoyed condition to 1 friendly ship other than Naboo Handmaiden.',
@@ -176,6 +175,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/naboohandmaiden.png',
       epic: true,
       ffg: 561,
+      extended: true,
     },
     {
       name: 'Gavyn Sykes',
@@ -188,8 +188,7 @@ const t: ShipType = {
         text: 'After you fully execute a speed 3-5 maneuver, you may perform an [Evade] action.',
       },
       standard: true,
-      wildspace: true,
-      cost: 31,
+      cost: 30,
       slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         "While you defend or perform an attack, if the speed of your revealed maneuver is greater than the enemy ship's, you may reroll your blank results.",
@@ -199,6 +198,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gavynsykes.png',
       epic: true,
       ffg: 987,
+      extended: true,
     },
     {
       name: 'Rhys Dallows',
@@ -206,9 +206,8 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       caption: 'Echo Five',
-      standard: true,
-      wildspace: true,
-      cost: 45,
+      standard: false,
+      cost: 46,
       slots: ['Talent', 'Illicit', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         'Before you or a friendly Essara Till at range 0-3 would gain a green token, that ship may perform a [Barrel Roll] action instead.',
@@ -226,9 +225,8 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       caption: 'Bravo Seven',
-      standard: true,
-      wildspace: true,
-      cost: 37,
+      standard: false,
+      cost: 38,
       slots: ['Talent', 'Talent', 'Sensor', 'Torpedo', 'Astromech'],
       ability:
         'Before you or a friendly Rhys Dallows at range 0-3 would gain a green token, that ship may perform a [Lock] action instead.',

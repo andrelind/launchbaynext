@@ -62,10 +62,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/asajjventress.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Dark Side'],
       epic: true,
       ffg: 219,
+      extended: true,
     },
     {
       name: 'Ketsu Onyo',
@@ -82,10 +82,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ketsuonyo.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       epic: true,
       ffg: 218,
+      extended: true,
     },
     {
       name: 'Sabine Wren',
@@ -102,10 +102,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-lancerclasspursuitcraft.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       epic: true,
       ffg: 220,
+      extended: true,
     },
     {
       name: 'Shadowport Hunter',
@@ -120,10 +120,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowporthunter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 221,
+      extended: true,
     },
   ],
 };

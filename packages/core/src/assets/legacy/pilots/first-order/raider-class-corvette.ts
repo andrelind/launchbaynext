@@ -53,7 +53,6 @@ const t: ShipType = {
       },
       text: "The First Order's supporters make use of former Imperial vessels, such as the Raider-class corvette. Though it has outlived the regime that created it, this craft still spreads terror across the galaxy.",
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 0,
       xws: 'firstordercollaborators',
@@ -70,6 +69,7 @@ const t: ShipType = {
         'Cargo',
       ],
       ffg: 708,
+      extended: false,
     },
   ],
 };

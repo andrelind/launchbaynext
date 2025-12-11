@@ -71,10 +71,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chopper.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter', 'Spectre'],
       epic: true,
       ffg: 75,
+      extended: true,
     },
     {
       name: 'Hera Syndulla',
@@ -105,10 +105,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla-vcx100lightfreighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'Spectre'],
       epic: true,
       ffg: 73,
+      extended: true,
     },
     {
       name: 'Kanan Jarrus',
@@ -140,10 +140,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kananjarrus.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'Jedi', 'Light Side', 'Spectre'],
       epic: true,
       ffg: 74,
+      extended: true,
     },
     {
       name: 'Lothal Rebel',
@@ -171,10 +171,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lothalrebel.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 76,
+      extended: true,
     },
     {
       name: 'Alexsandr Kallus',
@@ -190,7 +190,6 @@ const t: ShipType = {
         text: "While you have a docked ship, you have a primary [Rear Arc] weapon with an attack value equal to your docked ship's primary [Front Arc] attack value.",
       },
       standard: true,
-      wildspace: true,
       slots: [
         'Talent',
         'Sensor',
@@ -209,6 +208,7 @@ const t: ShipType = {
       keywords: ['Freighter', 'Spectre'],
       epic: true,
       ffg: 631,
+      extended: true,
     },
   ],
 };

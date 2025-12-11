@@ -59,9 +59,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 66,
+      extended: true,
     },
     {
       name: 'Ibtisam',
@@ -85,9 +85,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ibtisam.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 68,
+      extended: true,
     },
     {
       name: 'Norra Wexley',
@@ -111,9 +111,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/norrawexley.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 65,
+      extended: true,
     },
     {
       name: 'Shara Bey',
@@ -137,9 +137,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sharabey.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 67,
+      extended: true,
     },
   ],
 };

@@ -53,7 +53,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kickback.png',
       standard: true,
-      wildspace: true,
       cost: 27,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
@@ -61,6 +60,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 517,
+      extended: true,
     },
     {
       name: '“Odd Ball”',
@@ -73,7 +73,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/oddball.png',
       standard: true,
-      wildspace: true,
       cost: 29,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
@@ -81,6 +80,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 516,
+      extended: true,
     },
     {
       name: '“Swoop”',
@@ -93,7 +93,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/swoop.png',
       standard: true,
-      wildspace: true,
       cost: 26,
       slots: ['Missile', 'Modification'],
       artwork:
@@ -101,6 +100,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 519,
+      extended: true,
     },
     {
       name: '“Axe”',
@@ -113,7 +113,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/axe.png',
       standard: true,
-      wildspace: true,
       cost: 26,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
@@ -121,6 +120,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 518,
+      extended: true,
     },
     {
       name: '“Tucker”',
@@ -133,7 +133,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tucker.png',
       standard: true,
-      wildspace: true,
       cost: 25,
       slots: ['Missile', 'Modification'],
       artwork:
@@ -141,6 +140,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 520,
+      extended: true,
     },
     {
       name: 'Blue Squadron Protector',
@@ -151,7 +151,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bluesquadronprotector.png',
       standard: true,
-      wildspace: true,
       cost: 26,
       slots: ['Talent', 'Missile', 'Modification'],
       artwork:
@@ -159,6 +158,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 521,
+      extended: true,
     },
     {
       name: 'Gold Squadron Trooper',
@@ -169,7 +169,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/goldsquadrontrooper.png',
       standard: true,
-      wildspace: true,
       cost: 25,
       slots: ['Missile', 'Modification'],
       artwork:
@@ -177,6 +176,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 522,
+      extended: true,
     },
     {
       name: '“Kickback”',
@@ -202,10 +202,10 @@ const t: ShipType = {
         { type: 'hull', value: 6 },
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 988,
+      extended: true,
     },
     {
       name: '“Kickback”',
@@ -231,10 +231,10 @@ const t: ShipType = {
         { type: 'hull', value: 6 },
       ],
       standard: true,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 1213,
+      extended: true,
     },
     {
       name: '“Axe”',
@@ -260,10 +260,10 @@ const t: ShipType = {
         { type: 'hull', value: 6 },
       ],
       standard: false,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 989,
+      extended: true,
     },
     {
       name: '“Axe”',
@@ -289,10 +289,10 @@ const t: ShipType = {
         { type: 'hull', value: 6 },
       ],
       standard: true,
-      wildspace: true,
       keywords: ['Clone'],
       epic: true,
       ffg: 1214,
+      extended: true,
     },
     {
       name: '“Slammer”',
@@ -304,7 +304,6 @@ const t: ShipType = {
         'After you fully execute a maneuver, you may spend 2 [Charge] to peform a [SLAM] action, even while stressed.',
       charges: { value: 2, recovers: 1 },
       standard: true,
-      wildspace: true,
       cost: 34,
       slots: ['Missile', 'Modification'],
       artwork:
@@ -314,6 +313,7 @@ const t: ShipType = {
       keywords: ['Clone'],
       epic: true,
       ffg: 990,
+      extended: true,
     },
   ],
 };

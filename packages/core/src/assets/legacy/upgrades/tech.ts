@@ -20,8 +20,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ferrosphere Paint',
@@ -43,8 +43,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hyperspace Tracking Data',
@@ -66,8 +66,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['firstorder'] }, { baseSizes: ['Large'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Primed Thrusters',
@@ -92,8 +92,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ baseSizes: ['Small'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Targeting Synchronizer',
@@ -114,8 +114,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Pattern Analyzer',
@@ -136,8 +136,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Biohexacrypt Codes',
@@ -159,8 +159,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['firstorder'] }, { action: { type: 'Lock' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Deuterium Power Cells',
@@ -182,8 +182,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { variable: 'agility', values: { '0': 4, '1': 5, '2': 6, '3': 7 } },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Automated Target Priority',
@@ -204,8 +204,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Sensor Buoy Suite',
@@ -242,8 +242,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Sensor Scramblers',
@@ -267,8 +267,8 @@ const t: UpgradeBase[] = [
       { chassis: ['tiewiwhispermodifiedinterceptor', 'tievnsilencer'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
 ];
 

@@ -78,10 +78,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/quickdraw.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 406,
+      extended: true,
     },
     {
       name: '“Backdraft”',
@@ -102,10 +102,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/backdraft.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 407,
+      extended: true,
     },
     {
       name: 'Omega Squadron Expert',
@@ -124,10 +124,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/omegasquadronexpert.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 408,
+      extended: true,
     },
     {
       name: 'Zeta Squadron Survivor',
@@ -146,10 +146,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zetasquadronsurvivor.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 409,
+      extended: true,
     },
     {
       name: 'Lieutenant LeHuse',
@@ -162,7 +162,6 @@ const t: ShipType = {
       },
       caption: 'Unflinching Executioner',
       standard: true,
-      wildspace: true,
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       ability:
         "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
@@ -174,6 +173,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 641,
+      extended: true,
     },
     {
       name: 'Captain Phasma',
@@ -186,7 +186,6 @@ const t: ShipType = {
       },
       caption: 'Scyre Survivor',
       standard: true,
-      wildspace: true,
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Gunner', 'Tech'],
       ability:
         'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 [Hit]/[Critical Hit] damage to cancel 1 matching result.',
@@ -198,6 +197,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 642,
+      extended: true,
     },
     {
       name: '“Strife”',
@@ -213,8 +213,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/strife-wat1.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/strife-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['TIE'],
       epic: true,
       extended: true,

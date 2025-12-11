@@ -21,8 +21,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: '“Zeb” Orrelios',
@@ -44,8 +44,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: '0-0-0',
@@ -69,8 +69,8 @@ const t: UpgradeBase[] = [
       { factions: ['scumandvillainy'], character: ['Darth Vader'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: '4-LOM',
@@ -92,8 +92,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Admiral Sloane',
@@ -115,8 +115,8 @@ const t: UpgradeBase[] = [
     cost: { value: 18 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Agent Kallus',
@@ -139,8 +139,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Baze Malbus',
@@ -162,8 +162,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Boba Fett',
@@ -185,8 +185,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'C-3PO',
@@ -212,8 +212,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Cad Bane',
@@ -235,8 +235,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Captain Phasma',
@@ -258,8 +258,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Cassian Andor',
@@ -281,8 +281,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Chewbacca',
@@ -305,8 +305,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Chewbacca',
@@ -328,8 +328,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ciena Ree',
@@ -354,8 +354,8 @@ const t: UpgradeBase[] = [
       { action: { type: 'Coordinate' } },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Cikatro Vizago',
@@ -377,8 +377,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Darth Vader',
@@ -401,8 +401,8 @@ const t: UpgradeBase[] = [
     cost: { value: 16 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Death Troopers',
@@ -424,8 +424,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Director Krennic',
@@ -450,8 +450,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Emperor Palpatine',
@@ -474,8 +474,8 @@ const t: UpgradeBase[] = [
     cost: { value: 12 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Freelance Slicer',
@@ -496,8 +496,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'General Hux',
@@ -519,8 +519,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'GNK “Gonk” Droid',
@@ -542,8 +542,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Grand Inquisitor',
@@ -566,8 +566,8 @@ const t: UpgradeBase[] = [
     cost: { value: 13 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Grand Moff Tarkin',
@@ -593,8 +593,8 @@ const t: UpgradeBase[] = [
       { action: { type: 'Lock' } },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hera Syndulla',
@@ -616,8 +616,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'IG-88D',
@@ -643,8 +643,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'ISB Slicer',
@@ -666,8 +666,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Informant',
@@ -689,8 +689,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Jabba the Hutt',
@@ -713,8 +713,8 @@ const t: UpgradeBase[] = [
     cost: { value: 11 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Jyn Erso',
@@ -736,8 +736,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Kanan Jarrus',
@@ -760,8 +760,8 @@ const t: UpgradeBase[] = [
     cost: { value: 12 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ketsu Onyo',
@@ -783,8 +783,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Kylo Ren',
@@ -808,8 +808,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'L3-37',
@@ -842,8 +842,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Lando Calrissian',
@@ -865,8 +865,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Lando Calrissian',
@@ -888,8 +888,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Latts Razzi',
@@ -911,8 +911,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Leia Organa',
@@ -935,8 +935,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Magva Yarro',
@@ -958,8 +958,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Maul',
@@ -985,8 +985,8 @@ const t: UpgradeBase[] = [
       { factions: ['scumandvillainy'], character: ['Ezra Bridger'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Minister Tua',
@@ -1008,8 +1008,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Moff Jerjerrod',
@@ -1029,14 +1029,14 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/moffjerjerrod.png',
       },
     ],
-    cost: { value: 7 },
+    cost: { value: 6 },
     restrictions: [
       { factions: ['galacticempire'] },
       { action: { type: 'Coordinate' } },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Nien Nunb',
@@ -1058,8 +1058,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Novice Technician',
@@ -1080,8 +1080,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Perceptive Copilot',
@@ -1101,8 +1101,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Petty Officer Thanisson',
@@ -1124,8 +1124,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Qi'ra",
@@ -1147,8 +1147,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'R2-D2',
@@ -1170,8 +1170,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Sabine Wren',
@@ -1193,8 +1193,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Saw Gerrera',
@@ -1216,8 +1216,8 @@ const t: UpgradeBase[] = [
     cost: { value: 9 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Seasoned Navigator',
@@ -1251,8 +1251,8 @@ const t: UpgradeBase[] = [
       },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Seventh Sister',
@@ -1275,8 +1275,8 @@ const t: UpgradeBase[] = [
     cost: { value: 10 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Supreme Leader Snoke',
@@ -1299,8 +1299,8 @@ const t: UpgradeBase[] = [
     cost: { value: 13 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tactical Officer',
@@ -1325,8 +1325,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ action: { type: 'Coordinate', difficulty: 'Red' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tobias Beckett',
@@ -1348,8 +1348,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Unkar Plutt',
@@ -1371,8 +1371,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Zuckuss',
@@ -1394,8 +1394,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'C-3PO',
@@ -1421,8 +1421,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Han Solo',
@@ -1445,8 +1445,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Chewbacca',
@@ -1469,8 +1469,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Rose Tico',
@@ -1492,8 +1492,8 @@ const t: UpgradeBase[] = [
     cost: { value: 9 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Chancellor Palpatine',
@@ -1534,8 +1534,8 @@ const t: UpgradeBase[] = [
     cost: { value: 14 },
     restrictions: [{ factions: ['galacticrepublic', 'separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Count Dooku',
@@ -1558,8 +1558,8 @@ const t: UpgradeBase[] = [
     cost: { value: 14 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'General Grievous',
@@ -1582,8 +1582,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Amilyn Holdo',
@@ -1602,11 +1602,11 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/amilynholdo.png',
       },
     ],
-    cost: { value: 6 },
+    cost: { value: 5 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'GA-97',
@@ -1630,11 +1630,11 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/ga97.png',
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 2 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Kaydel Connix',
@@ -1656,8 +1656,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Korr Sella',
@@ -1679,8 +1679,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "Larma D'Acy",
@@ -1702,8 +1702,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Leia Organa',
@@ -1729,8 +1729,8 @@ const t: UpgradeBase[] = [
     cost: { value: 16 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'PZ-4CO',
@@ -1752,11 +1752,11 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/pz4co.png',
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 2 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'C-3PO',
@@ -1781,8 +1781,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Aayla Secura',
@@ -1814,8 +1814,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 12 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Agent Terex',
@@ -1847,8 +1847,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'K-2SO',
@@ -1873,8 +1873,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Plo Koon',
@@ -1902,8 +1902,8 @@ const t: UpgradeBase[] = [
       values: { Small: 8, Medium: 8, Large: 9, Huge: 15 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Toryn Farr',
@@ -1934,8 +1934,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Kit Fisto',
@@ -1958,8 +1958,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Yoda',
@@ -1984,8 +1984,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 11 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: '“Fives”',
@@ -2006,8 +2006,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Wolfpack',
@@ -2028,8 +2028,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Commander Malarus',
@@ -2061,8 +2061,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ghost Company',
@@ -2093,8 +2093,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Commander Pyre',
@@ -2115,8 +2115,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hondo Ohnaka',
@@ -2137,8 +2137,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Jango Fett',
@@ -2160,8 +2160,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy', 'separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Zam Wesell',
@@ -2185,8 +2185,8 @@ const t: UpgradeBase[] = [
     cost: { value: 11 },
     restrictions: [{ factions: ['scumandvillainy', 'separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Gamut Key',
@@ -2209,8 +2209,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Protectorate Gleb',
@@ -2237,8 +2237,8 @@ const t: UpgradeBase[] = [
       { factions: ['scumandvillainy', 'galacticempire', 'firstorder'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'The Mandalorian',
@@ -2263,8 +2263,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'The Child',
@@ -2289,15 +2289,14 @@ const t: UpgradeBase[] = [
       { factions: ['galacticempire', 'rebelalliance', 'scumandvillainy'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'IG-11',
     limited: 1,
     xws: 'ig11',
     standard: true,
-    wildspace: true,
     epic: true,
     sides: [
       {
@@ -2328,6 +2327,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     restrictions: [{ factions: ['scumandvillainy'] }],
+    extended: true,
   },
   {
     name: 'Greef Karga',
@@ -2352,15 +2352,14 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Kuiil',
     limited: 1,
     xws: 'kuiil',
     standard: true,
-    wildspace: true,
     epic: true,
     sides: [
       {
@@ -2380,6 +2379,7 @@ const t: UpgradeBase[] = [
       values: { Small: 3, Medium: 6, Large: 8, Huge: 15 },
     },
     restrictions: [{ factions: ['scumandvillainy'] }],
+    extended: true,
   },
   {
     name: 'Peli Motto',
@@ -2404,8 +2404,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Prime Minister Almec',
@@ -2438,8 +2438,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ factions: ['scumandvillainy', 'galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Rook Kast',
@@ -2462,8 +2462,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Obi-Wan Kenobi',
@@ -2486,8 +2486,8 @@ const t: UpgradeBase[] = [
     cost: { value: 9 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Bo-Katan Kryze',
@@ -2509,8 +2509,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['galacticrepublic', 'separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Bo-Katan Kryze',
@@ -2532,8 +2532,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy', 'rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Korkie Kryze',
@@ -2556,7 +2556,7 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
     epic: true,
-    wildspace: true,
+    extended: true,
   },
   {
     name: 'Satine Kryze',
@@ -2579,8 +2579,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ factions: ['galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tal Merrik',
@@ -2603,8 +2603,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Savage Opress',
@@ -2627,8 +2627,8 @@ const t: UpgradeBase[] = [
     cost: { value: 10 },
     restrictions: [{ factions: ['scumandvillainy', 'separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Fenn Rau',
@@ -2650,8 +2650,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['scumandvillainy', 'rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Gar Saxon',
@@ -2673,8 +2673,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Pre Vizsla',
@@ -2699,8 +2699,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ factions: ['scumandvillainy', 'separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tristan Wren',
@@ -2723,8 +2723,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['rebelalliance'], character: ['Gar Saxon'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ursa Wren',
@@ -2746,8 +2746,8 @@ const t: UpgradeBase[] = [
     cost: { value: 7 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Captain Hark',
@@ -2770,8 +2770,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ahsoka Tano',
@@ -2794,8 +2794,8 @@ const t: UpgradeBase[] = [
     cost: { value: 10 },
     restrictions: [{ factions: ['scumandvillainy', 'galacticrepublic'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Maul',
@@ -2821,8 +2821,8 @@ const t: UpgradeBase[] = [
     cost: { value: 10 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Clan Wren Commandos',
@@ -2869,8 +2869,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large', 'Huge'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Imperial Super Commandos',
@@ -2917,8 +2917,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large', 'Huge'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Mandalorian Super Commandos',
@@ -2965,8 +2965,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large', 'Huge'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Nite Owl Commandos',
@@ -3013,8 +3013,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large', 'Huge'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Death Watch Commandos',
@@ -3061,8 +3061,8 @@ const t: UpgradeBase[] = [
       { baseSizes: ['Medium', 'Large', 'Huge'] },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Chewbacca',
@@ -3078,9 +3078,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Wolfpack',
@@ -3096,9 +3096,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: '“Leebo”',
@@ -3114,9 +3114,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     limited: 1,
@@ -3136,9 +3136,9 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [{ factions: ['scumandvillainy', 'rebelalliance'] }],
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
 ];
 

@@ -44,7 +44,6 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       standard: true,
-      wildspace: true,
       cost: 38,
       slots: [
         'Talent',
@@ -66,6 +65,7 @@ const t: ShipType = {
       caption: 'Evacuation Escort',
       epic: true,
       ffg: 569,
+      extended: true,
     },
     {
       name: 'Pammich Nerro Goode',
@@ -74,7 +74,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'D’Qar Dispatcher',
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Talent',
@@ -95,6 +94,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/pammichnerrogoode.png',
       epic: true,
       ffg: 570,
+      extended: true,
     },
     {
       name: 'Nodin Chavdri',
@@ -102,7 +102,6 @@ const t: ShipType = {
       initiative: 2,
       limited: 1,
       standard: true,
-      wildspace: true,
       cost: 33,
       slots: [
         'Talent',
@@ -124,6 +123,7 @@ const t: ShipType = {
       caption: 'Insubordinate Insurgent',
       epic: true,
       ffg: 571,
+      extended: true,
     },
     {
       name: 'Logistics Division Pilot',
@@ -132,7 +132,6 @@ const t: ShipType = {
       limited: 0,
       text: 'Without the support of the New Republic, members of the Resistance often pull double duty as transport pilots or mechanics, putting their skills and technical knowledge to use in the fight against the First Order.',
       standard: true,
-      wildspace: true,
       cost: 30,
       slots: [
         'Tech',
@@ -150,6 +149,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/logisticsdivisionpilot.png',
       epic: true,
       ffg: 572,
+      extended: true,
     },
     {
       name: 'Taka Jamoreesa',
@@ -160,7 +160,6 @@ const t: ShipType = {
       ability:
         'After you jam, you must assign 1 jam token to another ship at range 0-1 of the jammed ship, if able.',
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Tech',
@@ -178,6 +177,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/takajamoreesa.png',
       epic: true,
       ffg: 1051,
+      extended: true,
     },
     {
       name: 'Jannah',
@@ -185,8 +185,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       caption: 'Orbak Rider',
-      standard: true,
-      wildspace: true,
+      standard: false,
       cost: 42,
       slots: [
         'Talent',

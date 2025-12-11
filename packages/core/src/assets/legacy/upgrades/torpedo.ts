@@ -28,8 +28,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Adv. Proton Torpedoes',
@@ -58,8 +58,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ion Torpedoes',
@@ -88,8 +88,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Proton Torpedoes',
@@ -118,8 +118,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 12 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Plasma Torpedoes',
@@ -151,8 +151,8 @@ const t: UpgradeBase[] = [
       values: { '0': 6, '1': 6, '2': 6, '3': 7, '4': 7, '5': 7, '6': 7 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tracking Torpedoes',
@@ -175,8 +175,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
 ];
 

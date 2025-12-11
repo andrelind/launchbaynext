@@ -27,8 +27,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Blazer Bomb',
@@ -54,10 +54,10 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/blazerbomb.png',
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Conner Nets',
@@ -85,8 +85,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Proton Bombs',
@@ -114,8 +114,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Proximity Mines',
@@ -143,8 +143,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Seismic Charges',
@@ -172,8 +172,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'DRK-1 Probe Droids',
@@ -209,8 +209,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Electro-Proton Bomb',
@@ -239,8 +239,8 @@ const t: UpgradeBase[] = [
     cost: { value: 8 },
     restrictions: [{ action: { type: 'Reload', difficulty: 'White' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Cluster Mines',
@@ -268,8 +268,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ion Bombs',
@@ -297,8 +297,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Concussion Bombs',
@@ -326,8 +326,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Thermal Detonators',
@@ -355,8 +355,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
 ];
 

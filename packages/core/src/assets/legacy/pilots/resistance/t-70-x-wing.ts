@@ -65,10 +65,10 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 418,
+      extended: true,
     },
     {
       name: 'Poe Dameron',
@@ -93,7 +93,6 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/poedameron-swz68.png',
       artwork:
@@ -101,6 +100,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 697,
+      extended: true,
     },
     {
       name: 'Blue Squadron Rookie',
@@ -119,10 +119,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronrookie.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 426,
+      extended: true,
     },
     {
       name: 'Red Squadron Expert',
@@ -148,10 +148,10 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 425,
+      extended: true,
     },
     {
       name: 'Black Squadron Ace',
@@ -177,10 +177,10 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 451,
+      extended: true,
     },
     {
       name: 'Ello Asty',
@@ -208,10 +208,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/elloasty.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 419,
+      extended: true,
     },
     {
       name: 'Joph Seastriker',
@@ -238,10 +238,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jophseastriker.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 424,
+      extended: true,
     },
     {
       name: 'Kare Kun',
@@ -269,10 +269,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/karekun.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 421,
+      extended: true,
     },
     {
       name: 'Lieutenant Bastian',
@@ -293,10 +293,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantbastian.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 449,
+      extended: true,
     },
     {
       name: 'Nien Nunb',
@@ -324,10 +324,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/niennunb.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 420,
+      extended: true,
     },
     {
       name: 'Jaycris Tubbs',
@@ -348,10 +348,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jaycristubbs.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 450,
+      extended: true,
     },
     {
       name: 'Jessika Pava',
@@ -373,10 +373,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jessikapava.png',
       slots: ['Astromech', 'Modification', 'Title', 'Configuration', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 423,
+      extended: true,
     },
     {
       name: 'Temmin Wexley',
@@ -404,10 +404,10 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 422,
+      extended: true,
     },
     {
       name: 'Temmin Wexley',
@@ -431,7 +431,6 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/temminwexley-swz68.png',
       artwork:
@@ -439,6 +438,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 698,
+      extended: true,
     },
     {
       name: 'C’ai Threnalli',
@@ -462,7 +462,6 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/caithrenalli.png',
       artwork:
@@ -470,6 +469,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 699,
+      extended: true,
     },
     {
       name: 'Nimi Chireen',
@@ -486,7 +486,6 @@ const t: ShipType = {
       },
       slots: ['Tech', 'Astromech', 'Modification', 'Configuration', 'Title'],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nimichireen.png',
       artwork:
@@ -494,6 +493,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 700,
+      extended: true,
     },
     {
       name: 'Venisa Doza',
@@ -517,7 +517,6 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/venisadoza.png',
       artwork:
@@ -525,6 +524,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 1054,
+      extended: true,
     },
     {
       name: 'Zay Versio',
@@ -548,7 +548,6 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zayversio.png',
       artwork:
@@ -556,6 +555,7 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 1055,
+      extended: true,
     },
   ],
 };

@@ -20,8 +20,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Dreadnought Hunter',
@@ -42,8 +42,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'First Order Elite',
@@ -64,8 +64,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Veteran Wing Leader',
@@ -86,8 +86,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Admiral Ozzel',
@@ -108,8 +108,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Azmorigan',
@@ -130,8 +130,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Captain Needa',
@@ -153,8 +153,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Carlist Rieekan',
@@ -176,8 +176,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Jan Dodonna',
@@ -185,7 +185,8 @@ const t: UpgradeBase[] = [
     xws: 'jandodonna',
     sides: [
       {
-        ability: 'Friendly ships at range 0-3 can spend your focus and evade tokens.',
+        ability:
+          'Friendly ships at range 0-3 can spend your focus and evade tokens.',
         title: 'Jan Dodonna',
         type: 'Command',
         slots: ['Command', 'Crew'],
@@ -197,8 +198,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Raymus Antilles',
@@ -219,8 +220,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Stalwart Captain',
@@ -228,7 +229,8 @@ const t: UpgradeBase[] = [
     xws: 'stalwartcaptain',
     sides: [
       {
-        ability: 'After you are destroyed, you are not removed until the end of the End Phase.',
+        ability:
+          'After you are destroyed, you are not removed until the end of the End Phase.',
         title: 'Stalwart Captain',
         type: 'Command',
         slots: ['Command', 'Crew'],
@@ -241,8 +243,8 @@ const t: UpgradeBase[] = [
     cost: { value: 10 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Strategic Commander',
@@ -265,8 +267,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Jedi Commander',
@@ -297,10 +299,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['galacticrepublic'] }, { chassis: ['delta7aethersprite', 'eta2actis'] }],
+    restrictions: [
+      { factions: ['galacticrepublic'] },
+      { chassis: ['delta7aethersprite', 'eta2actis'] },
+    ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'B6 Blade Wing Prototype',
@@ -320,10 +325,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['rebelalliance'] }, { chassis: ['asf01bwing'] }],
+    restrictions: [
+      { factions: ['rebelalliance'] },
+      { chassis: ['asf01bwing'] },
+    ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Bounty',
@@ -354,8 +362,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Phoenix Squadron',
@@ -387,8 +395,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Shadow Wing',
@@ -420,8 +428,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Skystrike Academy Class',
@@ -453,8 +461,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'In It For The Money',
@@ -473,7 +481,8 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney.png',
       },
       {
-        ability: 'Non-Scum ships in your squad are treated as friendly instead of allied.',
+        ability:
+          'Non-Scum ships in your squad are treated as friendly instead of allied.',
         title: 'In It For Your Rebellion',
         type: 'Command',
         slots: ['Command'],
@@ -487,8 +496,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ factions: ['scumandvillainy'] }, { 'non-limited': false }],
     standarized: true,
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Mar Tuuk',
@@ -508,10 +517,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [{ factions: ['separatistalliance'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['separatistalliance'] },
+      { baseSizes: ['Huge'] },
+    ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Riff Tamson',
@@ -531,10 +543,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 6 },
-    restrictions: [{ factions: ['separatistalliance'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['separatistalliance'] },
+      { baseSizes: ['Huge'] },
+    ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Asajj Ventress',
@@ -565,10 +580,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 8 },
-    restrictions: [{ factions: ['separatistalliance', 'scumandvillainy'] }, { baseSizes: ['Huge'] }],
+    restrictions: [
+      { factions: ['separatistalliance', 'scumandvillainy'] },
+      { baseSizes: ['Huge'] },
+    ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Zealous Captain',
@@ -590,8 +608,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Hondo Ohnaka',
@@ -624,8 +642,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ baseSizes: ['Huge'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'General Grievous',
@@ -645,10 +663,13 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 5 },
-    restrictions: [{ baseSizes: ['Huge'] }, { factions: ['separatistalliance'] }],
+    restrictions: [
+      { baseSizes: ['Huge'] },
+      { factions: ['separatistalliance'] },
+    ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Combat Boarding Tube',
@@ -667,11 +688,11 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/combatboardingtube.png',
       },
     ],
-    cost: { value: 0 },
+    cost: { value: '0' },
     restrictions: [{ chassis: ['gauntletfighter'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
 ];
 

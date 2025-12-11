@@ -28,8 +28,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Cluster Missiles',
@@ -61,8 +61,8 @@ const t: UpgradeBase[] = [
       values: { '0': 3, '1': 3, '2': 3, '3': 4, '4': 4, '5': 4, '6': 4 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Concussion Missiles',
@@ -91,8 +91,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Homing Missiles',
@@ -121,8 +121,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ion Missiles',
@@ -151,8 +151,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Proton Rockets',
@@ -180,8 +180,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Energy-Shell Charges',
@@ -212,10 +212,10 @@ const t: UpgradeBase[] = [
       { action: { type: 'Calculate', difficulty: 'White' } },
       { factions: ['separatistalliance'] },
     ],
-    cost: { value: 5 },
+    cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Discord Missiles',
@@ -249,8 +249,8 @@ const t: UpgradeBase[] = [
     cost: { value: 4 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Diamond-Boron Missiles',
@@ -277,10 +277,10 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/diamondboronmissiles.png',
       },
     ],
-    cost: { value: 4 },
+    cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Mag-Pulse Warheads',
@@ -312,8 +312,8 @@ const t: UpgradeBase[] = [
       values: { '0': 4, '1': 4, '2': 4, '3': 5, '4': 5, '5': 5, '6': 5 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Electro-Chaff Missiles',
@@ -335,8 +335,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Multi-Missile Pods',
@@ -365,8 +365,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'XX-23 S-Thread Tracers',
@@ -395,8 +395,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Seeker Missiles',
@@ -420,9 +420,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     limited: 2,
@@ -449,9 +449,59 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 5 },
+    standard: false,
+    epic: false,
+    extended: true,
+  },
+  {
+    limited: 1,
+    xws: 'saturationrockets-alphaclassstarwing',
+    sides: [
+      {
+        ability:
+          'Attack: Spend 2 [Charge]. If the defender is in your [Front Arc], you may spend 1 additional [Charge] to roll 1 additional attack die. After this attack, you may spend 1 [Charge] to perform this attack as a bonus attack against a different target at range 0-1 of the defender without paying the [Charge] cost.',
+        attack: {
+          arc: 'Full Front Arc',
+          maxrange: 2,
+          minrange: 1,
+          ordnance: true,
+          value: 3,
+        },
+        charges: { value: 4, recovers: 1 },
+        title: 'Saturation Rockets',
+        type: 'Missile',
+        slots: ['Missile'],
+      },
+    ],
     standard: true,
-    wildspace: true,
+    wildspace: false,
     epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    limited: 1,
+    xws: 'heavyplasmamissiles-alphaclassstarwing',
+    sides: [
+      {
+        ability:
+          'Attack ([Lock]): Spend 1 [Charge]. After this attack hits, the defender loses 1 shield.',
+        attack: {
+          arc: 'Front Arc',
+          maxrange: 3,
+          minrange: 1,
+          ordnance: true,
+          value: 3,
+        },
+        charges: { value: 2, recovers: 0 },
+        title: 'Heavy Plasma Missiles',
+        type: 'Missile',
+        slots: ['Missile'],
+      },
+    ],
+    standard: true,
+    wildspace: false,
+    epic: true,
+    standardLoadoutOnly: true,
   },
 ];
 

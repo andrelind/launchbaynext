@@ -61,10 +61,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios.png',
       standard: true,
-      wildspace: true,
       keywords: ['Spectre'],
       epic: true,
       ffg: 37,
+      extended: true,
     },
     {
       name: 'Ezra Bridger',
@@ -86,10 +86,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger.png',
       standard: true,
-      wildspace: true,
       keywords: ['Light Side', 'Spectre'],
       epic: true,
       ffg: 36,
+      extended: true,
     },
     {
       name: 'Hera Syndulla',
@@ -110,10 +110,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/herasyndulla.png',
       standard: true,
-      wildspace: true,
       keywords: ['Spectre'],
       epic: true,
       ffg: 34,
+      extended: true,
     },
     {
       name: 'Sabine Wren',
@@ -134,10 +134,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian', 'Spectre'],
       epic: true,
       ffg: 35,
+      extended: true,
     },
   ],
 };

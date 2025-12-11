@@ -51,10 +51,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zeborrelios-tielnfighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE', 'Spectre'],
       epic: true,
       ffg: 49,
+      extended: true,
     },
     {
       name: 'Captain Rex',
@@ -72,10 +72,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainrex.png',
       standard: true,
-      wildspace: true,
       keywords: ['Clone', 'TIE'],
       epic: true,
       ffg: 48,
+      extended: true,
     },
     {
       name: 'Ezra Bridger',
@@ -93,10 +93,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ezrabridger-tielnfighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Light Side', 'Spectre', 'TIE'],
       epic: true,
       ffg: 46,
+      extended: true,
     },
     {
       name: 'Sabine Wren',
@@ -113,10 +113,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabinewren-tielnfighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Mandalorian', 'TIE', 'Spectre'],
       epic: true,
       ffg: 47,
+      extended: true,
     },
   ],
 };

@@ -63,9 +63,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cartelexecutioner.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 209,
+      extended: true,
     },
     {
       name: 'Dalan Oberos',
@@ -95,10 +95,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dalanoberos.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 208,
+      extended: true,
     },
     {
       name: 'Torani Kulda',
@@ -127,10 +127,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/toranikulda.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 207,
+      extended: true,
     },
   ],
 };

@@ -58,9 +58,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/esegetuketu.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 63,
+      extended: true,
     },
     {
       name: 'Miranda Doni',
@@ -86,9 +86,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mirandadoni.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 62,
+      extended: true,
     },
     {
       name: 'Warden Squadron Pilot',
@@ -112,9 +112,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wardensquadronpilot.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 64,
+      extended: true,
     },
   ],
 };

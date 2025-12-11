@@ -64,10 +64,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chewbacca.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300', 'Wookiee'],
       epic: true,
       ffg: 71,
+      extended: true,
     },
     {
       name: 'Han Solo',
@@ -93,10 +93,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-modifiedyt1300lightfreighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 69,
+      extended: true,
     },
     {
       name: 'Lando Calrissian',
@@ -122,10 +122,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-modifiedyt1300lightfreighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 70,
+      extended: true,
     },
     {
       name: 'Outer Rim Smuggler',
@@ -148,10 +148,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimsmuggler.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 72,
+      extended: true,
     },
     {
       name: 'Leia Organa',
@@ -178,10 +178,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leiaorgana.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300', 'Light Side'],
       epic: true,
       ffg: 630,
+      extended: true,
     },
     {
       name: 'Han Solo',
@@ -207,10 +207,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 1025,
+      extended: true,
     },
     {
       name: 'Han Solo',
@@ -240,10 +240,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 1159,
+      extended: true,
     },
     {
       name: 'Lando Calrissian',
@@ -283,10 +283,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-battleoverendor.png',
       standard: false,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 1026,
+      extended: true,
     },
     {
       name: 'Lando Calrissian',
@@ -329,10 +329,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 1160,
+      extended: true,
     },
   ],
 };

@@ -64,10 +64,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bobafett.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 149,
+      extended: true,
     },
     {
       name: 'Bounty Hunter',
@@ -90,10 +90,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bountyhunter.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 154,
+      extended: true,
     },
     {
       name: 'Emon Azzameen',
@@ -119,9 +119,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/emonazzameen.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 150,
+      extended: true,
     },
     {
       name: 'Kath Scarlet',
@@ -147,9 +147,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kathscarlet.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 151,
+      extended: true,
     },
     {
       name: 'Koshka Frost',
@@ -175,10 +175,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/koshkafrost.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 152,
+      extended: true,
     },
     {
       name: 'Krassis Trelix',
@@ -204,9 +204,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/krassistrelix.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 153,
+      extended: true,
     },
     {
       name: 'Hondo Ohnaka',
@@ -231,9 +231,9 @@ const t: ShipType = {
         'Title',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1058,
+      extended: true,
     },
   ],
 };

@@ -57,7 +57,6 @@ const t: ShipType = {
         text: 'While you defend or perform an attack, you may spend 1 calculate token from a friendly ship at range 0-1 to change 1 [Focus] result to an [Evade] or [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       ability:
         "While you defend or perform an attack, you may spend 1 calculate token from a friendly ship in the enemy ship's firing arc to change 1 [Focus] result to an [Evade] or [Hit] result.",
       caption: 'Clever Circuits',
@@ -70,6 +69,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 794,
+      extended: true,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -82,7 +82,6 @@ const t: ShipType = {
       },
       caption: 'Predictive Analysis Protocol',
       standard: true,
-      wildspace: true,
       ability:
         "During the System Phase, you may spend your lock on a ship to look at that ship's dial.",
       cost: 38,
@@ -94,6 +93,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 796,
+      extended: true,
     },
     {
       name: 'Fearsome Predator',
@@ -107,7 +107,6 @@ const t: ShipType = {
       caption: 'Fixated Pursuit',
       conditions: ['fearfulprey'],
       standard: true,
-      wildspace: true,
       ability:
         'Setup: After placing forces, assign the Fearful Prey condition to 1 enemy ship.',
       cost: 35,
@@ -119,6 +118,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 797,
+      extended: true,
     },
     {
       name: 'DIS-347',
@@ -131,10 +131,9 @@ const t: ShipType = {
       },
       caption: 'Target Acquired',
       standard: true,
-      wildspace: true,
       ability:
         'At the start of the Engagement Phase, you may acquire a lock on an object at range 1-3 that has a friendly lock.',
-      cost: 36,
+      cost: 35,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/dis347.png',
       artwork:
@@ -143,6 +142,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 795,
+      extended: true,
     },
     {
       name: 'Separatist Interceptor',
@@ -155,7 +155,6 @@ const t: ShipType = {
       },
       text: 'Deployed late in the Clone Wars, these aggressive starfighters, and the destructive buzz droids they carry, pose a serious threat to even veteran Jedi pilots.',
       standard: true,
-      wildspace: true,
       cost: 35,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistinterceptor.png',
@@ -165,6 +164,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 798,
+      extended: true,
     },
     {
       name: 'Colicoid Interceptor',
@@ -177,7 +177,6 @@ const t: ShipType = {
       },
       text: 'Designed by the Colicoid Creation Nest and manufactured by Phlac-Arphocc Automata Industries, the heuristic processors of Droid Tri-Fighters allow these deadly ships to analyze and adapt to enemy tactics in-flight.',
       standard: true,
-      wildspace: true,
       cost: 34,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/colicoidinterceptor.png',
@@ -187,6 +186,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 799,
+      extended: true,
     },
     {
       name: 'DIS-347',
@@ -211,17 +211,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dis347-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1085,
+      extended: true,
     },
     {
       name: 'DIS-347',
       caption: 'Siege of Coruscant',
       initiative: 3,
       limited: 1,
-      cost: 36,
+      cost: 35,
       xws: 'dis347-siegeofcoruscant-lsl',
       ability:
         'At the start of the Engagement Phase, you may acquire a lock on an object at range 1-3 that has a friendly lock.',
@@ -235,10 +235,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dis347-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1207,
+      extended: true,
     },
     {
       name: 'DIS-T81',
@@ -263,10 +263,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dist81-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1086,
+      extended: true,
     },
     {
       name: 'DIS-T81',
@@ -287,10 +287,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dist81-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1208,
+      extended: true,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -315,10 +315,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/phlacarphoccprototype-siegeofcoruscant.png',
       standard: false,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1087,
+      extended: true,
     },
     {
       name: 'Phlac-Arphocc Prototype',
@@ -339,10 +339,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/phlacarphoccprototype-siegeofcoruscant-lsl.png',
       slots: ['Talent', 'Sensor', 'Missile', 'Modification', 'Configuration'],
       standard: true,
-      wildspace: true,
       keywords: ['Droid'],
       epic: true,
       ffg: 1209,
+      extended: true,
     },
     {
       name: 'Volan Das',
@@ -370,7 +370,6 @@ const t: ShipType = {
       ],
       caption: 'Impatient Invader',
       standard: true,
-      wildspace: true,
       ability:
         'After you fully execute a red maneuver, you may chose an enemy ship at range 1. The chosen ship gains 1 strain token and you may remove 1 stress token.',
       cost: 41,
@@ -389,6 +388,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 1088,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Droid_Tri-Fighter.png',

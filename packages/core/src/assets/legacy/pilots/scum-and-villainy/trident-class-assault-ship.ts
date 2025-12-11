@@ -53,7 +53,6 @@ const t: ShipType = {
       },
       text: 'The Separatist Alliance has close ties with certain mercenaries and criminal groups and, as the war rages on, its technology sometimes finds its way into unsavory hands.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 0,
       xws: 'lawlesspirates',
@@ -70,6 +69,7 @@ const t: ShipType = {
         'Title',
       ],
       ffg: 1068,
+      extended: false,
     },
   ],
 };

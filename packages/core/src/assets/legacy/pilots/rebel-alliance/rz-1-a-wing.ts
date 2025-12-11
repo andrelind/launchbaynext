@@ -59,10 +59,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 20,
+      extended: true,
     },
     {
       name: 'Green Squadron Pilot',
@@ -81,10 +81,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greensquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 21,
+      extended: true,
     },
     {
       name: 'Jake Farrell',
@@ -105,10 +105,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakefarrell.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 19,
+      extended: true,
     },
     {
       name: 'Phoenix Squadron Pilot',
@@ -127,10 +127,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/phoenixsquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 22,
+      extended: true,
     },
     {
       name: 'Wedge Antilles',
@@ -148,13 +148,13 @@ const t: ShipType = {
       keywords: ['A-wing'],
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-rz1awing.png',
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wedgeantilles-rz1awing.png',
       epic: true,
       ffg: 883,
+      extended: true,
     },
     {
       name: 'Sabine Wren',
@@ -166,7 +166,6 @@ const t: ShipType = {
         text: 'After you perform an action, you may perform a red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       keywords: ['A-wing', 'Mandalorian'],
       cost: 35,
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
@@ -179,6 +178,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sabinewren-rz1awing.png',
       epic: true,
       ffg: 885,
+      extended: true,
     },
     {
       name: 'Hera Syndulla',
@@ -191,7 +191,6 @@ const t: ShipType = {
       },
       caption: 'Phoenix Leader',
       standard: true,
-      wildspace: true,
       cost: 48,
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       ability:
@@ -203,6 +202,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/herasyndulla-rz1awing.png',
       epic: true,
       ffg: 880,
+      extended: true,
     },
     {
       name: 'Ahsoka Tano',
@@ -215,7 +215,6 @@ const t: ShipType = {
       },
       caption: 'Fulcrum',
       standard: true,
-      wildspace: true,
       force: { value: 3, recovers: 1, side: ['light'] },
       cost: 50,
       slots: ['Force Power', 'Force Power', 'Missile', 'Configuration'],
@@ -228,6 +227,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ahsokatano-rz1awing.png',
       epic: true,
       ffg: 881,
+      extended: true,
     },
     {
       name: 'Shara Bey',
@@ -240,7 +240,6 @@ const t: ShipType = {
       },
       caption: 'Green Four',
       standard: true,
-      wildspace: true,
       cost: 32,
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       ability:
@@ -252,6 +251,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey-rz1awing.png',
       epic: true,
       ffg: 882,
+      extended: true,
     },
     {
       name: 'Derek Klivian',
@@ -264,7 +264,6 @@ const t: ShipType = {
       },
       caption: 'Hobbie',
       standard: true,
-      wildspace: true,
       cost: 30,
       slots: ['Talent', 'Missile', 'Configuration'],
       ability:
@@ -276,6 +275,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/derekklivian.png',
       epic: true,
       ffg: 884,
+      extended: true,
     },
     {
       name: 'Keo Venzee',
@@ -288,7 +288,6 @@ const t: ShipType = {
       },
       caption: 'Auspicious Ace',
       standard: true,
-      wildspace: true,
       cost: 35,
       force: { value: 1, recovers: 0, side: ['light'] },
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
@@ -301,6 +300,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/keovenzee.png',
       epic: true,
       ffg: 1027,
+      extended: true,
     },
     {
       name: 'Tycho Celchu',
@@ -313,7 +313,6 @@ const t: ShipType = {
       },
       caption: 'Son of Alderaan',
       standard: true,
-      wildspace: true,
       cost: 38,
       slots: ['Talent', 'Talent', 'Missile', 'Configuration'],
       ability:
@@ -325,6 +324,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/tychocelchu.png',
       epic: true,
       ffg: 1028,
+      extended: true,
     },
     {
       name: 'Arvel Crynyd',
@@ -345,10 +345,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/arvelcrynyd-swz106.png',
       standard: false,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 1029,
+      extended: true,
     },
     {
       name: 'Jake Farrell',
@@ -369,10 +369,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jakefarrell-swz106.png',
       standard: false,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 1030,
+      extended: true,
     },
     {
       name: 'Shara Bey',
@@ -385,7 +385,6 @@ const t: ShipType = {
       },
       caption: 'Green Four',
       standard: false,
-      wildspace: true,
       cost: 36,
       standardLoadout: ['hopeful', 'concussionmissiles'],
       ability:
@@ -397,6 +396,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/sharabey-swz106.png',
       epic: true,
       ffg: 1031,
+      extended: true,
     },
     {
       name: 'Arvel Crynyd',
@@ -440,9 +440,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 1033,
+      extended: true,
     },
     {
       name: 'Arvel Crynyd',
@@ -482,9 +482,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arvelcrynyd-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1161,
+      extended: true,
     },
     {
       name: 'Tycho Celchu',
@@ -532,9 +532,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 1034,
+      extended: true,
     },
     {
       name: 'Tycho Celchu',
@@ -577,9 +577,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/tychocelchu-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1162,
+      extended: true,
     },
     {
       name: 'Gemmer Sojan',
@@ -612,9 +612,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gemmersojan-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 1032,
+      extended: true,
     },
     {
       name: 'Gemmer Sojan',
@@ -642,9 +642,9 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gemmersojan-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1163,
+      extended: true,
     },
   ],
 };

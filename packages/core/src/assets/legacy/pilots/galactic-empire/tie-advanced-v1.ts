@@ -63,10 +63,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/baronoftheempire.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 101,
+      extended: true,
     },
     {
       name: 'Grand Inquisitor',
@@ -84,10 +84,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/grandinquisitor.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
       ffg: 99,
+      extended: true,
     },
     {
       name: 'Inquisitor',
@@ -103,10 +103,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/inquisitor.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
       ffg: 102,
+      extended: true,
     },
     {
       name: 'Seventh Sister',
@@ -124,10 +124,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seventhsister.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
       ffg: 100,
+      extended: true,
     },
     {
       name: 'Fifth Brother',
@@ -145,10 +145,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/fifthbrother.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
       ffg: 632,
+      extended: true,
     },
   ],
 };

@@ -21,8 +21,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['syliureclasshyperspacering'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
 ];
 

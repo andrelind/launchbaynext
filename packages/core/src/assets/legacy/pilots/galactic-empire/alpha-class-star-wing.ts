@@ -58,9 +58,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkarsabi.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 136,
+      extended: true,
     },
     {
       name: 'Major Vynder',
@@ -84,9 +84,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvynder.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 135,
+      extended: true,
     },
     {
       name: 'Nu Squadron Pilot',
@@ -101,9 +101,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nusquadronpilot.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 138,
+      extended: true,
     },
     {
       name: 'Rho Squadron Pilot',
@@ -125,9 +125,167 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rhosquadronpilot.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 137,
+      extended: true,
+    },
+    {
+      name: 'Lieutenant Karsabi',
+      caption: 'Payload Courier',
+      initiative: 3,
+      limited: 1,
+      cost: 5,
+      xws: 'lieutenantkarsabi-pnp',
+      ability:
+        'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Reload' },
+        },
+        { difficulty: 'White', type: 'Reload' },
+      ],
+      standardLoadout: [
+        'protontorpedoes',
+        'saturationrockets-alphaclassstarwing',
+        'electronicbaffle',
+      ],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi-pnp.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkarsabi.png',
+      standard: false,
+      epic: false,
+      extended: false,
+      ffg: null,
+    },
+    {
+      name: 'Lieutenant Karsabi',
+      caption: 'Payload Courier',
+      initiative: 3,
+      limited: 1,
+      cost: 38,
+      xws: 'lieutenantkarsabi-pnp-lsl',
+      ability:
+        'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
+      slots: [
+        'Talent',
+        'Cannon',
+        'Sensor',
+        'Torpedo',
+        'Missile',
+        'Modification',
+      ],
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Reload' },
+        },
+        { difficulty: 'White', type: 'Reload' },
+      ],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi-pnp-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantkarsabi.png',
+      standard: true,
+      epic: true,
+      extended: true,
+      ffg: null,
+    },
+    {
+      name: 'Major Vynder',
+      caption: 'Helping Hand',
+      initiative: 4,
+      limited: 1,
+      cost: 5,
+      xws: 'majorvynder-ssl',
+      ability:
+        'After you perform a [Missile] attack, you may perform a bonus [Cannon] attack. While you perform this bonus attack, you may change 1 [Focus] result to a [Hit] result.',
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Reload' },
+        },
+        { difficulty: 'White', type: 'Reload' },
+      ],
+      standardLoadout: [
+        'longrangescanners-alphaclassstarwing',
+        'ioncannon',
+        'heavyplasmamissiles-alphaclassstarwing',
+      ],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder-pnp.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvynder.png',
+      standard: false,
+      epic: false,
+      extended: false,
+      ffg: 1120,
+    },
+    {
+      name: 'Major Vynder',
+      caption: 'Helping Hand',
+      initiative: 4,
+      limited: 1,
+      cost: 46,
+      xws: 'majorvynder-pnp-lsl',
+      ability:
+        'After you perform a [Missile] attack, you may perform a bonus [Cannon] attack. While you perform this bonus attack, you may change 1 [Focus] result to a [Hit] result.',
+      slots: [
+        'Talent',
+        'Cannon',
+        'Sensor',
+        'Torpedo',
+        'Missile',
+        'Modification',
+      ],
+      shipActions: [
+        { difficulty: 'White', type: 'Focus' },
+        { difficulty: 'White', type: 'Lock' },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Lock' },
+        },
+        {
+          difficulty: 'White',
+          type: 'SLAM',
+          linked: { difficulty: 'Red', type: 'Reload' },
+        },
+        { difficulty: 'White', type: 'Reload' },
+      ],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder-pnp-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvynder.png',
+      standard: true,
+      epic: true,
+      extended: true,
+      ffg: null,
     },
   ],
 };

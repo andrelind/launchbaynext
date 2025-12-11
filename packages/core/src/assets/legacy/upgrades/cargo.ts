@@ -20,8 +20,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Boosted Scanners',
@@ -42,8 +42,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Optimized Power Core',
@@ -63,8 +63,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 7 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Tibanna Reserves',
@@ -85,8 +85,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
 ];
 

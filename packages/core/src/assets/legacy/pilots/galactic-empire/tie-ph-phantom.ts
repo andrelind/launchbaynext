@@ -56,12 +56,12 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png',
       ffg: 132,
+      extended: true,
     },
     {
       name: '“Whisper”',
@@ -81,10 +81,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 131,
+      extended: true,
     },
     {
       name: 'Imdaar Test Pilot',
@@ -103,10 +103,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/imdaartestpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 134,
+      extended: true,
     },
     {
       name: 'Sigma Squadron Ace',
@@ -125,17 +125,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigmasquadronace.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 133,
+      extended: true,
     },
     {
       name: 'Captain Saxton',
       caption: 'Unpredictable Menace',
       initiative: 4,
       limited: 1,
-      cost: 43,
+      cost: 45,
       xws: 'captainsaxton-wat1',
       ability:
         'While a friendly ship at range 0-2 decloaks, you may spend 2 [Charge]. If you do, that ship may use a template of speed 1 higher or lower.',
@@ -145,12 +145,99 @@ const t: ShipType = {
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainsaxton-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['TIE'],
       epic: true,
       extended: true,
       ffg: 1174,
+    },
+    {
+      name: '“Whisper”',
+      caption: 'Unseen Assailant',
+      initiative: 5,
+      limited: 1,
+      cost: 5,
+      charges: { value: 2, recovers: 0 },
+      xws: 'whisper-pnp',
+      ability:
+        'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
+      standardLoadout: [
+        'withoutatrace-tiephphantom',
+        'relaysystem-tiephphantom',
+        'stygiumreserve-tiephphantom',
+      ],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper-pnp-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png',
+      standard: false,
+      epic: false,
+      extended: false,
+      ffg: null,
+    },
+    {
+      name: '“Whisper”',
+      caption: 'Unseen Assailant',
+      initiative: 5,
+      limited: 1,
+      cost: 57,
+      charges: { value: 2, recovers: 0 },
+      xws: 'whisper-pnp-ls',
+      ability:
+        'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
+      slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper-pnp.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/whisper.png',
+      standard: true,
+      epic: true,
+      extended: true,
+      ffg: null,
+    },
+    {
+      name: '“Echo”',
+      caption: 'Copycat',
+      initiative: 4,
+      limited: 1,
+      cost: 5,
+      charges: { value: 1, recovers: 1 },
+      xws: 'echo-pnp',
+      ability:
+        'After an enemy ship at range 0-1 performs an action on its action bar, you may spend 1 [Charge] to perform the same action, treating it as white.',
+      standardLoadout: [
+        'silenthunter-tiephphantom',
+        'stealthgambit-tiephphantom',
+        'manualailerons-tiephphantom',
+      ],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo-pnp.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png',
+      standard: false,
+      epic: false,
+      extended: false,
+      ffg: null,
+    },
+    {
+      name: '“Echo”',
+      caption: 'Copycat',
+      initiative: 4,
+      limited: 1,
+      cost: 48,
+      charges: { value: 1, recovers: 1 },
+      xws: 'echo-pnp-lsl',
+      ability:
+        'After an enemy ship at range 0-1 performs an action on its action bar, you may spend 1 [Charge] to perform the same action, treating it as white.',
+      slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
+      image:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo-pnp-lsl.png',
+      artwork:
+        'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/echo.png',
+      standard: true,
+      epic: true,
+      extended: true,
+      ffg: null,
     },
   ],
 };

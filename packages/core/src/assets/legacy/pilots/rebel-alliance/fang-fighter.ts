@@ -65,10 +65,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/fennrau-fangfighter.png',
       standard: true,
-      wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
       ffg: 1018,
+      extended: true,
     },
     {
       name: 'Bodica Venj',
@@ -89,10 +89,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bodicavenj.png',
       standard: true,
-      wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
       ffg: 1019,
+      extended: true,
     },
     {
       name: 'Dirk Ullodin',
@@ -113,10 +113,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dirkullodin.png',
       standard: true,
-      wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
       ffg: 1020,
+      extended: true,
     },
     {
       name: 'Clan Wren Volunteer',
@@ -137,10 +137,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/clanwrenvolunteer.png',
       standard: true,
-      wildspace: true,
       epic: true,
       keywords: ['Mandalorian'],
       ffg: 1021,
+      extended: true,
     },
   ],
 };

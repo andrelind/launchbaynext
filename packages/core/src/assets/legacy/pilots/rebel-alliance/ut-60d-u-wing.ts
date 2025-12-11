@@ -56,10 +56,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/benthictwotubes.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan'],
       epic: true,
       ffg: 58,
+      extended: true,
     },
     {
       name: 'Blue Squadron Scout',
@@ -74,9 +74,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronscout.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 60,
+      extended: true,
     },
     {
       name: 'Bodhi Rook',
@@ -100,16 +100,16 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bodhirook.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 54,
+      extended: true,
     },
     {
       name: 'Cassian Andor',
       caption: 'Raised by the Rebellion',
       initiative: 3,
       limited: 1,
-      cost: 50,
+      cost: 49,
       xws: 'cassianandor',
       ability:
         'At the start of the Activation Phase, you may choose 1 friendly ship at range 1-3. If you do, that ship removes 1 stress token.',
@@ -126,9 +126,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cassianandor.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 56,
+      extended: true,
     },
     {
       name: 'Heff Tobber',
@@ -152,9 +152,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hefftobber.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 59,
+      extended: true,
     },
     {
       name: 'Magva Yarro',
@@ -179,10 +179,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magvayarro.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan'],
       epic: true,
       ffg: 57,
+      extended: true,
     },
     {
       name: 'Partisan Renegade',
@@ -204,10 +204,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/partisanrenegade.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan'],
       epic: true,
       ffg: 61,
+      extended: true,
     },
     {
       name: 'Saw Gerrera',
@@ -232,10 +232,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sawgerrera.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan'],
       epic: true,
       ffg: 55,
+      extended: true,
     },
     {
       name: 'K-2SO',
@@ -259,7 +259,6 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Coordinate' },
       ],
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/k2so.png',
       image:
@@ -267,6 +266,7 @@ const t: ShipType = {
       keywords: ['Droid'],
       epic: true,
       ffg: 629,
+      extended: true,
     },
   ],
 };

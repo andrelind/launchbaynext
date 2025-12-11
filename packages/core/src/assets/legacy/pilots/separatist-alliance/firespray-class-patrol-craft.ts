@@ -49,7 +49,6 @@ const t: ShipType = {
       ability:
         "While you defend or perform a primary attack, if the difficulty of your revealed maneuver is less than that of the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       standard: true,
-      wildspace: true,
       cost: 79,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jangofett.png',
@@ -68,6 +67,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 800,
+      extended: true,
     },
     {
       name: 'Zam Wesell',
@@ -77,7 +77,6 @@ const t: ShipType = {
       caption: 'Clawdite Changeling',
       conditions: ['youdbettermeanbusiness', 'youshouldthankme'],
       standard: true,
-      wildspace: true,
       ability:
         "Setup: Lose 2 [Charge]. During the System Phase, you may assign 1 of your secret conditions to yourself facedown: “You Should Thank Me” or “You'd Better Mean Business”",
       charges: { value: 4, recovers: 0 },
@@ -99,6 +98,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 801,
+      extended: true,
     },
     {
       name: 'Boba Fett',
@@ -107,10 +107,9 @@ const t: ShipType = {
       limited: 1,
       caption: 'Survivor',
       standard: true,
-      wildspace: true,
       ability:
         'While you defend, if there are no other friendly ships at range 0-2, you may change 1 of your blank results to a [Focus] result.',
-      cost: 68,
+      cost: 66,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/bobafett-firesprayclasspatrolcraft.png',
       artwork:
@@ -127,6 +126,7 @@ const t: ShipType = {
       keywords: ['Bounty Hunter'],
       epic: true,
       ffg: 1089,
+      extended: true,
     },
     {
       name: 'Separatist Racketeer',
@@ -135,7 +135,6 @@ const t: ShipType = {
       limited: 0,
       text: 'Emboldened by the bitter stalemate of the Outer Rim Sieges, mercenary groups across the galaxy take the opportunity to profit from the ongoing war.',
       standard: true,
-      wildspace: true,
       cost: 62,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/separatistracketeer.png',
@@ -152,6 +151,7 @@ const t: ShipType = {
       ],
       epic: true,
       ffg: 803,
+      extended: true,
     },
     {
       name: 'Aurra Sing',
@@ -160,7 +160,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Bane of the Jedi',
       standard: true,
-      wildspace: true,
       ability:
         'Before you engage, you may spend 1 [Force] to choose 2 enemy ships at range 0-1. Transfer any number of orange and red tokens between those two ships.',
       force: { value: 1, recovers: 1, side: ['dark'] },
@@ -182,6 +181,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Bounty Hunter'],
       epic: true,
       ffg: 1090,
+      extended: true,
     },
   ],
 };

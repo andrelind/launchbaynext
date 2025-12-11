@@ -41,7 +41,7 @@ const t: ShipType = {
       caption: 'Devious Provocateur',
       xws: 'agentterex',
       initiative: 3,
-      cost: 34,
+      cost: 32,
       slots: [
         'Talent',
         'Crew',
@@ -61,9 +61,9 @@ const t: ShipType = {
       ability:
         'Setup: After placing forces, choose any number of your equipped [Illicit] upgrades and equip them to friendly TIE/fo or TIE/sf fighters. Each ship can be assigned only 1 [Illicit] this way. End of Game: Return all [Illicit] upgrades to their original ships.',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 658,
+      extended: true,
     },
     {
       name: 'Commander Malarus',
@@ -80,15 +80,15 @@ const t: ShipType = {
       ability:
         'While a friendly ship at range 0-2 performs a primary attack, before the Modify Dice step, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 656,
+      extended: true,
     },
     {
       name: 'First Order Courier',
       xws: 'firstordercourier',
       initiative: 2,
-      cost: 32,
+      cost: 30,
       slots: ['Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       limited: 0,
       artwork:
@@ -97,9 +97,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/firstordercourier.png',
       text: 'The First Order lurks in many bases hidden in shadowy corners of the galaxy, slowly spreading its insidious influence.',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 659,
+      extended: true,
     },
     {
       name: 'Gideon Hask',
@@ -110,8 +110,7 @@ const t: ShipType = {
       ability:
         'While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.',
       standard: true,
-      wildspace: true,
-      cost: 40,
+      cost: 38,
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask-xiclasslightshuttle.png',
@@ -119,6 +118,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask-xiclasslightshuttle.png',
       epic: true,
       ffg: 657,
+      extended: true,
     },
     {
       name: 'Agent Tierny',
@@ -130,7 +130,6 @@ const t: ShipType = {
         'Setup: After placing forces, you must assign the Broken Trust condition to an enemy ship.',
       conditions: ['brokentrust'],
       standard: true,
-      wildspace: true,
       cost: 49,
       slots: ['Talent', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
       artwork:
@@ -139,6 +138,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/agenttierny.png',
       epic: true,
       ffg: 928,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_Xi-class_Shuttle.png',

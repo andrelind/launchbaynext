@@ -58,10 +58,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/crymorahgoon.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 168,
+      extended: true,
     },
     {
       name: 'Drea Renthal',
@@ -87,10 +87,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/drearenthal.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 166,
+      extended: true,
     },
     {
       name: 'Hired Gun',
@@ -114,10 +114,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hiredgun.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 167,
+      extended: true,
     },
     {
       name: 'Kavil',
@@ -143,10 +143,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kavil.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 165,
+      extended: true,
     },
     {
       name: 'Leema Kai',
@@ -154,7 +154,6 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       cost: 37,
       slots: [
@@ -175,6 +174,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/leemakai.png',
       epic: true,
       ffg: 898,
+      extended: true,
     },
     {
       name: 'Arliz Hadrassian',
@@ -182,7 +182,6 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       cost: 35,
       slots: [
@@ -203,6 +202,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/arlizhadrassian.png',
       epic: true,
       ffg: 899,
+      extended: true,
     },
     {
       name: 'Amaxine Warrior',
@@ -211,7 +211,6 @@ const t: ShipType = {
       limited: 0,
       text: 'Decades after the Battle of Endor, former Imperials remain active in the New Republic. Many have joined paramilitary organizations, such as the Amaxine Warriors, that appropriate martial traditions and cultures to spread the hateful ideology of the First Order amongst those most vulnerable to it.',
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Talent',
@@ -229,6 +228,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/amaxinewarrior.png',
       epic: true,
       ffg: 901,
+      extended: true,
     },
     {
       name: 'Padric',
@@ -237,7 +237,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Napkin Bomber',
       standard: true,
-      wildspace: true,
       cost: 32,
       slots: [
         'Talent',
@@ -257,6 +256,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/padric.png',
       epic: true,
       ffg: 900,
+      extended: true,
     },
     {
       name: 'Jinata Security Officer',
@@ -265,7 +265,6 @@ const t: ShipType = {
       limited: 0,
       text: "Headquartered on the former Imperial stronghold of Vardos, Jinata Security continues its reconstruction efforts on the devastated planet, even while collaborating with the First Order's rearmament program.",
       standard: true,
-      wildspace: true,
       cost: 39,
       slots: ['Tech', 'Turret', 'Torpedo', 'Missile', 'Astromech', 'Device'],
       keywords: ['Y-wing'],
@@ -275,6 +274,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/jinatasecurityofficer.png',
       epic: true,
       ffg: 902,
+      extended: true,
     },
   ],
 };

@@ -61,10 +61,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bossk.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Freighter'],
       epic: true,
       ffg: 210,
+      extended: true,
     },
     {
       name: 'Latts Razzi',
@@ -91,10 +91,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lattsrazzi.png',
       standard: true,
-      wildspace: true,
       keywords: ['Bounty Hunter', 'Freighter'],
       epic: true,
       ffg: 212,
+      extended: true,
     },
     {
       name: 'Moralo Eval',
@@ -122,10 +122,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/moraloeval.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 211,
+      extended: true,
     },
     {
       name: 'Trandoshan Slaver',
@@ -149,10 +149,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/trandoshanslaver.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 213,
+      extended: true,
     },
     {
       name: 'Doctor Aphra',
@@ -180,10 +180,10 @@ const t: ShipType = {
         'Gunner',
       ],
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 1067,
+      extended: true,
     },
   ],
 };

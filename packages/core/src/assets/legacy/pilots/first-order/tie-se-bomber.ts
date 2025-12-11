@@ -58,7 +58,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 37,
       slots: [
         'Talent',
@@ -80,6 +79,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 913,
+      extended: true,
     },
     {
       name: '“Scorch”',
@@ -91,7 +91,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 33,
       slots: [
         'Talent',
@@ -113,6 +112,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 914,
+      extended: true,
     },
     {
       name: '“Dread”',
@@ -124,7 +124,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 32,
       slots: [
         'Talent',
@@ -146,6 +145,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 915,
+      extended: true,
     },
     {
       name: '“Grudge”',
@@ -157,7 +157,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 38,
       slots: [
         'Tech',
@@ -178,6 +177,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 916,
+      extended: true,
     },
     {
       name: 'First Order Cadet',
@@ -189,7 +189,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 32,
       slots: [
         'Talent',
@@ -209,6 +208,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 917,
+      extended: true,
     },
     {
       name: 'Sienar-Jaemus Test Pilot',
@@ -220,7 +220,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 31,
       slots: [
         'Tech',
@@ -239,6 +238,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 918,
+      extended: true,
     },
     {
       name: 'Jul Jerjerrod',
@@ -250,7 +250,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 34,
       slots: [
         'Talent',
@@ -273,6 +272,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 929,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/first-order/I_TIEseBomber.png',

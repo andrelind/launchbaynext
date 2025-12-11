@@ -52,9 +52,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/airencracken.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 27,
+      extended: true,
     },
     {
       name: 'Bandit Squadron Pilot',
@@ -69,9 +69,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/banditsquadronpilot.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 30,
+      extended: true,
     },
     {
       name: 'Lieutenant Blount',
@@ -88,9 +88,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantblount.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 28,
+      extended: true,
     },
     {
       name: 'Tala Squadron Pilot',
@@ -105,9 +105,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/talasquadronpilot.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 29,
+      extended: true,
     },
   ],
 };

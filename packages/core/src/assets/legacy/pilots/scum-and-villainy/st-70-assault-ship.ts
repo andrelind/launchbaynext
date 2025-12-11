@@ -67,9 +67,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/themandalorian.png',
       keywords: ['Mandalorian', 'Bounty Hunter'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1063,
+      extended: true,
     },
     {
       name: 'Q9-0',
@@ -102,9 +102,9 @@ const t: ShipType = {
         { difficulty: 'Red', type: 'Barrel Roll' },
       ],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1064,
+      extended: true,
     },
     {
       name: 'Guild Bounty Hunter',
@@ -130,9 +130,9 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/guildbountyhunter.png',
       keywords: ['Bounty Hunter'],
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1065,
+      extended: true,
     },
     {
       name: 'Outer Rim Enforcer',
@@ -155,9 +155,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/outerrimenforcer.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1066,
+      extended: true,
     },
   ],
 };

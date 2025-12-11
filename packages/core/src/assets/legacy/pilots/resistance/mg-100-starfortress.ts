@@ -59,8 +59,8 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
+      extended: true,
       ffg: 434,
     },
     {
@@ -87,8 +87,8 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
+      extended: true,
       ffg: 433,
     },
     {
@@ -115,8 +115,8 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
+      extended: true,
       ffg: 448,
     },
     {
@@ -144,8 +144,8 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
+      extended: true,
       ffg: 432,
     },
     {
@@ -172,8 +172,8 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
+      extended: true,
       ffg: 447,
     },
     {
@@ -200,8 +200,8 @@ const t: ShipType = {
         'Tech',
       ],
       standard: true,
-      wildspace: true,
       epic: true,
+      extended: true,
       ffg: 431,
     },
     {
@@ -211,7 +211,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Hero',
       standard: false,
-      wildspace: true,
       charges: { value: 1, recovers: 1 },
       slots: [
         'Talent',
@@ -232,6 +231,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/paigetico.png',
       epic: true,
+      extended: true,
       ffg: 640,
     },
   ],

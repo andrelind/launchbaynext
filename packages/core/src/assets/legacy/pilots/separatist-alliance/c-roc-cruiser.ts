@@ -53,7 +53,6 @@ const t: ShipType = {
       },
       text: 'The Separatist Alliance makes use of all manner of unsavory contacts in its fight against the Galactic Republic, including corsairs and criminal cartels.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 1,
       xws: 'separatistprivateers',
@@ -69,6 +68,7 @@ const t: ShipType = {
         'Configuration',
       ],
       ffg: 714,
+      extended: false,
     },
   ],
 };

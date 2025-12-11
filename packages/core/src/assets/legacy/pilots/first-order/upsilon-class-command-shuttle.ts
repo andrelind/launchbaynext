@@ -23,7 +23,7 @@ const t: ShipType = {
     '3YR',
   ],
   dialCodes: ['Ups'],
-  faction: 'First Order',
+  faction: 'firstorder',
   stats: [
     { type: 'attack', value: 4, arc: 'Front Arc' },
     { type: 'agility', value: 1 },
@@ -48,13 +48,21 @@ const t: ShipType = {
       xws: 'lieutenantdormitz',
       ability:
         'Setup: After you are placed, other friendly TIE/fo Fighters and TIE/sf Fighters can be placed anywhere in the play area at range 0-2 of you.',
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantdormitz.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenantdormitz.png',
       standard: true,
-      wildspace: true,
       epic: true,
       extended: true,
       ffg: 412,
@@ -68,13 +76,21 @@ const t: ShipType = {
       xws: 'majorstridan',
       ability:
         'While you coordinate or resolve the effect of one of your upgrades, you may treat friendly ships at range 2-3 as being at range 0 or range 1.',
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorstridan.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorstridan.png',
       standard: true,
-      wildspace: true,
       epic: true,
       extended: true,
       ffg: 410,
@@ -89,13 +105,21 @@ const t: ShipType = {
       charges: { value: 1, recovers: 1 },
       ability:
         'During the Activation or Engagement Phase, after a ship in your [Front Arc] at range 0-2 gains 1 stress token, you may spend 1 [Charge]. If you do, that ship gains 1 tractor token.',
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/pettyofficerthanisson.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/pettyofficerthanisson.png',
       standard: true,
-      wildspace: true,
       epic: true,
       extended: true,
       ffg: 458,
@@ -107,13 +131,21 @@ const t: ShipType = {
       limited: 0,
       cost: 58,
       text: "The Upsilon-class command shuttle serves as a base of operations for many of the First Order's senior officers and agents. Its powerful sensors and communications equipment allow them to orchestrate the spread of terror across the galaxy.",
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/starkillerbasepilot.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/starkillerbasepilot.png',
       standard: true,
-      wildspace: true,
       epic: true,
       extended: true,
       ffg: 413,
@@ -125,15 +157,24 @@ const t: ShipType = {
       limited: 1,
       cost: 64,
       xws: 'lieutenanttavson',
-      ability: 'After you suffer damage, you may spend 1 [Charge] to perform an action.',
+      ability:
+        'After you suffer damage, you may spend 1 [Charge] to perform an action.',
       charges: { value: 2, recovers: 1 },
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenanttavson.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenanttavson.png',
       standard: true,
-      wildspace: true,
       epic: true,
       extended: true,
       ffg: 411,
@@ -148,13 +189,21 @@ const t: ShipType = {
       ability:
         'While a friendly ship at range 1-2 with lower initiative than you defends or performs an attack, if you have at least 1 [Charge], that ship may reroll 1 [Focus] result. After an enemy ship at range 0-3 is destroyed, lose 1 [Charge].',
       charges: { value: 2, recovers: 0 },
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/captaincardinal.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captaincardinal.png',
       standard: true,
-      wildspace: true,
       epic: true,
       extended: true,
       ffg: 457,
@@ -168,15 +217,24 @@ const t: ShipType = {
       xws: 'enricpryde-wat1',
       ability:
         'After you perform an attack, you may choose a friendly ship at range 0-3. If you do, you and the chosen ship may perform a bonus attack. Then, the chosen ship is destroyed.',
-      slots: ['Sensor', 'Cannon', 'Crew', 'Crew', 'Crew', 'Modification', 'Tech', 'Tech'],
+      slots: [
+        'Sensor',
+        'Cannon',
+        'Crew',
+        'Crew',
+        'Crew',
+        'Modification',
+        'Tech',
+        'Tech',
+      ],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/enricpryde-wat1',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/enricpryde-wat1',
-      standard: true,
-      wildspace: true,
+      standard: false,
       epic: true,
       extended: true,
+      ffg: null,
     },
   ],
 };

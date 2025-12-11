@@ -42,8 +42,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['t70xwing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Os-1 Arsenal Loadout',
@@ -69,8 +69,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['alphaclassstarwing'] }],
     standard: false,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Pivot Wing',
@@ -102,8 +102,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['ut60duwing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Swivel Wing',
@@ -136,8 +136,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['gauntletfighter'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Servomotor S-foils',
@@ -188,8 +188,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['t65xwing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Xg-1 Assault Configuration',
@@ -212,8 +212,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['alphaclassstarwing'] }],
     standard: false,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Grappling Struts',
@@ -246,8 +246,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['vultureclassdroidfighter'] }],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Delta-7B',
@@ -276,8 +276,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ chassis: ['delta7aethersprite'] }],
     standard: false,
-    wildspace: false,
     epic: false,
+    extended: false,
   },
   {
     name: 'Calibrated Laser Targeting',
@@ -302,8 +302,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ chassis: ['delta7aethersprite'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Landing Struts',
@@ -336,8 +336,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['hyenaclassdroidbomber'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Corsair Refit',
@@ -367,8 +367,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ chassis: ['croccruiser'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Stabilized S-foils',
@@ -421,8 +421,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Repulsorlift Stabilizers',
@@ -454,8 +454,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Alpha-3B “Besh”',
@@ -476,8 +476,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Alpha-3E “Esk”',
@@ -499,8 +499,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Intercept Booster',
@@ -542,8 +542,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Maneuver-Assist MGK-300',
@@ -575,8 +575,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Target-Assist MGK-300',
@@ -608,8 +608,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Sensitive Controls',
@@ -632,8 +632,8 @@ const t: UpgradeBase[] = [
     standarized: true,
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'TIE Defender Elite',
@@ -659,8 +659,8 @@ const t: UpgradeBase[] = [
     standarized: true,
     cost: { value: -8 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Vectored Cannons (RZ-1)',
@@ -691,8 +691,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ shipAbility: ['Vectored Thrusters'] }],
     standarized: true,
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Wartime Loadout',
@@ -720,8 +720,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['btanr2ywing'] }],
     standarized: true,
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Enhanced Jamming Suite',
@@ -770,8 +770,8 @@ const t: UpgradeBase[] = [
     cost: { value: 0 },
     restrictions: [{ chassis: ['tiewiwhispermodifiedinterceptor'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: "L3-37's Programming",
@@ -787,9 +787,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Strut-Lock Override',
@@ -806,9 +806,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
 ];
 

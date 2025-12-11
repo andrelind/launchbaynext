@@ -30,8 +30,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Comms Team',
@@ -70,8 +70,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Damage Control Team',
@@ -102,8 +102,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Gunnery Specialists',
@@ -134,8 +134,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'IG-RM Droids',
@@ -159,8 +159,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Ordnance Team',
@@ -191,8 +191,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Sensor Experts',
@@ -223,8 +223,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Tractor Technicians',
@@ -245,8 +245,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Corsair Crew',
@@ -267,8 +267,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Droid Crew',
@@ -300,8 +300,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
 ];
 

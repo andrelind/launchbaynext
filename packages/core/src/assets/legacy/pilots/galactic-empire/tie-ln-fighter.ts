@@ -51,10 +51,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/howlrunner.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 81,
+      extended: true,
     },
     {
       name: '“Mauler” Mithel',
@@ -71,10 +71,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maulermithel.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 80,
+      extended: true,
     },
     {
       name: '“Night Beast”',
@@ -91,10 +91,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nightbeast.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 88,
+      extended: true,
     },
     {
       name: '“Scourge” Skutu',
@@ -111,10 +111,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scourgeskutu.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 82,
+      extended: true,
     },
     {
       name: '“Wampa”',
@@ -132,10 +132,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wampa.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 89,
+      extended: true,
     },
     {
       name: 'Academy Pilot',
@@ -150,10 +150,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/academypilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 92,
+      extended: true,
     },
     {
       name: 'Black Squadron Ace',
@@ -168,10 +168,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksquadronace.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 90,
+      extended: true,
     },
     {
       name: 'Del Meeko',
@@ -188,10 +188,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/delmeeko.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 85,
+      extended: true,
     },
     {
       name: 'Gideon Hask',
@@ -208,10 +208,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/gideonhask.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 84,
+      extended: true,
     },
     {
       name: 'Iden Versio',
@@ -229,10 +229,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 83,
+      extended: true,
     },
     {
       name: 'Obsidian Squadron Pilot',
@@ -247,10 +247,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/obsidiansquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 91,
+      extended: true,
     },
     {
       name: 'Seyn Marana',
@@ -267,10 +267,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/seynmarana.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 86,
+      extended: true,
     },
     {
       name: 'Valen Rudor',
@@ -287,10 +287,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/valenrudor.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 87,
+      extended: true,
     },
     {
       name: 'ISB Jingoist',
@@ -307,10 +307,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/isbjingoist.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 948,
+      extended: true,
     },
     {
       name: 'Moff Gideon',
@@ -328,10 +328,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/moffgideon.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 949,
+      extended: true,
     },
     {
       name: '“Backstabber”',
@@ -353,10 +353,10 @@ const t: ShipType = {
       ],
       standardLoadout: ['crackshot', 'disciplined', 'afterburners'],
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 950,
+      extended: true,
     },
     {
       name: '“Backstabber”',
@@ -378,10 +378,10 @@ const t: ShipType = {
       ],
       slots: ['Talent'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1187,
+      extended: true,
     },
     {
       name: '“Dark Curse”',
@@ -402,10 +402,10 @@ const t: ShipType = {
       ],
       standardLoadout: ['ruthless', 'precisionionengines'],
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 951,
+      extended: true,
     },
     {
       name: '“Dark Curse”',
@@ -426,10 +426,10 @@ const t: ShipType = {
       ],
       slots: ['Talent'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1188,
+      extended: true,
     },
     {
       name: '“Mauler” Mithel',
@@ -451,10 +451,10 @@ const t: ShipType = {
       ],
       standardLoadout: ['predator', 'afterburners'],
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 952,
+      extended: true,
     },
     {
       name: '“Mauler” Mithel',
@@ -476,10 +476,10 @@ const t: ShipType = {
       ],
       slots: ['Talent'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1189,
+      extended: true,
     },
     {
       name: '“Wampa”',
@@ -502,10 +502,10 @@ const t: ShipType = {
       ],
       standardLoadout: ['elusive', 'vengeful-battleofyavin'],
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 953,
+      extended: true,
     },
     {
       name: '“Wampa”',
@@ -528,10 +528,10 @@ const t: ShipType = {
       ],
       slots: [],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 1190,
+      extended: true,
     },
     {
       name: 'Magna Tolvan',
@@ -548,10 +548,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/magnatolvan.png',
       slots: ['Talent', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 954,
+      extended: true,
     },
     {
       name: 'Yrica Quell',
@@ -568,10 +568,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yricaquell.png',
       slots: ['Talent', 'Modification'],
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 955,
+      extended: true,
     },
     {
       name: 'Iden Versio',
@@ -589,10 +589,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 956,
+      extended: true,
     },
     {
       name: '“Night Beast”',
@@ -609,10 +609,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/nightbeast-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 957,
+      extended: true,
     },
     {
       name: 'Valen Rudor',
@@ -629,10 +629,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/valenrudor-swz105.png',
       standard: false,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 958,
+      extended: true,
     },
     {
       name: 'Lieutenant Hebsly',
@@ -673,9 +673,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenanthebsly-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 959,
+      extended: true,
     },
     {
       name: 'Lieutenant Hebsly',
@@ -712,9 +712,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lieutenanthebsly-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1191,
+      extended: true,
     },
     {
       name: 'Scythe 6',
@@ -755,9 +755,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scythe6-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 960,
+      extended: true,
     },
     {
       name: 'Scythe 6',
@@ -793,9 +793,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/scythe6-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1192,
+      extended: true,
     },
     {
       name: 'Major Mianda',
@@ -833,9 +833,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majormianda-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 961,
+      extended: true,
     },
     {
       name: 'Major Mianda',
@@ -873,9 +873,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majormianda-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1193,
+      extended: true,
     },
   ],
 };

@@ -22,8 +22,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ baseSizes: ['Medium', 'Large'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Advanced SLAM',
@@ -45,8 +45,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ action: { type: 'SLAM', difficulty: 'White' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Afterburners',
@@ -72,8 +72,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ baseSizes: ['Small'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Electronic Baffle',
@@ -94,8 +94,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Engine Upgrade',
@@ -118,8 +118,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'size', values: { Small: 3, Medium: 4, Large: 7 } },
     restrictions: [{ action: { type: 'Boost', difficulty: 'Red' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hull Upgrade',
@@ -140,8 +140,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 5, '3': 7 } },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Munitions Failsafe',
@@ -162,8 +162,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Shield Upgrade',
@@ -184,8 +184,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 6, '3': 8 } },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Static Discharge Vanes',
@@ -206,8 +206,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Stealth Device',
@@ -229,8 +229,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { variable: 'agility', values: { '0': 3, '1': 4, '2': 6, '3': 8 } },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tactical Scrambler',
@@ -252,8 +252,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ baseSizes: ['Medium', 'Large'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Impervium Plating',
@@ -276,8 +276,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['belbullab22starfighter'] }],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Synchronized Console',
@@ -302,8 +302,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Spare Parts Canisters',
@@ -326,8 +326,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ equipped: ['Astromech'] }],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Delayed Fuses',
@@ -348,8 +348,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Angled Deflectors',
@@ -371,11 +371,11 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/angleddeflectors.png',
       },
     ],
-    cost: { variable: 'agility', values: { '0': 6, '1': 3, '2': 1, '3': 1 } },
+    cost: { variable: 'agility', values: { '0': 6, '1': 2, '2': 1, '3': 1 } },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Targeting Computer',
@@ -396,8 +396,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Independent Calculations',
@@ -420,8 +420,8 @@ const t: UpgradeBase[] = [
     standarized: true,
     cost: { value: 0 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Overdrive Thruster',
@@ -446,8 +446,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ chassis: ['t70xwing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Precision Ion Engines',
@@ -476,8 +476,8 @@ const t: UpgradeBase[] = [
       { stat: { type: 'agility', value: 3 } },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Mandalorian Optics',
@@ -500,8 +500,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ keywords: ['Mandalorian'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Drop-Seat bay',
@@ -527,8 +527,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['gauntletfighter'] }],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Beskar Reinforced Plating',
@@ -551,8 +551,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'agility', values: { '0': 2, '1': 3, '2': 4, '3': 5 } },
     restrictions: [{ keywords: ['Mandalorian'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Burnout Thrusters',
@@ -579,8 +579,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Unstable Sublight Engines',
@@ -596,9 +596,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Sensor Jammer',
@@ -614,9 +614,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Contingency Protocol',
@@ -632,9 +632,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Evasion Sequence 7',
@@ -650,9 +650,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Automated Loaders',
@@ -669,9 +669,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     limited: 0,
@@ -695,9 +695,45 @@ const t: UpgradeBase[] = [
       { equipped: ['Tactical Relay'] },
       { keywords: ['Droid'] },
     ],
+    standard: false,
+    epic: false,
+    extended: true,
+  },
+  {
+    limited: 0,
+    xws: 'stygiumreserve-tiephphantom',
+    sides: [
+      {
+        title: 'Stygium Reserve',
+        type: 'Modification',
+        charges: { value: 1, recovers: 0 },
+        ability:
+          'After you fully execute a maneuver, you may spend 1 [Charge] to perform a [Boost] action, even while stressed.',
+        slots: ['Modification'],
+      },
+    ],
     standard: true,
-    wildspace: true,
+    wildspace: false,
     epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'manualailerons-tiephphantom',
+    sides: [
+      {
+        title: 'Manual Ailerons',
+        type: 'Modification',
+        charges: { value: 2, recovers: 0 },
+        ability:
+          'When you decloak, you may spend 1 [Charge] to use the (2 [Bank Left]) or (2 [Bank Right]) template instead of the (2 [Straight]) template.',
+        slots: ['Modification'],
+      },
+    ],
+    standard: true,
+    wildspace: false,
+    epic: true,
+    standardLoadoutOnly: true,
   },
 ];
 

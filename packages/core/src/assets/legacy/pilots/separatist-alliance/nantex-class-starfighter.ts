@@ -48,7 +48,6 @@ const t: ShipType = {
         text: 'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you fully execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
       },
       standard: true,
-      wildspace: true,
       text: 'Designed for the unique physiology of Geonosian pilots, Nantex-class starfighters are capable of maneuvers that would rip most ships—and pilots—apart.',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/stalgasinhiveguard.png',
@@ -58,6 +57,7 @@ const t: ShipType = {
       slots: ['Talent'],
       epic: true,
       ffg: 609,
+      extended: true,
     },
     {
       name: 'Sun Fac',
@@ -69,7 +69,6 @@ const t: ShipType = {
         text: 'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you fully execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
       },
       standard: true,
-      wildspace: true,
       caption: 'Archduke’s Enforcer',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sunfac.png',
@@ -81,6 +80,7 @@ const t: ShipType = {
       slots: ['Talent', 'Talent'],
       epic: true,
       ffg: 604,
+      extended: true,
     },
     {
       name: 'Berwer Kret',
@@ -92,7 +92,6 @@ const t: ShipType = {
         text: 'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you fully execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
       },
       standard: true,
-      wildspace: true,
       caption: 'Hive Guard Captain',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/berwerkret.png',
@@ -100,10 +99,11 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/berwerkret.png',
       ability:
         'After you perform an attack that hits, each friendly ship with [Calculate] on its action bar and a lock on the defender may perform a red [Calculate] action.',
-      cost: 36,
+      cost: 35,
       slots: ['Talent', 'Talent'],
       epic: true,
       ffg: 605,
+      extended: true,
     },
     {
       name: 'Chertek',
@@ -115,7 +115,6 @@ const t: ShipType = {
         text: 'You cannot rotate your [Single Turret Arc] to your [Rear Arc]. After you fully execute a maneuver, you may gain 1 tractor token to perform a [Rotate Arc] action.',
       },
       standard: true,
-      wildspace: true,
       caption: 'Opportunistic Ace',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/chertek.png',
@@ -127,6 +126,7 @@ const t: ShipType = {
       slots: ['Talent', 'Talent'],
       epic: true,
       ffg: 606,
+      extended: true,
     },
     {
       name: 'Gorgol',
@@ -146,10 +146,10 @@ const t: ShipType = {
         'During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.',
       cost: 29,
       standard: true,
-      wildspace: true,
       slots: ['Talent', 'Modification'],
       epic: true,
       ffg: 607,
+      extended: true,
     },
     {
       name: 'Petranaki Arena Ace',
@@ -167,10 +167,10 @@ const t: ShipType = {
       },
       text: 'The Petranaki Arena is a massive edifice on Geonosis that was a key site in the first battle of the Clone Wars.',
       standard: true,
-      wildspace: true,
       slots: ['Talent', 'Talent'],
       epic: true,
       ffg: 608,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/separatist-alliance/I_Nantex_Class_Starfighter.png',

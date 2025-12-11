@@ -53,7 +53,6 @@ const t: ShipType = {
       },
       text: 'Designed by the Colicoid Creation Nest and equipped with powerful tentacles and a massive drill to tear though the hull of even the toughest starships and fortifications, the Trident-class Assault Ship is a terrifying testament to the threat posed by the Separatist Alliance.',
       standard: false,
-      wildspace: false,
       epic: true,
       engagement: 0,
       xws: 'colicoiddestroyer',
@@ -70,6 +69,7 @@ const t: ShipType = {
         'Title',
       ],
       ffg: 1091,
+      extended: false,
     },
   ],
 };

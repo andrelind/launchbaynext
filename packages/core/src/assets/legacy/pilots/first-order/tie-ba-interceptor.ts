@@ -57,7 +57,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/majorvonreg.png',
       image:
@@ -65,6 +64,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 624,
+      extended: true,
     },
     {
       name: '“Holo”',
@@ -81,7 +81,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holo.png',
       image:
@@ -89,6 +88,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 625,
+      extended: true,
     },
     {
       name: '“Ember”',
@@ -105,7 +105,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/ember.png',
       image:
@@ -113,6 +112,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 626,
+      extended: true,
     },
     {
       name: 'First Order Provocateur',
@@ -127,7 +127,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Tech', 'Missile', 'Modification'],
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstorderprovocateur.png',
       image:
@@ -135,6 +134,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 627,
+      extended: true,
     },
   ],
 };

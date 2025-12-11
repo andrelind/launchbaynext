@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'Inspired Tactician',
       initiative: 3,
       limited: 1,
-      cost: 69,
+      cost: 68,
       xws: 'captainoicunn',
       ability: 'You can perform primary attacks at range 0.',
       image:
@@ -63,9 +63,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainoicunn.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 146,
+      extended: true,
     },
     {
       name: 'Patrol Leader',
@@ -89,9 +89,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/patrolleader.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 148,
+      extended: true,
     },
     {
       name: 'Rear Admiral Chiraneau',
@@ -118,9 +118,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rearadmiralchiraneau.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 147,
+      extended: true,
     },
     {
       name: 'Morna Kee',
@@ -129,7 +129,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Determined Attaché',
       standard: true,
-      wildspace: true,
       slots: [
         'Talent',
         'Torpedo',
@@ -151,6 +150,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/mornakee.png',
       epic: true,
       ffg: 634,
+      extended: true,
     },
   ],
 };

@@ -55,10 +55,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/countdown.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 118,
+      extended: true,
     },
     {
       name: '“Duchess”',
@@ -79,10 +79,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/duchess.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 117,
+      extended: true,
     },
     {
       name: '“Pure Sabacc”',
@@ -103,10 +103,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/puresabacc.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 119,
+      extended: true,
     },
     {
       name: 'Black Squadron Scout',
@@ -125,10 +125,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blacksquadronscout.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 120,
+      extended: true,
     },
     {
       name: 'Planetary Sentinel',
@@ -147,10 +147,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/planetarysentinel.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 121,
+      extended: true,
     },
     {
       name: '“Vagabond”',
@@ -163,7 +163,6 @@ const t: ShipType = {
       },
       caption: 'Destitute Demolitionist',
       standard: true,
-      wildspace: true,
       slots: ['Talent', 'Gunner', 'Device', 'Modification'],
       ability:
         'After you fully execute a maneuver using your Adaptive Ailerons, if you are not stressed, you may drop 1 device.',
@@ -175,6 +174,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 633,
+      extended: true,
     },
   ],
 };

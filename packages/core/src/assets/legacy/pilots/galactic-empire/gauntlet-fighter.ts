@@ -46,7 +46,6 @@ const t: ShipType = {
       ability:
         'After you reveal a (0 [Stationary]) maneuver, if you are equipped with Swivel Wings (Down), you must execute a (1 [Bank Left]) or (1 [Bank Right]) sideslip maneuver of the same difficulty instead. After you execute that maneuver, you must flip Swivel Wings (Down).',
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Talent',
@@ -63,6 +62,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/captainhark.png',
       keywords: ['Mandalorian'],
       ffg: 930,
+      extended: true,
     },
     {
       name: 'Gar Saxon',
@@ -75,7 +75,6 @@ const t: ShipType = {
       ability:
         "When a friendly unit at range 0-2 performs a primary attack, if the attacker is in the defender's [Rear Arc], you may spend 1 [Charge]. If you do, the attacker rolls 1 additional die.",
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Talent',
@@ -92,6 +91,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garsaxon.png',
       keywords: ['Mandalorian'],
       ffg: 931,
+      extended: true,
     },
     {
       name: 'Imperial Super Commando',
@@ -101,7 +101,6 @@ const t: ShipType = {
       xws: 'imperialsupercommando',
       text: 'Under the rule of Viceroy Gar Saxon, the ruthless warriors that once served Lord Maul have been transformed into enforcers of the new order. The Mandalorian Gauntlet Fighter continues to serve as the combat transport of choice for these Imperial Super Commandos.',
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Talent',
@@ -118,6 +117,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/imperialsupercommando.png',
       keywords: ['Mandalorian'],
       ffg: 932,
+      extended: true,
     },
   ],
 };

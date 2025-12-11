@@ -55,10 +55,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/alphasquadronpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 106,
+      extended: true,
     },
     {
       name: 'Saber Squadron Ace',
@@ -77,10 +77,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sabersquadronace.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 105,
+      extended: true,
     },
     {
       name: 'Soontir Fel',
@@ -101,10 +101,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 103,
+      extended: true,
     },
     {
       name: 'Turr Phennir',
@@ -125,10 +125,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/turrphennir.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 104,
+      extended: true,
     },
     {
       name: 'Ciena Ree',
@@ -140,7 +140,6 @@ const t: ShipType = {
         text: 'After you perform an action, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       cost: 47,
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
@@ -153,6 +152,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/cienaree.png',
       ffg: 889,
+      extended: true,
     },
     {
       name: 'Gideon Hask',
@@ -165,7 +165,6 @@ const t: ShipType = {
       },
       caption: 'Inferno Two',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       cost: 46,
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
@@ -177,6 +176,7 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gideonhask-tieininterceptor.png',
       ffg: 892,
+      extended: true,
     },
     {
       name: 'Vult Skerris',
@@ -189,7 +189,6 @@ const t: ShipType = {
       },
       caption: 'Arrogant Ace',
       standard: true,
-      wildspace: true,
       cost: 43,
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       ability:
@@ -202,6 +201,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/vultskerris-tieininterceptor.png',
       epic: true,
       ffg: 890,
+      extended: true,
     },
     {
       name: 'Commandant Goran',
@@ -216,7 +216,6 @@ const t: ShipType = {
       },
       caption: 'Skystrike Superintendent',
       standard: true,
-      wildspace: true,
       cost: 43,
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       keywords: ['TIE'],
@@ -226,6 +225,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/commandantgoran.png',
       epic: true,
       ffg: 891,
+      extended: true,
     },
     {
       name: 'Lieutenant Lorrir',
@@ -238,7 +238,6 @@ const t: ShipType = {
       },
       caption: 'Requiem for Brentaal',
       standard: true,
-      wildspace: true,
       cost: 37,
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       ability:
@@ -250,6 +249,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantlorrir.png',
       epic: true,
       ffg: 893,
+      extended: true,
     },
     {
       name: 'Nash Windrider',
@@ -262,7 +262,6 @@ const t: ShipType = {
       },
       caption: 'Alderaanian Zealot',
       standard: true,
-      wildspace: true,
       cost: 41,
       charges: { value: 1, recovers: 1 },
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
@@ -275,6 +274,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/nashwindrider.png',
       epic: true,
       ffg: 894,
+      extended: true,
     },
     {
       name: 'Iden Versio',
@@ -287,7 +287,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: false,
-      wildspace: true,
       cost: 67,
       charges: { value: 2, recovers: 1 },
       stats: [
@@ -306,6 +305,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-battleofyavin.png',
       epic: true,
       ffg: 939,
+      extended: true,
     },
     {
       name: 'Iden Versio',
@@ -318,7 +318,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 64,
       charges: { value: 2, recovers: 1 },
       stats: [
@@ -337,6 +336,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/idenversio-battleofyavin-lsl.png',
       epic: true,
       ffg: 1177,
+      extended: true,
     },
     {
       name: 'Sigma 4',
@@ -349,7 +349,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: false,
-      wildspace: true,
       cost: 52,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -367,6 +366,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma4-battleofyavin.png',
       epic: true,
       ffg: 940,
+      extended: true,
     },
     {
       name: 'Sigma 4',
@@ -379,7 +379,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 40,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -397,6 +396,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma4-battleofyavin-lsl.png',
       epic: true,
       ffg: 1178,
+      extended: true,
     },
     {
       name: 'Sigma 5',
@@ -409,7 +409,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: false,
-      wildspace: true,
       cost: 50,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -427,6 +426,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma5-battleofyavin.png',
       epic: true,
       ffg: 941,
+      extended: true,
     },
     {
       name: 'Sigma 5',
@@ -439,7 +439,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 41,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -457,6 +456,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma5-battleofyavin-lsl.png',
       epic: true,
       ffg: 1179,
+      extended: true,
     },
     {
       name: 'Sigma 6',
@@ -469,7 +469,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: false,
-      wildspace: true,
       cost: 48,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -487,6 +486,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma6-battleofyavin.png',
       epic: true,
       ffg: 942,
+      extended: true,
     },
     {
       name: 'Sigma 6',
@@ -499,7 +499,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 41,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -517,6 +516,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma6-battleofyavin-lsl.png',
       epic: true,
       ffg: 1180,
+      extended: true,
     },
     {
       name: 'Sigma 7',
@@ -529,7 +529,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: false,
-      wildspace: true,
       cost: 48,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -554,6 +553,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma7-battleofyavin.png',
       epic: true,
       ffg: 943,
+      extended: true,
     },
     {
       name: 'Sigma 7',
@@ -566,7 +566,6 @@ const t: ShipType = {
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
       standard: true,
-      wildspace: true,
       cost: 43,
       charges: { value: 2, recovers: 0 },
       stats: [
@@ -591,6 +590,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sigma7-battleofyavin-lsl.png',
       epic: true,
       ffg: 1181,
+      extended: true,
     },
     {
       name: 'Second Sister',
@@ -603,7 +603,6 @@ const t: ShipType = {
       },
       caption: 'Manipulative Monster',
       standard: true,
-      wildspace: true,
       cost: 47,
       slots: ['Force Power', 'Modification', 'Modification', 'Configuration'],
       ability:
@@ -616,6 +615,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/secondsister.png',
       epic: true,
       ffg: 944,
+      extended: true,
     },
     {
       name: 'Sapphire 2',
@@ -642,9 +642,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sapphire2-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 946,
+      extended: true,
     },
     {
       name: 'Sapphire 2',
@@ -666,9 +666,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sapphire2-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1182,
+      extended: true,
     },
     {
       name: 'Soontir Fel',
@@ -696,9 +696,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 947,
+      extended: true,
     },
     {
       name: 'Soontir Fel',
@@ -721,9 +721,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/soontirfel-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1183,
+      extended: true,
     },
     {
       name: 'Maus Monare',
@@ -754,9 +754,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mausmonare-battleoverendor.png',
       standard: false,
-      wildspace: true,
       epic: true,
       ffg: 945,
+      extended: true,
     },
     {
       name: 'Maus Monare',
@@ -783,9 +783,9 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/mausmonare-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       epic: true,
       ffg: 1184,
+      extended: true,
     },
     {
       name: 'Carnor Jax',
@@ -801,8 +801,7 @@ const t: ShipType = {
       slots: ['Talent', 'Modification', 'Modification', 'Configuration'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/carnorjax-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['TIE'],
       epic: true,
       extended: true,

@@ -21,8 +21,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ action: { type: 'Focus' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Crack Shot',
@@ -44,8 +44,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Daredevil',
@@ -70,8 +70,8 @@ const t: UpgradeBase[] = [
       { action: { type: 'Boost', difficulty: 'White' } },
     ],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Debris Gambit',
@@ -95,8 +95,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Elusive',
@@ -119,8 +119,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Expert Handling',
@@ -145,8 +145,8 @@ const t: UpgradeBase[] = [
     cost: { variable: 'size', values: { Small: 2, Medium: 2, Large: 4 } },
     restrictions: [{ action: { type: 'Barrel Roll', difficulty: 'Red' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Fanatical',
@@ -168,8 +168,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Fearless',
@@ -191,8 +191,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Heroic',
@@ -214,8 +214,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['resistance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Intimidation',
@@ -236,8 +236,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 3 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Juke',
@@ -259,8 +259,8 @@ const t: UpgradeBase[] = [
     cost: { value: 6 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Lone Wolf',
@@ -282,8 +282,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Marksmanship',
@@ -304,8 +304,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Outmaneuver',
@@ -329,8 +329,8 @@ const t: UpgradeBase[] = [
       values: { '0': 5, '1': 5, '2': 5, '3': 5, '4': 6, '5': 6, '6': 6 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Predator',
@@ -351,8 +351,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ruthless',
@@ -374,8 +374,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Saturation Salvo',
@@ -397,8 +397,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ action: { type: 'Reload' } }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Selfless',
@@ -420,8 +420,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Squad Leader',
@@ -449,8 +449,8 @@ const t: UpgradeBase[] = [
       values: { '0': 2, '1': 4, '2': 5, '3': 7, '4': 9, '5': 10, '6': 12 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Swarm Tactics',
@@ -474,8 +474,8 @@ const t: UpgradeBase[] = [
       values: { '0': 3, '1': 3, '2': 3, '3': 3, '4': 3, '5': 4, '6': 5 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Trick Shot',
@@ -496,8 +496,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 4 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Treacherous',
@@ -520,8 +520,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['separatistalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Dedicated',
@@ -543,8 +543,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['galacticrepublic'] }, { 'non-limited': true }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ensnare',
@@ -569,8 +569,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ chassis: ['nantexclassstarfighter'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Snap Shot',
@@ -601,8 +601,8 @@ const t: UpgradeBase[] = [
       values: { Small: 6, Medium: 7, Large: 8, Huge: 9 },
     },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Gravitic Deflection',
@@ -624,8 +624,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ chassis: ['nantexclassstarfighter'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Proud Tradition',
@@ -657,8 +657,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['firstorder'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Deadeye Shot',
@@ -680,8 +680,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Backwards Tailslide',
@@ -703,8 +703,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ keywords: ['X-wing'] }, { equipped: ['Configuration'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Ion Limiter Override',
@@ -726,8 +726,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ keywords: ['TIE'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Marg Sabl Closure',
@@ -749,8 +749,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ baseSizes: ['Small', 'Medium'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Starbird Slash',
@@ -772,8 +772,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ keywords: ['A-wing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Cutthroat',
@@ -795,8 +795,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['scumandvillainy'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Disciplined',
@@ -818,8 +818,8 @@ const t: UpgradeBase[] = [
     cost: { value: 2 },
     restrictions: [{ factions: ['galacticempire'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Hopeful',
@@ -841,8 +841,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Interloper Turn',
@@ -864,8 +864,8 @@ const t: UpgradeBase[] = [
     restrictions: [{ chassis: ['tieddefender'] }],
     cost: { value: 1 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Tierfon Belly Run',
@@ -890,8 +890,8 @@ const t: UpgradeBase[] = [
     },
     restrictions: [{ keywords: ['Y-wing'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Feedback Ping',
@@ -913,8 +913,8 @@ const t: UpgradeBase[] = [
     cost: { value: 1 },
     restrictions: [{ action: { type: 'Reload' } }, { keywords: ['TIE'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Clan Training',
@@ -937,8 +937,8 @@ const t: UpgradeBase[] = [
     cost: { value: 3 },
     restrictions: [{ keywords: ['Mandalorian'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Notorious',
@@ -961,8 +961,8 @@ const t: UpgradeBase[] = [
     cost: { value: 5 },
     restrictions: [{ equipped: ['Illicit'] }],
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Enduring',
@@ -983,8 +983,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 2 },
     standard: true,
-    wildspace: true,
     epic: true,
+    extended: true,
   },
   {
     name: 'Attack Speed',
@@ -1000,9 +1000,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Fanatic',
@@ -1018,9 +1018,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Vengeful',
@@ -1036,9 +1036,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Efficient Processing',
@@ -1054,9 +1054,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Mercenary',
@@ -1072,9 +1072,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Swift Approach',
@@ -1090,9 +1090,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'Top Cover',
@@ -1108,9 +1108,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     name: 'True Grit',
@@ -1126,9 +1126,9 @@ const t: UpgradeBase[] = [
       },
     ],
     standard: false,
-    wildspace: true,
     epic: true,
     standardLoadoutOnly: true,
+    extended: true,
   },
   {
     limited: 0,
@@ -1148,9 +1148,9 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     restrictions: [{ factions: ['galacticempire'] }, { 'non-limited': true }],
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
   {
     limited: 0,
@@ -1169,9 +1169,9 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
   {
     limited: 0,
@@ -1190,9 +1190,9 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 1 },
-    standard: true,
-    wildspace: true,
-    epic: true,
+    standard: false,
+    epic: false,
+    extended: true,
   },
   {
     limited: 3,
@@ -1215,9 +1215,60 @@ const t: UpgradeBase[] = [
       { factions: ['galacticempire'] },
       { chassis: ['tielnfighter'] },
     ],
+    standard: false,
+    epic: false,
+    extended: true,
+  },
+  {
+    limited: 0,
+    xws: 'withoutatrace-tiephphantom',
+    sides: [
+      {
+        title: 'Without a Trace',
+        type: 'Talent',
+        ability:
+          'After you gain a cloak token, you may remove 1 red token. While you are cloaked, enemy ships cannot acquire locks on you.',
+        slots: ['Talent'],
+      },
+    ],
     standard: true,
-    wildspace: true,
+    wildspace: false,
     epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'silenthunter-tiephphantom',
+    sides: [
+      {
+        title: 'Silent Hunter',
+        type: 'Talent',
+        ability:
+          'After you decloak, you may acquire a lock on an enemy ship in your [Bullseye Arc].',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    wildspace: false,
+    epic: true,
+    standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'stealthgambit-tiephphantom',
+    sides: [
+      {
+        title: 'Silent Hunter',
+        type: 'Talent',
+        ability:
+          'After a friendly ship performs an attack that hits an enemy ship in your [Front Arc], if you are cloaked, you may gain a strain token to remove your cloak token and perform a bonus primary attack targeting the defender. At the end of the Engagement Phase, if you are strained, gain an evade token.',
+        slots: ['Talent'],
+      },
+    ],
+    standard: true,
+    wildspace: false,
+    epic: true,
+    standardLoadoutOnly: true,
   },
 ];
 

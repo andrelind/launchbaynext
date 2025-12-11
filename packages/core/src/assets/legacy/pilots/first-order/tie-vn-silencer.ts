@@ -58,10 +58,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/blackout.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 415,
+      extended: true,
     },
     {
       name: 'Kylo Ren',
@@ -84,10 +84,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kyloren.png',
       standard: true,
-      wildspace: true,
       keywords: ['Dark Side', 'TIE'],
       epic: true,
       ffg: 414,
+      extended: true,
     },
     {
       name: 'First Order Test Pilot',
@@ -106,10 +106,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/firstordertestpilot.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 416,
+      extended: true,
     },
     {
       name: '“Recoil”',
@@ -130,10 +130,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/recoil.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 455,
+      extended: true,
     },
     {
       name: '“Avenger”',
@@ -154,10 +154,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/avenger.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 456,
+      extended: true,
     },
     {
       name: 'Sienar-Jaemus Engineer',
@@ -176,10 +176,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/sienarjaemusengineer.png',
       standard: true,
-      wildspace: true,
       keywords: ['TIE'],
       epic: true,
       ffg: 417,
+      extended: true,
     },
     {
       name: '“Rush”',
@@ -194,7 +194,6 @@ const t: ShipType = {
       },
       caption: 'Adrenaline Junkie',
       standard: true,
-      wildspace: true,
       slots: ['Torpedo', 'Missile', 'Tech', 'Configuration'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rush.png',
@@ -203,6 +202,7 @@ const t: ShipType = {
       keywords: ['TIE'],
       epic: true,
       ffg: 643,
+      extended: true,
     },
   ],
 };

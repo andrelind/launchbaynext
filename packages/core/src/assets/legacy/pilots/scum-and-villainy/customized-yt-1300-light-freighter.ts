@@ -60,10 +60,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/freightercaptain.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 225,
+      extended: true,
     },
     {
       name: 'Han Solo',
@@ -89,10 +89,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hansolo.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 222,
+      extended: true,
     },
     {
       name: 'L3-37',
@@ -123,10 +123,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/l337.png',
       standard: true,
-      wildspace: true,
       keywords: ['Droid', 'Freighter', 'YT-1300'],
       epic: true,
       ffg: 224,
+      extended: true,
     },
     {
       name: 'Lando Calrissian',
@@ -152,10 +152,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/landocalrissian.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       ffg: 223,
+      extended: true,
     },
     {
       name: 'Rio Durant',
@@ -180,8 +180,7 @@ const t: ShipType = {
       ],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/riodurant-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['Freighter', 'YT-1300'],
       epic: true,
       extended: true,

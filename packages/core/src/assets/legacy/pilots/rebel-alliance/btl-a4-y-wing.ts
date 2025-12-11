@@ -60,10 +60,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 14,
+      extended: true,
     },
     {
       name: 'Evaan Verlaine',
@@ -88,10 +88,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/evaanverlaine.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 16,
+      extended: true,
     },
     {
       name: 'Gold Squadron Veteran',
@@ -114,10 +114,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goldsquadronveteran.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 17,
+      extended: true,
     },
     {
       name: 'Gray Squadron Bomber',
@@ -139,10 +139,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/graysquadronbomber.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 18,
+      extended: true,
     },
     {
       name: 'Horton Salm',
@@ -167,10 +167,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hortonsalm.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 15,
+      extended: true,
     },
     {
       name: 'Norra Wexley',
@@ -195,10 +195,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/norrawexley-btla4ywing.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 13,
+      extended: true,
     },
     {
       name: 'Dex Tiree',
@@ -219,10 +219,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dextiree-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1011,
+      extended: true,
     },
     {
       name: 'Dex Tiree',
@@ -250,10 +250,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dextiree-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1155,
+      extended: true,
     },
     {
       name: '“Dutch” Vander',
@@ -278,10 +278,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1012,
+      extended: true,
     },
     {
       name: '“Dutch” Vander',
@@ -309,10 +309,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1156,
+      extended: true,
     },
     {
       name: 'Hol Okand',
@@ -337,10 +337,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holokand-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1013,
+      extended: true,
     },
     {
       name: 'Hol Okand',
@@ -368,10 +368,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/holokand-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1157,
+      extended: true,
     },
     {
       name: '“Pops” Krail',
@@ -392,10 +392,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1014,
+      extended: true,
     },
     {
       name: '“Pops” Krail',
@@ -423,10 +423,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/popskrail-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1158,
+      extended: true,
     },
     {
       name: '“Pops” Krail',
@@ -450,10 +450,10 @@ const t: ShipType = {
         'Missile',
       ],
       standard: true,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1015,
+      extended: true,
     },
     {
       name: '“Dutch” Vander',
@@ -470,10 +470,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dutchvander-swz106.png',
       standard: false,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1016,
+      extended: true,
     },
     {
       name: 'Horton Salm',
@@ -490,10 +490,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/hortonsalm-swz106.png',
       standard: false,
-      wildspace: true,
       keywords: ['Y-wing'],
       epic: true,
       ffg: 1103,
+      extended: true,
     },
   ],
 };

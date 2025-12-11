@@ -41,8 +41,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 6 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Ordnance Tubes',
@@ -74,8 +74,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 1 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Point-Defense Battery',
@@ -117,8 +117,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Targeting Battery',
@@ -160,8 +160,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 5 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Turbolaser Battery',
@@ -203,8 +203,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 10 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Tractor Tentacles',
@@ -246,8 +246,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 0 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Proton Cannon Battery',
@@ -285,8 +285,8 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 10 },
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Enhanced Propulsion',
@@ -321,8 +321,8 @@ const t: UpgradeBase[] = [
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
   {
     name: 'Drill Beak',
@@ -364,8 +364,8 @@ const t: UpgradeBase[] = [
       { chassis: ['tridentclassassaultship'] },
     ],
     standard: false,
-    wildspace: false,
     epic: true,
+    extended: false,
   },
 ];
 

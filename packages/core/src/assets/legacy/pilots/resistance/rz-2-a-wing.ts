@@ -59,10 +59,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lulolampar.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 435,
+      extended: true,
     },
     {
       name: 'Tallissan Lintra',
@@ -84,10 +84,10 @@ const t: ShipType = {
       charges: { value: 1, recovers: 1 },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 436,
+      extended: true,
     },
     {
       name: 'Zari Bangel',
@@ -108,10 +108,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/zaribangel.png',
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 438,
+      extended: true,
     },
     {
       name: 'Greer Sonnel',
@@ -132,10 +132,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greersonnel.png',
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 437,
+      extended: true,
     },
     {
       name: 'Green Squadron Expert',
@@ -154,10 +154,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/greensquadronexpert.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 439,
+      extended: true,
     },
     {
       name: 'Blue Squadron Recruit',
@@ -176,10 +176,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronrecruit.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 440,
+      extended: true,
     },
     {
       name: 'Zizi Tlo',
@@ -201,10 +201,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/zizitlo.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 638,
+      extended: true,
     },
     {
       name: 'Ronith Blario',
@@ -225,10 +225,10 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/ronithblario.png',
       standard: true,
-      wildspace: true,
       keywords: ['A-wing'],
       epic: true,
       ffg: 639,
+      extended: true,
     },
     {
       name: 'Merl Cobben',
@@ -245,7 +245,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/merlcobben.png',
       artwork:
@@ -253,6 +252,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       epic: true,
       ffg: 704,
+      extended: true,
     },
     {
       name: 'Suralinda Javos',
@@ -269,7 +269,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/suralindajavos.png',
       artwork:
@@ -277,6 +276,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       epic: true,
       ffg: 703,
+      extended: true,
     },
     {
       name: 'Wrobie Tyce',
@@ -293,7 +293,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/wrobietyce.png',
       artwork:
@@ -301,6 +300,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       epic: true,
       ffg: 702,
+      extended: true,
     },
     {
       name: 'Seftin Vanik',
@@ -317,7 +317,6 @@ const t: ShipType = {
       },
       slots: ['Talent', 'Talent', 'Missile', 'Tech'],
       standard: true,
-      wildspace: true,
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/seftinvanik.png',
       artwork:
@@ -325,6 +324,7 @@ const t: ShipType = {
       keywords: ['A-wing'],
       epic: true,
       ffg: 701,
+      extended: true,
     },
   ],
 };

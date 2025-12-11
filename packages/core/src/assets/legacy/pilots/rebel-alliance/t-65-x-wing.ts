@@ -53,10 +53,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 7,
+      extended: true,
     },
     {
       name: 'Blue Squadron Escort',
@@ -71,10 +71,10 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bluesquadronescort.png',
       slots: ['Torpedo', 'Astromech', 'Modification', 'Configuration'],
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 11,
+      extended: true,
     },
     {
       name: 'Cavern Angels Zealot',
@@ -95,10 +95,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/cavernangelszealot.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
       ffg: 12,
+      extended: true,
     },
     {
       name: 'Edrio Two Tubes',
@@ -121,10 +121,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/edriotwotubes.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
       ffg: 9,
+      extended: true,
     },
     {
       name: 'Garven Dreis',
@@ -147,17 +147,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-t65xwing.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 4,
+      extended: true,
     },
     {
       name: 'Jek Porkins',
       caption: 'Red Six',
       initiative: 4,
       limited: 1,
-      cost: 42,
+      cost: 41,
       xws: 'jekporkins',
       ability:
         'After you receive a stress token, you may roll 1 attack die to remove it. On a [Hit] result, suffer 1 [Hit] damage.',
@@ -173,10 +173,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 5,
+      extended: true,
     },
     {
       name: 'Kullbee Sperado',
@@ -200,10 +200,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kullbeesperado.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
       ffg: 6,
+      extended: true,
     },
     {
       name: 'Leevan Tenza',
@@ -227,10 +227,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leevantenza.png',
       standard: true,
-      wildspace: true,
       keywords: ['Partisan', 'X-wing'],
       epic: true,
       ffg: 8,
+      extended: true,
     },
     {
       name: 'Luke Skywalker',
@@ -254,10 +254,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker.png',
       standard: true,
-      wildspace: true,
       keywords: ['Light Side', 'X-wing'],
       epic: true,
       ffg: 2,
+      extended: true,
     },
     {
       name: 'Red Squadron Veteran',
@@ -278,17 +278,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redsquadronveteran.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 10,
+      extended: true,
     },
     {
       name: 'Thane Kyrell',
       caption: 'Corona Four',
       initiative: 5,
       limited: 1,
-      cost: 47,
+      cost: 48,
       xws: 'thanekyrell',
       ability:
         "While you perform an attack, you may spend 1 [Focus], [Hit], or [Critical Hit] result to look at the defender's facedown damage cards, choose 1, and expose it.",
@@ -304,10 +304,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/thanekyrell.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 3,
+      extended: true,
     },
     {
       name: 'Wedge Antilles',
@@ -330,10 +330,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1,
+      extended: true,
     },
     {
       name: 'Biggs Darklighter',
@@ -359,10 +359,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1035,
+      extended: true,
     },
     {
       name: 'Biggs Darklighter',
@@ -383,10 +383,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/biggsdarklighter-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1164,
+      extended: true,
     },
     {
       name: 'Garven Dreis',
@@ -407,10 +407,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1036,
+      extended: true,
     },
     {
       name: 'Garven Dreis',
@@ -431,10 +431,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/garvendreis-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1165,
+      extended: true,
     },
     {
       name: 'Jek Porkins',
@@ -459,10 +459,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1037,
+      extended: true,
     },
     {
       name: 'Jek Porkins',
@@ -483,10 +483,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1166,
+      extended: true,
     },
     {
       name: 'Luke Skywalker',
@@ -513,10 +513,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1038,
+      extended: true,
     },
     {
       name: 'Luke Skywalker',
@@ -544,10 +544,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1167,
+      extended: true,
     },
     {
       name: 'Wedge Antilles',
@@ -573,10 +573,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleofyavin.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1039,
+      extended: true,
     },
     {
       name: 'Wedge Antilles',
@@ -597,10 +597,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleofyavin-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1168,
+      extended: true,
     },
     {
       name: 'Corran Horn',
@@ -623,17 +623,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/corranhorn-t65xwing.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1040,
+      extended: true,
     },
     {
       name: 'Wes Janson',
       caption: 'Wisecracking Wingman',
       initiative: 5,
       limited: 1,
-      cost: 49,
+      cost: 50,
       xws: 'wesjanson',
       ability:
         'After you perform an attack, you may spend 1 [Charge] to assign the defender 1 jam token. After you defend, you may spend 1 [Charge] to assign the attacker 1 jam token.',
@@ -650,10 +650,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wesjanson.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1041,
+      extended: true,
     },
     {
       name: 'Luke Skywalker',
@@ -671,10 +671,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/lukeskywalker-swz106.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1042,
+      extended: true,
     },
     {
       name: 'Jek Porkins',
@@ -691,10 +691,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/jekporkins-swz106.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1043,
+      extended: true,
     },
     {
       name: 'Wedge Antilles',
@@ -739,10 +739,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleoverendor.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1045,
+      extended: true,
     },
     {
       name: 'Wedge Antilles',
@@ -782,10 +782,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/wedgeantilles-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1169,
+      extended: true,
     },
     {
       name: 'Yendor',
@@ -824,10 +824,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yendor-battleoverendor.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1046,
+      extended: true,
     },
     {
       name: 'Yendor',
@@ -862,10 +862,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/yendor-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1170,
+      extended: true,
     },
     {
       name: 'Kendy Idele',
@@ -905,10 +905,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kendyidele-battleoverendor.png',
       standard: false,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1106,
+      extended: true,
     },
     {
       name: 'Kendy Idele',
@@ -943,17 +943,17 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kendyidele-battleoverendor-lsl.png',
       standard: true,
-      wildspace: true,
       keywords: ['X-wing'],
       epic: true,
       ffg: 1171,
+      extended: true,
     },
     {
       name: 'Antoc Merrick',
       caption: 'Blue Leader',
       initiative: 4,
       limited: 1,
-      cost: 47,
+      cost: 45,
       xws: 'antocmerrick-wat1',
       ability:
         'After you perform a [Boost] or [Barrel Roll] action, you may choose another friendly ship at range 0-3. If you do, that ship may perform the same action on their action bar.',
@@ -968,8 +968,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/antocmerrick-wat1.png',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/antocmerrick-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['X-wing'],
       epic: true,
       extended: true,

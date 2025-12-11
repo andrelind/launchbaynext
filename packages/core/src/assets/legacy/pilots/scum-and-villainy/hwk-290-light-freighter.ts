@@ -70,10 +70,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dacebonearm.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 174,
+      extended: true,
     },
     {
       name: 'Palob Godalhi',
@@ -98,10 +98,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/palobgodalhi.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 175,
+      extended: true,
     },
     {
       name: 'Spice Runner',
@@ -123,10 +123,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/spicerunner.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 177,
+      extended: true,
     },
     {
       name: 'Torkil Mux',
@@ -150,10 +150,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/torkilmux.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 176,
+      extended: true,
     },
     {
       name: 'Gamut Key',
@@ -161,7 +161,6 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       cost: 31,
       slots: [
@@ -183,6 +182,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/gamutkey.png',
       epic: true,
       ffg: 896,
+      extended: true,
     },
     {
       name: 'Kanan Jarrus',
@@ -191,7 +191,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Lost Padawan',
       standard: true,
-      wildspace: true,
       keywords: ['Jedi', 'Light Side', 'Freighter'],
       force: { value: 1, recovers: 1, side: ['light'] },
       cost: 40,
@@ -212,6 +211,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/kananjarrus-hwk290lightfreighter.png',
       epic: true,
       ffg: 897,
+      extended: true,
     },
     {
       name: 'Tápusk',
@@ -220,7 +220,6 @@ const t: ShipType = {
       limited: 1,
       caption: 'Order 66 Informant',
       standard: true,
-      wildspace: true,
       cost: 33,
       slots: [
         'Talent',
@@ -240,6 +239,7 @@ const t: ShipType = {
       keywords: ['Freighter'],
       epic: true,
       ffg: 895,
+      extended: true,
     },
     {
       name: 'Janus Kasmir',
@@ -263,8 +263,7 @@ const t: ShipType = {
       ],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/januskasmir-wat1.png',
-      standard: true,
-      wildspace: true,
+      standard: false,
       keywords: ['Freighter'],
       epic: true,
       extended: true,

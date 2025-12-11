@@ -49,7 +49,6 @@ const t: ShipType = {
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/maul.png',
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Force Power',
@@ -65,6 +64,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/maul.png',
       keywords: ['Dark Side'],
       ffg: 1059,
+      extended: true,
     },
     {
       name: 'Rook Kast',
@@ -76,7 +76,6 @@ const t: ShipType = {
       ability:
         'Before you engage, you may gain 1 strain token. While you perform a primary attack, if you are strained, you may change 1 of your blank or [Focus] results to a [Hit] result.',
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Talent',
@@ -94,6 +93,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rookkast.png',
       keywords: ['Mandalorian'],
       ffg: 1060,
+      extended: true,
     },
     {
       name: 'Shadow Collective Operator',
@@ -103,7 +103,6 @@ const t: ShipType = {
       xws: 'shadowcollectiveoperator',
       text: "The former Death Watch soldiers who have sworn loyalty to Lord Maul continue to operate their versatile Gauntlet Fighters, sometimes using them as bombers in Maul's private battles.",
       standard: true,
-      wildspace: true,
       epic: true,
       slots: [
         'Crew',
@@ -120,6 +119,7 @@ const t: ShipType = {
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowcollectiveoperator.png',
       keywords: ['Mandalorian'],
       ffg: 1061,
+      extended: true,
     },
   ],
 };

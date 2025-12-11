@@ -68,10 +68,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/janors.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 42,
+      extended: true,
     },
     {
       name: 'Kyle Katarn',
@@ -95,10 +95,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/kylekatarn.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 43,
+      extended: true,
     },
     {
       name: 'Rebel Scout',
@@ -113,10 +113,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/rebelscout.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 45,
+      extended: true,
     },
     {
       name: 'Roark Garnet',
@@ -140,10 +140,10 @@ const t: ShipType = {
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/roarkgarnet.png',
       standard: true,
-      wildspace: true,
       keywords: ['Freighter'],
       epic: true,
       ffg: 44,
+      extended: true,
     },
   ],
 };

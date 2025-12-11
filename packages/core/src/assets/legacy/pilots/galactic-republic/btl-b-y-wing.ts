@@ -49,7 +49,6 @@ const t: ShipType = {
         text: 'While you defend, if you are not critically damaged, change 1 [Critical Hit] result to a [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/shadowsquadronveteran.png',
       cost: 31,
@@ -65,6 +64,7 @@ const t: ShipType = {
       keywords: ['Clone', 'Y-wing'],
       epic: true,
       ffg: 602,
+      extended: true,
     },
     {
       name: 'Anakin Skywalker',
@@ -77,7 +77,6 @@ const t: ShipType = {
       },
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
-      wildspace: true,
       caption: 'Hero of the Republic',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/anakinskywalker-btlbywing.png',
@@ -98,6 +97,7 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side', 'Y-wing'],
       epic: true,
       ffg: 596,
+      extended: true,
     },
     {
       name: 'R2-D2',
@@ -122,7 +122,6 @@ const t: ShipType = {
       ability:
         'At the start of the Engagement Phase, if there is an enemy ship in your [Rear Arc], gain 1 calculate token.',
       standard: true,
-      wildspace: true,
       slots: [
         'Talent',
         'Turret',
@@ -136,6 +135,7 @@ const t: ShipType = {
       keywords: ['Droid', 'Y-wing'],
       epic: true,
       ffg: 600,
+      extended: true,
     },
     {
       name: '“Odd Ball”',
@@ -148,7 +148,6 @@ const t: ShipType = {
       },
       caption: 'CC-2237',
       standard: true,
-      wildspace: true,
       cost: 37,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/oddball-btlbywing.png',
@@ -168,6 +167,7 @@ const t: ShipType = {
       keywords: ['Clone', 'Y-wing'],
       epic: true,
       ffg: 597,
+      extended: true,
     },
     {
       name: '“Matchstick”',
@@ -179,7 +179,6 @@ const t: ShipType = {
         text: 'While you defend, if you are not critically damaged, change 1 [Critical Hit] result to a [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       caption: 'Shadow Two',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/matchstick.png',
@@ -200,6 +199,7 @@ const t: ShipType = {
       keywords: ['Clone', 'Y-wing'],
       epic: true,
       ffg: 598,
+      extended: true,
     },
     {
       name: '“Broadside”',
@@ -211,7 +211,6 @@ const t: ShipType = {
         text: 'While you defend, if you are not critically damaged, change 1 [Critical Hit] result to a [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       caption: 'Shadow Three',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/broadside.png',
@@ -232,6 +231,7 @@ const t: ShipType = {
       keywords: ['Clone', 'Y-wing'],
       epic: true,
       ffg: 599,
+      extended: true,
     },
     {
       name: '“Goji”',
@@ -243,7 +243,6 @@ const t: ShipType = {
         text: 'While you defend, if you are not critically damaged, change 1 [Critical Hit] result to a [Hit] result.',
       },
       standard: true,
-      wildspace: true,
       caption: 'Payload Specialist',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/goji.png',
@@ -263,6 +262,7 @@ const t: ShipType = {
       keywords: ['Clone', 'Y-wing'],
       epic: true,
       ffg: 601,
+      extended: true,
     },
     {
       name: 'Red Squadron Bomber',
@@ -275,7 +275,6 @@ const t: ShipType = {
       },
       text: 'At the battle of Geonosis, Red Squadron provided vital cover to the LAAT gunships deployed to secure the surface.',
       standard: true,
-      wildspace: true,
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/redsquadronbomber.png',
       image:
@@ -292,6 +291,7 @@ const t: ShipType = {
       keywords: ['Clone', 'Y-wing'],
       epic: true,
       ffg: 603,
+      extended: true,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/galactic-republic/I_BTL-B_Ywing.png',
