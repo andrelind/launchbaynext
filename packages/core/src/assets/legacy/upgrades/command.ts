@@ -185,8 +185,7 @@ const t: UpgradeBase[] = [
     xws: 'jandodonna',
     sides: [
       {
-        ability:
-          'Friendly ships at range 0-3 can spend your focus and evade tokens.',
+        ability: 'Friendly ships at range 0-3 can spend your focus and evade tokens.',
         title: 'Jan Dodonna',
         type: 'Command',
         slots: ['Command', 'Crew'],
@@ -229,8 +228,7 @@ const t: UpgradeBase[] = [
     xws: 'stalwartcaptain',
     sides: [
       {
-        ability:
-          'After you are destroyed, you are not removed until the end of the End Phase.',
+        ability: 'After you are destroyed, you are not removed until the end of the End Phase.',
         title: 'Stalwart Captain',
         type: 'Command',
         slots: ['Command', 'Crew'],
@@ -299,10 +297,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['galacticrepublic'] },
-      { chassis: ['delta7aethersprite', 'eta2actis'] },
-    ],
+    restrictions: [{ factions: ['galacticrepublic'] }, { chassis: ['delta7aethersprite', 'eta2actis'] }],
     standard: false,
     epic: true,
     extended: false,
@@ -325,10 +320,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['rebelalliance'] },
-      { chassis: ['asf01bwing'] },
-    ],
+    restrictions: [{ factions: ['rebelalliance'] }, { chassis: ['asf01bwing'] }],
     standard: false,
     epic: true,
     extended: false,
@@ -481,8 +473,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/initforthemoney.png',
       },
       {
-        ability:
-          'Non-Scum ships in your squad are treated as friendly instead of allied.',
+        ability: 'Non-Scum ships in your squad are treated as friendly instead of allied.',
         title: 'In It For Your Rebellion',
         type: 'Command',
         slots: ['Command'],
@@ -517,10 +508,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 4 },
-    restrictions: [
-      { factions: ['separatistalliance'] },
-      { baseSizes: ['Huge'] },
-    ],
+    restrictions: [{ factions: ['separatistalliance'] }, { baseSizes: ['Huge'] }],
     standard: false,
     epic: true,
     extended: false,
@@ -543,10 +531,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 6 },
-    restrictions: [
-      { factions: ['separatistalliance'] },
-      { baseSizes: ['Huge'] },
-    ],
+    restrictions: [{ factions: ['separatistalliance'] }, { baseSizes: ['Huge'] }],
     standard: false,
     epic: true,
     extended: false,
@@ -580,10 +565,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 8 },
-    restrictions: [
-      { factions: ['separatistalliance', 'scumandvillainy'] },
-      { baseSizes: ['Huge'] },
-    ],
+    restrictions: [{ factions: ['separatistalliance', 'scumandvillainy'] }, { baseSizes: ['Huge'] }],
     standard: false,
     epic: true,
     extended: false,
@@ -663,10 +645,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 5 },
-    restrictions: [
-      { baseSizes: ['Huge'] },
-      { factions: ['separatistalliance'] },
-    ],
+    restrictions: [{ baseSizes: ['Huge'] }, { factions: ['separatistalliance'] }],
     standard: false,
     epic: true,
     extended: false,
@@ -688,7 +667,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/upgrades/combatboardingtube.png',
       },
     ],
-    cost: { value: '0' },
+    cost: { value: 0 },
     restrictions: [{ chassis: ['gauntletfighter'] }],
     standard: false,
     epic: true,
