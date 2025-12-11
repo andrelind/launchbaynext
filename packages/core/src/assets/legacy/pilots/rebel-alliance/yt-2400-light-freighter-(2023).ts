@@ -46,21 +46,12 @@ const t: ShipType = {
       limited: 1,
       cost: 77,
       xws: 'dashrendar-swz103-rebelalliance',
-      ability:
-        'During the Engagement Phase, you ignore the effects of obstacles that you are overlapping.',
+      ability: 'During the Engagement Phase, you ignore the effects of obstacles that you are overlapping.',
       shipAbility: {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer attack die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      slots: [
-        'Talent',
-        'Missile',
-        'Crew',
-        'Crew',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar-swz103-rebelalliance.png',
       image:
@@ -84,15 +75,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      slots: [
-        'Talent',
-        'Missile',
-        'Crew',
-        'Crew',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar-swz103-lsl-rebelalliance.png',
       image:
@@ -101,7 +84,6 @@ const t: ShipType = {
       keywords: ['Droid', 'Freighter'],
       epic: true,
       extended: true,
-      ffg: null,
     },
     {
       name: 'Dash Rendar',
@@ -116,12 +98,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      standardLoadout: [
-        'mercenary-swz103',
-        'seekermissiles-swz103',
-        'leebo-swz103',
-        'outrider',
-      ],
+      standardLoadout: ['mercenary-swz103', 'seekermissiles-swz103', 'leebo-swz103', 'outrider'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar-swz103-sl-rebelalliance.png',
       image:
@@ -139,8 +116,7 @@ const t: ShipType = {
       limited: 1,
       cost: 71,
       xws: 'leebo-swz103-rebelalliance',
-      ability:
-        'After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token.',
+      ability: 'After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token.',
       shipActions: [
         { difficulty: 'White', type: 'Calculate' },
         {
@@ -155,14 +131,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 less attack die. While you defend at range 1, you roll 1 less defense die.',
       },
-      slots: [
-        'Talent',
-        'Missile',
-        'Illicit',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Missile', 'Illicit', 'Illicit', 'Modification', 'Title'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo-swz103-rebelalliance.png',
       image:
@@ -205,7 +174,6 @@ const t: ShipType = {
       keywords: ['Droid', 'Freighter'],
       epic: true,
       extended: true,
-      ffg: null,
     },
     {
       name: '“Leebo”',
@@ -230,11 +198,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      standardLoadout: [
-        'efficientprocessing-swz103',
-        'seekermissiles-swz103',
-        'outrider',
-      ],
+      standardLoadout: ['efficientprocessing-swz103', 'seekermissiles-swz103', 'outrider'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo-swz103-sl-rebelalliance.png',
       image:

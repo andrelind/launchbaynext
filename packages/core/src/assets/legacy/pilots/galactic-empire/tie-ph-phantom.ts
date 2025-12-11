@@ -159,13 +159,8 @@ const t: ShipType = {
       cost: 5,
       charges: { value: 2, recovers: 0 },
       xws: 'whisper-pnp',
-      ability:
-        'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
-      standardLoadout: [
-        'withoutatrace-tiephphantom',
-        'relaysystem-tiephphantom',
-        'stygiumreserve-tiephphantom',
-      ],
+      ability: 'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
+      standardLoadout: ['withoutatrace-tiephphantom', 'relaysystem-tiephphantom', 'stygiumreserve-tiephphantom'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper-pnp-lsl.png',
       artwork:
@@ -173,7 +168,6 @@ const t: ShipType = {
       standard: false,
       epic: false,
       extended: false,
-      ffg: null,
     },
     {
       name: '“Whisper”',
@@ -183,8 +177,7 @@ const t: ShipType = {
       cost: 57,
       charges: { value: 2, recovers: 0 },
       xws: 'whisper-pnp-ls',
-      ability:
-        'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
+      ability: 'After you perform an attack, you may spend 1 [Charge] to perform a [Cloak] action.',
       slots: ['Talent', 'Sensor', 'Modification', 'Gunner'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/whisper-pnp.png',
@@ -193,7 +186,6 @@ const t: ShipType = {
       standard: true,
       epic: true,
       extended: true,
-      ffg: null,
     },
     {
       name: '“Echo”',
@@ -205,11 +197,7 @@ const t: ShipType = {
       xws: 'echo-pnp',
       ability:
         'After an enemy ship at range 0-1 performs an action on its action bar, you may spend 1 [Charge] to perform the same action, treating it as white.',
-      standardLoadout: [
-        'silenthunter-tiephphantom',
-        'stealthgambit-tiephphantom',
-        'manualailerons-tiephphantom',
-      ],
+      standardLoadout: ['silenthunter-tiephphantom', 'stealthgambit-tiephphantom', 'manualailerons-tiephphantom'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/echo-pnp.png',
       artwork:
@@ -217,7 +205,6 @@ const t: ShipType = {
       standard: false,
       epic: false,
       extended: false,
-      ffg: null,
     },
     {
       name: '“Echo”',
@@ -237,7 +224,6 @@ const t: ShipType = {
       standard: true,
       epic: true,
       extended: true,
-      ffg: null,
     },
   ],
 };

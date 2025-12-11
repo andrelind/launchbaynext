@@ -52,12 +52,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      standardLoadout: [
-        'mercenary-swz103',
-        'seekermissiles-swz103',
-        'leebo-swz103',
-        'outrider',
-      ],
+      standardLoadout: ['mercenary-swz103', 'seekermissiles-swz103', 'leebo-swz103', 'outrider'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dashrendar-swz103-sl-scumandvillainy.png',
       image:
@@ -75,15 +70,7 @@ const t: ShipType = {
       limited: 1,
       cost: 74,
       xws: 'dashrendar-swz103-lsl-scumandvillainy',
-      slots: [
-        'Talent',
-        'Missile',
-        'Crew',
-        'Crew',
-        'Illicit',
-        'Modification',
-        'Title',
-      ],
+      slots: ['Talent', 'Missile', 'Crew', 'Crew', 'Illicit', 'Modification', 'Title'],
       ability:
         'After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1.',
       shipAbility: {
@@ -98,7 +85,6 @@ const t: ShipType = {
       keywords: ['Droid', 'Freighter'],
       epic: true,
       extended: true,
-      ffg: null,
     },
     {
       name: '“Leebo”',
@@ -123,11 +109,7 @@ const t: ShipType = {
         name: 'Sensor Blindspot',
         text: 'While you perform a primary attack at attack range 0-1, you roll 1 fewer die. While you defend at range 1, you roll 1 fewer defense die.',
       },
-      standardLoadout: [
-        'efficientprocessing-swz103',
-        'seekermissiles-swz103',
-        'outrider',
-      ],
+      standardLoadout: ['efficientprocessing-swz103', 'seekermissiles-swz103', 'outrider'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/leebo-swz103-sl-scumandvillainy.png',
       image:
@@ -170,7 +152,6 @@ const t: ShipType = {
       keywords: ['Droid', 'Freighter'],
       epic: true,
       extended: true,
-      ffg: null,
     },
   ],
 };

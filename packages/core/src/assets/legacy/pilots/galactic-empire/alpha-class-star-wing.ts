@@ -4,22 +4,7 @@ const t: ShipType = {
   name: 'Alpha-class Star Wing',
   xws: 'alphaclassstarwing',
   size: 'Small',
-  dial: [
-    '1BW',
-    '1FB',
-    '1NW',
-    '2TW',
-    '2BB',
-    '2FB',
-    '2NB',
-    '2YW',
-    '3TW',
-    '3BW',
-    '3FW',
-    '3NW',
-    '3YW',
-    '4FR',
-  ],
+  dial: ['1BW', '1FB', '1NW', '2TW', '2BB', '2FB', '2NB', '2YW', '3TW', '3BW', '3FW', '3NW', '3YW', '4FR'],
   dialCodes: ['SW'],
   faction: 'Galactic Empire',
   stats: [
@@ -45,14 +30,7 @@ const t: ShipType = {
       xws: 'lieutenantkarsabi',
       ability:
         'After you gain a disarm token, if you are not stressed, you may gain 1 stress token to remove 1 disarm token.',
-      slots: [
-        'Talent',
-        'Sensor',
-        'Torpedo',
-        'Missile',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Talent', 'Sensor', 'Torpedo', 'Missile', 'Modification', 'Configuration'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi.png',
       artwork:
@@ -69,16 +47,8 @@ const t: ShipType = {
       limited: 1,
       cost: 38,
       xws: 'majorvynder',
-      ability:
-        'While you defend, if you are disarmed, roll 1 additional defense die.',
-      slots: [
-        'Talent',
-        'Sensor',
-        'Torpedo',
-        'Missile',
-        'Modification',
-        'Configuration',
-      ],
+      ability: 'While you defend, if you are disarmed, roll 1 additional defense die.',
+      slots: ['Talent', 'Sensor', 'Torpedo', 'Missile', 'Modification', 'Configuration'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder.png',
       artwork:
@@ -112,14 +82,7 @@ const t: ShipType = {
       cost: 34,
       xws: 'rhosquadronpilot',
       text: 'The elite pilots of Rho Squadron instill terror in the Rebellion, using both the Xg-1 assault configuration and Os-1 arsenal loadout of the Alpha-class star wing to devastating effect.',
-      slots: [
-        'Talent',
-        'Sensor',
-        'Torpedo',
-        'Missile',
-        'Modification',
-        'Configuration',
-      ],
+      slots: ['Talent', 'Sensor', 'Torpedo', 'Missile', 'Modification', 'Configuration'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/rhosquadronpilot.png',
       artwork:
@@ -136,8 +99,7 @@ const t: ShipType = {
       limited: 1,
       cost: 5,
       xws: 'lieutenantkarsabi-pnp',
-      ability:
-        'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
+      ability: 'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
@@ -153,11 +115,7 @@ const t: ShipType = {
         },
         { difficulty: 'White', type: 'Reload' },
       ],
-      standardLoadout: [
-        'protontorpedoes',
-        'saturationrockets-alphaclassstarwing',
-        'electronicbaffle',
-      ],
+      standardLoadout: ['protontorpedoes', 'saturationrockets-alphaclassstarwing', 'electronicbaffle'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/lieutenantkarsabi-pnp.png',
       artwork:
@@ -165,7 +123,6 @@ const t: ShipType = {
       standard: false,
       epic: false,
       extended: false,
-      ffg: null,
     },
     {
       name: 'Lieutenant Karsabi',
@@ -174,16 +131,8 @@ const t: ShipType = {
       limited: 1,
       cost: 38,
       xws: 'lieutenantkarsabi-pnp-lsl',
-      ability:
-        'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
-      slots: [
-        'Talent',
-        'Cannon',
-        'Sensor',
-        'Torpedo',
-        'Missile',
-        'Modification',
-      ],
+      ability: 'When you perform a [Reload] action, the chosen upgrade recovers 1 additional [Charge].',
+      slots: ['Talent', 'Cannon', 'Sensor', 'Torpedo', 'Missile', 'Modification'],
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
@@ -206,7 +155,6 @@ const t: ShipType = {
       standard: true,
       epic: true,
       extended: true,
-      ffg: null,
     },
     {
       name: 'Major Vynder',
@@ -232,11 +180,7 @@ const t: ShipType = {
         },
         { difficulty: 'White', type: 'Reload' },
       ],
-      standardLoadout: [
-        'longrangescanners-alphaclassstarwing',
-        'ioncannon',
-        'heavyplasmamissiles-alphaclassstarwing',
-      ],
+      standardLoadout: ['longrangescanners-alphaclassstarwing', 'ioncannon', 'heavyplasmamissiles-alphaclassstarwing'],
       image:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/En/pilots/majorvynder-pnp.png',
       artwork:
@@ -255,14 +199,7 @@ const t: ShipType = {
       xws: 'majorvynder-pnp-lsl',
       ability:
         'After you perform a [Missile] attack, you may perform a bonus [Cannon] attack. While you perform this bonus attack, you may change 1 [Focus] result to a [Hit] result.',
-      slots: [
-        'Talent',
-        'Cannon',
-        'Sensor',
-        'Torpedo',
-        'Missile',
-        'Modification',
-      ],
+      slots: ['Talent', 'Cannon', 'Sensor', 'Torpedo', 'Missile', 'Modification'],
       shipActions: [
         { difficulty: 'White', type: 'Focus' },
         { difficulty: 'White', type: 'Lock' },
@@ -285,7 +222,6 @@ const t: ShipType = {
       standard: true,
       epic: true,
       extended: true,
-      ffg: null,
     },
   ],
 };
