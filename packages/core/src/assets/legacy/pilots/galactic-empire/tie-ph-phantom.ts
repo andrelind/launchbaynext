@@ -133,7 +133,7 @@ const t: ShipType = {
     {
       name: 'Captain Saxton',
       caption: 'Unpredictable Menace',
-      initiative: 4,
+      initiative: 3,
       limited: 1,
       cost: 45,
       xws: 'captainsaxton-wat1',

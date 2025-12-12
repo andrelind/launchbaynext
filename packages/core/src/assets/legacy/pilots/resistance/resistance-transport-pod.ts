@@ -4,23 +4,7 @@ const t: ShipType = {
   name: 'Resistance Transport Pod',
   xws: 'resistancetransportpod',
   size: 'Small',
-  dial: [
-    '1TR',
-    '1BB',
-    '1FB',
-    '1NB',
-    '1YR',
-    '2TW',
-    '2BW',
-    '2FB',
-    '2NW',
-    '2YW',
-    '3BR',
-    '3FW',
-    '3NR',
-    '3KR',
-    '4FR',
-  ],
+  dial: ['1TR', '1BB', '1FB', '1NB', '1YR', '2TW', '2BW', '2FB', '2NW', '2YW', '3BR', '3FW', '3NR', '3KR', '4FR'],
   dialCodes: ['RTP'],
   faction: 'Resistance',
   stats: [
@@ -44,8 +28,7 @@ const t: ShipType = {
       standard: true,
       cost: 23,
       slots: ['Talent', 'Tech', 'Crew', 'Modification'],
-      ability:
-        'During the System Phase, you may perform a red [Barrel Roll] or [Boost] action.',
+      ability: 'During the System Phase, you may perform a red [Barrel Roll] or [Boost] action.',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/bb8.png',
       image:
@@ -90,8 +73,7 @@ const t: ShipType = {
       standard: true,
       cost: 24,
       slots: ['Tech', 'Crew', 'Modification'],
-      ability:
-        'Setup: After placing forces, assign the Compromising Intel condition to 1 enemy ship.',
+      ability: 'Setup: After placing forces, assign the Compromising Intel condition to 1 enemy ship.',
       conditions: ['compromisingintel'],
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/vimoradi.png',
@@ -129,8 +111,7 @@ const t: ShipType = {
       standard: false,
       cost: 25,
       slots: ['Illicit', 'Tech', 'Crew', 'Modification'],
-      ability:
-        'At the start of the Engagement Phase, you may spend 1 green token to perform a [Jam] action, even while stressed.',
+      ability: 'After you perform a [Jam] action, you may gain 1 cloak token.',
       artwork:
         'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/pilots/dj-wat1.png',
       image:

@@ -208,10 +208,7 @@ const t: UpgradeBase[] = [
           'https://raw.githubusercontent.com/SogeMoge/x-wing2.0-project-goldenrod/2.0-legacy/src/images/Art/upgrades/energyshellcharges.png',
       },
     ],
-    restrictions: [
-      { action: { type: 'Calculate', difficulty: 'White' } },
-      { factions: ['separatistalliance'] },
-    ],
+    restrictions: [{ action: { type: 'Calculate', difficulty: 'White' } }, { factions: ['separatistalliance'] }],
     cost: { value: 4 },
     standard: true,
     epic: true,
@@ -473,18 +470,17 @@ const t: UpgradeBase[] = [
         slots: ['Missile'],
       },
     ],
-    standard: true,
-    wildspace: false,
-    epic: true,
+    standard: false,
+    epic: false,
     standardLoadoutOnly: true,
+    extended: false,
   },
   {
     limited: 1,
     xws: 'heavyplasmamissiles-alphaclassstarwing',
     sides: [
       {
-        ability:
-          'Attack ([Lock]): Spend 1 [Charge]. After this attack hits, the defender loses 1 shield.',
+        ability: 'Attack ([Lock]): Spend 1 [Charge]. After this attack hits, the defender loses 1 shield.',
         attack: {
           arc: 'Front Arc',
           maxrange: 3,
@@ -498,10 +494,10 @@ const t: UpgradeBase[] = [
         slots: ['Missile'],
       },
     ],
-    standard: true,
-    wildspace: false,
-    epic: true,
+    standard: false,
+    epic: false,
     standardLoadoutOnly: true,
+    extended: false,
   },
 ];
 

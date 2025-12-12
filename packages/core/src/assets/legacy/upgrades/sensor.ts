@@ -145,10 +145,10 @@ const t: UpgradeBase[] = [
         slots: ['Sensor'],
       },
     ],
-    standard: true,
-    wildspace: false,
-    epic: true,
+    standard: false,
+    epic: false,
     standardLoadoutOnly: true,
+    extended: false,
   },
   {
     limited: 0,
@@ -162,10 +162,10 @@ const t: UpgradeBase[] = [
         slots: ['Sensor'],
       },
     ],
-    standard: true,
-    wildspace: false,
-    epic: true,
+    standard: false,
+    epic: false,
     standardLoadoutOnly: true,
+    extended: false,
   },
 ];
 
