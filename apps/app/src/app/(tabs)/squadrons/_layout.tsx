@@ -71,6 +71,8 @@ export default function OverviewLayout() {
         }
     }
 
+    const filterCount = Object.keys(filters).length + tags.length;
+
     const lbx = serialize(xws);
     const url = `https://launchbaynext.app/?lbx=${lbx}`;
     const printUrl = `https://launchbaynext.app/print?lbx=${lbx}`;
@@ -215,8 +217,15 @@ export default function OverviewLayout() {
                             </ContextMenu.Items>
 
                             <ContextMenu.Trigger>
-                                <TouchableOpacity style={tw`px-2`}                                >
-                                    <Feather name='filter' style={tw`text-white`} size={24} color={tw.color('white')} />
+                                <TouchableOpacity style={tw`px-2`}>
+                                    <View style={{ width: 28, height: 28 }}>
+                                        <Feather name='filter' style={[tw`text-white`, { position: 'absolute', bottom: 0, left: 0 }]} size={24} color={tw.color('white')} />
+                                        {filterCount > 0 && (
+                                            <View style={[tw`absolute top-0 right-0 bg-primary-500 rounded-full min-w-4 h-4 items-center justify-center`, { paddingHorizontal: 2 }]}>
+                                                <Text style={tw`text-white text-xs font-bold leading-none`}>{filterCount}</Text>
+                                            </View>
+                                        )}
+                                    </View>
                                 </TouchableOpacity>
                             </ContextMenu.Trigger>
                         </ContextMenu>
@@ -226,7 +235,14 @@ export default function OverviewLayout() {
                         <TouchableOpacity style={tw`mr-2`}
                             onPress={() => { SheetManager.show('FilterSquadronsSheet'); }}
                         >
-                            <Feather name="filter" size={20} color={tw.color('primary-500')} />
+                            <View style={{ width: 26, height: 26 }}>
+                                <Feather name="filter" size={20} color={tw.color('primary-500')} style={{ position: 'absolute', bottom: 0, left: 0 }} />
+                                {filterCount > 0 && (
+                                    <View style={[tw`absolute top-0 right-0 bg-primary-500 rounded-full min-w-4 h-4 items-center justify-center`, { paddingHorizontal: 2 }]}>
+                                        <Text style={tw`text-white text-xs font-bold leading-none`}>{filterCount}</Text>
+                                    </View>
+                                )}
+                            </View>
                         </TouchableOpacity>
                         <TouchableOpacity style={tw`mr-2`}
                             onPress={() => { SheetManager.show('SortSquadronsSheet'); }}

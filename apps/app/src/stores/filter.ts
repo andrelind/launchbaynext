@@ -73,7 +73,7 @@ export const useFilterStore = create<FilterState>()(
       name: 'filter',
       storage: createJSONStorage(() => AsyncStorage),
       partialize: state => {
-        const { filters, tags, ...rest } = state;
+        const { ...rest } = state;
         return rest;
       },
     },
