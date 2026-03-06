@@ -10,9 +10,12 @@ import { useLoadoutStore } from '@/src/stores/loadout';
 import { useXwsStore } from '@/src/stores/xws';
 import { BlurView } from 'expo-blur';
 import { useLocalSearchParams, useRouter } from 'expo-router';
+import amgConditions from 'lbn-core/src/assets/amg/conditions';
+import legacyConditions from 'lbn-core/src/assets/legacy/conditions';
+import xwaConditions from 'lbn-core/src/assets/xwa/conditions';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
 import { loadShip2, loadUpgrades2 } from 'lbn-core/src/helpers/loading';
-import { FactionKey, Slot } from 'lbn-core/src/types';
+import { Condition, FactionKey, Slot } from 'lbn-core/src/types';
 import React, { useState } from 'react';
 import {
     Alert,
@@ -29,6 +32,16 @@ import Animated, {
     FadeInUp,
     FadeOut
 } from 'react-native-reanimated';
+
+// Merged condition lookup, preferring entries with images
+const allPilotConditionsRaw: Condition[] = [...amgConditions, ...legacyConditions, ...xwaConditions];
+const pilotConditionsMap = new Map<string, Condition>();
+for (const c of allPilotConditionsRaw) {
+    const existing = pilotConditionsMap.get(c.xws);
+    if (!existing || (!existing.image && c.image)) {
+        pilotConditionsMap.set(c.xws, c);
+    }
+}
 
 export default function PilotScreen() {
     const router = useRouter();
@@ -147,6 +160,31 @@ export default function PilotScreen() {
                             />
                         </View>
                     )}
+                    {ship?.pilot?.conditions && ship.pilot.conditions.length > 0 && (
+                        <View style={tw`flex-row flex-wrap gap-1 mx-2 mb-1`}>
+                            {ship.pilot.conditions.map((cxws) => {
+                                const cond = pilotConditionsMap.get(cxws);
+                                if (!cond) return null;
+                                return (
+                                    <TouchableOpacity
+                                        key={cxws}
+                                        style={tw`px-2 py-0.5 bg-zinc-200 dark:bg-zinc-600 rounded-full`}
+                                        activeOpacity={cond.image ? 0.7 : 1}
+                                        onPress={() => {
+                                            if (cond.image) {
+                                                router.push({
+                                                    pathname: 'sheets/image',
+                                                    params: { uri: cond.image },
+                                                });
+                                            }
+                                        }}
+                                    >
+                                        <Text style={tw`text-xs text-zinc-800 dark:text-zinc-200`}>{cond.name}</Text>
+                                    </TouchableOpacity>
+                                );
+                            })}
+                        </View>
+                    )}
                 </View>
             </Animated.View>
 
@@ -224,6 +262,12 @@ export default function PilotScreen() {
                                             upgrade={u.upgrade}
                                             slot={u.slot}
                                             onImagePress={(url) => {
+                                                router.push({
+                                                    pathname: 'sheets/image',
+                                                    params: url,
+                                                })
+                                            }}
+                                            onConditionPress={(url) => {
                                                 router.push({
                                                     pathname: 'sheets/image',
                                                     params: url,

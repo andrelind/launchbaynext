@@ -71,6 +71,12 @@ export default function SelectUpgradeScreen() {
                                 params: { uri },
                             })
                         }}
+                        onConditionPress={(url) => {
+                            router.push({
+                                pathname: 'sheets/image',
+                                params: url,
+                            });
+                        }}
                     />
                 </SwipeComponent>
             );

@@ -19,7 +19,7 @@ export default function ImageScreen() {
   return (
     <TouchableOpacity
       activeOpacity={1}
-      style={tw`w-full h-full items-center justify-center bg-transparent`}
+      style={tw`w-full h-full items-center justify-center ios:bg-transparent android:bg-zinc-900`}
       onPress={() => router.back()}
     >
       <ImageComponent

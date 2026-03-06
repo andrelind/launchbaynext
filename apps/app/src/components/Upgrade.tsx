@@ -1,8 +1,21 @@
-import { keyFromFaction } from 'lbn-core/src/helpers/convert';
+import amgConditions from 'lbn-core/src/assets/amg/conditions';
+import legacyConditions from 'lbn-core/src/assets/legacy/conditions';
+import xwaConditions from 'lbn-core/src/assets/xwa/conditions';
 import { factionKeys } from 'lbn-core/src/helpers/enums';
-import { Slot, Upgrade } from 'lbn-core/src/types';
+import { Condition, Slot, Upgrade } from 'lbn-core/src/types';
 import React, { FC, ReactNode, useCallback } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+
+// Build a merged condition lookup, preferring entries that have images
+const allConditionsRaw: Condition[] = [...amgConditions, ...legacyConditions, ...xwaConditions];
+const conditionsMap = new Map<string, Condition>();
+for (const c of allConditionsRaw) {
+  const existing = conditionsMap.get(c.xws);
+  if (!existing || (!existing.image && c.image)) {
+    conditionsMap.set(c.xws, c);
+  }
+}
+
 import { colorForDifficulty, colorForFactionKey } from '../helpers/colors';
 import { upgradeArtUri, upgradeCardUri } from '../helpers/images';
 import { getUpgradeCost } from '../helpers/select';
@@ -26,6 +39,7 @@ type Props = {
   showRestrictions?: boolean;
   onPress?: () => void;
   onImagePress?: (uri?: { uri?: string }) => void;
+  onConditionPress?: (uri: { uri?: string }) => void;
 };
 
 export const UpgradeComponent: FC<Props> = ({
@@ -36,6 +50,7 @@ export const UpgradeComponent: FC<Props> = ({
   showRestrictions,
   onPress,
   onImagePress,
+  onConditionPress,
   count,
   standardLoadout,
 }) => {
@@ -83,8 +98,8 @@ export const UpgradeComponent: FC<Props> = ({
           res.push(
             <XWingFont
               key={f}
-              icons={[keyFromFaction(f)]}
-              color={colorForFactionKey(keyFromFaction(f), true)}
+              icons={[f]}
+              color={colorForFactionKey(f, true)}
               size={5}
             />
           );
@@ -279,6 +294,28 @@ export const UpgradeComponent: FC<Props> = ({
           </View>
           {showRestrictions && upgrade.restrictions && (
             <Text style={tw`mx-2 flex-row items-center text-zinc-900 dark:text-zinc-100`}>{restrictions()}</Text>
+          )}
+          {upgradeSide.conditions && upgradeSide.conditions.length > 0 && (
+            <View style={tw`flex-row flex-wrap gap-1 mx-2 mb-1`}>
+              {upgradeSide.conditions.map((cxws) => {
+                const cond = conditionsMap.get(cxws);
+                if (!cond) return null;
+                return (
+                  <TouchableOpacity
+                    key={cxws}
+                    style={tw`px-2 py-0.5 bg-zinc-200 dark:bg-zinc-600 rounded-full`}
+                    activeOpacity={cond.image ? 0.7 : 1}
+                    onPress={() => {
+                      if (cond.image) {
+                        onConditionPress?.({ uri: cond.image });
+                      }
+                    }}
+                  >
+                    <Text style={tw`text-xs text-zinc-800 dark:text-zinc-200`}>{cond.name}</Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
           )}
         </View>
       </View>
