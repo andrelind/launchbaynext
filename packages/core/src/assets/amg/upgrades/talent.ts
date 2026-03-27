@@ -291,6 +291,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 12 },
+    restrictions: [{ arcs: ['Front Arc'] }],
     standard: true,
     epic: true,
     extended: true,

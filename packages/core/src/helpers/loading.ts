@@ -50,7 +50,7 @@ export const pointsForSquadron2 = (xws: XWS): number => {
     .filter(pilot => pilotExists2(pilot, xws))
     .map(pilot => {
       const ship = loadShip2(pilot, xws);
-      return xws?.ruleset.includes('legacy') ? ship.pointsWithUpgrades : ship?.pilot?.cost || 0;
+      return ship.pointsWithUpgrades;
     })
     .reduce((s, p) => s + p, 0);
 };

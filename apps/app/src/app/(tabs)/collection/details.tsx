@@ -284,7 +284,7 @@ export default function CollectionDetailScreen() {
 
     return (
         <LegendList
-            contentContainerStyle={tw`p-3`}
+            contentContainerStyle={tw`px-3 pt-3 pb-24`}
             data={data}
             recycleItems
             keyExtractor={(item) => typeof item === 'string' ? item : item.xws}
