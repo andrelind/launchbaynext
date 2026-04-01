@@ -2,7 +2,6 @@ import { useTailwind } from '@/src/helpers/tailwind';
 import { SortingType, useFilterStore } from '@/src/stores/filter';
 import { useLoadoutStore } from '@/src/stores/loadout';
 import { useXwsStore } from '@/src/stores/xws';
-import { Button, ContextMenu, Host } from '@expo/ui/swift-ui';
 import { Feather } from '@expo/vector-icons';
 import * as Clipboard from 'expo-clipboard';
 import { Stack, useGlobalSearchParams, useRouter } from 'expo-router';
@@ -16,6 +15,11 @@ import { Alert, Platform, Text, TouchableOpacity, View } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
 import Toast from 'react-native-toast-message';
 import { useShallow } from 'zustand/react/shallow';
+
+let ExpoUI: typeof import('@expo/ui/swift-ui') | null = null;
+if (Platform.OS === 'ios') {
+    ExpoUI = require('@expo/ui/swift-ui');
+}
 
 const sortings: SortingType[] = [
     'Alphabetically',
@@ -33,6 +37,11 @@ export const unstable_settings = {
 export default function OverviewLayout() {
     const { tw } = useTailwind();
     const router = useRouter();
+
+    // Destructure @expo/ui components (only available on iOS)
+    const Button = ExpoUI?.Button;
+    const ContextMenu = ExpoUI?.ContextMenu;
+    const Host = ExpoUI?.Host;
 
     const { uid, pilotIndex, factionKey } = useGlobalSearchParams();
 

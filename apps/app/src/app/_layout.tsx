@@ -4,14 +4,12 @@ import { green, orange, red } from '@/src/theme';
 import { DarkTheme, ThemeProvider } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
-import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Image } from 'expo-image';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import * as Updates from 'expo-updates';
 import { cleanupUpgrades2, loadShip2 } from 'lbn-core/src/helpers/loading';
 import { useEffect } from 'react';
-import { AppState } from 'react-native';
+import { AppState, Platform } from 'react-native';
 import { SheetProvider } from 'react-native-actions-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Toast, { BaseToast, ErrorToast } from 'react-native-toast-message';
@@ -20,6 +18,13 @@ import { syncWithServer } from '../helpers/api';
 import { useTailwind } from '../helpers/tailwind';
 import { useCollectionStore } from '../stores/collection';
 import { useXwsStore } from '../stores/xws';
+
+let Updates: typeof import('expo-updates') | null = null;
+let isLiquidGlassAvailable: (() => boolean) | null = null;
+if (Platform.OS !== 'web') {
+  Updates = require('expo-updates');
+  isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable;
+}
 
 export const unstable_settings = {
   anchor: '(tabs)',
@@ -40,37 +45,39 @@ const toastConfig = {
 const runUpdates = async () => {
   console.log('Running updates...');
 
-  try {
-    const update = await Updates.checkForUpdateAsync();
-    if (update.isAvailable) {
-      Toast.show({
-        type: 'info',
-        text1: 'Updating content...',
-        text2: 'This can take a few seconds, please wait',
-      });
-      await Updates.fetchUpdateAsync();
-      setTimeout(async () => {
-        await Updates.reloadAsync(
-          {
-            reloadScreenOptions: {
-              backgroundColor: 'black',
-              image: require('../../assets/icon_transparent.png'),
-              imageResizeMode: 'contain',
-              fade: true,
-              spinner: {
-                enabled: true,
-                color: 'white',
-                size: 'large',
+  if (Platform.OS !== 'web' && Updates) {
+    try {
+      const update = await Updates.checkForUpdateAsync();
+      if (update.isAvailable) {
+        Toast.show({
+          type: 'info',
+          text1: 'Updating content...',
+          text2: 'This can take a few seconds, please wait',
+        });
+        await Updates.fetchUpdateAsync();
+        setTimeout(async () => {
+          await Updates.reloadAsync(
+            {
+              reloadScreenOptions: {
+                backgroundColor: 'black',
+                image: require('../../assets/icon_transparent.png'),
+                imageResizeMode: 'contain',
+                fade: true,
+                spinner: {
+                  enabled: true,
+                  color: 'white',
+                  size: 'large',
+                }
               }
             }
-          }
-        );
-      }, 300);
+          );
+        }, 300);
+      }
+    } catch (error) {
+      // You can also add an alert() to see the error message
+      // in case of an error when fetching updates.
+      // alert(`Error fetching latest Expo update: ${error}`);
     }
-  } catch (error) {
-    // You can also add an alert() to see the error message
-    // in case of an error when fetching updates.
-    // alert(`Error fetching latest Expo update: ${error}`);
   }
 
   await syncWithServer(
@@ -179,7 +186,7 @@ export default function RootLayout() {
               sheetGrabberVisible: true,
               headerShown: false,
               contentStyle: {
-                backgroundColor: isLiquidGlassAvailable() ? "transparent" : "white",
+                backgroundColor: isLiquidGlassAvailable?.() ? "transparent" : "white",
               },
             }} />
 
@@ -198,7 +205,7 @@ export default function RootLayout() {
               sheetAllowedDetents: [0.75],
               sheetGrabberVisible: true,
               contentStyle: {
-                backgroundColor: isLiquidGlassAvailable() ? "transparent" : "white",
+                backgroundColor: isLiquidGlassAvailable?.() ? "transparent" : "white",
               },
               headerShown: false,
             }} />
@@ -208,7 +215,7 @@ export default function RootLayout() {
               sheetAllowedDetents: [0.5],
               sheetGrabberVisible: true,
               contentStyle: {
-                backgroundColor: isLiquidGlassAvailable() ? "transparent" : "white",
+                backgroundColor: isLiquidGlassAvailable?.() ? "transparent" : "white",
               },
               headerShown: false,
             }} />
@@ -217,7 +224,7 @@ export default function RootLayout() {
               sheetAllowedDetents: [0.45],
               sheetGrabberVisible: true,
               contentStyle: {
-                backgroundColor: isLiquidGlassAvailable() ? "transparent" : "white",
+                backgroundColor: isLiquidGlassAvailable?.() ? "transparent" : "white",
               },
               headerShown: false,
             }} />

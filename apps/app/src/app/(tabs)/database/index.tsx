@@ -8,7 +8,6 @@ import { useTailwind } from '@/src/helpers/tailwind';
 import { darkgrey } from '@/src/theme';
 import { Octicons } from '@expo/vector-icons';
 import { LegendList, LegendListRenderItemProps } from '@legendapp/list';
-import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { useLocalSearchParams } from 'expo-router';
 import { RuleSet, assets } from 'lbn-core/src';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
@@ -18,6 +17,11 @@ import { ShipType, UpgradeBase } from 'lbn-core/src/types';
 import React, { useCallback, useState } from 'react';
 import { Platform, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
+let isLiquidGlassAvailable: (() => boolean) | null = null;
+if (Platform.OS !== 'web') {
+    try { isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable; } catch {}
+}
 
 type Data = { ship?: ShipType; pilot?: TShip; upgrade?: UpgradeBase };
 
@@ -120,7 +124,7 @@ export default function DatabaseScreen() {
 
     return (
         <>
-            {isLiquidGlassAvailable() && (
+            {isLiquidGlassAvailable?.() && (
                 <SafeAreaView style={tw`w-full flex-1`}>
                     <SegmentedControl segments={['XWA', 'Legacy', 'AMG']}
                         onChange={(index) => {
@@ -128,7 +132,7 @@ export default function DatabaseScreen() {
                         }} />
                 </SafeAreaView>
             )}
-            {Platform.OS === 'ios' && !isLiquidGlassAvailable() && (
+            {Platform.OS === 'ios' && !isLiquidGlassAvailable?.() && (
                 <SafeAreaView style={tw`w-full pt-24 flex-1`}>
                     <SegmentedControl segments={['XWA', 'Legacy', 'AMG']}
                         onChange={(index) => {

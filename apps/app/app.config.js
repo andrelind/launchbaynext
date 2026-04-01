@@ -39,6 +39,7 @@ export default {
     web: {
       favicon: './assets/favicon.png',
       bundler: 'metro',
+      output: 'single',
     },
     updates: { url: 'https://u.expo.dev/ef07a76c-686b-488d-a99c-41839da38ffc' },
     plugins: [

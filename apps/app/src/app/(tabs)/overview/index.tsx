@@ -4,7 +4,6 @@ import { useTailwind } from '@/src/helpers/tailwind';
 import { trpc } from '@/src/helpers/trpc';
 import { useSystemStore } from '@/src/stores/system';
 import { blue } from '@/src/theme';
-import { Button, Host } from '@expo/ui/swift-ui';
 import { Feather } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { useRouter } from 'expo-router';
@@ -19,6 +18,11 @@ import {
   View
 } from 'react-native';
 import useSwr from 'swr';
+
+let ExpoUI: typeof import('@expo/ui/swift-ui') | null = null;
+if (Platform.OS === 'ios') {
+  ExpoUI = require('@expo/ui/swift-ui');
+}
 
 export default function OverviewScreen() {
   const { tw } = useTailwind();
@@ -53,15 +57,15 @@ export default function OverviewScreen() {
             <Text style={tw`text-white font-semibold`}>Welcome, {user.name}</Text>
           </View>
         )}
-        {!user && Platform.OS === 'ios' && (
-          <Host style={tw`mx-2 py-3`} colorScheme={'dark'}>
-            <Button color={tw.color('orange-500')} variant='glassProminent' onPress={() => {
+        {!user && Platform.OS === 'ios' && ExpoUI && (
+          <ExpoUI.Host style={tw`mx-2 py-3`} colorScheme={'dark'}>
+            <ExpoUI.Button color={tw.color('orange-500')} variant='glassProminent' onPress={() => {
               // navigation.navigate('Login');
               router.push('/overview/login');
             }} >
               Tap here to login
-            </Button>
-          </Host>
+            </ExpoUI.Button>
+          </ExpoUI.Host>
         )}
         {!user && Platform.OS !== 'ios' && (
           <TouchableOpacity

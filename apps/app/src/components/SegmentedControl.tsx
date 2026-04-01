@@ -1,7 +1,11 @@
-import { Host, Picker } from '@expo/ui/swift-ui';
 import { FC, useState } from 'react';
 import { Platform, Text, TouchableOpacity, View } from 'react-native';
 import { useTailwind } from '../helpers/tailwind';
+
+let ExpoUI: typeof import('@expo/ui/swift-ui') | null = null;
+if (Platform.OS === 'ios') {
+    ExpoUI = require('@expo/ui/swift-ui');
+}
 
 type Props = {
     segments: string[];
@@ -15,7 +19,8 @@ export const SegmentedControl: FC<Props> = ({
     const { tw } = useTailwind();
     const [selectedSegment, setSelectedSegment] = useState(0);
 
-    if (Platform.OS === 'ios') {
+    if (Platform.OS === 'ios' && ExpoUI) {
+        const { Host, Picker } = ExpoUI;
         return (
             <Host matchContents>
                 <Picker

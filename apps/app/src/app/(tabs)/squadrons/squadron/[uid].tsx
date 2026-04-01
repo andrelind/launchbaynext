@@ -9,14 +9,19 @@ import { useLocalSearchParams, useRouter } from 'expo-router';
 import { loadShip2, TShip } from 'lbn-core/src/helpers/loading';
 import React from 'react';
 import {
+    FlatList,
     Platform,
     Text,
     TouchableOpacity,
     View
 } from 'react-native';
-import DraggableFlatList from 'react-native-draggable-flatlist';
 import Animated, { FadeIn, FadeOut, Layout } from 'react-native-reanimated';
 import { useShallow } from 'zustand/react/shallow';
+
+let DraggableFlatList: typeof import('react-native-draggable-flatlist').default | null = null;
+if (Platform.OS !== 'web') {
+    DraggableFlatList = require('react-native-draggable-flatlist').default;
+}
 
 type EShip = TShip & { key: string };
 
@@ -145,51 +150,85 @@ export default function SquadronScreen() {
 
     return (
         <View style={tw`flex-1`}>
-            <DraggableFlatList
-                // style={tw`h-full`}
-                contentContainerStyle={tw`px-2 py-2 android:pb-24`}
-                showsVerticalScrollIndicator={false}
-                data={ships || []}
-                keyExtractor={(s: TShip, i: number) => `${s.xws}_${i}`}
-                renderItem={({ item, getIndex, drag }) => {
-                    const index = getIndex() || 0;
-                    return (
-                        <SwipeComponent
-                            style={tw`p-1`}
-                            onPress={() => {
-                                router.push({
-                                    pathname: `(tabs)/squadrons/pilot/${uid}`,
-                                    params: {
-                                        pilotIndex: index || 0,
-                                        factionKey: xws?.faction,
-                                    },
-                                });
-                            }}
-                            onLongPress={drag}
-                            onLeftAction={() => {
-                                copyShip(xws, index);
-                            }}
-                            onRightAction={() => {
-                                removeShip(xws, index);
-                            }}
-                        >
-                            <PilotListItem key={item.key} pilot={item?.pilot!} ship={item} ruleset={xws?.ruleset} slim />
-                        </SwipeComponent>
-                    )
-                }}
-                onDragBegin={() => {
-                }}
-                onDragEnd={({ from, to }: any) => {
-                    const copy = { ...xws! };
-                    const cutOut = copy.pilots!.splice(from, 1)[0];
-                    copy.pilots!.splice(to, 0, cutOut);
-                    lists?.splice(lists!.indexOf(xws!), 1, copy);
-                    setLists(lists!);
-                }}
-                // ItemSeparatorComponent={renderSeparator}
-                ListHeaderComponent={renderHeader}
-                ListFooterComponent={Platform.OS === 'android' ? <View style={{ height: 30 }} /> : undefined}
-            />
+            {Platform.OS === 'web' ? (
+                <FlatList
+                    contentContainerStyle={tw`px-2 py-2`}
+                    showsVerticalScrollIndicator={false}
+                    data={ships || []}
+                    keyExtractor={(s: TShip, i: number) => `${s.xws}_${i}`}
+                    renderItem={({ item, index }) => {
+                        return (
+                            <SwipeComponent
+                                style={tw`p-1`}
+                                onPress={() => {
+                                    router.push({
+                                        pathname: `(tabs)/squadrons/pilot/${uid}`,
+                                        params: {
+                                            pilotIndex: index || 0,
+                                            factionKey: xws?.faction,
+                                        },
+                                    });
+                                }}
+                                onLeftAction={() => {
+                                    copyShip(xws, index);
+                                }}
+                                onRightAction={() => {
+                                    removeShip(xws, index);
+                                }}
+                            >
+                                <PilotListItem key={item.key} pilot={item?.pilot!} ship={item} ruleset={xws?.ruleset} slim />
+                            </SwipeComponent>
+                        )
+                    }}
+                    ListHeaderComponent={renderHeader}
+                />
+            ) : (
+                <DraggableFlatList
+                    // style={tw`h-full`}
+                    contentContainerStyle={tw`px-2 py-2 android:pb-24`}
+                    showsVerticalScrollIndicator={false}
+                    data={ships || []}
+                    keyExtractor={(s: TShip, i: number) => `${s.xws}_${i}`}
+                    renderItem={({ item, getIndex, drag }) => {
+                        const index = getIndex() || 0;
+                        return (
+                            <SwipeComponent
+                                style={tw`p-1`}
+                                onPress={() => {
+                                    router.push({
+                                        pathname: `(tabs)/squadrons/pilot/${uid}`,
+                                        params: {
+                                            pilotIndex: index || 0,
+                                            factionKey: xws?.faction,
+                                        },
+                                    });
+                                }}
+                                onLongPress={drag}
+                                onLeftAction={() => {
+                                    copyShip(xws, index);
+                                }}
+                                onRightAction={() => {
+                                    removeShip(xws, index);
+                                }}
+                            >
+                                <PilotListItem key={item.key} pilot={item?.pilot!} ship={item} ruleset={xws?.ruleset} slim />
+                            </SwipeComponent>
+                        )
+                    }}
+                    onDragBegin={() => {
+                    }}
+                    onDragEnd={({ from, to }: any) => {
+                        const copy = { ...xws! };
+                        const cutOut = copy.pilots!.splice(from, 1)[0];
+                        copy.pilots!.splice(to, 0, cutOut);
+                        lists?.splice(lists!.indexOf(xws!), 1, copy);
+                        setLists(lists!);
+                    }}
+                    // ItemSeparatorComponent={renderSeparator}
+                    ListHeaderComponent={renderHeader}
+                    ListFooterComponent={Platform.OS === 'android' ? <View style={{ height: 30 }} /> : undefined}
+                />
+            )}
         </View>
     );
 };

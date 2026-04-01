@@ -25,13 +25,17 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-import Dialog from 'react-native-dialog';
 import { ScrollView } from 'react-native-gesture-handler';
 import Animated, {
     FadeIn,
     FadeInUp,
     FadeOut
 } from 'react-native-reanimated';
+
+let Dialog: typeof import('react-native-dialog').default | null = null;
+if (Platform.OS !== 'web') {
+    Dialog = require('react-native-dialog').default;
+}
 
 // Merged condition lookup, preferring entries with images
 const allPilotConditionsRaw: Condition[] = [...amgConditions, ...legacyConditions, ...xwaConditions];
@@ -368,8 +372,19 @@ export default function PilotScreen() {
                         title="Save"
                         color={tw.color('primary-500')}
                         onPress={() => {
-                            Platform.OS === 'ios'
-                                ? Alert.prompt(
+                            if (Platform.OS === 'web') {
+                                const name = window.prompt('What do you want to call this loadout?');
+                                if (name && name.length > 0 && ship && ship.pilot) {
+                                    addLoadout(
+                                        name,
+                                        factionKey as FactionKey,
+                                        ship.xws,
+                                        ship.pilot.xws,
+                                        pilot?.upgrades
+                                    );
+                                }
+                            } else if (Platform.OS === 'ios') {
+                                Alert.prompt(
                                     'Name of loadout',
                                     'What do you want to call this loadout?',
                                     [
@@ -395,8 +410,10 @@ export default function PilotScreen() {
                                             },
                                         },
                                     ]
-                                )
-                                : setShowRename(true);
+                                );
+                            } else {
+                                setShowRename(true);
+                            }
                         }}
                     />
                     <Button
@@ -418,36 +435,38 @@ export default function PilotScreen() {
                 </View>
             )}
 
-            <Dialog.Container visible={showRename}>
-                <Dialog.Title style={tw`text-black`}>Name of loadout</Dialog.Title>
-                <Dialog.Description style={tw`text-zinc-400`}>
-                    What do you want to call this loadout?
-                </Dialog.Description>
-                <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />
-                <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
-                <Dialog.Button
-                    label="OK"
-                    onPress={() => {
-                        if (
-                            !tempName ||
-                            (tempName?.length || 0) === 0 ||
-                            !ship ||
-                            !ship.pilot
-                        ) {
-                            return;
-                        }
-                        addLoadout(
-                            tempName,
-                            factionKey as FactionKey,
-                            ship?.xws,
-                            ship?.pilot?.xws,
-                            pilot?.upgrades
-                        );
-                        setTempName(undefined);
-                        setShowRename(false);
-                    }}
-                />
-            </Dialog.Container>
+            {Platform.OS !== 'web' && Dialog && (
+                <Dialog.Container visible={showRename}>
+                    <Dialog.Title style={tw`text-black`}>Name of loadout</Dialog.Title>
+                    <Dialog.Description style={tw`text-zinc-400`}>
+                        What do you want to call this loadout?
+                    </Dialog.Description>
+                    <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />
+                    <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
+                    <Dialog.Button
+                        label="OK"
+                        onPress={() => {
+                            if (
+                                !tempName ||
+                                (tempName?.length || 0) === 0 ||
+                                !ship ||
+                                !ship.pilot
+                            ) {
+                                return;
+                            }
+                            addLoadout(
+                                tempName,
+                                factionKey as FactionKey,
+                                ship?.xws,
+                                ship?.pilot?.xws,
+                                pilot?.upgrades
+                            );
+                            setTempName(undefined);
+                            setShowRename(false);
+                        }}
+                    />
+                </Dialog.Container>
+            )}
         </ScrollView>
     );
 };

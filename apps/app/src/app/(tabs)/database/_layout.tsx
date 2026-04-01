@@ -1,9 +1,14 @@
 import { useTailwind } from '@/src/helpers/tailwind';
 import { SortingType } from '@/src/stores/filter';
 import { useIsFocused } from '@react-navigation/native';
-import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Stack, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
+import { Platform } from 'react-native';
+
+let isLiquidGlassAvailable: (() => boolean) | null = null;
+if (Platform.OS !== 'web') {
+    try { isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable; } catch {}
+}
 
 const sortings: SortingType[] = [
     'Alphabetically',
@@ -27,7 +32,7 @@ export default function OverviewLayout() {
     const isFocused = useIsFocused();
 
     useEffect(() => {
-        if (isFocused && isLiquidGlassAvailable()) {
+        if (isFocused && isLiquidGlassAvailable?.()) {
             setTimeout(() => {
                 setShowHeader(false);
             }, 100);

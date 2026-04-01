@@ -1,9 +1,49 @@
 import { useTailwind } from '@/src/helpers/tailwind';
-import { Icon, Label, NativeTabs } from 'expo-router/unstable-native-tabs';
+import { Feather } from '@expo/vector-icons';
+import { Tabs } from 'expo-router';
+import { Platform } from 'react-native';
 
-export default function HomeLayout() {
+let NativeTabsModule: typeof import('expo-router/unstable-native-tabs') | null = null;
+if (Platform.OS !== 'web') {
+    NativeTabsModule = require('expo-router/unstable-native-tabs');
+}
+
+function WebTabs() {
     const { tw } = useTailwind();
+    return (
+        <Tabs screenOptions={{
+            headerShown: false,
+            tabBarStyle: { backgroundColor: tw.color('zinc-950'), borderTopColor: tw.color('zinc-800') },
+            tabBarActiveTintColor: tw.color('orange-500'),
+            tabBarInactiveTintColor: tw.color('zinc-400'),
+        }}>
+            <Tabs.Screen name="overview" options={{
+                tabBarLabel: 'Home',
+                tabBarIcon: ({ color, size }) => <Feather name="home" size={size} color={color} />,
+            }} />
+            <Tabs.Screen name="squadrons" options={{
+                tabBarLabel: 'Squadrons',
+                tabBarIcon: ({ color, size }) => <Feather name="list" size={size} color={color} />,
+            }} />
+            <Tabs.Screen name="counter" options={{
+                tabBarLabel: 'Counter',
+                tabBarIcon: ({ color, size }) => <Feather name="divide" size={size} color={color} />,
+            }} />
+            <Tabs.Screen name="collection" options={{
+                tabBarLabel: 'Collection',
+                tabBarIcon: ({ color, size }) => <Feather name="folder" size={size} color={color} />,
+            }} />
+            <Tabs.Screen name="database" options={{
+                tabBarLabel: 'Database',
+                tabBarIcon: ({ color, size }) => <Feather name="search" size={size} color={color} />,
+            }} />
+        </Tabs>
+    );
+}
 
+function NativeTabsLayout() {
+    const { tw } = useTailwind();
+    const { NativeTabs, Icon, Label } = NativeTabsModule!;
     return (
         <NativeTabs
             backgroundColor={tw.color('zinc-950')}
@@ -32,4 +72,11 @@ export default function HomeLayout() {
             </NativeTabs.Trigger>
         </NativeTabs>
     );
+}
+
+export default function HomeLayout() {
+    if (Platform.OS === 'web') {
+        return <WebTabs />;
+    }
+    return <NativeTabsLayout />;
 }

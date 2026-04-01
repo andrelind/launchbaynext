@@ -16,8 +16,12 @@ import {
     View
 } from 'react-native';
 import { SheetManager } from 'react-native-actions-sheet';
-import Dialog from 'react-native-dialog';
 import { useShallow } from 'zustand/react/shallow';
+
+let Dialog: typeof import('react-native-dialog').default | null = null;
+if (Platform.OS !== 'web') {
+    Dialog = require('react-native-dialog').default;
+}
 
 export default function SquadronSettingsScreen() {
     const params = useLocalSearchParams();
@@ -54,15 +58,25 @@ export default function SquadronSettingsScreen() {
                         title={xws?.name}
                         color={orange}
                         onPress={() => {
-                            Platform.OS === 'ios'
-                                ? Alert.prompt(
+                            if (Platform.OS === 'web') {
+                                const name = window.prompt(
+                                    'Please type in the new name of this squadron',
+                                    xws?.name !== 'New Squadron' ? xws?.name : undefined
+                                );
+                                if (name !== null) {
+                                    setName(uid, name);
+                                }
+                            } else if (Platform.OS === 'ios') {
+                                Alert.prompt(
                                     'Change name',
                                     'Please type in the new name of this squadron',
                                     (text) => setName(uid, text),
                                     undefined,
                                     xws?.name !== 'New Squadron' ? xws?.name : undefined
-                                )
-                                : setShowRename(true);
+                                );
+                            } else {
+                                setShowRename(true);
+                            }
                         }}
                     />
                 </View>
@@ -208,22 +222,24 @@ export default function SquadronSettingsScreen() {
                     </View>
                 </View>
             </View>
-            <Dialog.Container visible={showRename}>
-                <Dialog.Title style={tw`text-black`}>Change name</Dialog.Title>
-                <Dialog.Description style={tw`text-zinc-400`}>
-                    Please type in the new name of the squadron
-                </Dialog.Description>
-                <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />
-                <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
-                <Dialog.Button
-                    label="OK"
-                    onPress={() => {
-                        setName(uid, tempName || '');
-                        setTempName(undefined);
-                        setShowRename(false);
-                    }}
-                />
-            </Dialog.Container>
+            {Platform.OS !== 'web' && Dialog && (
+                <Dialog.Container visible={showRename}>
+                    <Dialog.Title style={tw`text-black`}>Change name</Dialog.Title>
+                    <Dialog.Description style={tw`text-zinc-400`}>
+                        Please type in the new name of the squadron
+                    </Dialog.Description>
+                    <Dialog.Input style={tw`text-black`} value={tempName} onChangeText={setTempName} />
+                    <Dialog.Button label="Cancel" onPress={() => setShowRename(false)} />
+                    <Dialog.Button
+                        label="OK"
+                        onPress={() => {
+                            setName(uid, tempName || '');
+                            setTempName(undefined);
+                            setShowRename(false);
+                        }}
+                    />
+                </Dialog.Container>
+            )}
         </View>
     );
 };
