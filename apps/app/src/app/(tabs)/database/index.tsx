@@ -20,7 +20,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 let isLiquidGlassAvailable: (() => boolean) | null = null;
 if (Platform.OS !== 'web') {
-    try { isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable; } catch {}
+    try { isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable; } catch { }
 }
 
 type Data = { ship?: ShipType; pilot?: TShip; upgrade?: UpgradeBase };

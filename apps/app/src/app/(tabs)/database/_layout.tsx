@@ -7,7 +7,7 @@ import { Platform } from 'react-native';
 
 let isLiquidGlassAvailable: (() => boolean) | null = null;
 if (Platform.OS !== 'web') {
-    try { isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable; } catch {}
+    try { isLiquidGlassAvailable = require('expo-glass-effect').isLiquidGlassAvailable; } catch { }
 }
 
 const sortings: SortingType[] = [
