@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Launch Bay Next web
+Next.js app for Launch Bay Next web UI and backend API.
 
-## Getting Started
+This package contains:
+- App Router pages/UI (`src/app`)
+- Route handlers under `/api` (`src/app/api`)
+- tRPC router, auth context, and DB access (`src/server`)
 
-First, run the development server:
+## Prerequisites
+- Bun 1.x
+- PostgreSQL database
 
+## Setup
+Install dependencies from repository root:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create/update `apps/web/.env.local` with required variables:
+```bash
+DATABASE_URL=postgresql://...
+JWT_SECRET=...
+POSTMARK_API_TOKEN=...
+NEXT_PUBLIC_HOSTING_URL=http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Additional optional/provider variables referenced by config:
+- `FACEBOOK_ID`, `FACEBOOK_SECRET`
+- `GOOGLE_ID`, `GOOGLE_SECRET`
+- `POSTGRES_URL`, `POSTGRES_URL_NON_POOLING`, `POSTGRES_PRISMA_URL`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Scripts
+Run inside `apps/web`:
+```bash
+bun run dev
+bun run build
+bun run start
+bun run lint
+```
 
-## Learn More
+From repository root:
+```bash
+bun run dev:web
+bun run web:build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Backend structure
+- tRPC endpoint: `src/app/api/trpc/[trpc]/route.ts`
+- tRPC router: `src/server/index.ts`
+- Auth context: `src/server/context.ts`
+- Drizzle schema + migrations: `src/server/drizzle`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Notable API routes:
+- `POST /api/link` -> converts inbound squad JSON to Launch Bay link format
+- `POST /api/standard` -> validates standard legality
+- `GET /api/xws?lbx=...` -> converts serialized squad link back to XWS JSON
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Notes
+- The web app consumes `lbn-core` directly via `transpilePackages`.
+- `DATABASE_URL` is used both by Drizzle config and runtime DB connection.

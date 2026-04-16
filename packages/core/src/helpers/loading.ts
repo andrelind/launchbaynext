@@ -50,7 +50,8 @@ export const pointsForSquadron2 = (xws: XWS): number => {
     .filter(pilot => pilotExists2(pilot, xws))
     .map(pilot => {
       const ship = loadShip2(pilot, xws);
-      return ship.pointsWithUpgrades;
+      // For xwa/amg, upgrades are paid from pilot loadout budget, not squad total
+      return xws.ruleset === 'legacy' ? ship.pointsWithUpgrades : ship.pilot?.cost || 0;
     })
     .reduce((s, p) => s + p, 0);
 };
