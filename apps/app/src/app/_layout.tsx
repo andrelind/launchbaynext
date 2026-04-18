@@ -101,7 +101,7 @@ useXwsStore.subscribe(state => {
           const upgrades = cleanupUpgrades2(p.upgrades, s, l);
           return {
             ...p,
-            points: s.pilot?.cost || 0,
+            points: l.ruleset === 'legacy' ? s.pointsWithUpgrades : (s.pilot?.cost || 0),
             upgrades,
           };
         });
