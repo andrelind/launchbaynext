@@ -2,23 +2,18 @@ import fs from 'fs';
 import fetch from 'node-fetch';
 import ora from 'ora';
 import prettier from 'prettier';
-import { revManifest, manifest as theManifest } from '../../src/assets/manifest';
-// import assets from '../../src/assets';
 
 import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
 import { XWDPilot, XWDShip, XWDUpgrade } from './data2-types';
 import { asyncForEach, getFaction, getName } from './utils';
-// import { slotFromKey } from '../../src/helpers/convert';
 
-const getLatestPilotNumber = () => {
-  // Get largerst pilot number from manifest
-  const pilots = Object.keys(theManifest.pilots)
-    .flat()
-    .map(p => parseInt(p, 10));
-  return Math.max(...pilots, 0);
-};
-
-export const runMerge = async (baseUrl: string, assets: any, path: string) => {
+export const runMerge = async (baseUrl: string, assets: any, path: string, theManifest: any, revManifest: any) => {
+  const getLatestPilotNumber = () => {
+    const pilots = Object.keys(theManifest.pilots)
+      .flat()
+      .map(p => parseInt(p, 10));
+    return Math.max(...pilots, 0);
+  };
   const get = async (url: string) => {
     const result = await fetch(baseUrl + url, {
       headers: { 'Content-Type': 'application/json' },
@@ -28,18 +23,20 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
 
   let pilotNumber = getLatestPilotNumber();
 
-  const processShip = async (faction: Faction, shipData: XWDShip) => {
-    let ship = assets.pilots[faction][shipData.xws];
+  const processShip = async (faction: Faction, shipData: XWDShip, urlFileName: string, effectiveXws: string) => {
+    let ship = assets.pilots[faction][effectiveXws];
     if (!ship) {
       // eslint-disable-next-line no-unused-vars
       const { pilots, ...rest } = shipData;
-      console.log('\n**** Ship not found ****', shipData.name, shipData.xws, faction);
+      console.log('\n**** Ship not found ****', shipData.name, effectiveXws, faction);
 
       ship = {
         ...rest,
+        xws: effectiveXws,
         name: shipData.name,
         pilots: [],
       };
+      assets.pilots[faction][effectiveXws] = ship;
     }
 
     const { pilots } = shipData;
@@ -123,9 +120,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
 
       if (!local.ffg) {
         // Check manifest first
-        // @ts-expect-error
         if (revManifest.pilots[local.xws]) {
-          // @ts-expect-error
           local.ffg = parseInt(revManifest.pilots[local.xws]);
         } else {
           // If not found, assign a new pilot number
@@ -148,7 +143,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       parser: 'typescript',
     });
 
-    fs.writeFileSync(`./src/assets/${path}/pilots/${getName(faction)}/${getName(shipData.name)}.ts`, formatted, 'utf8');
+    fs.writeFileSync(`./src/assets/${path}/pilots/${getName(faction)}/${urlFileName}.ts`, formatted, 'utf8');
   };
 
   const processUpgrade = (key: SlotKey, data: XWDUpgrade) => {
@@ -346,53 +341,51 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
 
   let i = 0;
   await asyncForEach(manifest.pilots, async (data: any) => {
-    await asyncForEach(data.ships, async (shipUrl: any) => {
-      // console.log(` Processing ${shipUrl}`);
-
+    // Pre-fetch all ships to detect XWS collisions within a faction
+    const shipEntries: Array<{ url: string; data: XWDShip }> = [];
+    await asyncForEach(data.ships, async (shipUrl: string) => {
       const ship = await get(`/${shipUrl}`);
-      processShip(getFaction(data.faction), ship as XWDShip);
+      shipEntries.push({ url: shipUrl, data: ship as XWDShip });
+    });
+
+    // Count xws occurrences to detect collisions
+    const xwsCounts: Record<string, number> = {};
+    shipEntries.forEach(entry => {
+      xwsCounts[entry.data.xws] = (xwsCounts[entry.data.xws] || 0) + 1;
+    });
+
+    const faction = getFaction(data.faction);
+    const processedShips: Array<{ key: string; fileName: string }> = [];
+
+    await asyncForEach(shipEntries, async (entry: { url: string; data: XWDShip }) => {
+      const urlFileName = entry.url.split('/').pop()?.replace('.json', '') || '';
+      const urlKey = urlFileName.replaceAll('-', '');
+      const hasCollision = xwsCounts[entry.data.xws] > 1;
+      // When multiple upstream files share the same xws, use URL-derived key to disambiguate
+      const effectiveXws = hasCollision ? urlKey : entry.data.xws;
+
+      await processShip(faction, entry.data, urlFileName, effectiveXws);
+      processedShips.push({ key: effectiveXws, fileName: urlFileName });
 
       spinner.text = progress(i, increment);
       i++;
     });
 
-    //   const files = glob.sync(
-    //     `./assets/data/pilots/${getName(getFaction(data.faction))}/**.ts`
-    //   );
-    //   let file = 'export default {';
-    //   files.forEach(fileName => {
-    //     if (!fileName) {
-    //       return;
-    //     }
-
-    //     const name = fileName
-    //       .replaceAll('.ts', '')
-    //       .split('/')
-    //       .pop();
-
-    //     if (!name || name === 'index') {
-    //       return;
-    //     }
-
-    //     if (name === 'upsilon-class-command-shuttle') {
-    //       file += `\n'upsilonclassshuttle': require('./${name}'),`;
-    //     } else if (name === 'tie-interceptor') {
-    //       file += `\n'tieininterceptor': require('./${name}'),`;
-    //     } else {
-    //       file += `\n'${name.replaceAll('-', '')}': require('./${name}'),`;
-    //     }
-    //   });
-    //   file += '}';
-    //   const formatted = prettier.format(file, {
-    //     trailingComma: 'all',
-    //     singleQuote: true,
-    //     parser: 'typescript'
-    //   });
-    //   fs.writeFileSync(
-    //     `./assets/data/pilots/${getName(getFaction(data.faction))}/index.ts`,
-    //     formatted,
-    //     'utf8'
-    //   );
+    // Regenerate faction index.ts
+    const factionDir = getName(faction);
+    let imports = "import { ShipType } from '../../../../types';\n";
+    const entries: string[] = [];
+    processedShips.forEach(({ key, fileName }) => {
+      imports += `import ${key} from './${fileName}';\n`;
+      entries.push(`  ${key},`);
+    });
+    const indexCode = `${imports}\nconst ships: { [s: string]: ShipType } = {\n${entries.join('\n')}\n};\n\nexport default ships;\n`;
+    const formattedIndex = await prettier.format(indexCode, {
+      trailingComma: 'all',
+      singleQuote: true,
+      parser: 'typescript',
+    });
+    fs.writeFileSync(`./src/assets/${path}/pilots/${factionDir}/index.ts`, formattedIndex, 'utf8');
   });
 
   await asyncForEach(manifest.upgrades, async (url: string) => {
@@ -423,26 +416,21 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
 
   console.log('\n\n**** Updating pilots and upgrades manifest ****\n', pilotStart);
 
-  // @ts-expect-error
   theManifest.pilots = {};
   // Loop all pilots and upgrades and update the manifest
   Object.keys(assets.pilots).forEach(faction => {
     Object.keys(assets.pilots[faction]).forEach(ship => {
       assets.pilots[faction][ship].pilots.forEach((pilot: any) => {
-        // @ts-expect-error
         if (!theManifest.pilots[pilot.xws]) {
-          // @ts-expect-error
           theManifest.pilots[pilot.ffg] = pilot.xws;
         }
       });
     });
   });
 
-  // @ts-expect-error
   revManifest.pilots = {};
   // Create revManifest
   Object.keys(theManifest.pilots).forEach(ffg => {
-    // @ts-expect-error
     revManifest.pilots[theManifest.pilots[ffg]] = ffg;
   });
 
@@ -455,7 +443,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string) => {
       parser: 'typescript',
     },
   );
-  fs.writeFileSync(`./src/assets/manifest.ts`, formattedManifest, 'utf8');
+  fs.writeFileSync(`./src/assets/${path}/manifest.ts`, formattedManifest, 'utf8');
 
   spinner.succeed('Update from xwing-data2 complete!');
 };

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import prettier from 'prettier';
-import { pilots, upgrades } from '../src/assets/xwa';
+import { pilots as legacyPilots, upgrades as legacyUpgrades } from '../src/assets/legacy';
+import { pilots as xwaPilots, upgrades as xwaUpgrades } from '../src/assets/xwa';
 import { Faction, SlotKey } from '../src/types';
 
 const slots: { [s: string]: SlotKey } = {
@@ -1055,7 +1056,7 @@ export type Manifest = {
   slots: { [s: string]: SlotKey };
 };
 
-const runner = async () => {
+const generateManifest = async (pilots: any, upgrades: any, outputPath: string) => {
   const manifest: Manifest = {
     ships: {},
     pilots: {},
@@ -1149,7 +1150,13 @@ const runner = async () => {
     },
   );
 
-  fs.writeFileSync(`../src/assets/manifest.ts`, formatted, 'utf8');
+  fs.writeFileSync(outputPath, formatted, 'utf8');
+  console.log(`Manifest written to ${outputPath}`);
+};
+
+const runner = async () => {
+  await generateManifest(xwaPilots, xwaUpgrades, '../src/assets/xwa/manifest.ts');
+  await generateManifest(legacyPilots, legacyUpgrades, '../src/assets/legacy/manifest.ts');
 };
 
 runner();

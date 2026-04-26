@@ -13,18 +13,18 @@ import tridentclassassaultship from './trident-class-assault-ship';
 import vultureclassdroidfighter from './vulture-class-droid-fighter';
 
 const ships: { [s: string]: ShipType } = {
-  belbullab22starfighter,
+  vultureclassdroidfighter,
   croccruiser,
+  belbullab22starfighter,
+  sithinfiltrator,
   hyenaclassdroidbomber,
   nantexclassstarfighter,
-  sithinfiltrator,
-  vultureclassdroidfighter,
   droidtrifighter,
-  firesprayclasspatrolcraft,
   hmpdroidgunship,
   tridentclassassaultship,
-  gauntletfighter,
+  firesprayclasspatrolcraft,
   rogueclassstarfighter,
+  gauntletfighter,
 };
 
 export default ships;

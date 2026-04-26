@@ -8,45 +8,17 @@ const t: ShipType = {
   dialCodes: ['NR2'],
   faction: 'Resistance',
   stats: [
-    {
-      arc: 'Front Arc',
-      type: 'attack',
-      value: 2,
-    },
-    {
-      type: 'agility',
-      value: 1,
-    },
-    {
-      type: 'hull',
-      value: 4,
-    },
-    {
-      type: 'shields',
-      value: 5,
-    },
+    { arc: 'Front Arc', type: 'attack', value: 2 },
+    { type: 'agility', value: 1 },
+    { type: 'hull', value: 4 },
+    { type: 'shields', value: 5 },
   ],
   actions: [
-    {
-      difficulty: 'White',
-      type: 'Focus',
-    },
-    {
-      difficulty: 'White',
-      type: 'Lock',
-    },
-    {
-      difficulty: 'Red',
-      type: 'Barrel Roll',
-    },
-    {
-      difficulty: 'Red',
-      type: 'Boost',
-    },
-    {
-      difficulty: 'White',
-      type: 'Reload',
-    },
+    { difficulty: 'White', type: 'Focus' },
+    { difficulty: 'White', type: 'Lock' },
+    { difficulty: 'Red', type: 'Barrel Roll' },
+    { difficulty: 'Red', type: 'Boost' },
+    { difficulty: 'White', type: 'Reload' },
   ],
   pilots: [
     {
@@ -77,15 +49,12 @@ const t: ShipType = {
       ability:
         'After a ship at range 1 performs an action during its Perform Action step, if that action is on your action bar, you may spend 1 [Charge] to perform that action, treating it as red.',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zoriibliss.png',
-      charges: {
-        value: 1,
-        recovers: 1,
-      },
+      charges: { value: 1, recovers: 1 },
       image: 'https://infinitearenas.com/xw2/images/pilots/zoriibliss-wartime.png',
       caption: 'Corsair of Kijimi',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1152,
     },
     {
       name: 'Teza Nasz',
@@ -108,7 +77,7 @@ const t: ShipType = {
       caption: 'Old Soldier',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1153,
     },
     {
       name: 'Wilsa Teshlo',
@@ -131,7 +100,7 @@ const t: ShipType = {
       caption: 'Veiled Sorority Privateer',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1154,
     },
     {
       name: 'Shasa Zaro',
@@ -154,7 +123,7 @@ const t: ShipType = {
       caption: 'Artistic Ace',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1155,
     },
     {
       name: 'Lega Fossang',
@@ -177,7 +146,7 @@ const t: ShipType = {
       caption: 'Hero of Humbarine',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1156,
     },
     {
       name: 'Aftab Ackbar',
@@ -200,7 +169,7 @@ const t: ShipType = {
       caption: '“Junior”',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1157,
     },
     {
       name: 'Corus Kapellim',
@@ -223,7 +192,7 @@ const t: ShipType = {
       caption: '“Gentleman Flyer”',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1158,
     },
     {
       name: 'C’ai Threnalli',
@@ -246,7 +215,7 @@ const t: ShipType = {
       caption: 'Tenacious Survivor',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1159,
     },
     {
       name: 'New Republic Patrol',
@@ -267,7 +236,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/newrepublicpatrol-wartime.png',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: 1160,
     },
     {
       name: 'Kijimi Spice Runner',
@@ -288,7 +257,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/kijimispicerunner-wartime.png',
       keywords: ['Y-wing'],
       epic: true,
-      restricted: 0,
+      ffg: null,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Y-wing-bta-nr2.png',

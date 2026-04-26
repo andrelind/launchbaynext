@@ -379,7 +379,7 @@ const t: UpgradeBase[] = [
       },
     ],
     cost: { value: 2 },
-    restrictions: [{}],
+    restrictions: [{ sides: ['dark'] }],
     standard: true,
     extended: true,
     epic: true,
