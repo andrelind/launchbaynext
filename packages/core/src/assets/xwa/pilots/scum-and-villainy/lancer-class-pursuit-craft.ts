@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'Force of Her Own',
       initiative: 4,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'asajjventress',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your [Single Turret Arc] at range 0-2 and spend 1 [Force]. If you do, that ship gains 1 stress token unless it removes 1 green token.',
@@ -53,7 +53,7 @@ const t: ShipType = {
       ffg: 219,
       standard: false,
       epic: true,
-      loadout: 16,
+      loadout: 12,
       extended: true,
       keywords: ['Bounty Hunter', 'Dark Side'],
       image: 'https://infinitearenas.com/xw2/images/pilots/asajjventress.png',
@@ -65,7 +65,7 @@ const t: ShipType = {
       caption: 'Black Sun Contractor',
       initiative: 5,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'ketsuonyo',
       ability:
         'At the start of the Engagement Phase, you may choose 1 ship in both your [Front Arc] and [Single Turret Arc] at range 0-1. If you do, that ship gains 1 tractor token.',
@@ -73,7 +73,7 @@ const t: ShipType = {
       ffg: 218,
       standard: false,
       epic: true,
-      loadout: 15,
+      loadout: 12,
       extended: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       image: 'https://infinitearenas.com/xw2/images/pilots/ketsuonyo.png',
@@ -85,7 +85,7 @@ const t: ShipType = {
       caption: 'Artistic Saboteur',
       initiative: 3,
       limited: 1,
-      cost: 15,
+      cost: 14,
       xws: 'sabinewren-lancerclasspursuitcraft',
       ability:
         'While you defend, if the attacker is in your [Single Turret Arc] at range 0-2, you may add 1 [Focus] result to your dice results.',
@@ -93,7 +93,7 @@ const t: ShipType = {
       ffg: 220,
       standard: false,
       epic: true,
-      loadout: 16,
+      loadout: 13,
       extended: true,
       keywords: ['Bounty Hunter', 'Mandalorian'],
       image:

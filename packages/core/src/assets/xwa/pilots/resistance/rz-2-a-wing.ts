@@ -49,7 +49,7 @@ const t: ShipType = {
       caption: 'Luminous Mentor',
       initiative: 5,
       limited: 1,
-      cost: 10,
+      cost: 9,
       xws: 'lulolampar',
       ability:
         'While you defend or perform a primary attack, if you are stressed, you must roll 1 fewer defense die or 1 additional attack die.',
@@ -58,7 +58,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 8,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/lulolampar.png',
       artwork:
@@ -157,7 +157,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 3,
+      loadout: 4,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bluesquadronrecruit.png',
@@ -169,7 +169,7 @@ const t: ShipType = {
       name: 'Zizi Tlo',
       initiative: 5,
       limited: 1,
-      cost: 11,
+      cost: 10,
       xws: 'zizitlo',
       ability:
         'After you defend or perform an attack, you may spend 1 [Charge] to gain 1 focus or evade token.',
@@ -180,7 +180,7 @@ const t: ShipType = {
       ffg: 638,
       caption: 'Committed to the Cause',
       keywords: ['A-wing'],
-      loadout: 14,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zizitlo.png',
       artwork:
@@ -190,7 +190,7 @@ const t: ShipType = {
       name: 'Ronith Blario',
       initiative: 2,
       limited: 1,
-      cost: 9,
+      cost: 8,
       xws: 'ronithblario',
       ability:
         "While you defend or perform an attack, if the enemy ship is in another friendly ship's [Single Turret Arc], you may spend 1 focus token from that friendly ship to change 1 of your [Focus] results to an [Evade] or [Hit] result.",
@@ -200,7 +200,7 @@ const t: ShipType = {
       ffg: 639,
       caption: 'Reckless Rookie',
       keywords: ['A-wing'],
-      loadout: 9,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/ronithblario.png',
       artwork:
@@ -220,7 +220,7 @@ const t: ShipType = {
       epic: true,
       ffg: 704,
       keywords: ['A-wing'],
-      loadout: 4,
+      loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/merlcobben.png',
       artwork:
@@ -260,7 +260,7 @@ const t: ShipType = {
       epic: true,
       ffg: 702,
       keywords: ['A-wing'],
-      loadout: 3,
+      loadout: 4,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wrobietyce.png',
       artwork:
@@ -271,7 +271,7 @@ const t: ShipType = {
       caption: 'Skillful Wingmate',
       initiative: 5,
       limited: 1,
-      cost: 10,
+      cost: 9,
       xws: 'seftinvanik',
       ability:
         'After you perform a [Boost] action, you may transfer 1 evade token to a friendly ship at range 1.',
@@ -280,7 +280,7 @@ const t: ShipType = {
       epic: true,
       ffg: 701,
       keywords: ['A-wing'],
-      loadout: 11,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/seftinvanik.png',
       artwork:

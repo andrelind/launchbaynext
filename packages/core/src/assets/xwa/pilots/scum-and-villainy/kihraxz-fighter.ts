@@ -75,7 +75,7 @@ const t: ShipType = {
       ffg: 194,
       standard: false,
       epic: true,
-      loadout: 11,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainjostero.png',
       artwork:
@@ -120,7 +120,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['Bounty Hunter'],
-      loadout: 14,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/graz.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/graz.png',
@@ -172,7 +172,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['Bounty Hunter'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/viktorhel.png',
       artwork:

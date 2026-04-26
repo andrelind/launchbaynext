@@ -87,7 +87,7 @@ const t: ShipType = {
       caption: 'Veteran of Scarif',
       initiative: 4,
       limited: 1,
-      cost: 13,
+      cost: 12,
       xws: 'majorvermeil',
       ability:
         'While you perform an attack, if the defender does not have any green tokens, you may change 1 of your blank or [Focus] results to a [Hit] result.',
@@ -96,7 +96,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 19,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorvermeil.png',
       artwork:

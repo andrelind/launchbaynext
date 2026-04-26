@@ -48,7 +48,7 @@ const t: ShipType = {
       caption: 'Dry-Witted Droid',
       initiative: 3,
       limited: 1,
-      cost: 20,
+      cost: 19,
       xws: 'leebo',
       ability:
         'After you defend or perform an attack, if you spent a calculate token, gain 1 calculate token.',
@@ -61,6 +61,7 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Crew',
+        'Gunner',
         'Illicit',
         'Illicit',
         'Modification',
@@ -80,12 +81,13 @@ const t: ShipType = {
       caption: 'Hotshot Mercenary',
       initiative: 5,
       limited: 1,
-      cost: 20,
+      cost: 19,
       xws: 'dashrendar',
       ability: 'While you move, you ignore obstacles.',
       slots: [
         'Talent',
         'Crew',
+        'Gunner',
         'Illicit',
         'Illicit',
         'Modification',
@@ -126,7 +128,7 @@ const t: ShipType = {
       caption: 'Wisdom of Ages',
       initiative: 3,
       limited: 1,
-      cost: 17,
+      cost: 16,
       loadout: 10,
       xws: 'leebo-swz103-rebelalliance',
       ability:
@@ -138,6 +140,7 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Crew',
+        'Gunner',
         'Illicit',
         'Illicit',
         'Modification',
@@ -164,8 +167,8 @@ const t: ShipType = {
       caption: 'Freighter for Hire',
       initiative: 5,
       limited: 1,
-      cost: 19,
-      loadout: 20,
+      cost: 18,
+      loadout: 24,
       xws: 'dashrendar-swz103-rebelalliance',
       ability:
         'During the Engagement Phase, you ignore the effects of obstacles that you are overlapping.',
@@ -178,6 +181,7 @@ const t: ShipType = {
         'Crew',
         'Illicit',
         'Illicit',
+        'Gunner',
         'Modification',
         'Missile',
         'Title',
@@ -202,7 +206,7 @@ const t: ShipType = {
       caption: "He Thinks He's Funny",
       initiative: 3,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'leebo-swz103-sl-rebelalliance',
       ability:
         'At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3.',
@@ -233,7 +237,7 @@ const t: ShipType = {
       caption: 'In it for Himself',
       initiative: 5,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'dashrendar-swz103-sl-rebelalliance',
       ability:
         'After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1.',

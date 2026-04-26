@@ -51,7 +51,7 @@ const t: ShipType = {
       xws: 'poedameron',
       ability:
         'After you perform an action, you may spend 1 [Charge] to perform a white action, treating it as red.',
-      cost: 18,
+      cost: 17,
       charges: { value: 1, recovers: 1 },
       slots: [
         'Astromech',
@@ -66,7 +66,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 24,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/poedameron.png',
       artwork:
@@ -134,7 +134,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 9,
+      loadout: 11,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/redsquadronexpert.png',
@@ -148,8 +148,8 @@ const t: ShipType = {
       limited: 0,
       xws: 'blacksquadronace-t70xwing',
       text: "During the Cold War, Poe Dameron's Black Squadron conducted daring covert operations against the First Order in defiance of treaties ratified by the New Republic Senate.",
-      cost: 13,
-      loadout: 17,
+      cost: 12,
+      loadout: 14,
       slots: [
         'Astromech',
         'Modification',
@@ -177,13 +177,13 @@ const t: ShipType = {
       xws: 'elloasty',
       ability:
         'After you reveal a red Tallon Roll ([Tallon Roll Left] or [Tallon Roll Right]) maneuver, if you have 2 or fewer stress tokens, treat that maneuver as white.',
-      cost: 14,
+      cost: 13,
       slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent'],
       ffg: 419,
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 16,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/elloasty.png',
       artwork:
@@ -270,7 +270,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 16,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/niennunb.png',
       artwork:
@@ -311,7 +311,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jessikapava.png',
       artwork:
@@ -411,7 +411,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 13,
-      loadout: 15,
+      loadout: 17,
       slots: [
         'Astromech',
         'Modification',
@@ -452,6 +452,28 @@ const t: ShipType = {
       keywords: ['X-wing'],
       epic: true,
       ffg: 1055,
+    },
+    {
+      name: 'Kazuda Xiono',
+      xws: 'kazudaxiono-legendsandrelics',
+      initiative: 4,
+      limited: 1,
+      caption: 'Resistance Spy',
+      standard: true,
+      extended: true,
+      cost: 12,
+      loadout: 13,
+      slots: ['Talent', 'Astromech', 'Modification', 'Tech', 'Configuration'],
+      ability:
+        'While you defend or perform an attack, if the enemy ship has more damage cards than you have, you may change a [Focus] result into an [Evade] or [Hit] result.',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/kazudaxiono-legendsandrelics.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kazudaxiono-legendsandrelics.png',
+      keywords: ['X-wing'],
+      epic: true,
+      id: 739,
+      ffg: null,
     },
     {
       name: 'C’ai Threnalli',
@@ -600,7 +622,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/stomeronistarck-evacuationofdqar.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/stomeronistarck-evacuationofdqar.png',
-      cost: 14,
+      cost: 13,
       loadout: 0,
       shipActions: [
         {

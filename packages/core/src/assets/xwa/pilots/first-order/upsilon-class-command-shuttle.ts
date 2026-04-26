@@ -48,7 +48,7 @@ const t: ShipType = {
       caption: 'Hypercomms Specialist',
       initiative: 2,
       limited: 1,
-      cost: 18,
+      cost: 17,
       xws: 'lieutenantdormitz',
       ability:
         'Setup: After you are placed, other friendly ships can be placed anywhere in the play area at range 0-2 of you.',
@@ -77,7 +77,7 @@ const t: ShipType = {
       caption: 'Stentorian Commander',
       initiative: 4,
       limited: 1,
-      cost: 18,
+      cost: 17,
       xws: 'majorstridan',
       ability:
         'While you coordinate or resolve the effect of one of your upgrades, you may treat friendly ships at range 2-3 as being at range 0 or range 1.',
@@ -107,7 +107,7 @@ const t: ShipType = {
       caption: 'Alert Flight Controller',
       initiative: 1,
       limited: 1,
-      cost: 16,
+      cost: 15,
       charges: { value: 1, recovers: 1 },
       ability:
         'During the Activation or Engagement Phase, after a ship in your [Front Arc] at range 0-2 gains 1 stress token, you may spend 1 [Charge]. If you do, that ship gains 1 tractor token.',
@@ -151,7 +151,7 @@ const t: ShipType = {
       ffg: 413,
       standard: false,
       epic: true,
-      loadout: 10,
+      loadout: 18,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/starkillerbasepilot.png',
@@ -163,7 +163,7 @@ const t: ShipType = {
       caption: 'Obedient Shuttle Pilot',
       initiative: 3,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'lieutenanttavson',
       ability:
         'After you suffer damage, you may spend 1 [Charge] to perform an action.',
@@ -193,7 +193,7 @@ const t: ShipType = {
       caption: 'Principled Instructor',
       initiative: 4,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'captaincardinal',
       ability:
         'While a friendly ship at range 1-2 with lower initiative than you defends or performs an attack, if you have at least 1 [Charge], that ship may reroll 1 [Focus] result. After an enemy ship at range 0-3 is destroyed, lose 1 [Charge].',

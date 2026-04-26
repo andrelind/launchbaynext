@@ -51,7 +51,7 @@ const t: ShipType = {
       caption: 'Red Baron',
       initiative: 6,
       limited: 1,
-      cost: 14,
+      cost: 13,
       xws: 'majorvonreg',
       ability:
         'During the System Phase, you may choose 1 enemy ship in your [Bullseye Arc]. That ship gains 1 deplete or strain token of your choice.',
@@ -67,7 +67,7 @@ const t: ShipType = {
       epic: true,
       ffg: 624,
       keywords: ['TIE'],
-      loadout: 17,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/majorvonreg.png',
       artwork:
@@ -78,7 +78,7 @@ const t: ShipType = {
       caption: 'Trick of the Light',
       initiative: 5,
       limited: 1,
-      cost: 13,
+      cost: 12,
       xws: 'holo',
       ability:
         'At the start of the Engagement Phase, you must transfer 1 of your tokens to another friendly ship at range 0-2.',
@@ -94,7 +94,7 @@ const t: ShipType = {
       epic: true,
       ffg: 625,
       keywords: ['TIE'],
-      loadout: 15,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/holo.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/holo.png',

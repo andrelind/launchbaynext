@@ -247,7 +247,7 @@ const t: ShipType = {
       ffg: 91,
       standard: true,
       epic: true,
-      loadout: 2,
+      loadout: 0,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/obsidiansquadronpilot.png',
@@ -368,7 +368,7 @@ const t: ShipType = {
       xws: 'darkcurse-battleofyavin',
       ability: "While you defend, the attacker's dice cannot be modified.",
       keywords: ['TIE'],
-      cost: 9,
+      cost: 10,
       standard: true,
       epic: true,
       extended: true,

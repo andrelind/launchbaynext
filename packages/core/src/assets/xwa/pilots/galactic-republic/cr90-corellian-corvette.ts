@@ -46,7 +46,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 0,
-      cost: 36,
+      cost: 35,
       xws: 'republicjudiciary',
       slots: [
         'Command',

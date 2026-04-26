@@ -23,7 +23,7 @@ const t: ShipType = {
     {
       xws: 'colicoiddestroyer',
       name: 'Colicoid Destroyer',
-      cost: 26,
+      cost: 25,
       initiative: 8,
       limited: 0,
       slots: [
@@ -47,7 +47,7 @@ const t: ShipType = {
       image:
         'https://infinitearenas.com/xw2/images/pilots/colicoiddestroyer.png',
       ffg: 1091,
-      loadout: 45,
+      loadout: 40,
     },
     {
       name: 'Asajj Ventress',

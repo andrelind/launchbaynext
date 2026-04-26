@@ -94,7 +94,7 @@ const t: ShipType = {
       caption: 'Shipping Magnate',
       initiative: 4,
       limited: 1,
-      cost: 18,
+      cost: 17,
       xws: 'emonazzameen',
       ability:
         'If you would drop a device using a (1 [Straight]) template, you may use the (3 [Turn Left]), (3 [Straight]), or (3 [Turn Right]) template instead.',
@@ -111,7 +111,7 @@ const t: ShipType = {
       ffg: 150,
       standard: true,
       epic: true,
-      loadout: 20,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/emonazzameen.png',
       artwork:
@@ -139,7 +139,7 @@ const t: ShipType = {
       ffg: 151,
       standard: true,
       epic: true,
-      loadout: 8,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kathscarlet.png',
       artwork:
@@ -162,11 +162,12 @@ const t: ShipType = {
         'Modification',
         'Device',
         'Talent',
+        'Title',
       ],
       ffg: 152,
       standard: true,
       epic: true,
-      loadout: 13,
+      loadout: 18,
       extended: true,
       keywords: ['Bounty Hunter'],
       image: 'https://infinitearenas.com/xw2/images/pilots/koshkafrost.png',
@@ -178,7 +179,7 @@ const t: ShipType = {
       caption: 'Imperial Deserter',
       initiative: 3,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'krassistrelix',
       ability:
         'You can perform [Front Arc] special attacks from your [Rear Arc]. While you perform a special attack, you may reroll 1 attack die.',
@@ -194,7 +195,7 @@ const t: ShipType = {
       ffg: 153,
       standard: true,
       epic: true,
-      loadout: 18,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/krassistrelix.png',
       artwork:
@@ -205,7 +206,7 @@ const t: ShipType = {
       caption: 'I Smell Profit!',
       initiative: 1,
       limited: 1,
-      cost: 17,
+      cost: 16,
       loadout: 12,
       xws: 'hondoohnaka',
       ability:

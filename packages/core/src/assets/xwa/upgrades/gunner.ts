@@ -62,7 +62,7 @@ const t: UpgradeBase[] = [
         image: 'https://infinitearenas.com/xw2/images/upgrades/bistan.png',
       },
     ],
-    cost: { value: 16 },
+    cost: { value: 50 },
     restrictions: [{ factions: ['rebelalliance'] }],
     standard: true,
     epic: true,
@@ -908,6 +908,28 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 10 },
     restrictions: [{ factions: ['rebelalliance'] }],
+    standard: true,
+    extended: true,
+    epic: true,
+  },
+  {
+    limited: 1,
+    xws: 'wedgeantilles-legendsandrelics',
+    sides: [
+      {
+        title: 'Wedge Antilles',
+        type: 'Gunner',
+        ability:
+          'While you perform a [Single Turret Arc] attack, if you are not in the defenders firing arc, the defender rolls 1 fewer defense die.',
+        slots: ['Gunner'],
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/wedgeantilles-legendsandrelics.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/wedgeantilles-legendsandrelics.png',
+      },
+    ],
+    cost: { value: 10 },
+    restrictions: [{ factions: ['resistance'] }],
     standard: true,
     extended: true,
     epic: true,

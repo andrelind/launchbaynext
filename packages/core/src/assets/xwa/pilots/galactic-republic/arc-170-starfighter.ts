@@ -189,7 +189,7 @@ const t: ShipType = {
     {
       name: '“Odd Ball”',
       xws: 'oddball-siegeofcoruscant',
-      cost: 13,
+      cost: 12,
       caption: 'Siege of Coruscant',
       initiative: 5,
       limited: 1,

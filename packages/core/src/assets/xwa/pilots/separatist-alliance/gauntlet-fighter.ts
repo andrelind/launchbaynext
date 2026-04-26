@@ -99,7 +99,7 @@ const t: ShipType = {
       xws: 'deathwatchwarrior',
       name: 'Death Watch Warrior',
       cost: 15,
-      loadout: 20,
+      loadout: 18,
       initiative: 2,
       limited: 0,
       standard: true,

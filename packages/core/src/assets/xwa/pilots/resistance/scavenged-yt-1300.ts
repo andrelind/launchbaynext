@@ -66,12 +66,12 @@ const t: ShipType = {
       xws: 'chewbacca-scavengedyt1300',
       ability:
         'After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.',
-      cost: 17,
-      loadout: 18,
+      cost: 16,
+      loadout: 14,
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Illicit',
@@ -102,7 +102,7 @@ const t: ShipType = {
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Illicit',
@@ -135,7 +135,7 @@ const t: ShipType = {
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Illicit',
@@ -149,7 +149,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter', 'Light Side', 'YT-1300'],
-      loadout: 21,
+      loadout: 23,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/rey.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rey.png',
@@ -172,7 +172,7 @@ const t: ShipType = {
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Illicit',
@@ -201,12 +201,12 @@ const t: ShipType = {
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/landocalrissian-scavengedyt1300.png',
       charges: { value: 3, recovers: 1 },
-      cost: 18,
-      loadout: 20,
+      cost: 17,
+      loadout: 17,
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Illicit',

@@ -101,7 +101,7 @@ const t: ShipType = {
       ffg: 54,
       standard: true,
       epic: true,
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/bodhirook.png',
       artwork:
@@ -127,7 +127,7 @@ const t: ShipType = {
       ffg: 56,
       standard: true,
       epic: true,
-      loadout: 12,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/cassianandor.png',
       artwork:

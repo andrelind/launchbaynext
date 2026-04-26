@@ -52,7 +52,7 @@ const t: ShipType = {
       caption: 'Black Leader',
       initiative: 6,
       limited: 1,
-      cost: 15,
+      cost: 16,
       xws: 'darthvader',
       ability:
         'After you perform an action, you may spend 1 [Force] to perform an action.',
@@ -67,7 +67,7 @@ const t: ShipType = {
       ffg: 93,
       standard: true,
       epic: true,
-      loadout: 7,
+      loadout: 10,
       extended: true,
       keywords: ['Dark Side', 'Sith', 'TIE'],
       image: 'https://infinitearenas.com/xw2/images/pilots/darthvader.png',
@@ -148,7 +148,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['TIE'],
-      loadout: 7,
+      loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/vedfoslo.png',
       artwork:
@@ -168,7 +168,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 11,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zertikstrom.png',
       artwork:
@@ -209,7 +209,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       cost: 11,
-      loadout: 11,
+      loadout: 13,
       xws: 'junoeclipse',
       ability:
         'After you perform an action, you may perform a red [Boost] action.',

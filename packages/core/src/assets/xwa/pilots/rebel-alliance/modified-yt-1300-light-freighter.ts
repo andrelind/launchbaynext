@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'The Mighty',
       initiative: 4,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'chewbacca',
       ability:
         'Before you would be dealt a faceup damage card, you may spend 1 [Charge] to be dealt the card facedown instead.',
@@ -52,7 +52,7 @@ const t: ShipType = {
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Modification',
@@ -76,14 +76,14 @@ const t: ShipType = {
       caption: 'Scoundrel for Hire',
       initiative: 6,
       limited: 1,
-      cost: 20,
+      cost: 19,
       xws: 'hansolo-modifiedyt1300lightfreighter',
       ability:
         'After you roll dice, if you are at range 0-1 of an obstacle, you may reroll all of your dice. This does not count as rerolling for the purpose of other effects.',
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Modification',
@@ -96,7 +96,7 @@ const t: ShipType = {
       ffg: 69,
       standard: true,
       epic: true,
-      loadout: 21,
+      loadout: 18,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image:
@@ -109,14 +109,14 @@ const t: ShipType = {
       caption: 'General of the Alliance',
       initiative: 5,
       limited: 1,
-      cost: 19,
+      cost: 18,
       xws: 'landocalrissian-modifiedyt1300lightfreighter',
       ability:
         'After you fully execute a blue maneuver, you may choose a friendly ship at range 0-3. That ship may perform an action.',
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Modification',
@@ -128,7 +128,7 @@ const t: ShipType = {
       ffg: 70,
       standard: true,
       epic: true,
-      loadout: 20,
+      loadout: 16,
       extended: true,
       keywords: ['Freighter', 'YT-1300'],
       image:
@@ -175,7 +175,7 @@ const t: ShipType = {
       slots: [
         'Crew',
         'Crew',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Illicit',
         'Modification',

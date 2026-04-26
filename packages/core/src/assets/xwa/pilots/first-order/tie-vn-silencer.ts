@@ -93,7 +93,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Dark Side', 'TIE'],
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kyloren.png',
       artwork:
@@ -118,7 +118,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 5,
+      loadout: 7,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/firstordertestpilot.png',
@@ -132,7 +132,7 @@ const t: ShipType = {
       caption: 'Quantity Over Quality',
       initiative: 4,
       limited: 1,
-      cost: 14,
+      cost: 13,
       ability:
         'While you are stressed, you may treat enemy ships in your [Front Arc] at range 0-1 as being in your [Bullseye Arc].',
       slots: [
@@ -147,7 +147,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 13,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/recoil.png',
       artwork:
@@ -167,7 +167,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 15,
+      loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/avenger.png',
       artwork:
@@ -185,7 +185,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 5,
+      loadout: 7,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/sienarjaemusengineer.png',
@@ -206,7 +206,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/rush.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/rush.png',
@@ -217,7 +217,7 @@ const t: ShipType = {
       caption: "Evacuation of D'Qar",
       initiative: 5,
       limited: 1,
-      cost: 18,
+      cost: 17,
       loadout: 0,
       ability:
         'Before an enemy ship in your [Bullseye Arc] is dealt a facedown damage card, you may spend 1 [Force]. If you do, that damage card is dealt faceup instead.',

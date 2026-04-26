@@ -55,10 +55,11 @@ const t: ShipType = {
       caption: 'Skull Leader',
       initiative: 6,
       limited: 1,
-      cost: 14,
-      loadout: 7,
+      cost: 16,
+      loadout: 12,
       xws: 'fennrau',
-      ability: 'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
+      ability:
+        'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
       slots: ['Talent', 'Modification', 'Modification', 'Torpedo', 'Talent'],
       ffg: 155,
       standard: true,
@@ -66,7 +67,8 @@ const t: ShipType = {
       keywords: ['Mandalorian'],
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/fennrau.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau.png',
     },
     {
       name: 'Joy Rekkoff',
@@ -82,10 +84,11 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Mandalorian'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/joyrekkoff.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/joyrekkoff.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/joyrekkoff.png',
     },
     {
       name: 'Kad Solus',
@@ -103,7 +106,8 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/kadsolus.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kadsolus.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kadsolus.png',
     },
     {
       name: 'Old Teroch',
@@ -122,7 +126,8 @@ const t: ShipType = {
       loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/oldteroch.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/oldteroch.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/oldteroch.png',
     },
     {
       name: 'Skull Squadron Pilot',
@@ -138,8 +143,10 @@ const t: ShipType = {
       keywords: ['Mandalorian'],
       loadout: 10,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/skullsquadronpilot.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/skullsquadronpilot.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/skullsquadronpilot.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/skullsquadronpilot.png',
       caption: '',
     },
     {
@@ -157,7 +164,8 @@ const t: ShipType = {
       loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/zealousrecruit.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zealousrecruit.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zealousrecruit.png',
       caption: '',
     },
     {
@@ -175,8 +183,10 @@ const t: ShipType = {
       loadout: 15,
       extended: true,
       caption: 'Selfless Protector',
-      image: 'https://infinitearenas.com/xw2/images/pilots/mandalorianroyalguard.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianroyalguard.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/mandalorianroyalguard.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/mandalorianroyalguard.png',
       ffg: 1056,
     },
     {
@@ -199,7 +209,8 @@ const t: ShipType = {
       extended: true,
       keywords: ['Mandalorian'],
       epic: true,
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/torphun.png',
       ffg: 1057,
     },
     {
@@ -207,17 +218,24 @@ const t: ShipType = {
       caption: 'Armed and Dangerous',
       initiative: 6,
       limited: 1,
-      cost: 15,
+      cost: 17,
       loadout: 0,
       xws: 'fennrau-armedanddangerous',
-      ability: 'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/fennrau-armedanddangerous.png',
+      ability:
+        'While you defend or perform an attack, if the attack range is 1, you may roll 1 additional die.',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/fennrau-armedanddangerous.png',
       shipAbility: {
         name: 'Concordia Faceoff',
         text: "While you defend, if the attack range is 1 and you are in the attacker's [Front Arc], change 1 result to an [Evade] result.",
       },
-      standardLoadout: ['fearless', 'adaptablepowersystems-armedanddangerous', 'beskarreinforcedplating'],
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-armedanddangerous.png',
+      standardLoadout: [
+        'fearless',
+        'adaptablepowersystems-armedanddangerous',
+        'beskarreinforcedplating',
+      ],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/fennrau-armedanddangerous.png',
       standard: true,
       extended: true,
       keywords: ['Mandalorian'],

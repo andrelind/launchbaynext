@@ -91,7 +91,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['B-wing'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bluesquadronpilot.png',
@@ -122,7 +122,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['B-wing'],
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/braylenstramm.png',
       artwork:
@@ -190,7 +190,7 @@ const t: ShipType = {
       xws: 'herasyndulla-asf01bwing',
       name: 'Hera Syndulla',
       caption: 'Phoenix Leader',
-      cost: 15,
+      cost: 14,
       initiative: 6,
       limited: 1,
       ability:
@@ -210,7 +210,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 878,
-      loadout: 21,
+      loadout: 16,
       extended: true,
       keywords: ['B-wing', 'Spectre'],
       artwork:
@@ -296,7 +296,7 @@ const t: ShipType = {
       xws: 'ginamoonsong-battleoverendor',
       name: 'Gina Moonsong',
       caption: 'Battle Over Endor',
-      cost: 16,
+      cost: 15,
       initiative: 5,
       limited: 1,
       ability:

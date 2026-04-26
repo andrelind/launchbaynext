@@ -85,7 +85,7 @@ const t: UpgradeBase[] = [
         ffg: 255,
       },
     ],
-    cost: { value: 10 },
+    cost: { value: 8 },
     standard: false,
     epic: true,
     extended: true,
@@ -184,6 +184,27 @@ const t: UpgradeBase[] = [
     extended: true,
     epic: true,
     standardLoadoutOnly: true,
+  },
+  {
+    limited: 0,
+    xws: 'blindspottargeter-legendsandrelics',
+    sides: [
+      {
+        title: 'Blindspot Targeter',
+        type: 'Sensor',
+        ability:
+          "While you perform a primary attack, if you are not in the defender's firing arc, you may change 1 [Focus] result to a [Hit] result.",
+        slots: ['Sensor'],
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/blindspottargeter-legendsandrelics.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/blindspottargeter.png',
+      },
+    ],
+    cost: { value: 8 },
+    standard: true,
+    extended: true,
+    epic: true,
   },
 ];
 

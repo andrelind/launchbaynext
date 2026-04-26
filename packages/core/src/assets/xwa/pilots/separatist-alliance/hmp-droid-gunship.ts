@@ -74,7 +74,7 @@ const t: ShipType = {
     {
       xws: 'baktoiddrone',
       name: 'Baktoid Drone',
-      cost: 10,
+      cost: 9,
       initiative: 1,
       limited: 0,
       slots: ['Missile', 'Missile', 'Modification', 'Device', 'Configuration'],
@@ -83,7 +83,7 @@ const t: ShipType = {
       ffg: 669,
       text: 'A late-war development for the Confederacy of Independent Systems, the droid gunship uses specialized repulsors to nimbly strafe targets and precisely drop battle droids.',
       keywords: ['Droid'],
-      loadout: 13,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/baktoiddrone.png',
       artwork:
@@ -104,7 +104,7 @@ const t: ShipType = {
       epic: true,
       ffg: 668,
       keywords: ['Droid'],
-      loadout: 12,
+      loadout: 13,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/geonosianprototype.png',
@@ -115,7 +115,7 @@ const t: ShipType = {
       xws: 'dgs286',
       name: 'DGS-286',
       caption: 'Ambush Protocols',
-      cost: 11,
+      cost: 10,
       initiative: 3,
       limited: 1,
       ability:
@@ -133,7 +133,7 @@ const t: ShipType = {
       epic: true,
       ffg: 664,
       keywords: ['Droid'],
-      loadout: 17,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dgs286.png',
       artwork:
@@ -143,7 +143,7 @@ const t: ShipType = {
       xws: 'onderonoppressor',
       name: 'Onderon Oppressor',
       caption: 'Atmospheric Attack Module',
-      cost: 10,
+      cost: 9,
       initiative: 3,
       limited: 2,
       ability:
@@ -153,7 +153,7 @@ const t: ShipType = {
       epic: true,
       ffg: 665,
       keywords: ['Droid'],
-      loadout: 12,
+      loadout: 9,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/onderonoppressor.png',
@@ -169,10 +169,10 @@ const t: ShipType = {
       standard: true,
       epic: true,
       slots: ['Missile', 'Missile', 'Modification', 'Device', 'Configuration'],
-      cost: 11,
+      cost: 10,
       ffg: 667,
       keywords: ['Droid'],
-      loadout: 15,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/separatistpredator.png',

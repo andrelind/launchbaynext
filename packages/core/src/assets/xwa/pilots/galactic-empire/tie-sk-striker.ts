@@ -54,7 +54,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/countdown.png',
       artwork:
@@ -74,7 +74,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 17,
+      loadout: 19,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/duchess.png',
       artwork:
@@ -94,7 +94,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 11,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/puresabacc.png',
       artwork:
@@ -112,7 +112,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/blacksquadronscout.png',
@@ -132,7 +132,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 4,
+      loadout: 5,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/planetarysentinel.png',
@@ -154,7 +154,7 @@ const t: ShipType = {
       epic: true,
       ffg: 633,
       keywords: ['TIE'],
-      loadout: 14,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/vagabond.png',
       artwork:

@@ -98,7 +98,7 @@ const t: ShipType = {
       xws: 'imperialsupercommando',
       name: 'Imperial Super Commando',
       cost: 15,
-      loadout: 20,
+      loadout: 18,
       initiative: 2,
       limited: 0,
       standard: true,

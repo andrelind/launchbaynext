@@ -63,7 +63,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       standard: true,
-      cost: 15,
+      cost: 14,
       slots: [
         'Tech',
         'Tech',
@@ -80,7 +80,7 @@ const t: ShipType = {
       keywords: ['Dark Side', 'Light Side', 'TIE'],
       force: { value: 3, recovers: 1, side: ['dark', 'light'] },
       epic: true,
-      loadout: 15,
+      loadout: 12,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/kyloren-tiewiwhispermodifiedinterceptor.png',
@@ -93,7 +93,7 @@ const t: ShipType = {
       initiative: 5,
       limited: 1,
       standard: true,
-      cost: 13,
+      cost: 12,
       slots: [
         'Gunner',
         'Tech',
@@ -109,7 +109,7 @@ const t: ShipType = {
       caption: 'Herald of Destruction',
       keywords: ['TIE'],
       epic: true,
-      loadout: 17,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wrath.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wrath.png',
@@ -166,7 +166,7 @@ const t: ShipType = {
       caption: 'Reap What You Sow',
       ability:
         'Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its [Front Arc].',
-      loadout: 10,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/whirlwind.png',
       artwork:
@@ -192,7 +192,7 @@ const t: ShipType = {
       ffg: 923,
       keywords: ['TIE'],
       epic: true,
-      loadout: 5,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/709thlegionace.png',
       artwork:

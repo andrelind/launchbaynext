@@ -44,7 +44,7 @@ const t: ShipType = {
       caption: 'Inspired Tactician',
       initiative: 3,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'captainoicunn',
       ability:
         'While you perform an attack at attack range 0, treat it as an attack at attack range 1.',
@@ -62,7 +62,7 @@ const t: ShipType = {
       ffg: 146,
       standard: true,
       epic: true,
-      loadout: 18,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/captainoicunn.png',
       artwork:

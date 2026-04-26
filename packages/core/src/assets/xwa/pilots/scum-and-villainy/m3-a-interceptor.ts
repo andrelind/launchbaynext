@@ -67,7 +67,7 @@ const t: ShipType = {
       caption: 'Tansarii Point Crime Lord',
       initiative: 4,
       limited: 1,
-      cost: 10,
+      cost: 9,
       xws: 'genesisred',
       ability:
         'After you acquire a lock, you must remove all of your focus and evade tokens. Then, gain the same number of focus and evade tokens that the locked ship has.',
@@ -75,7 +75,7 @@ const t: ShipType = {
       ffg: 184,
       standard: true,
       epic: true,
-      loadout: 14,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/genesisred.png',
       artwork:

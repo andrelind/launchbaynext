@@ -61,7 +61,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 9,
+      loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dacebonearm.png',
       artwork:
@@ -72,7 +72,7 @@ const t: ShipType = {
       caption: 'Tethan Resister',
       initiative: 3,
       limited: 1,
-      cost: 12,
+      cost: 11,
       xws: 'palobgodalhi',
       ability:
         'At the start of the Engagement Phase, you may choose 1 enemy ship in your firing arc at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.',
@@ -120,7 +120,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 10,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/torkilmux.png',
       artwork:
@@ -161,7 +161,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['Jedi', 'Light Side', 'Freighter'],
       ffg: 897,
-      loadout: 5,
+      loadout: 7,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/kananjarrus-hwk290lightfreighter.png',

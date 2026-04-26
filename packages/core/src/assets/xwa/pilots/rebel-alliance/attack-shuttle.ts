@@ -80,7 +80,7 @@ const t: ShipType = {
       ffg: 36,
       standard: false,
       epic: true,
-      loadout: 6,
+      loadout: 8,
       extended: true,
       keywords: ['Light Side', 'Spectre'],
       image: 'https://infinitearenas.com/xw2/images/pilots/ezrabridger.png',
@@ -101,7 +101,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       keywords: ['Spectre'],
-      loadout: 12,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/herasyndulla.png',
       artwork:

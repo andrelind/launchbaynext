@@ -87,10 +87,10 @@ const t: ShipType = {
         'Force Power',
         'Force Power',
       ],
-      cost: 13,
+      cost: 12,
       ffg: 596,
       caption: 'Hero of the Republic',
-      loadout: 16,
+      loadout: 14,
       extended: true,
       keywords: ['Jedi', 'Light Side', 'Y-wing'],
       image:

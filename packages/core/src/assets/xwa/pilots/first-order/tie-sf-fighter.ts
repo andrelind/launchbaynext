@@ -97,7 +97,7 @@ const t: ShipType = {
       caption: 'Fiery Fanatic',
       initiative: 4,
       limited: 1,
-      cost: 12,
+      cost: 11,
       xws: 'backdraft',
       ability:
         'While you perform a [Single Turret Arc] primary attack, if the defender is in your [Rear Arc], roll 1 additional die.',
@@ -114,7 +114,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 19,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/backdraft.png',
       artwork:
@@ -164,7 +164,7 @@ const t: ShipType = {
       name: 'Lieutenant LeHuse',
       initiative: 5,
       limited: 1,
-      cost: 13,
+      cost: 12,
       xws: 'lieutenantlehuse',
       slots: [
         'Sensor',
@@ -182,7 +182,7 @@ const t: ShipType = {
       ability:
         "While you perform an attack, you may spend another friendly ship's lock on the defender to reroll any number of your results.",
       keywords: ['TIE'],
-      loadout: 25,
+      loadout: 20,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/lieutenantlehuse.png',
@@ -255,7 +255,7 @@ const t: ShipType = {
       caption: "Evacuation of D'Qar",
       initiative: 3,
       limited: 1,
-      cost: 11,
+      cost: 10,
       loadout: 0,
       xws: 'theta3-evacuationofdqar',
       ability:

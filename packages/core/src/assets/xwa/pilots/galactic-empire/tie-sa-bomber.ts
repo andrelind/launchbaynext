@@ -59,7 +59,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 12,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/deathfire.png',
       artwork:
@@ -277,7 +277,7 @@ const t: ShipType = {
       caption: 'Top Cover',
       initiative: 4,
       limited: 1,
-      cost: 11,
+      cost: 10,
       xws: 'captainjonus-swz98',
       ability: 'After you drop or launch a device, gain an evade token.',
       shipAbility: {

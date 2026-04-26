@@ -49,7 +49,7 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Astromech',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Modification',
         'Torpedo',
@@ -75,7 +75,7 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Astromech',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Modification',
         'Torpedo',
@@ -101,7 +101,7 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Astromech',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Modification',
         'Torpedo',
@@ -127,7 +127,7 @@ const t: ShipType = {
       slots: [
         'Talent',
         'Astromech',
-        'Gunner',
+        'Crew',
         'Gunner',
         'Modification',
         'Torpedo',

@@ -61,7 +61,7 @@ const t: ShipType = {
     {
       name: 'Iden Versio',
       initiative: 8,
-      cost: 33,
+      cost: 32,
       limited: 1,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/idenversio-epicsl.png',

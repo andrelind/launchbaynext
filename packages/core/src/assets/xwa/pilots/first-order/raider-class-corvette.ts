@@ -34,7 +34,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 0,
-      cost: 39,
+      cost: 38,
       xws: 'firstordercollaborators',
       slots: [
         'Command',
@@ -64,7 +64,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 1,
-      cost: 13,
+      cost: 33,
       xws: 'gideonhask-epicsl',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/gideonhask-epicsl.png',

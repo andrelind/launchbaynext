@@ -59,7 +59,7 @@ const t: ShipType = {
         'Title',
         'Talent',
       ],
-      cost: 20,
+      cost: 19,
       ffg: 800,
       loadout: 20,
       extended: true,
@@ -72,7 +72,7 @@ const t: ShipType = {
       xws: 'zamwesell',
       name: 'Zam Wesell',
       caption: 'Clawdite Changeling',
-      cost: 19,
+      cost: 18,
       initiative: 5,
       limited: 1,
       ability:

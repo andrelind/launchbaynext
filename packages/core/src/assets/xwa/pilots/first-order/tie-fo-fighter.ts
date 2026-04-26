@@ -512,6 +512,35 @@ const t: ShipType = {
       ffg: 1143,
       slots: [],
     },
+    {
+      name: 'Tamara Ryvora',
+      caption: 'DT-533',
+      initiative: 4,
+      limited: 1,
+      cost: 9,
+      loadout: 8,
+      xws: 'tamararyvora-legendsandrelics',
+      ability:
+        'While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/tamararyvoralegendsandrelics.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/tamararyvora-legendsandrelics.png',
+      slots: [
+        'Talent',
+        'Sensor',
+        'Modification',
+        'Modification',
+        'Tech',
+        'Missile',
+      ],
+      standard: true,
+      extended: true,
+      keywords: ['TIE'],
+      epic: true,
+      id: 263,
+      ffg: null,
+    },
   ],
 };
 

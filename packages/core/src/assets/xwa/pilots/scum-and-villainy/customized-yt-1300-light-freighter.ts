@@ -163,7 +163,7 @@ const t: ShipType = {
       name: 'Han Solo',
       initiative: 6,
       limited: 1,
-      cost: 16,
+      cost: 15,
       loadout: 0,
       xws: 'hansolo-armedanddangerous',
       ability:

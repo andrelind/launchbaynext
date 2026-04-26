@@ -97,7 +97,7 @@ const t: ShipType = {
       xws: 'rampage',
       name: '“Rampage”',
       caption: 'Implacable Pursuer',
-      cost: 11,
+      cost: 10,
       initiative: 4,
       limited: 1,
       ability:
@@ -114,7 +114,7 @@ const t: ShipType = {
       epic: true,
       ffg: 693,
       keywords: ['TIE'],
-      loadout: 17,
+      loadout: 15,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/rampage.png',
       artwork:
@@ -134,7 +134,7 @@ const t: ShipType = {
       cost: 10,
       ffg: 694,
       keywords: ['TIE'],
-      loadout: 9,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/lyttandree.png',
       artwork:

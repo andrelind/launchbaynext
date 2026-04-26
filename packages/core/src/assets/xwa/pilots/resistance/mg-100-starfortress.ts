@@ -102,6 +102,7 @@ const t: ShipType = {
       slots: [
         'Device',
         'Device',
+        'Sensor',
         'Crew',
         'Gunner',
         'Gunner',
@@ -111,7 +112,7 @@ const t: ShipType = {
       ffg: 448,
       standard: false,
       epic: true,
-      loadout: 27,
+      loadout: 28,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/vennie.png',
       artwork:
@@ -130,6 +131,7 @@ const t: ShipType = {
       slots: [
         'Device',
         'Device',
+        'Sensor',
         'Crew',
         'Gunner',
         'Gunner',
@@ -139,7 +141,7 @@ const t: ShipType = {
       ffg: 432,
       standard: false,
       epic: true,
-      loadout: 19,
+      loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/benteene.png',
       artwork:
@@ -163,11 +165,12 @@ const t: ShipType = {
         'Tech',
         'Modification',
         'Sensor',
+        'Sensor',
       ],
       ffg: 447,
       standard: false,
       epic: true,
-      loadout: 23,
+      loadout: 24,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/edonkappehl.png',
       artwork:
@@ -181,7 +184,7 @@ const t: ShipType = {
       xws: 'finchdallow',
       ability:
         'Before you would drop a bomb, you may place it in the play area touching you instead.',
-      cost: 17,
+      cost: 15,
       slots: [
         'Device',
         'Device',
@@ -196,7 +199,7 @@ const t: ShipType = {
       ffg: 431,
       standard: false,
       epic: true,
-      loadout: 28,
+      loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/finchdallow.png',
       artwork:
@@ -227,7 +230,7 @@ const t: ShipType = {
       standard: false,
       epic: true,
       ffg: 640,
-      loadout: 21,
+      loadout: 24,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/paigetico.png',
       artwork:
@@ -283,7 +286,7 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2xwa/images/quickbuilds/vennie-evacuationofdqar.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/vennie-evacuationofdqar.png',
-      cost: 16,
+      cost: 17,
       loadout: 0,
       ability:
         "While you defend, if the attacker is in a friendly ship's [Single Turret Arc], you may change 1 [Focus] result to an [Evade] result.",

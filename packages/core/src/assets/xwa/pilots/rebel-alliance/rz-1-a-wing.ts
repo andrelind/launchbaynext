@@ -58,7 +58,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 7,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/arvelcrynyd.png',
       artwork:
@@ -68,7 +68,7 @@ const t: ShipType = {
       name: 'Green Squadron Pilot',
       initiative: 3,
       limited: 0,
-      cost: 9,
+      cost: 8,
       xws: 'greensquadronpilot',
       text: 'Due to its sensitive controls and high maneuverability, only the most talented pilots belong in an A-wing cockpit.',
       slots: ['Talent', 'Modification', 'Missile', 'Configuration'],
@@ -76,7 +76,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 9,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/greensquadronpilot.png',
@@ -89,7 +89,7 @@ const t: ShipType = {
       caption: 'Sage Instructor',
       initiative: 4,
       limited: 1,
-      cost: 11,
+      cost: 9,
       xws: 'jakefarrell',
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may choose a friendly ship at range 0-1. That ship may perform a [Focus] action.',
@@ -98,7 +98,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 16,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jakefarrell.png',
       artwork:
@@ -128,7 +128,7 @@ const t: ShipType = {
       xws: 'wedgeantilles-rz1awing',
       name: 'Wedge Antilles',
       caption: 'Promising Pilot',
-      cost: 11,
+      cost: 10,
       initiative: 4,
       limited: 1,
       ability:
@@ -138,7 +138,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['A-wing'],
       ffg: 883,
-      loadout: 16,
+      loadout: 12,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/wedgeantilles-rz1awing.png',
@@ -170,7 +170,7 @@ const t: ShipType = {
       xws: 'herasyndulla-rz1awing',
       name: 'Hera Syndulla',
       caption: 'Phoenix Leader',
-      cost: 12,
+      cost: 11,
       initiative: 6,
       limited: 1,
       ability:
@@ -179,7 +179,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       ffg: 880,
-      loadout: 15,
+      loadout: 10,
       extended: true,
       keywords: ['A-wing', 'Spectre'],
       artwork:
@@ -229,7 +229,7 @@ const t: ShipType = {
       epic: true,
       keywords: ['A-wing'],
       ffg: 882,
-      loadout: 10,
+      loadout: 12,
       extended: true,
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/sharabey-rz1awing.png',
@@ -269,7 +269,7 @@ const t: ShipType = {
       standard: true,
       extended: true,
       cost: 10,
-      loadout: 12,
+      loadout: 15,
       force: { value: 1, recovers: 0, side: ['light'] },
       slots: ['Modification', 'Missile', 'Configuration', 'Force Power'],
       ability:
@@ -379,7 +379,7 @@ const t: ShipType = {
       limited: 1,
       standard: true,
       extended: true,
-      cost: 10,
+      cost: 9,
       ability:
         'While defending, you may gain a strain token to change 1 [Focus] result to an [Evade] result.',
       standardLoadout: [

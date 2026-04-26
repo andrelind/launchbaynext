@@ -48,7 +48,7 @@ const t: ShipType = {
       caption: 'Aggressive Automaton',
       initiative: 4,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'ig88a',
       ability:
         'At the start of the Engagement Phase, you may choose 1 friendly ship with [Calculate] on its action bar at range 1-3. If you do, transfer 1 of your calculate tokens to it.',
@@ -65,7 +65,7 @@ const t: ShipType = {
       ffg: 197,
       standard: false,
       epic: true,
-      loadout: 22,
+      loadout: 20,
       extended: true,
       keywords: ['Bounty Hunter', 'Droid'],
       image: 'https://infinitearenas.com/xw2/images/pilots/ig88a.png',
@@ -76,7 +76,7 @@ const t: ShipType = {
       caption: 'Brutal Battledroid',
       initiative: 4,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'ig88b',
       ability:
         'After you perform an attack that misses, you may perform a bonus [Cannon] attack.',
@@ -104,7 +104,7 @@ const t: ShipType = {
       caption: 'Conniving Contraption',
       initiative: 4,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'ig88c',
       ability:
         'After you perform a [Boost] action, you may perform an [Evade] action.',
@@ -132,7 +132,7 @@ const t: ShipType = {
       caption: 'Deadly Device',
       initiative: 4,
       limited: 1,
-      cost: 15,
+      cost: 14,
       xws: 'ig88d',
       ability:
         "While you execute a Segnor's Loop ([Segnor's Loop Left] or [Segnor's Loop Right]) maneuver, you may use another template of the same speed instead: either the turn ([Turn Left] or [Turn Right]) of the same direction or the straight ([Straight]) template.",

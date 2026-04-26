@@ -55,7 +55,7 @@ const t: ShipType = {
       slots: ['Modification', 'Missile', 'Configuration'],
       ffg: 498,
       keywords: ['Droid'],
-      loadout: 2,
+      loadout: 3,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/tradefederationdrone.png',
@@ -259,8 +259,8 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/pilots/theironassembler.png',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/theironassembler.png',
-      cost: 7,
-      loadout: 10,
+      cost: 6,
+      loadout: 4,
       charges: { value: 3, recovers: 0 },
       slots: ['Modification', 'Configuration', 'Missile', 'Modification'],
       keywords: ['Droid'],

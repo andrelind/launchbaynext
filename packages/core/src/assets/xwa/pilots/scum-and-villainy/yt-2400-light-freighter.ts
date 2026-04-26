@@ -48,7 +48,7 @@ const t: ShipType = {
       caption: "He Thinks He's Funny",
       initiative: 3,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'leebo-swz103-sl-scumandvillainy',
       ability:
         'At the end of the Engagement Phase, you may spend a calculate token to acquire a lock on an enemy ship at range 2-3.',
@@ -79,7 +79,7 @@ const t: ShipType = {
       caption: 'In it for Himself',
       initiative: 5,
       limited: 1,
-      cost: 17,
+      cost: 16,
       xws: 'dashrendar-swz103-sl-scumandvillainy',
       ability:
         'After you gain a red token as a result of moving through or overlapping an obstacle, you may transfer that red token to a friendly ship at range 0-1.',

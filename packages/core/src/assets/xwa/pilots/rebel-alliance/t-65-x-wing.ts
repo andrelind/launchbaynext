@@ -63,7 +63,7 @@ const t: ShipType = {
       name: 'Blue Squadron Escort',
       initiative: 2,
       limited: 0,
-      cost: 10,
+      cost: 9,
       xws: 'bluesquadronescort',
       text: 'Designed by Incom Corporation, the T-65 X-wing quickly proved to be one of the most effective and versatile military vehicles in the galaxy and a boon to the Rebellion.',
       slots: ['Astromech', 'Modification', 'Torpedo', 'Configuration'],
@@ -71,7 +71,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 10,
+      loadout: 3,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/bluesquadronescort.png',
@@ -110,7 +110,7 @@ const t: ShipType = {
       caption: 'Cavern Angels Veteran',
       initiative: 2,
       limited: 1,
-      cost: 11,
+      cost: 10,
       xws: 'edriotwotubes',
       ability:
         'Before you activate, if you are focused, you may perform an action.',
@@ -124,7 +124,7 @@ const t: ShipType = {
       ffg: 9,
       standard: true,
       epic: true,
-      loadout: 16,
+      loadout: 11,
       extended: true,
       keywords: ['Partisan', 'X-wing'],
       image: 'https://infinitearenas.com/xw2/images/pilots/edriotwotubes.png',
@@ -270,7 +270,7 @@ const t: ShipType = {
       name: 'Red Squadron Veteran',
       initiative: 3,
       limited: 0,
-      cost: 11,
+      cost: 10,
       xws: 'redsquadronveteran',
       text: 'Created as an elite starfighter squad, Red Squadron includes some of the best pilots in the Rebel Alliance.',
       slots: [
@@ -284,7 +284,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['X-wing'],
-      loadout: 14,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/redsquadronveteran.png',
@@ -436,7 +436,7 @@ const t: ShipType = {
       caption: 'Battle of Yavin',
       initiative: 5,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'lukeskywalker-battleofyavin',
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
@@ -468,7 +468,7 @@ const t: ShipType = {
       caption: 'Battle of Yavin',
       initiative: 5,
       limited: 1,
-      cost: 15,
+      cost: 13,
       xws: 'wedgeantilles-battleofyavin',
       ability:
         "While you perform a primary attack, if there is another friendly ship in the defender's firing arc, the defender rolls 1 less defense dice.",
@@ -499,8 +499,8 @@ const t: ShipType = {
       caption: 'Rogue Nine',
       initiative: 5,
       limited: 1,
-      cost: 12,
-      loadout: 13,
+      cost: 13,
+      loadout: 18,
       xws: 'corranhorn-t65xwing',
       ability:
         'After you declare the defender of an attack, if you have a lock on the defender, a friendly ship may transfer their lock token from you to the defender.',
@@ -553,7 +553,7 @@ const t: ShipType = {
       caption: 'Red Five',
       initiative: 5,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'lukeskywalker-swz106',
       ability:
         'After you are declared as the defender during an attack, you may recover 1 [Force].',
@@ -597,7 +597,7 @@ const t: ShipType = {
       ability: 'After you perform an attack that hits, gain 1 focus token.',
       initiative: 6,
       limited: 1,
-      cost: 16,
+      cost: 15,
       xws: 'wedgeantilles-battleoverendor',
       standardLoadout: [
         'itsatrap-battleoverendor',

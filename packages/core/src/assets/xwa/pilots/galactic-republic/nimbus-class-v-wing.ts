@@ -57,9 +57,9 @@ const t: ShipType = {
       standard: true,
       epic: true,
       slots: ['Astromech', 'Configuration', 'Modification'],
-      cost: 8,
+      cost: 7,
       ffg: 791,
-      loadout: 7,
+      loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wilhufftarkin.png',
       artwork:
@@ -79,7 +79,7 @@ const t: ShipType = {
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
       keywords: ['Clone'],
-      loadout: 9,
+      loadout: 11,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
@@ -96,11 +96,11 @@ const t: ShipType = {
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       slots: ['Astromech', 'Configuration', 'Modification', 'Talent'],
-      cost: 9,
+      cost: 8,
       epic: true,
       ffg: 789,
       keywords: ['Clone'],
-      loadout: 8,
+      loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
       artwork:
@@ -204,7 +204,7 @@ const t: ShipType = {
       standard: true,
       ability:
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
-      cost: 10,
+      cost: 9,
       epic: true,
       keywords: ['Clone'],
       loadout: 0,

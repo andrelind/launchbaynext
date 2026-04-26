@@ -75,7 +75,7 @@ const t: ShipType = {
       caption: 'Adrenaline Junkie',
       initiative: 5,
       limited: 1,
-      cost: 15,
+      cost: 14,
       xws: 'redline',
       ability:
         'You can maintain up to 2 locks. After you perform an action, you may acquire a lock.',

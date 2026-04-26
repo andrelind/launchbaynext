@@ -56,7 +56,7 @@ const t: ShipType = {
       ffg: 63,
       standard: false,
       epic: true,
-      loadout: 11,
+      loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/esegetuketu.png',
       artwork:
@@ -85,7 +85,7 @@ const t: ShipType = {
       ffg: 62,
       standard: false,
       epic: true,
-      loadout: 13,
+      loadout: 16,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/mirandadoni.png',
       artwork:

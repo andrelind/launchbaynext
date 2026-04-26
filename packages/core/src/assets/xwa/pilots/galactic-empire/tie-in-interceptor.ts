@@ -66,7 +66,7 @@ const t: ShipType = {
       name: 'Saber Squadron Ace',
       initiative: 4,
       limited: 0,
-      cost: 10,
+      cost: 9,
       xws: 'sabersquadronace',
       text: "Led by Baron Soontir Fel, the pilots of Saber Squadron are among the Empire's best. Their TIE interceptors are marked with red stripes to designate pilots with at least ten confirmed kills.",
       slots: ['Talent', 'Modification', 'Configuration'],
@@ -74,7 +74,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 10,
+      loadout: 6,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/sabersquadronace.png',
@@ -87,7 +87,7 @@ const t: ShipType = {
       caption: 'Ace of Legend',
       initiative: 6,
       limited: 1,
-      cost: 12,
+      cost: 13,
       xws: 'soontirfel',
       ability:
         'At the start of the Engagement Phase, if there is an enemy ship in your [Bullseye Arc], gain 1 focus token.',
@@ -96,7 +96,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['TIE'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/soontirfel.png',
       artwork:
@@ -394,8 +394,8 @@ const t: ShipType = {
       caption: 'Manipulative Monster',
       standard: true,
       extended: true,
-      cost: 13,
-      loadout: 14,
+      cost: 12,
+      loadout: 12,
       slots: ['Modification', 'Configuration', 'Force Power', 'Sensor'],
       ability:
         'While you perform an attack, after the Neutralize Results step, if the attack hit, you may spend 2 [Force]. If you do, change all of your [Hit] results to [Critical Hit] results.',
@@ -448,7 +448,7 @@ const t: ShipType = {
         name: 'Sensitive Controls',
         text: 'During the System Phase, you may perform a red [Barrel Roll] or red [Boost] action.',
       },
-      cost: 14,
+      cost: 15,
       standardLoadout: [
         'apexpredator-battleoverendor',
         'noescape-battleoverendor',
@@ -498,6 +498,26 @@ const t: ShipType = {
         'https://infinitearenas.com/xw2/images/artwork/pilots/mausmonare-battleoverendor.png',
       ffg: 945,
       slots: [],
+    },
+    {
+      name: 'Carnor Jax',
+      initiative: 5,
+      limited: 0,
+      cost: 12,
+      loadout: 4,
+      xws: 'carnorjax-legendsandrelics',
+      text: "While an enemy ship at range 0-1 in your [Front Arc] defends or performs an attack, before the Roll Attack Dice Step, you may spent 1 [Force]. If you do, that ship's dice cannot be modified.",
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/sabersquadronace.png',
+      slots: ['Force Power', 'Modification', 'Configuration'],
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/carnorjax.png',
+      standard: true,
+      extended: true,
+      keywords: ['TIE'],
+      epic: true,
+      id: 733,
+      ffg: null,
     },
   ],
 };

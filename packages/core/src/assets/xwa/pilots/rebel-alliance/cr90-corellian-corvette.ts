@@ -75,7 +75,7 @@ const t: ShipType = {
       initiative: 8,
       engagement: 0,
       limited: 1,
-      cost: 12,
+      cost: 32,
       xws: 'raymusantilles-epicsl-rebelalliance',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/raymusantilles-epicsl-rebelalliance.png',

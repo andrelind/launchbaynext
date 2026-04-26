@@ -102,7 +102,7 @@ const t: ShipType = {
       xws: 'warthog',
       ffg: 661,
       name: '“Warthog”',
-      cost: 13,
+      cost: 12,
       limited: 1,
       initiative: 3,
       caption: 'Veteran of Kadavo',
@@ -122,7 +122,7 @@ const t: ShipType = {
       ability:
         'After you or a friendly non-limited ship at range 0-2 are destroyed during the Engagement Phase, that ship is not removed until the end of that phase.',
       keywords: ['Clone'],
-      loadout: 16,
+      loadout: 13,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/warthog.png',
       artwork:

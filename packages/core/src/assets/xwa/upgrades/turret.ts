@@ -66,6 +66,39 @@ const t: UpgradeBase[] = [
     epic: true,
     extended: true,
   },
+  {
+    limited: 0,
+    xws: 'burstlaserturret-legendsandrelics',
+    sides: [
+      {
+        title: 'Burst Laser Turret',
+        type: 'Turret',
+        ability:
+          'Attack: Spend 1 [Charge]. You may spend 1 [Charge] to roll 1 additional attack die to a maximum of 3.',
+        slots: ['Turret'],
+        attack: {
+          arc: 'Single Turret Arc',
+          value: 2,
+          minrange: 1,
+          maxrange: 2,
+          ordnance: false,
+        },
+        charges: { value: 2, recovers: 1 },
+        actions: [{ type: 'Rotate Arc', difficulty: 'White' }],
+        grants: [
+          { action: { type: 'Rotate Arc', difficulty: 'White' }, value: 1 },
+        ],
+        image:
+          'https://infinitearenas.com/xw2/images/upgrades/burstlaserturret-legendsandrelics.png',
+        artwork:
+          'https://infinitearenas.com/xw2/images/artwork/upgrades/burstlaserturret-legendsandrelics.png',
+      },
+    ],
+    cost: { value: 3 },
+    standard: true,
+    extended: true,
+    epic: true,
+  },
 ];
 
 export default t;

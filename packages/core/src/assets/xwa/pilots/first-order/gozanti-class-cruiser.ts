@@ -42,7 +42,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 0,
-      cost: 26,
+      cost: 25,
       xws: 'firstordersympathizers',
       slots: [
         'Command',
@@ -70,7 +70,7 @@ const t: ShipType = {
       initiative: 7,
       engagement: 1,
       limited: 1,
-      cost: 8,
+      cost: 14,
       xws: 'cerrafellian-epicsl',
       artwork:
         'https://infinitearenas.com/xw2/images/artwork/pilots/cerrafellian-epicsl.png',

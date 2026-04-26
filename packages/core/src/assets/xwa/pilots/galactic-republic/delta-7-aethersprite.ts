@@ -163,7 +163,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
-      cost: 11,
+      cost: 10,
       slots: [
         'Force Power',
         'Configuration',
@@ -174,7 +174,7 @@ const t: ShipType = {
       ],
       ffg: 512,
       keywords: ['Jedi', 'Light Side'],
-      loadout: 10,
+      loadout: 8,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/macewindu.png',
       artwork:
@@ -191,8 +191,8 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
-      cost: 14,
-      loadout: 12,
+      cost: 13,
+      loadout: 8,
       slots: [
         'Force Power',
         'Configuration',
