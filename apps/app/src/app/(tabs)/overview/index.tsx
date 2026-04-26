@@ -77,8 +77,8 @@ export default function OverviewScreen() {
         <View style={tw`px-2 gap-y-2`}>
           <View style={tw`px-2 py-3 gap-y-1 bg-zinc-800 rounded-md`}>
             <View style={tw`flex-row items-center justify-between`}>
-              <Text style={tw`text-white font-semibold`}>XWA Points Update 50P v1.1! 🎉</Text>
-              <Text style={tw`text-slate-400 text-sm`}>2025-12-09</Text>
+              <Text style={tw`text-white font-semibold`}>XWA Points Update! 🎉</Text>
+              <Text style={tw`text-slate-400 text-sm`}>2026-04-26</Text>
             </View>
             {/* <Text style={tw`text-white`}>{`The latest XWA points have been included in the app!`}</Text> */}
 
