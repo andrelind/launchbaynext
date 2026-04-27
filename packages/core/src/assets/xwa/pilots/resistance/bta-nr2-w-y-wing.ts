@@ -257,7 +257,7 @@ const t: ShipType = {
       image: 'https://infinitearenas.com/xw2/images/pilots/kijimispicerunner-wartime.png',
       keywords: ['Y-wing'],
       epic: true,
-      ffg: null,
+      ffg: 1175,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Y-wing-bta-nr2.png',

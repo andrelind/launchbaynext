@@ -63,10 +63,8 @@ const t: ShipType = {
       epic: true,
       loadout: 11,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksunassassin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunassassin.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/blacksunassassin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunassassin.png',
       caption: '',
     },
     {
@@ -82,10 +80,8 @@ const t: ShipType = {
       epic: true,
       loadout: 9,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/blacksunenforcer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunenforcer.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/blacksunenforcer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blacksunenforcer.png',
       caption: '',
     },
     {
@@ -95,8 +91,7 @@ const t: ShipType = {
       limited: 1,
       cost: 10,
       xws: 'dalanoberos-starviperclassattackplatform',
-      ability:
-        'After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90°.',
+      ability: 'After you fully execute a maneuver, you may gain 1 stress token to rotate your ship 90°.',
       slots: ['Illicit', 'Modification', 'Sensor', 'Torpedo', 'Talent', 'Tech'],
       ffg: 179,
       standard: false,
@@ -104,10 +99,8 @@ const t: ShipType = {
       loadout: 10,
       extended: true,
       keywords: ['Bounty Hunter'],
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/dalanoberos-starviperclassattackplatform.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/dalanoberos-starviperclassattackplatform.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png',
     },
     {
       name: 'Guri',
@@ -132,15 +125,7 @@ const t: ShipType = {
           type: 'Boost',
         },
       ],
-      slots: [
-        'Illicit',
-        'Modification',
-        'Sensor',
-        'Torpedo',
-        'Talent',
-        'Title',
-        'Tech',
-      ],
+      slots: ['Illicit', 'Modification', 'Sensor', 'Torpedo', 'Talent', 'Title', 'Tech'],
       ffg: 178,
       standard: false,
       epic: true,
@@ -159,23 +144,14 @@ const t: ShipType = {
       xws: 'princexizor',
       ability:
         'While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 [Hit] or [Critical Hit] damage. If it does, cancel 1 matching result.',
-      slots: [
-        'Illicit',
-        'Modification',
-        'Sensor',
-        'Torpedo',
-        'Talent',
-        'Title',
-        'Tech',
-      ],
+      slots: ['Illicit', 'Modification', 'Sensor', 'Torpedo', 'Talent', 'Title', 'Tech'],
       ffg: 180,
       standard: false,
       epic: true,
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/princexizor.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor.png',
     },
     {
       name: 'Prince Xizor',
@@ -184,22 +160,15 @@ const t: ShipType = {
       cost: 13,
       loadout: 0,
       xws: 'princexizor-armedanddangerous',
-      ability:
-        'When you perform an attack against a strained ship, you may remove 1 stress token.',
-      image:
-        'https://infinitearenas.com/xw2xwa/images/quickbuilds/princexizor-armedanddangerous.png',
+      ability: 'When you perform an attack against a strained ship, you may remove 1 stress token.',
+      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/princexizor-armedanddangerous.png',
       shipAbility: {
         name: 'Adaptive Microthrusters',
         text: 'While you perform a barrel roll, you may spend 1 [charge] to use the [bank left] or [bank right] template instead of the [straight] template.',
       },
       charges: { value: 3, recovers: 0 },
-      standardLoadout: [
-        'crimelord-armedanddangerous',
-        'mandalorianoptics',
-        'virago-armedanddangerous',
-      ],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor-armedanddangerous.png',
+      standardLoadout: ['crimelord-armedanddangerous', 'mandalorianoptics', 'virago-armedanddangerous'],
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/princexizor-armedanddangerous.png',
       standard: true,
       extended: true,
       epic: true,
@@ -217,17 +186,15 @@ const t: ShipType = {
       xws: 'thweek-legendsandrelics',
       ability:
         'ADuring the System Phase, you may gain a tractor token. At the start of the Engagement Phase, you may gain a deplete token to remove a tractor token.',
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/thweek-legendsandrelics.png',
+      image: 'https://infinitearenas.com/xw2xwa/images/pilots/thweek-legendsandrelics.png',
       slots: ['Illicit', 'Modification', 'Sensor', 'Torpedo', 'Talent', 'Tech'],
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dalanoberos-starviperclassattackplatform.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/thweek-legendsandrelics.png',
       standard: true,
       extended: true,
       keywords: ['Bounty Hunter'],
       epic: true,
       id: 734,
-      ffg: null,
+      ffg: 1162,
     },
   ],
 };

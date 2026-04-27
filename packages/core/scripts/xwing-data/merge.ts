@@ -10,8 +10,8 @@ import { asyncForEach, getFaction, getName } from './utils';
 export const runMerge = async (baseUrl: string, assets: any, path: string, theManifest: any, revManifest: any) => {
   const getLatestPilotNumber = () => {
     const pilots = Object.keys(theManifest.pilots)
-      .flat()
-      .map(p => parseInt(p, 10));
+      .map(p => parseInt(p, 10))
+      .filter(n => !isNaN(n));
     return Math.max(...pilots, 0);
   };
   const get = async (url: string) => {
@@ -421,7 +421,7 @@ export const runMerge = async (baseUrl: string, assets: any, path: string, theMa
   Object.keys(assets.pilots).forEach(faction => {
     Object.keys(assets.pilots[faction]).forEach(ship => {
       assets.pilots[faction][ship].pilots.forEach((pilot: any) => {
-        if (!theManifest.pilots[pilot.xws]) {
+        if (pilot.ffg && !isNaN(pilot.ffg) && !theManifest.pilots[pilot.xws]) {
           theManifest.pilots[pilot.ffg] = pilot.xws;
         }
       });

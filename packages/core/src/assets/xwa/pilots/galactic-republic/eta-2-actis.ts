@@ -51,14 +51,7 @@ const t: ShipType = {
       limited: 1,
       initiative: 6,
       caption: 'Hero of Coruscant',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       standard: true,
       force: { value: 3, recovers: 1, side: ['light', 'dark'] },
       epic: true,
@@ -66,10 +59,8 @@ const t: ShipType = {
         'After you or a friendly Obi-Wan Kenobi ship at range 0-3 executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship removes 1 red token of your choice.',
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-eta2actis.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-eta2actis.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/anakinskywalker-eta2actis.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-eta2actis.png',
     },
     {
       xws: 'obiwankenobi-eta2actis',
@@ -80,14 +71,7 @@ const t: ShipType = {
       limited: 1,
       initiative: 5,
       caption: 'Guardian of Democracy',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       force: { value: 3, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
@@ -95,10 +79,8 @@ const t: ShipType = {
         'After you or a friendly Anakin Skywalker ship at range 0-3 executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship gains 1 focus token.',
       keywords: ['Jedi', 'Light Side'],
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/obiwankenobi-eta2actis.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi-eta2actis.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/obiwankenobi-eta2actis.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi-eta2actis.png',
     },
     {
       xws: 'aaylasecura',
@@ -108,14 +90,7 @@ const t: ShipType = {
       limited: 1,
       initiative: 5,
       caption: 'Confident Warrior',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       force: { value: 2, recovers: 1, side: ['light'] },
       standard: true,
       epic: true,
@@ -125,8 +100,7 @@ const t: ShipType = {
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/aaylasecura.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/aaylasecura.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/aaylasecura.png',
     },
     {
       name: 'Shaak Ti',
@@ -138,14 +112,7 @@ const t: ShipType = {
       force: { value: 2, recovers: 1, side: ['light'] },
       ability:
         'At the start of the End Phase, you may spend any number of [Force] to choose that many friendly ships at range 0-2. Each chosen ship does not remove 1 focus or evade token during this End Phase.',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       cost: 11,
       epic: true,
       ffg: 784,
@@ -153,8 +120,7 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/shaakti.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shaakti.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/shaakti.png',
     },
     {
       name: 'Jedi General',
@@ -172,8 +138,7 @@ const t: ShipType = {
       loadout: 9,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jedigeneral.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/jedigeneral.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jedigeneral.png',
       caption: '',
     },
     {
@@ -186,14 +151,7 @@ const t: ShipType = {
       force: { value: 3, recovers: 1, side: ['light'] },
       ability:
         'After another friendly ship at range 0-3 spends 1 or more [Force], you may spend 1 [Force]. If you do, that ship recovers 1 [Force].',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       cost: 10,
       epic: true,
       ffg: 785,
@@ -218,15 +176,9 @@ const t: ShipType = {
         'After you or a friendly Obi-Wan Kenobi ship at range 0-3 fully executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship may perform a [Barrel Roll] action.',
       keywords: ['Dark Side', 'Jedi', 'Light Side'],
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/anakinskywalker-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-eta2actis.png',
-      standardLoadout: [
-        'malice',
-        'ancillaryionweapons-siegeofcoruscant',
-        'r2d2-republic',
-      ],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/anakinskywalker-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/anakinskywalker-eta2actis.png',
+      standardLoadout: ['malice', 'ancillaryionweapons-siegeofcoruscant', 'r2d2-republic'],
       ffg: 991,
       slots: [],
     },
@@ -245,15 +197,9 @@ const t: ShipType = {
         'After you or a friendly Anakin Skywalker at range 0-3 fully executes a maneuver, if there are more enemy ships than other friendly ships at range 0-1 of that ship, you may spend 1 [Force]. If you do, that ship may perform a [Boost] action.',
       keywords: ['Jedi', 'Light Side'],
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/obiwankenobi-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi-eta2actis.png',
-      standardLoadout: [
-        'patience',
-        'ancillaryionweapons-siegeofcoruscant',
-        'r4p17-siegeofcoruscant',
-      ],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/obiwankenobi-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/obiwankenobi-eta2actis.png',
+      standardLoadout: ['patience', 'ancillaryionweapons-siegeofcoruscant', 'r4p17-siegeofcoruscant'],
       ffg: 992,
       slots: [],
     },
@@ -272,16 +218,9 @@ const t: ShipType = {
       keywords: ['Jedi', 'Light Side'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/shaakti-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shaakti.png',
-      standardLoadout: [
-        'marksmanship',
-        'brilliantevasion',
-        'ancillaryionweapons-siegeofcoruscant',
-        'r4pastromech',
-      ],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/shaakti-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/shaakti.png',
+      standardLoadout: ['marksmanship', 'brilliantevasion', 'ancillaryionweapons-siegeofcoruscant', 'r4pastromech'],
       ffg: 993,
       slots: [],
     },
@@ -302,17 +241,9 @@ const t: ShipType = {
         "While another friendly ship defends, if the attacker is in its [Bullseye Arc], you may spend 1 [Force] to change 1 of the defender's blank results to a [Focus] result.",
       cost: 10,
       loadout: 11,
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kitfisto.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kitfisto.png',
       image: 'https://infinitearenas.com/xw2/images/pilots/kitfisto.png',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       keywords: ['Jedi', 'Light Side'],
       epic: true,
       ffg: 994,
@@ -330,22 +261,13 @@ const t: ShipType = {
         'After you perform a [Barrel Roll] or [Boost] action, you may acquire a lock on a ship in your [Bullseye Arc].',
       cost: 11,
       loadout: 11,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/quinlanvos-legendsandrelics.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/quinlanvos-legendsandrelics.png',
-      slots: [
-        'Talent',
-        'Force Power',
-        'Astromech',
-        'Cannon',
-        'Modification',
-        'Force Power',
-      ],
+      image: 'https://infinitearenas.com/xw2xwa/images/pilots/quinlanvos-legendsandrelics.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/quinlanvos-legendsandrelics.png',
+      slots: ['Talent', 'Force Power', 'Astromech', 'Cannon', 'Modification', 'Force Power'],
       keywords: ['Jedi', 'Light Side', 'Dark Side'],
       epic: true,
       id: 738,
-      ffg: null,
+      ffg: 1178,
     },
   ],
   ffg: 76,

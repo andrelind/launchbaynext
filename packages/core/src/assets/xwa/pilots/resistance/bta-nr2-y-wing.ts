@@ -39,7 +39,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 477,
-      ffg: null,
+      ffg: 1165,
     },
     {
       name: 'Teza Nasz',
@@ -59,7 +59,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 478,
-      ffg: null,
+      ffg: 1166,
     },
     {
       name: 'Wilsa Teshlo',
@@ -79,7 +79,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 479,
-      ffg: null,
+      ffg: 1167,
     },
     {
       name: 'Shasa Zaro',
@@ -99,7 +99,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 480,
-      ffg: null,
+      ffg: 1168,
     },
     {
       name: 'Lega Fossang',
@@ -119,7 +119,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 481,
-      ffg: null,
+      ffg: 1169,
     },
     {
       name: 'Aftab Ackbar',
@@ -139,7 +139,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 482,
-      ffg: null,
+      ffg: 1170,
     },
     {
       name: 'Corus Kapellim',
@@ -159,7 +159,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 483,
-      ffg: null,
+      ffg: 1171,
     },
     {
       name: 'C’ai Threnalli',
@@ -179,7 +179,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 484,
-      ffg: null,
+      ffg: 1172,
     },
     {
       name: 'New Republic Patrol',
@@ -197,7 +197,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 485,
-      ffg: null,
+      ffg: 1173,
     },
     {
       name: 'Kijimi Spice Runner',
@@ -215,7 +215,7 @@ const t: ShipType = {
       keywords: ['Y-wing'],
       epic: true,
       id: 486,
-      ffg: null,
+      ffg: 1174,
     },
   ],
   icon: 'https://infinitearenas.com/xw2/images/shipicons/resistance/I_Y-wing-bta-nr2.png',

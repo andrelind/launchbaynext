@@ -113,7 +113,8 @@ export type Pilot = {
   restricted?: number;
   wildspace?: boolean;
   limitWarning?: boolean;
-  ffg?: number;
+  id?: number;
+  ffg?: number | null;
   engagement?: number;
   keywords?: string[];
   image?: string;
