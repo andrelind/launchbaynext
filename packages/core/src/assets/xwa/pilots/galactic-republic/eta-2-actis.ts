@@ -256,7 +256,7 @@ const t: ShipType = {
       caption: 'Darkness Within',
       standard: true,
       extended: true,
-      force: { value: 2, recovers: 1 },
+      force: { value: 2, recovers: 1, side: ['light', 'dark'] },
       ability:
         'After you perform a [Barrel Roll] or [Boost] action, you may acquire a lock on a ship in your [Bullseye Arc].',
       cost: 11,
