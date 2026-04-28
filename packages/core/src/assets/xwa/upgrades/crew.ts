@@ -3620,7 +3620,7 @@ const t: UpgradeBase[] = [
     ],
     cost: { value: 8 },
     restrictions: [
-      { factions: ['galacticempire', 'firstrorder', 'separatistalliance'] },
+      { factions: ['galacticempire', 'firstorder', 'separatistalliance'] },
     ],
     standard: true,
     extended: true,
@@ -3650,7 +3650,6 @@ const t: UpgradeBase[] = [
     epic: true,
   },
   {
-    uid: 'URB0970',
     limited: 1,
     xws: 'ursawren-rebel-crew',
     sides: [

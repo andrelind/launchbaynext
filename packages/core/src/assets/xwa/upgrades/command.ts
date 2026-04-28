@@ -792,7 +792,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/upgrades/sabinewren-command.png',
       },
     ],
-    cost: { value: '5' },
+    cost: { value: 5 },
     restrictions: [
       { factions: ['rebelalliance'] },
       { baseSizes: ['Small', 'Medium', 'Large'] },

@@ -979,7 +979,7 @@ const t: UpgradeBase[] = [
     ],
     restrictions: [
       {
-        action: [{ type: 'Target Lock', difficulty: 'White' }],
+        action: { type: 'Lock', difficulty: 'White' },
         factions: ['rebelalliance', 'resistance'],
         baseSizes: ['Small'],
       },
