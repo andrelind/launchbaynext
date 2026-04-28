@@ -1,16 +1,16 @@
 import { ShipType } from '../../../../types';
-import belbullab22starfighter from './belbullab-22-starfighter';
+import vultureclassdroidfighter from './vulture-class-droid-fighter';
 import croccruiser from './c-roc-cruiser';
-import droidtrifighter from './droid-tri-fighter';
-import firesprayclasspatrolcraft from './firespray-class-patrol-craft';
-import gauntletfighter from './gauntlet-fighter';
-import hmpdroidgunship from './hmp-droid-gunship';
+import belbullab22starfighter from './belbullab-22-starfighter';
+import sithinfiltrator from './sith-infiltrator';
 import hyenaclassdroidbomber from './hyena-class-droid-bomber';
 import nantexclassstarfighter from './nantex-class-starfighter';
-import rogueclassstarfighter from './rogue-class-starfighter';
-import sithinfiltrator from './sith-infiltrator';
+import droidtrifighter from './droid-tri-fighter';
+import hmpdroidgunship from './hmp-droid-gunship';
 import tridentclassassaultship from './trident-class-assault-ship';
-import vultureclassdroidfighter from './vulture-class-droid-fighter';
+import firesprayclasspatrolcraft from './firespray-class-patrol-craft';
+import rogueclassstarfighter from './rogue-class-starfighter';
+import gauntletfighter from './gauntlet-fighter';
 
 const ships: { [s: string]: ShipType } = {
   vultureclassdroidfighter,

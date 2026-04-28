@@ -94,7 +94,7 @@ const t: UpgradeBase[] = [
           'https://infinitearenas.com/xw2/images/artwork/upgrades/burstlaserturret-legendsandrelics.png',
       },
     ],
-    cost: { value: 3 },
+    cost: { value: 4 },
     standard: true,
     extended: true,
     epic: true,

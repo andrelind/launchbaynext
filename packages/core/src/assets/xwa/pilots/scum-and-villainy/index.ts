@@ -22,8 +22,8 @@ import scurrgh6bomber from './scurrg-h-6-bomber';
 import st70assaultship from './st-70-assault-ship';
 import starviperclassattackplatform from './starviper-class-attack-platform';
 import tridentclassassaultship from './trident-class-assault-ship';
-import yt2400lightfreighter from './yt-2400-light-freighter';
 import yv666lightfreighter from './yv-666-light-freighter';
+import yt2400lightfreighter from './yt-2400-light-freighter';
 import z95af4headhunter from './z-95-af4-headhunter';
 
 const ships: { [s: string]: ShipType } = {

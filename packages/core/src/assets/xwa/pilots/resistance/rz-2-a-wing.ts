@@ -137,7 +137,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['A-wing'],
-      loadout: 8,
+      loadout: 10,
       extended: true,
       image:
         'https://infinitearenas.com/xw2/images/pilots/greensquadronexpert.png',

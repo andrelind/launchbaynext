@@ -60,7 +60,7 @@ const t: ShipType = {
       standard: true,
       epic: true,
       keywords: ['Freighter'],
-      loadout: 15,
+      loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/janors.png',
       artwork:

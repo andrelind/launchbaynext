@@ -49,10 +49,19 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       xws: 'poedameron',
-      ability: 'After you perform an action, you may spend 1 [Charge] to perform a white action, treating it as red.',
+      ability:
+        'After you perform an action, you may spend 1 [Charge] to perform a white action, treating it as red.',
       cost: 17,
       charges: { value: 1, recovers: 1 },
-      slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent', 'Talent', 'Title'],
+      slots: [
+        'Astromech',
+        'Modification',
+        'Tech',
+        'Configuration',
+        'Talent',
+        'Talent',
+        'Title',
+      ],
       ffg: 418,
       standard: true,
       epic: true,
@@ -60,7 +69,8 @@ const t: ShipType = {
       loadout: 20,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/poedameron.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron.png',
     },
     {
       xws: 'poedameron-swz68',
@@ -73,14 +83,24 @@ const t: ShipType = {
       charges: { value: 2, recovers: 1 },
       ability:
         'After a friendly ship at range 0-2 performs an action during its activation, you may spend 2 [Charge]. If you do, that ship may perform a white action, treating it as red.',
-      slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent', 'Talent', 'Sensor'],
+      slots: [
+        'Astromech',
+        'Modification',
+        'Tech',
+        'Configuration',
+        'Talent',
+        'Talent',
+        'Sensor',
+      ],
       standard: true,
       epic: true,
       ffg: 697,
       keywords: ['X-wing'],
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/poedameron-swz68.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-swz68.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/poedameron-swz68.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-swz68.png',
     },
     {
       name: 'Blue Squadron Rookie',
@@ -96,8 +116,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       loadout: 4,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/bluesquadronrookie.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronrookie.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/bluesquadronrookie.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/bluesquadronrookie.png',
       caption: '',
     },
     {
@@ -114,8 +136,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       loadout: 11,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/redsquadronexpert.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronexpert.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/redsquadronexpert.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/redsquadronexpert.png',
       caption: '',
     },
     {
@@ -126,14 +150,23 @@ const t: ShipType = {
       text: "During the Cold War, Poe Dameron's Black Squadron conducted daring covert operations against the First Order in defiance of treaties ratified by the New Republic Senate.",
       cost: 12,
       loadout: 14,
-      slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent', 'Torpedo'],
+      slots: [
+        'Astromech',
+        'Modification',
+        'Tech',
+        'Configuration',
+        'Talent',
+        'Torpedo',
+      ],
       ffg: 451,
       standard: true,
       epic: true,
       keywords: ['X-wing'],
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/blacksquadronace-t70xwing.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace-t70xwing.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/blacksquadronace-t70xwing.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/blacksquadronace-t70xwing.png',
       caption: '',
     },
     {
@@ -153,7 +186,8 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/elloasty.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/elloasty.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/elloasty.png',
     },
     {
       name: 'Joph Seastriker',
@@ -171,7 +205,8 @@ const t: ShipType = {
       loadout: 10,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jophseastriker.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jophseastriker.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jophseastriker.png',
     },
     {
       name: 'Karé Kun',
@@ -179,7 +214,8 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       xws: 'karekun',
-      ability: 'While you boost, you may use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
+      ability:
+        'While you boost, you may use the (1 [Turn Left]) or (1 [Turn Right]) template instead.',
       cost: 12,
       loadout: 13,
       slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent'],
@@ -189,7 +225,8 @@ const t: ShipType = {
       keywords: ['X-wing'],
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/karekun.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/karekun.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/karekun.png',
     },
     {
       name: 'Lieutenant Bastian',
@@ -197,7 +234,8 @@ const t: ShipType = {
       initiative: 2,
       limited: 1,
       xws: 'lieutenantbastian',
-      ability: 'After a ship at range 1-2 is dealt a damage card, you may acquire a lock on that ship.',
+      ability:
+        'After a ship at range 1-2 is dealt a damage card, you may acquire a lock on that ship.',
       cost: 10,
       slots: ['Astromech', 'Modification', 'Tech', 'Configuration'],
       ffg: 449,
@@ -206,8 +244,10 @@ const t: ShipType = {
       keywords: ['X-wing'],
       loadout: 4,
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/lieutenantbastian.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantbastian.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/lieutenantbastian.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/lieutenantbastian.png',
     },
     {
       name: 'Nien Nunb',
@@ -218,7 +258,14 @@ const t: ShipType = {
       ability:
         'After you gain a stress token, if there is an enemy ship in your [Front Arc] at range 0-1, you may remove that stress token.',
       cost: 14,
-      slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent', 'Tech'],
+      slots: [
+        'Astromech',
+        'Modification',
+        'Tech',
+        'Configuration',
+        'Talent',
+        'Tech',
+      ],
       ffg: 420,
       standard: true,
       epic: true,
@@ -226,7 +273,8 @@ const t: ShipType = {
       loadout: 18,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/niennunb.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/niennunb.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/niennunb.png',
     },
     {
       name: 'Jaycris Tubbs',
@@ -245,7 +293,8 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jaycristubbs.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jaycristubbs.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jaycristubbs.png',
     },
     {
       name: 'Jessika Pava',
@@ -265,7 +314,8 @@ const t: ShipType = {
       loadout: 12,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/jessikapava.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jessikapava.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jessikapava.png',
     },
     {
       name: 'Temmin Wexley',
@@ -273,7 +323,8 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       xws: 'temminwexley',
-      ability: 'After you fully execute a speed 2-4 maneuver, you may perform a [Boost] action.',
+      ability:
+        'After you fully execute a speed 2-4 maneuver, you may perform a [Boost] action.',
       cost: 12,
       slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent'],
       ffg: 422,
@@ -283,7 +334,8 @@ const t: ShipType = {
       loadout: 11,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/temminwexley.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/temminwexley.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/temminwexley.png',
     },
     {
       xws: 'temminwexley-swz68',
@@ -301,8 +353,10 @@ const t: ShipType = {
       ffg: 698,
       keywords: ['X-wing'],
       extended: true,
-      image: 'https://infinitearenas.com/xw2/images/pilots/temminwexley-swz68.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/temminwexley-swz68.png',
+      image:
+        'https://infinitearenas.com/xw2/images/pilots/temminwexley-swz68.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/temminwexley-swz68.png',
     },
     {
       xws: 'caithrenalli',
@@ -321,7 +375,8 @@ const t: ShipType = {
       loadout: 14,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/caithrenalli.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli.png',
     },
     {
       name: 'Nimi Chireen',
@@ -340,7 +395,8 @@ const t: ShipType = {
       keywords: ['X-wing'],
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/nimichireen.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/nimichireen.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/nimichireen.png',
     },
     {
       name: 'Venisa Doza',
@@ -356,11 +412,19 @@ const t: ShipType = {
       extended: true,
       cost: 13,
       loadout: 17,
-      slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent', 'Missile'],
+      slots: [
+        'Astromech',
+        'Modification',
+        'Tech',
+        'Configuration',
+        'Talent',
+        'Missile',
+      ],
       ability:
         'While you perform a [Torpedo] or [Missile] attack, you may treat the [Front Arc] requirement as [Rear Arc] for that attack. If you do, treat the range requirement as 1-2.',
       image: 'https://infinitearenas.com/xw2/images/pilots/venisadoza.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/venisadoza.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/venisadoza.png',
       keywords: ['X-wing'],
       epic: true,
       ffg: 1054,
@@ -380,9 +444,11 @@ const t: ShipType = {
       cost: 11,
       loadout: 10,
       slots: ['Astromech', 'Modification', 'Tech', 'Configuration', 'Talent'],
-      ability: 'While you defend, if the attacker is damaged, you may reroll 1 defense die.',
+      ability:
+        'While you defend, if the attacker is damaged, you may reroll 1 defense die.',
       image: 'https://infinitearenas.com/xw2/images/pilots/zayversio.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/zayversio.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/zayversio.png',
       keywords: ['X-wing'],
       epic: true,
       ffg: 1055,
@@ -400,8 +466,10 @@ const t: ShipType = {
       slots: ['Talent', 'Astromech', 'Modification', 'Tech', 'Configuration'],
       ability:
         'While you defend or perform an attack, if the enemy ship has more damage cards than you have, you may change a [Focus] result into an [Evade] or [Hit] result.',
-      image: 'https://infinitearenas.com/xw2xwa/images/pilots/kazudaxiono-legendsandrelics.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kazudaxiono-legendsandrelics.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/pilots/kazudaxiono-legendsandrelics.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/kazudaxiono-legendsandrelics.png',
       keywords: ['X-wing'],
       epic: true,
       id: 739,
@@ -419,8 +487,10 @@ const t: ShipType = {
         name: 'Adaptive S-Foils',
         text: 'After you perform a [roll] action, gain a deplete token. While you perform an attack, before rolling attack dice, if the defender is in your [bullseye], you may remove 1 deplete token.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/caithrenalli-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/caithrenalli-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/caithrenalli-evacuationofdqar.png',
       cost: 11,
       loadout: 0,
       shipActions: [
@@ -462,8 +532,10 @@ const t: ShipType = {
         name: 'Adaptive S-Foils',
         text: 'After you perform a [roll] action, gain a deplete token. While you perform an attack, before rolling attack dice, if the defender is in your [bullseye], you may remove 1 deplete token.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/jaycristubbs-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/jaycristubbs-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/jaycristubbs-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/jaycristubbs-evacuationofdqar.png',
       cost: 10,
       loadout: 0,
       shipActions: [
@@ -480,7 +552,10 @@ const t: ShipType = {
           linked: { difficulty: 'Red', type: 'Focus' },
         },
       ],
-      standardLoadout: ['forthecause-evacuationofdqar', 'r0astromech-evacuationofdqar'],
+      standardLoadout: [
+        'forthecause-evacuationofdqar',
+        'r0astromech-evacuationofdqar',
+      ],
       standard: true,
       extended: true,
       keywords: ['X-wing'],
@@ -494,13 +569,16 @@ const t: ShipType = {
       initiative: 6,
       limited: 1,
       xws: 'poedameron-evacuationofdqar',
-      ability: 'After your perform an action, you may spend 1[Charge] to perform a white action, treating it as red.',
+      ability:
+        'After your perform an action, you may spend 1[Charge] to perform a white action, treating it as red.',
       shipAbility: {
         name: 'Adaptive S-Foils',
         text: 'After you perform a [roll] action, gain a deplete token. While you perform an attack, before rolling attack dice, if the defender is in your [bullseye], you may remove 1 deplete token.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/poedameron-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/poedameron-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/poedameron-evacuationofdqar.png',
       cost: 16,
       loadout: 0,
       shipActions: [
@@ -534,13 +612,16 @@ const t: ShipType = {
       initiative: 4,
       limited: 1,
       xws: 'stomeronistarck-evacuationofdqar',
-      ability: 'Setup: Instead of a T-70 X-wing dial, this ship uses an RZ-2 A-wing dial.',
+      ability:
+        'Setup: Instead of a T-70 X-wing dial, this ship uses an RZ-2 A-wing dial.',
       shipAbility: {
         name: 'Adaptive S-Foils',
         text: 'After you perform a [roll] action, gain a deplete token. While you perform an attack, before rolling attack dice, if the defender is in your [bullseye], you may remove 1 deplete token.',
       },
-      image: 'https://infinitearenas.com/xw2xwa/images/quickbuilds/stomeronistarck-evacuationofdqar.png',
-      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/stomeronistarck-evacuationofdqar.png',
+      image:
+        'https://infinitearenas.com/xw2xwa/images/quickbuilds/stomeronistarck-evacuationofdqar.png',
+      artwork:
+        'https://infinitearenas.com/xw2/images/artwork/pilots/stomeronistarck-evacuationofdqar.png',
       cost: 13,
       loadout: 0,
       shipActions: [
