@@ -341,6 +341,7 @@ const t: ShipType = {
         'Cannon',
         'Modification',
         'Force Power',
+        'Illicit',
       ],
       keywords: ['Jedi', 'Light Side', 'Dark Side'],
       epic: true,
