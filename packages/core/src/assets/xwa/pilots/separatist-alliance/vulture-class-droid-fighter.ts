@@ -57,10 +57,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 3,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/tradefederationdrone.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/tradefederationdrone.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/tradefederationdrone.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/tradefederationdrone.png',
       caption: '',
     },
     {
@@ -69,8 +67,7 @@ const t: ShipType = {
       limited: 3,
       initiative: 3,
       xws: 'precisehunter',
-      ability:
-        'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
+      ability: 'While you perform an attack, if the defender is in your [Bullseye Arc], you may reroll 1 blank result.',
       standard: true,
       epic: true,
       cost: 6,
@@ -80,8 +77,7 @@ const t: ShipType = {
       loadout: 5,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/precisehunter.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/precisehunter.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/precisehunter.png',
     },
     {
       name: 'Haor Chall Prototype',
@@ -99,10 +95,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 7,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/haorchallprototype.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/haorchallprototype.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
     },
     {
       name: 'DFS-081',
@@ -121,8 +115,7 @@ const t: ShipType = {
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dfs081.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
     },
     {
       name: 'Separatist Drone',
@@ -139,8 +132,7 @@ const t: ShipType = {
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/separatistdrone.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/separatistdrone.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/separatistdrone.png',
       caption: '',
     },
     {
@@ -160,8 +152,7 @@ const t: ShipType = {
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/dfs311.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
     },
     {
       name: 'DFS-081',
@@ -169,18 +160,15 @@ const t: ShipType = {
       initiative: 3,
       limited: 1,
       caption: 'Siege of Coruscant',
-      ability:
-        'While defending, you may spend 1 [Charge] and 1 calculate token to cancel 1 [Critical Hit] result.',
+      ability: 'While defending, you may spend 1 [Charge] and 1 calculate token to cancel 1 [Critical Hit] result.',
       standard: true,
       epic: true,
       cost: 6,
       keywords: ['Droid'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dfs081-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/dfs081-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dfs081.png',
       standardLoadout: [
         'discordmissiles',
         'contingencyprotocol-siegeofcoruscant',
@@ -203,10 +191,8 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/dfs311-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/dfs311-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/dfs311.png',
       standardLoadout: [
         'discordmissiles',
         'contingencyprotocol-siegeofcoruscant',
@@ -218,7 +204,7 @@ const t: ShipType = {
     {
       name: 'Haor Chall Prototype',
       caption: 'Siege of Coruscant',
-      limited: 1,
+      limited: 2,
       initiative: 1,
       xws: 'haorchallprototype-siegeofcoruscant',
       ability:
@@ -229,15 +215,9 @@ const t: ShipType = {
       keywords: ['Droid'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/haorchallprototype-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
-      standardLoadout: [
-        'ionmissiles',
-        'contingencyprotocol-siegeofcoruscant',
-        'strutlockoverride-siegeofcoruscant',
-      ],
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/haorchallprototype-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/haorchallprototype.png',
+      standardLoadout: ['ionmissiles', 'contingencyprotocol-siegeofcoruscant', 'strutlockoverride-siegeofcoruscant'],
       ffg: 1082,
       slots: [],
     },
@@ -255,10 +235,8 @@ const t: ShipType = {
         'After a friendly ship at range 0-1 skips its execute maneuver step, you may spend 1 [Charge]. If you do, if there is an asteroid or debris cloud at range 0 of it, that ship may repair 1 damage.',
       standard: true,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/theironassembler.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/theironassembler.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/theironassembler.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/theironassembler.png',
       cost: 6,
       loadout: 4,
       charges: { value: 3, recovers: 0 },
@@ -290,10 +268,8 @@ const t: ShipType = {
         'After you are destroyed, you may transfer each of your locks and green tokens to another friendly Kelrodo-Ai Holdout at range 0-3.',
       standard: true,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/kelrodoaiholdout.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/kelrodoaiholdout.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/kelrodoaiholdout.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/kelrodoaiholdout.png',
       cost: 6,
       loadout: 10,
       slots: ['Modification', 'Modification'],
