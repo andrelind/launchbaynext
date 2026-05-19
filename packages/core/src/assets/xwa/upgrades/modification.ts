@@ -910,6 +910,7 @@ const t: UpgradeBase[] = [
     standard: true,
     extended: true,
     epic: true,
+    cost: { value: 3 },
   },
   {
     limited: 0,

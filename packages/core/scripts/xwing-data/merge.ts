@@ -3,9 +3,30 @@ import fetch from 'node-fetch';
 import ora from 'ora';
 import prettier from 'prettier';
 
-import { Faction, Restrictions, Size, SlotKey } from '../../src/types';
+import { ActionType, Difficulty, Faction, FactionKey, Restrictions, Size, SlotKey } from '../../src/types';
 import { XWDPilot, XWDShip, XWDUpgrade } from './data2-types';
 import { asyncForEach, getFaction, getName } from './utils';
+
+// Map upstream action type names to internal ActionType values
+const actionTypeMap: Record<string, ActionType> = {
+  'Target Lock': 'Lock',
+};
+const normalizeActionType = (type: string): ActionType => actionTypeMap[type] ?? (type as ActionType);
+
+// Normalize action restriction: unwrap array to single object and fix type names
+const normalizeAction = (action: any): { type: ActionType; difficulty?: Difficulty } | undefined => {
+  if (!action) return undefined;
+  const a = Array.isArray(action) ? action[0] : action;
+  if (!a) return undefined;
+  return { ...a, type: normalizeActionType(a.type) };
+};
+
+// Fix known faction key typos from upstream data
+const factionTypoMap: Record<string, FactionKey> = {
+  firstrorder: 'firstorder',
+};
+const normalizeFactionKey = (f: string): FactionKey => factionTypoMap[f] ?? (f as FactionKey);
+const normalizeFactions = (factions?: string[]): FactionKey[] | undefined => factions?.map(normalizeFactionKey);
 
 export const runMerge = async (baseUrl: string, assets: any, path: string, theManifest: any, revManifest: any) => {
   const getLatestPilotNumber = () => {
@@ -149,7 +170,8 @@ export const runMerge = async (baseUrl: string, assets: any, path: string, theMa
   const processUpgrade = (key: SlotKey, data: XWDUpgrade) => {
     // @ts-expect-error
     let upgrade = assets.upgrades[key].find(u => u.xws === data.xws);
-    const { name, ...rest } = data;
+    // Strip unknown properties (e.g. 'uid') that don't exist in UpgradeBase
+    const { name, uid, ...rest } = data as any;
 
     if (!upgrade) {
       upgrade = {
@@ -213,12 +235,16 @@ export const runMerge = async (baseUrl: string, assets: any, path: string, theMa
             : undefined,
         })),
         epic: true,
-        cost: rest.cost ?? undefined,
+        cost: rest.cost ? { ...rest.cost, value: Number(rest.cost.value) } : undefined,
         restrictions: rest.restrictions
           ?.filter(r => Object.keys(r).length > 0)
           ?.map(r => {
             const { action, factions, equipped } = r;
-            const res: Restrictions = { action, factions, equipped };
+            const res: Restrictions = {
+              action: normalizeAction(action),
+              factions: normalizeFactions(factions),
+              equipped,
+            };
 
             if (r.sizes) {
               res.baseSizes = r.sizes as Size[];
@@ -280,12 +306,16 @@ export const runMerge = async (baseUrl: string, assets: any, path: string, theMa
         //     })
         //   : undefined,
       }));
-      upgrade.cost = rest.cost ?? undefined;
+      upgrade.cost = rest.cost ? { ...rest.cost, value: Number(rest.cost.value) } : undefined;
       upgrade.restrictions = rest.restrictions
         ?.filter(r => (r.standardized !== undefined ? false : true))
         ?.map(r => {
           const { ships, sizes, force_side, names, shields, energy, initiative, agility, ...rest } = r;
-          const res: Restrictions = { ...rest };
+          const res: Restrictions = {
+            ...rest,
+            action: normalizeAction(rest.action),
+            factions: normalizeFactions(rest.factions),
+          };
 
           if (sizes) {
             res.baseSizes = sizes as Size[];
