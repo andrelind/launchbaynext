@@ -280,7 +280,7 @@ function sideToData(s: SideState): any {
 }
 
 export default function UpgradeEditPage() {
-    const params = useParams();
+    const params = useParams()!;
     const router = useRouter();
     const trpc = useAdminTrpc();
     const upgradeId = params.id as string;
@@ -355,6 +355,7 @@ export default function UpgradeEditPage() {
             }
         }
         load();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [upgradeId]);
 
     const parseOptionalJson = (str: string) => {

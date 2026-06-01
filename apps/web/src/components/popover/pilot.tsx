@@ -173,6 +173,7 @@ export const PilotPopover: FC<Props> = ({
             <div
               key={option.xws}
               role="option"
+              aria-selected={selected?.xws === option.xws}
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(option);

@@ -36,6 +36,7 @@ export default function ConditionsPage() {
 
     useEffect(() => {
         loadConditions();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ruleset]);
 
     return (

@@ -162,7 +162,7 @@ function ContentsSection({
 }
 
 export default function SourceEditPage() {
-    const params = useParams();
+    const params = useParams()!;
     const router = useRouter();
     const trpc = useAdminTrpc();
     const sourceId = params.id as string;
@@ -211,6 +211,7 @@ export default function SourceEditPage() {
             }
         }
         load();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sourceId]);
 
     const handleSave = async () => {

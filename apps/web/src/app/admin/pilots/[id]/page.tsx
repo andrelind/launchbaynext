@@ -67,9 +67,9 @@ interface StatState {
 }
 
 export default function PilotEditPage() {
-    const params = useParams();
+    const params = useParams()!;
     const router = useRouter();
-    const searchParams = useSearchParams();
+    const searchParams = useSearchParams()!;
     const trpc = useAdminTrpc();
     const pilotId = params.id as string;
     const isNew = pilotId === 'new';
@@ -207,6 +207,7 @@ export default function PilotEditPage() {
             }
         }
         load();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pilotId]);
 
     const handleSave = async () => {

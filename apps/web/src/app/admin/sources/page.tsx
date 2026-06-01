@@ -41,6 +41,7 @@ export default function SourcesPage() {
 
     useEffect(() => {
         loadSources();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [category]);
 
     return (

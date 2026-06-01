@@ -58,6 +58,7 @@ export default function PilotsPage() {
 
     useEffect(() => {
         loadPilots();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ruleset, faction]);
 
     return (

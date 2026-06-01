@@ -156,6 +156,7 @@ export const UpgradePopover: FC<Props> = ({
           {selected && (
             <li
               role="option"
+              aria-selected={true}
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(undefined);
@@ -176,6 +177,7 @@ export const UpgradePopover: FC<Props> = ({
             <li
               key={upgrade.xws}
               role="option"
+              aria-selected={selected?.xws === upgrade.xws}
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(upgrade);

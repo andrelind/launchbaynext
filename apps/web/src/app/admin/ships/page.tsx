@@ -60,6 +60,7 @@ export default function ShipsPage() {
 
     useEffect(() => {
         loadShips();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ruleset, faction]);
 
     return (

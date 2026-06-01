@@ -30,6 +30,7 @@ export default function AdminDashboard() {
             }
         }
         load();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (loading) return <div className="text-muted-foreground">Loading...</div>;

@@ -23,7 +23,7 @@ import { toast } from 'sonner';
 import { useAdminTrpc } from '../../_trpc';
 
 export default function ConditionEditPage() {
-    const params = useParams();
+    const params = useParams()!;
     const router = useRouter();
     const trpc = useAdminTrpc();
     const conditionId = params.id as string;
@@ -59,6 +59,7 @@ export default function ConditionEditPage() {
             }
         }
         load();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [conditionId]);
 
     const handleSave = async () => {

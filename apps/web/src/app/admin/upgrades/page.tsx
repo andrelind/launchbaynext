@@ -57,6 +57,7 @@ export default function UpgradesPage() {
 
     useEffect(() => {
         loadUpgrades();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ruleset, slot]);
 
     const getTitle = (upgrade: any) => {

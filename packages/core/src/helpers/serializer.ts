@@ -150,15 +150,12 @@ export const deserialize = (o: string, uid?: string, manifestData?: ManifestData
         const [key, ...list] = u;
         // @ts-expect-error
         parsedUpgrades[manifest.slots[key]] = list.map((l: string) => {
-          // @ts-expect-error
           return manifest.upgrades[`${l}`];
         });
       });
 
       const pp = {
-        // @ts-expect-error
         id: manifest.pilots[`${id}`] || id,
-        // @ts-expect-error
         ship: manifest.ships[`${ship}`] || ship,
         points: 0,
         upgrades: parsedUpgrades,

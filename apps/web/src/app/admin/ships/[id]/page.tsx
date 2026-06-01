@@ -78,7 +78,7 @@ interface StatState {
 }
 
 export default function ShipEditPage() {
-    const params = useParams();
+    const params = useParams()!;
     const router = useRouter();
     const trpc = useAdminTrpc();
     const shipId = params.id as string;
@@ -146,6 +146,7 @@ export default function ShipEditPage() {
             }
         }
         load();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [shipId]);
 
     const handleSave = async () => {
