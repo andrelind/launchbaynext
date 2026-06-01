@@ -1,5 +1,6 @@
 'use client';
 
+import { XCircleIcon } from '@heroicons/react/24/outline';
 import {
     AlertDialog,
     AlertDialogAction,
@@ -20,7 +21,6 @@ import { Label } from '@web/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@web/components/ui/select';
 import { Switch } from '@web/components/ui/switch';
 import { Textarea } from '@web/components/ui/textarea';
-import { XCircleIcon } from '@heroicons/react/24/outline';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { toast } from 'sonner';

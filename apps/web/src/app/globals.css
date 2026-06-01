@@ -1,26 +1,27 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Inter var', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-sans: 'Inter var', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
   --font-xwing: 'xwing-miniatures';
   --font-ships: 'x-wing-ships';
 
-  --color-dark: #0E1218;
-  --color-lbnred: #FF3069;
-  --color-lbn: #FF3069;
-  --color-lbn-50: #FFFFFF;
-  --color-lbn-100: #FFFCFD;
-  --color-lbn-200: #FFC9D8;
-  --color-lbn-300: #FF96B3;
-  --color-lbn-400: #FF638E;
-  --color-lbn-500: #FF3069;
-  --color-lbn-600: #FC0045;
-  --color-lbn-700: #C90037;
+  --color-dark: #0e1218;
+  --color-lbnred: #ff3069;
+  --color-lbn: #ff3069;
+  --color-lbn-50: #ffffff;
+  --color-lbn-100: #fffcfd;
+  --color-lbn-200: #ffc9d8;
+  --color-lbn-300: #ff96b3;
+  --color-lbn-400: #ff638e;
+  --color-lbn-500: #ff3069;
+  --color-lbn-600: #fc0045;
+  --color-lbn-700: #c90037;
   --color-lbn-800: #960029;
-  --color-lbn-900: #63001B;
+  --color-lbn-900: #63001b;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

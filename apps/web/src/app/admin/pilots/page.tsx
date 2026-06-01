@@ -1,6 +1,5 @@
 'use client';
 
-import { Badge } from '@web/components/ui/badge';
 import { Button } from '@web/components/ui/button';
 import { Input } from '@web/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@web/components/ui/select';
@@ -12,7 +11,6 @@ import {
     TableHeader,
     TableRow,
 } from '@web/components/ui/table';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useAdminTrpc } from '../_trpc';

@@ -1,5 +1,6 @@
 'use client';
 
+import { XCircleIcon } from '@heroicons/react/24/outline';
 import {
     AlertDialog,
     AlertDialogAction,
@@ -29,7 +30,6 @@ import {
     TableRow,
 } from '@web/components/ui/table';
 import { Textarea } from '@web/components/ui/textarea';
-import { XCircleIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';

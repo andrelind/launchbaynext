@@ -1,5 +1,6 @@
 'use client';
 
+import { MinusIcon, PlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {
     AlertDialog,
     AlertDialogAction,
@@ -19,7 +20,6 @@ import { Label } from '@web/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@web/components/ui/popover';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@web/components/ui/select';
 import { Switch } from '@web/components/ui/switch';
-import { MinusIcon, PlusIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { toast } from 'sonner';

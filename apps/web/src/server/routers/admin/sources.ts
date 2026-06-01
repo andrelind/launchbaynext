@@ -1,4 +1,4 @@
-import { and, eq, ilike, or } from 'drizzle-orm';
+import { eq, ilike, or } from 'drizzle-orm';
 import { v4 } from 'uuid';
 import { z } from 'zod';
 import { db } from '../../db';
@@ -12,19 +12,28 @@ export const adminSourcesRouter = router({
       const { type, search } = input;
       const pattern = `%${search}%`;
       if (type === 'ships') {
-        const rows = await db.select({ Xws: Ships.Xws, Name: Ships.Name }).from(Ships)
+        const rows = await db
+          .select({ Xws: Ships.Xws, Name: Ships.Name })
+          .from(Ships)
           .where(or(ilike(Ships.Xws, pattern), ilike(Ships.Name, pattern)))
-          .orderBy(Ships.Name).limit(20);
+          .orderBy(Ships.Name)
+          .limit(20);
         return rows.map(r => ({ xws: r.Xws, name: r.Name }));
       } else if (type === 'pilots') {
-        const rows = await db.select({ Xws: Pilots.Xws, Name: Pilots.Name }).from(Pilots)
+        const rows = await db
+          .select({ Xws: Pilots.Xws, Name: Pilots.Name })
+          .from(Pilots)
           .where(or(ilike(Pilots.Xws, pattern), ilike(Pilots.Name, pattern)))
-          .orderBy(Pilots.Name).limit(20);
+          .orderBy(Pilots.Name)
+          .limit(20);
         return rows.map(r => ({ xws: r.Xws, name: r.Name }));
       } else {
-        const rows = await db.select({ Xws: GameUpgrades.Xws }).from(GameUpgrades)
+        const rows = await db
+          .select({ Xws: GameUpgrades.Xws })
+          .from(GameUpgrades)
           .where(ilike(GameUpgrades.Xws, pattern))
-          .orderBy(GameUpgrades.Xws).limit(20);
+          .orderBy(GameUpgrades.Xws)
+          .limit(20);
         return rows.map(r => ({ xws: r.Xws, name: r.Xws }));
       }
     }),
