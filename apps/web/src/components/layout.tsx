@@ -14,6 +14,8 @@ import { getFactionKey } from 'lbn-core/src/helpers/serializer';
 import type { XWS } from 'lbn-core/src/types';
 import { useCookies } from 'next-client-cookies';
 import React, { type FC, useEffect, useState } from 'react';
+import { trpc } from '../app/_trpc/client';
+import { useGameData } from '../app/game-data-provider';
 import { colorForFaction, colorForFactionKey } from '../helpers/colors';
 import { AboutComponent } from './about';
 import { CollectionsPanel } from './collection-panel';
@@ -49,7 +51,7 @@ export const Layout: FC<Props> = ({
   actions,
   children,
 }) => {
-  // const { data: session } = useSession();
+  const { gameData } = useGameData();
 
   const cookies = useCookies()
   const isLoggedIn = cookies.get('x-jwt') !== undefined;
@@ -64,6 +66,7 @@ export const Layout: FC<Props> = ({
   const [showPanel, setShowPanel] = useState(false);
   const [showTags, setShowTags] = useState(false);
   const [showSave, setShowSave] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const [name, setName] = useState(xws.name);
 
@@ -74,6 +77,14 @@ export const Layout: FC<Props> = ({
   useEffect(() => {
     setName(xws.name);
   }, [xws]);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      trpc.me.query().then((res) => setIsAdmin(res.isAdmin)).catch(() => setIsAdmin(false));
+    } else {
+      setIsAdmin(false);
+    }
+  }, [isLoggedIn]);
 
   return (
     <div>
@@ -235,6 +246,17 @@ export const Layout: FC<Props> = ({
                   </div>
                 </div>
 
+                {isAdmin && (
+                  <div className="hidden md:block">
+                    <a
+                      href="/admin"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Admin
+                    </a>
+                  </div>
+                )}
+
                 <div className="hidden md:block">
                   <button
                     onClick={() => setShowAbout(!showAbout)}
@@ -329,6 +351,15 @@ export const Layout: FC<Props> = ({
                 >
                   About
                 </a>
+                {isAdmin && (
+                  <a
+                    href="/admin"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Admin
+                  </a>
+                )}
                 {isLoggedIn && (
                   <a
                     onClick={() => setShowPanel(!showPanel)}
@@ -502,6 +533,7 @@ export const Layout: FC<Props> = ({
             <CollectionsPanel
               show={showCollection}
               onClose={() => setShowCollection(!showCollection)}
+              gameData={gameData}
             />
           )}
           {children}

@@ -29,6 +29,7 @@ import {
   toggleFormat,
 } from '../helpers/edit';
 import { shipTypes, upgradesForSlot2, usedXWS } from '../helpers/select';
+import { useGameData } from './game-data-provider';
 export type DataItem = {
   type: 'Ship' | 'Upgrade' | 'Empty' | 'SlotOptions';
   key: string;
@@ -42,6 +43,7 @@ export type DataItem = {
 };
 
 const MainPage = () => {
+  const { gameData, loading: gameDataLoading } = useGameData();
   const queryLbx = useSearchParams()?.get('lbx');
   const queryFaction = useSearchParams()?.get('faction');
 
@@ -70,7 +72,7 @@ const MainPage = () => {
     };
 
   const [xws, setXws] = useState<XWS>(initialXws);
-  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'amg' }));
+  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }, gameData ?? undefined));
 
   const [shipBase, setShipBase] = useState<ShipType>();
 
@@ -85,7 +87,7 @@ const MainPage = () => {
     }
   }, [queryLbx]);
 
-  if (!xws) {
+  if (!xws || gameDataLoading) {
     return null;
   }
 
@@ -138,12 +140,12 @@ const MainPage = () => {
       onChangeRuleset={() => {
         const squad: XWS = JSON.parse(JSON.stringify(xws));
 
-        squad.ruleset = xws.ruleset === 'xwa' ? 'amg' : xws.ruleset === 'legacy' ? 'xwa' : 'legacy';
+        squad.ruleset = xws.ruleset === 'xwa' ? 'legacy' : 'xwa';
         squad.pilots.forEach((p) => {
-          const ship = loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: squad.ruleset });
+          const ship = loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: squad.ruleset }, gameData ?? undefined);
           p.points = ship.pointsWithUpgrades;
         });
-        squad.points = pointsForSquadron2(squad);
+        squad.points = pointsForSquadron2(squad, gameData ?? undefined);
         squad.version = bumpPatch(squad.version || '2.0.0');
 
         console.log('Set xws');
@@ -169,9 +171,9 @@ const MainPage = () => {
             !s.ability?.slotOptions.find((sl) => s.upgrades?.[keyFromSlot(sl)]);
 
           const hardpointOptions = () => [
-            ...upgradesForSlot2(s, 'Cannon', xws.format, [], true),
-            ...upgradesForSlot2(s, 'Missile', xws.format, [], true),
-            ...upgradesForSlot2(s, 'Torpedo', xws.format, [], true),
+            ...upgradesForSlot2(s, 'Cannon', xws.format, [], true, undefined, gameData ?? undefined),
+            ...upgradesForSlot2(s, 'Missile', xws.format, [], true, undefined, gameData ?? undefined),
+            ...upgradesForSlot2(s, 'Torpedo', xws.format, [], true, undefined, gameData ?? undefined),
           ];
 
           const upgrades = loadUpgrades2(s, xws.format);
@@ -201,7 +203,7 @@ const MainPage = () => {
                     usedXws={usedXws}
                     ship={s}
                     onChange={(p) =>
-                      setXws(changePilot2(xws, pilotIndex, p?.xws || ''))
+                      setXws(changePilot2(xws, pilotIndex, p?.xws || '', gameData ?? undefined))
                     }
                   />
 
@@ -239,6 +241,8 @@ const MainPage = () => {
                           xws.format,
                           ships,
                           true,
+                          undefined,
+                          gameData ?? undefined,
                         )}
                         onChange={(newValue) => {
                           const getSlotIndex = () => {
@@ -265,6 +269,7 @@ const MainPage = () => {
                               keyFromSlot(upgrade.slot),
                               getSlotIndex(),
                               newValue,
+                              gameData ?? undefined,
                             ),
                           );
                         }}
@@ -295,6 +300,7 @@ const MainPage = () => {
                             keyFromSlot(slot),
                             slotIndex,
                             newValue,
+                            gameData ?? undefined,
                           ),
                         );
                       }}
@@ -325,7 +331,7 @@ const MainPage = () => {
         <div className="shadow rounded-md">
           <ShipPopover
             value={shipBase}
-            options={shipTypes(xws)}
+            options={shipTypes(xws, undefined, gameData ?? undefined)}
             onChange={setShipBase}
           />
         </div>
@@ -338,7 +344,7 @@ const MainPage = () => {
               format={xws.format}
               onChange={(v) => {
                 if (v && shipBase) {
-                  setXws(addShip2(xws, shipBase.xws, v.xws));
+                  setXws(addShip2(xws, shipBase.xws, v.xws, undefined, gameData ?? undefined));
                   setShipBase(undefined);
                 }
               }}

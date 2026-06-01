@@ -1,16 +1,9 @@
-import upgradeData from 'lbn-core/src/assets/xwa/upgrades';
 import { cleanupUpgrades2, loadShip2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
 import { bumpMinor, bumpPatch } from 'lbn-core/src/helpers/versioning';
-import type { PilotXWS, SlotKey, Upgrade, UpgradeXWS, XWS } from 'lbn-core/src/types';
+import type { GameData, PilotXWS, SlotKey, Upgrade, UpgradeXWS, XWS } from 'lbn-core/src/types';
 import { upgradesForSlot2 } from './select';
 
-
-export const addShip2 = (
-  list: XWS,
-  shipXws: string,
-  pilotXws: string,
-  upgrades?: UpgradeXWS
-) => {
+export const addShip2 = (list: XWS, shipXws: string, pilotXws: string, upgrades?: UpgradeXWS, gameData?: GameData) => {
   const edit: XWS = JSON.parse(JSON.stringify(list));
   const pilot: PilotXWS = {
     id: pilotXws,
@@ -19,48 +12,39 @@ export const addShip2 = (
     points: 0,
   };
 
-  const ship = loadShip2(pilot, { faction: list.faction, format: list.format, ruleset: list.ruleset || 'amg' });
+  const ship = loadShip2(
+    pilot,
+    { faction: list.faction, format: list.format, ruleset: list.ruleset || 'xwa' },
+    gameData,
+  );
   // Check for free configurations
-  const configs = upgradesForSlot2(
-    ship,
-    'Configuration',
-    list.format,
-    [],
-    true
-  ).filter((u) => u.finalCost === 0);
+  const configs = upgradesForSlot2(ship, 'Configuration', list.format, [], true, undefined, gameData).filter(
+    u => u.finalCost === 0,
+  );
 
-  const blacklist = [
-    'vectoredcannonsrz1',
-    'tiedefenderelite',
-    'sensitivecontrols',
-  ];
+  const blacklist = ['vectoredcannonsrz1', 'tiedefenderelite', 'sensitivecontrols'];
 
-  if (
-    configs.length === 1 &&
-    !pilot.upgrades.configuration &&
-    !blacklist.includes(configs[0].xws)
-  ) {
+  if (configs.length === 1 && !pilot.upgrades.configuration && !blacklist.includes(configs[0].xws)) {
     pilot.upgrades.configuration = [configs[0].xws];
   }
 
   // Check for "standarized" upgrades equipped to other
   // ships with the same shipXws
-  edit.pilots.forEach((p) => {
+  const upgradeSlots = gameData?.upgrades ?? {};
+  edit.pilots.forEach(p => {
     if (p.ship === shipXws) {
       // Loop upgrades
       p.upgrades &&
-        Object.keys(p.upgrades).forEach((k) => {
+        Object.keys(p.upgrades).forEach(k => {
           const key = k as SlotKey;
           const ups = p.upgrades![key];
           if (ups) {
-            ups.forEach((uXws) => {
-              const upgrade: Upgrade = JSON.parse(
-                JSON.stringify(upgradeData[key].find((u) => u.xws === uXws))
+            ups.forEach(uXws => {
+              const upgradeList = upgradeSlots[key] ?? [];
+              const upgrade: Upgrade | undefined = JSON.parse(
+                JSON.stringify(upgradeList.find(u => u.xws === uXws) ?? null),
               );
-              if (
-                upgrade?.standarized &&
-                !pilot.upgrades?.[key]?.find((x) => x === uXws)
-              ) {
+              if (upgrade?.standarized && !pilot.upgrades?.[key]?.find(x => x === uXws)) {
                 if (!pilot.upgrades![key]) {
                   pilot.upgrades![key] = [];
                 }
@@ -74,7 +58,7 @@ export const addShip2 = (
   });
 
   edit.pilots = [...edit.pilots, pilot];
-  edit.points = pointsForSquadron2(edit);
+  edit.points = pointsForSquadron2(edit, gameData);
   edit.version = bumpMinor(edit.version || '2.0.0');
 
   return edit;
@@ -85,7 +69,8 @@ export const setUpgrade2 = (
   pilotIndex: number,
   key: SlotKey,
   slotIndex: number,
-  u?: Upgrade
+  u?: Upgrade,
+  gameData?: GameData,
 ) => {
   const squad: XWS = JSON.parse(JSON.stringify(xws));
 
@@ -103,19 +88,15 @@ export const setUpgrade2 = (
 
       // Load upgrade, check for "standarized"
       try {
-        const upgrade: Upgrade = JSON.parse(
-          JSON.stringify(upgradeData[key].find((up) => up.xws === removed?.[0]))
+        const upgradeList = gameData?.upgrades[key] ?? [];
+        const upgrade: Upgrade | undefined = JSON.parse(
+          JSON.stringify(upgradeList.find(up => up.xws === removed?.[0]) ?? null),
         );
         if (upgrade?.standarized) {
-          squad.pilots = squad.pilots.map((p) => {
-            if (
-              p.ship === pilot.ship &&
-              p.upgrades?.[key]?.find((x) => x === upgrade.xws)
-            ) {
+          squad.pilots = squad.pilots.map(p => {
+            if (p.ship === pilot.ship && p.upgrades?.[key]?.find(x => x === upgrade.xws)) {
               // Found it, remove it
-              p.upgrades[key] = p.upgrades[key]?.filter(
-                (x) => x !== upgrade.xws
-              );
+              p.upgrades[key] = p.upgrades[key]?.filter(x => x !== upgrade.xws);
             }
             return p;
           });
@@ -141,10 +122,10 @@ export const setUpgrade2 = (
     // Handle standarized
     if (u.standarized) {
       // Look up all other and add it to them too
-      squad.pilots = squad.pilots.map((p) => {
+      squad.pilots = squad.pilots.map(p => {
         if (p.ship === pilot.ship) {
           if (p.upgrades?.[key]) {
-            if (p.upgrades?.[key]?.find((x) => x === u.xws)) {
+            if (p.upgrades?.[key]?.find(x => x === u.xws)) {
               // Found it, no need to add
             } else {
               p.upgrades[key]?.push(u.xws);
@@ -161,33 +142,42 @@ export const setUpgrade2 = (
   }
 
   // Make sure we have correct amount of upgrades
-  const ship = loadShip2(pilot, { faction: squad.faction, format: squad.format, ruleset: squad.ruleset || 'amg' });
-  // FIXME: CleanupUpgrades should work with just ship...
-  pilot.upgrades = cleanupUpgrades2(pilot.upgrades, ship, { format: squad.format, ruleset: squad.ruleset || 'amg' });
+  const ship = loadShip2(
+    pilot,
+    { faction: squad.faction, format: squad.format, ruleset: squad.ruleset || 'xwa' },
+    gameData,
+  );
+  pilot.upgrades = cleanupUpgrades2(
+    pilot.upgrades,
+    ship,
+    { format: squad.format, ruleset: squad.ruleset || 'xwa' },
+    gameData,
+  );
 
-  squad.points = pointsForSquadron2(squad);
+  squad.points = pointsForSquadron2(squad, gameData);
   squad.version = bumpPatch(squad.version || '2.0.0');
   return squad;
 };
 
-export const changePilot2 = (
-  xws: XWS,
-  pilotIndex: number,
-  pilotXws: string
-) => {
+export const changePilot2 = (xws: XWS, pilotIndex: number, pilotXws: string, gameData?: GameData) => {
   const edit: XWS = JSON.parse(JSON.stringify(xws));
   const pilot = edit.pilots[pilotIndex];
   pilot.id = pilotXws;
-  const ship = loadShip2(pilot, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'amg' });
+  const ship = loadShip2(
+    pilot,
+    { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'xwa' },
+    gameData,
+  );
   edit.pilots[pilotIndex].upgrades = cleanupUpgrades2(
     pilot.upgrades,
     ship,
-    { format: edit.format, ruleset: edit.ruleset || 'amg' }
+    { format: edit.format, ruleset: edit.ruleset || 'xwa' },
+    gameData,
   );
 
-  const pilots = edit.pilots.map((p) => {
-    const s = loadShip2(p, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'amg' });
-    const upgrades = cleanupUpgrades2(p.upgrades, s, { format: edit.format, ruleset: edit.ruleset || 'amg' });
+  const pilots = edit.pilots.map(p => {
+    const s = loadShip2(p, { faction: edit.faction, format: edit.format, ruleset: edit.ruleset || 'xwa' }, gameData);
+    const upgrades = cleanupUpgrades2(p.upgrades, s, { format: edit.format, ruleset: edit.ruleset || 'xwa' }, gameData);
 
     return {
       ...p,

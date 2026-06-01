@@ -5,6 +5,7 @@ import { PilotListItem } from '@/src/components/PilotListItem';
 import { SegmentedControl } from '@/src/components/SegmentedControl';
 import { UpgradeComponent } from '@/src/components/Upgrade';
 import { useTailwind } from '@/src/helpers/tailwind';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { darkgrey } from '@/src/theme';
 import { Octicons } from '@expo/vector-icons';
 import { LegendList, LegendListRenderItemProps } from '@legendapp/list';
@@ -21,7 +22,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 type Data = { ship?: ShipType; pilot?: TShip; upgrade?: UpgradeBase };
 
-const segments = ['xwa', 'legacy', 'amg'] as RuleSet[];
+const segments = ['xwa', 'legacy'] as RuleSet[];
 
 export default function DatabaseScreen() {
     const { tw } = useTailwind();
@@ -35,12 +36,17 @@ export default function DatabaseScreen() {
             return [];
         }
 
+        const gd = useGameDataStore.getState().data;
+        const pilotData = gd?.pilots ?? assets[ruleset].pilots;
+        const upgradeData = gd?.upgrades ?? assets[ruleset].upgrades;
+        const conditionData = gd?.conditions ?? assets[ruleset].conditions;
+
         const fPilots: TShip[] = [];
         const fUpgrades: UpgradeBase[] = [];
 
         factions.forEach((faction) => {
-            Object.keys(assets[ruleset].pilots[faction]).forEach((key) => {
-                const ship: ShipType = assets[ruleset].pilots[faction][key];
+            Object.keys(pilotData[faction] ?? {}).forEach((key) => {
+                const ship: ShipType = pilotData[faction]![key];
                 const filtered = ship.pilots.filter(
                     (p) =>
                         p.name.toLowerCase().includes(needle) ||
@@ -65,7 +71,8 @@ export default function DatabaseScreen() {
                                         faction: getFactionKey(faction),
                                         format: 'Extended',
                                         ruleset
-                                    }
+                                    },
+                                    gd ?? undefined
                                 )
                             )
                         )
@@ -75,12 +82,12 @@ export default function DatabaseScreen() {
         });
 
         slotKeys.forEach((slot) => {
-            assets[ruleset].upgrades[slot].forEach((upgrade) => {
+            (upgradeData[slot] ?? []).forEach((upgrade) => {
                 if (upgrade.sides[0].title.toLowerCase().indexOf(needle) >= 0) {
                     fUpgrades.push(upgrade);
                 } else if (upgrade.sides[0].conditions) {
                     upgrade.sides[0].conditions.forEach((x) => {
-                        const condition = assets[ruleset].conditions.find((c) => c.xws === x);
+                        const condition = conditionData.find((c) => c.xws === x);
                         if (
                             condition &&
                             condition.name.toLowerCase().indexOf(needle) >= 0
@@ -122,7 +129,7 @@ export default function DatabaseScreen() {
         <>
             {isLiquidGlassAvailable() && (
                 <SafeAreaView style={tw`w-full flex-1`}>
-                    <SegmentedControl segments={['XWA', 'Legacy', 'AMG']}
+                    <SegmentedControl segments={['XWA', 'Legacy']}
                         onChange={(index) => {
                             setRuleset(segments[index] as RuleSet);
                         }} />
@@ -130,14 +137,14 @@ export default function DatabaseScreen() {
             )}
             {Platform.OS === 'ios' && !isLiquidGlassAvailable() && (
                 <SafeAreaView style={tw`w-full pt-24 flex-1`}>
-                    <SegmentedControl segments={['XWA', 'Legacy', 'AMG']}
+                    <SegmentedControl segments={['XWA', 'Legacy']}
                         onChange={(index) => {
                             setRuleset(segments[index] as RuleSet);
                         }} />
                 </SafeAreaView>
             )}
             {Platform.OS !== 'ios' && (
-                <SegmentedControl segments={['XWA', 'Legacy', 'AMG']}
+                <SegmentedControl segments={['XWA', 'Legacy']}
                     onChange={(index) => {
                         setRuleset(segments[index] as RuleSet);
                     }} />

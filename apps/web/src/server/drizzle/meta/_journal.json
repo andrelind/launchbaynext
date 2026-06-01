@@ -8,6 +8,13 @@
       "when": 1720464196885,
       "tag": "0000_married_onslaught",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1780229695915,
+      "tag": "0001_fair_warpath",
+      "breakpoints": true
     }
   ]
 }

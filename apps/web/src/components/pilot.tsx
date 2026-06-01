@@ -1,6 +1,5 @@
-import conditionData from 'lbn-core/src/assets/xwa/conditions';
 import type { TShip } from 'lbn-core/src/helpers/loading';
-import type { Pilot, ShipType } from 'lbn-core/src/types';
+import type { Condition, Pilot, ShipType } from 'lbn-core/src/types';
 import { type FC } from 'react';
 import AbilityComponent from './ability';
 import ActionsComponent from './actions';
@@ -16,6 +15,7 @@ type Props = {
   limitWarning?: boolean;
   showFaction?: boolean;
   showBaseCost?: boolean;
+  conditions?: Condition[];
 };
 
 const PilotComponent: FC<Props> = ({
@@ -23,6 +23,7 @@ const PilotComponent: FC<Props> = ({
   ship,
   showFaction,
   showBaseCost,
+  conditions: conditionData,
 }) => {
   return (
     <div className="flex flex-1 flex-col m-2">
@@ -56,7 +57,7 @@ const PilotComponent: FC<Props> = ({
 
         {pilot.conditions &&
           pilot.conditions.map((c) => {
-            const condition = conditionData.filter((cc) => cc.xws === c)[0];
+            const condition = (conditionData ?? []).filter((cc) => cc.xws === c)[0];
             return (
               <FormattedText
                 key={c}

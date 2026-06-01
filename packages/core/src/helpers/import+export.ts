@@ -1,7 +1,6 @@
 import { v4 as uuid } from 'uuid';
-import { RuleSet } from '..';
-import { assets } from '../';
-import { FactionKey, SlotKey, XWS } from '../types';
+import { RuleSet, assets } from '..';
+import { FactionKey, GameData, SlotKey, UpgradeBase, XWS } from '../types';
 import { getFaction } from './convert';
 import { slotKeys } from './enums';
 import { loadShip2 } from './loading';
@@ -11,7 +10,18 @@ const cleanText = (text?: string) => {
   return text?.replace(/ *\([^)]*\) */g, '');
 };
 
-const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
+/** Resolve GameData: use provided gameData or fall back to static assets */
+const resolveData = (ruleset: RuleSet, gameData?: GameData): GameData => {
+  if (gameData) return gameData;
+  const a = assets[ruleset || 'xwa'];
+  return {
+    pilots: a.pilots as unknown as GameData['pilots'],
+    upgrades: a.upgrades as unknown as GameData['upgrades'],
+    conditions: a.conditions as unknown as GameData['conditions'],
+  };
+};
+
+const validatePilot = (pilot: any, ruleset: RuleSet, gameData?: GameData): Object | void => {
   console.log('Validating pilot', pilot);
 
   if (!pilot.upgrades) {
@@ -48,26 +58,24 @@ const validatePilot = (pilot: any, ruleset: RuleSet): Object | void => {
     delete upgrades['force-power'];
   }
 
+  const data = resolveData(ruleset, gameData);
+
   slotKeys.forEach(key => {
     // YASB...
     if (slotKeys.indexOf(key) < 0) {
-      // No unknown keys please
-      // console.log(`Unknown key ${key}`);
       return undefined;
     }
     console.log(`Validating ${key}`);
 
-    if (assets[ruleset]?.upgrades[key] === undefined) {
-      // console.log(`Unknown key ${key}`);
+    if ((data.upgrades[key] as UpgradeBase[] | undefined) === undefined) {
       return undefined;
     }
     if (!Array.isArray(upgrades[key])) {
-      // console.log(`Not an array ${key}`);
       return undefined;
     }
 
     for (const item of upgrades[key]) {
-      if (assets[ruleset].upgrades[key].filter(u => u.xws === item).length === 0) {
+      if ((data.upgrades[key] as UpgradeBase[]).filter(u => u.xws === item).length === 0) {
         console.log(`Invalid item ${item}`);
         return undefined;
       }

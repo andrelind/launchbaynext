@@ -52,7 +52,7 @@ export const syncWithServer = async (xwsState: XWSState, collectionState: Collec
     ];
     final.forEach(l => {
       if (!l.ruleset) {
-        l.ruleset = l.points > 100 ? 'legacy' : 'amg';
+        l.ruleset = l.points > 100 ? 'legacy' : 'xwa';
       }
     });
 

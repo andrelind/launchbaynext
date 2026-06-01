@@ -1,8 +1,10 @@
 import { Transition } from '@headlessui/react';
 import { type FC, useState } from 'react';
 import { SearchComponent } from '.';
+import { useGameData } from '../../app/game-data-provider';
 
 export const SearchInput: FC<{}> = () => {
+  const { gameData } = useGameData();
   const [needle, setNeedle] = useState<string>();
   const [showPanel, setShowPanel] = useState(false);
 
@@ -32,8 +34,8 @@ export const SearchInput: FC<{}> = () => {
             id="search"
             name="search"
             className={`block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 ${showPanel
-                ? 'bg-white border-white text-gray-900'
-                : 'bg-gray-700 text-gray-300'
+              ? 'bg-white border-white text-gray-900'
+              : 'bg-gray-700 text-gray-300'
               } placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm`}
             placeholder="Search"
             type="search"
@@ -66,7 +68,7 @@ export const SearchInput: FC<{}> = () => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <SearchComponent needle={needle} />
+            <SearchComponent needle={needle} gameData={gameData} />
           </Transition>
         </div>
       </div>

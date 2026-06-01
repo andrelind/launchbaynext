@@ -54,7 +54,7 @@ export const Modal: FC<Props> = ({ show, onDismiss, children }) => {
             leave="ease-in duration-200"
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-            className="inline-block align-bottom overflow-visible shadow-xl transform transition-all sm:align-middle bg-white rounded-lg sm:px-4 py-3 sm:my-8 w-full sm:max-w-3xl sm:p-6"
+            className="relative z-10 inline-block align-bottom overflow-visible shadow-xl transform transition-all sm:align-middle bg-white rounded-lg sm:px-4 py-3 sm:my-8 w-full sm:max-w-3xl sm:p-6"
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-headline"

@@ -1,8 +1,7 @@
 import { Transition } from '@headlessui/react';
-import { pilots, upgrades } from 'lbn-core/src/assets/xwa';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
 import sources, { type SourceKey } from 'lbn-core/src/sources';
-import { type Faction } from 'lbn-core/src/types';
+import { type Faction, type GameData } from 'lbn-core/src/types';
 import { type FC, useEffect, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
@@ -12,6 +11,7 @@ import XwingFont from './fonts/xwing';
 type Props = {
   show: boolean;
   onClose: () => void;
+  gameData?: GameData | null;
 };
 
 const extraKeys: (
@@ -30,7 +30,7 @@ const extraKeys: (
 
 const keys: SourceKey[] = [...extraKeys, ...factions];
 
-export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
+export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
   const { mutate } = useSWRConfig();
   const { data: collection } = useSwr('/collection', () =>
     // get<CollectionState>('/collection')
@@ -50,11 +50,13 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
   >([]);
 
   useEffect(() => {
+    const pilotData = gameData?.pilots ?? {};
+    const upgradeData = gameData?.upgrades ?? {};
     switch (sourceKey) {
       case 'Additional Pilots': {
         const all = factions.map((f) =>
-          Object.keys(pilots[f]).map((key) => {
-            const ship = pilots[f][key];
+          Object.keys(pilotData[f] ?? {}).map((key) => {
+            const ship = pilotData[f]![key];
             return ship.pilots.map((p) => ({
               xws: p.xws,
               name: p.name,
@@ -73,8 +75,8 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
       }
       case 'Additional Ships': {
         const all = factions.map((f) =>
-          Object.keys(pilots[f]).map((key) => {
-            const ship = pilots[f][key];
+          Object.keys(pilotData[f] ?? {}).map((key) => {
+            const ship = pilotData[f]![key];
             return {
               xws: ship.xws,
               name: ship.name,
@@ -92,7 +94,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
       }
       case 'Additional Upgrades': {
         const all = slotKeys.map((key) =>
-          upgrades[key]?.map((u) => ({
+          (upgradeData[key] ?? []).map((u) => ({
             xws: u.xws,
             name: u.sides[0].title,
             count: collection?.upgrades[u.xws] || 0,
@@ -117,7 +119,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
         return;
       }
     }
-  }, [sourceKey, collection]);
+  }, [sourceKey, collection, gameData]);
 
   if (!collection) {
     return null;

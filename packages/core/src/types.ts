@@ -508,3 +508,19 @@ export type UpgradeChange = {
     hyperspace: boolean;
   };
 };
+
+// ─── Game Data (fetched from DB or static assets) ───────────────────────────
+
+export type GameData = {
+  pilots: { [faction in Faction]?: { [shipXws: string]: ShipType } };
+  upgrades: { [key in SlotKey]?: UpgradeBase[] };
+  conditions: Condition[];
+};
+
+export type ManifestData = {
+  factions: { [id: string]: string };
+  ships: { [id: string]: string };
+  pilots: { [id: string]: string };
+  upgrades: { [id: string]: string };
+  slots: { [id: string]: string };
+};

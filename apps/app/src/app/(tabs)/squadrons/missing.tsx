@@ -1,5 +1,6 @@
 import { useAvailability } from '@/src/helpers/collection';
 import { useTailwind } from '@/src/helpers/tailwind';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { useXwsStore } from '@/src/stores/xws';
 import { useLocalSearchParams } from 'expo-router';
 import { assets } from 'lbn-core/src';
@@ -23,17 +24,21 @@ export default function MissingItemsScreen() {
         );
     }
 
+    const gd = useGameDataStore(s => s.data);
+    const pilotData = gd?.pilots ?? assets[xws.ruleset].pilots;
+    const upgradeData = gd?.upgrades ?? assets[xws.ruleset].upgrades;
+
     const missingShips = available.ships
         .filter((s) => s.count < 0)
         .map((s) => {
             const ship: ShipBase =
-                assets[xws.ruleset].pilots[factionFromKey(xws?.faction || 'firstorder')][s.xws];
+                pilotData[factionFromKey(xws?.faction || 'firstorder')]![s.xws];
             return { ...s, name: ship.name };
         });
     const missingPilots = available.pilots
         .filter((p) => p.count < 0)
         .map((p) => {
-            const pilot = assets[xws.ruleset].pilots[factionFromKey(xws?.faction || 'firstorder')][
+            const pilot = pilotData[factionFromKey(xws?.faction || 'firstorder')]![
                 p.shipXws
             ].pilots
                 .filter((x) => x)
@@ -44,7 +49,7 @@ export default function MissingItemsScreen() {
         .filter((s) => s.count < 0)
         .map((u) => {
             const upgrade: Upgrade = JSON.parse(
-                JSON.stringify(assets[xws.ruleset].upgrades[u.key].find((s) => s.xws === u.xws))
+                JSON.stringify(upgradeData[u.key]!.find((s) => s.xws === u.xws))
             );
             return { ...u, name: upgrade.sides[0].title };
         });

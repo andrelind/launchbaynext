@@ -7,7 +7,7 @@ interface CreateContextOptions {
   reqHeaders: Headers;
   resHeaders: Headers;
   token?: string;
-  user?: { id: string; name: string; email: string | null };
+  user?: { id: string; name: string; email: string | null; isAdmin: boolean };
 }
 
 const createInnerTRPCContext = (opts: CreateContextOptions) => {
@@ -23,12 +23,13 @@ export const createContext = async (opts: FetchCreateContextFnOptions) => {
   const { resHeaders, req } = opts;
 
   // Get jwt from req
-  const token = (() => {
+  const token = await (async () => {
     const header = req.headers.get('x-jwt');
     if (header) {
       return header;
     }
-    return cookies().get('x-jwt')?.value;
+    const cookieStore = await cookies();
+    return cookieStore.get('x-jwt')?.value;
   })();
 
   if (!token) {
@@ -36,10 +37,7 @@ export const createContext = async (opts: FetchCreateContextFnOptions) => {
   }
 
   // Validate token
-  const decoded = jwt.verify(
-    token,
-    process.env.JWT_SECRET as string
-  ) as JwtPayload;
+  const decoded = jwt.verify(token, process.env.JWT_SECRET as string) as JwtPayload;
 
   if (!decoded) {
     return createInnerTRPCContext({ reqHeaders: req.headers, resHeaders });
@@ -51,9 +49,7 @@ export const createContext = async (opts: FetchCreateContextFnOptions) => {
   });
   //   return createInnerTRPCContext({ user });
   return createInnerTRPCContext({
-    user: user
-      ? { id: user.Id, name: user.Name, email: user.Email }
-      : undefined,
+    user: user ? { id: user.Id, name: user.Name, email: user.Email, isAdmin: user.IsAdmin } : undefined,
     reqHeaders: req.headers,
     resHeaders,
     token,
