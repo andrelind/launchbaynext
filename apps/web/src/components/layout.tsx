@@ -1,7 +1,6 @@
 import { Transition } from '@headlessui/react';
 import {
   CloudIcon,
-  CogIcon,
   EllipsisHorizontalCircleIcon,
   LinkIcon,
   PlusCircleIcon,
@@ -14,6 +13,8 @@ import { getFactionKey } from 'lbn-core/src/helpers/serializer';
 import type { XWS } from 'lbn-core/src/types';
 import { useCookies } from 'next-client-cookies';
 import React, { type FC, useEffect, useState } from 'react';
+import { trpc } from '../app/_trpc/client';
+import { useGameData } from '../app/game-data-provider';
 import { colorForFaction, colorForFactionKey } from '../helpers/colors';
 import { AboutComponent } from './about';
 import { CollectionsPanel } from './collection-panel';
@@ -49,7 +50,7 @@ export const Layout: FC<Props> = ({
   actions,
   children,
 }) => {
-  // const { data: session } = useSession();
+  const { gameData } = useGameData();
 
   const cookies = useCookies()
   const isLoggedIn = cookies.get('x-jwt') !== undefined;
@@ -64,6 +65,8 @@ export const Layout: FC<Props> = ({
   const [showPanel, setShowPanel] = useState(false);
   const [showTags, setShowTags] = useState(false);
   const [showSave, setShowSave] = useState(false);
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const [name, setName] = useState(xws.name);
 
@@ -74,6 +77,14 @@ export const Layout: FC<Props> = ({
   useEffect(() => {
     setName(xws.name);
   }, [xws]);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      trpc.me.query().then((res) => setIsAdmin(res.isAdmin)).catch(() => setIsAdmin(false));
+    } else {
+      setIsAdmin(false);
+    }
+  }, [isLoggedIn]);
 
   return (
     <div>
@@ -126,7 +137,7 @@ export const Layout: FC<Props> = ({
                           leave="transition ease-in duration-75"
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
-                          className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
+                          className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-gray-900 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
                           role="menu"
                           aria-orientation="vertical"
                           aria-labelledby="options-menu"
@@ -206,34 +217,39 @@ export const Layout: FC<Props> = ({
                     <div>
                       <button
                         onClick={() => {
-                          !isLoggedIn ? setShowLogin(true) : cookies.remove('x-jwt')
+                          !isLoggedIn ? setShowLogin(true) : setShowLogoutConfirm(true)
                         }}
                         className="max-w-xs flex items-center text-sm rounded-full focus:outline-none focus:shadow-solid text-gray-300 hover:text-white"
                         id="user-menu"
                         aria-label="User menu"
                         aria-haspopup="true"
                       >
-                        {isLoggedIn && (
-                          <CogIcon
-                            className="ml-1 mr-1 h-6 w-6"
-                            aria-hidden="true"
-                          />
-                        )}
-                        {!isLoggedIn && (
-                          <span
-                            className={
-                              showLogin
-                                ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                        <span
+                          className={
+                            (showLogin || showLogoutConfirm)
+                              ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium'
+                              : isLoggedIn
+                                ? 'text-lbnred hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                            }
-                          >
-                            Login
-                          </span>
-                        )}
+                          }
+                        >
+                          {isLoggedIn ? 'Logout' : 'Login'}
+                        </span>
                       </button>
                     </div>
                   </div>
                 </div>
+
+                {isAdmin && (
+                  <div className="hidden md:block">
+                    <a
+                      href="/admin"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Admin
+                    </a>
+                  </div>
+                )}
 
                 <div className="hidden md:block">
                   <button
@@ -329,6 +345,15 @@ export const Layout: FC<Props> = ({
                 >
                   About
                 </a>
+                {isAdmin && (
+                  <a
+                    href="/admin"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
+                    role="menuitem"
+                  >
+                    Admin
+                  </a>
+                )}
                 {isLoggedIn && (
                   <a
                     onClick={() => setShowPanel(!showPanel)}
@@ -349,7 +374,7 @@ export const Layout: FC<Props> = ({
                 )}
                 {isLoggedIn && (
                   <a
-                    onClick={() => cookies.remove('x-jwt')}
+                    onClick={() => setShowLogoutConfirm(true)}
                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
                     role="menuitem"
                   >
@@ -468,7 +493,7 @@ export const Layout: FC<Props> = ({
                     leaveTo="transform opacity-0 scale-95"
                     className="origin-top right-0 sm:origin-top-right absolute mt-2 w-48 rounded-md shadow-lg z-10"
                   >
-                    <div className="py-1 rounded-md bg-white shadow-xs">
+                    <div className="py-1 rounded-md bg-white text-gray-900 shadow-xs">
                       {actions?.map((a) => (
                         <button
                           key={a.title}
@@ -502,6 +527,7 @@ export const Layout: FC<Props> = ({
             <CollectionsPanel
               show={showCollection}
               onClose={() => setShowCollection(!showCollection)}
+              gameData={gameData}
             />
           )}
           {children}
@@ -510,6 +536,30 @@ export const Layout: FC<Props> = ({
 
       <Modal show={showLogin} onDismiss={() => setShowLogin(false)}>
         <LoginComponent onClose={() => setShowLogin(false)} />
+      </Modal>
+
+      <Modal show={showLogoutConfirm} onDismiss={() => setShowLogoutConfirm(false)}>
+        <div className="py-4 px-6 text-center">
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">Log out?</h3>
+          <p className="text-sm text-gray-500 mb-6">Are you sure you want to log out?</p>
+          <div className="flex gap-3 justify-center">
+            <button
+              onClick={() => setShowLogoutConfirm(false)}
+              className="px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
+            >
+              Cancel
+            </button>
+            <button
+              onClick={() => {
+                cookies.remove('x-jwt');
+                setShowLogoutConfirm(false);
+              }}
+              className="px-4 py-2 rounded-md text-sm font-medium text-white bg-lbnred hover:bg-lbn-600 transition-colors"
+            >
+              Log out
+            </button>
+          </div>
+        </div>
       </Modal>
 
       <Modal show={showAbout} onDismiss={() => setShowAbout(false)}>

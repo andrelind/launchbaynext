@@ -18,3 +18,18 @@ const isAuthed = t.middleware(opts => {
 });
 
 export const protectedProcedure = t.procedure.use(isAuthed);
+
+const isAdmin = t.middleware(opts => {
+  const { ctx } = opts;
+  if (!ctx.user) {
+    throw new TRPCError({ code: 'UNAUTHORIZED' });
+  }
+  if (!ctx.user.isAdmin) {
+    throw new TRPCError({ code: 'FORBIDDEN', message: 'Admin access required' });
+  }
+  return opts.next({
+    ctx: { user: ctx.user },
+  });
+});
+
+export const adminProcedure = t.procedure.use(isAdmin);

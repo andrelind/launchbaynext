@@ -19,6 +19,7 @@ import '../components/sheets';
 import { syncWithServer } from '../helpers/api';
 import { useTailwind } from '../helpers/tailwind';
 import { useCollectionStore } from '../stores/collection';
+import { useGameDataStore } from '../stores/gameData';
 import { useXwsStore } from '../stores/xws';
 
 export const unstable_settings = {
@@ -73,6 +74,9 @@ const runUpdates = async () => {
     // alert(`Error fetching latest Expo update: ${error}`);
   }
 
+  // Check for game data updates
+  await useGameDataStore.getState().checkForUpdates();
+
   await syncWithServer(
     useXwsStore.getState(),
     useCollectionStore.getState()
@@ -81,24 +85,25 @@ const runUpdates = async () => {
 
 useXwsStore.subscribe(state => {
   if (!state.loaded) {
+    const gd = useGameDataStore.getState().data;
     // Reload all lists at startup to clean and recount points
     const lists = useXwsStore.getState().lists?.map(l => {
       if (!l.ruleset) {
-        l.ruleset = 'amg';
+        l.ruleset = 'xwa';
       }
 
       const pilots = l.pilots
         .filter(p => {
           try {
-            loadShip2(p, l);
+            loadShip2(p, l, gd ?? undefined);
             return true;
           } catch (error) {
             return false;
           }
         })
         .map(p => {
-          const s = loadShip2(p, l);
-          const upgrades = cleanupUpgrades2(p.upgrades, s, l);
+          const s = loadShip2(p, l, gd ?? undefined);
+          const upgrades = cleanupUpgrades2(p.upgrades, s, l, gd ?? undefined);
           return {
             ...p,
             points: l.ruleset === 'legacy' ? s.pointsWithUpgrades : (s.pilot?.cost || 0),
@@ -110,7 +115,7 @@ useXwsStore.subscribe(state => {
         pilots,
         points: pilots.reduce((a, c) => a + c.points, 0),
         obstacles: l.obstacles?.map(o => o.replace('obstacle-', '')),
-        ruleset: l.ruleset || 'amg',
+        ruleset: l.ruleset || 'xwa',
         vendor: {
           ...l.vendor,
           lbn: {

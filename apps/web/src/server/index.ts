@@ -5,6 +5,8 @@ import { v4 } from 'uuid';
 import { z } from 'zod';
 import { db } from './db';
 import { Collections, Games, Lists, Participants, Tournaments, UserLoginCodes, Users } from './drizzle/schema';
+import { adminRouter } from './routers/admin';
+import { gameDataRouter } from './routers/gameData';
 import { collectionRouter } from './subrouters/collection';
 import { listRouter } from './subrouters/lists';
 import { statsRouter } from './subrouters/stats';
@@ -132,6 +134,10 @@ export const appRouter = router({
       return token;
     }),
 
+  me: protectedProcedure.query(async ({ ctx }) => {
+    return { isAdmin: ctx.user?.isAdmin ?? false };
+  }),
+
   deleteAccount: protectedProcedure.mutation(async ({ ctx }) => {
     const user = ctx.user;
     if (!user) {
@@ -159,6 +165,8 @@ export const appRouter = router({
   collection: collectionRouter,
   lists: listRouter,
   stats: statsRouter,
+  gameData: gameDataRouter,
+  admin: adminRouter,
 });
 
 export type AppRouter = typeof appRouter;

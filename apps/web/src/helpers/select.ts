@@ -1,11 +1,10 @@
-import pilotData from 'lbn-core/src/assets/xwa/pilots';
-import upgradeData from 'lbn-core/src/assets/xwa/upgrades';
 import { keyFromFaction, keyFromSlot } from 'lbn-core/src/helpers/convert';
 import { allSlots, slotKeys } from 'lbn-core/src/helpers/enums';
 import { freeSlotsForShip2, pointsForUpgrade2, type TShip } from 'lbn-core/src/helpers/loading';
 import type {
   Faction,
   Format,
+  GameData,
   Pilot,
   ShipType,
   Slot,
@@ -52,8 +51,9 @@ export const upgradesForSlot2 = (
   ships: TShip[],
   showUnavailable: boolean,
   needle?: string,
+  gameData?: GameData,
 ): Upgrade[] => {
-  const freeSlots = freeSlotsForShip2(ship, { ruleset: 'amg' });
+  const freeSlots = freeSlotsForShip2(ship, { ruleset: 'xwa' }, gameData);
   const allXws = usedShipXws2(ship);
 
   const upgrades: { [key in SlotKey]?: string[] } = {};
@@ -64,12 +64,14 @@ export const upgradesForSlot2 = (
     }
   });
 
-  const data = upgradeData[keyFromSlot(slot)]
+  const slotKey = keyFromSlot(slot);
+  const upgradeList = gameData?.upgrades[slotKey] ?? [];
+
+  const data = upgradeList
     .map(u => ({
       ...u,
-      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset: 'amg' }),
+      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset: 'xwa' }, gameData),
       available: 0,
-      //   available: countForUpgrade(u.xws, collection, squadron),
     }))
     .filter((u: Upgrade) => {
       if (u.standardLoadoutOnly) {
@@ -280,12 +282,14 @@ export const shipTypes = (
   xws: XWS,
   // showUnavailable: boolean,
   needle?: string,
+  gameData?: GameData,
 ): ShipType[] => {
-  // const collection = collectionStore();
+  const faction = factionFromKey(xws.faction);
+  const factionPilots = gameData?.pilots[faction] ?? {};
 
   return (
-    Object.keys(pilotData[factionFromKey(xws.faction)])
-      .map(key => pilotData[factionFromKey(xws.faction)][key])
+    Object.keys(factionPilots)
+      .map(key => factionPilots[key])
       .filter((s: ShipType) => {
         switch (xws.format) {
           case 'Extended':
@@ -326,9 +330,16 @@ export const shipTypes = (
   );
 };
 
-export const pilotOptions = (faction: Faction, format: Format, shipXws: string, needle?: string): Pilot[] => {
-  const ship = Object.keys(pilotData[faction])
-    .map(key => pilotData[faction][key])
+export const pilotOptions = (
+  faction: Faction,
+  format: Format,
+  shipXws: string,
+  needle?: string,
+  gameData?: GameData,
+): Pilot[] => {
+  const factionPilots = gameData?.pilots[faction] ?? {};
+  const ship = Object.keys(factionPilots)
+    .map(key => factionPilots[key])
     .find(s => s.xws === shipXws);
 
   if (ship) {

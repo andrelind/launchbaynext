@@ -5,6 +5,7 @@ import { factionKeys } from 'lbn-core/src/helpers/enums';
 import { Condition, Slot, Upgrade } from 'lbn-core/src/types';
 import React, { FC, ReactNode, useCallback } from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
+import { useGameDataStore } from '../stores/gameData';
 
 // Build a merged condition lookup, preferring entries that have images
 const allConditionsRaw: Condition[] = [...amgConditions, ...legacyConditions, ...xwaConditions];
@@ -298,7 +299,8 @@ export const UpgradeComponent: FC<Props> = ({
           {upgradeSide.conditions && upgradeSide.conditions.length > 0 && (
             <View style={tw`flex-row flex-wrap gap-1 mx-2 mb-1`}>
               {upgradeSide.conditions.map((cxws) => {
-                const cond = conditionsMap.get(cxws);
+                const gdConditions = useGameDataStore.getState().data?.conditions;
+                const cond = gdConditions?.find(c => c.xws === cxws) ?? conditionsMap.get(cxws);
                 if (!cond) return null;
                 return (
                   <TouchableOpacity

@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { type FC, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
+import { useGameData } from '../app/game-data-provider';
 import { colorForFactionKey } from '../helpers/colors';
 import { compare } from '../helpers/misc';
 import { pilotName } from '../helpers/names';
@@ -28,6 +29,7 @@ type Props = {
 };
 
 export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
+  const { gameData } = useGameData();
   const router = useRouter();
 
   const { mutate } = useSWRConfig();
@@ -62,7 +64,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
             leaveTo="translate-x-full"
             className="w-screen max-w-md h-screen"
           >
-            <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
+            <div className="h-full flex flex-col py-6 bg-white text-gray-900 shadow-xl overflow-y-scroll">
               <div className="px-4 sm:px-6 pb-6 border-b border-gray-200">
                 <div className="flex items-start justify-between">
                   <h2
@@ -174,7 +176,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           return '';
                         }
 
-                        const name = pilotName(pilot, s.faction);
+                        const name = pilotName(pilot, s.faction, gameData ?? undefined);
                         if (u.count > 1) {
                           return `${u.count}x ${name}`;
                         }

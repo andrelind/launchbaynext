@@ -1,6 +1,7 @@
 import { ShipFont } from '@/src/components/fonts/ShipIcon';
 import { useTailwind } from '@/src/helpers/tailwind';
 import { useCollectionStore } from '@/src/stores/collection';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { Octicons } from '@expo/vector-icons';
 import { LegendList, LegendListRenderItemProps } from '@legendapp/list';
 import { useLocalSearchParams } from 'expo-router';
@@ -37,6 +38,9 @@ export default function CollectionDetailScreen() {
     // }, componentId);
 
     const { sourceKey } = useLocalSearchParams<{ sourceKey: SourceKey }>();
+    const gd = useGameDataStore(s => s.data);
+    const pilotData = gd?.pilots ?? assets['xwa'].pilots;
+    const upgradeData = gd?.upgrades ?? assets['xwa'].upgrades;
 
     //   useLayoutEffect(() => {
     //     navigation.setOptions({
@@ -80,8 +84,8 @@ export default function CollectionDetailScreen() {
 
                 factions.forEach((f) => {
 
-                    Object.keys(assets['xwa'].pilots[f]).forEach((key) => {
-                        const ship = assets['xwa'].pilots[f][key];
+                    Object.keys(pilotData[f] ?? {}).forEach((key) => {
+                        const ship = pilotData[f]![key];
                         if (list.filter((l) => l.xws === ship.xws).length > 0) {
                             return;
                         }
@@ -105,8 +109,8 @@ export default function CollectionDetailScreen() {
                 // let sections: Section[] = [];
 
                 factions.forEach((f) => {
-                    Object.keys(assets['xwa'].pilots[f]).forEach((key) => {
-                        const ship = assets['xwa'].pilots[f][key];
+                    Object.keys(pilotData[f] ?? {}).forEach((key) => {
+                        const ship = pilotData[f]![key];
 
                         const pilotList: Source[] = ship.pilots
                             .map((p) => ({
@@ -139,7 +143,7 @@ export default function CollectionDetailScreen() {
                 const list: (Source | string)[] = [];
                 slotKeys.forEach((key) => {
                     let upgradesList: Source[] = [];
-                    const l = assets['xwa'].upgrades[key];
+                    const l = upgradeData[key];
                     if (l) {
                         upgradesList = l
                             .map((u) => ({

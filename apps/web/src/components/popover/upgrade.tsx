@@ -51,7 +51,7 @@ export const UpgradePopover: FC<Props> = ({
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"
-        className="relative w-full bg-white hover:shadow rounded-md pl-2 pr-5 sm:pl-3 sm:pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
+        className="relative w-full bg-white text-gray-900 hover:shadow rounded-md pl-2 pr-5 sm:pl-3 sm:pr-10 py-2 text-left focus:outline-none focus:ring-1 focus:ring-lbnred-500 focus:border-lbnred-500 text-xs sm:text-sm cursor-pointer"
         onMouseEnter={(e) => {
           if (!process.browser || window.innerWidth < 640) {
             return;
@@ -143,7 +143,7 @@ export const UpgradePopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10"
+        className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10"
         style={popoverStyle(pos)}
       >
         <ul
@@ -156,6 +156,7 @@ export const UpgradePopover: FC<Props> = ({
           {selected && (
             <li
               role="option"
+              aria-selected={true}
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(undefined);
@@ -176,6 +177,7 @@ export const UpgradePopover: FC<Props> = ({
             <li
               key={upgrade.xws}
               role="option"
+              aria-selected={selected?.xws === upgrade.xws}
               className="text-gray-900 cursor-default select-none relative py-2 px-1 sm:px-3 hover:bg-gray-100"
               onClick={() => {
                 setSelected(upgrade);
@@ -198,7 +200,7 @@ export const UpgradePopover: FC<Props> = ({
           leave="transition ease-in duration-75"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
-          className="absolute w-full rounded-md bg-white shadow-lg z-10 p-1 hidden sm:block"
+          className="absolute w-full rounded-md bg-white text-gray-900 shadow-lg z-10 p-1 hidden sm:block"
           style={popoverDetailStyle(pos)}
         >
           {showDetails && <UpgradeComponent upgrade={showDetails} />}
@@ -213,7 +215,7 @@ export const UpgradePopover: FC<Props> = ({
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1"
+        className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10 p-1"
         style={popoverStyle(pos)}
       >
         {showDetails && <UpgradeComponent upgrade={showDetails} />}

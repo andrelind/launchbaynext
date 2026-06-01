@@ -1,7 +1,7 @@
 import { deserialize } from 'lbn-core/src/helpers/serializer';
 import { NextRequest, NextResponse } from 'next/server';
 
-const getXws = async (req: NextRequest, res: NextResponse) => {
+const getXws = async (req: NextRequest) => {
   const lbx = req.nextUrl.searchParams.get('lbx');
 
   if (lbx) {

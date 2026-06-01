@@ -1,9 +1,8 @@
 import { Transition } from '@headlessui/react';
-import { conditions, pilots, upgrades } from 'lbn-core/src/assets/xwa';
 import { keyFromFaction } from 'lbn-core/src/helpers/convert';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
 import { loadShip2, type TShip } from 'lbn-core/src/helpers/loading';
-import type { ShipType, UpgradeBase } from 'lbn-core/src/types';
+import type { GameData, ShipType, UpgradeBase } from 'lbn-core/src/types';
 import { type FC, useEffect, useState } from 'react';
 import { Modal } from '../modal';
 import PilotComponent from '../pilot';
@@ -15,6 +14,7 @@ import UpgradeComponent from '../upgrade';
 
 type Props = {
   needle?: string;
+  gameData?: GameData | null;
 };
 
 enum TabOption {
@@ -31,7 +31,7 @@ const options = [
   TabOption.Upgrades,
 ];
 
-export const SearchComponent: FC<Props> = ({ needle }) => {
+export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
   const [tab, setTab] = useState<TabOption>(TabOption.All);
   const [filteredShips, setFilteredShips] = useState<ShipType[]>([]);
   const [filteredPilots, setFilteredPilots] = useState<TShip[]>([]);
@@ -47,7 +47,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
     const fPilots: TShip[] = [];
     const fUpgrades: UpgradeBase[] = [];
 
-    if (!needle || needle.length < 3) {
+    if (!needle || needle.length < 3 || !gameData) {
       setFilteredShips([]);
       setFilteredPilots([]);
       setFilteredUpgrades([]);
@@ -55,10 +55,14 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
     }
 
     const lc = needle.toLowerCase();
+    const pilots = gameData.pilots;
+    const upgradeData = gameData.upgrades;
+    const conditions = gameData.conditions;
 
     factions.forEach((faction) => {
-      Object.keys(pilots[faction]).forEach((key) => {
-        const ship: ShipType = pilots[faction][key];
+      const factionPilots = pilots[faction] ?? {};
+      Object.keys(factionPilots).forEach((key) => {
+        const ship: ShipType = factionPilots[key];
         if (ship.name.toLowerCase().includes(lc)) {
           fShips.push(ship);
         }
@@ -85,7 +89,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
                   {
                     faction: keyFromFaction(faction),
                     format: 'Extended',
-                    ruleset: 'amg',
+                    ruleset: 'xwa',
                   }
                 )
               )
@@ -96,7 +100,8 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
     });
 
     slotKeys.forEach((slot) => {
-      upgrades[slot].forEach((upgrade) => {
+      const slotUpgrades = upgradeData[slot] ?? [];
+      slotUpgrades.forEach((upgrade) => {
         if (upgrade.sides[0].title.toLowerCase().indexOf(lc) >= 0) {
           fUpgrades.push(upgrade);
         } else if (upgrade.sides[0].conditions) {
@@ -144,7 +149,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
   };
 
   return (
-    <div className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10">
+    <div className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10">
       <div className="sm:hidden">
         <label htmlFor="tabs" className="sr-only">
           Select a tab
@@ -300,7 +305,7 @@ export const SearchComponent: FC<Props> = ({ needle }) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 right-full mr-0.5"
+        className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10 p-1 right-full mr-0.5"
         style={{ top: pos.y - 65 }}
       >
         {showShip && <ShipTypeComponent shipType={showShip} showFaction />}

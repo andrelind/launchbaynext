@@ -35,63 +35,91 @@ export const AboutComponent: FC<Props> = ({ onClose }) => {
         </div>
       </div>
 
-      <div className="mt-5 prose prose-lbn text-gray-500">
-        <h3>Bugs or feature requests</h3>
+      <div className="mt-6 space-y-6 text-sm text-gray-600">
+        <section>
+          <h4 className="text-base font-semibold text-gray-900 mb-2">Bugs or feature requests</h4>
+          <a
+            href="https://github.com/andrelind/launch-bay-next/issues/new/choose"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-lbnred hover:underline"
+          >
+            Report them on GitHub →
+          </a>
+        </section>
 
-        <a href="https://github.com/andrelind/launch-bay-next-web/issues/new/choose">
-          Report them here
-        </a>
-
-        <h3>Like the builder?</h3>
-        <p>
-          Please consider donating, either via{' '}
-          <a href="https://www.patreon.com/andrelind">Patreon</a> or{' '}
-          <a href="https://paypal.me/launchbaynext">PayPal</a>
-        </p>
-        <p>
-          Want to help out?
-          <div>
-            <a href="https://github.com/andrelind/launch-bay-next-web/">
-              Web repo
+        <section>
+          <h4 className="text-base font-semibold text-gray-900 mb-2">Like the builder?</h4>
+          <p className="mb-2">
+            Please consider donating:
+          </p>
+          <div className="flex gap-3">
+            <a
+              href="https://www.patreon.com/andrelind"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition-colors"
+            >
+              Patreon
+            </a>
+            <a
+              href="https://paypal.me/launchbaynext"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-3 py-1.5 rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition-colors"
+            >
+              PayPal
             </a>
           </div>
-          <div>
-            <a href="https://github.com/andrelind/lbn-core">
-              Core (shared with app)
-            </a>
+        </section>
+
+        <section>
+          <h4 className="text-base font-semibold text-gray-900 mb-2">Contribute</h4>
+          <a
+            href="https://github.com/andrelind/launch-bay-next"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-lbnred hover:underline"
+          >
+            GitHub repo →
+          </a>
+        </section>
+
+        <section>
+          <h4 className="text-base font-semibold text-gray-900 mb-2">Credits</h4>
+          <ul className="list-disc list-inside space-y-1 text-gray-500">
+            <li>
+              Data based on{' '}
+              <a href="https://github.com/guidokessels/xwing-data2" target="_blank" rel="noopener noreferrer" className="text-lbnred hover:underline">xwing-data2</a>{' '}
+              by guidokessels
+            </li>
+            <li>
+              <a href="https://github.com/geordanr/xwing-miniatures-font" target="_blank" rel="noopener noreferrer" className="text-lbnred hover:underline">X-wing miniatures font</a>{' '}
+              by geordanr
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h4 className="text-base font-semibold text-gray-900 mb-2">Built with</h4>
+          <div className="flex flex-wrap gap-2">
+            {['TypeScript', 'Next.js', 'React Native (Expo)', 'Postgres', 'Drizzle ORM'].map((tech) => (
+              <span key={tech} className="px-2 py-1 rounded bg-gray-100 text-gray-600 text-xs font-medium">
+                {tech}
+              </span>
+            ))}
           </div>
-        </p>
+        </section>
 
-        <h3>Credits</h3>
-        <ul>
-          <li>
-            Data based on{' '}
-            <a href="https://github.com/guidokessels/xwing-data2">
-              xwing-data2
-            </a>{' '}
-            by guidokessels
-          </li>
-          <li>
-            <a href="https://github.com/geordanr/xwing-miniatures-font">
-              X-wing miniatures font
-            </a>{' '}
-            by geordanr
-          </li>
-        </ul>
-
-        <h3>Trivia</h3>
-        <ul>
-          <li>Written in Typescript</li>
-          <li>React frontend (next.js)</li>
-          <li>GraphQL + Mongo for backend</li>
-        </ul>
-
-        <h3>Legal</h3>
-        <p>
-          This builder is unofficial and is not affiliated with Fantasy Flight
-          Games, Lucasfilm Ltd., or Disney.
-        </p>
-        <a href="/privacy">Privacy Policy</a>
+        <section className="border-t border-gray-200 pt-4">
+          <p className="text-xs text-gray-400">
+            This builder is unofficial and is not affiliated with Fantasy Flight
+            Games, Lucasfilm Ltd., or Disney.
+          </p>
+          <a href="/privacy" className="text-xs text-lbnred hover:underline mt-1 inline-block">
+            Privacy Policy
+          </a>
+        </section>
       </div>
     </div>
   );

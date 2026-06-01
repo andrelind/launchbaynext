@@ -27,7 +27,7 @@ export default function CreateSquadronSheet() {
                 {
                     text: 'X-Wing Alliance',
                     onPress: async () => {
-                        const item = addSquadron(f, ruleset !== 'amg' ? 'Extended' : 'Standard', 'xwa');
+                        const item = addSquadron(f, 'Standard', 'xwa');
                         router.back();
                         setTimeout(() => {
                             router.push({ pathname: `(tabs)/squadrons/squadron/${item.vendor.lbn.uid}` });
@@ -37,17 +37,7 @@ export default function CreateSquadronSheet() {
                 {
                     text: '2.0 Legacy',
                     onPress: async () => {
-                        const item = addSquadron(f, ruleset !== 'amg' ? 'Extended' : 'Standard', 'legacy');
-                        router.back();
-                        setTimeout(() => {
-                            router.push({ pathname: `(tabs)/squadrons/squadron/${item.vendor.lbn.uid}` });
-                        }, 300);
-                    }
-                },
-                {
-                    text: 'AMG',
-                    onPress: async () => {
-                        const item = addSquadron(f, ruleset !== 'amg' ? 'Extended' : 'Standard', 'amg');
+                        const item = addSquadron(f, 'Extended', 'legacy');
                         router.back();
                         setTimeout(() => {
                             router.push({ pathname: `(tabs)/squadrons/squadron/${item.vendor.lbn.uid}` });

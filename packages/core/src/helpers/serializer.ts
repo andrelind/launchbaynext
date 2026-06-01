@@ -1,12 +1,15 @@
 import { v4 as uuid } from 'uuid';
 import { manifest as legacyManifest } from '../assets/legacy/manifest';
 import { manifest as xwaManifest } from '../assets/xwa/manifest';
-import { Faction, PilotXWS, SlotKey, SquadronXWS, XWS } from '../types';
+import { Faction, GameData, ManifestData, PilotXWS, SlotKey, SquadronXWS, XWS } from '../types';
 import { factionFromKey, keyFromFaction, keyFromObstacle, obstacleFromKey } from './convert';
 import { slotKeys } from './enums';
 import { loadShip2 } from './loading';
 
-const getManifest = (ruleset?: string) => (ruleset === 'legacy' ? legacyManifest : xwaManifest);
+const getManifest = (ruleset?: string, manifestData?: ManifestData): ManifestData => {
+  if (manifestData) return manifestData;
+  return (ruleset === 'legacy' ? legacyManifest : xwaManifest) as unknown as ManifestData;
+};
 
 const rep = (c: string, t: string, d: string) => {
   while (d.indexOf(c) >= 0) {
@@ -41,21 +44,21 @@ export const getFactionKey = (faction: Faction) => {
   }
 };
 
-export const serialize = (o?: XWS) => {
+export const serialize = (o?: XWS, manifestData?: ManifestData) => {
   // console.log('serialize', o);
 
   if (!o) {
     return;
   }
 
-  const manifest = getManifest(o.ruleset);
+  const manifest = getManifest(o.ruleset, manifestData);
 
   const lbx = [
     rep("'", '', encodeURIComponent(o.name)),
     o.points,
     getKeyByValue(manifest.factions, factionFromKey(o.faction)),
     o.format === 'Extended' ? 0 : 1,
-    o.ruleset === 'amg' ? 0 : o.ruleset === 'xwa' ? 1 : 2,
+    o.ruleset === 'xwa' ? 1 : 2,
     o.pilots.map(p => {
       const upgrades: (string | number)[][] = [];
       slotKeys.forEach(key => {
@@ -88,7 +91,7 @@ export const serialize = (o?: XWS) => {
   return d;
 };
 
-export const deserialize = (o: string, uid?: string): XWS => {
+export const deserialize = (o: string, uid?: string, manifestData?: ManifestData, gameData?: GameData): XWS => {
   // New format, replace "l with (" and "r with )"
   o = o
     .split('.')
@@ -113,8 +116,8 @@ export const deserialize = (o: string, uid?: string): XWS => {
   const d = JSON.parse(o);
   const [squadName, cost, faction, format, ruleset, pilots, obstacles, ...rest] = d;
 
-  const rs = parseInt(ruleset) === 0 ? 'amg' : parseInt(ruleset) === 1 ? 'xwa' : 'legacy';
-  const manifest = getManifest(rs);
+  const rs = parseInt(ruleset) === 0 ? 'xwa' : parseInt(ruleset) === 1 ? 'xwa' : 'legacy';
+  const manifest = getManifest(rs, manifestData);
 
   // @ts-expect-error
   const fa = keyFromFaction(manifest.factions[faction]);
@@ -147,21 +150,18 @@ export const deserialize = (o: string, uid?: string): XWS => {
         const [key, ...list] = u;
         // @ts-expect-error
         parsedUpgrades[manifest.slots[key]] = list.map((l: string) => {
-          // @ts-expect-error
           return manifest.upgrades[`${l}`];
         });
       });
 
       const pp = {
-        // @ts-expect-error
         id: manifest.pilots[`${id}`] || id,
-        // @ts-expect-error
         ship: manifest.ships[`${ship}`] || ship,
         points: 0,
         upgrades: parsedUpgrades,
       };
 
-      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: rs });
+      const s = loadShip2(pp, { faction: fa, format: fo, ruleset: rs }, gameData);
       return {
         ...pp,
         points: s.pilot?.cost || 0,

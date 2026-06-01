@@ -4,6 +4,7 @@ import { allSlots, slotKeys } from 'lbn-core/src/helpers/enums';
 import { TShip, freeSlotsForShip2, pointsForUpgrade2 } from 'lbn-core/src/helpers/loading';
 import {
   Format,
+  GameData,
   ShipType,
   Slot,
   SlotKey,
@@ -15,6 +16,7 @@ import {
   XWS,
 } from 'lbn-core/src/types';
 import { useCollectionStore } from '../stores/collection';
+import { useGameDataStore } from '../stores/gameData';
 import { CollectionState } from '../stores/types';
 import { countForShip2, countForUpgrade2 } from './collection';
 
@@ -53,8 +55,10 @@ export const upgradesForSlot2 = (
   showUnavailable: boolean,
   collection: CollectionState,
   needle?: string,
+  gameData?: GameData | null,
 ): Upgrade[] => {
-  const freeSlots = freeSlotsForShip2(ship, { ruleset });
+  const gd = gameData ?? useGameDataStore.getState().data;
+  const freeSlots = freeSlotsForShip2(ship, { ruleset }, gd ?? undefined);
   const allXws = usedShipXws2(ship);
 
   const upgrades: { [key in SlotKey]?: string[] } = {};
@@ -65,10 +69,13 @@ export const upgradesForSlot2 = (
     }
   });
 
-  const data = assets[ruleset].upgrades[keyFromSlot(slot)]
+  const slotKey = keyFromSlot(slot);
+  const upgradeList = gd?.upgrades[slotKey] ?? assets[ruleset].upgrades[slotKey];
+
+  const data = upgradeList
     .map(u => ({
       ...u,
-      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset }),
+      finalCost: pointsForUpgrade2(u.cost, ship, { ruleset }, gd ?? undefined),
       available: countForUpgrade2(collection, u.xws),
     }))
     .filter((u: Upgrade) => {
@@ -285,13 +292,17 @@ export const upgradesForSlot2 = (
 
 export const useShipTypes = (xws?: XWS, showUnavailable?: boolean, needle?: string): ShipType[] => {
   const collection = useCollectionStore();
+  const gd = useGameDataStore.getState().data;
 
   if (!xws) {
     return [];
   }
 
-  return Object.keys(assets[xws.ruleset].pilots[factionFromKey(xws.faction)])
-    .map(key => assets[xws.ruleset].pilots[factionFromKey(xws.faction)][key])
+  const faction = factionFromKey(xws.faction);
+  const factionPilots = gd?.pilots[faction] ?? assets[xws.ruleset].pilots[faction];
+
+  return Object.keys(factionPilots)
+    .map(key => factionPilots[key])
     .filter((s: ShipType) => {
       switch (xws.format) {
         case 'Extended':

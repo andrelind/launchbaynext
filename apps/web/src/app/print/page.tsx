@@ -8,10 +8,12 @@ import { type NextPage } from 'next';
 import { useSearchParams } from 'next/navigation';
 import QRCode from 'qrcode.react';
 import Logo from '../../components/logo';
+import { useGameData } from '../game-data-provider';
 
 type Props = {};
 
 const PrintPage: NextPage<Props> = ({ }) => {
+  const { gameData } = useGameData();
   const queryLbx = useSearchParams()?.get('lbx');
 
   const xws = queryLbx ? deserialize(queryLbx) : undefined;
@@ -20,7 +22,7 @@ const PrintPage: NextPage<Props> = ({ }) => {
     return <div />;
   }
 
-  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'amg' }));
+  const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }, gameData ?? undefined));
 
   const threshold = (ship: TShip) => {
     const shields = ship.stats.filter((s) => s.type === 'shields')[0]

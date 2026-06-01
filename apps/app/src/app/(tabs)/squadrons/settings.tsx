@@ -69,7 +69,7 @@ export default function SquadronSettingsScreen() {
                 <View style={tw`flex-row justify-between items-center`}>
                     <Text style={tw`font-bold text-sm text-white`}>Ruleset</Text>
                     <Button
-                        title={xws?.ruleset || 'amg'}
+                        title={xws?.ruleset || 'xwa'}
                         color={blue}
                         onPress={() => {
                             Alert.alert('Change ruleset', 'Do you want to change the ruleset?', [
@@ -80,10 +80,6 @@ export default function SquadronSettingsScreen() {
                                 {
                                     text: '2.0 Legacy',
                                     onPress: () => setRuleset(uid, 'legacy'),
-                                },
-                                {
-                                    text: 'AMG',
-                                    onPress: () => setRuleset(uid, 'amg'),
                                 },
                                 {
                                     text: 'Cancel',

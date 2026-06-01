@@ -1,8 +1,7 @@
 import { Transition } from '@headlessui/react';
-import { pilots, upgrades } from 'lbn-core/src/assets/xwa';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
 import sources, { type SourceKey } from 'lbn-core/src/sources';
-import { type Faction } from 'lbn-core/src/types';
+import { type Faction, type GameData } from 'lbn-core/src/types';
 import { type FC, useEffect, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
@@ -12,6 +11,7 @@ import XwingFont from './fonts/xwing';
 type Props = {
   show: boolean;
   onClose: () => void;
+  gameData?: GameData | null;
 };
 
 const extraKeys: (
@@ -30,7 +30,7 @@ const extraKeys: (
 
 const keys: SourceKey[] = [...extraKeys, ...factions];
 
-export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
+export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
   const { mutate } = useSWRConfig();
   const { data: collection } = useSwr('/collection', () =>
     // get<CollectionState>('/collection')
@@ -50,11 +50,13 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
   >([]);
 
   useEffect(() => {
+    const pilotData = gameData?.pilots ?? {};
+    const upgradeData = gameData?.upgrades ?? {};
     switch (sourceKey) {
       case 'Additional Pilots': {
         const all = factions.map((f) =>
-          Object.keys(pilots[f]).map((key) => {
-            const ship = pilots[f][key];
+          Object.keys(pilotData[f] ?? {}).map((key) => {
+            const ship = pilotData[f]![key];
             return ship.pilots.map((p) => ({
               xws: p.xws,
               name: p.name,
@@ -73,8 +75,8 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
       }
       case 'Additional Ships': {
         const all = factions.map((f) =>
-          Object.keys(pilots[f]).map((key) => {
-            const ship = pilots[f][key];
+          Object.keys(pilotData[f] ?? {}).map((key) => {
+            const ship = pilotData[f]![key];
             return {
               xws: ship.xws,
               name: ship.name,
@@ -92,7 +94,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
       }
       case 'Additional Upgrades': {
         const all = slotKeys.map((key) =>
-          upgrades[key]?.map((u) => ({
+          (upgradeData[key] ?? []).map((u) => ({
             xws: u.xws,
             name: u.sides[0].title,
             count: collection?.upgrades[u.xws] || 0,
@@ -117,7 +119,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
         return;
       }
     }
-  }, [sourceKey, collection]);
+  }, [sourceKey, collection, gameData]);
 
   if (!collection) {
     return null;
@@ -147,7 +149,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
             leaveTo="translate-x-full"
             className="w-screen max-w-md h-screen"
           >
-            <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
+            <div className="h-full flex flex-col py-6 bg-white text-gray-900 shadow-xl overflow-y-scroll">
               <div className="px-4 pb-3 sm:px-6 sm:pb-6">
                 <div className="flex items-start justify-between">
                   <h2
@@ -216,7 +218,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose }) => {
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                    className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
+                    className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-gray-900 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"

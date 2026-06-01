@@ -32,21 +32,14 @@ const CreateSquadronSheet = ({
         {
           text: 'X-Wing Alliance',
           onPress: async () => {
-            const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', 'xwa');
+            const item = addSquadron(f, 'Standard', 'xwa');
             SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
           }
         },
         {
           text: '2.0 Legacy',
           onPress: async () => {
-            const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', 'legacy');
-            SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
-          }
-        },
-        {
-          text: 'AMG',
-          onPress: async () => {
-            const item = addSquadron(f, payload?.ruleset !== 'amg' ? 'Extended' : 'Standard', 'amg');
+            const item = addSquadron(f, 'Extended', 'legacy');
             SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
           }
         },
