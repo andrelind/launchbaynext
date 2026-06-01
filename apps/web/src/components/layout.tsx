@@ -137,7 +137,7 @@ export const Layout: FC<Props> = ({
                           leave="transition ease-in duration-75"
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
-                          className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
+                          className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-gray-900 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
                           role="menu"
                           aria-orientation="vertical"
                           aria-labelledby="options-menu"
@@ -493,7 +493,7 @@ export const Layout: FC<Props> = ({
                     leaveTo="transform opacity-0 scale-95"
                     className="origin-top right-0 sm:origin-top-right absolute mt-2 w-48 rounded-md shadow-lg z-10"
                   >
-                    <div className="py-1 rounded-md bg-white shadow-xs">
+                    <div className="py-1 rounded-md bg-white text-gray-900 shadow-xs">
                       {actions?.map((a) => (
                         <button
                           key={a.title}

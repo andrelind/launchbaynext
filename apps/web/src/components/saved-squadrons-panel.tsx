@@ -64,7 +64,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
             leaveTo="translate-x-full"
             className="w-screen max-w-md h-screen"
           >
-            <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
+            <div className="h-full flex flex-col py-6 bg-white text-gray-900 shadow-xl overflow-y-scroll">
               <div className="px-4 sm:px-6 pb-6 border-b border-gray-200">
                 <div className="flex items-start justify-between">
                   <h2

@@ -149,7 +149,7 @@ export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
   };
 
   return (
-    <div className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10">
+    <div className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10">
       <div className="sm:hidden">
         <label htmlFor="tabs" className="sr-only">
           Select a tab
@@ -305,7 +305,7 @@ export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
-        className="absolute mt-1 w-full rounded-md bg-white shadow-lg z-10 p-1 right-full mr-0.5"
+        className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10 p-1 right-full mr-0.5"
         style={{ top: pos.y - 65 }}
       >
         {showShip && <ShipTypeComponent shipType={showShip} showFaction />}

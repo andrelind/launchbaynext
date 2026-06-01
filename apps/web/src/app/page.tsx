@@ -181,7 +181,7 @@ const MainPage = () => {
           return (
             <div
               key={`${s.xws}_${pilotIndex}`}
-              className="bg-white rounded-lg shadow  relative"
+              className="bg-white text-gray-900 rounded-lg shadow  relative"
             >
               {s.pilot?.artwork && (
                 <Image

@@ -35,7 +35,7 @@ export const Notification: FC<Props> = ({ title, message, onClear }) => {
         leave="transition ease-in duration-100"
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
-        className="max-w-sm w-full bg-white shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden"
+        className="max-w-sm w-full bg-white text-gray-900 shadow-lg rounded-lg pointer-events-auto ring-1 ring-black ring-opacity-5 overflow-hidden"
       >
         <div className="p-4">
           <div className="flex items-start">

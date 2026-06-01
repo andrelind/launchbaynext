@@ -149,7 +149,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
             leaveTo="translate-x-full"
             className="w-screen max-w-md h-screen"
           >
-            <div className="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
+            <div className="h-full flex flex-col py-6 bg-white text-gray-900 shadow-xl overflow-y-scroll">
               <div className="px-4 pb-3 sm:px-6 sm:pb-6">
                 <div className="flex items-start justify-between">
                   <h2
@@ -218,7 +218,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
                     leave="transition ease-in duration-75"
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
-                    className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
+                    className="origin-top-center absolute overflow-hidden left-0 mt-2 w-56 rounded-md shadow-lg bg-white text-gray-900 ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-10"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"
