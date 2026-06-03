@@ -25,6 +25,8 @@ export const sourceKeys: SourceKey[] = [
   ...factions,
   'Epic',
   'Core Sets',
+  'Expansion Pack',
+  'Card Pack',
   'Additional Ships',
   'Additional Pilots',
   'Additional Upgrades',

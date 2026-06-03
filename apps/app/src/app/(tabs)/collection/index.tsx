@@ -19,7 +19,9 @@ export default function CollectionScreen() {
             icon: f,
         })),
         { title: 'Epic', icon: undefined },
-        { title: 'Core Sets and Card Packs', icon: undefined },
+        { title: 'Core Sets', icon: undefined },
+        { title: 'Expansion Pack', icon: undefined },
+        { title: 'Card Pack', icon: undefined },
         { title: 'Additional Ships', icon: undefined },
         { title: 'Additional Pilots', icon: undefined },
         { title: 'Additional Upgrades', icon: undefined },
@@ -49,9 +51,8 @@ export default function CollectionScreen() {
                         }
                         text={title}
                         onPress={() => {
-                            const sourceKey: SourceKey = title === 'Core Sets and Card Packs' ? 'Core Sets' : (title as SourceKey);
-                            router.push({ pathname: '(tabs)/collection/details', params: { sourceKey } });
-                        }}
+                            router.push({ pathname: '(tabs)/collection/details', params: { sourceKey: title as SourceKey } });
+                        }}}
                     />
                 );
             }}

@@ -11,12 +11,11 @@ import {
     TableHeader,
     TableRow,
 } from '@web/components/ui/table';
+import { sourceKeys } from 'lbn-core/src/helpers/enums';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useAdminTrpc } from '../_trpc';
-
-const CATEGORIES = ['Core Set', 'Expansion Pack', 'Squadron Pack', 'Card Pack', 'Scenario Pack', 'Huge Ship', 'Standalone Ship'];
 
 export default function SourcesPage() {
     const trpc = useAdminTrpc();
@@ -60,7 +59,7 @@ export default function SourcesPage() {
                     </SelectTrigger>
                     <SelectContent>
                         <SelectItem value="all">All Categories</SelectItem>
-                        {CATEGORIES.map(c => (
+                        {sourceKeys.map(c => (
                             <SelectItem key={c} value={c}>{c}</SelectItem>
                         ))}
                     </SelectContent>

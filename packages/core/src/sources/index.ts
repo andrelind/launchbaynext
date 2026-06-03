@@ -12,6 +12,8 @@ import { t as separatistAlliance } from './separatist-alliance';
 export type SourceKey =
   | Faction
   | 'Core Sets'
+  | 'Expansion Pack'
+  | 'Card Pack'
   | 'Additional Ships'
   | 'Additional Pilots'
   | 'Additional Upgrades'
@@ -27,6 +29,8 @@ const t: { [key in SourceKey]: Source[] } = {
   'Scum and Villainy': scumAndVillainy,
   'Separatist Alliance': separatistAlliance,
   Epic: epic,
+  'Expansion Pack': [],
+  'Card Pack': [],
   'Additional Pilots': [],
   'Additional Ships': [],
   'Additional Upgrades': [],

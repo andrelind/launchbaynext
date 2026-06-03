@@ -20,12 +20,11 @@ import { Label } from '@web/components/ui/label';
 import { Popover, PopoverContent, PopoverTrigger } from '@web/components/ui/popover';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@web/components/ui/select';
 import { Switch } from '@web/components/ui/switch';
+import { sourceKeys } from 'lbn-core/src/helpers/enums';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { toast } from 'sonner';
 import { useAdminTrpc } from '../../_trpc';
-
-const CATEGORIES = ['Core Set', 'Expansion Pack', 'Squadron Pack', 'Card Pack', 'Scenario Pack', 'Huge Ship', 'Standalone Ship'];
 
 type ContentType = 'ships' | 'pilots' | 'upgrades';
 
@@ -171,7 +170,7 @@ export default function SourceEditPage() {
     const [loading, setLoading] = useState(!isNew);
     const [saving, setSaving] = useState(false);
 
-    const [category, setCategory] = useState('Expansion Pack');
+    const [category, setCategory] = useState('Core Sets');
     const [name, setName] = useState('');
     const [xws, setXws] = useState('');
     const [ffg, setFfg] = useState('');
@@ -303,7 +302,7 @@ export default function SourceEditPage() {
                         <Select value={category} onValueChange={setCategory}>
                             <SelectTrigger className="w-[200px]"><SelectValue /></SelectTrigger>
                             <SelectContent>
-                                {CATEGORIES.map(c => <SelectItem key={c} value={c}>{c}</SelectItem>)}
+                                {sourceKeys.map(c => <SelectItem key={c} value={c}>{c}</SelectItem>)}
                             </SelectContent>
                         </Select>
                     </div>
