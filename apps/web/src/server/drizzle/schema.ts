@@ -138,10 +138,10 @@ export const GameConditions = pgTable(
 export const Sources = pgTable('Sources', {
   Id: uuid('Id').primaryKey().notNull(),
   Category: text('Category').notNull(), // SourceKey
-  Ffg: integer('Ffg').notNull(),
+  Ffg: integer('Ffg'),
   Xws: text('Xws').notNull(),
   Name: text('Name').notNull(),
-  Wave: integer('Wave').notNull(),
+  Wave: integer('Wave'),
   Released: boolean('Released').notNull(),
   Contents: jsonb('Contents').notNull(), // { ships, pilots, upgrades }
   Sku: text('Sku'),
