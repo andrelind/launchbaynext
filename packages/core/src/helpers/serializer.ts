@@ -148,9 +148,10 @@ export const deserialize = (o: string, uid?: string, manifestData?: ManifestData
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
       (upgrades || []).forEach((u: any) => {
         const [key, ...list] = u;
+        const slotKey = manifest.slots[`${key}`] ?? `${key}`;
         // @ts-expect-error
-        parsedUpgrades[manifest.slots[key]] = list.map((l: string) => {
-          return manifest.upgrades[`${l}`];
+        parsedUpgrades[slotKey] = list.map((l: string) => {
+          return manifest.upgrades[`${l}`] ?? `${l}`;
         });
       });
 

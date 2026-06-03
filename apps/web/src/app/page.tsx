@@ -43,13 +43,13 @@ export type DataItem = {
 };
 
 const MainPage = () => {
-  const { gameData, loading: gameDataLoading } = useGameData();
+  const { gameData, manifestData, loading: gameDataLoading } = useGameData();
   const queryLbx = useSearchParams()?.get('lbx');
   const queryFaction = useSearchParams()?.get('faction');
 
   // Either we get a squad from url or we create one
   const initialXws: XWS = queryLbx
-    ? deserialize(queryLbx)
+    ? deserialize(queryLbx, undefined, manifestData ?? undefined)
     : {
       name: 'New Squadron',
       description: '',
@@ -83,9 +83,9 @@ const MainPage = () => {
 
   useEffect(() => {
     if (queryLbx) {
-      setXws(deserialize(queryLbx as string));
+      setXws(deserialize(queryLbx as string, undefined, manifestData ?? undefined));
     }
-  }, [queryLbx]);
+  }, [queryLbx, manifestData]);
 
   if (!xws || gameDataLoading) {
     return null;
@@ -99,7 +99,7 @@ const MainPage = () => {
       {
         title: 'Link',
         onClick: () => {
-          const lbx = serialize(xws);
+          const lbx = serialize(xws, manifestData ?? undefined);
           const url = `https://launchbaynext.app/?lbx=${lbx}`;
           copyToClipboard(url);
           setNotificationTitle('Link copied to clipboard');
@@ -152,7 +152,7 @@ const MainPage = () => {
         setXws({ ...squad });
       }}
       onPrint={() =>
-        xws && window.open(`/print?lbx=${serialize(xws)}`, '_blank')
+        xws && window.open(`/print?lbx=${serialize(xws, manifestData ?? undefined)}`, '_blank')
       }
       actions={actions}
     >

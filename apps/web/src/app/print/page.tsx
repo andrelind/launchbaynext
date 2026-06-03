@@ -13,10 +13,10 @@ import { useGameData } from '../game-data-provider';
 type Props = {};
 
 const PrintPage: NextPage<Props> = ({ }) => {
-  const { gameData } = useGameData();
+  const { gameData, manifestData } = useGameData();
   const queryLbx = useSearchParams()?.get('lbx');
 
-  const xws = queryLbx ? deserialize(queryLbx) : undefined;
+  const xws = queryLbx ? deserialize(queryLbx, undefined, manifestData ?? undefined) : undefined;
 
   if (!xws) {
     return <div />;

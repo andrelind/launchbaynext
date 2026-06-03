@@ -29,7 +29,7 @@ type Props = {
 };
 
 export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
-  const { gameData } = useGameData();
+  const { gameData, manifestData } = useGameData();
   const router = useRouter();
 
   const { mutate } = useSWRConfig();
@@ -194,7 +194,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           <a
                             className="flex flex-1"
                             onClick={() => {
-                              router.push(`/?lbx=${serialize(s)}`);
+                              router.push(`/?lbx=${serialize(s, manifestData ?? undefined)}`);
                               onClose();
                               // router.push(`/?uid=${s.uid}`);
                             }}

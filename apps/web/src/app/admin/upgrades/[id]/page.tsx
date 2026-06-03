@@ -58,6 +58,239 @@ const STAT_TYPES = ['attack', 'agility', 'hull', 'shields', 'energy', 'charges']
 
 const DEVICE_TYPES = ['Bomb', 'Mine', 'Obstacle', 'Remote'] as const;
 
+const COST_TYPES = ['fixed', 'agility', 'initiative', 'size', 'faction'] as const;
+type CostType = typeof COST_TYPES[number];
+
+const COST_TYPE_LABELS: Record<CostType, string> = {
+    fixed: 'Fixed Value',
+    agility: 'Variable (Agility)',
+    initiative: 'Variable (Initiative)',
+    size: 'Variable (Size)',
+    faction: 'Variable (Faction)',
+};
+
+interface CostState {
+    type: CostType;
+    fixedValue: string;
+    agilityValues: Record<string, string>; // "0"-"3"
+    initiativeValues: Record<string, string>; // "0"-"6"
+    sizeValues: { Small: string; Medium: string; Large: string; Huge: string };
+    factionValues: Record<string, string>;
+}
+
+function emptyCostState(): CostState {
+    return {
+        type: 'fixed',
+        fixedValue: '0',
+        agilityValues: { '0': '0', '1': '0', '2': '0', '3': '0' },
+        initiativeValues: { '0': '0', '1': '0', '2': '0', '3': '0', '4': '0', '5': '0', '6': '0' },
+        sizeValues: { Small: '0', Medium: '0', Large: '0', Huge: '0' },
+        factionValues: Object.fromEntries(FACTION_KEYS.map(f => [f, '0'])),
+    };
+}
+
+function costStateFromData(data: any): CostState {
+    const state = emptyCostState();
+    if (!data) return state;
+    if ('variable' in data) {
+        switch (data.variable) {
+            case 'agility':
+                state.type = 'agility';
+                if (data.values) Object.entries(data.values).forEach(([k, v]) => { state.agilityValues[k] = String(v); });
+                break;
+            case 'initiative':
+                state.type = 'initiative';
+                if (data.values) Object.entries(data.values).forEach(([k, v]) => { state.initiativeValues[k] = String(v); });
+                break;
+            case 'size':
+                state.type = 'size';
+                if (data.values) {
+                    if (data.values.Small != null) state.sizeValues.Small = String(data.values.Small);
+                    if (data.values.Medium != null) state.sizeValues.Medium = String(data.values.Medium);
+                    if (data.values.Large != null) state.sizeValues.Large = String(data.values.Large);
+                    if (data.values.Huge != null) state.sizeValues.Huge = String(data.values.Huge);
+                }
+                break;
+            case 'faction':
+                state.type = 'faction';
+                if (data.values) Object.entries(data.values).forEach(([k, v]) => { state.factionValues[k] = String(v); });
+                break;
+        }
+    } else if ('value' in data) {
+        state.type = 'fixed';
+        state.fixedValue = String(data.value);
+    }
+    return state;
+}
+
+function costStateToData(state: CostState): any {
+    switch (state.type) {
+        case 'fixed':
+            return { value: parseInt(state.fixedValue) || 0 };
+        case 'agility':
+            return { variable: 'agility', values: Object.fromEntries(Object.entries(state.agilityValues).map(([k, v]) => [parseInt(k), parseInt(v) || 0])) };
+        case 'initiative':
+            return { variable: 'initiative', values: Object.fromEntries(Object.entries(state.initiativeValues).map(([k, v]) => [parseInt(k), parseInt(v) || 0])) };
+        case 'size': {
+            const values: any = { Small: parseInt(state.sizeValues.Small) || 0, Medium: parseInt(state.sizeValues.Medium) || 0, Large: parseInt(state.sizeValues.Large) || 0 };
+            const huge = parseInt(state.sizeValues.Huge);
+            if (huge) values.Huge = huge;
+            return { variable: 'size', values };
+        }
+        case 'faction':
+            return { variable: 'faction', values: Object.fromEntries(Object.entries(state.factionValues).map(([k, v]) => [k, parseInt(v) || 0])) };
+    }
+}
+
+const BASE_SIZES = ['Small', 'Medium', 'Large', 'Huge'] as const;
+
+const FACTION_KEYS = [
+    'rebelalliance', 'scumandvillainy', 'galacticempire', 'resistance',
+    'firstorder', 'galacticrepublic', 'separatistalliance',
+] as const;
+
+const FACTION_KEY_LABELS: Record<string, string> = {
+    rebelalliance: 'Rebel Alliance',
+    scumandvillainy: 'Scum and Villainy',
+    galacticempire: 'Galactic Empire',
+    resistance: 'Resistance',
+    firstorder: 'First Order',
+    galacticrepublic: 'Galactic Republic',
+    separatistalliance: 'Separatist Alliance',
+};
+
+const RESTRICTION_FIELD_TYPES = [
+    'factions', 'baseSizes', 'chassis', 'arcs', 'action', 'sides', 'equipped',
+    'keywords', 'character', 'solitary', 'non-limited', 'initiative', 'stat', 'shipAbility',
+] as const;
+
+type RestrictionFieldType = typeof RESTRICTION_FIELD_TYPES[number];
+
+const RESTRICTION_FIELD_LABELS: Record<RestrictionFieldType, string> = {
+    factions: 'Factions',
+    baseSizes: 'Base Sizes',
+    chassis: 'Chassis',
+    arcs: 'Arcs',
+    action: 'Action',
+    sides: 'Force Sides',
+    equipped: 'Equipped Slots',
+    keywords: 'Keywords',
+    character: 'Character',
+    solitary: 'Solitary',
+    'non-limited': 'Non-Limited',
+    initiative: 'Initiative',
+    stat: 'Stat',
+    shipAbility: 'Ship Ability',
+};
+
+interface RestrictionGroupState {
+    enabledFields: RestrictionFieldType[];
+    factions: string[];
+    baseSizes: string[];
+    chassis: string[];
+    arcs: string[];
+    hasAction: boolean;
+    actionType: string;
+    actionDifficulty: string;
+    sides: string[];
+    equipped: string[];
+    keywords: string[];
+    character: string[];
+    solitary: boolean;
+    nonLimited: boolean;
+    hasInitiative: boolean;
+    initiativeMin: string;
+    initiativeMax: string;
+    hasStat: boolean;
+    statType: string;
+    statValue: string;
+    shipAbility: string[];
+}
+
+function emptyRestrictionGroup(): RestrictionGroupState {
+    return {
+        enabledFields: [],
+        factions: [], baseSizes: [], chassis: [], arcs: [],
+        hasAction: false, actionType: 'Focus', actionDifficulty: '',
+        sides: [], equipped: [], keywords: [], character: [],
+        solitary: false, nonLimited: false,
+        hasInitiative: false, initiativeMin: '', initiativeMax: '',
+        hasStat: false, statType: 'attack', statValue: '1',
+        shipAbility: [],
+    };
+}
+
+function restrictionGroupFromData(r: any): RestrictionGroupState {
+    const enabled: RestrictionFieldType[] = [];
+    if (Array.isArray(r.factions) && r.factions.length > 0) enabled.push('factions');
+    if (Array.isArray(r.baseSizes) && r.baseSizes.length > 0) enabled.push('baseSizes');
+    if (Array.isArray(r.chassis) && r.chassis.length > 0) enabled.push('chassis');
+    if (Array.isArray(r.arcs) && r.arcs.length > 0) enabled.push('arcs');
+    if (r.action) enabled.push('action');
+    if (Array.isArray(r.sides) && r.sides.length > 0) enabled.push('sides');
+    if (Array.isArray(r.equipped) && r.equipped.length > 0) enabled.push('equipped');
+    if (Array.isArray(r.keywords) && r.keywords.length > 0) enabled.push('keywords');
+    if (Array.isArray(r.character) && r.character.length > 0) enabled.push('character');
+    if (r.solitary) enabled.push('solitary');
+    if (r['non-limited']) enabled.push('non-limited');
+    if (r.initiative) enabled.push('initiative');
+    if (r.stat) enabled.push('stat');
+    if (Array.isArray(r.shipAbility) && r.shipAbility.length > 0) enabled.push('shipAbility');
+
+    return {
+        enabledFields: enabled,
+        factions: Array.isArray(r.factions) ? r.factions : [],
+        baseSizes: Array.isArray(r.baseSizes) ? r.baseSizes : [],
+        chassis: Array.isArray(r.chassis) ? r.chassis : [],
+        arcs: Array.isArray(r.arcs) ? r.arcs : [],
+        hasAction: !!r.action,
+        actionType: r.action?.type ?? 'Focus',
+        actionDifficulty: r.action?.difficulty ?? '',
+        sides: Array.isArray(r.sides) ? r.sides : [],
+        equipped: Array.isArray(r.equipped) ? r.equipped : [],
+        keywords: Array.isArray(r.keywords) ? r.keywords : [],
+        character: Array.isArray(r.character) ? r.character : [],
+        solitary: !!r.solitary,
+        nonLimited: !!r['non-limited'],
+        hasInitiative: !!r.initiative,
+        initiativeMin: r.initiative?.min?.toString() ?? '',
+        initiativeMax: r.initiative?.max?.toString() ?? '',
+        hasStat: !!r.stat,
+        statType: r.stat?.type ?? 'attack',
+        statValue: r.stat?.value?.toString() ?? '1',
+        shipAbility: Array.isArray(r.shipAbility) ? r.shipAbility : [],
+    };
+}
+
+function restrictionGroupToData(g: RestrictionGroupState): any {
+    const result: any = {};
+    if (g.factions.length > 0) result.factions = g.factions;
+    if (g.baseSizes.length > 0) result.baseSizes = g.baseSizes;
+    if (g.chassis.length > 0) result.chassis = g.chassis;
+    if (g.arcs.length > 0) result.arcs = g.arcs;
+    if (g.hasAction) {
+        const action: any = { type: g.actionType };
+        if (g.actionDifficulty) action.difficulty = g.actionDifficulty;
+        result.action = action;
+    }
+    if (g.sides.length > 0) result.sides = g.sides;
+    if (g.equipped.length > 0) result.equipped = g.equipped;
+    if (g.keywords.length > 0) result.keywords = g.keywords;
+    if (g.character.length > 0) result.character = g.character;
+    if (g.solitary) result.solitary = true;
+    if (g.nonLimited) result['non-limited'] = true;
+    if (g.hasInitiative) {
+        const init: any = {};
+        if (g.initiativeMin) init.min = parseInt(g.initiativeMin);
+        if (g.initiativeMax) init.max = parseInt(g.initiativeMax);
+        result.initiative = init;
+    }
+    if (g.hasStat) result.stat = { type: g.statType, value: parseInt(g.statValue) };
+    if (g.shipAbility.length > 0) result.shipAbility = g.shipAbility;
+    // Only return if there's at least one field set
+    return Object.keys(result).length > 0 ? result : null;
+}
+
 const GRANT_KINDS = ['slot', 'stat', 'action', 'arc'] as const;
 
 interface ActionState {
@@ -294,9 +527,9 @@ export default function UpgradeEditPage() {
     const [slot, setSlot] = useState('talent');
     const [xws, setXws] = useState('');
     const [limited, setLimited] = useState('0');
-    const [costStr, setCostStr] = useState('{"value": 0}');
+    const [cost, setCost] = useState<CostState>(emptyCostState());
     const [sides, setSides] = useState<[SideState, SideState | null]>([emptySide(), null]);
-    const [restrictionsStr, setRestrictionsStr] = useState('');
+    const [restrictions, setRestrictions] = useState<RestrictionGroupState[]>([]);
     const [standard, setStandard] = useState(true);
     const [extended, setExtended] = useState(true);
     const [epic, setEpic] = useState(true);
@@ -306,6 +539,18 @@ export default function UpgradeEditPage() {
     const [keywordInput, setKeywordInput] = useState('');
     const [standardLoadoutOnly, setStandardLoadoutOnly] = useState(false);
     const [availableConditions, setAvailableConditions] = useState<{ Id: string; Xws: string; Name: string }[]>([]);
+
+    const setRestrictionsData = (data: any) => {
+        if (Array.isArray(data) && data.length > 0) {
+            setRestrictions(data.map(restrictionGroupFromData));
+        } else {
+            setRestrictions([]);
+        }
+    };
+
+    const updateRestrictionGroup = (index: number, updates: Partial<RestrictionGroupState>) => {
+        setRestrictions(prev => prev.map((g, i) => i === index ? { ...g, ...updates } : g));
+    };
 
     const updateSide = (index: 0 | 1, updates: Partial<SideState>) => {
         setSides(prev => {
@@ -330,13 +575,13 @@ export default function UpgradeEditPage() {
                 setSlot(result.Slot);
                 setXws(result.Xws);
                 setLimited(result.Limited.toString());
-                setCostStr(result.Cost ? JSON.stringify(result.Cost, null, 2) : '');
+                setCost(costStateFromData(result.Cost));
                 const sidesArr = result.Sides as any[];
                 setSides([
                     sideFromData(sidesArr[0] ?? {}),
                     sidesArr[1] ? sideFromData(sidesArr[1]) : null,
                 ]);
-                setRestrictionsStr(result.Restrictions ? JSON.stringify(result.Restrictions, null, 2) : '');
+                setRestrictionsData(result.Restrictions);
                 setStandard(result.Standard);
                 setExtended(result.Extended);
                 setEpic(result.Epic);
@@ -358,11 +603,6 @@ export default function UpgradeEditPage() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [upgradeId]);
 
-    const parseOptionalJson = (str: string) => {
-        if (!str.trim()) return undefined;
-        return JSON.parse(str);
-    };
-
     const handleSave = async () => {
         if (!xws) {
             toast.error('XWS is required');
@@ -370,9 +610,6 @@ export default function UpgradeEditPage() {
         }
         setSaving(true);
         try {
-            let cost;
-            try { cost = parseOptionalJson(costStr); } catch { toast.error('Invalid Cost JSON'); setSaving(false); return; }
-
             const sidesData = [sideToData(sides[0])];
             if (sides[1]) sidesData.push(sideToData(sides[1]));
 
@@ -380,7 +617,7 @@ export default function UpgradeEditPage() {
                 slot,
                 xws,
                 limited: parseInt(limited),
-                cost,
+                cost: costStateToData(cost),
                 sides: sidesData,
                 standard,
                 extended,
@@ -391,7 +628,8 @@ export default function UpgradeEditPage() {
                 keywords: keywords.length > 0 ? keywords : undefined,
             };
 
-            try { data.restrictions = parseOptionalJson(restrictionsStr); } catch { toast.error('Invalid Restrictions JSON'); setSaving(false); return; }
+            const restrictionsData = restrictions.map(restrictionGroupToData).filter(Boolean);
+            if (restrictionsData.length > 0) data.restrictions = restrictionsData;
 
             if (isNew) {
                 data.ruleset = ruleset;
@@ -1047,18 +1285,6 @@ export default function UpgradeEditPage() {
                         </div>
                     </div>
 
-                    <div>
-                        <Label>Cost (JSON)</Label>
-                        <Textarea value={costStr} onChange={(e) => setCostStr(e.target.value)} rows={4} className="font-mono text-xs"
-                            placeholder='{"value": 5} or {"variable": "size", "values": {"Small": 2, "Medium": 4, "Large": 6}}' />
-                    </div>
-
-                    <div>
-                        <Label>Restrictions (JSON array, optional)</Label>
-                        <Textarea value={restrictionsStr} onChange={(e) => setRestrictionsStr(e.target.value)} rows={4} className="font-mono text-xs"
-                            placeholder='[{"baseSizes": ["Small", "Medium"]}]' />
-                    </div>
-
                     <div className="flex flex-wrap gap-6">
                         <div className="flex items-center gap-2">
                             <Switch checked={standard} onCheckedChange={setStandard} />
@@ -1085,6 +1311,423 @@ export default function UpgradeEditPage() {
                             <Label>Standard Loadout Only</Label>
                         </div>
                     </div>
+
+                    <div className="border rounded-md p-4">
+                        <div className="flex items-center gap-4 mb-3">
+                            <Label className="text-base font-semibold shrink-0">Cost</Label>
+                            <Select value={cost.type} onValueChange={(v) => setCost(prev => ({ ...prev, type: v as CostType }))}>
+                                <SelectTrigger className="w-[200px] h-8"><SelectValue /></SelectTrigger>
+                                <SelectContent>
+                                    {COST_TYPES.map(t => <SelectItem key={t} value={t}>{COST_TYPE_LABELS[t]}</SelectItem>)}
+                                </SelectContent>
+                            </Select>
+                        </div>
+
+                        {cost.type === 'fixed' && (
+                            <div>
+                                <Label className="text-xs">Points</Label>
+                                <Input value={cost.fixedValue} onChange={(e) => setCost(prev => ({ ...prev, fixedValue: e.target.value }))} type="number" min="0" className="w-[100px]" />
+                            </div>
+                        )}
+
+                        {cost.type === 'agility' && (
+                            <div className="grid grid-cols-4 gap-3">
+                                {Object.keys(cost.agilityValues).sort().map(k => (
+                                    <div key={k}>
+                                        <Label className="text-xs">Agility {k}</Label>
+                                        <Input value={cost.agilityValues[k]} onChange={(e) => setCost(prev => ({ ...prev, agilityValues: { ...prev.agilityValues, [k]: e.target.value } }))} type="number" min="0" />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {cost.type === 'initiative' && (
+                            <div className="grid grid-cols-4 gap-3">
+                                {Object.keys(cost.initiativeValues).sort((a, b) => Number(a) - Number(b)).map(k => (
+                                    <div key={k}>
+                                        <Label className="text-xs">Initiative {k}</Label>
+                                        <Input value={cost.initiativeValues[k]} onChange={(e) => setCost(prev => ({ ...prev, initiativeValues: { ...prev.initiativeValues, [k]: e.target.value } }))} type="number" min="0" />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {cost.type === 'size' && (
+                            <div className="grid grid-cols-4 gap-3">
+                                {(['Small', 'Medium', 'Large', 'Huge'] as const).map(s => (
+                                    <div key={s}>
+                                        <Label className="text-xs">{s}</Label>
+                                        <Input value={cost.sizeValues[s]} onChange={(e) => setCost(prev => ({ ...prev, sizeValues: { ...prev.sizeValues, [s]: e.target.value } }))} type="number" min="0" />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {cost.type === 'faction' && (
+                            <div className="grid grid-cols-2 gap-3">
+                                {FACTION_KEYS.map(f => (
+                                    <div key={f} className="flex items-center gap-2">
+                                        <Label className="text-xs w-[140px] shrink-0">{FACTION_KEY_LABELS[f]}</Label>
+                                        <Input value={cost.factionValues[f]} onChange={(e) => setCost(prev => ({ ...prev, factionValues: { ...prev.factionValues, [f]: e.target.value } }))} type="number" min="0" className="w-[80px]" />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="border rounded-md p-4">
+                        <Label className="text-base font-semibold">Restrictions</Label>
+                        <p className="text-xs text-muted-foreground mb-3">Within a group, fields are OR (any must match). Groups are AND (all must match).</p>
+                        <div className="space-y-2">
+                            {restrictions.map((group, gi) => {
+                                const activeFields = group.enabledFields;
+                                const availableFields = RESTRICTION_FIELD_TYPES.filter(f => !activeFields.includes(f));
+
+                                const removeField = (field: RestrictionFieldType) => {
+                                    const updates: Partial<RestrictionGroupState> = {
+                                        enabledFields: group.enabledFields.filter(f => f !== field),
+                                    };
+                                    switch (field) {
+                                        case 'factions': updates.factions = []; break;
+                                        case 'baseSizes': updates.baseSizes = []; break;
+                                        case 'chassis': updates.chassis = []; break;
+                                        case 'arcs': updates.arcs = []; break;
+                                        case 'action': updates.hasAction = false; break;
+                                        case 'sides': updates.sides = []; break;
+                                        case 'equipped': updates.equipped = []; break;
+                                        case 'keywords': updates.keywords = []; break;
+                                        case 'character': updates.character = []; break;
+                                        case 'solitary': updates.solitary = false; break;
+                                        case 'non-limited': updates.nonLimited = false; break;
+                                        case 'initiative': updates.hasInitiative = false; break;
+                                        case 'stat': updates.hasStat = false; break;
+                                        case 'shipAbility': updates.shipAbility = []; break;
+                                    }
+                                    updateRestrictionGroup(gi, updates);
+                                };
+
+                                const addField = (field: RestrictionFieldType) => {
+                                    const updates: Partial<RestrictionGroupState> = {
+                                        enabledFields: [...group.enabledFields, field],
+                                    };
+                                    switch (field) {
+                                        case 'action': updates.hasAction = true; break;
+                                        case 'solitary': updates.solitary = true; break;
+                                        case 'non-limited': updates.nonLimited = true; break;
+                                        case 'initiative': updates.hasInitiative = true; break;
+                                        case 'stat': updates.hasStat = true; break;
+                                        default: break;
+                                    }
+                                    updateRestrictionGroup(gi, updates);
+                                };
+
+                                return (
+                                    <div key={gi}>
+                                        {gi > 0 && (
+                                            <div className="flex items-center gap-2 my-2">
+                                                <div className="flex-1 border-t" />
+                                                <span className="text-xs font-medium text-muted-foreground uppercase">and</span>
+                                                <div className="flex-1 border-t" />
+                                            </div>
+                                        )}
+                                        <div className="border rounded-md p-3 space-y-3 bg-muted/30">
+                                            <div className="flex items-center justify-between">
+                                                <span className="text-sm font-medium">
+                                                    Group {gi + 1}
+                                                </span>
+                                                <Button type="button" variant="ghost" size="sm" onClick={() => setRestrictions(restrictions.filter((_, i) => i !== gi))}>
+                                                    <XCircleIcon className="w-4 h-4" />
+                                                </Button>
+                                            </div>
+
+                                            {/* Render only active fields */}
+                                            {activeFields.map(field => (
+                                                <div key={field} className="flex items-start gap-2">
+                                                    <div className="flex-1">
+                                                        {field === 'factions' && (
+                                                            <div>
+                                                                <Label className="text-xs">Factions</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.factions.map((f, i) => (
+                                                                        <Badge key={f} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {FACTION_KEY_LABELS[f] ?? f}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { factions: group.factions.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <Select onValueChange={(v) => { if (!group.factions.includes(v)) updateRestrictionGroup(gi, { factions: [...group.factions, v] }); }}>
+                                                                        <SelectTrigger className="w-[180px] h-6 text-xs"><SelectValue placeholder="Add faction..." /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            {FACTION_KEYS.map(f => <SelectItem key={f} value={f}>{FACTION_KEY_LABELS[f]}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'baseSizes' && (
+                                                            <div>
+                                                                <Label className="text-xs">Base Sizes</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.baseSizes.map((s, i) => (
+                                                                        <Badge key={s} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {s}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { baseSizes: group.baseSizes.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <Select onValueChange={(v) => { if (!group.baseSizes.includes(v)) updateRestrictionGroup(gi, { baseSizes: [...group.baseSizes, v] }); }}>
+                                                                        <SelectTrigger className="w-[120px] h-6 text-xs"><SelectValue placeholder="Add size..." /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            {BASE_SIZES.map(s => <SelectItem key={s} value={s}>{s}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'chassis' && (
+                                                            <div>
+                                                                <Label className="text-xs">Chassis</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.chassis.map((c, i) => (
+                                                                        <Badge key={`${c}-${i}`} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {c}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { chassis: group.chassis.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <form className="flex gap-1" onSubmit={(e) => {
+                                                                        e.preventDefault();
+                                                                        const input = (e.target as HTMLFormElement).elements.namedItem('chassis') as HTMLInputElement;
+                                                                        const v = input.value.trim();
+                                                                        if (v) { updateRestrictionGroup(gi, { chassis: [...group.chassis, v] }); input.value = ''; }
+                                                                    }}>
+                                                                        <Input name="chassis" placeholder="Add chassis..." className="w-[140px] h-6 text-xs" />
+                                                                        <Button type="submit" variant="outline" size="sm" className="h-6 text-xs">Add</Button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'arcs' && (
+                                                            <div>
+                                                                <Label className="text-xs">Arcs</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.arcs.map((a, i) => (
+                                                                        <Badge key={a} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {a}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { arcs: group.arcs.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <Select onValueChange={(v) => { if (!group.arcs.includes(v)) updateRestrictionGroup(gi, { arcs: [...group.arcs, v] }); }}>
+                                                                        <SelectTrigger className="w-[160px] h-6 text-xs"><SelectValue placeholder="Add arc..." /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            {ARC_TYPES.map(a => <SelectItem key={a} value={a}>{a}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'action' && (
+                                                            <div>
+                                                                <Label className="text-xs">Action</Label>
+                                                                <div className="flex gap-2 mt-1">
+                                                                    <Select value={group.actionType} onValueChange={(v) => updateRestrictionGroup(gi, { actionType: v })}>
+                                                                        <SelectTrigger className="w-[140px] h-7 text-xs"><SelectValue /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            {ACTION_TYPES.map(a => <SelectItem key={a} value={a}>{a}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                    <Select value={group.actionDifficulty || '_any'} onValueChange={(v) => updateRestrictionGroup(gi, { actionDifficulty: v === '_any' ? '' : v })}>
+                                                                        <SelectTrigger className="w-[100px] h-7 text-xs"><SelectValue /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            <SelectItem value="_any">Any</SelectItem>
+                                                                            {DIFFICULTIES.map(d => <SelectItem key={d} value={d}>{d}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'sides' && (
+                                                            <div>
+                                                                <Label className="text-xs">Force Sides</Label>
+                                                                <div className="flex gap-4 mt-1">
+                                                                    {FORCE_SIDES.map(s => (
+                                                                        <label key={s} className="flex items-center gap-1 text-xs">
+                                                                            <Checkbox
+                                                                                checked={group.sides.includes(s)}
+                                                                                onCheckedChange={(v) => updateRestrictionGroup(gi, {
+                                                                                    sides: v ? [...group.sides, s] : group.sides.filter(x => x !== s)
+                                                                                })}
+                                                                            />
+                                                                            {s}
+                                                                        </label>
+                                                                    ))}
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'equipped' && (
+                                                            <div>
+                                                                <Label className="text-xs">Equipped Slots</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.equipped.map((e, i) => (
+                                                                        <Badge key={`${e}-${i}`} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {e}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { equipped: group.equipped.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <Select onValueChange={(v) => updateRestrictionGroup(gi, { equipped: [...group.equipped, v] })}>
+                                                                        <SelectTrigger className="w-[140px] h-6 text-xs"><SelectValue placeholder="Add slot..." /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            {SLOT_TYPES.map(s => <SelectItem key={s} value={s}>{s}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'keywords' && (
+                                                            <div>
+                                                                <Label className="text-xs">Keywords</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.keywords.map((kw, i) => (
+                                                                        <Badge key={`${kw}-${i}`} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {kw}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { keywords: group.keywords.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <form className="flex gap-1" onSubmit={(e) => {
+                                                                        e.preventDefault();
+                                                                        const input = (e.target as HTMLFormElement).elements.namedItem('keyword') as HTMLInputElement;
+                                                                        const v = input.value.trim();
+                                                                        if (v) { updateRestrictionGroup(gi, { keywords: [...group.keywords, v] }); input.value = ''; }
+                                                                    }}>
+                                                                        <Input name="keyword" placeholder="Add keyword..." className="w-[140px] h-6 text-xs" />
+                                                                        <Button type="submit" variant="outline" size="sm" className="h-6 text-xs">Add</Button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'character' && (
+                                                            <div>
+                                                                <Label className="text-xs">Character</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.character.map((c, i) => (
+                                                                        <Badge key={`${c}-${i}`} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {c}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { character: group.character.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <form className="flex gap-1" onSubmit={(e) => {
+                                                                        e.preventDefault();
+                                                                        const input = (e.target as HTMLFormElement).elements.namedItem('character') as HTMLInputElement;
+                                                                        const v = input.value.trim();
+                                                                        if (v) { updateRestrictionGroup(gi, { character: [...group.character, v] }); input.value = ''; }
+                                                                    }}>
+                                                                        <Input name="character" placeholder="Add character..." className="w-[140px] h-6 text-xs" />
+                                                                        <Button type="submit" variant="outline" size="sm" className="h-6 text-xs">Add</Button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'shipAbility' && (
+                                                            <div>
+                                                                <Label className="text-xs">Ship Ability</Label>
+                                                                <div className="flex flex-wrap gap-2 mt-1">
+                                                                    {group.shipAbility.map((sa, i) => (
+                                                                        <Badge key={`${sa}-${i}`} variant="secondary" className="gap-1 h-6 text-xs">
+                                                                            {sa}
+                                                                            <button type="button" onClick={() => updateRestrictionGroup(gi, { shipAbility: group.shipAbility.filter((_, idx) => idx !== i) })} className="ml-0.5 hover:text-destructive">
+                                                                                <XCircleIcon className="w-3 h-3" />
+                                                                            </button>
+                                                                        </Badge>
+                                                                    ))}
+                                                                    <form className="flex gap-1" onSubmit={(e) => {
+                                                                        e.preventDefault();
+                                                                        const input = (e.target as HTMLFormElement).elements.namedItem('shipAbility') as HTMLInputElement;
+                                                                        const v = input.value.trim();
+                                                                        if (v) { updateRestrictionGroup(gi, { shipAbility: [...group.shipAbility, v] }); input.value = ''; }
+                                                                    }}>
+                                                                        <Input name="shipAbility" placeholder="Add ship ability..." className="w-[160px] h-6 text-xs" />
+                                                                        <Button type="submit" variant="outline" size="sm" className="h-6 text-xs">Add</Button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'solitary' && (
+                                                            <div className="flex items-center gap-1 text-xs pt-1">
+                                                                <Label className="text-xs">Solitary</Label>
+                                                            </div>
+                                                        )}
+                                                        {field === 'non-limited' && (
+                                                            <div className="flex items-center gap-1 text-xs pt-1">
+                                                                <Label className="text-xs">Non-Limited</Label>
+                                                            </div>
+                                                        )}
+                                                        {field === 'initiative' && (
+                                                            <div>
+                                                                <Label className="text-xs">Initiative</Label>
+                                                                <div className="flex gap-2 mt-1">
+                                                                    <div>
+                                                                        <Label className="text-xs text-muted-foreground">Min</Label>
+                                                                        <Input value={group.initiativeMin} onChange={(e) => updateRestrictionGroup(gi, { initiativeMin: e.target.value })} type="number" min="0" max="6" className="w-[70px] h-7 text-xs" placeholder="—" />
+                                                                    </div>
+                                                                    <div>
+                                                                        <Label className="text-xs text-muted-foreground">Max</Label>
+                                                                        <Input value={group.initiativeMax} onChange={(e) => updateRestrictionGroup(gi, { initiativeMax: e.target.value })} type="number" min="0" max="6" className="w-[70px] h-7 text-xs" placeholder="—" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                        {field === 'stat' && (
+                                                            <div>
+                                                                <Label className="text-xs">Stat</Label>
+                                                                <div className="flex gap-2 mt-1">
+                                                                    <Select value={group.statType} onValueChange={(v) => updateRestrictionGroup(gi, { statType: v })}>
+                                                                        <SelectTrigger className="w-[110px] h-7 text-xs"><SelectValue /></SelectTrigger>
+                                                                        <SelectContent>
+                                                                            {STAT_TYPES.map(s => <SelectItem key={s} value={s}>{s}</SelectItem>)}
+                                                                        </SelectContent>
+                                                                    </Select>
+                                                                    <Input value={group.statValue} onChange={(e) => updateRestrictionGroup(gi, { statValue: e.target.value })} type="number" min="0" className="w-[70px] h-7 text-xs" placeholder="Value" />
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                    <Button type="button" variant="ghost" size="sm" className="h-6 w-6 p-0 mt-1 shrink-0" onClick={() => removeField(field)}>
+                                                        <XCircleIcon className="w-3.5 h-3.5" />
+                                                    </Button>
+                                                </div>
+                                            ))}
+
+                                            {/* Add OR constraint selector */}
+                                            {availableFields.length > 0 && (
+                                                <Select onValueChange={(v) => addField(v as RestrictionFieldType)}>
+                                                    <SelectTrigger className="w-[200px] h-7 text-xs"><SelectValue placeholder="Add OR constraint..." /></SelectTrigger>
+                                                    <SelectContent>
+                                                        {availableFields.map(f => <SelectItem key={f} value={f}>{RESTRICTION_FIELD_LABELS[f]}</SelectItem>)}
+                                                    </SelectContent>
+                                                </Select>
+                                            )}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                            <Button type="button" variant="outline" size="sm" onClick={() => setRestrictions([...restrictions, emptyRestrictionGroup()])}>
+                                {restrictions.length > 0 ? 'Add AND Group' : 'Add Restriction'}
+                            </Button>
+                        </div>
+                    </div>
+
+
 
                     <div>
                         <Label>Keywords</Label>
