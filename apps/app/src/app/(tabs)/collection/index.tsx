@@ -52,7 +52,7 @@ export default function CollectionScreen() {
                         text={title}
                         onPress={() => {
                             router.push({ pathname: '(tabs)/collection/details', params: { sourceKey: title as SourceKey } });
-                        }}}
+                        }}
                     />
                 );
             }}
