@@ -165,8 +165,8 @@ export default function SourceEditPage() {
     const params = useParams()!;
     const router = useRouter();
     const trpc = useAdminTrpc();
-    const sourceId = params.id as string;
-    const isNew = sourceId === 'new';
+    const sourceId = params?.id as string | undefined;
+    const isNew = !sourceId || sourceId === 'new';
 
     const [loading, setLoading] = useState(!isNew);
     const [saving, setSaving] = useState(false);
@@ -186,7 +186,7 @@ export default function SourceEditPage() {
         if (isNew) return;
         async function load() {
             try {
-                const result = await trpc.admin.sources.get.query({ id: sourceId });
+                const result = await trpc.admin.sources.get.query({ id: sourceId! });
                 if (!result) {
                     router.push('/admin/sources');
                     return;
@@ -242,7 +242,7 @@ export default function SourceEditPage() {
                 toast.success('Source created');
                 router.push(`/admin/sources/${result.id}`);
             } else {
-                data.id = sourceId;
+                data.id = sourceId!;
                 await trpc.admin.sources.update.mutate(data);
                 toast.success('Source updated');
             }
@@ -255,7 +255,7 @@ export default function SourceEditPage() {
 
     const handleDelete = async () => {
         try {
-            await trpc.admin.sources.delete.mutate({ id: sourceId });
+            await trpc.admin.sources.delete.mutate({ id: sourceId! });
             toast.success('Source deleted');
             router.push('/admin/sources');
         } catch (err: any) {

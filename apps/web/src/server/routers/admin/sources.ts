@@ -57,10 +57,10 @@ export const adminSourcesRouter = router({
     .input(
       z.object({
         category: z.string(),
-        ffg: z.number(),
+        ffg: z.number().optional(),
         xws: z.string(),
         name: z.string(),
-        wave: z.number(),
+        wave: z.number().optional(),
         released: z.boolean(),
         contents: z.any(),
         sku: z.string().optional(),
@@ -71,10 +71,10 @@ export const adminSourcesRouter = router({
       await db.insert(Sources).values({
         Id: id,
         Category: input.category,
-        Ffg: input.ffg,
+        Ffg: input.ffg ?? null,
         Xws: input.xws,
         Name: input.name,
-        Wave: input.wave,
+        Wave: input.wave ?? null,
         Released: input.released,
         Contents: input.contents,
         Sku: input.sku ?? null,
