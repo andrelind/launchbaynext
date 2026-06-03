@@ -8,7 +8,7 @@ import { useLocalSearchParams } from 'expo-router';
 import { assets } from 'lbn-core/src';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
 import sources, { SourceKey } from 'lbn-core/src/sources';
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Text,
     TouchableOpacity,
@@ -20,7 +20,6 @@ type Section = { title: string; data: Source[] };
 
 export default function CollectionDetailScreen() {
     const { tw } = useTailwind();
-    const [needle, setNeedle] = useState<string>();
 
     const {
         expansions,
@@ -33,11 +32,7 @@ export default function CollectionDetailScreen() {
         setUpgrades,
     } = useCollectionStore();
 
-    // useNavigationSearchBarUpdate(v => {
-    //   v.isFocused && setNeedle(v.text);
-    // }, componentId);
-
-    const { sourceKey } = useLocalSearchParams<{ sourceKey: SourceKey }>();
+    const { sourceKey, needle } = useLocalSearchParams<{ sourceKey: SourceKey; needle?: string }>();
     const gd = useGameDataStore(s => s.data);
     const pilotData = gd?.pilots ?? assets['xwa'].pilots;
     const upgradeData = gd?.upgrades ?? assets['xwa'].upgrades;
