@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
 import sources, { type SourceKey } from 'lbn-core/src/sources';
-import { type Faction, type GameData } from 'lbn-core/src/types';
+import { type Faction, type GameData, type Source } from 'lbn-core/src/types';
 import { type FC, useEffect, useState } from 'react';
 import useSwr, { useSWRConfig } from 'swr';
 import { trpc } from '../app/_trpc/client';
@@ -17,12 +17,16 @@ type Props = {
 const extraKeys: (
   | 'Epic'
   | 'Core Sets'
+  | 'Expansion Pack'
+  | 'Card Pack'
   | 'Additional Ships'
   | 'Additional Pilots'
   | 'Additional Upgrades'
 )[] = [
     'Epic',
     'Core Sets',
+    'Expansion Pack',
+    'Card Pack',
     'Additional Ships',
     'Additional Pilots',
     'Additional Upgrades',
@@ -35,6 +39,9 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
   const { data: collection } = useSwr('/collection', () =>
     // get<CollectionState>('/collection')
     trpc.collection.get.query(),
+  );
+  const { data: dbSources } = useSwr('/sources', () =>
+    trpc.gameData.sources.query(),
   );
 
   const [sourceKey, setSourceKey] = useState<SourceKey>('Core Sets');
@@ -108,8 +115,9 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
         return;
       }
       default: {
+        const sourceList: Source[] = dbSources?.[sourceKey] ?? sources[sourceKey];
         setData(
-          sources[sourceKey].map((s) => ({
+          sourceList.map((s) => ({
             xws: s.xws,
             name: s.name,
             count: collection?.expansions[s.xws] || 0,
@@ -119,7 +127,7 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
         return;
       }
     }
-  }, [sourceKey, collection, gameData]);
+  }, [sourceKey, collection, gameData, dbSources]);
 
   if (!collection) {
     return null;

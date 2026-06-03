@@ -1,5 +1,6 @@
 import { ShipFont } from '@/src/components/fonts/ShipIcon';
 import { useTailwind } from '@/src/helpers/tailwind';
+import { trpc } from '@/src/helpers/trpc';
 import { useCollectionStore } from '@/src/stores/collection';
 import { useGameDataStore } from '@/src/stores/gameData';
 import { Octicons } from '@expo/vector-icons';
@@ -14,6 +15,7 @@ import {
     TouchableOpacity,
     View
 } from 'react-native';
+import useSwr from 'swr';
 
 type Source = { id: string, xws: string; name: string; icons: string[] };
 type Section = { title: string; data: Source[] };
@@ -33,6 +35,7 @@ export default function CollectionDetailScreen() {
     } = useCollectionStore();
 
     const { sourceKey, needle } = useLocalSearchParams<{ sourceKey: SourceKey; needle?: string }>();
+    const { data: dbSources } = useSwr('/sources', () => trpc.gameData.sources.query());
     const gd = useGameDataStore(s => s.data);
     const pilotData = gd?.pilots ?? assets['xwa'].pilots;
     const upgradeData = gd?.upgrades ?? assets['xwa'].upgrades;
@@ -165,19 +168,20 @@ export default function CollectionDetailScreen() {
             }
             default: {
                 const sections: Section[] = [];
-                sources[source]
-                    ?.filter((s) => {
+                const sourceList = dbSources?.[source] ?? sources[source] ?? [];
+                sourceList
+                    ?.filter((s: any) => {
                         if (!n || (n && s.name.toLowerCase().indexOf(lc) >= 0)) {
                             return true;
                         }
                         return false;
                     })
-                    ?.forEach((src) => {
+                    ?.forEach((src: any) => {
                         const sectionKey = nameFromWave(src.wave);
                         const section: Section = sections.filter(
                             (s) => s.title === sectionKey
                         )[0];
-                        const s = { ...src, id: src.xws, icons: Object.keys(src.contents.ships) };
+                        const s = { ...src, id: src.xws, icons: Object.keys(src.contents?.ships ?? {}) };
 
                         if (!section) {
                             sections.push({ title: sectionKey, data: [s] });
