@@ -12,7 +12,7 @@ export function useAdminTrpc() {
   return createTRPCProxyClient<AppRouter>({
     links: [
       httpBatchLink({
-        url: `${process.env.NEXT_PUBLIC_HOSTING_URL || 'http://localhost:3000'}/api/trpc`,
+        url: '/api/trpc',
         headers: () => ({
           ...(jwt ? { 'x-jwt': jwt } : {}),
         }),

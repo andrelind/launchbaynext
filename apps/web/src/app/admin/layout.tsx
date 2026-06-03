@@ -2,8 +2,10 @@
 
 import { Toaster } from '@web/components/ui/sonner';
 import { cn } from '@web/lib/utils';
+import { useCookies } from 'next-client-cookies';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const navItems = [
     { label: 'Dashboard', href: '/admin' },
@@ -17,6 +19,19 @@ const navItems = [
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
+    const router = useRouter();
+    const cookies = useCookies();
+    const isLoggedIn = cookies.get('x-jwt') !== undefined;
+
+    useEffect(() => {
+        if (!isLoggedIn) {
+            router.replace('/');
+        }
+    }, [isLoggedIn, router]);
+
+    if (!isLoggedIn) {
+        return null;
+    }
 
     return (
         <div className="flex min-h-screen">
