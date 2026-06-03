@@ -99,7 +99,7 @@ export const adminUpgradesRouter = router({
         const maxResult = await db.execute(
           sql`SELECT COALESCE(MAX("NumericId"), 0) + 1 as next_id FROM "ManifestEntries" WHERE "Ruleset" = ${input.ruleset}`,
         );
-        const nextId = (maxResult.rows[0] as { next_id: number }).next_id;
+        const nextId = (maxResult[0] as { next_id: number }).next_id;
         await db.insert(ManifestEntries).values({
           Id: v4(),
           Ruleset: input.ruleset,
