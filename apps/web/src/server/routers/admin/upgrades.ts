@@ -1,8 +1,9 @@
-import { and, eq, ilike, sql } from 'drizzle-orm';
+import { and, eq, ilike } from 'drizzle-orm';
 import { v4 } from 'uuid';
 import { z } from 'zod';
 import { db } from '../../db';
-import { GameUpgrades, ManifestEntries } from '../../drizzle/schema';
+import { GameUpgrades } from '../../drizzle/schema';
+import { ensureManifestEntry } from '../../helpers/manifestEntry';
 import { computeAndUpdateVersion } from '../../helpers/versionHash';
 import { adminProcedure, router } from '../../trpc';
 
@@ -83,32 +84,7 @@ export const adminUpgradesRouter = router({
         UpdatedAt: now,
       });
 
-      // Auto-create manifest entry for the new upgrade
-      const existing = await db
-        .select()
-        .from(ManifestEntries)
-        .where(
-          and(
-            eq(ManifestEntries.Ruleset, input.ruleset),
-            eq(ManifestEntries.EntityType, 'upgrade'),
-            eq(ManifestEntries.XwsKey, input.xws),
-          ),
-        );
-      if (existing.length === 0) {
-        // Find the next available numeric ID for this ruleset
-        const maxResult = await db.execute(
-          sql`SELECT COALESCE(MAX("NumericId"), 0) + 1 as next_id FROM "ManifestEntries" WHERE "Ruleset" = ${input.ruleset}`,
-        );
-        const nextId = (maxResult[0] as { next_id: number }).next_id;
-        await db.insert(ManifestEntries).values({
-          Id: v4(),
-          Ruleset: input.ruleset,
-          NumericId: nextId,
-          XwsKey: input.xws,
-          EntityType: 'upgrade',
-        });
-      }
-
+      await ensureManifestEntry(input.ruleset, 'upgrade', input.xws);
       await computeAndUpdateVersion(input.ruleset);
       return { id };
     }),

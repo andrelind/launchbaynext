@@ -1,11 +1,12 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { GameData } from 'lbn-core/src/types';
+import type { GameData, ManifestData } from 'lbn-core/src/types';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { trpc } from '../helpers/trpc';
 
 type GameDataState = {
   data: GameData | null;
+  manifestData: ManifestData | null;
   version: string | null;
   loading: boolean;
   lastFetched: number | null;
@@ -17,6 +18,7 @@ export const useGameDataStore = create<GameDataState>()(
   persist(
     (set, get) => ({
       data: null,
+      manifestData: null,
       version: null,
       loading: false,
       lastFetched: null,
@@ -24,10 +26,14 @@ export const useGameDataStore = create<GameDataState>()(
       fetchGameData: async () => {
         set({ loading: true });
         try {
-          const data = await trpc.gameData.all.query({ ruleset: 'xwa' });
-          const versionResult = await trpc.gameData.version.query({ ruleset: 'xwa' });
+          const [data, versionResult, manifestData] = await Promise.all([
+            trpc.gameData.all.query({ ruleset: 'xwa' }),
+            trpc.gameData.version.query({ ruleset: 'xwa' }),
+            trpc.gameData.manifest.query({ ruleset: 'xwa' }),
+          ]);
           set({
             data,
+            manifestData,
             version: versionResult.version,
             lastFetched: Date.now(),
             loading: false,
@@ -55,6 +61,7 @@ export const useGameDataStore = create<GameDataState>()(
       storage: createJSONStorage(() => AsyncStorage),
       partialize: state => ({
         data: state.data,
+        manifestData: state.manifestData,
         version: state.version,
         lastFetched: state.lastFetched,
       }),

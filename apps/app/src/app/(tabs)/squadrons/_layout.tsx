@@ -1,5 +1,6 @@
 import { useTailwind } from '@/src/helpers/tailwind';
 import { SortingType, useFilterStore } from '@/src/stores/filter';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { useLoadoutStore } from '@/src/stores/loadout';
 import { useXwsStore } from '@/src/stores/xws';
 import { Button, ContextMenu, Host } from '@expo/ui/swift-ui';
@@ -41,6 +42,7 @@ export default function OverviewLayout() {
 
     const pilot = xws?.pilots[parseInt(pilotIndex as string, 10)];
     const ship = pilot && loadShip2(pilot, xws);
+    const manifestData = useGameDataStore(s => s.manifestData);
 
     const { filters, setFilters, tags, setTags, sorting, setFirstSorting, setSecondSorting } = useFilterStore(
         useShallow(s => ({
@@ -73,7 +75,7 @@ export default function OverviewLayout() {
 
     const filterCount = Object.keys(filters).length + tags.length;
 
-    const lbx = serialize(xws);
+    const lbx = serialize(xws, manifestData ?? undefined);
     const url = `https://launchbaynext.app/?lbx=${lbx}`;
     const printUrl = `https://launchbaynext.app/print?lbx=${lbx}`;
 

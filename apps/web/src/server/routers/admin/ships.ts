@@ -3,6 +3,7 @@ import { v4 } from 'uuid';
 import { z } from 'zod';
 import { db } from '../../db';
 import { Pilots, Ships } from '../../drizzle/schema';
+import { ensureManifestEntry } from '../../helpers/manifestEntry';
 import { computeAndUpdateVersion } from '../../helpers/versionHash';
 import { adminProcedure, router } from '../../trpc';
 
@@ -74,6 +75,7 @@ export const adminShipsRouter = router({
         Icon: input.icon ?? null,
         UpdatedAt: now,
       });
+      await ensureManifestEntry(input.ruleset, 'ship', input.xws);
       await computeAndUpdateVersion(input.ruleset);
       return { id };
     }),

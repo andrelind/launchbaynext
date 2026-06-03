@@ -11,7 +11,7 @@ type Props = {
 
 export const SlimShip: FC<Props> = ({ shipType, showFaction }) => {
   return (
-    <li className="flex items-center justify-between">
+    <div className="flex items-center justify-between">
       <div className="flex items-center text-xs sm:text-sm">
         {shipType && showFaction && (
           <XwingFont
@@ -32,6 +32,6 @@ export const SlimShip: FC<Props> = ({ shipType, showFaction }) => {
           <span className="truncate text-gray-500">Select ship</span>
         )}
       </div>
-    </li>
+    </div>
   );
 };

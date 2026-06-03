@@ -3,6 +3,7 @@ import { v4 } from 'uuid';
 import { z } from 'zod';
 import { db } from '../../db';
 import { Pilots, Ships } from '../../drizzle/schema';
+import { ensureManifestEntry } from '../../helpers/manifestEntry';
 import { computeAndUpdateVersion } from '../../helpers/versionHash';
 import { adminProcedure, router } from '../../trpc';
 
@@ -132,9 +133,10 @@ export const adminPilotsRouter = router({
         UpdatedAt: now,
       });
 
-      // Get ship ruleset to bump version
+      // Get ship ruleset to bump version and ensure manifest entry
       const ship = await db.query.Ships.findFirst({ where: (s, { eq }) => eq(s.Id, input.shipId) });
       if (ship) {
+        await ensureManifestEntry(ship.Ruleset, 'pilot', input.xws);
         await computeAndUpdateVersion(ship.Ruleset);
       }
       return { id };

@@ -11,6 +11,7 @@ import ActionSheet, {
 } from 'react-native-actions-sheet';
 import Toast from 'react-native-toast-message';
 import { useTailwind } from '../../helpers/tailwind';
+import { useGameDataStore } from '../../stores/gameData';
 import './types';
 
 export const ExportSquadronSheetId = 'ExportSquadronSheet';
@@ -22,12 +23,13 @@ const ExportSquadronSheet = ({
     payload
 }: SheetProps<'ExportSquadronSheet'>) => {
     const { tw } = useTailwind();
+    const manifestData = useGameDataStore(s => s.manifestData);
 
     if (!payload?.xws) {
         return null;
     }
 
-    const lbx = serialize(payload.xws);
+    const lbx = serialize(payload.xws, manifestData ?? undefined);
     const url = `https://launchbaynext.app/?lbx=${lbx}`;
     const printUrl = `https://launchbaynext.app/print?lbx=${lbx}`;
 

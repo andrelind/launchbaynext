@@ -1,10 +1,11 @@
 import { eq } from 'drizzle-orm';
 import { z } from 'zod';
 import { db } from '../db';
-import { GameConditions, GameUpgrades, ManifestEntries, Sources } from '../drizzle/schema';
+import { GameConditions, GameUpgrades, Sources } from '../drizzle/schema';
+import { loadManifest } from '../helpers/loadManifest';
 import { publicProcedure, router } from '../trpc';
 
-import type { Condition, Faction, GameData, ManifestData, ShipType, SlotKey, UpgradeBase } from 'lbn-core/src/types';
+import type { Condition, Faction, GameData, ShipType, SlotKey, UpgradeBase } from 'lbn-core/src/types';
 
 const rulesetInput = z.object({ ruleset: z.enum(['xwa', 'legacy']) });
 
@@ -139,37 +140,6 @@ export const gameDataRouter = router({
   }),
 
   manifest: publicProcedure.input(rulesetInput).query(async ({ input }) => {
-    const rows = await db.select().from(ManifestEntries).where(eq(ManifestEntries.Ruleset, input.ruleset));
-
-    const manifest: ManifestData = {
-      factions: {},
-      ships: {},
-      pilots: {},
-      upgrades: {},
-      slots: {},
-    };
-
-    for (const row of rows) {
-      const key = `${row.NumericId}`;
-      switch (row.EntityType) {
-        case 'faction':
-          manifest.factions[key] = row.XwsKey;
-          break;
-        case 'ship':
-          manifest.ships[key] = row.XwsKey;
-          break;
-        case 'pilot':
-          manifest.pilots[key] = row.XwsKey;
-          break;
-        case 'upgrade':
-          manifest.upgrades[key] = row.XwsKey;
-          break;
-        case 'slot':
-          manifest.slots[key] = row.XwsKey;
-          break;
-      }
-    }
-
-    return manifest;
+    return loadManifest(input.ruleset);
   }),
 });
