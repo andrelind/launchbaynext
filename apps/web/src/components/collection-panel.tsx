@@ -228,6 +228,8 @@ export const CollectionsPanel: FC<Props> = ({ show, onClose, gameData }) => {
                         switch (f) {
                           case 'Epic':
                           case 'Core Sets':
+                          case 'Expansion Pack':
+                          case 'Card Pack':
                           case 'Additional Pilots':
                           case 'Additional Ships':
                           case 'Additional Upgrades':
