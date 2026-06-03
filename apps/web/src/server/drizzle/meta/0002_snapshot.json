@@ -1,0 +1,1341 @@
+{
+  "id": "b87b3f35-7fee-4d43-bd86-ebc3261802dc",
+  "prevId": "dad566bf-79bd-4f4b-a0a6-e7b7ee431b4f",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.Collections": {
+      "name": "Collections",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Expansions": {
+          "name": "Expansions",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Ships": {
+          "name": "Ships",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Pilots": {
+          "name": "Pilots",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Upgrades": {
+          "name": "Upgrades",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UpdatedUtc": {
+          "name": "UpdatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Collections_UserId_Users_Id_fk": {
+          "name": "Collections_UserId_Users_Id_fk",
+          "tableFrom": "Collections",
+          "tableTo": "Users",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.GameConditions": {
+      "name": "GameConditions",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Ruleset": {
+          "name": "Ruleset",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Ability": {
+          "name": "Ability",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Image": {
+          "name": "Image",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "conditions_ruleset_xws": {
+          "name": "conditions_ruleset_xws",
+          "columns": [
+            {
+              "expression": "Ruleset",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "Xws",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.GameDataVersions": {
+      "name": "GameDataVersions",
+      "schema": "",
+      "columns": {
+        "Ruleset": {
+          "name": "Ruleset",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Version": {
+          "name": "Version",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UpdatedAt": {
+          "name": "UpdatedAt",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.GameUpgrades": {
+      "name": "GameUpgrades",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Ruleset": {
+          "name": "Ruleset",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Slot": {
+          "name": "Slot",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Limited": {
+          "name": "Limited",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Cost": {
+          "name": "Cost",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Sides": {
+          "name": "Sides",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Restrictions": {
+          "name": "Restrictions",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Standard": {
+          "name": "Standard",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Extended": {
+          "name": "Extended",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "Epic": {
+          "name": "Epic",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Wildspace": {
+          "name": "Wildspace",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "Standarized": {
+          "name": "Standarized",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "Keywords": {
+          "name": "Keywords",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "StandardLoadoutOnly": {
+          "name": "StandardLoadoutOnly",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "Restricted": {
+          "name": "Restricted",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UpdatedAt": {
+          "name": "UpdatedAt",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "upgrades_ruleset_slot_xws": {
+          "name": "upgrades_ruleset_slot_xws",
+          "columns": [
+            {
+              "expression": "Ruleset",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "Slot",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "Xws",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Games": {
+      "name": "Games",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "TournamentId": {
+          "name": "TournamentId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "GameType": {
+          "name": "GameType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Round": {
+          "name": "Round",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Bye": {
+          "name": "Bye",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "WinnerId": {
+          "name": "WinnerId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player1Id": {
+          "name": "Player1Id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player2Id": {
+          "name": "Player2Id",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player1Score": {
+          "name": "Player1Score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player2Score": {
+          "name": "Player2Score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player1Signoff": {
+          "name": "Player1Signoff",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Player2Signoff": {
+          "name": "Player2Signoff",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Games_TournamentId_Tournaments_Id_fk": {
+          "name": "Games_TournamentId_Tournaments_Id_fk",
+          "tableFrom": "Games",
+          "tableTo": "Tournaments",
+          "columnsFrom": [
+            "TournamentId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Games_WinnerId_Participants_Id_fk": {
+          "name": "Games_WinnerId_Participants_Id_fk",
+          "tableFrom": "Games",
+          "tableTo": "Participants",
+          "columnsFrom": [
+            "WinnerId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Games_Player1Id_Participants_Id_fk": {
+          "name": "Games_Player1Id_Participants_Id_fk",
+          "tableFrom": "Games",
+          "tableTo": "Participants",
+          "columnsFrom": [
+            "Player1Id"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Games_Player2Id_Participants_Id_fk": {
+          "name": "Games_Player2Id_Participants_Id_fk",
+          "tableFrom": "Games",
+          "tableTo": "Participants",
+          "columnsFrom": [
+            "Player2Id"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Lists": {
+      "name": "Lists",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "CreatedUtc": {
+          "name": "CreatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UpdatedUtc": {
+          "name": "UpdatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "DeletedUtc": {
+          "name": "DeletedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Lists_UserId_Users_Id_fk": {
+          "name": "Lists_UserId_Users_Id_fk",
+          "tableFrom": "Lists",
+          "tableTo": "Users",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.ManifestEntries": {
+      "name": "ManifestEntries",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Ruleset": {
+          "name": "Ruleset",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "NumericId": {
+          "name": "NumericId",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "XwsKey": {
+          "name": "XwsKey",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "EntityType": {
+          "name": "EntityType",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "manifest_ruleset_numeric_id": {
+          "name": "manifest_ruleset_numeric_id",
+          "columns": [
+            {
+              "expression": "Ruleset",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "NumericId",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "manifest_ruleset_entity_xws": {
+          "name": "manifest_ruleset_entity_xws",
+          "columns": [
+            {
+              "expression": "Ruleset",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "EntityType",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "XwsKey",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Participants": {
+      "name": "Participants",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "TournamentId": {
+          "name": "TournamentId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Participants_TournamentId_Tournaments_Id_fk": {
+          "name": "Participants_TournamentId_Tournaments_Id_fk",
+          "tableFrom": "Participants",
+          "tableTo": "Tournaments",
+          "columnsFrom": [
+            "TournamentId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Participants_UserId_Users_Id_fk": {
+          "name": "Participants_UserId_Users_Id_fk",
+          "tableFrom": "Participants",
+          "tableTo": "Users",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Pilots": {
+      "name": "Pilots",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "ShipId": {
+          "name": "ShipId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Caption": {
+          "name": "Caption",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Cost": {
+          "name": "Cost",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Loadout": {
+          "name": "Loadout",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Initiative": {
+          "name": "Initiative",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Limited": {
+          "name": "Limited",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Ability": {
+          "name": "Ability",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Text": {
+          "name": "Text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Slots": {
+          "name": "Slots",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Conditions": {
+          "name": "Conditions",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ShipActions": {
+          "name": "ShipActions",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ShipAbility": {
+          "name": "ShipAbility",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Force": {
+          "name": "Force",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Charges": {
+          "name": "Charges",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Standard": {
+          "name": "Standard",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Extended": {
+          "name": "Extended",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "Epic": {
+          "name": "Epic",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Wildspace": {
+          "name": "Wildspace",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "Keywords": {
+          "name": "Keywords",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Image": {
+          "name": "Image",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Artwork": {
+          "name": "Artwork",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "StandardLoadout": {
+          "name": "StandardLoadout",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PilotStats": {
+          "name": "PilotStats",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Ffg": {
+          "name": "Ffg",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Engagement": {
+          "name": "Engagement",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Restricted": {
+          "name": "Restricted",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UpdatedAt": {
+          "name": "UpdatedAt",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "pilots_ship_xws": {
+          "name": "pilots_ship_xws",
+          "columns": [
+            {
+              "expression": "ShipId",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "Xws",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "Pilots_ShipId_Ships_Id_fk": {
+          "name": "Pilots_ShipId_Ships_Id_fk",
+          "tableFrom": "Pilots",
+          "tableTo": "Ships",
+          "columnsFrom": [
+            "ShipId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Ships": {
+      "name": "Ships",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Ruleset": {
+          "name": "Ruleset",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Faction": {
+          "name": "Faction",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Size": {
+          "name": "Size",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Dial": {
+          "name": "Dial",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "DialCodes": {
+          "name": "DialCodes",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Stats": {
+          "name": "Stats",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Actions": {
+          "name": "Actions",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Ability": {
+          "name": "Ability",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Ffg": {
+          "name": "Ffg",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Icon": {
+          "name": "Icon",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "UpdatedAt": {
+          "name": "UpdatedAt",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "ships_ruleset_faction_xws": {
+          "name": "ships_ruleset_faction_xws",
+          "columns": [
+            {
+              "expression": "Ruleset",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "Faction",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "Xws",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Sources": {
+      "name": "Sources",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Category": {
+          "name": "Category",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Ffg": {
+          "name": "Ffg",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Xws": {
+          "name": "Xws",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Wave": {
+          "name": "Wave",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Released": {
+          "name": "Released",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Contents": {
+          "name": "Contents",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Sku": {
+          "name": "Sku",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Tournaments": {
+      "name": "Tournaments",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "CreatedUtc": {
+          "name": "CreatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UpdatedUtc": {
+          "name": "UpdatedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "DeletedUtc": {
+          "name": "DeletedUtc",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "CreatorId": {
+          "name": "CreatorId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Format": {
+          "name": "Format",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Date": {
+          "name": "Date",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Location": {
+          "name": "Location",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Address": {
+          "name": "Address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Version": {
+          "name": "Version",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "Tournaments_CreatorId_Users_Id_fk": {
+          "name": "Tournaments_CreatorId_Users_Id_fk",
+          "tableFrom": "Tournaments",
+          "tableTo": "Users",
+          "columnsFrom": [
+            "CreatorId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.UserLoginCodes": {
+      "name": "UserLoginCodes",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "UserId": {
+          "name": "UserId",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Code": {
+          "name": "Code",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "CreatedAt": {
+          "name": "CreatedAt",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Active": {
+          "name": "Active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "UserLoginCodes_UserId_Users_Id_fk": {
+          "name": "UserLoginCodes_UserId_Users_Id_fk",
+          "tableFrom": "UserLoginCodes",
+          "tableTo": "Users",
+          "columnsFrom": [
+            "UserId"
+          ],
+          "columnsTo": [
+            "Id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.Users": {
+      "name": "Users",
+      "schema": "",
+      "columns": {
+        "Id": {
+          "name": "Id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Name": {
+          "name": "Name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Email": {
+          "name": "Email",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Provider": {
+          "name": "Provider",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ProviderId": {
+          "name": "ProviderId",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "PasswordHash": {
+          "name": "PasswordHash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Salt": {
+          "name": "Salt",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "Username": {
+          "name": "Username",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "IsAdmin": {
+          "name": "IsAdmin",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

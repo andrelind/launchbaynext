@@ -15,6 +15,13 @@
       "when": 1780229695915,
       "tag": "0001_fair_warpath",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1780494264268,
+      "tag": "0002_luxuriant_catseye",
+      "breakpoints": true
     }
   ]
 }
