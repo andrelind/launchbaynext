@@ -84,13 +84,16 @@ export const adminUpgradesRouter = router({
       });
 
       // Auto-create manifest entry for the new upgrade
-      const existing = await db.select().from(ManifestEntries).where(
-        and(
-          eq(ManifestEntries.Ruleset, input.ruleset),
-          eq(ManifestEntries.EntityType, 'upgrade'),
-          eq(ManifestEntries.XwsKey, input.xws),
-        ),
-      );
+      const existing = await db
+        .select()
+        .from(ManifestEntries)
+        .where(
+          and(
+            eq(ManifestEntries.Ruleset, input.ruleset),
+            eq(ManifestEntries.EntityType, 'upgrade'),
+            eq(ManifestEntries.XwsKey, input.xws),
+          ),
+        );
       if (existing.length === 0) {
         // Find the next available numeric ID for this ruleset
         const maxResult = await db.execute(
