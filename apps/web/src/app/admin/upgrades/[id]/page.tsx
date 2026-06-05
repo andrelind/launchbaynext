@@ -625,11 +625,11 @@ export default function UpgradeEditPage() {
                 wildspace,
                 standarized,
                 standardLoadoutOnly,
-                keywords: keywords.length > 0 ? keywords : undefined,
+                keywords: keywords.length > 0 ? keywords : null,
             };
 
             const restrictionsData = restrictions.map(restrictionGroupToData).filter(Boolean);
-            if (restrictionsData.length > 0) data.restrictions = restrictionsData;
+            data.restrictions = restrictionsData.length > 0 ? restrictionsData : null;
 
             if (isNew) {
                 data.ruleset = ruleset;
