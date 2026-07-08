@@ -34,10 +34,10 @@ export default function OverviewScreen() {
       return res;
     } catch (error) {
       console.error('Error fetching overview stats:', error);
-      return { xwa: 0, legacy: 0, amg: 0 }; // Return default values in case of error
+      return { xwa: 0, legacy: 0 }; // Return default values in case of error
     }
   });
-  const total = (data?.xwa || 0) + (data?.legacy || 0) + (data?.amg || 0) || 1;
+  const total = (data?.xwa || 0) + (data?.legacy || 0) || 1;
 
   return (
     <>
@@ -134,11 +134,6 @@ André`}</Text> */}
               <Text style={tw`text-white font-bold`}>2.0 Legacy</Text>
               <Text style={tw`text-orange-500 text-2xl font-bold`}>{Math.round(((data?.legacy || 0) / total) * 100)}%</Text>
               {/* <Text style={tw`text-white`}>{data?.legacy || 0}</Text> */}
-            </View>
-            <View style={tw`flex-col items-center`}>
-              <Text style={tw`text-white font-bold`}>AMG</Text>
-              <Text style={tw`text-orange-500 text-2xl font-bold`}>{Math.round(((data?.amg || 0) / total) * 100)}%</Text>
-              {/* <Text style={tw`text-white`}>{data?.amg || 0}</Text> */}
             </View>
           </View>
 
