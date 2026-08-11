@@ -32,7 +32,7 @@ const CreateSquadronSheet = ({
         {
           text: 'X-Wing Alliance',
           onPress: async () => {
-            const item = addSquadron(f, 'Standard', 'xwa');
+            const item = addSquadron(f, 'Extended', 'xwa');
             SheetManager.hide(sheetId, { payload: item.vendor.lbn.uid, });
           }
         },

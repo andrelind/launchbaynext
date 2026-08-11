@@ -146,7 +146,14 @@ export const deserialize = (o: string, uid?: string, manifestData?: ManifestData
       // const id = rep(']', 'r', rep('[', 'l', `${dId}`));
 
       const parsedUpgrades: { [key in SlotKey]?: string[] } = {};
-      (upgrades || []).forEach((u: any) => {
+      // Upgrades are encoded as a list of [slotKey, ...upgradeIds] entries.
+      // Older/external links may flatten a single slot directly onto the pilot
+      // as [slotKey, ...upgradeIds], so normalize to a list of entries first.
+      const upgradeEntries: any[] = Array.isArray(upgrades[0]) ? upgrades : upgrades.length > 0 ? [upgrades] : [];
+      upgradeEntries.forEach((u: any) => {
+        if (!Array.isArray(u)) {
+          return;
+        }
         const [key, ...list] = u;
         const slotKey = manifest.slots[`${key}`] ?? `${key}`;
         // @ts-expect-error

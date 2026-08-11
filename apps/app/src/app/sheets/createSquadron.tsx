@@ -27,7 +27,7 @@ export default function CreateSquadronSheet() {
                 {
                     text: 'X-Wing Alliance',
                     onPress: async () => {
-                        const item = addSquadron(f, 'Standard', 'xwa');
+                        const item = addSquadron(f, 'Extended', 'xwa');
                         router.back();
                         setTimeout(() => {
                             router.push({ pathname: `(tabs)/squadrons/squadron/${item.vendor.lbn.uid}` });

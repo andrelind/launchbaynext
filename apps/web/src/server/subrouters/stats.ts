@@ -14,7 +14,9 @@ export const statsRouter = router({
     const xwa = await db
       .select({ count: sql<number>`COUNT(*)` })
       .from(Lists)
-      .where(and(isNull(Lists.DeletedUtc), gt(Lists.UpdatedUtc, since), sql`"Xws"->>'ruleset' IS DISTINCT FROM 'legacy'`));
+      .where(
+        and(isNull(Lists.DeletedUtc), gt(Lists.UpdatedUtc, since), sql`"Xws"->>'ruleset' IS DISTINCT FROM 'legacy'`),
+      );
 
     const legacy = await db
       .select({ count: sql<number>`COUNT(*)` })

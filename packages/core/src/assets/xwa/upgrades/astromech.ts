@@ -933,7 +933,7 @@ const t: UpgradeBase[] = [
   },
   {
     xws: 'unhingedastromech-legendsandrelics',
-    limited: 1,
+    limited: 0,
     sides: [
       {
         title: 'Unhinged Astromech',
@@ -941,8 +941,8 @@ const t: UpgradeBase[] = [
         ability:
           'Decrease the difficulty of your speed 3 basic maneuvers ([Turn Left], [Bank Left], [Straight], [Bank Right], [Turn Right]).',
         slots: ['Astromech'],
-        image: 'https://infinitearenas.com/xw2/images/upgrades/r7t1-legendsandrelics.png',
-        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/r7t1-legendsandrelics.png',
+        image: 'https://infinitearenas.com/xw2/images/upgrades/unhingedastromech-legendsandrelics.png',
+        artwork: 'https://infinitearenas.com/xw2/images/artwork/upgrades/unhingedastromech-legendsandrelics.png',
       },
     ],
     restrictions: [{ baseSizes: ['Small'] }, { factions: ['rebelalliance', 'resistance'] }],
