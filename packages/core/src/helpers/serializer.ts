@@ -92,20 +92,23 @@ export const serialize = (o?: XWS, manifestData?: ManifestData) => {
 };
 
 export const deserialize = (o: string, uid?: string, manifestData?: ManifestData, gameData?: GameData): XWS => {
-  // New format, replace "l with (" and "r with )"
+  // Structural array brackets are encoded as a leading run of "l" and a
+  // trailing run of "r" within each dot-separated segment. Only those runs
+  // may be converted back to "[" / "]" — any "l"/"r" in the middle of a
+  // segment belongs to a quoted xws key (e.g. 'oddball-siegeofcoruscant') and
+  // must be preserved.
   o = o
     .split('.')
     .map((s, i) => {
       if (i > 2) {
-        return rep('l', '(', rep('r', ')', s));
+        const lead = /^l+/.exec(s)?.[0].length ?? 0;
+        const trail = /r+$/.exec(s)?.[0].length ?? 0;
+        return '['.repeat(lead) + s.slice(lead, s.length - trail) + ']'.repeat(trail);
       }
       return s;
     })
     .join('.');
   o = rep('.', ',', o);
-
-  o = rep('(', '[', o);
-  o = rep(')', ']', o);
   o = rep("'", '"', o);
   o = rep('""', '"', o);
 
@@ -114,7 +117,15 @@ export const deserialize = (o: string, uid?: string, manifestData?: ManifestData
   }
 
   const d = JSON.parse(o);
-  const [squadName, cost, faction, format, ruleset, pilots, obstacles, ...rest] = d;
+
+  // Older links omit the `ruleset` field, so the pilots array sits where the
+  // ruleset value would otherwise be. Detect that shape and shift the fields.
+  const hasRuleset = !Array.isArray(d[4]);
+  const [squadName, cost, faction, format] = d;
+  const ruleset = hasRuleset ? d[4] : undefined;
+  const pilots = hasRuleset ? d[5] : d[4];
+  const obstacles = hasRuleset ? d[6] : d[5];
+  const rest = d.slice(hasRuleset ? 7 : 6);
 
   const rs = parseInt(ruleset) === 0 ? 'xwa' : parseInt(ruleset) === 1 ? 'xwa' : 'legacy';
   const manifest = getManifest(rs, manifestData);
