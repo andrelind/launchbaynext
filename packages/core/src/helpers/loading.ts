@@ -89,12 +89,22 @@ export const loadShip2 = (
   const faction = getFaction(xws.faction) as Faction;
 
   const shipTypeSource = data.pilots[faction]?.[pilot.ship];
-  // The ship may be missing from the resolved game data (e.g. an unknown or
-  // removed ship key coming from an external link). Fall back to an empty ship
-  // so the rest of the squad still loads instead of throwing.
-  const shipType: ShipType = shipTypeSource
-    ? JSON.parse(JSON.stringify(shipTypeSource))
-    : ({ pilots: [], dial: [] } as unknown as ShipType);
+  // The ship may be missing from the resolved game data (e.g. game data not yet
+  // loaded during SSR, or an unknown/removed ship key coming from an external
+  // link). Return a minimal ship so the rest of the squad still loads instead of
+  // throwing (downstream helpers also read this ship, so bail out early).
+  if (!shipTypeSource) {
+    return {
+      faction,
+      xws: pilot.ship,
+      dial: [],
+      stats: [],
+      actions: [],
+      upgrades: {},
+      pointsWithUpgrades: 0,
+    } as unknown as TShip;
+  }
+  const shipType: ShipType = JSON.parse(JSON.stringify(shipTypeSource));
 
   const { pilots, ...rest } = shipType;
   const ship: TShip = {
@@ -193,8 +203,9 @@ export const pointsForUpgrade2 = (cost: any, ship: TShip, xws: { ruleset: RuleSe
     const typedCost = cost as UpgradeCostAgility;
     const data = resolveData(xws.ruleset, gameData);
     const faction = ship.faction as Faction;
-    const fresh: ShipType = JSON.parse(JSON.stringify(data.pilots[faction]?.[ship.xws]));
-    const agility = fresh.stats.find(s => s.type === 'agility');
+    const freshSource = data.pilots[faction]?.[ship.xws];
+    const fresh: ShipType | undefined = freshSource ? JSON.parse(JSON.stringify(freshSource)) : undefined;
+    const agility = fresh?.stats.find(s => s.type === 'agility');
     if (agility) {
       return typedCost.values[agility.value];
     }
@@ -219,9 +230,13 @@ export const loadUpgrade2 = (
   gameData?: GameData,
 ): Upgrade => {
   const data = resolveData(ruleset, gameData);
-  const upgrade: Upgrade = JSON.parse(
-    JSON.stringify((data.upgrades[slotKey] as UpgradeBase[] | undefined)?.find(u => u.xws === xws)),
-  );
+  const found = (data.upgrades[slotKey] as UpgradeBase[] | undefined)?.find(u => u.xws === xws);
+  // The upgrade may be missing from the resolved data (e.g. game data not yet
+  // loaded during SSR). Return a minimal placeholder instead of throwing.
+  if (!found) {
+    return { xws, finalCost: 0, sides: [{ slots: [] }] } as unknown as Upgrade;
+  }
+  const upgrade: Upgrade = JSON.parse(JSON.stringify(found));
 
   upgrade.finalCost = pointsForUpgrade2(upgrade.cost, ship, { ruleset }, gameData);
 
@@ -301,7 +316,13 @@ export const freeSlotsForShip2 = (ship: TShip, xws: { ruleset: RuleSet }, gameDa
   const data = resolveData(xws.ruleset, gameData);
   const faction = ship.faction as Faction;
   // Start with loading the ship
-  const shipType: ShipType = JSON.parse(JSON.stringify(data.pilots[faction]?.[ship.xws]));
+  const shipTypeSource = data.pilots[faction]?.[ship.xws];
+  // Ship may be missing from the resolved data (e.g. during SSR before game
+  // data loads). Bail out with no free slots instead of throwing.
+  if (!shipTypeSource) {
+    return {};
+  }
+  const shipType: ShipType = JSON.parse(JSON.stringify(shipTypeSource));
   const pilot = shipType.pilots.find(p => p.xws === ship.pilot?.xws);
 
   // Get all available slots from ship
