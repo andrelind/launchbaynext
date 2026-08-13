@@ -88,7 +88,13 @@ export const loadShip2 = (
   const data = resolveData(xws.ruleset, gameData);
   const faction = getFaction(xws.faction) as Faction;
 
-  const shipType: ShipType = JSON.parse(JSON.stringify(data.pilots[faction]?.[pilot.ship]));
+  const shipTypeSource = data.pilots[faction]?.[pilot.ship];
+  // The ship may be missing from the resolved game data (e.g. an unknown or
+  // removed ship key coming from an external link). Fall back to an empty ship
+  // so the rest of the squad still loads instead of throwing.
+  const shipType: ShipType = shipTypeSource
+    ? JSON.parse(JSON.stringify(shipTypeSource))
+    : ({ pilots: [], dial: [] } as unknown as ShipType);
 
   const { pilots, ...rest } = shipType;
   const ship: TShip = {

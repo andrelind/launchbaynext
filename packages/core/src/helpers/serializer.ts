@@ -7,8 +7,22 @@ import { slotKeys } from './enums';
 import { loadShip2 } from './loading';
 
 const getManifest = (ruleset?: string, manifestData?: ManifestData): ManifestData => {
-  if (manifestData) return manifestData;
-  return (ruleset === 'legacy' ? legacyManifest : xwaManifest) as unknown as ManifestData;
+  const bundled = (ruleset === 'legacy' ? legacyManifest : xwaManifest) as unknown as ManifestData;
+  if (!manifestData) return bundled;
+
+  // A provided (e.g. DB-sourced) manifest may only carry the dynamic
+  // ship/pilot/upgrade IDs and omit the static faction/slot enums. Fall back to
+  // the bundled manifest for any map the caller left empty so decoding always
+  // resolves factions and slots.
+  const pick = (a: Record<string, string> | undefined, b: Record<string, string>) =>
+    a && Object.keys(a).length > 0 ? a : b;
+  return {
+    factions: pick(manifestData.factions, bundled.factions),
+    ships: pick(manifestData.ships, bundled.ships),
+    pilots: pick(manifestData.pilots, bundled.pilots),
+    upgrades: pick(manifestData.upgrades, bundled.upgrades),
+    slots: pick(manifestData.slots, bundled.slots),
+  };
 };
 
 const rep = (c: string, t: string, d: string) => {
