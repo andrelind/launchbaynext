@@ -43,7 +43,7 @@ const t: ShipType = {
   ],
   ability: {
     name: 'Twin Ion Engines',
-    text: 'Ignore the \"TIE\" ship restriction on upgrade cards.',
+    text: 'Ignore the "TIE" ship restriction on upgrade cards.',
   },
   pilots: [
     {
@@ -59,11 +59,11 @@ const t: ShipType = {
       slots: ['Astromech', 'Configuration', 'Modification'],
       cost: 7,
       ffg: 791,
+      keywords: ['TIE'],
       loadout: 6,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/wilhufftarkin.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/wilhufftarkin.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/wilhufftarkin.png',
     },
     {
       xws: 'oddball-nimbusclassvwing',
@@ -78,13 +78,11 @@ const t: ShipType = {
       epic: true,
       ability:
         'After you fully execute a red maneuver or perform a red action, if there is an enemy ship in your [Bullseye Arc], you may acquire a lock on that ship.',
-      keywords: ['Clone'],
+      keywords: ['Clone', 'TIE'],
       loadout: 11,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-nimbusclassvwing.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/oddball-nimbusclassvwing.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/oddball-nimbusclassvwing.png',
     },
     {
       name: '“Contrail”',
@@ -99,12 +97,11 @@ const t: ShipType = {
       cost: 8,
       epic: true,
       ffg: 789,
-      keywords: ['Clone'],
+      keywords: ['Clone', 'TIE'],
       loadout: 7,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/contrail.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
     },
     {
       name: '“Klick”',
@@ -119,7 +116,7 @@ const t: ShipType = {
       cost: 10,
       epic: true,
       ffg: 790,
-      keywords: ['Clone'],
+      keywords: ['Clone', 'TIE'],
       loadout: 17,
       extended: true,
       image: 'https://infinitearenas.com/xw2/images/pilots/klick.png',
@@ -136,13 +133,11 @@ const t: ShipType = {
       cost: 9,
       epic: true,
       ffg: 792,
-      keywords: ['Clone'],
+      keywords: ['Clone', 'TIE'],
       loadout: 10,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/shadowsquadronescort.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronescort.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/shadowsquadronescort.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/shadowsquadronescort.png',
       caption: '',
     },
     {
@@ -156,12 +151,11 @@ const t: ShipType = {
       cost: 7,
       epic: true,
       ffg: 793,
+      keywords: ['TIE'],
       loadout: 3,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/pilots/loyalistvolunteer.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/loyalistvolunteer.png',
+      image: 'https://infinitearenas.com/xw2/images/pilots/loyalistvolunteer.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/loyalistvolunteer.png',
       caption: '',
     },
     {
@@ -175,11 +169,10 @@ const t: ShipType = {
         'While a ship that you have locked at range 1-3 defends or performs an attack, you may spend 1 [Charge] to prevent range bonuses from being applied.',
       cost: 9,
       epic: true,
-      keywords: ['Clone'],
+      keywords: ['Clone', 'TIE'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/klick-siegeofcoruscant.png',
       artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/klick.png',
       shipAbility: {
         name: 'Born for This',
@@ -206,23 +199,16 @@ const t: ShipType = {
         "While you defend or perform an attack, if the bearing of your revealed maneuver is the same as the enemy ship's, you may change 1 of the enemy ship's [Focus] results to a blank result.",
       cost: 9,
       epic: true,
-      keywords: ['Clone'],
+      keywords: ['Clone', 'TIE'],
       loadout: 0,
       extended: true,
-      image:
-        'https://infinitearenas.com/xw2/images/quickbuilds/contrail-siegeofcoruscant.png',
-      artwork:
-        'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
+      image: 'https://infinitearenas.com/xw2/images/quickbuilds/contrail-siegeofcoruscant.png',
+      artwork: 'https://infinitearenas.com/xw2/images/artwork/pilots/contrail.png',
       shipAbility: {
         name: 'Born for This',
         text: 'While another friendly ship at range 0-2 defends, if you are not strained, it may spend your focus and evade tokens as if that ship has them. If it does, you gain 1 strain token.',
       },
-      standardLoadout: [
-        'ionlimiteroverride',
-        'preciseastromech-battleofyavin',
-        'ionbombs',
-        'alpha3bbesh',
-      ],
+      standardLoadout: ['ionlimiteroverride', 'preciseastromech-battleofyavin', 'ionbombs', 'alpha3bbesh'],
       ffg: 997,
       slots: [],
     },

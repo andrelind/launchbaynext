@@ -13,7 +13,7 @@ const cleanText = (text?: string) => {
 /** Resolve GameData: use provided gameData or fall back to static assets */
 const resolveData = (ruleset: RuleSet, gameData?: GameData): GameData => {
   if (gameData) return gameData;
-  const a = assets[ruleset || 'xwa'];
+  const a = assets[(ruleset || 'xwa').toLowerCase()];
   return {
     pilots: a.pilots as unknown as GameData['pilots'],
     upgrades: a.upgrades as unknown as GameData['upgrades'],
