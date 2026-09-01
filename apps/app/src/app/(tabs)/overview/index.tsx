@@ -5,11 +5,11 @@ import { trpc } from '@/src/helpers/trpc';
 import { useSystemStore } from '@/src/stores/system';
 import { blue } from '@/src/theme';
 import { Button, Host } from '@expo/ui/swift-ui';
+import { buttonStyle, tint } from '@expo/ui/swift-ui/modifiers';
 import { Feather } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { useRouter } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
-import React from 'react';
 import {
   Platform,
   RefreshControl,
@@ -55,12 +55,13 @@ export default function OverviewScreen() {
         )}
         {!user && Platform.OS === 'ios' && (
           <Host style={tw`mx-2 py-3`} colorScheme={'dark'}>
-            <Button color={tw.color('orange-500')} variant='glassProminent' onPress={() => {
-              // navigation.navigate('Login');
-              router.push('/overview/login');
-            }} >
-              Tap here to login
-            </Button>
+            <Button
+              label="Tap here to login"
+              modifiers={[tint(tw.color('orange-500') ?? '#f97316'), buttonStyle('glassProminent')]}
+              onPress={() => {
+                router.push('/overview/login');
+              }}
+            />
           </Host>
         )}
         {!user && Platform.OS !== 'ios' && (

@@ -3,7 +3,7 @@ import { SortingType, useFilterStore } from '@/src/stores/filter';
 import { useGameDataStore } from '@/src/stores/gameData';
 import { useLoadoutStore } from '@/src/stores/loadout';
 import { useXwsStore } from '@/src/stores/xws';
-import { Button, ContextMenu, Host } from '@expo/ui/swift-ui';
+import { Button, Host, Menu } from '@expo/ui/swift-ui';
 import { Feather } from '@expo/vector-icons';
 import * as Clipboard from 'expo-clipboard';
 import { Stack, useGlobalSearchParams, useRouter } from 'expo-router';
@@ -41,7 +41,8 @@ export default function OverviewLayout() {
     const addLoadout = useLoadoutStore((s) => s.addLoadout);
 
     const pilot = xws?.pilots[parseInt(pilotIndex as string, 10)];
-    const ship = pilot && loadShip2(pilot, xws);
+    const gd = useGameDataStore(s => s.data);
+    const ship = pilot && loadShip2(pilot, xws, gd ?? undefined);
     const manifestData = useGameDataStore(s => s.manifestData);
 
     const { filters, setFilters, tags, setTags, sorting, setFirstSorting, setSecondSorting } = useFilterStore(
@@ -101,136 +102,104 @@ export default function OverviewLayout() {
             headerLeft: () => (
                 Platform.OS === 'ios' ? (
                     <Host>
-                        <ContextMenu>
-                            <ContextMenu.Items>
-                                <ContextMenu>
-                                    <ContextMenu.Items>
-                                        <ContextMenu>
-                                            <ContextMenu.Trigger><Button>Faction</Button></ContextMenu.Trigger>
-                                            <ContextMenu.Items>
-                                                {factionKeys.map(f => (
-                                                    <Button
-                                                        key={f}
-                                                        systemImage={filters[f] ? 'checkmark' : undefined}
-                                                        onPress={() => {
-                                                            console.log('Changing faction', f, filters[f]);
-                                                            if (filters[f]) {
-                                                                delete filters[f];
-                                                                setFilters({ ...filters });
-                                                            } else {
-                                                                setFilters({ ...filters, [f]: true });
-                                                            }
-                                                        }}
-                                                    >
-                                                        {factionFromKey(f)}
-                                                    </Button>
-                                                ))}
-                                            </ContextMenu.Items>
-                                        </ContextMenu>
+                        <Menu label={
+                            <TouchableOpacity style={tw`px-2`}>
+                                <View style={{ width: 28, height: 28 }}>
+                                    <Feather name='filter' style={[tw`text-white`, { position: 'absolute', bottom: 0, left: 0 }]} size={24} color={tw.color('white')} />
+                                    {filterCount > 0 && (
+                                        <View style={[tw`absolute top-0 right-0 bg-primary-500 rounded-full min-w-4 h-4 items-center justify-center`, { paddingHorizontal: 2 }]}>
+                                            <Text style={tw`text-white text-xs font-bold leading-none`}>{filterCount}</Text>
+                                        </View>
+                                    )}
+                                </View>
+                            </TouchableOpacity>
+                        }>
+                            <Menu label="Filter">
+                                <Menu label="Faction">
+                                    {factionKeys.map(f => (
+                                        <Button
+                                            key={f}
+                                            label={factionFromKey(f)}
+                                            systemImage={filters[f] ? 'checkmark' : undefined}
+                                            onPress={() => {
+                                                console.log('Changing faction', f, filters[f]);
+                                                if (filters[f]) {
+                                                    delete filters[f];
+                                                    setFilters({ ...filters });
+                                                } else {
+                                                    setFilters({ ...filters, [f]: true });
+                                                }
+                                            }}
+                                        />
+                                    ))}
+                                </Menu>
 
+                                <Menu label="Format">
+                                    {formats.map(f => (
+                                        <Button
+                                            key={f}
+                                            label={f}
+                                            systemImage={filters[f] ? 'checkmark' : undefined}
+                                            onPress={() => {
+                                                console.log('Changing format', f, filters[f]);
+                                                if (filters[f]) {
+                                                    delete filters[f];
+                                                    setFilters({ ...filters });
+                                                } else {
+                                                    setFilters({ ...filters, [f]: true });
+                                                }
+                                            }}
+                                        />
+                                    ))}
+                                </Menu>
+                                <Menu label="Tags">
+                                    {allTags?.map(tag => (
+                                        <Button
+                                            key={tag}
+                                            label={tag}
+                                            systemImage={tags.includes(tag) ? 'checkmark' : undefined}
+                                            onPress={() => {
+                                                console.log('Changing tag', tag, !tags.includes(tag));
+                                                if (!tags.includes(tag)) {
+                                                    setTags([...tags, tag]);
+                                                } else {
+                                                    setTags(tags.filter(t => t !== tag));
+                                                }
+                                            }}
+                                        />
+                                    ))}
+                                </Menu>
+                                <Button
+                                    label="Clear all"
+                                    systemImage='xmark.circle'
+                                    onPress={() => {
+                                        setFilters({});
+                                        setTags([]);
+                                    }}
+                                />
+                            </Menu>
 
-                                        <ContextMenu>
-                                            <ContextMenu.Trigger><Button>Format</Button></ContextMenu.Trigger>
-                                            <ContextMenu.Items>
-                                                {formats.map(f => (
-                                                    <Button
-                                                        key={f}
-                                                        systemImage={filters[f] ? 'checkmark' : undefined}
-                                                        onPress={() => {
-                                                            console.log('Changing format', f, filters[f]);
-                                                            if (filters[f]) {
-                                                                delete filters[f];
-                                                                setFilters({ ...filters });
-                                                            } else {
-                                                                setFilters({ ...filters, [f]: true });
-                                                            }
-                                                        }}
-                                                    >
-                                                        {f}
-                                                    </Button>
-                                                ))}
-                                            </ContextMenu.Items>
-
-                                        </ContextMenu>
-                                        <ContextMenu >
-                                            <ContextMenu.Trigger><Button>Tags</Button></ContextMenu.Trigger>
-                                            <ContextMenu.Items>
-                                                {allTags?.map(tag => (
-                                                    <Button
-                                                        key={tag}
-                                                        systemImage={tags.includes(tag) ? 'checkmark' : undefined}
-                                                        onPress={() => {
-                                                            console.log('Changing tag', tag, !tags.includes(tag));
-                                                            if (!tags.includes(tag)) {
-                                                                setTags([...tags, tag]);
-                                                            } else {
-                                                                setTags(tags.filter(t => t !== tag));
-                                                            }
-                                                        }}
-                                                    >
-                                                        {tag}
-                                                    </Button>
-                                                ))}
-                                            </ContextMenu.Items>
-                                        </ContextMenu>
-                                        <Button systemImage='xmark.circle' onPress={() => {
-                                            setFilters({});
-                                            setTags([]);
-                                        }}>
-                                            Clear all
-                                        </Button>
-                                    </ContextMenu.Items>
-                                    <ContextMenu.Trigger>
-                                        <Button >Filter</Button>
-                                    </ContextMenu.Trigger>
-                                </ContextMenu>
-
-                                <ContextMenu>
-                                    <ContextMenu.Trigger><Button>Sort</Button></ContextMenu.Trigger>
-                                    <ContextMenu.Items>
-                                        <ContextMenu>
-                                            <ContextMenu.Trigger><Button>Primary</Button></ContextMenu.Trigger>
-                                            <ContextMenu.Items>
-                                                {sortings.map(f => (
-                                                    <Button key={f}
-                                                        systemImage={sorting.first === f ? 'checkmark' : undefined}
-                                                        onPress={() => setFirstSorting(f)}
-                                                    >
-                                                        {f}
-                                                    </Button>
-                                                ))}
-                                            </ContextMenu.Items>
-                                        </ContextMenu>
-                                        <ContextMenu>
-                                            <ContextMenu.Trigger><Button>Secondary</Button></ContextMenu.Trigger>
-                                            <ContextMenu.Items>
-                                                {sortings.map(f => (
-                                                    <Button key={f}
-                                                        systemImage={sorting.second === f ? 'checkmark' : undefined}
-                                                        onPress={() => setSecondSorting(f)}
-                                                    >
-                                                        {f}
-                                                    </Button>
-                                                ))}
-                                            </ContextMenu.Items>
-                                        </ContextMenu>
-                                    </ContextMenu.Items>
-                                </ContextMenu>
-                            </ContextMenu.Items>
-
-                            <ContextMenu.Trigger>
-                                <TouchableOpacity style={tw`px-2`}>
-                                    <View style={{ width: 28, height: 28 }}>
-                                        <Feather name='filter' style={[tw`text-white`, { position: 'absolute', bottom: 0, left: 0 }]} size={24} color={tw.color('white')} />
-                                        {filterCount > 0 && (
-                                            <View style={[tw`absolute top-0 right-0 bg-primary-500 rounded-full min-w-4 h-4 items-center justify-center`, { paddingHorizontal: 2 }]}>
-                                                <Text style={tw`text-white text-xs font-bold leading-none`}>{filterCount}</Text>
-                                            </View>
-                                        )}
-                                    </View>
-                                </TouchableOpacity>
-                            </ContextMenu.Trigger>
-                        </ContextMenu>
+                            <Menu label="Sort">
+                                <Menu label="Primary">
+                                    {sortings.map(f => (
+                                        <Button key={f}
+                                            label={f}
+                                            systemImage={sorting.first === f ? 'checkmark' : undefined}
+                                            onPress={() => setFirstSorting(f)}
+                                        />
+                                    ))}
+                                </Menu>
+                                <Menu label="Secondary">
+                                    {sortings.map(f => (
+                                        <Button key={f}
+                                            label={f}
+                                            systemImage={sorting.second === f ? 'checkmark' : undefined}
+                                            onPress={() => setSecondSorting(f)}
+                                        />
+                                    ))}
+                                </Menu>
+                            </Menu>
+                        </Menu>
                     </Host>
                 ) : (
                     <>
@@ -309,90 +278,71 @@ export default function OverviewLayout() {
             ) : undefined),
             headerRight: () => Platform.OS === 'ios' ? (
                 <Host >
-                    <ContextMenu>
-                        <ContextMenu.Items>
-                            <Button
-                                systemImage={'plus.circle'}
-                                onPress={() => {
-                                    router.push({
-                                        pathname: `ships`,
-                                        params: { uid },
-                                    });
-                                }}
-                            >
-                                Add pilot
-                            </Button>
-                            <Button
-                                systemImage={'gearshape'}
-                                onPress={() => {
-                                    router.push({
-                                        pathname: `squadrons/settings`,
-                                        params: { uid },
-                                    });
-                                }}
-                            >
-                                Settings
-                            </Button>
-                            <ContextMenu>
-                                <ContextMenu.Items>
-                                    <Button onPress={() => {
-                                        Clipboard.setStringAsync(exportAsXws(xws!))
-                                        Toast.show({
-                                            type: 'success',
-                                            text1: 'XWS copied to clipboard',
-                                        });
-                                    }}>
-                                        XWS
-                                    </Button>
-                                    <Button onPress={() => {
-                                        Clipboard.setStringAsync(url)
-                                        Toast.show({
-                                            type: 'success',
-                                            text1: 'Link copied to clipboard',
-                                        });
-                                    }}>
-                                        Link
-                                    </Button>
-                                    <Button onPress={() => {
-                                        Clipboard.setStringAsync(exportAsTTS(xws!))
-                                        Toast.show({
-                                            type: 'success',
-                                            text1: 'Link copied to clipboard',
-                                        });
-                                    }}>
-                                        TTS
-                                    </Button>
-                                    <Button onPress={() => {
-                                        Clipboard.setStringAsync(exportAsText(xws!))
-                                        Toast.show({
-                                            type: 'success',
-                                            text1: 'Link copied to clipboard',
-                                        });
-                                    }}>
-                                        Text
-                                    </Button>
-                                    <Button onPress={() => {
-                                        Clipboard.setStringAsync(printUrl)
-                                        Toast.show({
-                                            type: 'success',
-                                            text1: 'Link copied to clipboard',
-                                        });
-                                    }}>
-                                        Print URL
-                                    </Button>
-                                </ContextMenu.Items>
-                                <ContextMenu.Trigger><Button systemImage='square.and.arrow.up'>Export</Button></ContextMenu.Trigger>
-                            </ContextMenu>
-                        </ContextMenu.Items>
-
-                        <ContextMenu.Trigger>
-                            <TouchableOpacity
-                                style={tw`px-2`}
-                            >
-                                <Feather name='more-horizontal' style={tw`white`} size={24} color={tw.color('white')} />
-                            </TouchableOpacity>
-                        </ContextMenu.Trigger>
-                    </ContextMenu>
+                    <Menu label={
+                        <TouchableOpacity
+                            style={tw`px-2`}
+                        >
+                            <Feather name='more-horizontal' style={tw`white`} size={24} color={tw.color('white')} />
+                        </TouchableOpacity>
+                    }>
+                        <Button
+                            label="Add pilot"
+                            systemImage={'plus.circle'}
+                            onPress={() => {
+                                router.push({
+                                    pathname: `ships`,
+                                    params: { uid },
+                                });
+                            }}
+                        />
+                        <Button
+                            label="Settings"
+                            systemImage={'gearshape'}
+                            onPress={() => {
+                                router.push({
+                                    pathname: `squadrons/settings`,
+                                    params: { uid },
+                                });
+                            }}
+                        />
+                        <Menu label="Export" systemImage='square.and.arrow.up'>
+                            <Button label="XWS" onPress={() => {
+                                Clipboard.setStringAsync(exportAsXws(xws!))
+                                Toast.show({
+                                    type: 'success',
+                                    text1: 'XWS copied to clipboard',
+                                });
+                            }} />
+                            <Button label="Link" onPress={() => {
+                                Clipboard.setStringAsync(url)
+                                Toast.show({
+                                    type: 'success',
+                                    text1: 'Link copied to clipboard',
+                                });
+                            }} />
+                            <Button label="TTS" onPress={() => {
+                                Clipboard.setStringAsync(exportAsTTS(xws!))
+                                Toast.show({
+                                    type: 'success',
+                                    text1: 'Link copied to clipboard',
+                                });
+                            }} />
+                            <Button label="Text" onPress={() => {
+                                Clipboard.setStringAsync(exportAsText(xws!))
+                                Toast.show({
+                                    type: 'success',
+                                    text1: 'Link copied to clipboard',
+                                });
+                            }} />
+                            <Button label="Print URL" onPress={() => {
+                                Clipboard.setStringAsync(printUrl)
+                                Toast.show({
+                                    type: 'success',
+                                    text1: 'Link copied to clipboard',
+                                });
+                            }} />
+                        </Menu>
+                    </Menu>
                 </Host >
             ) : (
                 <View style={tw`flex-row items-center justify-center gap-x-2`}>
@@ -438,75 +388,68 @@ export default function OverviewLayout() {
             ),
             headerRight: () => Platform.OS === 'ios' ? (
                 <Host >
-                    <ContextMenu>
-                        <ContextMenu.Items>
-                            <Button
-                                systemImage={'arrow.triangle.2.circlepath'}
-                                onPress={() => {
-                                    router.push({ pathname: 'ships/pilots', params: { uid, shipXws: ship?.xws, pilotIndex } });
-                                }}
-                            >
-                                Change pilot
-                            </Button>
-                            <Button
-                                systemImage={'tray.and.arrow.down'}
-                                onPress={() => {
-                                    Alert.prompt(
-                                        'Name of loadout',
-                                        'What do you want to call this loadout?',
-                                        [
-                                            { text: 'Cancel', style: 'cancel' },
-                                            {
-                                                text: 'OK',
-                                                onPress: (name?: string) => {
-                                                    if (
-                                                        !name ||
-                                                        (name?.length || 0) === 0 ||
-                                                        !ship ||
-                                                        !ship.pilot
-                                                    ) {
-                                                        return;
-                                                    }
-                                                    addLoadout(
-                                                        name,
-                                                        factionKey as FactionKey,
-                                                        ship?.xws,
-                                                        ship?.pilot?.xws,
-                                                        pilot?.upgrades
-                                                    );
-                                                },
+                    <Menu label={
+                        <TouchableOpacity style={tw`px-2`}                            >
+                            <Feather name='more-horizontal' style={tw`white`} size={24} color={tw.color('white')} />
+                        </TouchableOpacity>
+                    }>
+                        <Button
+                            label="Change pilot"
+                            systemImage={'arrow.triangle.2.circlepath'}
+                            onPress={() => {
+                                router.push({ pathname: 'ships/pilots', params: { uid, shipXws: ship?.xws, pilotIndex } });
+                            }}
+                        />
+                        <Button
+                            label="Save loadout"
+                            systemImage={'tray.and.arrow.down'}
+                            onPress={() => {
+                                Alert.prompt(
+                                    'Name of loadout',
+                                    'What do you want to call this loadout?',
+                                    [
+                                        { text: 'Cancel', style: 'cancel' },
+                                        {
+                                            text: 'OK',
+                                            onPress: (name?: string) => {
+                                                if (
+                                                    !name ||
+                                                    (name?.length || 0) === 0 ||
+                                                    !ship ||
+                                                    !ship.pilot
+                                                ) {
+                                                    return;
+                                                }
+                                                addLoadout(
+                                                    name,
+                                                    factionKey as FactionKey,
+                                                    ship?.xws,
+                                                    ship?.pilot?.xws,
+                                                    pilot?.upgrades
+                                                );
                                             },
-                                        ]
-                                    )
-                                }}
-                            >
-                                Save loadout
-                            </Button>
-                            <Button
-                                systemImage={'tray.and.arrow.up'}
-                                onPress={() => {
-                                    router.push({
-                                        pathname: 'sheets/loadouts',
-                                        params: {
-                                            uid,
-                                            index: pilotIndex,
-                                            faction: xws?.faction,
-                                            shipXws: ship?.xws,
-                                            pilotXws: ship?.pilot?.xws,
-                                        }
-                                    });
-                                }}
-                            >
-                                Load loadout
-                            </Button>
-                        </ContextMenu.Items>
-
-                        <ContextMenu.Trigger>
-                            <TouchableOpacity style={tw`px-2`}                            >
-                                <Feather name='more-horizontal' style={tw`white`} size={24} color={tw.color('white')} />
-                            </TouchableOpacity>
-                        </ContextMenu.Trigger>
-                    </ContextMenu>
+                                        },
+                                    ]
+                                )
+                            }}
+                        />
+                        <Button
+                            label="Load loadout"
+                            systemImage={'tray.and.arrow.up'}
+                            onPress={() => {
+                                router.push({
+                                    pathname: 'sheets/loadouts',
+                                    params: {
+                                        uid,
+                                        index: pilotIndex,
+                                        faction: xws?.faction,
+                                        shipXws: ship?.xws,
+                                        pilotXws: ship?.pilot?.xws,
+                                    }
+                                });
+                            }}
+                        />
+                    </Menu>
                 </Host>
             ) : (
                 <TouchableOpacity style={tw`p-2`} onPress={() => {

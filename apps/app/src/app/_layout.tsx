@@ -1,12 +1,11 @@
 import 'react-native-get-random-values';
 
 import { green, orange, red } from '@/src/theme';
-import { DarkTheme, ThemeProvider } from '@react-navigation/native';
 import Constants from 'expo-constants';
 import { useFonts } from 'expo-font';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
 import { Image } from 'expo-image';
-import { Stack } from 'expo-router';
+import { DarkTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import * as Updates from 'expo-updates';
 import { cleanupUpgrades2, loadShip2 } from 'lbn-core/src/helpers/loading';

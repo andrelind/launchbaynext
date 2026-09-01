@@ -4,6 +4,7 @@ import { countForUpgrade2 } from '@/src/helpers/collection';
 import { upgradesForSlot2 } from '@/src/helpers/select';
 import { useTailwind } from '@/src/helpers/tailwind';
 import { useCollectionStore } from '@/src/stores/collection';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { useXwsStore } from '@/src/stores/xws';
 import { LegendList, LegendListRenderItemProps } from '@legendapp/list';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -19,9 +20,10 @@ export default function SelectUpgradeScreen() {
 
     const { tw } = useTailwind();
     const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
-    const ships = xws?.pilots.map((p) => loadShip2(p, xws));
+    const gd = useGameDataStore((s) => s.data);
+    const ships = xws?.pilots.map((p) => loadShip2(p, xws, gd ?? undefined));
     const pilot = xws?.pilots[parseInt(index)];
-    const ship = pilot && loadShip2(pilot, xws);
+    const ship = pilot && loadShip2(pilot, xws, gd ?? undefined);
 
     const setUpgrade = useXwsStore((s) => s.setUpgrade);
 
@@ -33,7 +35,7 @@ export default function SelectUpgradeScreen() {
         xws &&
         ships &&
         ship &&
-        upgradesForSlot2(ship, slot, xws?.format, xws.ruleset, ships, !hide, collection);
+        upgradesForSlot2(ship, slot, xws?.format, xws.ruleset, ships, !hide, collection, undefined, gd);
 
     const renderItem = useCallback(
         ({ item, index: i }: LegendListRenderItemProps<Upgrade>) => {

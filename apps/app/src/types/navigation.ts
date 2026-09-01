@@ -1,6 +1,7 @@
-import { NavigatorScreenParams } from '@react-navigation/native';
 import { SourceKey } from 'lbn-core/src/sources';
 import { FactionKey, Slot } from 'lbn-core/src/types';
+
+type NavigatorScreenParams<ParamList> = { screen?: keyof ParamList; params?: ParamList[keyof ParamList] };
 
 export type ModalStackParams = {
   Tab: {};

@@ -1,4 +1,5 @@
-import { Host, Picker } from '@expo/ui/swift-ui';
+import { Host, Picker, Text as UIText } from '@expo/ui/swift-ui';
+import { pickerStyle, tag } from '@expo/ui/swift-ui/modifiers';
 import { FC, useState } from 'react';
 import { Platform, Text, TouchableOpacity, View } from 'react-native';
 import { useTailwind } from '../helpers/tailwind';
@@ -19,16 +20,18 @@ export const SegmentedControl: FC<Props> = ({
         return (
             <Host matchContents>
                 <Picker
-                    // label='Rule Set'
-                    variant='segmented'
-                    options={segments}
-                    selectedIndex={selectedSegment}
-                    // color='blue'
-                    onOptionSelected={(e) => {
-                        setSelectedSegment(e.nativeEvent.index);
-                        onChange?.(e.nativeEvent.index);
+                    selection={segments[selectedSegment]}
+                    onSelectionChange={(selection) => {
+                        const index = segments.indexOf(String(selection));
+                        setSelectedSegment(index);
+                        onChange?.(index);
                     }}
-                />
+                    modifiers={[pickerStyle('segmented')]}
+                >
+                    {segments.map((segment) => (
+                        <UIText key={segment} modifiers={[tag(segment)]}>{segment}</UIText>
+                    ))}
+                </Picker>
             </Host>
         )
     }

@@ -2,12 +2,12 @@ import { PilotListItem } from '@/src/components/PilotListItem';
 import { SwipeComponent } from '@/src/components/SwipeComponent';
 import { useAvailability } from '@/src/helpers/collection';
 import { useTailwind } from '@/src/helpers/tailwind';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { useXwsStore } from '@/src/stores/xws';
 import { red } from '@/src/theme';
 import { Feather } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { loadShip2, TShip } from 'lbn-core/src/helpers/loading';
-import React from 'react';
 import {
     Platform,
     Text,
@@ -24,6 +24,7 @@ export default function SquadronScreen() {
     const { uid } = useLocalSearchParams();
     const router = useRouter();
     const { tw } = useTailwind();
+    const gd = useGameDataStore((s) => s.data);
 
     const { xws, lists, setLists, copyShip, removeShip } =
         useXwsStore(useShallow((s) => ({
@@ -38,7 +39,7 @@ export default function SquadronScreen() {
     const ships: EShip[] | undefined = xws?.pilots
         .map((p, i) => {
             try {
-                return { key: `${p.id}_${i}`, ...loadShip2(p, xws) };
+                return { key: `${p.id}_${i}`, ...loadShip2(p, xws, gd ?? undefined) };
             } catch (error) {
                 console.log(error);
             }
