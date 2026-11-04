@@ -29,11 +29,16 @@ type Props = {
 };
 
 export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
-  const { gameData, manifestData } = useGameData();
   const router = useRouter();
 
   const { mutate } = useSWRConfig();
   const { data: lists } = useSwr('/lists', () => trpc.lists.all.query());
+
+  // Only download Legacy data for those who have Legacy lists
+  const hasLegacy = lists?.some((l) => l.ruleset === 'legacy');
+  const xwaData = useGameData('xwa');
+  const legacyData = useGameData(hasLegacy ? 'legacy' : 'xwa');
+  const dataFor = (ruleset?: string) => (ruleset === 'legacy' ? legacyData : xwaData);
 
   const [first, setFirst] = useState<SortingType>('Faction');
   const [second, setSecond] = useState<SortingType>('Alphabetically');
@@ -176,7 +181,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           return '';
                         }
 
-                        const name = pilotName(pilot, s.faction, gameData ?? undefined);
+                        const name = pilotName(pilot, s.faction, dataFor(s.ruleset).gameData ?? undefined);
                         if (u.count > 1) {
                           return `${u.count}x ${name}`;
                         }
@@ -194,7 +199,7 @@ export const SavedSquadronsPanel: FC<Props> = ({ show, onClose }) => {
                           <a
                             className="flex flex-1"
                             onClick={() => {
-                              router.push(`/?lbx=${serialize(s, manifestData ?? undefined)}`);
+                              router.push(`/?lbx=${serialize(s, dataFor(s.ruleset).manifestData ?? undefined)}`);
                               onClose();
                               // router.push(`/?uid=${s.uid}`);
                             }}

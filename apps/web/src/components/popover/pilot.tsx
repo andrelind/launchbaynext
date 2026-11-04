@@ -6,6 +6,7 @@ import {
 } from 'lbn-core/src/helpers/unique';
 import type { FactionKey, Format, Pilot, ShipType } from 'lbn-core/src/types';
 import { type FC, useEffect, useState } from 'react';
+import type { RuleSet } from 'lbn-core/src';
 import { useGameData } from '../../app/game-data-provider';
 import { factionFromKey } from '../../helpers/convert';
 import { popoverDetailStyle, popoverStyle } from '../../helpers/popover';
@@ -20,6 +21,7 @@ type Props = {
   ship: TShip | ShipType;
   faction: FactionKey;
   format: Format;
+  ruleset: RuleSet;
   usedXws?: string[];
   onChange: (value?: Pilot) => void;
   halfWidth?: boolean;
@@ -32,9 +34,10 @@ export const PilotPopover: FC<Props> = ({
   ship,
   format,
   faction,
+  ruleset,
   usedXws,
 }) => {
-  const { gameData } = useGameData();
+  const { gameData } = useGameData(ruleset);
   const [showMenu, setShowMenu] = useState(false);
   const [showDetails, setShowDetails] = useState<Pilot | undefined>();
   const [selected, setSelected] = useState(value);
