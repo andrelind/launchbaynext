@@ -339,10 +339,14 @@ export const runMerge = async (baseUrl: string, assets: any, path: string, theMa
             res.stat = { type: 'agility', value: agility[0] };
           }
 
-          if (initiative) {
-            if (initiative[0].includes('OR LOWER')) {
+          if (Array.isArray(initiative)) {
+            // XWA format: ['3 OR LOWER']
+            if (initiative[0]?.includes('OR LOWER')) {
               res.initiative = { max: parseInt(initiative[0], 10) };
             }
+          } else if (initiative) {
+            // Legacy format: { max: 3 }
+            res.initiative = initiative;
           }
 
           return res;

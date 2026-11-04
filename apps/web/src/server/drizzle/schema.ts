@@ -28,6 +28,7 @@ export const GameDataVersions = pgTable('GameDataVersions', {
   Ruleset: text('Ruleset').primaryKey().notNull(),
   Version: text('Version').notNull(),
   UpdatedAt: timestamp('UpdatedAt', { mode: 'string' }).notNull(),
+  UpstreamVersion: text('UpstreamVersion'), // upstream release last synced by scripts/sync-legacy.ts
 });
 
 export const Ships = pgTable(

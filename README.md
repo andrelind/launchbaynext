@@ -176,6 +176,8 @@ Migrations are in `src/server/drizzle/`. Run `bunx drizzle-kit generate` to crea
 
 #### Seed script
 
+> **Do not run this against the live database.** It truncates the game data tables and rebuilds them from outdated local assets, which wipes admin edits.
+
 `apps/web/src/server/scripts/seed.ts` populates game data tables from `lbn-core` assets:
 
 ```bash
@@ -198,7 +200,7 @@ This truncates existing game data, seeds ships/pilots/upgrades/conditions/source
 
 ### `packages/core`
 
-- Canonical game assets by ruleset in `packages/core/src/assets/{xwa,legacy,amg}`
+- Game assets by ruleset in `packages/core/src/assets/{xwa,legacy,amg}` (outdated for `xwa` and `legacy`: the live database is the source of truth)
 - Types in `packages/core/src/types.ts` (includes `GameData` and `ManifestData` types for server API contracts)
 - Domain helpers (loaders, serializers, import/export, conversion) in `packages/core/src/helpers`
 - Source data bundles in `packages/core/src/sources`
@@ -237,6 +239,8 @@ bun run update:legacy
 
 ## Data update workflow (`lbn-core`)
 
+> **The live database is the only source of truth for game data.** The local files in `packages/core/src/assets/{xwa,legacy}` are outdated and must not be used as a source for game data. Live values include deliberate admin edits that exist nowhere else.
+
 `packages/core/scripts/xwing-data` contains merge/update scripts that pull upstream data and rewrite local assets.
 
 Use:
@@ -245,3 +249,10 @@ Use:
 - `update:legacy` to sync Legacy data
 
 After updating, verify generated changes in `packages/core/src/assets` before committing.
+
+To sync a Legacy release into the live database, run this from `apps/web`. Without `--apply` it connects read-only and only writes the report. Only fields upstream changed since the last synced release are touched, hand edits are kept and listed, and new, removed and renamed rows are only reported:
+
+```bash
+bun run sync:legacy --ref 3.13.0 --out report.md
+bun run sync:legacy --ref 3.13.0 --out report.md --apply
+```

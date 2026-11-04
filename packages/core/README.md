@@ -5,6 +5,8 @@ Used by both:
 - `apps/web` (web UI/API)
 - `apps/app` (Expo mobile app)
 
+> **The live database is the only source of truth for game data.** The local files in `packages/core/src/assets/{xwa,legacy}` are outdated and must not be used as a source for game data. Live values include deliberate admin edits that exist nowhere else.
+
 ## What it contains
 - Ruleset assets: `src/assets/{xwa,legacy,amg}`
 - Core types: `src/types.ts`

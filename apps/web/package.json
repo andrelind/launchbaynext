@@ -9,7 +9,8 @@
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:seed": "bun run src/server/scripts/seed.ts"
+    "db:seed": "bun run src/server/scripts/seed.ts",
+    "sync:legacy": "bun run src/server/scripts/sync-legacy.ts"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
