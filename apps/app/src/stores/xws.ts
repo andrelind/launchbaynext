@@ -10,7 +10,7 @@ import { removeListOnServer, saveListOnServer } from '../helpers/api';
 import { addShip2, setUpgrade2 } from '../helpers/edit';
 import { sortXws } from '../helpers/misc';
 import { useFilterStore } from './filter';
-import { useGameDataStore } from './gameData';
+import { getGameData } from './gameData';
 import { XWS, XWSState } from './types';
 
 export const useXwsStore = create<XWSState>()(
@@ -148,7 +148,7 @@ export const useXwsStore = create<XWSState>()(
               }
 
               edit.pilots = [...edit.pilots, JSON.parse(JSON.stringify(pilot))];
-              edit.points = pointsForSquadron2(edit, useGameDataStore.getState().data ?? undefined);
+              edit.points = pointsForSquadron2(edit, getGameData(edit.ruleset) ?? undefined);
               edit.version = bumpMinor(edit.version || '2.5.0');
 
               saveListOnServer(edit);
@@ -161,7 +161,6 @@ export const useXwsStore = create<XWSState>()(
       changePilot: (uid: string, pilotIndex: number, pilotXws: string) => {
         const lists = get().lists;
         const { first, second } = useFilterStore.getState().sorting;
-        const gd = useGameDataStore.getState().data;
         set({
           lists: lists
             ?.map(l => {
@@ -169,6 +168,7 @@ export const useXwsStore = create<XWSState>()(
                 return l;
               }
 
+              const gd = getGameData(l.ruleset);
               const edit: XWS = JSON.parse(JSON.stringify(l));
               const pilot = edit.pilots[pilotIndex];
               pilot.id = pilotXws;
@@ -181,7 +181,7 @@ export const useXwsStore = create<XWSState>()(
 
                 return {
                   ...p,
-                  points: s.pilot?.cost || 0,
+                  points: l.ruleset === 'legacy' ? s.pointsWithUpgrades : s.pilot?.cost || 0,
                   upgrades,
                 };
               });
@@ -286,7 +286,7 @@ export const useXwsStore = create<XWSState>()(
             const edit: XWS = JSON.parse(JSON.stringify(l));
 
             edit.ruleset = ruleset;
-            edit.points = pointsForSquadron2(edit, useGameDataStore.getState().data ?? undefined);
+            edit.points = pointsForSquadron2(edit, getGameData(edit.ruleset) ?? undefined);
             edit.version = bumpMinor(edit.version || '2.5.0');
 
             saveListOnServer(edit);
@@ -409,7 +409,7 @@ export const useXwsStore = create<XWSState>()(
               const edit: XWS = JSON.parse(JSON.stringify(xws));
 
               edit.pilots.splice(pilotIndex, 1);
-              edit.points = pointsForSquadron2(edit, useGameDataStore.getState().data ?? undefined);
+              edit.points = pointsForSquadron2(edit, getGameData(edit.ruleset) ?? undefined);
               edit.version = bumpMinor(edit.version || '2.5.0');
 
               saveListOnServer(edit);

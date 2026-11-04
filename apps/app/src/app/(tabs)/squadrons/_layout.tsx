@@ -1,6 +1,6 @@
 import { useTailwind } from '@/src/helpers/tailwind';
 import { SortingType, useFilterStore } from '@/src/stores/filter';
-import { useGameDataStore } from '@/src/stores/gameData';
+import { useGameData, useManifestData } from '@/src/stores/gameData';
 import { useLoadoutStore } from '@/src/stores/loadout';
 import { useXwsStore } from '@/src/stores/xws';
 import { Button, Host, Menu } from '@expo/ui/swift-ui';
@@ -41,9 +41,9 @@ export default function OverviewLayout() {
     const addLoadout = useLoadoutStore((s) => s.addLoadout);
 
     const pilot = xws?.pilots[parseInt(pilotIndex as string, 10)];
-    const gd = useGameDataStore(s => s.data);
+    const gd = useGameData(xws?.ruleset);
     const ship = pilot && loadShip2(pilot, xws, gd ?? undefined);
-    const manifestData = useGameDataStore(s => s.manifestData);
+    const manifestData = useManifestData(xws?.ruleset);
 
     const { filters, setFilters, tags, setTags, sorting, setFirstSorting, setSecondSorting } = useFilterStore(
         useShallow(s => ({

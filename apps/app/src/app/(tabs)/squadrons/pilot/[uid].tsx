@@ -6,7 +6,7 @@ import ShipStats from '@/src/components/ShipStats';
 import { SwipeComponent } from '@/src/components/SwipeComponent';
 import { UpgradeComponent } from '@/src/components/Upgrade';
 import { useTailwind } from '@/src/helpers/tailwind';
-import { useGameDataStore } from '@/src/stores/gameData';
+import { useGameData } from '@/src/stores/gameData';
 import { useLoadoutStore } from '@/src/stores/loadout';
 import { useXwsStore } from '@/src/stores/xws';
 import { BlurView } from 'expo-blur';
@@ -52,7 +52,7 @@ export default function PilotScreen() {
     const xws = useXwsStore((s) => s.lists?.find((l) => l.vendor.lbn.uid === uid));
     const pilot = xws?.pilots[parseInt(pilotIndex as string, 10)];
 
-    const gd = useGameDataStore(s => s.data);
+    const gd = useGameData(xws?.ruleset);
     const ship = pilot && loadShip2(pilot, xws, gd ?? undefined);
     const upgrades = loadUpgrades2(ship, xws?.format);
     const setUpgrade = useXwsStore((s) => s.setUpgrade);
