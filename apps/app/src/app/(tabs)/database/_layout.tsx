@@ -1,8 +1,7 @@
 import { useTailwind } from '@/src/helpers/tailwind';
 import { SortingType } from '@/src/stores/filter';
-import { useIsFocused } from '@react-navigation/native';
 import { isLiquidGlassAvailable } from 'expo-glass-effect';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useIsFocused, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 
 const sortings: SortingType[] = [

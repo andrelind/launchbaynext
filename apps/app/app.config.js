@@ -5,7 +5,7 @@ export default {
     name: IS_DEV ? 'LBN (dev)' : 'Launch Bay Next',
     slug: 'lbn',
     scheme: 'lbn',
-    version: '4.1.0',
+    version: '4.2.0',
     runtimeVersion: { policy: 'appVersion' },
     orientation: 'portrait',
     icon: './assets/icon.png',
@@ -27,9 +27,8 @@ export default {
       },
     },
     android: {
-      versionCode: 54,
+      versionCode: 55,
       package: IS_DEV ? 'com.launchbaynext.dev' : 'com.launchbaynext',
-      edgeToEdgeEnabled: true,
       adaptiveIcon: {
         foregroundImage: './assets/adaptive-icon.png',
         backgroundColor: '#09090b',

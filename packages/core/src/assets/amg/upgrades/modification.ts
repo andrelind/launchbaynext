@@ -353,7 +353,7 @@ const t: UpgradeBase[] = [
     ],
     standard: true,
     epic: true,
-    cost: { value: 1 },
+    cost: { value: 2 },
     extended: true,
   },
   {

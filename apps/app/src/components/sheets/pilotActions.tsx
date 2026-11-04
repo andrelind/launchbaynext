@@ -14,6 +14,7 @@ import ActionSheet, {
 import { useShallow } from 'zustand/react/shallow';
 import { smooth } from '../../helpers/animation';
 import { useTailwind } from '../../helpers/tailwind';
+import { useGameDataStore } from '../../stores/gameData';
 import { useXwsStore } from '../../stores/xws';
 import './types';
 
@@ -38,8 +39,9 @@ const PilotActionSheet = ({
     removeShip: s.removeShip,
   })));
 
+  const gd = useGameDataStore((s) => s.data);
   const xws = lists?.find((l) => l.vendor.lbn.uid === uid);
-  const ship = xws && loadShip2(xws?.pilots[index], xws);
+  const ship = xws && loadShip2(xws?.pilots[index], xws, gd ?? undefined);
 
   const doSetIndex = (newIndex: number) => {
     if (!xws || !lists) return;

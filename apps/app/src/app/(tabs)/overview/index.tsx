@@ -5,11 +5,11 @@ import { trpc } from '@/src/helpers/trpc';
 import { useSystemStore } from '@/src/stores/system';
 import { blue } from '@/src/theme';
 import { Button, Host } from '@expo/ui/swift-ui';
+import { buttonStyle, tint } from '@expo/ui/swift-ui/modifiers';
 import { Feather } from '@expo/vector-icons';
 import * as Linking from 'expo-linking';
 import { useRouter } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
-import React from 'react';
 import {
   Platform,
   RefreshControl,
@@ -55,12 +55,13 @@ export default function OverviewScreen() {
         )}
         {!user && Platform.OS === 'ios' && (
           <Host style={tw`mx-2 py-3`} colorScheme={'dark'}>
-            <Button color={tw.color('orange-500')} variant='glassProminent' onPress={() => {
-              // navigation.navigate('Login');
-              router.push('/overview/login');
-            }} >
-              Tap here to login
-            </Button>
+            <Button
+              label="Tap here to login"
+              modifiers={[tint(tw.color('orange-500') ?? '#f97316'), buttonStyle('glassProminent')]}
+              onPress={() => {
+                router.push('/overview/login');
+              }}
+            />
           </Host>
         )}
         {!user && Platform.OS !== 'ios' && (
@@ -77,9 +78,10 @@ export default function OverviewScreen() {
         <View style={tw`px-2 gap-y-2`}>
           <View style={tw`px-2 py-3 gap-y-1 bg-zinc-800 rounded-md`}>
             <View style={tw`flex-row items-center justify-between`}>
-              <Text style={tw`text-white font-semibold`}>XWA last updated</Text>
-              {data?.lastUpdated?.xwa && <Text style={tw`text-slate-400 text-sm`}>{data.lastUpdated.xwa}</Text>}
+              <Text style={tw`text-white font-semibold`}>XWA 50P 2.1 Points Update! 🎉</Text>
+              <Text style={tw`text-slate-400 text-sm`}>2026-08-16</Text>
             </View>
+            {data?.lastUpdated?.xwa && <Text style={tw`text-slate-400 text-sm`}>XWA last updated: {data.lastUpdated.xwa}</Text>}
             {/* <Text style={tw`text-white`}>{`The latest XWA points have been included in the app!`}</Text> */}
 
             <View style={tw`flex-col gap-y-2 py-2`}>

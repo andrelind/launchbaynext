@@ -2,12 +2,12 @@ import { PilotListItem } from '@/src/components/PilotListItem';
 import { SwipeComponent } from '@/src/components/SwipeComponent';
 import { useAvailability } from '@/src/helpers/collection';
 import { useTailwind } from '@/src/helpers/tailwind';
+import { useGameDataStore } from '@/src/stores/gameData';
 import { useXwsStore } from '@/src/stores/xws';
 import { red } from '@/src/theme';
 import { Feather } from '@expo/vector-icons';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { loadShip2, TShip } from 'lbn-core/src/helpers/loading';
-import React from 'react';
 import {
     Platform,
     Text,
@@ -24,6 +24,7 @@ export default function SquadronScreen() {
     const { uid } = useLocalSearchParams();
     const router = useRouter();
     const { tw } = useTailwind();
+    const gd = useGameDataStore((s) => s.data);
 
     const { xws, lists, setLists, copyShip, removeShip } =
         useXwsStore(useShallow((s) => ({
@@ -38,7 +39,7 @@ export default function SquadronScreen() {
     const ships: EShip[] | undefined = xws?.pilots
         .map((p, i) => {
             try {
-                return { key: `${p.id}_${i}`, ...loadShip2(p, xws) };
+                return { key: `${p.id}_${i}`, ...loadShip2(p, xws, gd ?? undefined) };
             } catch (error) {
                 console.log(error);
             }
@@ -52,14 +53,14 @@ export default function SquadronScreen() {
 
     // Check for restricted pilots and upgrades and sum them up on xws
     const restricted = ships?.reduce((acc, ship) => {
+        // `limited` and `restricted` can both be set on the same item (e.g. Juke has both = 2);
+        // treat them as alternatives, not additive, or the same copy gets counted twice.
         if (ship.pilot?.limited && ship.pilot.limited > 0) {
             if (!acc[ship.pilot?.name!]) {
                 acc[ship.pilot?.name!] = { count: 0, max: ship.pilot.limited! };
             }
             acc[ship.pilot?.name!].count += 1;
-        }
-
-        if ((ship.pilot?.restricted || 0) > 0) {
+        } else if ((ship.pilot?.restricted || 0) > 0) {
             if (!acc[ship.pilot?.name!]) {
                 acc[ship.pilot?.name!] = { count: 0, max: ship.pilot!.restricted! };
             }
@@ -73,9 +74,7 @@ export default function SquadronScreen() {
                         acc[upgrade.sides[0].title] = { count: 0, max: upgrade.limited };
                     }
                     acc[upgrade.sides[0].title].count += 1;
-                }
-
-                if (upgrade.restricted && (upgrade.restricted > 0)) {
+                } else if (upgrade.restricted && (upgrade.restricted > 0)) {
                     if (!acc[upgrade.sides[0].title]) {
                         acc[upgrade.sides[0].title] = { count: 0, max: upgrade.restricted };
                     }
