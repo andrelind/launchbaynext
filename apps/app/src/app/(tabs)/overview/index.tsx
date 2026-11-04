@@ -34,7 +34,7 @@ export default function OverviewScreen() {
       return res;
     } catch (error) {
       console.error('Error fetching overview stats:', error);
-      return { xwa: 0, legacy: 0 }; // Return default values in case of error
+      return { xwa: 0, legacy: 0, lastUpdated: { xwa: null, legacy: null } }; // Return default values in case of error
     }
   });
   const total = (data?.xwa || 0) + (data?.legacy || 0) || 1;
@@ -81,6 +81,7 @@ export default function OverviewScreen() {
               <Text style={tw`text-white font-semibold`}>XWA 50P 2.1 Points Update! 🎉</Text>
               <Text style={tw`text-slate-400 text-sm`}>2026-08-16</Text>
             </View>
+            {data?.lastUpdated?.xwa && <Text style={tw`text-slate-400 text-sm`}>XWA last updated: {data.lastUpdated.xwa}</Text>}
             {/* <Text style={tw`text-white`}>{`The latest XWA points have been included in the app!`}</Text> */}
 
             <View style={tw`flex-col gap-y-2 py-2`}>
@@ -103,8 +104,8 @@ André`}</Text> */}
         <View style={tw`px-2 gap-y-2`}>
           <View style={tw`px-2 py-3 gap-y-1 bg-zinc-800 rounded-md`}>
             <View style={tw`flex-row items-center justify-between`}>
-              <Text style={tw`text-white font-semibold`}>Legacy Points Update! 🎉</Text>
-              <Text style={tw`text-slate-400 text-sm`}>2025-12-11</Text>
+              <Text style={tw`text-white font-semibold`}>Legacy last updated</Text>
+              {data?.lastUpdated?.legacy && <Text style={tw`text-slate-400 text-sm`}>{data.lastUpdated.legacy}</Text>}
             </View>
             {/* <Text style={tw`text-white`}>{`The Legacy points have been updated!`}</Text> */}
 
