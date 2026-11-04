@@ -1,4 +1,5 @@
 import { Transition } from '@headlessui/react';
+import type { RuleSet } from 'lbn-core/src';
 import { keyFromFaction } from 'lbn-core/src/helpers/convert';
 import { factions, slotKeys } from 'lbn-core/src/helpers/enums';
 import { loadShip2, type TShip } from 'lbn-core/src/helpers/loading';
@@ -15,6 +16,9 @@ import UpgradeComponent from '../upgrade';
 type Props = {
   needle?: string;
   gameData?: GameData | null;
+  loading: boolean;
+  ruleset: RuleSet;
+  onChangeRuleset: (ruleset: RuleSet) => void;
 };
 
 enum TabOption {
@@ -24,6 +28,11 @@ enum TabOption {
   Upgrades = 'Upgrades',
 }
 
+const rulesets: { value: RuleSet; label: string }[] = [
+  { value: 'xwa', label: 'X-Wing Alliance' },
+  { value: 'legacy', label: '2.0 Legacy' },
+];
+
 const options = [
   TabOption.All,
   TabOption.Ships,
@@ -31,7 +40,7 @@ const options = [
   TabOption.Upgrades,
 ];
 
-export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
+export const SearchComponent: FC<Props> = ({ needle, gameData, loading, ruleset, onChangeRuleset }) => {
   const [tab, setTab] = useState<TabOption>(TabOption.All);
   const [filteredShips, setFilteredShips] = useState<ShipType[]>([]);
   const [filteredPilots, setFilteredPilots] = useState<TShip[]>([]);
@@ -89,8 +98,9 @@ export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
                   {
                     faction: keyFromFaction(faction),
                     format: 'Extended',
-                    ruleset: 'xwa',
-                  }
+                    ruleset,
+                  },
+                  gameData
                 )
               )
             )
@@ -123,7 +133,7 @@ export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
   useEffect(() => {
     refreshData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [needle]);
+  }, [needle, gameData]);
 
   if (!needle || needle.length < 3) {
     return null;
@@ -150,6 +160,22 @@ export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
 
   return (
     <div className="absolute mt-1 w-full rounded-md bg-white text-gray-900 shadow-lg z-10">
+      <div className="flex gap-1 p-1 border-b border-gray-200" role="group" aria-label="Ruleset">
+        {rulesets.map((r) => (
+          <button
+            key={r.value}
+            type="button"
+            aria-pressed={ruleset === r.value}
+            onClick={() => onChangeRuleset(r.value)}
+            className={`${ruleset === r.value
+              ? 'bg-lbnred text-white'
+              : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+              } flex-1 py-1 rounded text-center font-medium text-xs`}
+          >
+            {r.label}
+          </button>
+        ))}
+      </div>
       <div className="sm:hidden">
         <label htmlFor="tabs" className="sr-only">
           Select a tab
@@ -184,6 +210,7 @@ export const SearchComponent: FC<Props> = ({ needle, gameData }) => {
         </div>
       </div>
       <ul className="max-h-96 overflow-auto py-3">
+        {loading && <li className="px-3 text-xs text-gray-500">Loading…</li>}
         {(tab === TabOption.All || tab === TabOption.Ships) &&
           filteredShips.map((s) => (
             <div

@@ -1,10 +1,12 @@
 import { Transition } from '@headlessui/react';
+import type { RuleSet } from 'lbn-core/src';
 import { type FC, useState } from 'react';
 import { SearchComponent } from '.';
 import { useGameData } from '../../app/game-data-provider';
 
 export const SearchInput: FC<{}> = () => {
-  const { gameData } = useGameData();
+  const [ruleset, setRuleset] = useState<RuleSet>('xwa');
+  const { gameData, loading } = useGameData(ruleset);
   const [needle, setNeedle] = useState<string>();
   const [showPanel, setShowPanel] = useState(false);
 
@@ -68,7 +70,13 @@ export const SearchInput: FC<{}> = () => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
-            <SearchComponent needle={needle} gameData={gameData} />
+            <SearchComponent
+              needle={needle}
+              gameData={gameData}
+              loading={loading}
+              ruleset={ruleset}
+              onChangeRuleset={setRuleset}
+            />
           </Transition>
         </div>
       </div>
