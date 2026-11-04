@@ -18,7 +18,7 @@ import '../components/sheets';
 import { syncWithServer } from '../helpers/api';
 import { useTailwind } from '../helpers/tailwind';
 import { useCollectionStore } from '../stores/collection';
-import { useGameDataStore } from '../stores/gameData';
+import { checkForGameDataUpdates, getGameData } from '../stores/gameData';
 import { useXwsStore } from '../stores/xws';
 
 export const unstable_settings = {
@@ -74,60 +74,68 @@ const runUpdates = async () => {
   }
 
   // Check for game data updates
-  await useGameDataStore.getState().checkForUpdates();
+  await checkForGameDataUpdates();
 
   await syncWithServer(
     useXwsStore.getState(),
     useCollectionStore.getState()
   );
+
+  // Game data may have just changed, and synced lists keep the points they were
+  // saved with on the server, so count again now that both are up to date.
+  reloadLists();
+};
+
+// Reload all lists to clean and recount points
+const reloadLists = () => {
+  const lists = useXwsStore.getState().lists?.map(l => {
+    if (!l.ruleset) {
+      l.ruleset = 'xwa';
+    }
+
+    const gd = getGameData(l.ruleset);
+    const pilots = l.pilots
+      .filter(p => {
+        try {
+          loadShip2(p, l, gd ?? undefined);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      })
+      .map(p => {
+        const s = loadShip2(p, l, gd ?? undefined);
+        const upgrades = cleanupUpgrades2(p.upgrades, s, l, gd ?? undefined);
+        return {
+          ...p,
+          points: l.ruleset === 'legacy' ? s.pointsWithUpgrades : (s.pilot?.cost || 0),
+          upgrades,
+        };
+      });
+    return {
+      ...l,
+      pilots,
+      points: pilots.reduce((a, c) => a + c.points, 0),
+      obstacles: l.obstacles?.map(o => o.replace('obstacle-', '')),
+      ruleset: l.ruleset || 'xwa',
+      vendor: {
+        ...l.vendor,
+        lbn: {
+          ...l.vendor.lbn,
+          tags: l.vendor.lbn.tags || [],
+        },
+      },
+    };
+  });
+  if (lists) {
+    useXwsStore.getState().setLists(lists);
+  }
 };
 
 useXwsStore.subscribe(state => {
   if (!state.loaded) {
-    const gd = useGameDataStore.getState().data;
-    // Reload all lists at startup to clean and recount points
-    const lists = useXwsStore.getState().lists?.map(l => {
-      if (!l.ruleset) {
-        l.ruleset = 'xwa';
-      }
-
-      const pilots = l.pilots
-        .filter(p => {
-          try {
-            loadShip2(p, l, gd ?? undefined);
-            return true;
-          } catch (error) {
-            return false;
-          }
-        })
-        .map(p => {
-          const s = loadShip2(p, l, gd ?? undefined);
-          const upgrades = cleanupUpgrades2(p.upgrades, s, l, gd ?? undefined);
-          return {
-            ...p,
-            points: l.ruleset === 'legacy' ? s.pointsWithUpgrades : (s.pilot?.cost || 0),
-            upgrades,
-          };
-        });
-      return {
-        ...l,
-        pilots,
-        points: pilots.reduce((a, c) => a + c.points, 0),
-        obstacles: l.obstacles?.map(o => o.replace('obstacle-', '')),
-        ruleset: l.ruleset || 'xwa',
-        vendor: {
-          ...l.vendor,
-          lbn: {
-            ...l.vendor.lbn,
-            tags: l.vendor.lbn.tags || [],
-          },
-        },
-      };
-    });
     useXwsStore.getState().setLoaded();
-    if (lists) {
-      useXwsStore.getState().setLists(lists);
-    }
+    reloadLists();
     setTimeout(runUpdates, 500);
   }
 });

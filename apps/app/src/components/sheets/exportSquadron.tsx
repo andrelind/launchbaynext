@@ -11,7 +11,7 @@ import ActionSheet, {
 } from 'react-native-actions-sheet';
 import Toast from 'react-native-toast-message';
 import { useTailwind } from '../../helpers/tailwind';
-import { useGameDataStore } from '../../stores/gameData';
+import { useManifestData } from '../../stores/gameData';
 import './types';
 
 export const ExportSquadronSheetId = 'ExportSquadronSheet';
@@ -23,7 +23,7 @@ const ExportSquadronSheet = ({
     payload
 }: SheetProps<'ExportSquadronSheet'>) => {
     const { tw } = useTailwind();
-    const manifestData = useGameDataStore(s => s.manifestData);
+    const manifestData = useManifestData(payload?.xws?.ruleset);
 
     if (!payload?.xws) {
         return null;

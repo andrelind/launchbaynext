@@ -16,7 +16,7 @@ import {
   XWS,
 } from 'lbn-core/src/types';
 import { useCollectionStore } from '../stores/collection';
-import { useGameDataStore } from '../stores/gameData';
+import { getGameData } from '../stores/gameData';
 import { CollectionState } from '../stores/types';
 import { countForShip2, countForUpgrade2 } from './collection';
 
@@ -57,7 +57,7 @@ export const upgradesForSlot2 = (
   needle?: string,
   gameData?: GameData | null,
 ): Upgrade[] => {
-  const gd = gameData ?? useGameDataStore.getState().data;
+  const gd = gameData ?? getGameData(ruleset);
   const freeSlots = freeSlotsForShip2(ship, { ruleset }, gd ?? undefined);
   const allXws = usedShipXws2(ship);
 
@@ -292,7 +292,7 @@ export const upgradesForSlot2 = (
 
 export const useShipTypes = (xws?: XWS, showUnavailable?: boolean, needle?: string): ShipType[] => {
   const collection = useCollectionStore();
-  const gd = useGameDataStore.getState().data;
+  const gd = getGameData(xws?.ruleset);
 
   if (!xws) {
     return [];

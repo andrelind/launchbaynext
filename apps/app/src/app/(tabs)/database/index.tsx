@@ -5,7 +5,7 @@ import { PilotListItem } from '@/src/components/PilotListItem';
 import { SegmentedControl } from '@/src/components/SegmentedControl';
 import { UpgradeComponent } from '@/src/components/Upgrade';
 import { useTailwind } from '@/src/helpers/tailwind';
-import { useGameDataStore } from '@/src/stores/gameData';
+import { getGameData } from '@/src/stores/gameData';
 import { darkgrey } from '@/src/theme';
 import { Octicons } from '@expo/vector-icons';
 import { LegendList, LegendListRenderItemProps } from '@legendapp/list';
@@ -36,7 +36,7 @@ export default function DatabaseScreen() {
             return [];
         }
 
-        const gd = useGameDataStore.getState().data;
+        const gd = getGameData(ruleset);
         const pilotData = gd?.pilots ?? assets[ruleset].pilots;
         const upgradeData = gd?.upgrades ?? assets[ruleset].upgrades;
         const conditionData = gd?.conditions ?? assets[ruleset].conditions;

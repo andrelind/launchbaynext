@@ -2,7 +2,7 @@ import { ShipFont } from '@/src/components/fonts/ShipIcon';
 import { useTailwind } from '@/src/helpers/tailwind';
 import { trpc } from '@/src/helpers/trpc';
 import { useCollectionStore } from '@/src/stores/collection';
-import { useGameDataStore } from '@/src/stores/gameData';
+import { useGameData } from '@/src/stores/gameData';
 import { Octicons } from '@expo/vector-icons';
 import { LegendList, LegendListRenderItemProps } from '@legendapp/list';
 import { useLocalSearchParams } from 'expo-router';
@@ -36,7 +36,7 @@ export default function CollectionDetailScreen() {
 
     const { sourceKey, needle } = useLocalSearchParams<{ sourceKey: SourceKey; needle?: string }>();
     const { data: dbSources } = useSwr('/sources', () => trpc.gameData.sources.query());
-    const gd = useGameDataStore(s => s.data);
+    const gd = useGameData('xwa');
     const pilotData = gd?.pilots ?? assets['xwa'].pilots;
     const upgradeData = gd?.upgrades ?? assets['xwa'].upgrades;
 

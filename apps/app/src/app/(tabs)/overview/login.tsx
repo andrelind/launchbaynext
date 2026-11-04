@@ -6,9 +6,10 @@ import { useSystemStore } from '@/src/stores/system';
 import { useXwsStore } from '@/src/stores/xws';
 import { Feather } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
     ActivityIndicator,
+    Pressable,
     Text, TextInput, TouchableOpacity, View,
 } from 'react-native';
 import {
@@ -28,6 +29,7 @@ export default function LoginScreen() {
 
     const [busy, setBusy] = useState(false);
 
+    const emailRef = useRef<TextInput>(null);
     const [username, setUsername] = useState(__DEV__ ? 'andre@lindapp.se' : '');
     const [waitingForLink, setWaitingForLink] = useState(false);
 
@@ -49,28 +51,35 @@ export default function LoginScreen() {
                 {!waitingForLink && '\nIf you previously had an account via Facebook, Google or Apple, please use the same email address to log in, and your data will be merged into the new account.'}
             </Text>
             {!waitingForLink && (
-                <View
-                    style={tw`px-2 py-4 bg-zinc-800 rounded-lg flex-row gap-x-2 items-center`}
+                <Pressable
+                    style={tw`px-2 bg-zinc-800 rounded-lg flex-row gap-x-2 items-center`}
+                    onPress={() => emailRef.current?.focus()}
                 >
                     <Feather name='mail' color={tw.color('zinc-400')} size={24} />
                     <TextInput
-                        style={tw`flex-1 text-zinc-400`}
+                        ref={emailRef}
+                        autoFocus
+                        style={tw`flex-1 py-4 text-zinc-400`}
                         placeholder="Email"
                         placeholderTextColor={tw.color('zinc-400')}
                         value={username}
-                        onChangeText={(text) => setUsername(text)}
+                        onChangeText={(text) => {
+                            setUsername(text);
+                            setError('');
+                        }}
                         keyboardType="email-address"
                         autoCorrect={false}
                         autoCapitalize="none"
                         autoComplete="email"
                     />
-                </View>
+                </Pressable>
             )}
 
             {waitingForLink && (
                 <>
                     <CodeField
                         ref={ref}
+                        autoFocus
                         // eslint-disable-next-line react/jsx-props-no-spreading
                         {...props}
                         value={value}
@@ -98,10 +107,11 @@ export default function LoginScreen() {
                             </Text>
                         )}
                     />
-                    {error && (
-                        <Text style={tw`text-left text-sm text-red-500`}>{error}</Text>
-                    )}
                 </>
+            )}
+
+            {error !== '' && (
+                <Text style={tw`text-left text-sm text-red-500`}>{error}</Text>
             )}
 
             {!waitingForLink && (
@@ -110,11 +120,11 @@ export default function LoginScreen() {
                     style={tw`${validEmail ? 'bg-orange-500' : 'bg-zinc-400'} rounded-lg py-4`}
                     onPress={async () => {
                         try {
+                            setError('');
                             setBusy(true);
                             await trpc.registerOrLogin.mutate({
                                 email: username,
                             });
-                            setBusy(false);
 
                             setWaitingForLink(true);
 
@@ -126,6 +136,8 @@ export default function LoginScreen() {
                         } catch (e) {
                             console.error(e);
                             setError((e as Error).message);
+                        } finally {
+                            setBusy(false);
                         }
 
                         // console.log(result);
@@ -152,7 +164,6 @@ export default function LoginScreen() {
                                 email: username,
                                 code: value,
                             });
-                            setBusy(false);
 
                             setToken(token);
                             // navigation.pop();
@@ -163,6 +174,8 @@ export default function LoginScreen() {
                         } catch (e: any) {
                             console.error(e);
                             setError(e.message);
+                        } finally {
+                            setBusy(false);
                         }
                     }}
                 >

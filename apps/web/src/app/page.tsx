@@ -3,14 +3,15 @@
 import { DocumentDuplicateIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { keyFromSlot } from 'lbn-core/src/helpers/convert';
 import { exportAsTTS, exportAsText, exportAsXws } from 'lbn-core/src/helpers/import+export';
-import { loadShip2, loadUpgrades2, pointsForSquadron2 } from 'lbn-core/src/helpers/loading';
+import { loadShip2, loadUpgrades2 } from 'lbn-core/src/helpers/loading';
 import { deserialize, serialize } from 'lbn-core/src/helpers/serializer';
 import { bumpPatch } from 'lbn-core/src/helpers/versioning';
+import type { RuleSet } from 'lbn-core/src';
 import type { FactionKey, Ship, ShipType, Slot, Upgrade, XWS } from 'lbn-core/src/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { Layout } from '../components/layout';
 import { Notification } from '../components/notification';
@@ -23,6 +24,7 @@ import {
   addShip2,
   changePilot2,
   copyShip2,
+  recountPoints,
   removeShip2,
   setTags,
   setUpgrade2,
@@ -43,13 +45,16 @@ export type DataItem = {
 };
 
 const MainPage = () => {
-  const { gameData, manifestData, loading: gameDataLoading } = useGameData();
   const queryLbx = useSearchParams()?.get('lbx');
   const queryFaction = useSearchParams()?.get('faction');
 
+  // A link has to be decoded with the manifest of the ruleset it was saved with
+  const linkRuleset = useMemo<RuleSet>(() => (queryLbx ? deserialize(queryLbx).ruleset : 'xwa'), [queryLbx]);
+  const { manifestData: linkManifestData } = useGameData(linkRuleset);
+
   // Either we get a squad from url or we create one
   const initialXws: XWS = queryLbx
-    ? deserialize(queryLbx, undefined, manifestData ?? undefined)
+    ? deserialize(queryLbx, undefined, linkManifestData ?? undefined)
     : {
       name: 'New Squadron',
       description: '',
@@ -72,6 +77,7 @@ const MainPage = () => {
     };
 
   const [xws, setXws] = useState<XWS>(initialXws);
+  const { gameData, manifestData, loading: gameDataLoading } = useGameData(xws.ruleset);
   const ships = xws?.pilots.map((p) => loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: xws.ruleset || 'xwa' }, gameData ?? undefined));
 
   const [shipBase, setShipBase] = useState<ShipType>();
@@ -83,9 +89,15 @@ const MainPage = () => {
 
   useEffect(() => {
     if (queryLbx) {
-      setXws(deserialize(queryLbx as string, undefined, manifestData ?? undefined));
+      setXws(deserialize(queryLbx as string, undefined, linkManifestData ?? undefined));
     }
-  }, [queryLbx, manifestData]);
+  }, [queryLbx, linkManifestData]);
+
+  useEffect(() => {
+    if (gameData) {
+      setXws(recountPoints(xws, gameData));
+    }
+  }, [xws, gameData]);
 
   if (!xws || gameDataLoading) {
     return null;
@@ -141,11 +153,6 @@ const MainPage = () => {
         const squad: XWS = JSON.parse(JSON.stringify(xws));
 
         squad.ruleset = xws.ruleset === 'xwa' ? 'legacy' : 'xwa';
-        squad.pilots.forEach((p) => {
-          const ship = loadShip2(p, { faction: xws.faction, format: xws.format, ruleset: squad.ruleset }, gameData ?? undefined);
-          p.points = ship.pointsWithUpgrades;
-        });
-        squad.points = pointsForSquadron2(squad, gameData ?? undefined);
         squad.version = bumpPatch(squad.version || '2.0.0');
 
         console.log('Set xws');
@@ -200,6 +207,7 @@ const MainPage = () => {
                     value={s.pilot}
                     faction={xws.faction}
                     format={xws.format}
+                    ruleset={xws.ruleset}
                     usedXws={usedXws}
                     ship={s}
                     onChange={(p) =>
@@ -342,6 +350,7 @@ const MainPage = () => {
               ship={shipBase}
               faction={xws.faction}
               format={xws.format}
+              ruleset={xws.ruleset}
               onChange={(v) => {
                 if (v && shipBase) {
                   setXws(addShip2(xws, shipBase.xws, v.xws, undefined, gameData ?? undefined));

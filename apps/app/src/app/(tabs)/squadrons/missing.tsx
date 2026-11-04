@@ -1,6 +1,6 @@
 import { useAvailability } from '@/src/helpers/collection';
 import { useTailwind } from '@/src/helpers/tailwind';
-import { useGameDataStore } from '@/src/stores/gameData';
+import { useGameData } from '@/src/stores/gameData';
 import { useXwsStore } from '@/src/stores/xws';
 import { useLocalSearchParams } from 'expo-router';
 import { assets } from 'lbn-core/src';
@@ -24,7 +24,7 @@ export default function MissingItemsScreen() {
         );
     }
 
-    const gd = useGameDataStore(s => s.data);
+    const gd = useGameData(xws.ruleset);
     const pilotData = gd?.pilots ?? assets[xws.ruleset].pilots;
     const upgradeData = gd?.upgrades ?? assets[xws.ruleset].upgrades;
 

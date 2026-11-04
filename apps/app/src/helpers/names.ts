@@ -1,7 +1,7 @@
 import { RuleSet, assets } from 'lbn-core/src';
 import { getFaction } from 'lbn-core/src/helpers/convert';
 import { FactionKey, GameData, PilotXWS, SlotKey } from 'lbn-core/src/types';
-import { useGameDataStore } from '../stores/gameData';
+import { getGameData } from '../stores/gameData';
 
 let pilots: { [s: string]: string } = {};
 let upgrades: { [s: string]: string } = {};
@@ -15,7 +15,7 @@ export const pilotName = (
     return pilots[pilot.id];
   }
 
-  const gd = gameData ?? useGameDataStore.getState().data;
+  const gd = gameData ?? getGameData(xws.ruleset);
   const faction = getFaction(xws.faction);
   const ship = gd?.pilots[faction]?.[pilot.ship] ?? assets[xws.ruleset].pilots[faction][pilot.ship];
   const p = ship?.pilots.find(pp => pp.xws === pilot.id);
@@ -30,7 +30,7 @@ export const upgradeName = (xws: string, slotKey: SlotKey, ruleset: RuleSet, gam
     return upgrades[xws];
   }
 
-  const gd = gameData ?? useGameDataStore.getState().data;
+  const gd = gameData ?? getGameData(ruleset);
   const upgradeList = gd?.upgrades[slotKey] ?? assets[ruleset].upgrades[slotKey];
   const upgrade = upgradeList.find(u => u.xws === xws);
   if (upgrade) {

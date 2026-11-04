@@ -1,6 +1,10 @@
 /**
  * Seed script: reads static TypeScript assets from packages/core and populates the database.
  *
+ * DO NOT run this against the live database. The live database is the only source of truth for
+ * game data. This script truncates the game tables and rebuilds them from outdated local assets,
+ * which wipes admin edits.
+ *
  * Usage: npx tsx src/server/scripts/seed.ts
  *
  * Requires DATABASE_URL environment variable.

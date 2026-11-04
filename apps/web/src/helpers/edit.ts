@@ -192,6 +192,23 @@ export const changePilot2 = (xws: XWS, pilotIndex: number, pilotXws: string, gam
   };
 };
 
+/**
+ * Counts points from the given data. Links carry the points they were saved with,
+ * and those can be out of date or counted with another ruleset's costs.
+ * Returns the same list if nothing changed.
+ */
+export const recountPoints = (xws: XWS, gameData?: GameData): XWS => {
+  const ruleset = xws.ruleset || 'xwa';
+  const pilots = xws.pilots.map(p => {
+    const s = loadShip2(p, { faction: xws.faction, format: xws.format, ruleset }, gameData);
+    return { ...p, points: ruleset === 'legacy' ? s.pointsWithUpgrades : s.pilot?.cost || 0 };
+  });
+  const points = pointsForSquadron2({ ...xws, pilots }, gameData);
+
+  const changed = points !== xws.points || pilots.some((p, i) => p.points !== xws.pilots[i].points);
+  return changed ? { ...xws, pilots, points } : xws;
+};
+
 export const copyShip2 = (xws: XWS, pilotIndex: number) => {
   const edit: XWS = JSON.parse(JSON.stringify(xws));
   const pilot = edit.pilots[pilotIndex];

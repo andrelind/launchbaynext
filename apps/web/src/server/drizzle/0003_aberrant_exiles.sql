@@ -1,0 +1,1 @@
+ALTER TABLE "GameDataVersions" ADD COLUMN "UpstreamVersion" text;

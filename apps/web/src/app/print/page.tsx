@@ -8,15 +8,19 @@ import { type NextPage } from 'next';
 import { useSearchParams } from 'next/navigation';
 import QRCode from 'qrcode.react';
 import Logo from '../../components/logo';
+import { recountPoints } from '../../helpers/edit';
 import { useGameData } from '../game-data-provider';
 
 type Props = {};
 
 const PrintPage: NextPage<Props> = ({ }) => {
-  const { gameData, manifestData } = useGameData();
   const queryLbx = useSearchParams()?.get('lbx');
+  // A link has to be decoded with the manifest of the ruleset it was saved with
+  const { gameData, manifestData } = useGameData(queryLbx ? deserialize(queryLbx).ruleset : 'xwa');
 
-  const xws = queryLbx ? deserialize(queryLbx, undefined, manifestData ?? undefined) : undefined;
+  const xws = queryLbx
+    ? recountPoints(deserialize(queryLbx, undefined, manifestData ?? undefined), gameData ?? undefined)
+    : undefined;
 
   if (!xws) {
     return <div />;

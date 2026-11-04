@@ -3,7 +3,7 @@ import assets from 'lbn-core/src';
 import { bumpMinor, bumpPatch } from 'lbn-core/src/helpers/versioning';
 import { GameData, SlotKey, Upgrade, UpgradeXWS } from 'lbn-core/src/types';
 import { useCollectionStore } from '../stores/collection';
-import { useGameDataStore } from '../stores/gameData';
+import { getGameData } from '../stores/gameData';
 
 import { PilotXWS, XWS } from '../stores/types';
 
@@ -18,7 +18,7 @@ export const addShip2 = (
   gameData?: GameData | null,
 ) => {
   const collection = useCollectionStore.getState();
-  const gd = gameData ?? useGameDataStore.getState().data;
+  const gd = gameData ?? getGameData(list.ruleset);
 
   const edit: XWS = JSON.parse(JSON.stringify(list));
   const pilot: PilotXWS = {
@@ -97,7 +97,7 @@ export const setUpgrade2 = (
   u?: Upgrade,
   gameData?: GameData | null,
 ) => {
-  const gd = gameData ?? useGameDataStore.getState().data;
+  const gd = gameData ?? getGameData(xws.ruleset);
   const squad: XWS = JSON.parse(JSON.stringify(xws));
 
   const pilot = squad.pilots[pilotIndex];
