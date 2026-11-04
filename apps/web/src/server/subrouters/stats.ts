@@ -1,7 +1,7 @@
 import { format, subMonths } from 'date-fns';
 import { and, gt, isNull, sql } from 'drizzle-orm';
 import { db } from '../db';
-import { Lists } from '../drizzle/schema';
+import { GameDataVersions, Lists } from '../drizzle/schema';
 import { publicProcedure, router } from '../trpc';
 
 export const statsRouter = router({
@@ -23,9 +23,21 @@ export const statsRouter = router({
       .from(Lists)
       .where(and(isNull(Lists.DeletedUtc), gt(Lists.UpdatedUtc, since), sql`"Xws"->>'ruleset' = 'legacy'`));
 
+    const versions = await db
+      .select({ ruleset: GameDataVersions.Ruleset, updatedAt: GameDataVersions.UpdatedAt })
+      .from(GameDataVersions);
+
+    // UpdatedAt is a UTC timestamp string, so the first 10 characters are yyyy-MM-dd.
+    const lastUpdated = (ruleset: string) =>
+      versions.find(v => v.ruleset === ruleset)?.updatedAt.slice(0, 10) ?? null;
+
     return {
       xwa: parseInt(xwa[0].count as unknown as string),
       legacy: parseInt(legacy[0].count as unknown as string),
+      lastUpdated: {
+        xwa: lastUpdated('xwa'),
+        legacy: lastUpdated('legacy'),
+      },
     };
   }),
 });
